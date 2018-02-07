@@ -1,0 +1,22 @@
+// fonts
+@primary-font : 'PT Sans', sans-serif;
+@secondary-font : 'Roboto Slab', sans-serif;
+
+// base colors 
+@primary-color:		#ff4178;
+@secondary-color:	#1d1f25;
+@third-color: 		#2c313b;
+
+
+// radius
+.border-radius(@primaryRadius) {
+	-webkit-border-radius: @primaryRadius;
+	-moz-border-radius: @primaryRadius;
+	border-radius: @primaryRadius;
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}

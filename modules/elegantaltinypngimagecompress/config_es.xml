@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>elegantaltinypngimagecompress</name>
+	<displayName><![CDATA[Compresor de Im&aacute;gen con TinyPNG]]></displayName>
+	<version><![CDATA[5.4.2]]></version>
+	<description><![CDATA[Comprime im&aacute;genes en formato JPG y PNG en tu tienda online usando TinyPNG, reduce el tama&ntilde;o de la p&aacute;gina de tu tienda, haz que tu tienda online cargue mucho m&aacute;s r&aacute;pido y ahorra espacio en el disco.]]></description>
+	<author><![CDATA[Elegantal]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[¿Seguro que desea desinstalar?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

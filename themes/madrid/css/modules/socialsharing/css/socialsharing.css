@@ -1,0 +1,19 @@
+.socialsharing_product button {
+	margin-bottom: 3px;
+}
+
+.socialsharing_product .btn-twitter:hover {
+	background: #3fb8f0;
+}
+
+.socialsharing_product .btn-facebook:hover {
+	background: #246caf;
+}
+
+.socialsharing_product .btn-google-plus:hover {
+	background: #ec5656;
+}
+
+.socialsharing_product .btn-pinterest:hover {
+	background: #cb2027;
+}

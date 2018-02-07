@@ -1,0 +1,113 @@
+﻿[Wed, 13 Jun 2012 13:02:49 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS PETICION PARA PEDIDO
+<?xml version="1.0" encoding="utf-8"?>
+                <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                    <soap:Header>
+                        <ROClientIDHeader xmlns="http://tempuri.org/">
+                            <ID>{239DC4C6-3C39-4141-824F-815D31A69287}</ID>
+                        </ROClientIDHeader>
+                    </soap:Header>
+                    <soap:Body>
+                        <WebServService___GrabaEnvio xmlns="http://tempuri.org/">
+                            <strCodAgeCargo>000000</strCodAgeCargo>
+                            <strCodAgeOri>000000</strCodAgeOri>
+                            <dtFecha>2012/06/13</dtFecha>
+                            <strCodTipoServ>E24</strCodTipoServ>
+                            <strCodCli>33333</strCodCli>
+                            <strNomOri>PruebasComunicaciones</strNomOri>
+                            <strDirOri></strDirOri>
+                            <strPobOri></strPobOri>
+                            <strCPOri></strCPOri>
+                            <strTlfOri></strTlfOri>
+                            <strNomDes>Aaaron palacios</strNomDes>
+                            <strDirDes>damas- </strDirDes>
+                            <strPobDes>ALCALA DE HENARES</strPobDes>
+                            <strCPDes>28801</strCPDes>
+                            <strTlfDes>651840666 -- </strTlfDes>
+                            <intPaq>2</intPaq>
+                            <dPesoOri>1</dPesoOri>
+                            <dReembolso>77.94</dReembolso>
+                            <strRef>000014</strRef>
+                            <boDesSMS></boDesSMS>
+							<strDesMoviles>651840666 -- </strDesMoviles>
+                            <strDesDirEmails>operazion_resaka@hotmail.com</strDesDirEmails>
+                            <boInsert>1</boInsert>
+                        </WebServService___GrabaEnvio>
+                    </soap:Body>
+                </soap:Envelope>
+[Wed, 13 Jun 2012 13:02:50 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS RESPUESTA REALIZAR PEDIDO
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HNS="http://tempuri.org/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tempuri.org/"><SOAP-ENV:Header><ROClientIDHeader SOAP-ENV:mustUnderstand="0" xmlns="http://tempuri.org/"><ID>{239DC4C6-3C39-4141-824F-815D31A69287}</ID></ROClientIDHeader></SOAP-ENV:Header><SOAP-ENV:Body xmlns:ro="http://tempuri.org/"><SOAP-ENV:Fault><faultcode>EROException</faultcode><faultstring>The value "-1" for parameter "boDesSMS" of "Boolean" type is invalid</faultstring><detail><v1:ROException/></detail></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+[Wed, 13 Jun 2012 13:02:50 +0200] PrestaShop ver:1.4.5.1 -> ERROR: TIPSA ERROR : limpiarNumTrack
+[Wed, 13 Jun 2012 13:02:50 +0200] PrestaShop ver:1.4.5.1 -> ERROR: NUMERO DE ALBARAN = 
+[Wed, 13 Jun 2012 13:02:50 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS PETICION DE ETIQUETA 
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HNS="http://tempuri.org/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tempuri.org/"><SOAP-ENV:Header><ROClientIDHeader SOAP-ENV:mustUnderstand="0" xmlns="http://tempuri.org/"><ID>{239DC4C6-3C39-4141-824F-815D31A69287}</ID></ROClientIDHeader></SOAP-ENV:Header><SOAP-ENV:Body xmlns:ro="http://tempuri.org/"><SOAP-ENV:Fault><faultcode>EROException</faultcode><faultstring>The value "-1" for parameter "boDesSMS" of "Boolean" type is invalid</faultstring><detail><v1:ROException/></detail></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+[Wed, 13 Jun 2012 13:02:51 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS RESPUESTA CON ETIQUETA
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HNS="http://tempuri.org/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tempuri.org/"><SOAP-ENV:Header><ROClientIDHeader SOAP-ENV:mustUnderstand="0" xmlns="urn:DinaPaq"><ID>{239DC4C6-3C39-4141-824F-815D31A69287}</ID></ROClientIDHeader></SOAP-ENV:Header><SOAP-ENV:Body xmlns:ro="http://tempuri.org/"><v1:WebServService___ConsEtiquetaEnvioResponse><v1:strEtiqueta></v1:strEtiqueta></v1:WebServService___ConsEtiquetaEnvioResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+[Wed, 13 Jun 2012 13:02:51 +0200] PrestaShop ver:1.4.5.1 -> ERROR: IMPOSIBLE escribir EL ARCHIVO ../modules/tipsacarrier/PDF/etiqueta_14.pdf 
+
+[Wed, 13 Jun 2012 17:24:20 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS PETICION PARA PEDIDO
+<?xml version="1.0" encoding="utf-8"?>
+                <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                    <soap:Header>
+                        <ROClientIDHeader xmlns="http://tempuri.org/">
+                            <ID>{C4DE32D3-6F61-4CE9-988D-20561D634CD2}</ID>
+                        </ROClientIDHeader>
+                    </soap:Header>
+                    <soap:Body>
+                        <WebServService___GrabaEnvio xmlns="http://tempuri.org/">
+                            <strCodAgeCargo>000000</strCodAgeCargo>
+                            <strCodAgeOri>000000</strCodAgeOri>
+                            <dtFecha>2012/06/13</dtFecha>
+                            <strCodTipoServ>14</strCodTipoServ>
+                            <strCodCli>33333</strCodCli>
+                            <strNomOri>PruebasComunicaciones</strNomOri>
+                            <strDirOri></strDirOri>
+                            <strPobOri></strPobOri>
+                            <strCPOri></strCPOri>
+                            <strTlfOri></strTlfOri>
+                            <strNomDes>Aaaron palacios</strNomDes>
+                            <strDirDes>damas- </strDirDes>
+                            <strPobDes>ALCALA DE HENARES</strPobDes>
+                            <strCPDes>28801</strCPDes>
+                            <strTlfDes>651840666 -- </strTlfDes>
+                            <intPaq>2</intPaq>
+                            <dPesoOri>1</dPesoOri>
+                            <dReembolso>194.42</dReembolso>
+                            <strRef>000015</strRef>
+                            <boDesSMS></boDesSMS>
+							<strDesMoviles>651840666 -- </strDesMoviles>
+                            <strDesDirEmails>operazion_resaka@hotmail.com</strDesDirEmails>
+                            <boInsert>1</boInsert>
+                        </WebServService___GrabaEnvio>
+                    </soap:Body>
+                </soap:Envelope>
+[Wed, 13 Jun 2012 17:24:22 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS RESPUESTA REALIZAR PEDIDO
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HNS="http://tempuri.org/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tempuri.org/"><SOAP-ENV:Header><ROClientIDHeader SOAP-ENV:mustUnderstand="0" xmlns="http://tempuri.org/"><ID>{C4DE32D3-6F61-4CE9-988D-20561D634CD2}</ID></ROClientIDHeader></SOAP-ENV:Header><SOAP-ENV:Body xmlns:ro="http://tempuri.org/"><SOAP-ENV:Fault><faultcode>EROException</faultcode><faultstring>The value "-1" for parameter "boDesSMS" of "Boolean" type is invalid</faultstring><detail><v1:ROException/></detail></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+[Wed, 13 Jun 2012 17:24:22 +0200] PrestaShop ver:1.4.5.1 -> ERROR: TIPSA ERROR : limpiarNumTrack
+[Wed, 13 Jun 2012 17:24:22 +0200] PrestaShop ver:1.4.5.1 -> ERROR: NUMERO DE ALBARAN = 
+[Wed, 13 Jun 2012 17:24:22 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS PETICION DE ETIQUETA 
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HNS="http://tempuri.org/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tempuri.org/"><SOAP-ENV:Header><ROClientIDHeader SOAP-ENV:mustUnderstand="0" xmlns="http://tempuri.org/"><ID>{C4DE32D3-6F61-4CE9-988D-20561D634CD2}</ID></ROClientIDHeader></SOAP-ENV:Header><SOAP-ENV:Body xmlns:ro="http://tempuri.org/"><SOAP-ENV:Fault><faultcode>EROException</faultcode><faultstring>The value "-1" for parameter "boDesSMS" of "Boolean" type is invalid</faultstring><detail><v1:ROException/></detail></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+[Wed, 13 Jun 2012 17:24:22 +0200] PrestaShop ver:1.4.5.1 -> INFO: 
+WS RESPUESTA CON ETIQUETA
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HNS="http://tempuri.org/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tempuri.org/"><SOAP-ENV:Header><ROClientIDHeader SOAP-ENV:mustUnderstand="0" xmlns="urn:DinaPaq"><ID>{C4DE32D3-6F61-4CE9-988D-20561D634CD2}</ID></ROClientIDHeader></SOAP-ENV:Header><SOAP-ENV:Body xmlns:ro="http://tempuri.org/"><v1:WebServService___ConsEtiquetaEnvioResponse><v1:strEtiqueta></v1:strEtiqueta></v1:WebServService___ConsEtiquetaEnvioResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+[Wed, 13 Jun 2012 17:24:22 +0200] PrestaShop ver:1.4.5.1 -> ERROR: IMPOSIBLE escribir EL ARCHIVO ../modules/tipsacarrier/PDF/etiqueta_15.pdf 
+
+

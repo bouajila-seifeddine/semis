@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>deluxeadultcontent</name>
+	<displayName><![CDATA[Aviso contenido para adultos]]></displayName>
+	<version><![CDATA[1.5.0]]></version>
+	<description><![CDATA[Configura un mensaje de alerta en tu tienda con contenido para adultos.]]></description>
+	<author><![CDATA[innovadeluxe]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

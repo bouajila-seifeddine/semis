@@ -1,0 +1,33 @@
+#listpage_content div.tree_top {
+  padding: 5px 0 0 27px;
+}
+#listpage_content div.tree_top a:before {
+  content: "\f015";
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  color: #333333;
+}
+#listpage_content div.tree_top a:hover:before {
+  color: #515151;
+}
+#listpage_content ul.tree {
+  padding-left: 24px;
+  list-style: none;
+}
+#listpage_content ul.tree ul {
+  list-style: none;
+}
+#listpage_content ul.tree li {
+  margin: 0 0 0 21px;
+  padding: 5px 0 0 33px;
+  border-left: 1px solid #d6d4d4;
+  background: url(../img/sitemap-horizontal.png) no-repeat left 15px transparent;
+}
+#listpage_content ul.tree > li {
+  margin: 0 0 0 11px;
+}
+#listpage_content ul.tree li.last {
+  border: medium none;
+  background: url(../img/sitemap-last.png) no-repeat 0px -4px transparent;
+}

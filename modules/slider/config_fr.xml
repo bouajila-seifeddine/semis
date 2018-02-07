@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>slider</name>
+	<displayName><![CDATA[Slider]]></displayName>
+	<version><![CDATA[2.0]]></version>
+	<description><![CDATA[Ajoutez un slider &agrave; votre homepage et g&eacute;rez le facilement]]></description>
+	<author><![CDATA[&eacute;bew&egrave; - ebewe.net]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Êtes-vous sûr de vouloir désinstaller?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

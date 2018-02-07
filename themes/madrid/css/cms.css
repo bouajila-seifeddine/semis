@@ -1,0 +1,27 @@
+/**************************************************************
+					CMS Pages Styles
+***************************************************************/
+#cms #center_column .block-cms {
+  padding-bottom: 20px; }
+
+#cms #center_column .list-1 li {
+  padding: 4px 0 6px 0;
+  font-weight: bold;
+  color: #46a74e;
+  border-top: 1px solid #d6d4d4; }
+  #cms #center_column .list-1 li:first-child {
+    border: none; }
+  #cms #center_column .list-1 li em {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 15px;
+    vertical-align: -2px; }
+#cms #center_column img {
+  margin: 4px 0 17px;
+  max-width: 100%;
+  height: auto; }
+
+  .llink-faq a{
+    font-size: 20px;
+    color:white;
+  }

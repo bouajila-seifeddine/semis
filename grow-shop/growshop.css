@@ -1,0 +1,13 @@
+body.index .center_column {
+    min-width: 100%;
+}
+
+div#center_column {
+    left: 0%;
+}
+h1.titulo-categoria {
+    color: #7bbd42;
+    text-transform: capitalize;
+    font: 190% sans-serif;
+ 
+}

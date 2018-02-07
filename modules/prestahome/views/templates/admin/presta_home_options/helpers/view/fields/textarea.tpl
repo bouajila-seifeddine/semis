@@ -1,0 +1,1 @@
+<textarea name="fields[{$field.id|escape:'UTF-8'}]" id="{$field.id|escape:'UTF-8'}" class="autoload_rte rte">{$options[$field.id]|escape:'UTF-8'}</textarea>

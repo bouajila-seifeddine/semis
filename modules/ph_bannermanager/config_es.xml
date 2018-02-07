@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>ph_bannermanager</name>
+	<displayName><![CDATA[Banner Manager]]></displayName>
+	<version><![CDATA[1.0.3]]></version>
+	<description><![CDATA[Manager banners in your store]]></description>
+	<author><![CDATA[www.PrestaHome.com]]></author>
+	<tab><![CDATA[advertising_marketing]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

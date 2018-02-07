@@ -1,0 +1,96 @@
+@import "../bootstrap/less/variables.less";
+@import "variables.less";
+
+#stores #map {
+  width: 100%;
+  height: 447px;
+  margin-bottom: 26px; }
+
+#stores .store-content {
+  padding-bottom: 30px; 
+
+  .form-control {
+    height: 48px;
+    border: 2px solid #dfdfdf;
+    box-shadow: none;
+    padding: 6px 15px;
+    font-size: 13px;
+    color: #697080;
+    transition: border-color 0.2s ease 0s;
+    .border-radius(0);
+
+    &:focus {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+  }
+
+  textarea.form-control {
+    min-height: 100px;
+    max-height: 300px;
+  }
+
+  .selectBox-dropdown.selectBox-menuShowing {
+    border-color: @third-color;
+    color: #f6f6f6;
+  }
+
+  .selectBox-dropdown .selectBox-arrow:before {
+    top: 11px;
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 400;
+    color: #697080;
+    margin-bottom: 8px;
+
+    sup {
+      color: @primary-color;
+    }
+  }
+
+  .radius-input, .address-input {
+    margin-bottom: 10px;
+  }
+}
+#stores .store-content-select {
+  margin-bottom: 20px;
+}
+#stores .store-content-select .selector {
+  visibility: hidden;
+  display: none; }
+#stores .store-content-select.active {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid #d6d4d4; }
+  #stores .store-content-select.active .selector {
+    visibility: visible;
+    display: block; }
+#stores .store-title {
+  margin-bottom: 16px; }
+#stores label {
+  font-weight: normal;
+  color: #777777; }
+#stores #stores_loader {
+  display: none;
+  margin-left: 5px; }
+#stores #locationSelect {
+  max-width: 356px;
+  visibility: hidden; }
+#stores #stores-table {
+  display: none; }
+  #stores #stores-table tbody td {
+    padding: 20px; }
+    #stores #stores-table tbody td.num {
+      background: #fbfbfb;
+      width: 46px; }
+    #stores #stores-table tbody td.name span {
+      padding-left: 15px; }
+    @media (max-width: 767px) {
+      #stores #stores-table tbody td.name img {
+        display: none; } }
+
+.store-image img {
+  width: 100%;
+  min-width: 100px; }

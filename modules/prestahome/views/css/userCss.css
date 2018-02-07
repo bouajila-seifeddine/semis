@@ -1,0 +1,35 @@
+/* Custom CSS */
+header.top .pattern {
+background-image: url(../img/upload/header_background_image_shop_1.jpg);
+height: 163px;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center top;
+}
+
+body div.simpleblog-recent {
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: inherit;
+background-position: left top;
+}
+
+@media (min-width: 1400px) {
+.container {
+width: 1400px;
+}
+}
+
+#search_block_top i {
+font-size: 24px;
+}
+
+#thumbs_list_frame .item a .hover_bg, #view_full_size .hover_bg {
+background: rgba(114,194,19, 0.8);
+}
+
+.product_list_ph .product .info {
+background: rgba(114,194,19, 0.8);
+}
+

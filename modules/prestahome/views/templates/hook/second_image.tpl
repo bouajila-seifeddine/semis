@@ -1,0 +1,3 @@
+{if isset($second_image) && is_array($second_image)}
+	<img class="replace-2x img-responsive second-image" src="{$link->getImageLink($product.link_rewrite, $second_image.id_image, 'home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" title="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if}   />
+{/if}

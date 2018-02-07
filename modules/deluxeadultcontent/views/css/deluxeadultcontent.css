@@ -1,0 +1,136 @@
+/**
+* 2007-2016 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* @author    Innovadeluxe SL
+* @copyright 2016 Innovadeluxe SL
+
+* @license   INNOVADELUXE
+*/
+#deluxe_adult_content{
+	z-index: 9999999999999999999;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	color: #CCCCCC;
+	padding: 1%;
+	position: fixed;
+	/*background: transparent url(../img/trans.png) repeat top left;*/
+}
+div#adultcontent {
+	width:auto;
+	height:auto;
+	min-width:20%;
+	min-height:10%;
+}
+div#adultcontent div#center {
+	z-index: 9999999999999999;
+	width: 600px;
+	height:auto;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #7BBD42;
+	text-align: center;
+	color: #CCCCCC;
+	line-height: 100%;
+	padding:15px;
+	border: 10px solid #2c313b;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	margin:10% auto 0 auto;
+}
+
+div#adultcontent div#center p#content_desc{
+	clear:both;
+	width:auto;
+	height:auto;
+	font-size:160%;
+	line-height: 160%;
+}
+
+div#adultcontent span#text{
+	color: #999;
+}
+
+#deluxe_adult_content div#adultcontent div#buttons{
+	font-size: 160%;
+	text-decoration: none;
+	clear:both;
+	width:100%;
+	height:100%;
+	margin-bottom: 3%;
+}
+
+a#adultcontentOK{
+	background-color: #2A9646;
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	float: right;
+	padding: 5px 7px;
+}
+
+a#adultcontentOK:hover{
+	background-color: #454545;
+}
+
+a#adultcontentnotOK{
+	background-color: red;
+	float:left;
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	padding: 5px 7px;
+}
+
+a#adultcontentnotOK:hover{
+	background-color: #454545;
+}
+
+#wrong{
+    height: 100%;
+    width: auto;
+}
+
+	#ok{
+	margin-bottom: 5%;
+	margin-top: 5%;
+	float: left;
+	font-size: large;
+	width: 49%;
+	height: 30px !important;
+	}
+	#warning{
+	margin-bottom: 5%;
+	float: right;
+	font-size: large;
+	width: 49%;
+	margin-top: 5%;
+	height: 30px !important;
+	}
+			.logo_aviso_movil {
+	display:none;
+	}
+
+@media (max-width: 767px) {
+	div#adultcontent div#center {
+	width: 90%;
+	margin:10% auto 0 auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo_aviso {
+	display:none;
+	}
+		.logo_aviso_movil {
+	display:unset;
+	}
+}
+
+#center h5{
+	font-size: 22px;
+}
+
+#center p{
+	font-size: 14px;
+}
