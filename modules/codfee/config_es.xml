@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>codfee</name>
+	<displayName><![CDATA[Pago contra reembolso con comisi&oacute;n]]></displayName>
+	<version><![CDATA[1.92.0]]></version>
+	<description><![CDATA[Acepte pagos contra reembolso aplicando una comisi&oacute;n.]]></description>
+	<author><![CDATA[idnovate.com]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

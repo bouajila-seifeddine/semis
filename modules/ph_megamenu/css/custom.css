@@ -1,0 +1,5 @@
+/** custom CSS for PrestaHomeMegaMenu **/
+#ph_megamenu_wrapper #ph_megamenu > li > a {
+    font-size: 14px;
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name><![CDATA[Madrid]]></name>
+	<version><![CDATA[1.1.0]]></version>
+	<description><![CDATA[PrestaShop Theme + Blog]]></description>
+	<author><![CDATA[www.prestahome.com]]></author>
+	<last_update><![CDATA[August 28, 2015]]></last_update>
+	<schemes><![CDATA[default,blue,green,yellow,grey]]></schemes>
+	<schemes_colors><![CDATA[#ff4178,#3e79d5,#7bbd42,#f7c3228,#cfcfcf]]></schemes_colors>
+	<auto_updates>1</auto_updates>
+</module>

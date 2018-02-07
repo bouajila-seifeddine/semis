@@ -1,0 +1,1 @@
+<input type="text" name="fields[{$field.id|escape:'UTF-8'}]" id="{$field.id|escape:'UTF-8'}" value="{$options[$field.id]|escape:'UTF-8'}">

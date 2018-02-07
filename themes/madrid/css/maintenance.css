@@ -1,0 +1,84 @@
+body.maintenance {
+  background: #2c313b;
+}
+body.maintenance .arrow-notfound {
+  position: absolute;
+  background: #ff4178;
+  top: -220px;
+  left: -127px;
+  padding: 193px 209px 191px 175px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+body.maintenance .arrow-notfound i {
+  left: 54px;
+  position: relative;
+  top: 67px;
+  font-size: 260px;
+  color: #2c313b;
+  transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body.maintenance .arrow-notfound {
+    transform: scale(0.657, 0.621);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.maintenance .arrow-notfound {
+    transform: scale(0.657, 0.621);
+    left: -217px;
+    top: -272px;
+  }
+}
+body.maintenance h1 {
+  display: inline-block;
+  font-size: 60px;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #ff4178;
+  position: relative;
+  margin-bottom: 7px;
+  text-align: center;
+}
+body.maintenance h2,
+body.maintenance h3 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  font-size: 40px;
+}
+body.maintenance #message {
+  width: 50%;
+  margin: 0 auto;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

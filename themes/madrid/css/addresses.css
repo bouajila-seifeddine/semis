@@ -1,0 +1,18 @@
+#addresses #center_column p {
+  margin: 0 0 13px;
+}
+#addresses #center_column p.p-indent {
+  margin: 0 0 27px;
+}
+#addresses #center_column .main-page-indent {
+  margin-bottom: 20px;
+}
+#addresses .address li.address_update {
+  margin: 14px 0 6px 0;
+}
+#addresses .address li.address_update a {
+  margin: 0 10px 0 0;
+}
+#addresses .bloc_adresses .box {
+  overflow: hidden;
+}

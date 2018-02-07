@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `PREFIX_slider_slides`, `PREFIX_slider_slides_lang`;

@@ -1,0 +1,40 @@
+.bootstrap .list-action-enable.disabled {
+    border: 1px solid #cecece;
+    background-color: #ececec;
+    cursor: default;
+}
+
+#embed_code {
+    resize: vertical;
+    height: 110px;
+}
+
+form > .panel > h3{
+    text-transform: none !important;
+}
+
+table.ph_bannermanager td.field{
+    min-width: 200px;
+}
+
+table.ph_bannermanager td.no-action > .list-action-enable{
+    cursor: default;
+    opacity: 0.6;
+}
+
+table.ph_bannermanager tr.ui-sortable-placeholder{
+    height: 107px;
+}
+table.ph_bannermanager tr.ui-sortable-helper td{
+    visibility: hidden;
+}
+table.ph_bannermanager tr.ui-sortable-helper td:nth-child(1),
+table.ph_bannermanager tr.ui-sortable-helper td:nth-child(2),
+table.ph_bannermanager tr.ui-sortable-helper td:nth-child(3),
+table.ph_bannermanager tr.ui-sortable-helper td:nth-child(4){
+    visibility: visible;
+}
+
+.bootstrap select.selectHook {
+    width: 60%!important;
+}

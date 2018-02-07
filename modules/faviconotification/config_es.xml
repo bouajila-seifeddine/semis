@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>faviconotification</name>
+	<displayName><![CDATA[Notificaci&oacute;n pesta&ntilde;a navegador]]></displayName>
+	<version><![CDATA[1.0.6]]></version>
+	<description><![CDATA[Reduce el n&uacute;mero de carritos abandonados en tu tienda a&ntilde;adiendo directamente una notificaci&oacute;n a la pesta&ntilde;a del navegador de tus clientes.]]></description>
+	<author><![CDATA[Prestashop]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

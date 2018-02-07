@@ -1,0 +1,82 @@
+@import "../bootstrap/less/variables.less";
+@import "variables.less";
+
+body.maintenance {
+  background: @third-color;
+
+  .arrow-notfound {
+    position: absolute;
+    background: @primary-color;
+    top: -220px; left: -127px;
+    padding: 193px 209px 191px 175px;
+    .border-radius(50%);
+
+    i {
+      left: 54px;
+      position: relative;
+      top: 67px;
+      font-size: 260px;
+      color: @third-color;
+      transform: rotate(40deg);
+      -webkit-transform: rotate(40deg);
+      -moz-transform: rotate(40deg);
+      -o-transform: rotate(40deg);
+    }
+  }
+
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .arrow-notfound {
+      transform: scale(0.657, 0.621);
+    }
+  }
+
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .arrow-notfound {
+      transform: scale(0.657, 0.621);
+      left: -217px; top: -272px;
+    }
+  } 
+
+  h1 {
+    display: inline-block;
+    font-size: 60px;
+    font-family: @secondary-font;
+    color: @primary-color;
+    position: relative;
+    margin-bottom: 7px;
+    text-align: center;
+  }
+
+  h2, h3 {
+    font-family: @secondary-font;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+}
+
+  #message {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }

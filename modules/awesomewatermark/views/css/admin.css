@@ -1,0 +1,109 @@
+.defaultForm .form-group div[id*=images-thumbnails] img {
+    max-width: 150px;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.resizer-workspace {
+    background: #333;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.resizer-area {
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.resizer-area img {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.5), inset 0 0 0 2px rgba(255,255,255,.5);
+}
+
+.resizer-size {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ddd;
+    font-size: 14px;
+    text-align: center;
+}
+
+.resizer-padding {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aw-panel-heading-wrapper {
+    position: relative;
+}
+
+.aw-panel-heading-wrapper .aw-btn-toggle-panel {
+    position: absolute;
+    top: 3px;
+    right: -10px;
+    /*width: 24px;*/
+    height: 24px;
+    padding: 3px 10px 3px 30px;
+}
+
+.aw-panel-heading-wrapper .aw-btn-toggle-panel:before {
+    position: absolute;
+    font-family: "fontawesome";
+    font-size: 24px;
+    line-height: 24px;
+    top: 0;
+    left: 0;
+    width: 24px;
+    text-align: center;
+}
+
+.aw-panel-collapsed .aw-btn-toggle-panel:before {
+    content: "\f103";
+}
+
+.aw-panel-expanded .aw-btn-toggle-panel:before {
+    content: "\f102";
+}
+
+.defaultForm .form-wrapper { display: none; }
+.defaultForm .panel#fieldset_0 .form-wrapper { display: block; }
+.defaultForm .aw-panel-expanded .form-wrapper { display: block; }
+
+.panel.error {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483;
+    border-color: #f00 !important;
+}
+
+.panel.error .aw-panel-heading-wrapper .panel-heading {
+    color: #f00 !important;
+}
+
+.aw-panel-heading-wrapper .icon {
+    margin: 0 10px;
+    color: rgb(40, 145, 40);
+}
+
+#aw-regenerate-list tr.aw-waiting td {
+    background: #E0F7FA;
+}
+
+#aw-regenerate-list .table-striped>tbody>tr.aw-waiting:nth-child(odd)>td,
+#aw-regenerate-list .table-striped>tbody>tr.aw-waiting:nth-child(odd)>th {
+    background: #B2EBF2;
+}

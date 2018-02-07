@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>paseocenterbulkedition</name>
+	<displayName><![CDATA[Seo Center: Edici&oacute;n r&aacute;pida]]></displayName>
+	<version><![CDATA[1.1.1]]></version>
+	<description><![CDATA[Consigue las primeras posiciones en los b&uacute;scadores, editando de manera r&aacute;pida las p&aacute;ginas de productos, proveedores, fabricantes, cms y otras p&aacute;ginas de tu tienda, a&ntilde;adiendo etiquetas No Index, No Follow, marcados Schema.org, etiquetas Open Graph personalizadas, URL can&oacute;nica y m&aacute;s...]]></description>
+	<author><![CDATA[Pronimbo]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
