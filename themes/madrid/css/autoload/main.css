@@ -3430,7 +3430,11 @@ footer .container{
   }
  
 }
+<<<<<<< HEAD
 #headingOne2:hover, #headingOne17:hover, #headingOne18:hover, #headingOne1:hover, #headingOne3:hover, #headingOne4:hover, #headingOne5:hover, #headingOne6:hover, #headingOne7:hover , #headingOne8:hover , #headingOne9:hover, #headingOne10:hover, #headingOne11:hover, #headingOne13:hover ,#headingOne12:hover, #headingOne14:hover, #headingOne15:hover, #headingOne16:hover{
+=======
+#headingOne2:hover, #headingOne1:hover, #headingOne3:hover, #headingOne4:hover, #headingOne5:hover, #headingOne6:hover, #headingOne7:hover , #headingOne8:hover , #headingOne9:hover, #headingOne10:hover, #headingOne11:hover, #headingOne13:hover ,#headingOne12:hover, #headingOne14:hover, #headingOne15:hover, #headingOne16:hover{
+>>>>>>> a63c58a36b6ce36952607e749d124a1a2a03025d
 background-color:   #7BBD42;
 }
 
