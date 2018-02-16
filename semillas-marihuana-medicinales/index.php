@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE HTML>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es-es">
@@ -21,10 +21,10 @@
                     ?>
                   <meta charset="utf-8" />
                   <title>
-                     Grow Shop Online Posiblemente El Grow Más Barato De Internet
+                     Semillas de marihuana medicinales, aceites de CBD y métodos de extracción.
                   </title>
-                  <meta name="description" content="SLC tu GrowShop Online de confianza, Contamos con más de 3000 productos, somos los más económicos, compra lo mismo a mejor precio. El Grow Shop más barato de Internet." />
-                  <meta name="keywords" content="grow shop online, grow shop barato, grow shop, barato, grow, shop, precio, marihuana" />
+                  <meta name="description" content="En SemillaLowCost podrás encontrar las semillas de variedades de marihuana medicinales, aceites cbd, métodos de extracción... todo lo que necesitas saber sobre el cannabis medicinal lo encontrarás aquí." />
+                  <meta name="keywords" content="venta de semillas medicinales, semillas de marihuana medicinales, variedades de cannabis de uso medico, semillas de marijuana medicinal baratas" />
                   <meta name="generator" content="PrestaShop" />
                   <meta name="robots" content="index, follow" />
                   <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
@@ -32,8 +32,6 @@
                   <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1505304776" />
                   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1505304776" />
                   <link rel="stylesheet" href="v_315_d9b4d79373d0fbd4a064e37dd59f3597_all.css" type="text/css" media="all" />
-                 
-                 <link rel="stylesheet" href="ihover.css" type="text/css" media="all" />
                   <link rel="stylesheet" href="css/font-awesome.min.css">
                   <script type="text/javascript">
                      function toggleHidden(sel) {
@@ -56,6 +54,22 @@
                                         
 
                   }
+
+                  function toggledisplayarrow(id) {
+        
+                    var up = document.getElementById("arrow-down"+id);
+                    var down = document.getElementById("arrow-up"+id);
+                    if (up.style.display === "none") {
+                        up.style.display = "block";
+                    } else {
+                        up.style.display = "none";
+                    }
+                     if (down.style.display === "none") {
+                        down.style.display = "block";
+                    } else {
+                        down.style.display = "none";
+                    }
+                }
                   </script>
                   <style type="text/css">
                  .category-show {
@@ -85,7 +99,10 @@
                     margin-top: 0.5%;
                     background: rgb(29, 31, 37);
                      }
-
+                    i.fa.fa-arrow-down, .fa-arrow-up {
+                        float: right;
+                        font-size: 15px;
+                    }
                   .shopping_cart_mobile a.cart-contents>span {
                           
                      background: #7bbd42;
@@ -207,7 +224,7 @@
                    text-align: justify
                 }
             .cuadro-verde {
-                background: url(flecha-growshop.jpg);
+                
                 background-size: cover;
                 background-position: center;
                 padding: 20px
@@ -898,11 +915,11 @@
                                  <div class="layer_cart_product col-xs-12 col-md-6">
                                     <span class="cross" title="Cerrar Ventana">
                                     </span>
-                                    <h2>
+                                    <h6>
                                        <i class="icon icon-check">
                                        </i>
                                        Producto añadido correctamente a su carrito de la compra
-                                    </h2>
+                                    </h6>
                                     <div class="product-image-container layer_cart_img"></div>
                                     <div class="layer_cart_product_info">
                                        <span id="layer_cart_product_title" class="product-name">
@@ -924,14 +941,14 @@
                                     </div>
                                  </div>
                                  <div class="layer_cart_cart col-xs-12 col-md-6">
-                                    <h2>
+                                    <h6>
                                        <span class="ajax_cart_product_txt_s unvisible">
                                        Hay <span class="ajax_cart_quantity">
                                        0</span>
                                        artículos en su carrito. </span>
                                        <span class="ajax_cart_product_txt ">
                                        Hay 1 artículo en su carrito. </span>
-                                    </h2>
+                                    </h6>
                                     <div class="layer_cart_row">
                                        <strong class="dark">
                                        Total productos: (impuestos inc.) </strong>
@@ -1010,8 +1027,9 @@
                                        SEMILLAS REGULARES</span>
                                        </a>
                                     </li>
-                                    <li class="menu_link_15 ">
-                                       <a href="https://www.semillaslowcost.com/grow-shop/" title="GOWSHOP ONLINE" >
+                                    
+                                    <li class="menu_link_17 ">
+                                       <a href="https://www.semillaslowcost.com/grow-shop/" title="GROWSHOP ONLINE" >
                                        <span class="">
                                        GROW SHOP</span>
                                        </a>
@@ -1062,11 +1080,11 @@
                                           <i class="icon icon-truck">
                                           </i>
                                           </span>
-                                          <h3 class="main-color-txt">
+                                          <h4 class="main-color-txt">
                                              <strong>
                                              Envíos gratis</strong>
                                              + de 25€
-                                          </h3>
+                                          </h4>
                                           <p>
                                              Los artículos se entregan 24/48h después de haber completado el pedido.
                                           </p>
@@ -1078,10 +1096,10 @@
                                           <i class="icon icon-weixin">
                                           </i>
                                           </span>
-                                          <h3 class="main-color-txt">
+                                          <h4 class="main-color-txt">
                                              <strong>
                                              ¿Tienes dudas?</strong>
-                                          </h3>
+                                          </h4>
                                           <p>
                                              Si tienes alguna duda con el pedido o no encuentras lo que buscas, pregúntanos.
                                           </p>
@@ -1093,30 +1111,32 @@
                                           <i class="icon icon-credit-card">
                                           </i>
                                           </span>
-                                          <h3 class="main-color-txt">
+                                          <h4 class="main-color-txt">
                                              <strong>
                                              Pagos seguros</strong>
-                                          </h3>
+                                          </h4>
                                           <p>
                                              Pagos fáciles para nuestros cliente de forma totalmente segura.
                                           </p>
                                        </div>
                                     </div>
                                  </div>
-                                 <h1 class="titulo-categoria">POSIBLEMENTE EL GROW SHOP ONLINE MÁS BARATO DE ESPAÑA</h1>
+                                 <h1 class="titulo-categoria">SEMILLAS DE MARIHUANA MEDICINALES, CBD Y MÉTODOS DE EXTRACCIÓN MEDICINALES</h1>
                                  <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="link-collapse">
-                                                       <h4 class="panel-title">Información </h4>
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="link-collapse"  onclick="toggledisplayarrow(1);">
+                                                       <h4 class="panel-title">¿QUÉ ES LA MARIHUANA MEDICINAL? <i id="arrow-down1" class="fa fa-arrow-down" aria-hidden="true" style="display:none;"></i>
+                                    <i id="arrow-up1" class="fa fa-arrow-up" aria-hidden="true"></i></h4>
                                                </a>
                                           
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>El Grow Shop Semillas Low Cost, nace con la intención de hace llegar los productos para el cultivo de cannabis, así como las semillas, a todo tipo de bolsillos y con un solo clic. Nuestro grupo lo forman más de quince personas especializadas en el cultivo de marihuana y productos relacionados con el mismo. </p>
-                                    <p>Desde S.L.C, trabajamos día tras día para ofrecer los precios más competitivos del mercado. Tanto es así que nos atrevemos a autoproclamarnos como el Grow Shop Online más barato de España. Además, no solo ofertamos productos y semillas a precios reducidos, sino que también ponemos a disposición de nuestros clientes un servicio de asesoramiento completamente gratuito. Si eres un cultivador novel o simplemente quieres tener la opinión de expertos, no dudes en ponerte en contacto con nosotros a través de nuestro servicio telefónico de atención al cliente, o mediante nuestro correo electrónico. Para nosotros será un placer poner todo nuestro conocimiento y experiencia a disposición del cliente, asesorándole desde el primer momento, hasta el último. </p>
+                     <p>Como todos sabemos, la característica más importante de las plantas de cannabis o de marihuana es que están compuestas principalmente por más de 100 compuestos activos denominados cannabinoides, entre ellos, el THC y el CBD.  </p>
+                                    <p>El tetrahidrocannabinol (THC), es el principal elemento psicoactivo de la marihuana, se cree, que es el mecanismo que usa la planta como autodefensa contra los herbívoros. Suele provocar un efecto de euforia, bienestar y otras sensaciones físicas. Por otra parte tenemos el cannabidiol (CBD), este compuesto a diferencia del THC no tiene efectos psicoactivos, si no que provoca efectos sedantes y tiene la cualidad de bloquer las transmisiones nerviosas asociadas al dolor y al malestar. Por estas cualidades, el CBD es considerado como útil dentro del mundo farmacéutico y medicinal. </p>
+                                    <p>Hay centenares de variedades en el mundo de las semillas de marihuana medicinal, y dependiendo de su porcentaje de composición, de THC Y CBD, dichas variedades se podrán usar en un tratamiento o en otro. Más adelante explicaremos para qué enfermedades tiene un efecto positivo la marihuana medicinal y que variedad de semilla medicinal te conviene más dependiendo tus necesidades.</p>
                                           </div><div class="separador"></div>
                                        </div> </div>
 
@@ -1128,52 +1148,87 @@
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne2">
                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3" class="link-collapse">
-                                                      <h4 class="panel-title"> MÁS SOBRE NUESTRA WEB
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3" class="link-collapse"  onclick="toggledisplayarrow(2);">
+                                                      <h4 class="panel-title"> ¿CBD o THC PARA EL USO MEDICINAL Y TERAPÉUTICO DEL CANNABIS? <i id="arrow-down2" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up2" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i>
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>Nuestra web, Semillas Low Cost.com, no sirve solo para poder comprobar los artículos que ofertamos, sus respectivos precios y descripciones, sino que también es una fuente fehaciente de información sintetizada y contrastada.  En el blog de S.L.C encontrarás todo el contenido y la información necesaria para convertirte en un cultivador de primera. Nuestro blog y los artículos que en él publicamos están actualizados y tratan una gran cantidad de temas variados, desde cómo producir cannabis mediante diversos sistemas de cultivo, hasta como hacer pasteles o cualquier tipo de producto cannábico. Además, las descripciones de las semillas, al igual que las de los productos, son muy extensas y aportan al cultivador una destacada cantidad de información. </p>
-                                    <p>Por si todo esto fuera poco, también se nos puede seguir a través de nuestro canal de YouTube, FaceBook, Twitter, Google Plus e Instagram. Mediante todas estas plataformas el cliente tiene la posibilidad de ponerse en contacto con nosotros y resolver cualquier tipo de duda.  </p></div><div class="separador">
-                                          </div>
-                                       </div></div>
+                     <p>  En la industria farmacéutica, debería ser una prioridad el encontrar medicamentos sin apenas efectos adversos pero con muchas virtudes terapéuticas, y el CBD es uno de ellos. Además, por sí solo no posee ningún efecto psicoactivo o alucinógeno. Dicha característica lo convierten en el elemento cannabinoide más estudiado por científicos y médicos de todo el mundo, además de sus múltiples posibles usos. Por ejemplo, en el mundo de la medicina y de los medicamentos es muy habitual el uso de sustancias sedantes e inhibidoras del dolor, por lo tanto las variedades de cannabis medicinal con un porcentaje más alto en CBD serán las que más utilidad puedan tener en este campo. Aunque el efecto sedante es muy importante, el CBD tiene más efectos positivos que pueden ser usados en terapias y tratamientos contra algunas enfermedades. Por ejemplo, puede servir como relajante muscular, antidepresivo, control del estrés, propiedades anticonvulsivas y muchas más cualidades que iremos mencionando. </p>
 
-                                   
-                                 
-                              
-                                 <br>
-                                 
+                                    <p>Pero aunque el CBD sea el componenete más estudiado y aceptado en el mundo de la medicina, no debemos olvidarnos de los beneficios médicos del THC en tratamientos y terapias médicas. Por ejemplo hay estudios que han sugerido un efecto de anticolinesterasal del THC, esta cualidad se podría asociar con tratamientos para el Alzheimer y para la miastenia gravis, una enfermedad neuromuscular que provoca cansancio y pérdida de fuerzas. Además el THC tiene propiedades antieméticas para reducir los vómitos y náuseas. Es indicado para aumentar el apetito, por lo tanto es efectivo en la lucha contra la anorexia y la falta de hambre provocada por multitud de enfermedades graves y sus tratamientos médicos. Además es capaz de reducir la agresividad presente en algunos individuos.  </p></div><div class="separador">
+                                          </div>
+                                       </div></div><br/>
+
+          
                                    <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne3">
+                                    <div class="panel-heading" role="tab" id="headingOne30">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4" class="link-collapse">
-                                                     <h4 class="panel-title"> ¿PORQUÉ ELEGIR NUESTRO GROW SHOP? 
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne31" aria-expanded="true" aria-controls="collapseOne31" class="link-collapse"  onclick="toggledisplayarrow(3);">
+                                                     <h4 class="panel-title"> ESTUDIOS SOBRE EL USO DE LA MARIHUANA EN LA MEDICINA <i id="arrow-down3" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up3" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i>
                                                </h4></a>
                                           
                                    </div><!-- .panel-heading -->
-                                    <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3" aria-expanded="true" style="">
+                                    <div id="collapseOne31" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne30" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>Como hemos señalado con anterioridad, existen diversas características que hacen del Grow Shop de SemillasLowCost uno de los más baratos e interesantes del panorama cannábico. Pero si hay tres características principales que nos hacen marcar la diferencia respecto al resto de Grow Shops, esas son: nuestro servicio de atención al cliente y post venta, los precios reducidos y la calidad de los productos.  </p>
-                                    <p>En S.L.C somos de las pocas empresas que trabajan directamente con los bancos, garantizando al cliente las mejores genéticas y renovando el stock continuamente. El hecho de que renovemos el stock de forma continuada resulta de especial interés para nuestros clientes, ya que de este modo evitamos la venta de semillas que han estado mucho tiempo en una nevera y que, por tanto, puedan verse afectadas negativamente. </p>
-                                    <p>De hecho, ésta es una de las principales causas de que las semillas fallen. Además, todas nuestras semillas pasan por exhaustivos controles de calidad que prácticamente aseguran su correcto desarrollo. Y en el caso de que esto no fuese así, tenemos contacto directo con los bancos para presentar reclamaciones y, si el banco en cuestión lo cree conveniente y oportuno, te enviaremos el producto otra vez. Esto suele ser así, a no ser que el problema venga ocasionado por una negligencia del consumidor, o lo que es lo mismo, que haya hecho algo que está contraindicado en las instrucciones de uso. </p>
-                                    <p>Estas son las tres características que nos hacen destacar, pero no las únicas. Otros servicios que nos hacen ser tu mejor opción a la hora de escoger Grow Shop, son nuestro servicio de atención al cliente 24 horas, la facilidad en los pagos, las entregas de pedidos en 24h, y el mantenimiento de las semillas en neveras con 10 Cº y 12% humedad.</p>
+                                     <p>El cannabis terapéutico es un campo que actualmente se encuentra en plena fase de desarrollo y que constituye un interesante objeto de estudio para muchos científicos debido al gran potencial medicinal que se le atribuye a dicha planta y a los cannabinoides que contiene. Cada vez son más las empresas y los bancos de semillas de marihuana interesados en investigar los efectos terapéuticos del cannabis. La industria relacionada con la marihuana terapéutica, así como su aceptación social, crecen año tras año.</p>
+                                    <p>Una parte importantísima de los actuales avances científicos en dicho campo están atribuidos al científico Raphael Mechoulam, que mediante sus múltiples experimentos y estudios sobre los efectos de los cannnabinoides sobre el organismo humano, nos ha aportado a todos una valiosa información sobre las propiedades medicinales de la marihuana. </p>                                
+                                    <p>En general, los avances de dicho profesor en el campo del cannabis son amplios, múltiples y relevantes.  Existen estudios desarrollados en todo el planeta, algunos ejemplos son: "Los productos de Cannabis sativa: situación actual y perspectiva en medicina", "Uso de los cannabinoides a través de la historia", "Uso de hierbas medicinales en mujeres gestantes y en lactancia en un hospital universitario de Bogotá", "Utilidad terapéutica del cannabis y derivados" o "Hacia el futuro del cannabis como medicamento".</p>
+
+                                          </div><div class="separador">
+                                          </div>
+                                       </div></div> <br/>
+
+                                                                      
+                                
+                                   <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne31">
+                                         
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne32" aria-expanded="true" aria-controls="collapseOne32" class="link-collapse"  onclick="toggledisplayarrow(4);">
+                                                     <h4 class="panel-title"> ¿QUÉ ENFERMEDADES SE PUEDEN TRATAR CON MARIHUANA? <i id="arrow-down4" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up4" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i>
+                                               </h4></a>
+                                          
+                                   </div><!-- .panel-heading -->
+                                    <div id="collapseOne32" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne31" aria-expanded="true" style="">
+                                         <div class="panel-body">
+                                    <p>A continuación, se analizan algunas de las enfermedades y dolores que se pueden tratar o paliar consumiendo marihuana medicinal.</p>
+                                    <br/>
+                                    <p><b>Epilepsia o enfermedades que provocan convulsiones:</b></p>
+                                    <p>Está comprobado que el consumo de marihuana de modo terapéutico reduce el número de convulsiones y la intensidad de las mismas. Los estudios indican que hasta un 69% de los pacientes pueden disminuir la frecuencia e intensidad de las convulsiones, y que hasta un 2% de los enfermos  no volverán a tener crisis convulsivas. Como todo tratamiento médico el consumo de marihuana medicinal tiene efectos secundarios, debemos mencionar que gran parte de los enfermos que siguieron el tratamiento sufrieron somnolencia y cansancio, y que en algunos de ellos hasta provocó diarréa. De todas formas solo tres de cada cien pacientes abandonó el estudio por culpa de los efectos secundarios nombrados.</p>
+                                    <p>Esto es sólo un ejemplo ya que se han realizado múltitud de estudios sobre los efectos del cannabis terapéutico en pacientes que sufren algún tipo de convulsión debido a su enfermedad.</p>
+                                    <br/>
+                                    <p><b>Fibromialgia:</b></p>
+                                    <p>Enfermedad conocida por sus contínuos y persistentes dolores de músculos y huesos de origen desconocido, además los enfermos de fibromialgia suelen tener sensación de fatiga, problemas de memoría, somnolencia etc....</p>
+                                    <p>En la actualidad no existe cura para la fibromialgia, eso sí, existen diversos tratamientos destinados a reducir los dolores y el malestar. Los estudios sobre los efectos de la marihuana terapéutica en pacientes con esta enfermedad indican que los que consumen marihuana de manera terapéutica logran una reducción importante del dolor, una mayor rigidez corporal y lo más importante, sensación de bienestar general que ayude a sobre llevar esta enfermedad.</p>
+                                    <br/>
+                                    <p><b>Esclerosis múltiple o mielopatía:</b></p>
+                                    <p>Esta patología genera lesiones desmielinizantes, crónicas y neurodegenerativas en nuestro sistema nervioso central, y tiene consecuencias en la corriente de información que va desde el cerebro a todo nuestro organismo. Hoy en día aún no se conocen las causas que originan la esclerosis. Los síntomas serán completamente diferentes dependiendo del paciente y de la porción del sistema nervioso que esté afectada. Los síntomas que sufren los pacientes de esclerosis se dividen en dos: síntomas psíquicos como los cambios de humor y la depresión o la ansiedad; y los síntomas físicos como los espasmos, la fatiga o el cansancio, dolores y sensación de debilidad.</p>
+                                     <br/>
+                                    <p><b>Otras enfermedades:</b></p>
+                                    <p>Como han demostrado algunos estudios, todos estos síntomas mencionados con anterioridad son paliados gracias al consumo de cannabis o marihuana medicinal con altos niveles de CBD. El estudio analiza el efecto del consumo de cannabis a través de diferentes sistemas (fumado, ingerido vía oral, vía oromucosa etc..). Además, también existen estudios que tratan de esclarecer sus posibles efectos en pacientes que sufren de sida/VIH, alzheimer, artritis,asma, dolores crónicos, dolores del síndrome premenstrual, enfermedad de Crohn, glaucomas, migrañas, disminución del crecimiento de tumores y ayuda a calmar el síndrome de Tourette.
+                                    Además de todas estas enfermedades que se pueden paliar con el uso de la marihuana medicinal, existes multitud de enfermedades en donde el consumo de cannabis pueda servir de tratamiento, eso sí, desde SLC recomendamos que antes e empezar un tratamiento relacionado con el cannabis se consulte a los especialistas de la salud.  </p>
+                                    <br/>
                                           </div><div class="separador">
                                           </div>
                                        </div></div> <br/>
  <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne4">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5" class="link-collapse">
-                                                  <h4 class="panel-title">    NUESTROS PRODUCTOS
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5" class="link-collapse"  onclick="toggledisplayarrow(5);">
+                                                  <h4 class="panel-title">   ¿SATIVA O INDICA? ¿QUÉ VARIEDAD DE CANNABIS ME CONVIENE MÁS PARA MI ENFERMEDAD?  <i id="arrow-down5" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up5" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i>
                                                </h4></a>
                                           
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne4" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>Grow Shop S.L.C oferta todo tipo de productos, desde semillas a cualquier artículo que pueda ser necesario para el cultivo de vegetales. En cuanto a semillas, destacar que ofertamos cualquier variedad de cualquiera de los bancos más reputados. Es decir, si estás interesado en hacerte con alguna variedad concreta de algún banco en cuestión, seguro que ésta se encuentra entre los 32 bancos de semillas con los que trabajamos; ya sea feminizada, regular o auto-floreciente. </p>
-                                    <p>Por otro lado, dentro de nuestras categorías encontrarás una amplia y variada cantidad de productos agrícolas de todo tipo. Si buscas algún artículo relacionado con la jardinería técnica, en nuestra web podrás adquirir cualquier tipo de sustrato, fertilizante, armarios de cultivo, herramientas, instrumentos de medición, etc. </p>
+                                    <p>La marihuana contiene diversos cannabinoides y sus efectos irán en función de las proporciones de los mismos. Los efectos terapéuticos van ligados a un elevado nivel de CBD, mientras que los efectos más psicoactivos son producidos por los niveles elevados de THC, los dos cannabinoides principales de la marihuana. En definitiva, una variedad medicinal tiene que tener un elevado nivel de CBD.</p>
+                                    <p>Las indicas suelen tener un nivel elevado de THC, al igual que de CBD. Mientras que las del tipo sativa tiene un nivel elevado de THC, pero los niveles de CBD son muy bajos.  Por tanto, las variedades sativas nos harán sentir eufóricos, con un fuerte efecto cerebral, algo ideal para tratar las náuseas, la migraña, la depresión, dolores crónicos o estimular el apetito. </p>
+                                    <p>Por su parte, las variedades indicas son más relajantes y pueden causar somnolencia. Esto puede resultar positivo para evitar la ansiedad que puede provocar el consumo de variedades sativas. Además, también pueden ayudar con el insomnio o los dolores musculares. De todos modos, la mayoría de las cepas combinan genes de sativa y de indica, lo cual puede resultar beneficioso para el consumidor ya que suelen aunar lo mejor de cada genética. </p>
                                           </div><div class="separador">
                                           </div>
                                        </div></div>
@@ -1181,16 +1236,18 @@
                                         <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne5">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6" class="link-collapse"><h4 class="panel-title">
-                                                      SEMILLAS
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6" class="link-collapse"  onclick="toggledisplayarrow(6);"><h4 class="panel-title">
+                                                      SEMILLAS MARIHUANA MEDICINAL DE VARIEDADES INDICAS  <i id="arrow-down6" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up6" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i>
                                                 </h4></a>
                                          
                                    </div><!-- .panel-heading -->
                                    <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/13-semillas-feminizadas'" value="VER CATÁLOGO SEMILLAS"></div>
                                     <div id="collapseOne6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne5" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>Las semillas de marihuana feminizadas son aquellas que han sido manipuladas genéticamente para producir únicamente plantas hembras. La creación de semillas feminizadas supuso una revolución para el mundo del cultivo ya que la utilización de estas semillas permite a los cultivadores evitar el sexado de las plantas lo que constituye un gran ahorro de tiempo, dinero y espacio. Esta es la principal razón por las que este tipo de semillas ha tenido tan buena acogida en el mercado.</p>
-                                    <p>Las semillas feminizadas se producen cuando se revierte el sexo de una planta hembra para que ésta genere flores macho y con el polen de las flores poder fecundar otras plantas hembra que producirán las semillas feminizadas evitando en hermafroditismo en un 99,99% de los casos. ¡Aquí encontraras todos tipo de variedades feminizadas! ¡Las mas conocidas del mercado! ¡Semillas feminizadas de gran calidad al mejor precio! </p>
+                                    <p> En Semillas Low Cost ponemos a disposición de nuestros clientes semillas de marihuana medicinales baratas de las mejores variedades indicas de todo el mundo y de la mejor calidad. Recordemos que las variedades Indicas tienen un CBD alto y son las que su principal característica es su efecto narcótico y relajante. En nuestra web podrás encontrar las semillas de cannabis indico de los mejores y más prestigiosos bancos del mundo. Por ejemplo disponemos en stock de semillas de famosas variedades indicas como la BlueBerry del banco Dutch Pasion, la Matanus-k de Gea Seeds, Strawberry Amnesia de Dinafem, Prozac de Medical Seeds etc... </p>
+                                    <p>Nuestros expertos en semillas han realizado una selección de las mejores variedades de semillas de marihuana indicas de uso médico de los bancos de semillas más importantes del planeta:
+ </p>
                                           </div>
                                        </div></div>
                                         <br/>
@@ -1206,13 +1263,13 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/26-early-skunk-geaseeds.html" title="Early Skunk">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/890-thickbox_default/early-skunk-geaseeds.jpg" alt="Comprar Early Skunk" title="Comprar Early Skunk" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/738-matanus-k.html" title="Matanus-k de Gea Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/917-thickbox_default/matanus-k.jpg" alt="Comprar Matanus-k de Gea Seeds" title="Comprar Matanus-k de Gea Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/26-early-skunk-geaseeds.html" title="Early Skunk">
-                                                Early Skunk</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/738-matanus-k.html" title="Matanus-k de Gea Seeds">
+                                                Matanus-k Feminizada 1 semilla</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
@@ -1226,14 +1283,14 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <div id="content-img">
-                                             <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/713-auto-critical-geaseeds.html" title="Auto Critical">
-                                             <img itemprop="image" src="https://www.semillaslowcost.com/905-thickbox_default/auto-critical-geaseeds.jpg" alt="Comprar Auto Critical" title="Comprar Auto Critical" class="img-responsive first-image">
+                                             <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/2095-caramellate.html" title="Caramellate Feminizada de Gea Seeds">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/2982-thickbox_default/caramellate.jpg" alt="Comprar Caramellate Feminizada de Gea Seeds" title="Comprar Caramellate Feminizada de Gea Seeds" class="img-responsive first-image">
                                              </a>
                                           </div>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/713-auto-critical-geaseeds.html" title="Auto Critical">
-                                                Auto Critical</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/2095-caramellate.html" title="Caramellate Feminizada de Gea Seeds">
+                                                Caramellate Feminizada 1 semilla</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
@@ -1246,17 +1303,82 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/695-super-skunk-geaseeds.html" title="Super Skunk">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/894-thickbox_default/super-skunk-geaseeds.jpg" alt="Comprar Super Skunk"  title="Comprar Super Skunk"  class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/barney-s-farm-feminizadas/174-vanilla-kush.html" title="Vanilla Kush feminizada de Barneys Farm">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/991-thickbox_default/vanilla-kush.jpg" alt="Comprar Vanilla Kush feminizada de Barneys Farm"  title="Comprar Vanilla Kush feminizada de Barneys Farm"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/695-super-skunk-geaseeds.html" title="Super Skunk">
-                                                Super Skunk</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/barney-s-farm-feminizadas/174-vanilla-kush.html" title="Vanilla Kush feminizada de Barneys Farm">
+                                                Vanilla Kush 5 semillas</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                1€ </span>
+                                                33,20€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Fin row imagenes -->
+                                 <br/>
+                                 <br/>
+                                 <div class="row">
+                                    <!-- -inicio 3 imagenes -->
+                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/536-white-widow.html" title="White widow femenizada de Medical Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1163-thickbox_default/white-widow.jpg" alt="Comprar White widow femenizada de Medical Seeds" title="Comprar White widow femenizada de Medical Seeds" class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/536-white-widow.html" title="White widow femenizada de Medical Seeds">
+                                                White widow 3 semillas</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                18,68€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image imgsec">
+                                          <div class="img_hover"></div>
+                                          <div id="content-img">
+                                             <a itemprop="url" href="https://www.semillaslowcost.com/dutch-passion-feminizadas/132-blueberry.html" title="BlueBerry de Dutch Passion">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/1050-thickbox_default/blueberry.jpg" alt="Comprar BlueBerry de Dutch Passion" title="Comprar BlueBerry de Dutch Passion" class="img-responsive first-image">
+                                             </a>
+                                          </div>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/dutch-passion-feminizadas/132-blueberry.html" title="BlueBerry de Dutch Passion">
+                                                BlueBerry 3 semillas</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                26,56€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image imgsec">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/537-prozac.html" title="Prozac de Medical Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1162-thickbox_default/prozac.jpg" alt="Comprar Prozac de Medical Seeds"  title="Comprar Prozac de Medical Seeds"  class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/537-prozac.html" title="Prozac de Medical Seeds">
+                                                Prozac 3 semillas</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                21,16€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1269,17 +1391,17 @@
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne6">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne7" aria-expanded="true" aria-controls="collapseOne7" class="link-collapse"><h4 class="panel-title">
-                                                      ARMARIOS DE CULTIVO
-                                                </h4></a>
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne7" aria-expanded="true" aria-controls="collapseOne7" class="link-collapse"  onclick="toggledisplayarrow(7);"><h4 class="panel-title">
+                                    SEMILLAS MARIHUANA MEDICINAL DE VARIEDADES SATIVAS    <i id="arrow-down7" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up7" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i></h4></a>
                                          
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/93-armarios-de-cultivo'" value="VER CATÁLOGO DE ARMARIOS"></div>
+                                  <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/13-semillas-feminizadas'" value="VER CATÁLOGO SEMILLAS"></div>
                                     <div id="collapseOne7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne6" aria-expanded="true" style="">
                                          <div class="panel-body">
-                      <p>Desde armarios de cultivo para principiantes y económicos hasta armarios de cultivo para expertos, con las mejores calidades y acabados. En nuestro grow shop nos adaptamos a tus preferencias.</p>
-                                    <p>Dentro de esta categoría tendrás la posibilidad de comprar armarios de cultivos de las mejores marcas como por ejemplo Cultibox, Mammoth, Grow Tent …. Además, en nuestro catálogo podrás encontrar de todos los tamaños, colores y accesorios que más se ajusten a tus necesidades tanto económicas como de espacio que dispongas en el hogar.</p>
-                                    <p>Recuerda, uno de los primeros pasos a seguir para tener éxito en tu cultivo es escoger adecuadamente el ambiente donde se desarrollarán las plantas. Por lo tanto, comprar un armario de cultivo es la mejor opción para las plantaciones de interior. Con esto conseguimos que sea mucho más fácil controlar los factores externos que afectan a la calidad y producción de las plantas, como las temperaturas, humedad en el ambiente, plagas etc.</p>
+                   
+                                    <p>Además de semillas de variedades indicas terapéuticas, en el grow shop de SLC también tenemos stock de variedades médicas con predominancia sativas. Recordemos que las variedades sativas se caracterizan principalmente por su efecto psicótico y no tanto somnífero como las variedades indicas.</p>
+                                    <p>En cuanto a su apariencia física son ligeramente diferentes a las variedades indicas, por ejemplo sus internudos son más espaciados, lo que genera que habitualmente alcancen mucho mayor altura que las otras variedades. Además sus hojas son mucho más grandes y con las palmas de las hojas más estrechas. Eso sí los sabores y matices de estas variedades medicinales, por lo general, son más pronunciados que en sus hermanas las indicas. Aunque existe una variedad inmensa de especies sativas, Semillas Low Cost hace una selección de las mejores, aquí podrás adquirir las semillas de marihuana medicinal sativa más potentes del mercado.</p>
                                           </div>
                                        </div></div>
                                         <br/>
@@ -1297,17 +1419,17 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/mammoth/748-armario-mammoth-pro.html" title="Armario Mammoth Pro">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1589-thickbox_default/armario-mammoth-pro.jpg" alt="Comprar Armario Mammoth Pro" title="Comprar Armario Mammoth Pro" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/709-amnesia-geaseeds.html" title="Amnesia feminizada de Gea Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/904-thickbox_default/amnesia-geaseeds.jpg" alt="Comprar Amnesia feminizada de Gea Seeds" title="Comprar Amnesia feminizada de Gea Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/mammoth/748-armario-mammoth-pro.html" title="Armario Mammoth Pro">
-                                                Armario Mammoth Pro</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/709-amnesia-geaseeds.html" title="Amnesia feminizada de Gea Seeds">
+                                                Amnesia feminizada 1 semilla</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                532,96€ </span>
+                                                1€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1316,17 +1438,17 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/cultibox/744-armario-cultibox-light.html" title="Armario Light Silver de Cultibox">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1585-thickbox_default/armario-cultibox-light.jpg" alt="Venta de Armario Light Silver de Cultibox" title="Comprar Armario Light Silver de Cultibox" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/696-super-lemon-geaseeds.html" title="Lima Haze feminizada de Gea Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/895-thickbox_default/super-lemon-geaseeds.jpg" alt="Venta de Lima Haze feminizada de Gea Seeds" title="Comprar Lima Haze feminizada de Gea Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/cultibox/744-armario-cultibox-light.html" title="Armario Light Silver de Cultibox">
-                                                Armario Light Silver</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/696-super-lemon-geaseeds.html" title="Lima Haze feminizada de Gea Seeds">
+                                                Lima Haze feminizada 1 semilla</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                55,59€ </span>
+                                                1€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1335,17 +1457,79 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/cultibox/745-armario-cultibox-open.html" title="Armario Cultibox Open">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1586-thickbox_default/armario-cultibox-open.jpg" alt="Comprar Armario Cultibox Open" title="Comprar Armario Cultibox Open" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/dinafem-autoflorecientes/225-sour-diesel-autofloreciente.html" title="Sour Diesel Autofloreciente de Dinafem">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1429-thickbox_default/sour-diesel-autofloreciente.jpg" alt="Comprar Sour Diesel Autofloreciente de Dinafem" title="Comprar Sour Diesel Autofloreciente de Dinafem" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/cultibox/745-armario-cultibox-open.html" title="Armario Cultibox Open">
-                                                Armario Cultibox Open</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/dinafem-autoflorecientes/225-sour-diesel-autofloreciente.html" title="Sour Diesel Autofloreciente de Dinafem">
+                                                Sour Diesel Autofloreciente 1 semilla</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                90,82€ </span>
+                                                 7,88€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Fin row imagenes -->
+                                 <br/>
+                                  <div class="row">
+                                    <!-- -inicio 3 imagenes -->
+                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/699-m8-el-caliz-geaseeds.html" title="M8 feminizada de Gea Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/898-thickbox_default/m8-el-caliz-geaseeds.jpg" alt="Comprar M8 feminizada de Gea Seeds" title="Comprar M8 feminizada de Gea Seeds" class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/699-m8-el-caliz-geaseeds.html" title="M8 feminizada de Gea Seeds">
+                                                M8 feminizada 1 semilla</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                1€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image imgsec">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/buddha-seeds-feminizadas/111-pulsar.html" title="Pulsar feminizada de Buddha Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/994-thickbox_default/pulsar.jpg" alt="Comprar Pulsar feminizada de Buddha Seeds" title="Comprar Pulsar feminizada de Buddha Seeds" class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/buddha-seeds-feminizadas/111-pulsar.html" title="Pulsar feminizada de Buddha Seeds">
+                                                Pulsar fem. 3 semillas</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                17,25€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image imgsec">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/serious-seeds-feminizadas/566-ak-47-marihuana.html" title="Ak 47 feminizadas de Serious Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1212-thickbox_default/ak-47-marihuana.jpg" alt="Comprar Ak 47 feminizadas de Serious Seeds" title="Comprar Ak 47 feminizadas de Serious Seeds" class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/serious-seeds-feminizadas/566-ak-47-marihuana.html" title="Ak 47 feminizadas de Serious Seeds">
+                                                Ak 47 fem. 6 semillas</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                58,93€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1356,29 +1540,29 @@
                                  <br/>
                                       <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
                                  <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne7">
+                                  <div class="panel-heading category-head" role="tab" id="headingOne18">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne8" aria-expanded="true" aria-controls="collapseOne8" class="link-collapse"><h4 class="panel-title">
-                                                      ILUMINACIÓN
-                                               </h4></a>
-                                          
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne19" aria-expanded="true" aria-controls="collapseOne19" class="link-collapse" onclick="toggledisplayarrow(8);"><h4 class="panel-title">
+                                    EXTRACCIÓN DE CBD, BHO Y POLEN PARA USO MÉDICO    <i id="arrow-down8" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up8" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i> </h4>                         
+                                   </a>
+                                         
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/94-iluminaci%C3%B3n'" value="VER CATÁLOGO ILUMINACIÓN"></div>
-                                    <div id="collapseOne8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne7" aria-expanded="true" style="">
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/100-bho-y-extracciones'" value="VER CATÁLOGO EXTRACCIONES"></div>
+                                    <div id="collapseOne19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne18" aria-expanded="true" style="">
                                          <div class="panel-body">
-                      <p>Los cultivos Indoor o de interior han sido posible debido al uso de sistemas de iluminación. Estos aportan a las plantas la luz y energía necesaria para que puedan vivir, alimentarse y crecer en condiciones. </p>
-                                    <p>Desde SLC grow shop sabemos la importancia de un buen sistema de iluminación para nuestros cultivos. Por eso ponemos a disposición de nuestros clientes los sistemas de luz con mejor calidad y precio de todo el mercado. </p>
-                                    <p>En esta sección encontraremos bombillas de todas las potencias y características, balastros, fluorescentes, es decir sistemas de iluminación de bajo consumo, reflectores para aprovechar al máximo la luz y en todos los rincones de la planta etc.</p>
-                                    <p>Además, incluimos a la venta kits o equipos enteros de iluminación, para que puedas instalar un sistema completo y efectivo, sin olvidar ningún componente. Si tiene alguna duda a la hora de escoger el sistema de iluminación que más de adapte a su cultivo, no dude en preguntar a nuestro servicio de atención al cliente o visitar nuestro blog.</p>
+                      <p>Aunque en nuestra tienda online ya disponemos de aceites CBD a la venta, también ofrecemos métodos de extracción de aceites y polen casero. Las extracciones son los procesos que se realizan para separar los compuestos de la marihuana de la materia vegetal y sustancias sobrantes. Hay muchos métodos de extracción, cada uno de ellos con sus inconvenientes y sus beneficios. Por ejemplo hay métodos más baratos y más caros o profesionales, diferentes métodos de extracción para distintos componentes del cannabis, métodos que proporcionan un material más puro o de calidad que otros etc... En SLC ofrecemos todos los métodos de extracción que existen en el mercado. Desde extracciones con Dimetil Ether, un gas mucho más limpio y puro que el butano, hasta extracciones con Rosin, agua y hielo, extracciones en seco etc...</p>
+                                    <p>Hay que tener en cuenta que hay métodos de extracción que no serán válidos si lo que buscamos es un componente completamente medicinal. Por ejemplo las extracciones con butano, disolventes etc.. suelen dejar pequeñas trazas de residuos químicos por lo que al no obtener un material de calidad y libre de impurezas no serán extracciones que puedan ser usadas en el campo farmacéutico. Aunque estos metodos de extracción son los más baratos, también son los más peligrosos. Los disolventes y gases usados son altmente infamables y si no usamos medidas de seguridad adecuadamente se puede producir accidentes graves. Hay que tener en cuenta que en muchas regiones la germinación de semillas de marihuana es ilegal, por lo tanto estos complementos sin psicoactivos y legales son muy demandados.</p>
+
                                           </div>
                                        </div></div>
                                         <br/>
+
 <div class="separador">
                                           </div>
 
-
                             </div>
-                                
+                               
                                  <br/>
                                  <div class="separador"></div>
                                  <br/>
@@ -1387,17 +1571,17 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1680-kit-iluminación-ipower-600w.html" title="Kit de Iluminación IPOWER Electrónico ">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2543-thickbox_default/kit-iluminación-ipower-600w.jpg" alt="Comprar Kit de Iluminación IPOWER Electrónico " title="Comprar Kit de Iluminación IPOWER Electrónico " class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-dimetil-ether/2047-maletin-dexso.html" title="Maletín de extracción DEXSO">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2898-thickbox_default/maletin-dexso.jpg" alt="Comprar Maletín de extracción DEXSO" title="Comprar Maletín de extracción DEXSO" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1680-kit-iluminación-ipower-600w.html" title="Kit de Iluminación IPOWER Electrónico ">
-                                                Kit de Iluminación IPOWER </a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-dimetil-ether/2047-maletin-dexso.html" title="Maletín de extracción DEXSO">
+                                                Maletín de extracción DEXSO</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                117,90€ </span>
+                                                255,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1406,17 +1590,17 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/balastros/768-balastro-clase-2-eti.html" title="Balastro de Clase 2 ETI">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1609-thickbox_default/balastro-clase-2-eti.jpg" alt="Comprar Balastro de Clase 2 ETI" title="Comprar Balastro de Clase 2 ETI" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/2053-prensa-12-toneladas.html" title="Prensa 12 Toneladas">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2904-thickbox_default/prensa-12-toneladas.jpg" alt="Venta de Prensa 12 Toneladas" title="Comprar Prensa 12 Toneladas" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/balastros/768-balastro-clase-2-eti.html" title="Balastro de Clase 2 ETI">
-                                                Balastro de Clase 2 ETI</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/2053-prensa-12-toneladas.html" title="Prensa 12 Toneladas">
+                                                Prensa 12 Toneladas</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                36,30€ </span>
+                                                182,95€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1425,17 +1609,17 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/bombillas/1649-bombilla-hortilight-shp.html" title="La Bombilla Hortilight SHP">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2496-thickbox_default/bombilla-hortilight-shp.jpg" alt="Comprar Bombilla Hortilight SHP"  title="Comprar Bombilla Hortilight SHP" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/rosin/2051-prensa-rosin-hp230c.html" title="Prensa Rosin HP230C">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2902-thickbox_default/prensa-rosin-hp230c.jpg" alt="Comprar Prensa Rosin HP230C" title="Comprar Prensa Rosin HP230C" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/bombillas/1649-bombilla-hortilight-shp.html" title="La Bombilla Hortilight SHP">
-                                                La Bombilla Hortilight SHP</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/rosin/2051-prensa-rosin-hp230c.html" title="Prensa Rosin HP230C">
+                                                Prensa Rosin HP230C</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                11,91€ </span>
+                                                445,80€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1444,24 +1628,87 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
+                                  <div class="row">
+                                    <!-- -inicio 3 imagenes -->
+                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-con-agua-y-hielo/1809-lavadorapiramidesecret-icer-2termometro.html" title="Kit Extracción hielo Secret Icer">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2672-thickbox_default/lavadorapiramidesecret-icer-2termometro.jpg" alt="Comprar Kit Extracción hielo Secret Icer" title="Comprar Kit Extracción hielo Secret Icer" class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-con-agua-y-hielo/1809-lavadorapiramidesecret-icer-2termometro.html" title="Kit Extracción hielo Secret Icer">
+                                                Kit Extracción hielo Secret Icer</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                118,00€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image imgsec">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/bho/2040-extractor-de-resinas-bothanical.html" title="Extractor Resinas Bothanical">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2891-thickbox_default/extractor-de-resinas-bothanical.jpg" alt="Venta de Extractor Resinas Bothanical" title="Comprar Extractor Resinas Bothanical" class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/bho/2040-extractor-de-resinas-bothanical.html" title="Extractor Resinas Bothanical">
+                                                Extractor Resinas Bothanical</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                273,90€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image imgsec">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/bho/2032-bomba-vacio-hbs-220v50hz.html">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2882-thickbox_default/bomba-vacio-hbs-220v50hz.jpg" alt="Comprar Bomba Vacío HBS (220V/50HZ)" title="Comprar Bomba Vacío HBS (220V/50HZ)" class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/bho/2032-bomba-vacio-hbs-220v50hz.html" title="Bomba Vacío HBS (220V/50HZ)">
+                                                Bomba Vacío HBS (220V/50HZ)</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" class="price">
+                                                260,00€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Fin row imagenes -->
+                                 <br/>
+                                  
                                         <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne8">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne9" aria-expanded="true" aria-controls="collapseOne9" class="link-collapse"><h4 class="panel-title">
-                                                      CONTROL DE CLIMA
-                                              </h4> </a>
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne9" aria-expanded="true" aria-controls="collapseOne9" class="link-collapse"  onclick="toggledisplayarrow(9);"><h4 class="panel-title">
+                                      ACEITES DE CBD, ALIMENTICIOS Y CUTÁNEOS  <i id="arrow-down9" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up9" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i></h4> </a>
                                           
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/95-control-de-clima'" value="VER CATÁLOGO C. CLIMA"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/251-cbd'" value="VER CATÁLOGO ACEITES CBD"></div>
                                     <div id="collapseOne9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne8" aria-expanded="true" style="">
                                          <div class="panel-body">
-                    <p>En el cultivo de interior es necesario crear un ambiente adecuado para que nuestras plantas puedan desarrollarse adecuadamente. Uno de los factores más importantes que determinarán la calidad y producción de nuestras plantas es el clima. En cultivos de interior este factor tan crucial será fácil de ajustar a las necesidades de las plantas gracias a los diferentes elementos de control del clima que tenemos a la venta en nuestro grow shop.</p>
-                                    <p>CEn nuestra tienda online podrás adquirir desde extractores, silenciadores, ventiladores, generadores y elementos de control del Co2, humidificadores y deshumidificadires para regular la humedad de nuestro espacio de cultivo, así como los accesorios y tubos de extracción que permitan instalar nuestro sistema de ventilacion.  Recuerda que el calor excesivo podría dañar nuestras plantas y bajar tanto la producción como la calidad de las mismas. Con todos estos elementos podremos manipular el clima interno de nuestros armarios de cultivo, sobre todo podremos controlar y reducir el calor del interior producido por focos y demás elementos de iluminación. </p>
+                    <p> Recordemos que las semillas de marihuana medicinales son las que contienen un CBD alto, que es el principal compuesto usado en la medicina y terapias. La venta de productos con cbd es commpletamente legal ya que puede extraerse del cañamo industrial, que son plantas de cultivo legal en España y no son consideradas como una sustancia psicotrópica. Aunque el efecto del CBD sin mezclar con THC se queda muy reducido, estos extractos son muy demandados por los consumidores debido a su legalidad, facilidad de uso y a que son baratos o económicos. Estos aceites se pueden utilizar de forma tópica, es decir aplicada a la piel o mucosas, y para uso culinario o alimenticio, juntado con aceite de oliva se puede usar para cocinar cualquier tipo de alimento. </p>
+                                    <p>En SLC tenemos en catálogo 3 tipos de aceite de las mejores marcas. En nuestra <a href="https://www.semillaslowcost.com/251-cbd">categoría de CBD</a> podrás encontrar aceite del banco Sensi Seeds, Plant of life y el Aceite de Endoca. Todos estos productos los podrás comprar en diversos formatos.</p>
                                           </div>
                                        </div></div>
                                         <br/>
-<div class="separador">
+                        <div class="separador">
                                           </div>
 
 
@@ -1475,17 +1722,17 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1027-controlador-de-humedad-cornwall-electronics.html" title="Controlador de Humedad Cornwall Electronics">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1889-thickbox_default/controlador-de-humedad-cornwall-electronics.jpg" alt="Comprar Controlador de Humedad Cornwall Electronics"  title="Comprar Controlador de Humedad Cornwall Electronics" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2076-aceite-cbd-sensi.html" title="Aceite de CBD Sensi Seeds">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2959-thickbox_default/aceite-cbd-sensi.jpg" alt="Comprar Aceite de CBD Sensi Seeds"  title="Comprar Aceite de CBD Sensi Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1027-controlador-de-humedad-cornwall-electronics.html" title="Controlador de Humedad Cornwall Electronics">
-                                                Controlador de Humedad</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2076-aceite-cbd-sensi.html" title="Aceite de CBD Sensi Seeds">
+                                               Aceite CBD Sensi Seeds</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price ">
-                                                28,96€ </span>
+                                                21,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1494,477 +1741,13 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1036-controlador-tª-velocidad-e-hysteresis-min-y-max-2-gse.html" title="Controlador Tª, Velocidad e Hysteresis Min y Max (2) GSE">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1898-thickbox_default/controlador-tª-velocidad-e-hysteresis-min-y-max-2-gse.jpg" alt="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE"  title="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2078-aceite-cbd.html" title="Aceite CBD Plant of Life">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2960-thickbox_default/aceite-cbd.jpg" alt="Comprar Aceite CBD Plant of Life"  title="Comprar Aceite CBD Plant of Life" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1036-controlador-tª-velocidad-e-hysteresis-min-y-max-2-gse.html" title="Controlador Tª, Velocidad e Hysteresis Min y Max (2) GSE">
-                                                Control temperatura...</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                109,51€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/humidificador-deshumidificador/1011-deshumidificador-mini-cornwall-electronics.html" title="Deshumidificador Mini Cornwall Electronics">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1872-thickbox_default/deshumidificador-mini-cornwall-electronics.jpg" alt="Comprar Deshumidificador Mini Cornwall Electronics" title="Comprar Deshumidificador Mini Cornwall Electronics" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/humidificador-deshumidificador/1011-deshumidificador-mini-cornwall-electronics.html" title="Deshumidificador Mini Cornwall Electronics">
-                                                Deshumidificador Mini</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                36,38€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-                                          <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne10">
-                                       
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne10" aria-expanded="true" aria-controls="collapseOne10" class="link-collapse">
-                                                      <h4 class="panel-title">  FERTILIZANTES
-                                              </h4> </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/96-fertilizantes-y-preventivos'" value="VER CATÁLOGO FERTILIZANTES"></div>
-                                    <div id="collapseOne10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne10" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                   <p>Nuestra planta como cualquier otro ser vivo necesitará el alimento y los nutrientes para enraizar con fuerza, crecer lo más rápido y robustamente posible y para aumentar la cantidad, tamaño y calidad de las flores.</p>
-                                    <p>Además de usar una tierra de calidad que le aporte los nutrientes, si queremos optimizar  la producción y la calidad de las plantas deberemos complementar la aportación de nutrientes con fertilizantes, como los que ofrecemos a la venta en nuestro grow shop online.</p>
-                                    <p>En SLC podrás comprar fertilizantes de las marcas más importantes existentes en el mercado. Disponemos de más de 25 marcas diferentes, de las mejores calidades y a los mejores precios. Además, podrás comprar online fertilizantes para todas las fases de crecimiento, enrizamiento y floración para que mimes a tus plantas de marihuana y no les falte de nada.</p>
-                                  
-                                    <p>Debido a la gran cantidad de diferentes tipos de fertilizantes y marcas si te surge cualquier duda no dudes en visitar nuestro blog o pide consejo a nuestro servicio de atención al cliente, donde resolverás todas tus dudas y podrás elegir la mejor opción para aumentar al máximo la producción y calidad de tu cosecha.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-                              
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/amax/1083-fertilizante-amax-growth-burst-1kg.html" title="Fertilizante Amax Growth Burst 1KG">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1945-thickbox_default/fertilizante-amax-growth-burst-1kg.jpg" alt="Comprar Fertilizante Amax Growth Burst 1KG"  title="Comprar Fertilizante Amax Growth Burst 1KG" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/amax/1083-fertilizante-amax-growth-burst-1kg.html" title="Fertilizante Amax Growth Burst 1KG">
-                                                Fertilizante Amax Growth...</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                20,90€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/atami/892-atazyme-ata.html" title="Atazyme ATA">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1775-thickbox_default/atazyme-ata.jpg" alt="Comprar Atazyme ATA" title="Comprar Atazyme ATA" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/atami/892-atazyme-ata.html" title="Atazyme ATA">
-                                                Atazyme ATA</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                9,92€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/top-crop/1970-top-candy-top-crop.html" title="Top Candy Top Crop">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2826-thickbox_default/top-candy-top-crop.jpg" alt="Comprar Top Candy Top Crop" title="Comprar Top Candy Top Crop" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/top-crop/1970-top-candy-top-crop.html" title="Top Candy Top Crop">
-                                                Top Candy Top Crop</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                7,34€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-                                                    <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne10">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11" class="link-collapse"><h4 class="panel-title">
-                                                      BHO Y EXTRACCIONES
-                                               </h4></a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/100-bho-y-extracciones'" value="VER CATÁLOGO BHO/EXTRACCIONES"></div>
-                                    <div id="collapseOne11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne10" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                    <p>Si lo que buscas es la extracción del aceite de hachís o el llamado BHO, desde SLC ponemos a la venta los poductos necesarios para la extracción, consumición y conservación necesarios para dicho fin. En nuestro grow shop  podrás encontrar online los productos de las principales marcas, desde los extractores más profesionales y de mejor calidad de materiales e fabricación a los extractores de aceite de hachís más baratos y sencillos de utilizar.</p>
-                                    <p> Por ejemplo para realizar la extracción por el método del gas, Semillas Low Cost pone a disposición de compra gas butano refinado para la extracción del aceite de marihuana o de cannabis. Además de elementos más seguros como el Dimethyl Ether con gas Dexso.</p>
-                                    <p> No solo nos quedamos en esto, en esta categoría podras encontrar desecadoras, bombas de vacio, cajas de silicona para guardar el producto resultante, pipas de borosilicato y sopletes.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-                                  
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/1813-polen-maker.html" title="Extractor de aceite POLEN MAKER">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2676-thickbox_default/polen-maker.jpg" alt="Venta de POLEN MAKER"  title="Venta de POLEN MAKER" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/1813-polen-maker.html" title="Comprar POLEN MAKER">
-                                                POLEN MAKER</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                35,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/bho/1818-roller-extractor.html" title="ROLLER EXTRACTOR">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2681-thickbox_default/roller-extractor.jpg" alt="Comprar ROLLER EXTRACTOR" title="Comprar ROLLER EXTRACTOR" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/bho/1818-roller-extractor.html" title="ROLLER EXTRACTOR">
-                                                ROLLER EXTRACTOR</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                68,99€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-con-agua-y-hielo/1811-lavadorapiramidesecret-icer-5termometro.html" title="Lavadora + Pirámide + Secret Icer 5 + Termómetro">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2674-thickbox_default/lavadorapiramidesecret-icer-5termometro.jpg" alt="Comprar Lavadora + Pirámide + Secret Icer 5 + Termómetro" title="Comprar Lavadora + Pirámide + Secret Icer 5 + Termómetro" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-con-agua-y-hielo/1811-lavadorapiramidesecret-icer-5termometro.html" title="Lavadora + Pirámide + Secret Icer 5 + Termómetro">
-                                                Lavadora + Pirámide +....</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                154,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne11">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne12" aria-expanded="true" aria-controls="collapseOne12" class="link-collapse"><h4 class="panel-title">
-                                                      RIEGO E HIDROPONÍA
-                                              </h4> </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/97-riego-e-hidropon%C3%ADa'" value="VER CATÁLOGO RIEGO"></div>
-                                    <div id="collapseOne12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne11" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                    <p>Como todos sabemos uno de los elementos más importantes en los cultivos es el sistema de riego que  utilizamos. En SLC grow shop tenemos los sistemas de riego más modernos y económicos del mercado.</p>
-                                    <p>Al explorar esta categoría tendrás la opción de comprar sistemas hidropónicos  y todos los componentes relacionados con este tipo de sistema de riego. En la tienda ponemos a disposición de nuestros clientes bombas de aire-agua, filtros de ósmosis, sistemas hidropónicos enteros además de una gran variedad de accesorios y recambios para el sistema de riego.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-
-<div class="separador">
-                                          </div>
-                            </div>
-                                 
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1364-aerofarm-ghe.html" title="AeroFarm GHE">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2237-thickbox_default/aerofarm-ghe.jpg" alt="Comprar AeroFarm GHE" title="Comprar AeroFarm GHE" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1364-aerofarm-ghe.html" title="AeroFarm GHE">
-                                                AeroFarm GHE</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                94,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1485-deposito-dwc105.html" title="Depósito DWC105">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2311-thickbox_default/deposito-dwc105.jpg" alt="Comprar Depósito DWC105" title="Comprar Depósito DWC105" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1485-deposito-dwc105.html" title="Depósito DWC105">
-                                                Depósito DWC105</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                26,66€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/filtros-ósmosis/1383-filtro-de-ósmosis-de-5-etapas-sin-deposito.html" title="Filtro de Ósmosis de 5 etapas SIN DEPOSITO">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2230-thickbox_default/filtro-de-ósmosis-de-5-etapas-sin-deposito.jpg" alt="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO"  title="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/filtros-ósmosis/1383-filtro-de-ósmosis-de-5-etapas-sin-deposito.html" title="Filtro de Ósmosis de 5 etapas SIN DEPOSITO">
-                                                Filtro de Ósmosis....</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                137,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne12">
-                                        
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne13" aria-expanded="true" aria-controls="collapseOne13" class="link-collapse"> <h4 class="panel-title">
-                                                      KITS
-                                              </h4> </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/98-kits'" value="VER CATÁLOGO DE KITS"></div>
-                                    <div id="collapseOne13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne12" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                    <p>Una de las categorías principales tanto para los cultivadores más expertos como para los cultivadores que se están iniciando en el tema. En esta sección se podrá comprar kits completos para el cultivo para que no se te olvide comprar nada esencial para comenzar, así como kits completos de iluminación o kits completos de fertilizantes. Donde podrás adquirir todos los productos necesarios que tu planta necesitará desde que germina hasta que llegue el día de la cosecha.</p>
-                                    <p>En nuestro grow shop online disponemos de kits de cultivos para comprar de todas las calidades y precios para ajustarnos a todos los bolsillos y necesidades.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-                                
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/kits-completos/1764-kit-cultivo-600w-armario-120cm.html" title="Kit cultivo 600W  armario 120cm">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2965-thickbox_default/kit-cultivo-600w-armario-120cm.jpg" alt="Comprar Kit cultivo 600W  armario 120cm"  title="Comprar Kit cultivo 600W  armario 120cm" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/kits-completos/1764-kit-cultivo-600w-armario-120cm.html" title="Kit cultivo 600W  armario 120cm">
-                                                Kit cultivo 600W...</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                265,50€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1679-kit-completo-xtrasun-600w.html" title="Kit Completo Xtrasun 600W">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2542-thickbox_default/kit-completo-xtrasun-600w.jpg" alt="Comprar Kit Completo Xtrasun 600W"  title="Comprar Kit Completo Xtrasun 600W" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1679-kit-completo-xtrasun-600w.html" title="Kit Completo Xtrasun 600W">
-                                                Kit Completo Xtrasun 600W</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                65,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/biobizz/1056-trypack-outdoor-biobizz.html" title="Trypack Outdoor BioBizz">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1921-thickbox_default/trypack-outdoor-biobizz.jpg" alt="Comprar Trypack Outdoor BioBizz"  title="Comprar Trypack Outdoor BioBizz" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/biobizz/1056-trypack-outdoor-biobizz.html" title="Trypack Outdoor BioBizz">
-                                                Trypack Outdoor BioBizz</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                12,64€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-                                           <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne13">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne14" aria-expanded="true" aria-controls="collapseOne14" class="link-collapse">
-                                                     <h4 class="panel-title"> INSTRUMENTOS DE MEDIDA
-                                                </h4></a>
-                                         
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/103-instrumentos-de-medida'" value="VER CATÁLOGO INST. MEDIDA"></div>
-                                    <div id="collapseOne14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne13" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                      <p>Una de las cuestiones más importantes para aumentar la producción y calidad de nuestras plantas son las mediciones de los factores que puedan afectarles. Muchos de los errores que cometen los principiantes es no adecuar el cultivo a dichos factores como el PH, la humedad, la temperatura, los nutrientes del agua (EC) etc.</p>
-                                    <p>LDesde SLC grow shop sabemos la importancia de estos elementos, por eso ponemos a la venta todo tipo de medidores para el cultivo que permitan controlar estos parámetros tan importantes y herramientas varias como, por ejemplo, básculas de precisión.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-
-                               
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/medidores/1537-medidor-ph-ph2-atc-caja-wasseterch.html" title="Medidor pH PH2 ATC Caja Wasseterch">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2361-thickbox_default/medidor-ph-ph2-atc-caja-wasseterch.jpg" alt="Comprar Medidor pH PH2 ATC Caja Wasseterch"  title="Comprar Medidor pH PH2 ATC Caja Wasseterch" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/medidores/1537-medidor-ph-ph2-atc-caja-wasseterch.html" title="Medidor pH PH2 ATC Caja Wasseterch">
-                                                Medidor pH ...</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                40,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/medidores/1536-medidor-ec-atc-wassertech-uscm.html" title="Medidor EC ATC Wassertech uS/cm">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2360-thickbox_default/medidor-ec-atc-wassertech-uscm.jpg" alt="Comprar Medidor EC ATC Wassertech uS/cm"  title="Comprar Medidor EC ATC Wassertech uS/cm" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/medidores/1536-medidor-ec-atc-wassertech-uscm.html" title="Medidor EC ATC Wassertech uS/cm">
-                                                Medidor EC...</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                38,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/básculas/1503-bascula-sm-500-waltex-500-g-01-g.html" title="Bascula SM-500 Waltex 500 g / 0,1 g">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2328-thickbox_default/bascula-sm-500-waltex-500-g-01-g.jpg" alt="Comprar Bascula SM-500 Waltex 500 g / 0,1 g"  title="Comprar Bascula SM-500 Waltex 500 g / 0,1 g" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/básculas/1503-bascula-sm-500-waltex-500-g-01-g.html" title="Bascula SM-500 Waltex 500 g / 0,1 g">
-                                                Bascula SM-500 Waltex</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2078-aceite-cbd.html" title="Aceite CBD Plant of Life">
+                                                Aceite CBD Plant of Life</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
@@ -1974,93 +1757,20 @@
                                           </div>
                                        </div>
                                     </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-
-                                             <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne14">
-                                        
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne15" aria-expanded="true" aria-controls="collapseOne15" class="link-collapse">
-                                                       <h4 class="panel-title">ACCESORIOS Y PARAFERNALIA
-                                              </h4> </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/99-parafernalia-y-accesorios'" value="VER CATÁLOGO PARAFERNALIA"></div>
-                                    <div id="collapseOne15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne14" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                        <p>También ofrecemos una gran cantidad de productos destinados a mejorar vuestros armarios de cultivo y para el tratamiento de vuestras plantas.  Además, os ponemos a disposición diferentes artículos para fumadores al mejor precio del mercado.</p>
-                                    <p>En esta sección nos encontremos desde tijeras para la poda hasta microscopios para detectar plagas, pasando por una gran variedad de instrumentos electrónicos como peladoras para cogollos económicas, extractores de resina, venta de vaporizadores, grinders, temporizadores y otros accesorios como vasos medidores, tutores o calentadores que optimizarán nuestro cultivo.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-
-
-                          
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/tijeras-y-manicuradores/1942-peladora-table-trimmer-46x46-alto-645cm.html" title="Peladora Table Trimmer 46x46, Alto 64.5cm">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2798-thickbox_default/peladora-table-trimmer-46x46-alto-645cm.jpg" alt="Comprar Peladora Table Trimmer 46x46, Alto 64.5cm"  title="Comprar Peladora Table Trimmer"  class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/tijeras-y-manicuradores/1942-peladora-table-trimmer-46x46-alto-645cm.html" title="Peladora Table Trimmer 46x46, Alto 64.5cm">
-                                                Peladora Table Trimmer</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                215,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/1820-secret-shaker-secret-smoke.html" title="Secret Shaker Secret Smoke">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2683-thickbox_default/secret-shaker-secret-smoke.jpg" alt="Comprar Secret Shaker Secret Smoke"  title="Comprar Secret Shaker Secret Smoke" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2079-aceite-cbd-endoca-hemp-oil.html" title="Aceite CBD Endoca Hemp">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2961-thickbox_default/aceite-cbd-endoca-hemp-oil.jpg" alt="Comprar Aceite CBD Endoca Hemp" title="Comprar Aceite CBD Endoca Hemp" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/1820-secret-shaker-secret-smoke.html" title="Secret Shaker Secret Smoke">
-                                                Secret Shaker Secret Smoke</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2079-aceite-cbd-endoca-hemp-oil.html" title="Aceite CBD Endoca Hemp">
+                                                Aceite CBD Endoca Hemp</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                9,50€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/mallas/1571-malla-bug-bloquer.html" title="Malla Bug Bloquer">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2396-thickbox_default/malla-bug-bloquer.jpg" alt="Comprar Malla Bug Bloquer"  title="Comprar Malla Bug Bloquer" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/mallas/1571-malla-bug-bloquer.html" title="Malla Bug Bloquer">
-                                                Malla Bug Bloquer</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                3,00€ </span>
+                                                27,50€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -2069,292 +1779,22 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
+                     
 
-                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne15">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne16" aria-expanded="true" aria-controls="collapseOne16" class="link-collapse">
-                                                    <h4 class="panel-title">  MACETAS Y BANDEJAS</h4>
-                                               </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/104-macetas-y-bandejas'" value="VER CATÁLOGO MACETAS"></div>
-                                    <div id="collapseOne16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne15" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                         <p>Además de todos los productos de grow shop listados anteriormente, en semillaslowcost.com también vendemos macetas, soportes, platos y bandejas para que puedas comenzar tu indoor. Disponemos de las mejores marcas y los mejores precios que puedas encontrar en cualquier grow shop de España.</p>
-                                    <p>No solo eso, además somos capaces de satisfacer los gustos más variados poniendo a vuestra disposición todos los tipos de macetas: diversos tamaños, colores, materiales, calidades, para cultivo hidropónico y aeropónico y bolsas de cultivo.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-
-                                
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/macetas/1719-maceta-tex-pot-negra.html" title="Maceta Tex Pot Negra">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2583-thickbox_default/maceta-tex-pot-negra.jpg" alt="Comprar Maceta Tex Pot Negra"  title="Comprar Maceta Tex Pot Negra" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/macetas/1719-maceta-tex-pot-negra.html" title="Maceta Tex Pot Negra">
-                                                Maceta Tex Pot Negra</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                9,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/macetas/1701-bolsa-de-cultivo-blanca.html" title="Bolsa de Cultivo Blanca">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2565-thickbox_default/bolsa-de-cultivo-blanca.jpg" alt="Comprar Bolsa de Cultivo Blanca"  title="Comprar Bolsa de Cultivo Blanca"  class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/macetas/1701-bolsa-de-cultivo-blanca.html" title="Bolsa de Cultivo Blanca">
-                                                Bolsa de Cultivo Blanca</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                17,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/bandejas/1726-bandeja-semillero-pack-25-uds.html" title="Bandeja Semillero pack 25 uds">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2590-thickbox_default/bandeja-semillero-pack-25-uds.jpg" alt="Comprar Bandeja Semillero pack 25 uds"  title="Comprar Bandeja Semillero pack 25 uds" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/bandejas/1726-bandeja-semillero-pack-25-uds.html" title="Bandeja Semillero pack 25 uds">
-                                                Bandeja Semillero pack 25</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                32,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-
-
-                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne16">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne17" aria-expanded="true" aria-controls="collapseOne17" class="link-collapse">
-                                                   <h4 class="panel-title">   LUCHA BIOLÓGICA
-                                              </h4> </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/229-lucha-biologica'" value="VER CATÁLOGO BIO LUCHA"></div>
-                                    <div id="collapseOne17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne16" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                           <p>Como todos sabemos las plagas pueden suponer un grave problema para nuestros cultivos. En nuestro grow shop online tambíen tenemos a la venta productos para la lucha biológica de plagas que se pueden producir en los cultivos de marihuana. La lucha biológica es la manera más natural de eliminar las plagas. Por ejemplo en nuestra tienda podrás encontrar inseccticidas naturales para elminar las plagas más frecuetnes como son la mosca blanca, las orugas, el pulgón, los hongos,  etc...</p>
-                                    <p> Este tipo de anti plagas natural consiste en proporcionar a nuestros cultivos otro tipo de seres vivos inofensivos para la planta pero que se encargaran de eliminar las plagas que las están destruyendo, por ejemplo en SLC podrás encontrar ácaros depredadores como el Hypoaspis Miles que viven en el suelo a unos 4 o 5 cm de profundidad y serán los encargados de eliminar a las plagas perjudiciosas para nuestra planta como las larvas de la mosca del suelo, o a los trips.</p> 
-                                    <p>Además de llegar a lugares inalcanzables por los inseccticidas químicos, estos controladores de plagas biológicos  son completamente naturales por lo que no perjudicará ni el sabor ni la calidad de la futura cosecha. Ante cualquier duda tanto en el tipo de plaga que padeces como la solución, no dudes en ponerte en contacto con nuestro servicio de atención al cliente y t informaremos de ls pasos a seguir.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-
-                              
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/orugas/2023-quemador-de-azufre.html" title="Maceta Tex Pot Negra">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2875-thickbox_default/quemador-de-azufre.jpg" alt="Comprar quemador de azufre anti orugas"  title="Comprar quemador de azufre anti orugas" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/orugas/2023-quemador-de-azufre.html" title="Lucha biologica contra orugas">
-                                                Quemador de azufre</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                57,95€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/ara%C3%B1a-roja/2006-spical-5000-amblyseius-californicus.html" title="comprar anti mosca roja SPICAL 5000">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2921-thickbox_default/spical-5000-amblyseius-californicus.jpg" alt="comprar anti mosca roja SPICAL 5000"  title="comprar anti mosca roja SPICAL 5000 "  class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/ara%C3%B1a-roja/2006-spical-5000-amblyseius-californicus.html" title="SPICAL 5000 anti araña roja">
-                                                SPICAL 5000</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                50,95€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/pulgon/2024-aphiscout-250-avispas-para-pulgon.html" title="APHISCOUT (250 AVISPAS PARA PULGÓN)">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2929-thickbox_default/aphiscout-250-avispas-para-pulgon.jpg" alt="Comprar APHISCOUT (250 AVISPAS PARA PULGÓN)"  title="Comprar anti pulgon marihuana" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/pulgon/2024-aphiscout-250-avispas-para-pulgon.html" title="Lucha biologica contra el pulgon">
-                                                APHISCOUT (250 AVISPAS PARA PULGÓN)</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                29,90€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
-
-
-                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
-                                 <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne17">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne18" aria-expanded="true" aria-controls="collapseOne18" class="link-collapse"><h4 class="panel-title">
-                                                     TRATAMIENTO DE OLORES
-                                              </h4> </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/107-tratamiento-de-olores'" value="VER CATÁLOGO ANTI-OLORES"></div>
-                                    <div id="collapseOne18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne17" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                             <p>Desde SLC sabemos la importancia de la discreción en los cultivos, por lo tanto, nos encargaremos de proporcionaros instrumentos para el tratamiento de olores, evitando de esta forma sorpresas desagradables que puedan arruinar nuestro trabajo. </p>
-                                    <p>Para ayudar con todos estos problemas ponemos a la venta diferentes elementos que ayudarán a la eliminación de olores. En este grow shop podrás comprar filtros antiolor de diferentes marcas y medidas, ozonizadores para pequeños y grandes espacios, así como ambientadores neutros y con diversos olores que ayudarán en la discreción de nuestro cultivo.</p>
-                                          </div>
-                                       </div></div>
-                                        <br/>
-
-<div class="separador">
-                                          </div>
-
-                            </div>
-
-                              
-                                 <br/>
-                                 <div class="separador"></div>
-                                 <br/>
-                                 <div class="row">
-                                    <!-- -inicio 3 imagenes -->
-                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1324-filtro-antiolor-can-lite.html" title="Filtro Antiolor CAN-Lite">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2175-thickbox_default/filtro-antiolor-can-lite.jpg" alt="Comprar Filtro Antiolor CAN-Lite"  title="Comprar Filtro Antiolor CAN-Lite" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1324-filtro-antiolor-can-lite.html" title="Filtro Antiolor CAN-Lite">
-                                                Filtro Antiolor CAN-Lite</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                141,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1675-filtro-de-carbón-ipower.html" title="Filtro de carbón Ipower">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2537-thickbox_default/filtro-de-carbón-ipower.jpg" alt="Comprar Filtro de carbón Ipower"  title="Comprar Filtro de carbón Ipower" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1675-filtro-de-carbón-ipower.html" title="Filtro de carbón Ipower">
-                                                Filtro de carbón Ipower</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                68,99€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-                                       <div class="inner second-image imgsec">
-                                          <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/ambientadores/1332-ambientador-ona-block-fl-170-g.html" title="Ambientador ONA Block FL 170 g">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2183-thickbox_default/ambientador-ona-block-fl-170-g.jpg" alt="Comprar Ambientador ONA Block FL 170 g"  title="Comprar Ambientador ONA Block FL 170 g" class="img-responsive first-image">
-                                          </a>
-                                          <div class="info">
-                                             <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/ambientadores/1332-ambientador-ona-block-fl-170-g.html" title="Ambientador ONA Block FL 170 g">
-                                                Ambientador ONA Block FL</a>
-                                             </h3>
-                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
-                                                10,00€ </span>
-                                                <meta itemprop="priceCurrency" content="EUR">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Fin row imagenes -->
-                                 <br/>
                                    <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne19">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne20" aria-expanded="true" aria-controls="collapseOne20" class="link-collapse">
-                                                   <h4 class="panel-title">   ¿QUIÉNES SOMOS? ¿DÓNDE ESTAMOS?
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne20" aria-expanded="true" aria-controls="collapseOne20" class="link-collapse"  onclick="toggledisplayarrow(10);">
+                                                   <h4 class="panel-title">   AVISO LEGAL Y MÉDICO <i id="arrow-down10" class="fa fa-arrow-down" aria-hidden="true"  style="display:none;"></i>
+                                    <i id="arrow-up10" class="fa fa-arrow-up" aria-hidden="true"></i>
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne20" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne19" aria-expanded="true" style="">
                                          <div class="panel-body">
-                   <p>Una de las características que nos diferencia de muchos otros Grow Shops es que disponemos de nuestros propios almacenes para abastecernos y poder proveer a nuestros clientes de los mejores productos en el menor tiempo posible. Nuestra nave se encuentra en Camí del Bovalar 29, Alaquàs, València, España; y en ella contamos con un amplio y variado stock que asegura el abastecimiento de la práctica totalidad de productos que nuestros clientes puedan demandar; sin necesidad de largas esperas ni de más intermediarios.  </p>
-                                    <p>Además, desde S.L.C tenemos claro que la calidad no solamente está relacionada con las características y el precio del producto si no con la atención que recibe el cliente, una vez realizada la compra. Desde el Grow Shop más barato de España nos comprometemos con el cliente desde el primer contacto, continuando con la venta y solucionando cualquier problema que pueda surgir tras la misma. Es decir, en Semillas Low Cost realizaremos cualquier esfuerzo antes, durante y tras la venta, para satisfacer al cliente y garantizarle un nivel superior en cuanto a calidad en el trato y el servicio se refiere.</p>
+                                    <p>Semillas Low Cost está a favor del uso terapéutico de la marihuana, pero ante todo, no somos médicos y recomendamos acudir a los especialistas y profesionales de sanidad si padeces algún problema de salud o ante cualquier duda sobre el uso del cannabis medicinal para cualquier tratamiento o enfermedad. En ningún caso recomendamos ignorar los consejos y tratamientos que te haya recetado el médico especialista. Si que te animamos a que le propongas la marihuana y sus cannabinoides como paliativo a tus enfermedades y que el te aconseje sobre si te cnviene o no dependiendo la enfermedad a tratar. Además existen multitud de asociaciones a favor de la marijuana medicinal por lo que te recomendamos que hables con ellas ante cualquier duda.</p>
+                                    <p>El uso que cada cliente o lector de la web haga con los productos y las semillas de marihuana que ofertamos es exclusivamente responsabilidad suya. SLC no se hace responsable de las consecuencias legales. Por lo tanto recomendamos que consultes la legislación en tu región en cuanto a la marihuana terapéutica, su cultivo y usos.</p>
                                           </div><div class="separador"></div>
                                        </div> </div>
 
@@ -2363,18 +1803,42 @@
                               
                                  <br/>
 
+
+
+                                    <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne3">
+                                         
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4" class="link-collapse"  onclick="toggledisplayarrow(11);">
+                                                     <h4 class="panel-title"> ¿CÓMO ES LA SITUACIÓN LEGAL DE LA MARIHUANA MEDICINAL EN ESPAÑA? <i id="arrow-down11" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up11" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i>
+                                               </h4></a>
+                                          
+                                   </div><!-- .panel-heading -->
+                                    <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3" aria-expanded="true" style="">
+                                         <div class="panel-body">
+                                    <p>Lo primero que debemos indicar desde SLC es que en España la venta de marihuana está completamente prohibido, tanto si su destino es el medicinal o el recreativo. Así se ordena en el Código Penal, artículo 368. Ahora bien, el cultivo y consumo de marihuana si que está permitido, o mejor dicho está en un estado de alegalidad siempre y cuando sea en un ámbito privado y personal. Es decir, no se puede consumir marihuana en lugares públicos, ni cultivar o germinar semillas de cannabis con la intención de sacarse un beneficio económico de ella. </p>
+                                    <p> Por lo tanto, los cultivos de marihuana para el autoconsumo no están penados por ley pero tampoco permitidos, situación de alegalidad, pero hay que tener en cuneta que en caso de no poder demostrar que es para consumo personal, la pena de prisión por tráfico de marihuana en España puede oscilar entre uno y tres años.</p>
+                                    <p>La venta y compra en España de semillas de marihuana medicinal, métodos de extracción y aceites de CBD es completamente legal en nuestro país. Es por ello que desde nuestro grow shop podrás comprar todos estos productos de forma completamente legal.</p>
+      
+                                          </div><div class="separador">
+                                          </div>
+                                       </div></div> <br/>
+
+
+
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne20">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne21" aria-expanded="true" aria-controls="collapseOne21" class="link-collapse">
-                                                    <h4 class="panel-title">  MÁS SOBRE NUESTRA WEB </h4>
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne21" aria-expanded="true" aria-controls="collapseOne21" class="link-collapse"  onclick="toggledisplayarrow(12);">
+                                                    <h4 class="panel-title">  NUESTRAS SEMILLAS DE MARIHUANA MEDICINALES<i id="arrow-down12" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up12" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i></h4>
                                                </a>
                                           
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne20" aria-expanded="true" style="">
                                          <div class="panel-body">
-                   <p>Nuestra web, Semillas Low Cost.com, no sirve solo para poder comprobar los artículos que ofertamos, sus respectivos precios y descripciones, sino que también es una fuente fehaciente de información sintetizada y contrastada.  En el blog de S.L.C encontrarás todo el contenido y la información necesaria para convertirte en un cultivador de primera. Nuestro blog y los artículos que en él publicamos están actualizados y tratan una gran cantidad de temas variados, desde cómo producir cannabis mediante diversos sistemas de cultivo, hasta como hacer pasteles o cualquier tipo de producto cannábico. Además, las descripciones de las semillas, al igual que las de los productos, son muy extensas y aportan al cultivador una destacada cantidad de información. </p>
-                                    <p>Por si todo esto fuera poco, también se nos puede seguir a través de nuestro canal de YouTube, FaceBook, Twitter, Google Plus e Instagram. Mediante todas estas plataformas el cliente tiene la posibilidad de ponerse en contacto con nosotros y resolver cualquier tipo de duda.  </p>
+                                   <p>Semillas Low Cost ofrece a sus clientes semillas de la mejor calidad, de genética garantizada y con garantía de germinación. Almacenamos las semillas en nuestras instalaciones especializadas, en donde conservan la temperatura ideal y frescura necesaria para que siempre estén vivas y preparadas para nacer. Además en SLC disponemos de uno de los catálogos de semillas más grande de todo internet. Disponemos de genéticas medicinales de casi todos los bancos del planeta al igual que sus legendarias y premiadas variedades.</p>
+                          
                                           </div><div class="separador"></div>
                                        </div> </div>
 
@@ -2382,51 +1846,24 @@
                                
                               
                                  <br/>
-
-                                  <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne21">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne22" aria-expanded="true" aria-controls="collapseOne22" class="link-collapse">
-                                                 <h4 class="panel-title">     PRECIOS </h4>
-                                               </a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                    <div id="collapseOne22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne21" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                   <p>Pero si hay una característica de nuestro Grow Shop que destaca por encima del resto, esa es, sin lugar a dudas, los precios reducidos que ofertamos.  Desde S.LC tenemos el firme compromiso de ofertar precios lo más ajustados posible.  Aparte, nuestros precios bajos no dependen de ofertas o descuentos temporales, sino que son siempre lo más reducidos posible. Y, por si fuera poco, también disponemos de una sección de Ofertas donde se aplican reducciones sobre los precios ya reducidos con anterioridad. Por tanto, como se ha podido comprobar a lo largo del siguiente artículo, El Grow Shop SemillaLowCost aúna algunas características que lo hacen ser uno de los más competitivos y asequibles del mercado cannábico. De hecho, nuestra idea es poner los mejores materiales a disposición de cualquier cultivador, sea cual sea su nivel económico. Obviamente como empresa tenemos que obtener beneficios para sobrevivir, pero la intención es la de vender productos de calidad al menor precio posible.</p>
-                                          </div><div class="separador"></div>
-                                       </div> </div>
-
-                                
-                               
-                              
-                                 <br/>
-
                                   <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne22">
                                          
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne23" aria-expanded="true" aria-controls="collapseOne23" class="link-collapse">
-                                                     <h4 class="panel-title"> ENVÍOS
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne23" aria-expanded="true" aria-controls="collapseOne23" class="link-collapse"  onclick="toggledisplayarrow(13);">
+                                                     <h4 class="panel-title"> ENVÍOS <i id="arrow-down13" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <i id="arrow-up13" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i>
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne22" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>En nuestra web encontrarás la práctica totalidad de productos relacionados con el cultivo de marihuana, y nuestro servicio de envíos 24 horas pondrá a tu disposición cualquier producto, en un solo día, con un solo clic y sin salir de casa. Por si fuera poco, nuestros envíos no se detienen en la frontera, sino que llegan a toda Europa en el menor tiempo posible y por un precio módico. Ésta es otra de las características que nos hacen destacar, y es que, con S.L.C, los gastos de envío son siempre lo más reducidos posible. De hecho, si el pedido es dentro de España y supera los 50 euros, los costes correrán de nuestra cuenta y, por tanto, el envío será completamente gratuito para el cliente. Además, también realizamos envíos a toda Sudamérica, la única diferencia es que los pedidos a España y Europa se pueden hacer mediante la página web, mientras que los pedidos al continente americano se tienen que realizar exclusivamente a través de nuestro servicio telefónico. </p>
+                                     <p>Los pedidos se envían dentro de las siguientes 24 horas de ser recibidos, por lo tanto te llegarán a tu casa o dirección que nos hayas indicado en aproximadamente 24/48 horas y de manera discreta y sin marcas identificativas. Tanto las semillas como los productos, se enviarán de esta manera y además envalados con protección para que lleguen en perfecto estado al destino indicado. Si únicamente pides semillas el envío es gratis a partir de los 25 Euros para España (Peninsula) para  el resto de localiaciones y precios puedes consultar nuestra <a href="https://www.semillaslowcost.com/content/1-envios" rel="nofollow">página de envíos.</a></p>
                                           </div><div class="separador"></div>
-                                       </div> </div>
-
-                                
-                               
+                                       </div> </div>                           
                               
                                  <br/>
 
-                                
-                                    
-                              
-                            
-                              
-                             
+        
                                  <br/>
                                  <div class="separador"></div>
                                  <br/>
@@ -2442,11 +1879,11 @@
       </div>
       <div class="block_content" style="">
          <ul class="tree dynamized" style="display: block;">
-                      <li>
-              <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="marihuana medicinal">CANNABIS MEDICINAL</a>
+            <li>
+              <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="Semillas de marihuana medicinales">CANNABIS MEDICINAL</a>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-13')"> </span><a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS FEMINIZADAS"> SEMILLAS FEMINIZADAS </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-13')"> </span><a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS MARIHUANA FEMINIZADAS"> SEMILLAS MARIHUANA FEMINIZADAS </a>
                <ul id="menu-13" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/18-dinafem-feminizadas" title="Dinafem Feminizadas"> Dinafem Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/19-geaseeds-feminizadas" title="GeaSeeds Feminizadas"> GeaSeeds Feminizadas </a></li>
@@ -2489,7 +1926,7 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-15')"> </span><a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS AUTOFLORECIENTES"> SEMILLAS AUTOFLORECIENTES </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-15')"> </span><a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS MARIHUANA AUTOFLORECIENTES"> SEMILLAS MARIHUANA AUTOFLORECIENTES </a>
                <ul id="menu-15" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/30-dinafem-autoflorecientes" title="Dinafem Autoflorecientes"> Dinafem Autoflorecientes </a></li>
                   <li> <a href="https://www.semillaslowcost.com/31-geaseeds-autoflorecientes" title="GeaSeeds Autoflorecientes"> GeaSeeds Autoflorecientes </a></li>
@@ -2504,7 +1941,7 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-16')"> </span><a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS REGULARES"> SEMILLAS REGULARES </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-16')"> </span><a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS MARIHUANA REGULARES"> SEMILLAS MARIHUANA REGULARES </a>
                <ul id="menu-16" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/42-sensi-seeds-regulares" title="Sensi Seeds Regulares"> Sensi Seeds Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/44-dutch-passion-regulares" title="Dutch Passion Regulares"> Dutch Passion Regulares </a></li>
@@ -2515,6 +1952,7 @@
                   <li class="last"> <a href="https://www.semillaslowcost.com/63-flying-dutchmen" title="Flying Dutchmen"> Flying Dutchmen </a></li>
                </ul>
             </li>
+
             <li>
                <span class="grower CLOSE"  onclick="toggleMenu('menu-93')"> </span><a href="https://www.semillaslowcost.com/93-armarios-de-cultivo" title="ARMARIOS DE CULTIVO"> ARMARIOS DE CULTIVO </a>
                <ul id="menu-93" style="display: none;">
@@ -2615,7 +2053,8 @@
                   <li> <a href="https://www.semillaslowcost.com/244-extraccion-en-seco" title="Extraccion en seco"> Extraccion en seco </a></li>
                   <li> <a href="https://www.semillaslowcost.com/245-rosin" title="Rosin"> Rosin </a></li>
                   <li> <a href="https://www.semillaslowcost.com/248-extraccion-con-agua-y-hielo" title="Extraccion con agua y hielo"> Extraccion con agua y hielo </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/249-bho" title="BHO"> BHO </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/249-bho" title="BHO"> BHO </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/251-cbd" title="CBD"> CBD </a></li>
                </ul>
             </li>
             <li>
@@ -2767,16 +2206,20 @@
                                     <div class="category_footer toggle-footer">
                                        <div class="list">
                                           <ul class="tree dhtml">
+                                               <li >
+                                                <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="SEMILLAS MARIHUANA MEDICINALES">
+                                                SEMILLAS MEDICINALES </a>
+                                             </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS FEMINIZADAS">
+                                                <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS MARIHUANA FEMINIZADAS">
                                                 SEMILLAS FEMINIZADAS </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS AUTOFLORECIENTES">
+                                                <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS MARIHUANA AUTOFLORECIENTES">
                                                 SEMILLAS AUTOFLORECIENTES </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS REGULARES">
+                                                <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS MARIHUANA REGULARES">
                                                 SEMILLAS REGULARES </a>
                                              </li>
                                              <li >

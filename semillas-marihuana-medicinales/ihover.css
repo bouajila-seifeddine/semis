@@ -1,0 +1,676 @@
+                 .category-show {
+                    height: 37px !important;
+                    width: 31% !important;
+                }
+                a.main-color {
+                    padding: 10PX;
+                     width: 30%;
+                    font-weight: bolder;
+                      color: white;
+                    background: #7bbd42;
+                }
+
+                 .dos {
+                       display: inline-block
+                 }
+
+                .category-head {
+                    width: 69%;
+                    float: left;
+                 }
+
+                 .ac_results{
+                    width:auto !important;
+                    padding: 0.5%;
+                    margin-top: 0.5%;
+                    background: rgb(29, 31, 37);
+                     }
+
+                  .shopping_cart_mobile a.cart-contents>span {
+                          
+                     background: #7bbd42;
+                     border: 0px;
+                     padding: 18px 16px 20.4px 13px;
+                     margin: 2px 0 0;
+                     width: 80%;
+     
+                    }
+
+                  .ac_results li{
+                        font-size: 15px;
+                     }
+                   #search_query_top {
+                        margin-left: 16px;
+                        border: 0px solid #2c313b;
+                        border-right: 0px solid #2c313b;
+                        width: 66%;
+                        background: white;
+                           
+                     }
+
+                   .asagiSabit {
+                        position: fixed;
+                        bottom: 10px;
+                        right: 10px;
+                        z-index: 999;
+                        }
+
+                    .whatsappBlock a {
+                         display: inline-block;
+                         height: 50px;
+                         background: #65BC54;
+                         padding: 5px 10px;
+                         color: #fff !important;
+                         font-weight: bold;
+                     }
+                     input.main-color {
+                          padding: 10PX;
+                          width: 30%;
+                          font-weight: bolder;
+                          color: white;
+                           background: #7bbd42;
+
+                         }
+
+                     div#buscador {
+                          margin-bottom: 2%;
+                        }
+
+                    #categorias-logos{ width: 100%;text-align: center; }
+                
+                    
+                   @media (max-width: 998px) {
+                   
+                       .categorias-logos {
+                         display: none;
+                          }
+                       .container {
+                          width: 90%;
+                         }
+                         .asagiSabit {
+                            width: 15%;
+                           }
+                        #search_query_top {
+                          width: 70.5%;
+                        }
+                      header.top {
+                         min-height: 78px;
+                        }
+                        input.main-color {
+                            font-size: 7px !important;
+
+                          }
+                  }
+
+
+                     .ph_megamenu_mobile_toggle{
+                        top: 0px;
+                        left: -18px;
+                        width: 104%;
+                        position: fixed;
+                        z-index: 99999;
+                        text-align: right;
+                        padding-right: 2%;
+                        padding-left: 2%;
+
+                     }
+
+                     .mobile_menu{ max-height: 100%; position: fixed;overflow-y: auto;margin-top: -27px; padding-right: 13%; left: 19px; background: transparent !important;top: 44px;}
+  
+                 button {
+                      color: white;
+                      padding: 10PX;
+                     margin-bottom: 14px;
+                     background: #7bbd42;
+    
+                     }
+                  a .titulo-categoria:hover {color:black !important; font: 207% sans-serif;}
+
+                   .infodiv p{margin-top: 1%;}
+                   #search_block_top i {
+                       font-size: 24px
+                    }
+
+
+                .titulo-categoria {
+                    color: #7bbd42!important;
+                    text-transform: capitalize!important;
+                    font: 190% sans-serif
+                }
+                span.telefono {
+                   color: #faebd7
+                 }
+                p {
+                   color: #767676;
+                   font-family: 'PT Sans', sans-serif, Arial, Verdana;
+                   font-size: 13px;
+                   text-align: justify
+                }
+            .cuadro-verde {
+                background: url(flecha-growshop.jpg);
+                background-size: cover;
+                background-position: center;
+                padding: 20px
+              }
+            .cuadro-verde h2 {
+               color: #fff;
+              text-align: center
+            }
+            .img-responsive {
+               display: block;
+               max-width: 100%;
+               min-width: 100%;
+               height: auto
+            }
+            header.top .pattern {
+               background: url(https://www.semillaslowcost.com/themes/madrid/images/colors/header2.png) repeat-x top center
+            }
+            .info {
+                background: rgba(123, 189, 66, 1)!important
+            }
+            ul {
+               list-style-type: none
+            }
+            .separador {
+               border-bottom: 1px solid #7bbd42
+            }
+            #ph_megamenu_wrapper #ph_megamenu {
+                background: #7bbd42
+            }
+            #search_block_top i {
+               font-size: 24px;
+                background: #7bbd42
+            }
+            a.link-collapse {
+                color: white;
+            }
+            i.pull-left.icon.icon-shopping-cart.main-color {
+               background: #7bbd42
+            }
+            .main-box .icon i {
+               background: #7bbd42
+            }
+            .info h3 {
+               margin-top: 0
+            }
+            .info {
+               z-index: 1;
+               margin-top: -10%;
+               position: relative
+            }
+            .inner.second-image img {
+               z-index: 0
+            }
+            .info h3 a {
+               margin-bottom: 5%;
+               margin-top: 0;
+               color: #fff;
+                font-family: 'Roboto Slab', sans-serif;
+               font-size: 14px;
+               padding: 5%
+            }
+          .price {
+               text-align: right;
+               color: #fff;
+                margin-top: -7%;
+                padding: 2%;
+               font-family: 'Roboto Slab', sans-serif;
+               font-size: 18px
+            }
+
+        @media (max-width: 767px) {
+               .imgsec {
+                     display: none
+               }
+                .info {
+                   min-height: 50px
+                }
+            }
+
+
+        .logo img {
+            min-width: 0
+        }
+        a:hover,
+        .main-color-txt,
+        div.topbar .shortlinks ul li a:hover,
+        #search_block_top i:hover,
+        .shopping_cart p a,
+        .shopping_cart a.cart-contents:hover > i,
+        .shopping_cart a.cart-contents > span span,
+        .shopping_cart .cart_block .cart-prices span.price,
+        .shopping_cart .cart_block .cart-buttons a:hover,
+        .shopping-cart-mobile a.cart-contents > span span,
+        .main-box .icon:after,
+        .prefooter .block_footer h4,
+        .prefooter .block_footer h4 a,
+        .prefooter .block_footer ul li a:hover,
+        .prefooter .block_footer ul li a:hover:before,
+        .prefooter .block_footer.block_contact .item.even,
+        .prefooter .block_footer.block_contact .item.even i,
+        .bottom p strong,
+        .ph_megamenu_mobile_toggle a.show_megamenu:hover,
+        .ph_megamenu_mobile_toggle a.hide_megamenu:hover,
+        #ph_megamenu_wrapper #ph_megamenu > li:first-child > a {
+               color: #7bbd42
+            }
+        .main-color,
+        .button.btn-primary,
+        .shopping_cart .cart_block .cart-buttons a,
+        .social-icons a:hover,
+       .prefooter .block_footer.block_contact .item,
+        #ph_megamenu_wrapper #ph_megamenu {
+               background: #7bbd42
+        }
+        div.topbar {
+           background: #1d1f25
+        }
+        #search_query_top:focus,
+        .shopping_cart a.cart-contents:hover > span,
+        .main-box:hover,
+        .prefooter .block_footer h4 {
+               border-color: #7bbd42
+        }
+        #ph_megamenu_wrapper #ph_megamenu > li {
+            border-color: #62a22b
+        }
+        div.topbar .shortlinks ul li {
+           border-color: #2a2e38
+        }
+        #search_block_top i,
+        .shopping_cart a.cart-contents > i,
+        div.topbar .shortlinks ul li a:hover {
+           color: #2c313b
+        }
+        #ph_megamenu_wrapper #ph_megamenu > li:first-child > a,
+        #newsletterRegistrationForm,
+        .prefooter .prefooter-blocks,
+        .button.btn-primary:hover {
+           background: #2c313b
+        }
+        .social-icons a:hover {
+           color: #fff
+        }
+        body {
+           background: #eee
+        }
+        header.top .pattern {
+            background: url(../../images/colors/header2.png) repeat-x top center
+        }
+        a {
+             color: #2A9646
+        }
+        @font-face {
+           font-family: 'PT Sans';
+           font-style: normal;
+           font-weight: 400;
+            src: local('PT Sans'), local(PTSans-Regular), url(https://fonts.gstatic.com/s/ptsans/v9/JX7MlXqjSJNjQvI4heMMGvY6323mHUZFJMgTvxaG2iE.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        @font-face {
+           font-family: 'PT Sans';
+           font-style: normal;
+           font-weight: 400;
+            src: local('PT Sans'), local(PTSans-Regular), url(https://fonts.gstatic.com/s/ptsans/v9/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format("woff2");
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        @font-face {
+           font-family: 'PT Sans';
+           font-style: normal;
+           font-weight: 400;
+           src: local('PT Sans'), local(PTSans-Regular), url(https://fonts.gstatic.com/s/ptsans/v9/9kaD4V2pNPMMeUVBHayd7vY6323mHUZFJMgTvxaG2iE.woff2) format("woff2");
+           unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        @font-face {
+           font-family: 'PT Sans';
+           font-style: normal;
+           font-weight: 400;
+           src: local('PT Sans'), local(PTSans-Regular), url(https://fonts.gstatic.com/s/ptsans/v9/ATKpv8nLYAKUYexo8iqqrg.woff2) format("woff2");
+           unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+        }
+        @font-face {
+           font-family: 'PT Sans';
+           font-style: normal;
+            font-weight: 700;
+           src: local('PT Sans Bold'), local(PTSans-Bold), url(https://fonts.gstatic.com/s/ptsans/v9/kTYfCWJhlldPf5LnG4ZnHCEAvth_LlrfE80CYdSH47w.woff2) format("woff2");
+           unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        @font-face {
+            font-family: 'PT Sans';
+           font-style: normal;
+           font-weight: 700;
+           src: local('PT Sans Bold'), local(PTSans-Bold), url(https://fonts.gstatic.com/s/ptsans/v9/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2) format("woff2");
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        @font-face {
+            font-family: 'PT Sans';
+           font-style: normal;
+           font-weight: 700;
+           src: local('PT Sans Bold'), local(PTSans-Bold), url(https://fonts.gstatic.com/s/ptsans/v9/hpORcvLZtemlH8gI-1S-7iEAvth_LlrfE80CYdSH47w.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        @font-face {
+            font-family: 'PT Sans';
+           font-style: normal;
+           font-weight: 700;
+            src: local('PT Sans Bold'), local(PTSans-Bold), url(https://fonts.gstatic.com/s/ptsans/v9/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 300;
+           src: local('Roboto Slab Light'), local(RobotoSlab-Light), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJRgVThLs8Y7ETJzDCYFCSLE.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+          }
+        @font-face {
+            font-family: 'Roboto Slab';
+           font-style: normal;
+            font-weight: 300;
+           src: local('Roboto Slab Light'), local(RobotoSlab-Light), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJZiMaisvaUVUsYyVzOmndek.woff2) format("woff2");
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+          }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 300;
+           src: local('Roboto Slab Light'), local(RobotoSlab-Light), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJbBAWGjcah5Ky0jbCgIwDB8.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Slab Light'), local(RobotoSlab-Light), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJf14vlcfyPYlAcQy2UfDRm4.woff2) format("woff2");
+           unicode-range: U+0370-03FF
+            }
+        @font-face {
+            font-family: 'Roboto Slab';
+           font-style: normal;
+            font-weight: 300;
+           src: local('Roboto Slab Light'), local(RobotoSlab-Light), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJafJul7RR1X4poJgi27uS4w.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+           font-weight: 300;
+           src: local('Roboto Slab Light'), local(RobotoSlab-Light), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJavyPXdneeGd26m9EmFSSWg.woff2) format("woff2");
+           unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+          font-weight: 300;
+          src: local('Roboto Slab Light'), local(RobotoSlab-Light), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJUo2lTMeWA_kmIyWrkNCwPc.woff2) format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+           font-weight: 400;
+            src: local('Roboto Slab Regular'), local(RobotoSlab-Regular), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZjTOQ_MqJVwkKsUn0wKzc2I.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+           src: local('Roboto Slab Regular'), local(RobotoSlab-Regular), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZjUj_cnvWIuuBMVgbX098Mw.woff2) format("woff2");
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+           font-style: normal;
+            font-weight: 400;
+           src: local('Roboto Slab Regular'), local(RobotoSlab-Regular), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZkbcKLIaa1LC45dFaAfauRA.woff2) format("woff2");
+           unicode-range: U+1F00-1FFF
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 400;
+            src: local('Roboto Slab Regular'), local(RobotoSlab-Regular), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37Zmo_sUJ8uO4YLWRInS22T3Y.woff2) format("woff2");
+           unicode-range: U+0370-03FF
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local(RobotoSlab-Regular), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37Zr6up8jxqWt8HVA3mDhkV_0.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+             src: local('Roboto Slab Regular'), local(RobotoSlab-Regular), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZiYE0-AqJ3nfInTTiDXDjU4.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 400;
+           src: local('Roboto Slab Regular'), local(RobotoSlab-Regular), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 700;
+           src: local('Roboto Slab Bold'), local(RobotoSlab-Bold), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJZ6iIh_FvlUHQwED9Yt5Kbw.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Slab Bold'), local(RobotoSlab-Bold), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJS_vZmeiCMnoWNN9rHBYaTc.woff2) format("woff2");
+           unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+            }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 700;
+           src: local('Roboto Slab Bold'), local(RobotoSlab-Bold), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJSFaMxiho_5XQnyRZzQsrZs.woff2) format("woff2");
+           unicode-range: U+1F00-1FFF
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 700;
+           src: local('Roboto Slab Bold'), local(RobotoSlab-Bold), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJQalQocB-__pDVGhF3uS2Ks.woff2) format("woff2");
+           unicode-range: U+0370-03FF
+        }
+        @font-face {
+            font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 700;
+           src: local('Roboto Slab Bold'), local(RobotoSlab-Bold), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJWhQUTDJGru-0vvUpABgH8I.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+            font-weight: 700;
+           src: local('Roboto Slab Bold'), local(RobotoSlab-Bold), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJejkDdvhIIFj_YMdgqpnSB0.woff2) format("woff2");
+           unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        @font-face {
+           font-family: 'Roboto Slab';
+           font-style: normal;
+           font-weight: 700;
+           src: local('Roboto Slab Bold'), local(RobotoSlab-Bold), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJYlIZu-HDpmDIZMigmsroc4.woff2) format("woff2");
+           unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+        }
+        header.top .pattern {
+           background: url(https://www.semillaslowcost.com/themes/madrid/css/autoload/../../images/colors/header2.png) repeat-x top center!important
+        }
+        .telefonodiv {
+            float: left;
+            margin-top: 1%;
+           font-size: large
+        }
+        .fa-whatsapp {
+           font-size: 20px;
+            color: green
+        }
+        .grow-category-block{
+             padding:0px;
+        }
+
+         input.main-color {
+            padding: 10PX;
+           width: 30%;
+            font-weight: bolder;
+            color: white;
+           background: #7bbd42;
+          }
+        .ac_results {
+           width: auto !important;
+        }
+
+
+    @media (min-width: 768px) {
+        .ph_megamenu_mobile_toggle {
+               display: none !important;
+        }
+
+        #buscador-movil {
+             display: none;
+        }
+
+      }
+
+     @media (max-width: 768px) {
+         #search_block_top p span {
+            
+            margin-top: .5% !important;
+            width: 95% !important;
+        }
+
+         #buscador-desktop {
+              display: none;
+         }
+
+         .search_query{
+             width: 93.2% !important;
+             margin-left: 3% !important;
+        }
+        #search_query_top {
+            width: 100% !important;
+        }
+        .panel-title {
+            font-size: 14px  !important;
+        }
+
+    }
+    input#search_query_top{
+        margin-left:0px;
+        margin-right: 2px;
+    }
+
+    form#searchbox {
+       margin-left: 0px;
+       margin-right: 0px;
+    }
+
+
+
+    .ph_megamenu_mobile_toggle {
+         top: 0px;
+                left: -15px;
+                width: 104%;
+                position: fixed;
+                z-index: 99999;
+                text-align: right;
+                padding-right: 2%;
+                padding-left: 2%;
+        }
+      #search_block_top {
+        background: #adafb3;
+        padding: 10px;
+        width: 99.5%;
+        }
+        #search_block_top i {
+            font-size: 24px
+        }
+
+        #search_block_top i:hover {
+           background: 24px
+        }
+
+        #ph_megamenu_wrapper #ph_megamenu {
+           background: #7bbd42
+        }
+        #search_block_top i {
+           font-size: 24px;
+            background: #7bbd42
+        }
+        div#buscador {
+            padding-top: 8px;
+            margin-bottom: 2%;
+            opacity:0.9 ;
+         }
+
+         #search_query_top {
+             margin-left: 21px;
+             border: 0px solid #2c313b;
+              border-right: 0px solid #2c313b;
+              width: 69% !important;
+              background: white;
+          }
+        input.main-color {
+              font-size: 15px;
+              padding: 0px;
+          }
+
+         .buscador-title{
+               color: #7bbd42;
+               text-align: center;
+               font-weight: normal;
+              margin-top:0px; 
+          }
+          div#buscador-desktop {
+              background: #2c313b;
+              margin-bottom: 2%;
+              padding: 2%;
+        }
+
+         div#buscador-movil {
+               background: #2c313b;
+               margin-bottom: 2%;
+               padding: 2%;
+          }
+        .mobile_menu{ 
+             max-height: 100%;
+             position: fixed;
+             overflow-y: auto;
+             margin-top: -27px; padding-right: 13%;
+             left: 19px; background: transparent !important;
+             top: 44px;}
+
+        a.main-color {
+            padding: 10PX;
+           width: 30%;
+            font-weight: bolder;
+            color: white;
+            background: #7bbd42;
+        }
+     @media (min-width: 1000px) {
+        .shopping_cart_mobile{display: none;}
+
+     }
+
+     @media (max-width: 1000px) {
+        .shopping_cart_desktop{display: none;}
+        .shopping_cart_mobile {
+                        margin-bottom: 4%;
+                    }
+
+                    }
+      .shopping_cart_mobile span.ajax_cart_no_product{color:white !important; } 
+      
+     .shopping_cart_mobile .icon-shopping-cart:before {
+            color: white;
+            }              
