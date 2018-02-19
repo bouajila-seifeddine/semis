@@ -1104,7 +1104,7 @@
                                     </div>
                                  </div>
                                  <h1 class="titulo-categoria">POSIBLEMENTE EL GROW SHOP ONLINE MÁS BARATO DE ESPAÑA</h1>
-                                 <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                 <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         
@@ -1265,7 +1265,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                  <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                  <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne6">
                                          
@@ -1354,7 +1354,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne7">
                                          
@@ -1444,7 +1444,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                        <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                        <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne8">
                                          
@@ -1532,7 +1532,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                          <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                          <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne10">
                                        
@@ -1623,9 +1623,9 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                                    <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                                    <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
-                                  <div class="panel-heading category-head" role="tab" id="headingOne10">
+                                  <div class="panel-heading category-head" role="tab" id="headingOne99">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11" class="link-collapse"><h4 class="panel-title">
                                                       BHO Y EXTRACCIONES
@@ -1633,7 +1633,7 @@
                                           
                                    </div><!-- .panel-heading -->
                                    <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/100-bho-y-extracciones'" value="VER CATÁLOGO BHO/EXTRACCIONES"></div>
-                                    <div id="collapseOne11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne10" aria-expanded="true" style="">
+                                    <div id="collapseOne11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne99" aria-expanded="true" style="">
                                          <div class="panel-body">
                     <p>Si lo que buscas es la extracción del aceite de hachís o el llamado BHO, desde SLC ponemos a la venta los poductos necesarios para la extracción, consumición y conservación necesarios para dicho fin. En nuestro grow shop  podrás encontrar online los productos de las principales marcas, desde los extractores más profesionales y de mejor calidad de materiales e fabricación a los extractores de aceite de hachís más baratos y sencillos de utilizar.</p>
                                     <p> Por ejemplo para realizar la extracción por el método del gas, Semillas Low Cost pone a disposición de compra gas butano refinado para la extracción del aceite de marihuana o de cannabis. Además de elementos más seguros como el Dimethyl Ether con gas Dexso.</p>
@@ -1712,7 +1712,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne11">
                                          
@@ -1800,7 +1800,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne12">
                                         
@@ -1888,7 +1888,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                           <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                           <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne13">
                                          
@@ -1978,7 +1978,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
 
-                                             <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                             <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne14">
                                         
@@ -2070,7 +2070,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
 
-                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne15">
                                          
@@ -2161,7 +2161,7 @@
                                  <br/>
 
 
-                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne16">
                                          
@@ -2253,7 +2253,7 @@
                                  <br/>
 
 
-                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne17">
                                          
@@ -2342,7 +2342,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                   <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                   <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne19">
                                          
@@ -2959,7 +2959,7 @@
                   else{ ?>
                      <a href="https://api.whatsapp.com/send?phone=++34653323445">
                   <?php } ?>
-                     <img src="/modules/whatsapp//views/img/whataspp_icon.png" alt="Whataspp" width="24px" height="24px">¿Alguna pregunta?</a></div>
+                     <img src="/modules/whatsapp//views/img/whataspp_icon.png" alt="Whataspp" width="24" height="24">¿Alguna pregunta?</a></div>
                      <footer class="bottom">
                         <div class="container">
                            <p class="pull-left">
