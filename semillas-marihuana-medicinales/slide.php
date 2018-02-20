@@ -6,7 +6,7 @@
   <div id="buscador-desktop">
   <h3 class="buscador-title">ENCUENTRA TU PRODUCTO UTILIZANDO <span style="color: white; font-weight: bolder;">EL BUSCADOR</span></h3>
   <div id="search_block_top" class="">
-  <form method="get" action="{$link->getPageLink('search', null, null, null, false, null, true)|escape:'html':'UTF-8'}" id="searchbox" class="row">
+  <form method="get" action="//www.semillaslowcost.com/buscar" id="searchbox" class="row">
     <div style="margin: 0px;">
       <input type="hidden" name="controller" value="search" />
       <input type="hidden" name="orderby" value="position" />
@@ -25,7 +25,7 @@
   <div id="buscador-movil">
   <h3 class="buscador-title">ENCUENTRA TU PRODUCTO UTILIZANDO <span style="color: white; font-weight: bolder;">EL BUSCADOR</span></h3>
   <div id="search_block_top" class="">
-  <form method="get" action="{$link->getPageLink('search', null, null, null, false, null, true)|escape:'html':'UTF-8'}" id="searchbox" class="row">
+  <form method="get" action="//www.semillaslowcost.com/buscar" id="searchbox" class="row">
     <div style="margin: 0px;">
       <input type="hidden" name="controller" value="search" />
       <input type="hidden" name="orderby" value="position" />

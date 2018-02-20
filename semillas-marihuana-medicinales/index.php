@@ -33,7 +33,7 @@
                   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1505304776" />
                   <link rel="stylesheet" href="v_315_d9b4d79373d0fbd4a064e37dd59f3597_all.css" type="text/css" media="all" />
                   <link rel="stylesheet" href="css/font-awesome.min.css">
-                  <script type="text/javascript">
+                  <script>
                      function toggleHidden(sel) {
                     elem = document.querySelector(sel)
                     elem.hidden = elem.hidden ? false : true;
@@ -71,7 +71,7 @@
                     }
                 }
                   </script>
-                  <style type="text/css">
+                  <style>
                  .category-show {
                     height: 37px !important;
                     width: 31% !important;
@@ -1122,7 +1122,7 @@
                                     </div>
                                  </div>
                                  <h1 class="titulo-categoria">SEMILLAS DE MARIHUANA MEDICINALES, CBD Y MÉTODOS DE EXTRACCIÓN MEDICINALES</h1>
-                                 <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                 <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         
@@ -1282,11 +1282,11 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <div id="content-img">
+                                          
                                              <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/2095-caramellate.html" title="Caramellate Feminizada de Gea Seeds">
                                              <img itemprop="image" src="https://www.semillaslowcost.com/2982-thickbox_default/caramellate.jpg" alt="Comprar Caramellate Feminizada de Gea Seeds" title="Comprar Caramellate Feminizada de Gea Seeds" class="img-responsive first-image">
                                              </a>
-                                          </div>
+                                          
                                           <div class="info">
                                              <h3 itemprop="name">
                                                 <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/2095-caramellate.html" title="Caramellate Feminizada de Gea Seeds">
@@ -1387,7 +1387,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                  <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                  <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne6">
                                          
@@ -1538,7 +1538,7 @@
                                  </div>
                                  <!-- Fin row imagenes -->
                                  <br/>
-                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne18">
                                          
@@ -1691,7 +1691,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                   
-                                        <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                        <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne8">
                                          
@@ -1781,7 +1781,7 @@
                                  <br/>
                      
 
-                                   <div class="grow-category-block panel-group dark col-md-12 col-xs-12">
+                                   <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne19">
                                          
@@ -2402,7 +2402,7 @@
                   else{ ?>
                      <a href="https://api.whatsapp.com/send?phone=++34653323445">
                   <?php } ?>
-                     <img src="/modules/whatsapp//views/img/whataspp_icon.png" alt="Whataspp" width="24px" height="24px">¿Alguna pregunta?</a></div>
+                     <img src="/modules/whatsapp//views/img/whataspp_icon.png" alt="Whataspp" width="24" height="24">¿Alguna pregunta?</a></div>
                      <footer class="bottom">
                         <div class="container">
                            <p class="pull-left">
@@ -2416,9 +2416,9 @@
                         </div>
                      </footer>
                   </div>
-                   <script type="text/javascript" src="v_139_979234257a36d5d1d201fc17021a2e50.js"></script>
-                  <script type="text/javascript">/* <![CDATA[ */;var CUSTOMIZE_TEXTFIELD=1;var FancyboxI18nClose='Cerrar';var FancyboxI18nNext='Siguiente';var FancyboxI18nPrev='Previo';var ajax_allowed=true;var ajaxsearch=true;var autoplayInfo=false;var autoplay_speed='5000';var baseDir='https://www.semillaslowcost.com/';var baseUri='https://www.semillaslowcost.com/';var blocksearch_type='top';var contentOnly=false;var customizationIdMessage='Personalización n°';var delete_txt='Eliminar';var displayList=false;var freeProductTranslation='¡Gratis!';var freeShippingTranslation='¡Envío gratuito!';var generated_date=1507196517;var hasDeliveryAddress=true;var homeslider_loop=0;var homeslider_pause=6000;var homeslider_speed=500;var homeslider_width=2050;var id_lang=4;var img_dir='https://www.semillaslowcost.com/themes/madrid/img/';var instantsearch=true;var isGuest=0;var isLogged=1;var isMobile=false;var page_name='index';var placeholder_blocknewsletter='Introduzca su dirección de correo electrónico';var priceDisplayMethod=0;var priceDisplayPrecision=2;var quickView=true;var removingLinkText='eliminar este producto de mi carrito';var roundMode=2;var search_url='https://www.semillaslowcost.com/buscar';var static_token='748689dd839a4f2c4d20582585ad7a95';var toBeDetermined='A determinar';var token='af661569a7ddbee558d16377739f3a65';var usingSecureMode=true;/* ]]> */</script> 
-                  <script type="text/javascript">/* <![CDATA[ */;function closeinfo()
+                   <script src="v_139_979234257a36d5d1d201fc17021a2e50.js"></script>
+                  <script>/* <![CDATA[ */;var CUSTOMIZE_TEXTFIELD=1;var FancyboxI18nClose='Cerrar';var FancyboxI18nNext='Siguiente';var FancyboxI18nPrev='Previo';var ajax_allowed=true;var ajaxsearch=true;var autoplayInfo=false;var autoplay_speed='5000';var baseDir='https://www.semillaslowcost.com/';var baseUri='https://www.semillaslowcost.com/';var blocksearch_type='top';var contentOnly=false;var customizationIdMessage='Personalización n°';var delete_txt='Eliminar';var displayList=false;var freeProductTranslation='¡Gratis!';var freeShippingTranslation='¡Envío gratuito!';var generated_date=1507196517;var hasDeliveryAddress=true;var homeslider_loop=0;var homeslider_pause=6000;var homeslider_speed=500;var homeslider_width=2050;var id_lang=4;var img_dir='https://www.semillaslowcost.com/themes/madrid/img/';var instantsearch=true;var isGuest=0;var isLogged=1;var isMobile=false;var page_name='index';var placeholder_blocknewsletter='Introduzca su dirección de correo electrónico';var priceDisplayMethod=0;var priceDisplayPrecision=2;var quickView=true;var removingLinkText='eliminar este producto de mi carrito';var roundMode=2;var search_url='https://www.semillaslowcost.com/buscar';var static_token='748689dd839a4f2c4d20582585ad7a95';var toBeDetermined='A determinar';var token='af661569a7ddbee558d16377739f3a65';var usingSecureMode=true;/* ]]> */</script> 
+                  <script>/* <![CDATA[ */;function closeinfo()
                      {$('.lgcookieslaw_banner').hide();};;var user_options_AC={"cookiesUrl":"","cookiesUrlTitle":"","redirectLink":"https://www.google.es/","messageContent":"%3Cp+style%3D%22text-align%3A+center%3B%22%3E%3Cspan+style%3D%22color%3A+%23000000%3B%22%3EP%C3%A1gina+de+acceso+solo+permitido+para+mayores+de+18+a%C3%B1os.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+no+se+hace+responsable+en+el+caso+de+que+un+menor+accediera+a+la+web+proporcionando+datos+falsos.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+declina+toda+responsabilidad+sobre+el+uso+indebido+de+los+productos+que+comercializa.+Desde+Semillas+Low+Cost+no+se+pretende+fomentar+e+inducir+a+actuar+en+contra+de+la+ley.+Cada+cual+ser%C3%A1+responsable+de+sus+actos+de+acuerdo+a+la+legislaci%C3%B3n+de+cada+pa%C3%ADs.+Esta+web+usa+coookies.+Es+deber+del+Usuario+informarse+sobre+la+legislacion+vigente+de+su+pais.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+comercializa+semillas+ca%C3%B1amo+para+uso+exclusivo+de+coleccionismo.%3C%2Fspan%3E%3C%2Fp%3E","okText":"Aceptar","notOkText":"No, gracias","cookieName":"DELUXEADULTCONTENTWarningCheck","cookiePath":"/","cookieDomain":"www.semillaslowcost.com","ajaxUrl":"https://www.semillaslowcost.com/modules/deluxeadultcontent/cookie_ajax.php","dlxOpacity":"","dlxColor":"",};;function updateFormDatas(){var nb=$('#quantity_wanted').val();var id=$('#idCombination').val();$('.paypal_payment_form input[name=quantity]').val(nb);$('.paypal_payment_form input[name=id_p_attr]').val(id);}$(document).ready(function(){if($('#in_context_checkout_enabled').val()!=1){$('#payment_paypal_express_checkout').click(function(){$('#paypal_payment_form_cart').submit();return false;});}var jquery_version=$.fn.jquery.split('.');if(jquery_version[0]>=1&&jquery_version[1]>=7){$('body').on('submit',".paypal_payment_form",function(){updateFormDatas();});}else{$('.paypal_payment_form').live('submit',function(){updateFormDatas();});}function displayExpressCheckoutShortcut(){var id_product=$('input[name="id_product"]').val();var id_product_attribute=$('input[name="id_product_attribute"]').val();$.ajax({type:"GET",url:baseDir+'/modules/paypal/express_checkout/ajax.php',data:{get_qty:"1",id_product:id_product,id_product_attribute:id_product_attribute},cache:false,success:function(result){if(result=='1'){$('#container_express_checkout').slideDown();}else{$('#container_express_checkout').slideUp();}return true;}});}$('select[name^="group_"]').change(function(){setTimeout(function(){displayExpressCheckoutShortcut()},500);});$('.color_pick').click(function(){setTimeout(function(){displayExpressCheckoutShortcut()},500);});if($('body#product').length>0)setTimeout(function(){displayExpressCheckoutShortcut()},500);var modulePath='modules/paypal';var subFolder='/integral_evolution';var baseDirPP=baseDir.replace('http:','https:');var fullPath=baseDirPP+modulePath+subFolder;var confirmTimer=false;if($('form[target="hss_iframe"]').length==0){if($('select[name^="group_"]').length>0)displayExpressCheckoutShortcut();return false;}else{checkOrder();}function checkOrder(){if(confirmTimer==false)confirmTimer=setInterval(getOrdersCount,1000);}function getOrdersCount(){$.get(fullPath+'/confirm.php',{id_cart:'1338'},function(data){if((typeof(data)!='undefined')&&(data>0)){clearInterval(confirmTimer);window.location.replace(fullPath+'/submit.php?id_cart=1338');$('p.payment_module, p.cart_navigation').hide();}});}});;(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-70811397-1','auto');ga('require','ec');ga('set','&uid','21');;$(function(){$('.ph_megamenu').ph_megamenu();if(typeof $.fn.fitVids!=='undefined'){$('.ph_megamenu').fitVids();}});;(function(){eKomiIntegrationConfig=new Array({certId:'38501418403AF16'});if(typeof eKomiIntegrationConfig!="undefined"){for(var eKomiIntegrationLoop=0;eKomiIntegrationLoop<eKomiIntegrationConfig.length;eKomiIntegrationLoop++){var eKomiIntegrationContainer=document.createElement('script');eKomiIntegrationContainer.type='text/javascript';eKomiIntegrationContainer.defer=true;eKomiIntegrationContainer.src=(document.location.protocol=='https:'?'https:':'http:')+"//connect.ekomi.de/integration_1491410875/"+eKomiIntegrationConfig[eKomiIntegrationLoop].certId+".js";document.getElementsByTagName("head")[0].appendChild(eKomiIntegrationContainer);}}else{if('console'in window){console.error('connectEkomiIntegration - Cannot read eKomiIntegrationConfig');}}})();;ga('send','pageview');/* ]]> */
                   </script>
                </body>
