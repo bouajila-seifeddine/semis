@@ -21,9 +21,9 @@
                     ?>
                   <meta charset="utf-8" />
                   <title>
-                     Semillas de marihuana medicinales, aceites de CBD y métodos de extracción.
+                     Semillas de marihuana medicinales, aceites de CBD y extracciones.
                   </title>
-                  <meta name="description" content="En SemillaLowCost podrás encontrar las semillas de variedades de marihuana medicinales, aceites cbd, métodos de extracción... todo lo que necesitas saber sobre el cannabis medicinal lo encontrarás aquí." />
+                  <meta name="description" content="En SemillaLowCost podrás encontrar semillas de variedades de marihuana medicinales, aceites cbd, métodos de extracción... todo lo que necesitas saber sobre el cannabis medicinal lo encontrarás aquí." />
                   <meta name="keywords" content="venta de semillas medicinales, semillas de marihuana medicinales, variedades de cannabis de uso medico, semillas de marijuana medicinal baratas" />
                   <meta name="generator" content="PrestaShop" />
                   <meta name="robots" content="index, follow" />
