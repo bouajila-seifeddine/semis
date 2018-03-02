@@ -2667,7 +2667,7 @@
             <li> <a href="https://www.semillaslowcost.com/content/2-aviso-legal" title="AVISO LEGAL"> AVISO LEGAL </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/4-sobre-nosotros" title="SOBRE NOSOTROS"> SOBRE NOSOTROS </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/5-pagos-seguros" title="PAGOS SEGUROS"> PAGOS SEGUROS </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/9-preguntas-frecuentes" title="PREGUNTAS FRECUENTES"> PREGUNTAS FRECUENTES </a></li>
+            <li> <a href="https://www.semillaslowcost.com/content/12-preguntas-frecuentes2" title="PREGUNTAS FRECUENTES"> PREGUNTAS FRECUENTES </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/7-politicas-de-cookies" title="POLÍTICA DE COOKIES"> POLÍTICA DE COOKIES </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" title="POLÍTICA DE PRIVACIDAD"> POLÍTICA DE PRIVACIDAD </a></li>
             <li> <a href="https://www.semillaslowcost.com/tiendas" title="NUESTRAS TIENDAS"> NUESTRAS TIENDAS </a></li>
@@ -2857,7 +2857,7 @@
                                           PAGOS SEGUROS </a>
                                        </li>
                                        <li class="item">
-                                          <a href="https://www.semillaslowcost.com/content/9-preguntas-frecuentes" title="PREGUNTAS FRECUENTES">
+                                          <a href="https://www.semillaslowcost.com/content/12-preguntas-frecuentes2" title="PREGUNTAS FRECUENTES">
                                           PREGUNTAS FRECUENTES </a>
                                        </li>
                                        <li class="item">
