@@ -135,6 +135,8 @@
 					<textarea class="form-control" id="message" name="message">{if isset($message)}{$message|escape:'html':'UTF-8'|stripslashes}{/if}</textarea>
 				</div>
 			</div>
+			<script src='https://www.google.com/recaptcha/api.js'></script>
+			<div class="g-recaptcha" data-sitekey="6LcfkUoUAAAAAGmo7tCi9BfnnGy_UJ3rL-0ZH24q"></div>
 			<div class="submit">
 				<button type="submit" name="submitMessage" id="submitMessage" class="button btn-primary"><span>{l s='Send'}</span></button>
 			</div>

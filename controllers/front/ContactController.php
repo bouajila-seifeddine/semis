@@ -41,6 +41,9 @@ class ContactControllerCore extends FrontController
             $message = Tools::getValue('message'); // Html entities is not usefull, iscleanHtml check there is no bad html tags.
             if (!($from = trim(Tools::getValue('from'))) || !Validate::isEmail($from)) {
                 $this->errors[] = Tools::displayError('Invalid email address.');
+             } elseif (!($gcaptcha = (int)(Tools::getValue('g-recaptcha-response')))) {
+                $this->errors[] = Tools::displayError('Captcha error');
+               // to here
             } elseif (!$message) {
                 $this->errors[] = Tools::displayError('The message cannot be blank.');
             } elseif (!Validate::isCleanHtml($message)) {
