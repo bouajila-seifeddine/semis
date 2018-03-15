@@ -57,9 +57,9 @@
 		left: 0;
 		z-index: 999;
 		top: 0;
-
+padding-top: 10px;
 		height: {$banner['height']|escape:'htmlall':'UTF-8'}px;
-		line-height: {$banner['height']|escape:'htmlall':'UTF-8'}px;
+		
 		background-color: {$banner['background']|escape:'htmlall':'UTF-8'};
 		font-size: {$banner['text_size']|escape:'htmlall':'UTF-8'}px;
 		color: {$banner['text_color']|escape:'htmlall':'UTF-8'};

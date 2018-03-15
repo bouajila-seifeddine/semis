@@ -83,6 +83,33 @@
 	</script>
 
 		<style>
+
+@media (min-width: 900px) {
+	.cupon{
+		width: 48.5%;
+		float:left;
+		margin-bottom: 3%;
+
+	}
+
+	.impar{		margin-right: 	3%;}
+}
+.cupon {
+    text-align: right;
+}
+
+.cupon .btn-primary {
+    font-size: 14px;
+    width: 35%;
+}
+
+.cupon input {
+    border: 0.5px solid #dcdcdd;
+    text-align: center;
+    padding: 1%;
+    float: left;
+    font-weight: bolder;
+}
 		.asagiSabit {
     position: fixed;
     bottom: 10px;
@@ -181,27 +208,35 @@
                          display: none;
                      }
 
+
 }
 
  @media (max-width: 768px) {
-                #search_block_top p span {
+   #search_block_top p span {
    			
-   			     margin-top: .5% !important;
-   			 width: 95% !important;
+   		 margin-top: .5% !important;
+   		 width: 95% !important;
 	}
 
-	        #buscador-desktop {
-                         display: none;
-                     }
+	body .header-banner{
+	margin-top: 50px;
+		}
 
-	                .search_query{
+	  #buscador-desktop {
+         display: none;
+       }
+
+	  .search_query{
    			 width: 93.2% !important;
    			 margin-left: 3% !important;
 	}
+
 	#search_query_top {
     width: 100% !important;
   
-}}
+}
+
+}
 @media (max-width: 767px){
 
 header.logo {
