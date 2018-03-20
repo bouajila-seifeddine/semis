@@ -222,9 +222,7 @@
                min-width: 100%;
                height: auto
             }
-            header.top .pattern {
-               background: url(https://www.semillaslowcost.com/themes/madrid/images/colors/header2.png) repeat-x top center
-            }
+          
             .info {
                 background: rgba(123, 189, 66, 1)!important
             }
@@ -354,9 +352,7 @@
         body {
            background: #eee
         }
-        header.top .pattern {
-            background: url(../../images/colors/header2.png) repeat-x top center
-        }
+       
         a {
              color: #2A9646
         }
