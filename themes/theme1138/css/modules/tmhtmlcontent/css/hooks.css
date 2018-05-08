@@ -1,0 +1,66 @@
+@charset "UTF-8";
+#tmhtmlcontent_home ul {
+  margin-bottom: 0; }
+  @media only screen and (min-width: 1200px) {
+    #tmhtmlcontent_home ul li a:hover .item-html h2 {
+      color: #ff5b23; }
+    #tmhtmlcontent_home ul li a:hover .item-html h3 {
+      color: #fff; }
+    #tmhtmlcontent_home ul li a:hover .item-html p:after {
+      background: #000; } }
+  #tmhtmlcontent_home ul li .item-html {
+    padding: 147px 0 156px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #fff; }
+    #tmhtmlcontent_home ul li .item-html h2 {
+      font: normal 60px/58px "Lora", serif;
+      margin: 0;
+      padding: 0; }
+    #tmhtmlcontent_home ul li .item-html h3 {
+      font: 100 130px/114px "Roboto", sans-serif;
+      margin: 0 0 26px;
+      padding: 0;
+      color: #ff5b23; }
+    #tmhtmlcontent_home ul li .item-html p {
+      width: 74.7%;
+      padding-right: 10px;
+      position: relative; }
+      #tmhtmlcontent_home ul li .item-html p:after {
+        content: "";
+        font-family: "FontAwesome";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        line-height: 60px;
+        background: #ff5b23; }
+@media (min-width: 768px) and (max-width: 991px) {
+  #tmhtmlcontent_home ul li .item-html {
+    padding: 100px 0; }
+    #tmhtmlcontent_home ul li .item-html p {
+      width: 89%; } }
+@media (max-width: 767px) {
+  #tmhtmlcontent_home ul li .item-html {
+    padding: 100px 0; }
+    #tmhtmlcontent_home ul li .item-html p {
+      display: none; }
+    #tmhtmlcontent_home ul li .item-html h2 {
+      font: normal 40px/38px "Lora", serif; }
+    #tmhtmlcontent_home ul li .item-html h3 {
+      font: 100 90px/90px "Roboto", sans-serif;
+      margin: 0; } }
+@media (max-width: 479px) {
+  #tmhtmlcontent_home ul li .item-html {
+    padding: 50px 0; }
+    #tmhtmlcontent_home ul li .item-html p {
+      display: none; }
+    #tmhtmlcontent_home ul li .item-html h2 {
+      font: normal 30px/28px "Lora", serif; }
+    #tmhtmlcontent_home ul li .item-html h3 {
+      font: 100 50px/50px "Roboto", sans-serif;
+      margin: 0; } }

@@ -21,6 +21,7 @@
     display: inline-block;
     }
   #product_comments_block_extra div.star_on:after {
+  	color:#dada1c ;
     content: "\f005";
     font-family: "FontAwesome";
     display: inline-block;
@@ -207,6 +208,7 @@
     display: inline-block;
      }
   #product_comments_block_tab div.star_on:after {
+  	color: #dada1c;
     content: "\f005";
     font-family: "FontAwesome";
     display: inline-block;

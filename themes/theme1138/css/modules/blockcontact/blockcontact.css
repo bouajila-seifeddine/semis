@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.shop-phone {
+  padding: 6px 10px 6px;
+  color: white;
+  background: #000;
+  position: absolute;
+  right: 115px;
+  top: 20px;
+  font-size: 16px; }
+  @media (max-width: 767px) {
+    .shop-phone {
+      display: none; } }
+  .shop-phone i {
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: -2px;
+    margin-right: 5px; }
+
+#contact-link {
+  float: right;
+  padding: 65px 10px 25px; }
+  @media (max-width: 767px) {
+    #contact-link {
+      display: none; } }
+  #contact-link a {
+    color: white;
+    display: block;
+    cursor: pointer;
+    line-height: 30px;
+    -moz-transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -o-transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    -webkit-transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+    #contact-link a:before {
+      content: "";
+      font-family: "FontAwesome";
+      font-size: 15px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      background: #ff5b23;
+      margin-right: 7px;
+      -moz-transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+      -o-transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+      -webkit-transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+      transition: all 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+    #contact-link a:hover, #contact-link a.active {
+      color: #ff5b23; }
+      #contact-link a:hover:before, #contact-link a.active:before {
+        color: #fff;
+        background: #202020; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #contact-link {
+      padding: 15px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #contact-link {
+      padding: 15px; }
+      #contact-link a {
+        font-size: 12px; } }
+
+@media only screen and (min-width: 1200px) {
+  .lang_es #contact-link {
+    float: right;
+    padding: 9px 22px 11px; } }
+@media (max-width: 767px) {
+  #contact_block {
+    margin-bottom: 20px; } }
+#contact_block .label {
+  display: none; }
+#contact_block .block_content {
+  color: #888888; }
+#contact_block p {
+  margin-bottom: 4px; }
+#contact_block p.tel {
+  font: 400 17px/21px "Roboto", sans-serif;
+  color: #262626;
+  margin-bottom: 6px; }
+  #contact_block p.tel i {
+    font-size: 25px;
+    vertical-align: -2px;
+    padding-right: 10px; }

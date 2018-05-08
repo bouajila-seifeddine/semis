@@ -143,3 +143,11 @@
 .rte {
     font-size: 16px;
 }
+
+span.bank-name {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    left: 10px;
+    padding-bottom: 2px;
+}

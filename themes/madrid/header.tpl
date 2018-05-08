@@ -51,13 +51,13 @@
 		<meta name="keywords" content="{$meta_keywords|escape:'html':'UTF-8'}" />
 {/if}
 		<meta name="generator" content="PrestaShop" />
-		<meta name="robots" content="{if isset($nobots)}no{/if}index,{if isset($nofollow) && $nofollow}no{/if}follow" />
+		<meta name="robots" content="{if isset($nobots)}no{/if}index,{if isset($nofollow) && $nofollow}{/if}follow" />
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
 		<link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
 		
-
+<meta name="ahrefs-site-verification" content="24ee5c6c2ac37d315bdf8cb6a3404f792950bc69d672644bba85ac204d254d73">
 		<link rel="stylesheet" href="https://www.semillaslowcost.com/fontawesome/css/font-awesome.min.css">
 	<script  data-keepinline="true">
 	{literal}
@@ -378,7 +378,10 @@ form#searchbox {
 			<script src="{$js_uri|escape:'html':'UTF-8'}"></script>
 			{/foreach}
 		{/if}
-		{$HOOK_HEADER}
+		{if $page_name != 'manufacturer' && $page_name != 'supplier'}
+    		{$HOOK_HEADER}
+		{/if}
+		
 
 
 
@@ -456,7 +459,7 @@ form#searchbox {
 					<ul class="nolist row pull-right">
 					
 						<li><a href="{$base_dir_ssl}">{l s='Inicio'}</a></li>
-						<li><a href="{$link->getPageLink('cart', true)|escape:'html':'UTF-8'}">{l s='Pedido rápido'}</a></li>
+						<li><a href="/pedido-rapido">{l s='Pedido rápido'}</a></li>
 						{if $is_logged}
 						<li><a href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}">{l s='Salir de mi cuenta'}</a></li>
 						{else}

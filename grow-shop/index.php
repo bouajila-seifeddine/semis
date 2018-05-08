@@ -35,6 +35,7 @@
                  
                  <link rel="stylesheet" href="ihover.css" type="text/css" media="all" />
                   <link rel="stylesheet" href="css/font-awesome.min.css">
+                  <link rel="canonical" href="https://www.semillaslowcost.com/grow-shop/">
                   <script type="text/javascript">
                      function toggleHidden(sel) {
                     elem = document.querySelector(sel)
@@ -744,7 +745,7 @@
                                     Inicio</a>
                                  </li>
                                  <li>
-                                    <a href="https://www.semillaslowcost.com/carrito">
+                                    <a href="https://www.semillaslowcost.com/pedido-rapido">
                                     Pedido r&aacute;pido</a>
                                  </li>
                                  <li>
@@ -1013,13 +1014,13 @@
                                        </a>
                                     </li>
                                     <li class="menu_link_30 ph-hidden-desktop"> <a href="/93-armarios-de-cultivo" title="ARMARIOS DE CULTIVO"> <span class="">ARMARIOS DE CULTIVO</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ARMARIOS DE CULTIVO</span> </span> </a></li>
-                                    <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminación" title="ILUMINACIÓN"> <span class="">ILUMINACIÓN</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ILUMINACIÓN</span> </span> </a></li>
+                                    <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminacion" title="ILUMINACIÓN"> <span class="">ILUMINACIÓN</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ILUMINACIÓN</span> </span> </a></li>
                                     <li class="menu_link_32 ph-hidden-desktop"> <a href="/95-control-de-clima" title="CONTROL DE CLIMA"> <span class="">CONTROL DE CLIMA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">CONTROL DE CLIMA</span> </span> </a></li>
                                     <li class="menu_link_33 ph-hidden-desktop"> <a href="/96-fertilizantes-y-preventivos" title="FERTILIZANTES Y PREVENTIVOS"> <span class="">FERTILIZANTES Y PREVENTIVOS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">FERTILIZANTES Y PREVENTIVOS</span> </span> </a></li>
                                     <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA"> <span class="">RIEGO E HIDROPONÍA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">RIEGO E HIDROPONÍA</span> </span> </a></li>
                                     <li class="menu_link_35 ph-hidden-desktop"> <a href="/98-kits" title="KITS"> <span class="">KITS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">KITS</span> </span> </a></li>
                                     <li class="menu_link_36 ph-hidden-desktop"> <a href="/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> <span class="">INSTRUMENTOS DE MEDIDA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">INSTRUMENTOS DE MEDIDA</span> </span> </a></li>
-                                    <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-parafernalia-y-accesorios" title="ACCESORIOS Y PARAFERNALIA"> <span class="">ACCESORIOS Y PARAFERNALIA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ACCESORIOS Y PARAFERNALIA</span> </span> </a></li>
+                                    <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-herramientas-y-accesorios" title="ACCESORIOS Y PARAFERNALIA"> <span class="">ACCESORIOS Y PARAFERNALIA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ACCESORIOS Y PARAFERNALIA</span> </span> </a></li>
                                     <li class="menu_link_38 ph-hidden-desktop"> <a href="/104-macetas-y-bandejas" title="MACETAS Y BANDEJAS"> <span class="">MACETAS Y BANDEJAS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">MACETAS Y BANDEJAS</span> </span> </a></li>
                                     <li class="menu_link_39 ph-hidden-desktop"> 
                                        <a href="/107-tratamiento-de-olores" title="TRATAMIENTO DE OLORES"> <span class="">TRATAMIENTO DE OLORES</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">TRATAMIENTO DE OLORES</span> </span> </a>
@@ -1203,7 +1204,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/26-early-skunk-geaseeds.html" title="Early Skunk">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/890-thickbox_default/early-skunk-geaseeds.jpg" alt="Comprar Early Skunk" title="Comprar Early Skunk" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2991-thickbox_default/early-skunk-geaseeds.jpg" alt="Comprar Early Skunk" title="Comprar Early Skunk" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1211,7 +1212,7 @@
                                                 Early Skunk</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="1.00" class="price">
                                                 1€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1223,7 +1224,7 @@
                                           <div class="img_hover"></div>
                                           <div id="content-img">
                                              <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/713-auto-critical-geaseeds.html" title="Auto Critical">
-                                             <img itemprop="image" src="https://www.semillaslowcost.com/905-thickbox_default/auto-critical-geaseeds.jpg" alt="Comprar Auto Critical" title="Comprar Auto Critical" class="img-responsive first-image">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/3009-thickbox_default/auto-critical-geaseeds.jpg" alt="Comprar Auto Critical" title="Comprar Auto Critical" class="img-responsive first-image">
                                              </a>
                                           </div>
                                           <div class="info">
@@ -1232,7 +1233,7 @@
                                                 Auto Critical</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="1.00" lass="price">
                                                 1€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1243,7 +1244,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/695-super-skunk-geaseeds.html" title="Super Skunk">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/894-thickbox_default/super-skunk-geaseeds.jpg" alt="Comprar Super Skunk"  title="Comprar Super Skunk"  class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2995-thickbox_default/super-skunk-geaseeds.jpg" alt="Comprar Super Skunk"  title="Comprar Super Skunk"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1251,7 +1252,7 @@
                                                 Super Skunk</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="1.00" class="price">
                                                 1€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1302,7 +1303,7 @@
                                                 Armario Mammoth Pro</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="532.96" class="price">
                                                 532,96€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1321,7 +1322,7 @@
                                                 Armario Light Silver</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="55.59" class="price">
                                                 55,59€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1340,7 +1341,7 @@
                                                 Armario Cultibox Open</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="90.82"  class="price">
                                                 90,82€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1359,7 +1360,7 @@
                                                </h4></a>
                                           
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/94-iluminaci%C3%B3n'" value="VER CATÁLOGO ILUMINACIÓN"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/94-iluminacion'" value="VER CATÁLOGO ILUMINACIÓN"></div>
                                     <div id="collapseOne8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne7" aria-expanded="true" style="">
                                          <div class="panel-body">
                       <p>Los cultivos Indoor o de interior han sido posible debido al uso de sistemas de iluminación. Estos aportan a las plantas la luz y energía necesaria para que puedan vivir, alimentarse y crecer en condiciones. </p>
@@ -1383,16 +1384,16 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1680-kit-iluminación-ipower-600w.html" title="Kit de Iluminación IPOWER Electrónico ">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2543-thickbox_default/kit-iluminación-ipower-600w.jpg" alt="Comprar Kit de Iluminación IPOWER Electrónico " title="Comprar Kit de Iluminación IPOWER Electrónico " class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminacion/1680-kit-iluminacion-ipower-600w.html" title="Kit de Iluminación IPOWER Electrónico ">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2543-thickbox_default/kit-iluminacion-ipower-600w.jpg" alt="Comprar Kit de Iluminación IPOWER Electrónico " title="Comprar Kit de Iluminación IPOWER Electrónico " class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1680-kit-iluminación-ipower-600w.html" title="Kit de Iluminación IPOWER Electrónico ">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminacion/1680-kit-iluminacion-ipower-600w.html" title="Kit de Iluminación IPOWER Electrónico ">
                                                 Kit de Iluminación IPOWER </a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="117.90" class="price">
                                                 117,90€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1411,7 +1412,7 @@
                                                 Balastro de Clase 2 ETI</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="36.30" class="price">
                                                 36,30€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1430,7 +1431,7 @@
                                                 La Bombilla Hortilight SHP</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="11.91" class="price">
                                                 11,91€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1480,7 +1481,7 @@
                                                 Controlador de Humedad</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price ">
+                                                <span itemprop="price" content="28.96" class="price ">
                                                 28,96€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1490,16 +1491,16 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1036-controlador-tª-velocidad-e-hysteresis-min-y-max-2-gse.html" title="Controlador Tª, Velocidad e Hysteresis Min y Max (2) GSE">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1898-thickbox_default/controlador-tª-velocidad-e-hysteresis-min-y-max-2-gse.jpg" alt="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE"  title="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1036-controlador-t-velocidad-e-hysteresis-min-y-max-2-gse.html" title="Controlador Tª, Velocidad e Hysteresis Min y Max (2) GSE">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1898-thickbox_default/controlador-t-velocidad-e-hysteresis-min-y-max-2-gse.jpg" alt="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE"  title="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1036-controlador-tª-velocidad-e-hysteresis-min-y-max-2-gse.html" title="Controlador Tª, Velocidad e Hysteresis Min y Max (2) GSE">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1036-controlador-t-velocidad-e-hysteresis-min-y-max-2-gse.html" title="Controlador Tª, Velocidad e Hysteresis Min y Max (2) GSE">
                                                 Control temperatura...</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="109.51" class="price">
                                                 109,51€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1518,7 +1519,7 @@
                                                 Deshumidificador Mini</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="36.38" class="price">
                                                 36,38€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1571,7 +1572,7 @@
                                                 Fertilizante Amax Growth...</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="20.90" class="price">
                                                 20,90€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1590,7 +1591,7 @@
                                                 Atazyme ATA</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="9.92" class="price">
                                                 9,92€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1609,7 +1610,7 @@
                                                 Top Candy Top Crop</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="7.34" class="price">
                                                 7,34€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1660,7 +1661,7 @@
                                                 POLEN MAKER</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="35.00" class="price">
                                                 35,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1679,7 +1680,7 @@
                                                 ROLLER EXTRACTOR</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="68.99" class="price">
                                                 68,99€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1698,7 +1699,7 @@
                                                 Lavadora + Pirámide +....</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="154.00" class="price">
                                                 154,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1717,7 +1718,7 @@
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/97-riego-e-hidropon%C3%ADa'" value="VER CATÁLOGO RIEGO"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/97-riego-e-hidroponia'" value="VER CATÁLOGO RIEGO"></div>
                                     <div id="collapseOne12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne11" aria-expanded="true" style="">
                                          <div class="panel-body">
                     <p>Como todos sabemos uno de los elementos más importantes en los cultivos es el sistema de riego que  utilizamos. En SLC grow shop tenemos los sistemas de riego más modernos y económicos del mercado.</p>
@@ -1739,16 +1740,16 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1364-aerofarm-ghe.html" title="AeroFarm GHE">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidroponicos/1364-aerofarm-ghe.html" title="AeroFarm GHE">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2237-thickbox_default/aerofarm-ghe.jpg" alt="Comprar AeroFarm GHE" title="Comprar AeroFarm GHE" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1364-aerofarm-ghe.html" title="AeroFarm GHE">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidroponicos/1364-aerofarm-ghe.html" title="AeroFarm GHE">
                                                 AeroFarm GHE</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="94.00" class="price">
                                                 94,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1758,16 +1759,16 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1485-deposito-dwc105.html" title="Depósito DWC105">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidroponicos/1485-deposito-dwc105.html" title="Depósito DWC105">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2311-thickbox_default/deposito-dwc105.jpg" alt="Comprar Depósito DWC105" title="Comprar Depósito DWC105" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidropónicos/1485-deposito-dwc105.html" title="Depósito DWC105">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidroponicos/1485-deposito-dwc105.html" title="Depósito DWC105">
                                                 Depósito DWC105</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="26.66" class="price">
                                                 26,66€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1777,16 +1778,16 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/filtros-ósmosis/1383-filtro-de-ósmosis-de-5-etapas-sin-deposito.html" title="Filtro de Ósmosis de 5 etapas SIN DEPOSITO">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2230-thickbox_default/filtro-de-ósmosis-de-5-etapas-sin-deposito.jpg" alt="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO"  title="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/filtros-osmosis/1383-filtro-de-osmosis-de-5-etapas-sin-deposito.html" title="Filtro de Ósmosis de 5 etapas SIN DEPOSITO">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2230-thickbox_default/filtro-de-osmosis-de-5-etapas-sin-deposito.jpg" alt="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO"  title="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/filtros-ósmosis/1383-filtro-de-ósmosis-de-5-etapas-sin-deposito.html" title="Filtro de Ósmosis de 5 etapas SIN DEPOSITO">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/filtros-osmosis/1383-filtro-de-osmosis-de-5-etapas-sin-deposito.html" title="Filtro de Ósmosis de 5 etapas SIN DEPOSITO">
                                                 Filtro de Ósmosis....</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="137.00" class="price">
                                                 137,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1836,7 +1837,7 @@
                                                 Kit cultivo 600W...</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="265.50" class="price">
                                                 265,50€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1846,16 +1847,16 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1679-kit-completo-xtrasun-600w.html" title="Kit Completo Xtrasun 600W">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminacion/1679-kit-completo-xtrasun-600w.html" title="Kit Completo Xtrasun 600W">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2542-thickbox_default/kit-completo-xtrasun-600w.jpg" alt="Comprar Kit Completo Xtrasun 600W"  title="Comprar Kit Completo Xtrasun 600W" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminación/1679-kit-completo-xtrasun-600w.html" title="Kit Completo Xtrasun 600W">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminacion/1679-kit-completo-xtrasun-600w.html" title="Kit Completo Xtrasun 600W">
                                                 Kit Completo Xtrasun 600W</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="65.00" class="price">
                                                 65,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1874,7 +1875,7 @@
                                                 Trypack Outdoor BioBizz</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="12.64" class="price">
                                                 12,64€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1925,7 +1926,7 @@
                                                 Medidor pH ...</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="40.00" class="price">
                                                 40,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1944,7 +1945,7 @@
                                                 Medidor EC...</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="38.00" class="price">
                                                 38,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1954,16 +1955,16 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/básculas/1503-bascula-sm-500-waltex-500-g-01-g.html" title="Bascula SM-500 Waltex 500 g / 0,1 g">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/basculas/1503-bascula-sm-500-waltex-500-g-01-g.html" title="Bascula SM-500 Waltex 500 g / 0,1 g">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2328-thickbox_default/bascula-sm-500-waltex-500-g-01-g.jpg" alt="Comprar Bascula SM-500 Waltex 500 g / 0,1 g"  title="Comprar Bascula SM-500 Waltex 500 g / 0,1 g" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/básculas/1503-bascula-sm-500-waltex-500-g-01-g.html" title="Bascula SM-500 Waltex 500 g / 0,1 g">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/basculas/1503-bascula-sm-500-waltex-500-g-01-g.html" title="Bascula SM-500 Waltex 500 g / 0,1 g">
                                                 Bascula SM-500 Waltex</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="12.00" class="price">
                                                 12,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -1983,7 +1984,7 @@
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/99-parafernalia-y-accesorios'" value="VER CATÁLOGO PARAFERNALIA"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com//99-herramientas-y-accesorios'" value="VER CATÁLOGO PARAFERNALIA"></div>
                                     <div id="collapseOne15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne14" aria-expanded="true" style="">
                                          <div class="panel-body">
                         <p>También ofrecemos una gran cantidad de productos destinados a mejorar vuestros armarios de cultivo y para el tratamiento de vuestras plantas.  Además, os ponemos a disposición diferentes artículos para fumadores al mejor precio del mercado.</p>
@@ -2017,7 +2018,7 @@
                                                 Peladora Table Trimmer</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="215.00" class="price">
                                                 215,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2036,7 +2037,7 @@
                                                 Secret Shaker Secret Smoke</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="9.50" class="price">
                                                 9,50€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2055,7 +2056,7 @@
                                                 Malla Bug Bloquer</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="3.00" class="price">
                                                 3,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2107,7 +2108,7 @@
                                                 Maceta Tex Pot Negra</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="9.00" class="price">
                                                 9,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2126,7 +2127,7 @@
                                                 Bolsa de Cultivo Blanca</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="17.00" class="price">
                                                 17,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2145,7 +2146,7 @@
                                                 Bandeja Semillero pack 25</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="32.00" class="price">
                                                 32,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2190,16 +2191,16 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/orugas/2023-quemador-de-azufre.html" title="Maceta Tex Pot Negra">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/lucha-biologica/2023-quemador-de-azufre.html" title="Maceta Tex Pot Negra">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2875-thickbox_default/quemador-de-azufre.jpg" alt="Comprar quemador de azufre anti orugas"  title="Comprar quemador de azufre anti orugas" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/orugas/2023-quemador-de-azufre.html" title="Lucha biologica contra orugas">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/lucha-biologica/2023-quemador-de-azufre.html" title="Lucha biologica contra orugas">
                                                 Quemador de azufre</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="57.95" class="price">
                                                 57,95€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2209,16 +2210,16 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/ara%C3%B1a-roja/2006-spical-5000-amblyseius-californicus.html" title="comprar anti mosca roja SPICAL 5000">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/arana-roja/2006-spical-5000-amblyseius-californicus.html" title="comprar anti mosca roja SPICAL 5000">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2921-thickbox_default/spical-5000-amblyseius-californicus.jpg" alt="comprar anti mosca roja SPICAL 5000"  title="comprar anti mosca roja SPICAL 5000 "  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/ara%C3%B1a-roja/2006-spical-5000-amblyseius-californicus.html" title="SPICAL 5000 anti araña roja">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/arana-roja/2006-spical-5000-amblyseius-californicus.html" title="SPICAL 5000 anti araña roja">
                                                 SPICAL 5000</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="50.95" class="price">
                                                 50,95€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2237,7 +2238,7 @@
                                                 APHISCOUT (250 AVISPAS PARA PULGÓN)</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="29.90" class="price">
                                                 29,90€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2290,7 +2291,7 @@
                                                 Filtro Antiolor CAN-Lite</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="141.00" class="price">
                                                 141,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2300,16 +2301,16 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1675-filtro-de-carbón-ipower.html" title="Filtro de carbón Ipower">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1675-filtro-de-carbon-ipower.html" title="Filtro de carbón Ipower">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2537-thickbox_default/filtro-de-carbón-ipower.jpg" alt="Comprar Filtro de carbón Ipower"  title="Comprar Filtro de carbón Ipower" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1675-filtro-de-carbón-ipower.html" title="Filtro de carbón Ipower">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1675-filtro-de-carbon-ipower.html" title="Filtro de carbón Ipower">
                                                 Filtro de carbón Ipower</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="68.99" class="price">
                                                 68,99€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2328,7 +2329,7 @@
                                                 Ambientador ONA Block FL</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" class="price">
+                                                <span itemprop="price" content="10.00" class="price">
                                                 10,00€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
@@ -2520,11 +2521,11 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE"  onclick="toggleMenu('menu-94')"> </span><a href="https://www.semillaslowcost.com/94-iluminación" title="ILUMINACIÓN"> ILUMINACIÓN </a>
+               <span class="grower CLOSE"  onclick="toggleMenu('menu-94')"> </span><a href="https://www.semillaslowcost.com/94-iluminacion" title="ILUMINACIÓN"> ILUMINACIÓN </a>
                <ul id="menu-94" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/132-bombillas" title="Bombillas"> Bombillas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/133-balastros" title="Balastros"> Balastros </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/134-equipos-iluminación" title="Equipos Iluminación"> Equipos Iluminación </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/134-equipos-iluminacion" title="Equipos Iluminación"> Equipos Iluminación </a></li>
                   <li> <a href="https://www.semillaslowcost.com/135-fluorescentes-bajo-consumo" title="Fluorescentes bajo consumo"> Fluorescentes bajo consumo </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/136-reflectores-y-varios" title="Reflectores y varios"> Reflectores y varios </a></li>
                </ul>
@@ -2532,11 +2533,11 @@
             <li>
                <span class="grower CLOSE"   onclick="toggleMenu('menu-95')"> </span><a href="https://www.semillaslowcost.com/95-control-de-clima" title="CONTROL DE CLIMA"> CONTROL DE CLIMA </a>
                <ul id="menu-95" style="display: none;">
-                  <li> <a href="https://www.semillaslowcost.com/138-extractores" title="Extractores"> Extractores </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/138-extractores-de-aire" title="Extractores"> Extractores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/140-silenciadores" title="Silenciadores"> Silenciadores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/141-ventiladores" title="Ventiladores"> Ventiladores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/181-acoples-y-reductores" title="Acoples y Reductores"> Acoples y Reductores </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/182-tubos-ventilación" title="Tubos Ventilación"> Tubos Ventilación </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/182-tubos-ventilacion" title="Tubos Ventilación"> Tubos Ventilación </a></li>
                   <li> <a href="https://www.semillaslowcost.com/101-co2" title="CO2"> CO2 </a></li>
                   <li> <a href="https://www.semillaslowcost.com/184-humidificador-deshumidificador" title="Humidificador / Deshumidificador"> Humidificador / Deshumidificador </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/185-controladores" title="Controladores"> Controladores </a></li>
@@ -2573,11 +2574,11 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-97')"> </span><a href="https://www.semillaslowcost.com/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA"> RIEGO E HIDROPONÍA </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-97')"> </span><a href="https://www.semillaslowcost.com/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA"> RIEGO E HIDROPONÍA </a>
                <ul id="menu-97" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/155-bombas-aire-agua" title="Bombas Aire-Agua"> Bombas Aire-Agua </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/158-filtros-ósmosis" title="Filtros Ósmosis"> Filtros Ósmosis </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/191-sistemas-hidropónicos" title="Sistemas Hidropónicos"> Sistemas Hidropónicos </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/158-filtros-osmosis" title="Filtros Ósmosis"> Filtros Ósmosis </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/191-sistemas-hidroponicos" title="Sistemas Hidropónicos"> Sistemas Hidropónicos </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/207-accesorios-de-riego" title="Accesorios de riego"> Accesorios de riego </a></li>
                </ul>
             </li>
@@ -2586,11 +2587,11 @@
                <ul id="menu-98" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/214-kits-completos" title="Kits completos"> Kits completos </a></li>
                   <li> <a href="https://www.semillaslowcost.com/215-kits-de-iluminacion" title="Kits de iluminacion"> Kits de iluminacion </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/216-packs-de-fertilizantes" title="Packs de fertilizantes"> Packs de fertilizantes </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/216-kits-de-fertilizantes" title="Packs de fertilizantes"> Packs de fertilizantes </a></li>
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE"  onclick="toggleMenu('menu-99')"> </span><a href="https://www.semillaslowcost.com/99-parafernalia-y-accesorios" title="PARAFERNALIA Y ACCESORIOS"> PARAFERNALIA Y ACCESORIOS </a>
+               <span class="grower CLOSE"  onclick="toggleMenu('menu-99')"> </span><a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="PARAFERNALIA Y ACCESORIOS"> PARAFERNALIA Y ACCESORIOS </a>
                <ul id="menu-99" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/194-mallas" title="Mallas"> Mallas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/195-microscopios" title="Microscopios"> Microscopios </a></li>
@@ -2617,7 +2618,7 @@
             <li>
                <span class="grower CLOSE"  onclick="toggleMenu('menu-103')"> </span><a href="https://www.semillaslowcost.com/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> INSTRUMENTOS DE MEDIDA </a>
                <ul id="menu-103" style="display: none;">
-                  <li> <a href="https://www.semillaslowcost.com/192-básculas" title="Básculas"> Básculas </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/192-basculas" title="Básculas"> Básculas </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/193-medidores" title="Medidores"> Medidores </a></li>
                </ul>
             </li>
@@ -2640,7 +2641,7 @@
             <li class="last">
                <span class="grower CLOSE"   onclick="toggleMenu('menu-229')"> </span><a href="https://www.semillaslowcost.com/229-lucha-biologica" title="LUCHA BIOLOGICA"> LUCHA BIOLOGICA </a>
                <ul id="menu-229" style="display: none;">
-                  <li> <a href="https://www.semillaslowcost.com/230-araña-roja" title="Araña roja"> Araña roja </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/230-arana-roja" title="Araña roja"> Araña roja </a></li>
                   <li> <a href="https://www.semillaslowcost.com/231-hongos" title="Hongos"> Hongos </a></li>
                   <li> <a href="https://www.semillaslowcost.com/232-minador" title="Minador"> Minador </a></li>
                   <li> <a href="https://www.semillaslowcost.com/233-mosca-blanca" title="Mosca Blanca"> Mosca Blanca </a></li>
@@ -2780,7 +2781,7 @@
                                                 ARMARIOS DE CULTIVO </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/94-iluminación" title="ILUMINACIÓN">
+                                                <a href="https://www.semillaslowcost.com/94-iluminacion" title="ILUMINACIÓN">
                                                 ILUMINACIÓN </a>
                                              </li>
                                              <li >
@@ -2800,7 +2801,7 @@
                                                 KITS </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/99-parafernalia-y-accesorios" title="ACCESORIOS Y HERRAMIENTAS">
+                                                <a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="ACCESORIOS Y HERRAMIENTAS">
                                                 ACCESORIOS Y HERRAMIENTAS </a>
                                              </li>
                                              <li >
@@ -2950,10 +2951,10 @@
                      </div>
                      <div class="asagiSabit whatsappBlock">
                      <?php if($deviceType == 'computer'){ ?>
-                     <a href="https://web.whatsapp.com/send?phone=++34653323445">
+                     <a href="https://web.whatsapp.com/send?phone=++34653323445" rel="nofollow">
                   <?php } 
                   else{ ?>
-                     <a href="https://api.whatsapp.com/send?phone=++34653323445">
+                     <a href="https://api.whatsapp.com/send?phone=++34653323445" rel="nofollow">
                   <?php } ?>
                      <img src="/modules/whatsapp//views/img/whataspp_icon.png" alt="Whataspp" width="24" height="24">¿Alguna pregunta?</a></div>
                      <footer class="bottom">

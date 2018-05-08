@@ -1,0 +1,16 @@
+@import "../../../_theme_variables";
+
+.stickUpTop {
+	position:relative;
+	width:100%;
+	left:0;
+	top:0;
+}
+.stickUpHolder {
+	padding:0;
+	max-width:100%;
+}
+
+.pseudoStickyBlock {
+	z-index:-1;	
+}

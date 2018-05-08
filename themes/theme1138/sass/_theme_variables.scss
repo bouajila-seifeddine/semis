@@ -1,0 +1,182 @@
+@import 'compass';
+@import 'bootstrap_lib/_variables';
+
+// ------- FONTS -------
+
+$font-family:				  		'Roboto', sans-serif;
+$font:						  		300 14px/20px $font-family;
+$font-custom:                 		'Lora', serif;
+$fa-font-path:        				"../fonts";
+$font-icon:                   		"FontAwesome";
+
+// ------- BORDERS ------- 
+
+$base-border-color:					#e0e0e0;
+$main_border:						1px solid $base-border-color;
+$dark-border-color:					#262626;
+$light-border-color:				#fff;
+$homepage-footer-border:            #d9d9d9;
+
+$border-radius-base:				0;
+$border-radius-small:				0;
+
+// ------- BACKGROUNDS -------
+
+$base-box-bg:                       #f1f1f1;
+$table-background:                  $base-box-bg;
+$dark-background:                   #262626;
+$light-background:                  #fff;
+$homepage-footer-bg:                #f2f2f2;
+
+// ------- COLORS ------- 
+
+$base-body-color:                   #777;
+$base-text-color:                   #262626;
+$base-heading-color:				#000;
+$base-title-color:					$base-text-color;
+$light-text-color:                  #fff;
+$link-color:						#000;
+$link-hover-color:                  #777;
+$description-color:					#666;
+$state-warning-text:				#f00;
+
+
+// ------- Indents ------- 
+
+$base-page-indent:                 	$grid-gutter-width;
+$base-box-padding:                  14px 18px 13px;
+$base-box-indent:                  	0 0 30px 0;
+
+// ------- Product Elements -------
+
+$product-name-color:                #000;
+$product-name-hover-color:          #777;
+$price-color:						#ff5b23;
+$product-price-color:				#ff5b23;
+$product-reduced-price:				#ff5b23;
+$product-special-price-color:		#ff5b23;
+$product-old-price-color:			#777;
+
+
+
+// ------- Buttons -------
+
+
+$button-text-color:					#fff;
+$btn-font-weight:					$btn-font-weight;				//btn-default buttons weight
+
+$btn-default-color:					$button-text-color;				//btn-default buttons color
+$btn-default-bg:					#262626;				//btn-default buttons bg
+$btn-default-border:				#262626;			//btn-default buttons border
+$btn-default-hover-color:			$button-text-color;
+$btn-default-hover-bg:				#4b4b4b;
+$btn-default-hover-border:			#4b4b4b;
+
+$padding-base-vertical:				9px;			//used for btn-default & pagination buttons vertical indent
+$padding-base-horizontal:			15px;		//used for btn-default & pagination buttons horizontal indent
+
+$padding-small-vertical:			$padding-small-vertical;		//used for btn-sm buttons vertical indent
+$padding-small-horizontal:			$padding-small-horizontal;		//used for btn-sm buttons horizontal indent
+
+$homepage-padding-btn-vertical:		$padding-base-vertical;
+$homepage-padding-btn-horizontal:	$padding-base-horizontal;
+
+		// ------- Buttons +/- ------
+		
+		$button-pm-color:			#c0c0c0;
+		$button-pm-hover-color:		$base-text-color;
+				
+		
+// ------- My Account List bg -------
+
+$ma-button-bg:                      rgba(247,247,247,1);
+
+// ------- Product Listing -------
+
+$base-listing-border-color:					$base-border-color;
+$base-listing-grid-padding:					$base-box-padding;
+		
+		// ------- Grid/List vars ------- 
+		
+		$GL-text-color:								#808080;
+		$GL-title-color:							$base-text-color;
+		$GL-icon-color:								#e1e0e0;
+		$GL-icon-color-hover:						$base-text-color;
+		
+		// ------- Pagination vars -------
+		
+		$pagination-prevnext-color:					#777676;
+		$pagination-color:							$btn-default-color;
+		$pagination-hover-color:					$btn-default-hover-color;
+		$pagination-bg:								$btn-default-bg;
+		$pagination-border:							$btn-default-border;
+		$pagination-hover-bg:						$btn-default-hover-bg;
+		$pagination-active-bg:						$btn-default-hover-bg;
+		$pagination-active-border:                  $btn-default-hover-border;
+
+// ------- Product Info -------
+
+$top-line-color:									$base-border-color;
+$product-image-border:								$base-border-color;
+$scroll-button-color:								#fff;
+$list-info-bg:										$base-box-bg;
+$scroll-button-hover-color:							$link-hover-color;
+$tr-even-bg:										#fdfdfd;
+
+// ------- Cart Steps -------
+
+$cs-border-radius:                                  0;
+$step-todo-bg:										#EDEDED;
+$step-todo-border-color:							darken($step-todo-bg, 15);
+$step-current-bg:									#ff5b23;
+$step-current-border-color:							darken($step-current-bg, 15);
+$step-done-bg:										#6B6B6B;
+$step-done-border-color:							darken($step-done-bg, 15);
+$step-hover-bg:										darken($step-done-bg, 15);
+$step-hover-border-color:							darken($step-hover-bg, 15);
+
+// ------- sub heading (h2,h3) define -------
+
+@mixin addIcon($content) {
+	font-family:$font-icon;
+	content:$content;	
+}
+
+@mixin sub-heading {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: $font-custom;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+	padding: 14px 20px 17px;
+	margin: 0 0 20px;
+	position: relative;
+	background: url(../img/decor-bg.png);
+}
+
+// ------- Image vars -------
+
+@mixin product-image {
+	background:#f6f6f6;
+	padding:20px;
+	position:relative;
+}
+@mixin products-block-image {
+	background:#f6f6f6;
+	padding:5px;
+}
+
+@mixin blog-image {
+}
+
+@mixin post-category-image {
+	@include product-image;	
+	float:left;
+	margin:0 20px 10px 0;
+}
+
+@mixin post-image {
+	display:block;
+	margin-bottom:30px;
+}

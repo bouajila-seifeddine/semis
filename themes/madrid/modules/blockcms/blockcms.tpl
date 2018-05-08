@@ -93,13 +93,7 @@
 					</a>
 				</li>
 			{/if}
-			{if $display_stores_footer}
-				<li class="item">
-					<a href="{$link->getPageLink('stores')|escape:'html':'UTF-8'}" title="{l s='Our stores' mod='blockcms'}">
-						{l s='Our stores' mod='blockcms'}
-					</a>
-				</li>
-			{/if}
+			
 			{if $show_contact}
 			<li class="item">
 				<a href="{$link->getPageLink($contact_url, true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcms'}">

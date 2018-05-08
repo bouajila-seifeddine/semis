@@ -23,6 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
+{if $deviceType == 'computer'}
 <script type="text/javascript">
 
 	$(document).ready(function(){
@@ -81,7 +82,7 @@
 
 
 </script>
-
+{/if}
 {if isset($HOOK_HOME_TAB_CONTENT) && $HOOK_HOME_TAB_CONTENT|trim}
     {if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
         <ul id="home-page-tabs" class="nav nav-tabs clearfix">

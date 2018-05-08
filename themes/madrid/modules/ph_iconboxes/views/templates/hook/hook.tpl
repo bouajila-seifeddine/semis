@@ -17,5 +17,4 @@
 	</div><!-- .col-md-4 -->
 	{/foreach}
 </div><!-- .boxes -->
-<h1 id="titulo-index"> Bienvenidos a Semillas Low Cost</h1>
-<br><br>
+<h1 id="titulo-index"> Bienvenidos a Semillas Low Cost<br /> si buscas semillas de marihuana baratas, este es tu sitio.</h1>

@@ -58,3 +58,23 @@ function submitPublishCMS(url, redirect, token)
 	);
 	return true;
 }
+
+function copyCode(codigo)
+{
+	  /* Get the text field */
+  var copyText = document.getElementById(codigo);
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("Copy");
+   // Get the snackbar DIV
+    var x = document.getElementById("snackbar")
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}

@@ -399,7 +399,7 @@
 						{if $deviceType != "computer"}
 							<div>
 								<p id="add_to_cart" class="pull-right no-print">
-									<a  href="https://api.whatsapp.com/send?phone=34653323445&text=Consultar disponibilidad de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  target="_blank" class="button btn-primary">
+									<a  href="https://api.whatsapp.com/send?phone=34653323445&text=Consultar disponibilidad de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  rel="nofollow" target="_blank" class="button btn-primary">
 										<i class="fa fa-whatsapp" aria-hidden="true"></i>  Consultar disponibilidad 
 									</a>
 								</p>
@@ -409,7 +409,7 @@
 
 															<div>
 								<p id="add_to_cart" class="pull-right no-print">
-									<a  href="https://web.whatsapp.com/send?phone=34653323445&text=Consultar disponibilidad de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  target="_blank" class="button btn-primary">
+									<a  href="https://web.whatsapp.com/send?phone=34653323445&text=Consultar disponibilidad de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  rel="nofollow" target="_blank" class="button btn-primary">
 										<i class="fa fa-whatsapp" aria-hidden="true"></i>  Consultar disponibilidad 
 									</a>
 								</p>

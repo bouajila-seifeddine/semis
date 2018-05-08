@@ -1,0 +1,80 @@
+/* ************************************************************************************************
+								Categories Page Styles
+************************************************************************************************ */
+.content_scene_cat {
+  margin: 0 0 26px 0; }
+  .content_scene_cat .content_scene_cat_bg {
+    padding: 20px 0 0 0; }
+  .content_scene_cat span.category-name {
+    font: normal 30px/35px "Lora", serif;
+    margin-bottom: 12px;
+    display: inline-block;
+    color: #ff5b23; }
+    @media (max-width: 1199px) {
+      .content_scene_cat span.category-name {
+        font-size: 25px;
+        line-height: 30px; } }
+  .content_scene_cat p {
+    margin-bottom: 0; }
+  .content_scene_cat a.lnk_more {
+    font-weight: bold; }
+  .content_scene_cat a:hover {
+    text-decoration: underline; }
+  .content_scene_cat .content_scene {
+    color: #777777; }
+    .content_scene_cat .content_scene .cat_desc {
+      padding-top: 20px; }
+      .content_scene_cat .content_scene .cat_desc a {
+        color: black; }
+        .content_scene_cat .content_scene .cat_desc a:hover {
+          color: #777777; }
+
+/* ************************************************************************************************
+									Sub Categories Styles
+************************************************************************************************ */
+#subcategories {
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 0 0 0; }
+  #subcategories p.subcategory-heading {
+    font-weight: bold;
+    color: #262626;
+    margin: 0 0 15px 0; }
+  #subcategories ul {
+    margin: 0 0 0 -20px; }
+    #subcategories ul li {
+      float: left;
+      width: 128px;
+      margin: 0 0 13px 20px;
+      text-align: center;
+      height: 202px; }
+      #subcategories ul li .subcategory-image {
+        padding: 0 0 8px 0; }
+        #subcategories ul li .subcategory-image a {
+          display: block;
+          background: #f6f6f6;
+          padding: 4px;
+          position: relative;
+          -moz-transition: all 0.2s ease;
+          -o-transition: all 0.2s ease;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+          #subcategories ul li .subcategory-image a img {
+            width: 120px;
+            vertical-align: top;
+            height: 120px; }
+      #subcategories ul li h5 {
+        margin: 0; }
+      #subcategories ul li .subcategory-name {
+        font: normal 13px/18px "Lora", serif;
+        color: black;
+        text-transform: uppercase;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        #subcategories ul li .subcategory-name:hover {
+          color: #777777; }
+      #subcategories ul li .cat_desc {
+        display: none; }
+      #subcategories ul li:hover .subcategory-image a {
+        background: #e7e7e7; }

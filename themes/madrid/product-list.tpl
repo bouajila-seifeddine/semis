@@ -103,6 +103,14 @@
 						</div>
 						<div class="info">
 							<h3 itemprop="name"><a itemprop="url" href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}">{$product.name|escape:'html':'UTF-8'|truncate:25:'...'}</a></h3>
+							{if $product.id_category_default == 21}
+							<a href="/21-sweet-seeds-feminizadas"><span class="bank-name">Sweet Seeds</span></a>
+							{/if}
+							{if $product.id_category_default == 33}
+							<a href="/33-sweet-seeds-autoflorecientes"><span class="bank-name">Sweet Seeds Autoflorecientes</span></a>
+							{/if}
+
+
 							{if (!$PS_CATALOG_MODE AND ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
 							<div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
 								{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode) && $product.price != 0}
@@ -131,55 +139,7 @@
 							{/if}
 						</div>
 					</div><!-- .inner -->
-					<div class="list_info">
-						{hook h='displayProductListReviews' product=$product}
-						<div class="btn-container">
-							{hook h='displayProductListFunctionalButtons' product=$product}
-							{if $page_name != 'index'}
-								{if isset($comparator_max_item) && $comparator_max_item}
-								<a class="add_to_compare button-m" href="{$product.link|escape:'html':'UTF-8'}" title="{l s='Add to Compare'}" data-id-product="{$product.id_product}">
-									<i class="icon icon-bar-chart"></i>
-								</a>
-								{/if}
-							{/if}
-						</div>
-						<h3><a href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}">{$product.name|escape:'html':'UTF-8'|truncate:45:'...'}</a></h3>
-						<div class="price">
-							{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}
-								<span class="price {if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}new-price{/if}">
-									{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
-								</span>
-								{if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}
-									{hook h="displayProductPriceBlock" product=$product type="old_price"}
-									<span class="old-price">
-										{displayWtPrice p=$product.price_without_reduction}
-									</span>
-									{if $product.specific_prices.reduction_type == 'percentage'}
-										<span class="price-percent-reduction">-{$product.specific_prices.reduction * 100}%</span>
-									{/if}
-								{/if}
-								{hook h="displayProductPriceBlock" product=$product type="price"}
-								{hook h="displayProductPriceBlock" product=$product type="unit_price"}
-							{/if}
-						</div>
-
-						<p itemprop="description">
-							{$product.description_short|strip_tags:'UTF-8'|truncate:360:'...'}
-						</p>
-
-						{if ($product.id_product_attribute == 0 || (isset($add_prod_display) && ($add_prod_display == 1))) && $product.available_for_order && !isset($restricted_country_mode) && $product.customizable != 2 && !$PS_CATALOG_MODE}
-							{if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
-								{capture}add=1&amp;id_product={$product.id_product|intval}{if isset($static_token)}&amp;token={$static_token}{/if}{/capture}
-								<a class="ajax_add_to_cart_button add_to_cart button btn-primary" href="{$link->getPageLink('cart', true, NULL, $smarty.capture.default, false)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Add to cart'}" data-id-product="{$product.id_product|intval}" data-minimal_quantity="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity > 1}{$product.product_attribute_minimal_quantity|intval}{else}{$product.minimal_quantity|intval}{/if}">
-									{l s='Add to cart'}
-								</a>
-							{else}
-								<span class="ajax_add_to_cart_button add_to_cart button btn-primary">
-									{l s='Out of stock'}
-								</span>
-							{/if}
-						{/if}
-					</div><!-- .list_info -->
+				
 				</div><!-- .bg -->
 			</div>
 			{/foreach}

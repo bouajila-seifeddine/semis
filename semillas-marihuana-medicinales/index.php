@@ -33,6 +33,7 @@
                   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1505304776" />
                   <link rel="stylesheet" href="v_315_d9b4d79373d0fbd4a064e37dd59f3597_all.css" type="text/css" media="all" />
                   <link rel="stylesheet" href="css/font-awesome.min.css">
+                  <link rel="canonical" href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/">
                   <script>
                      function toggleHidden(sel) {
                     elem = document.querySelector(sel)
@@ -765,7 +766,7 @@
                                     Inicio</a>
                                  </li>
                                  <li>
-                                    <a href="https://www.semillaslowcost.com/carrito">
+                                    <a href="https://www.semillaslowcost.com/pedido-rapido">
                                     Pedido r&aacute;pido</a>
                                  </li>
                                  <li>
@@ -1035,13 +1036,13 @@
                                        </a>
                                     </li>
                                     <li class="menu_link_30 ph-hidden-desktop"> <a href="/93-armarios-de-cultivo" title="ARMARIOS DE CULTIVO"> <span class="">ARMARIOS DE CULTIVO</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ARMARIOS DE CULTIVO</span> </span> </a></li>
-                                    <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminación" title="ILUMINACIÓN"> <span class="">ILUMINACIÓN</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ILUMINACIÓN</span> </span> </a></li>
+                                    <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminacion" title="ILUMINACIÓN"> <span class="">ILUMINACIÓN</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ILUMINACIÓN</span> </span> </a></li>
                                     <li class="menu_link_32 ph-hidden-desktop"> <a href="/95-control-de-clima" title="CONTROL DE CLIMA"> <span class="">CONTROL DE CLIMA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">CONTROL DE CLIMA</span> </span> </a></li>
                                     <li class="menu_link_33 ph-hidden-desktop"> <a href="/96-fertilizantes-y-preventivos" title="FERTILIZANTES Y PREVENTIVOS"> <span class="">FERTILIZANTES Y PREVENTIVOS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">FERTILIZANTES Y PREVENTIVOS</span> </span> </a></li>
                                     <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA"> <span class="">RIEGO E HIDROPONÍA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">RIEGO E HIDROPONÍA</span> </span> </a></li>
                                     <li class="menu_link_35 ph-hidden-desktop"> <a href="/98-kits" title="KITS"> <span class="">KITS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">KITS</span> </span> </a></li>
                                     <li class="menu_link_36 ph-hidden-desktop"> <a href="/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> <span class="">INSTRUMENTOS DE MEDIDA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">INSTRUMENTOS DE MEDIDA</span> </span> </a></li>
-                                    <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-parafernalia-y-accesorios" title="ACCESORIOS Y PARAFERNALIA"> <span class="">ACCESORIOS Y PARAFERNALIA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ACCESORIOS Y PARAFERNALIA</span> </span> </a></li>
+                                    <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-herramientas-y-accesorios" title="ACCESORIOS Y PARAFERNALIA"> <span class="">ACCESORIOS Y PARAFERNALIA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ACCESORIOS Y PARAFERNALIA</span> </span> </a></li>
                                     <li class="menu_link_38 ph-hidden-desktop"> <a href="/104-macetas-y-bandejas" title="MACETAS Y BANDEJAS"> <span class="">MACETAS Y BANDEJAS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">MACETAS Y BANDEJAS</span> </span> </a></li>
                                     <li class="menu_link_39 ph-hidden-desktop"> 
                                        <a href="/107-tratamiento-de-olores" title="TRATAMIENTO DE OLORES"> <span class="">TRATAMIENTO DE OLORES</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">TRATAMIENTO DE OLORES</span> </span> </a>
@@ -1121,7 +1122,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <h1 class="titulo-categoria">SEMILLAS DE MARIHUANA MEDICINALES, CBD Y MÉTODOS DE EXTRACCIÓN MEDICINALES</h1>
+                                 <h1 class="titulo-categoria">PRODUCTOS CANNABIS MEDICINAL: SEMILLAS DE MARIHUANA MEDICINALES, PRODUCTOS CBD Y EXTRACCIÓNES</h1>
                                  <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
@@ -1264,7 +1265,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/738-matanus-k.html" title="Matanus-k de Gea Seeds">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/917-thickbox_default/matanus-k.jpg" alt="Comprar Matanus-k de Gea Seeds" title="Comprar Matanus-k de Gea Seeds" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2989-thickbox_default/matanus-k.jpg" alt="Comprar Matanus-k de Gea Seeds" title="Comprar Matanus-k de Gea Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1284,7 +1285,7 @@
                                           <div class="img_hover"></div>
                                           
                                              <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/2095-caramellate.html" title="Caramellate Feminizada de Gea Seeds">
-                                             <img itemprop="image" src="https://www.semillaslowcost.com/2982-thickbox_default/caramellate.jpg" alt="Comprar Caramellate Feminizada de Gea Seeds" title="Comprar Caramellate Feminizada de Gea Seeds" class="img-responsive first-image">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/3007-thickbox_default/caramellate.jpg" alt="Comprar Caramellate Feminizada de Gea Seeds" title="Comprar Caramellate Feminizada de Gea Seeds" class="img-responsive first-image">
                                              </a>
                                           
                                           <div class="info">
@@ -1304,7 +1305,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/barney-s-farm-feminizadas/174-vanilla-kush.html" title="Vanilla Kush feminizada de Barneys Farm">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/991-thickbox_default/vanilla-kush.jpg" alt="Comprar Vanilla Kush feminizada de Barneys Farm"  title="Comprar Vanilla Kush feminizada de Barneys Farm"  class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/3080-thickbox_default/vanilla-kush.jpg" alt="Comprar Vanilla Kush feminizada de Barneys Farm"  title="Comprar Vanilla Kush feminizada de Barneys Farm"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1420,7 +1421,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/709-amnesia-geaseeds.html" title="Amnesia feminizada de Gea Seeds">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/904-thickbox_default/amnesia-geaseeds.jpg" alt="Comprar Amnesia feminizada de Gea Seeds" title="Comprar Amnesia feminizada de Gea Seeds" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/3004-thickbox_default/amnesia-geaseeds.jpg" alt="Comprar Amnesia feminizada de Gea Seeds" title="Comprar Amnesia feminizada de Gea Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1439,7 +1440,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/696-super-lemon-geaseeds.html" title="Lima Haze feminizada de Gea Seeds">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/895-thickbox_default/super-lemon-geaseeds.jpg" alt="Venta de Lima Haze feminizada de Gea Seeds" title="Comprar Lima Haze feminizada de Gea Seeds" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2996-thickbox_default/super-lemon-geaseeds.jpg" alt="Venta de Lima Haze feminizada de Gea Seeds" title="Comprar Lima Haze feminizada de Gea Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1482,7 +1483,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/699-m8-el-caliz-geaseeds.html" title="M8 feminizada de Gea Seeds">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/898-thickbox_default/m8-el-caliz-geaseeds.jpg" alt="Comprar M8 feminizada de Gea Seeds" title="Comprar M8 feminizada de Gea Seeds" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2998-thickbox_default/m8-el-caliz-geaseeds.jpg" alt="Comprar M8 feminizada de Gea Seeds" title="Comprar M8 feminizada de Gea Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1883,7 +1884,7 @@
               <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="Semillas de marihuana medicinales">CANNABIS MEDICINAL</a>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-13')"> </span><a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS MARIHUANA FEMINIZADAS"> SEMILLAS MARIHUANA FEMINIZADAS </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-13')"> </span><a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS FEMINIZADAS"> SEMILLAS FEMINIZADAS </a>
                <ul id="menu-13" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/18-dinafem-feminizadas" title="Dinafem Feminizadas"> Dinafem Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/19-geaseeds-feminizadas" title="GeaSeeds Feminizadas"> GeaSeeds Feminizadas </a></li>
@@ -1926,7 +1927,7 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-15')"> </span><a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS MARIHUANA AUTOFLORECIENTES"> SEMILLAS MARIHUANA AUTOFLORECIENTES </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-15')"> </span><a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS AUTOFLORECIENTES"> SEMILLAS AUTOFLORECIENTES </a>
                <ul id="menu-15" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/30-dinafem-autoflorecientes" title="Dinafem Autoflorecientes"> Dinafem Autoflorecientes </a></li>
                   <li> <a href="https://www.semillaslowcost.com/31-geaseeds-autoflorecientes" title="GeaSeeds Autoflorecientes"> GeaSeeds Autoflorecientes </a></li>
@@ -1941,7 +1942,7 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-16')"> </span><a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS MARIHUANA REGULARES"> SEMILLAS MARIHUANA REGULARES </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-16')"> </span><a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS REGULARES"> SEMILLAS REGULARES </a>
                <ul id="menu-16" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/42-sensi-seeds-regulares" title="Sensi Seeds Regulares"> Sensi Seeds Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/44-dutch-passion-regulares" title="Dutch Passion Regulares"> Dutch Passion Regulares </a></li>
@@ -1962,11 +1963,11 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE"  onclick="toggleMenu('menu-94')"> </span><a href="https://www.semillaslowcost.com/94-iluminación" title="ILUMINACIÓN"> ILUMINACIÓN </a>
+               <span class="grower CLOSE"  onclick="toggleMenu('menu-94')"> </span><a href="https://www.semillaslowcost.com/94-iluminacion" title="ILUMINACIÓN"> ILUMINACIÓN </a>
                <ul id="menu-94" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/132-bombillas" title="Bombillas"> Bombillas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/133-balastros" title="Balastros"> Balastros </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/134-equipos-iluminación" title="Equipos Iluminación"> Equipos Iluminación </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/134-equipos-iluminacion" title="Equipos Iluminación"> Equipos Iluminación </a></li>
                   <li> <a href="https://www.semillaslowcost.com/135-fluorescentes-bajo-consumo" title="Fluorescentes bajo consumo"> Fluorescentes bajo consumo </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/136-reflectores-y-varios" title="Reflectores y varios"> Reflectores y varios </a></li>
                </ul>
@@ -1974,11 +1975,11 @@
             <li>
                <span class="grower CLOSE"   onclick="toggleMenu('menu-95')"> </span><a href="https://www.semillaslowcost.com/95-control-de-clima" title="CONTROL DE CLIMA"> CONTROL DE CLIMA </a>
                <ul id="menu-95" style="display: none;">
-                  <li> <a href="https://www.semillaslowcost.com/138-extractores" title="Extractores"> Extractores </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/138-extractores-de-aire" title="Extractores"> Extractores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/140-silenciadores" title="Silenciadores"> Silenciadores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/141-ventiladores" title="Ventiladores"> Ventiladores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/181-acoples-y-reductores" title="Acoples y Reductores"> Acoples y Reductores </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/182-tubos-ventilación" title="Tubos Ventilación"> Tubos Ventilación </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/182-tubos-ventilacion" title="Tubos Ventilación"> Tubos Ventilación </a></li>
                   <li> <a href="https://www.semillaslowcost.com/101-co2" title="CO2"> CO2 </a></li>
                   <li> <a href="https://www.semillaslowcost.com/184-humidificador-deshumidificador" title="Humidificador / Deshumidificador"> Humidificador / Deshumidificador </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/185-controladores" title="Controladores"> Controladores </a></li>
@@ -2018,8 +2019,8 @@
                <span class="grower CLOSE" onclick="toggleMenu('menu-97')"> </span><a href="https://www.semillaslowcost.com/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA"> RIEGO E HIDROPONÍA </a>
                <ul id="menu-97" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/155-bombas-aire-agua" title="Bombas Aire-Agua"> Bombas Aire-Agua </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/158-filtros-ósmosis" title="Filtros Ósmosis"> Filtros Ósmosis </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/191-sistemas-hidropónicos" title="Sistemas Hidropónicos"> Sistemas Hidropónicos </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/158-filtros-osmosis" title="Filtros Ósmosis"> Filtros Ósmosis </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/191-sistemas-hidroponicos" title="Sistemas Hidropónicos"> Sistemas Hidropónicos </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/207-accesorios-de-riego" title="Accesorios de riego"> Accesorios de riego </a></li>
                </ul>
             </li>
@@ -2028,11 +2029,11 @@
                <ul id="menu-98" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/214-kits-completos" title="Kits completos"> Kits completos </a></li>
                   <li> <a href="https://www.semillaslowcost.com/215-kits-de-iluminacion" title="Kits de iluminacion"> Kits de iluminacion </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/216-packs-de-fertilizantes" title="Packs de fertilizantes"> Packs de fertilizantes </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/216-kits-de-fertilizantes" title="Packs de fertilizantes"> Packs de fertilizantes </a></li>
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE"  onclick="toggleMenu('menu-99')"> </span><a href="https://www.semillaslowcost.com/99-parafernalia-y-accesorios" title="PARAFERNALIA Y ACCESORIOS"> PARAFERNALIA Y ACCESORIOS </a>
+               <span class="grower CLOSE"  onclick="toggleMenu('menu-99')"> </span><a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="PARAFERNALIA Y ACCESORIOS"> PARAFERNALIA Y ACCESORIOS </a>
                <ul id="menu-99" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/194-mallas" title="Mallas"> Mallas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/195-microscopios" title="Microscopios"> Microscopios </a></li>
@@ -2060,7 +2061,7 @@
             <li>
                <span class="grower CLOSE"  onclick="toggleMenu('menu-103')"> </span><a href="https://www.semillaslowcost.com/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> INSTRUMENTOS DE MEDIDA </a>
                <ul id="menu-103" style="display: none;">
-                  <li> <a href="https://www.semillaslowcost.com/192-básculas" title="Básculas"> Básculas </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/192-basculas" title="Básculas"> Básculas </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/193-medidores" title="Medidores"> Medidores </a></li>
                </ul>
             </li>
@@ -2083,7 +2084,7 @@
             <li class="last">
                <span class="grower CLOSE"   onclick="toggleMenu('menu-229')"> </span><a href="https://www.semillaslowcost.com/229-lucha-biologica" title="LUCHA BIOLOGICA"> LUCHA BIOLOGICA </a>
                <ul id="menu-229" style="display: none;">
-                  <li> <a href="https://www.semillaslowcost.com/230-araña-roja" title="Araña roja"> Araña roja </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/230-arana-roja" title="Araña roja"> Araña roja </a></li>
                   <li> <a href="https://www.semillaslowcost.com/231-hongos" title="Hongos"> Hongos </a></li>
                   <li> <a href="https://www.semillaslowcost.com/232-minador" title="Minador"> Minador </a></li>
                   <li> <a href="https://www.semillaslowcost.com/233-mosca-blanca" title="Mosca Blanca"> Mosca Blanca </a></li>
@@ -2106,7 +2107,7 @@
             <li> <a href="https://www.semillaslowcost.com/content/2-aviso-legal" title="AVISO LEGAL"> AVISO LEGAL </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/4-sobre-nosotros" title="SOBRE NOSOTROS"> SOBRE NOSOTROS </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/5-pagos-seguros" title="PAGOS SEGUROS"> PAGOS SEGUROS </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/9-preguntas-frecuentes" title="PREGUNTAS FRECUENTES"> PREGUNTAS FRECUENTES </a></li>
+            <li> <a href="https://www.semillaslowcost.com/content/12-preguntas-frecuentes2" title="PREGUNTAS FRECUENTES"> PREGUNTAS FRECUENTES </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/7-politicas-de-cookies" title="POLÍTICA DE COOKIES"> POLÍTICA DE COOKIES </a></li>
             <li> <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" title="POLÍTICA DE PRIVACIDAD"> POLÍTICA DE PRIVACIDAD </a></li>
             <li> <a href="https://www.semillaslowcost.com/tiendas" title="NUESTRAS TIENDAS"> NUESTRAS TIENDAS </a></li>
@@ -2207,19 +2208,19 @@
                                        <div class="list">
                                           <ul class="tree dhtml">
                                                <li >
-                                                <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="SEMILLAS MARIHUANA MEDICINALES">
+                                                <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="SEMILLAS MEDICINALES">
                                                 SEMILLAS MEDICINALES </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS MARIHUANA FEMINIZADAS">
+                                                <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS FEMINIZADAS">
                                                 SEMILLAS FEMINIZADAS </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS MARIHUANA AUTOFLORECIENTES">
+                                                <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS AUTOFLORECIENTES">
                                                 SEMILLAS AUTOFLORECIENTES </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS MARIHUANA REGULARES">
+                                                <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS REGULARES">
                                                 SEMILLAS REGULARES </a>
                                              </li>
                                              <li >
@@ -2227,7 +2228,7 @@
                                                 ARMARIOS DE CULTIVO </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/94-iluminación" title="ILUMINACIÓN">
+                                                <a href="https://www.semillaslowcost.com/94-iluminacion" title="ILUMINACIÓN">
                                                 ILUMINACIÓN </a>
                                              </li>
                                              <li >
@@ -2247,7 +2248,7 @@
                                                 KITS </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/99-parafernalia-y-accesorios" title="ACCESORIOS Y HERRAMIENTAS">
+                                                <a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="ACCESORIOS Y HERRAMIENTAS">
                                                 ACCESORIOS Y HERRAMIENTAS </a>
                                              </li>
                                              <li >
@@ -2300,7 +2301,7 @@
                                           PAGOS SEGUROS </a>
                                        </li>
                                        <li class="item">
-                                          <a href="https://www.semillaslowcost.com/content/9-preguntas-frecuentes" title="PREGUNTAS FRECUENTES">
+                                          <a href="https://www.semillaslowcost.com/content/12-preguntas-frecuentes2" title="PREGUNTAS FRECUENTES">
                                           PREGUNTAS FRECUENTES </a>
                                        </li>
                                        <li class="item">
@@ -2397,10 +2398,10 @@
                      </div>
                      <div class="asagiSabit whatsappBlock">
                      <?php if($deviceType == 'computer'){ ?>
-                     <a href="https://web.whatsapp.com/send?phone=++34653323445">
+                     <a href="https://web.whatsapp.com/send?phone=++34653323445" rel="nofollow">
                   <?php } 
                   else{ ?>
-                     <a href="https://api.whatsapp.com/send?phone=++34653323445">
+                     <a href="https://api.whatsapp.com/send?phone=++34653323445" rel="nofollow">
                   <?php } ?>
                      <img src="/modules/whatsapp//views/img/whataspp_icon.png" alt="Whataspp" width="24" height="24">¿Alguna pregunta?</a></div>
                      <footer class="bottom">

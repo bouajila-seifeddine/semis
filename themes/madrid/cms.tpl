@@ -38,7 +38,7 @@
 		</div>
 	{/if}
 	<div class="rte{if $content_only} content_only{/if}">
-		<h2 class="page-heading"><span>{$cms->meta_title}</span></h2>
+		<h1 class="page-heading"><span>{$cms->meta_title}</span></h1>
 		{$cms->content}
 	</div>
 {elseif isset($cms_category)}
