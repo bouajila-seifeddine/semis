@@ -133,11 +133,13 @@
 				<div class="form-group">
 					<label for="message">{l s='Message'}</label>
 					<textarea class="form-control" id="message" name="message">{if isset($message)}{$message|escape:'html':'UTF-8'|stripslashes}{/if}</textarea>
+					<p style="padding-top: 	15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </p>
 				</div>
 			</div>
+
 			<script src='https://www.google.com/recaptcha/api.js'></script>
 			<div class="g-recaptcha" data-sitekey="6LcfkUoUAAAAAGmo7tCi9BfnnGy_UJ3rL-0ZH24q"></div>
-			<div class="submit">
+			<div class="submit"  style="padding-top: 15px;">
 				<button type="submit" name="submitMessage" id="submitMessage" class="button btn-primary"><span>{l s='Send'}</span></button>
 			</div>
 		</fieldset>

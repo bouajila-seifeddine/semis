@@ -50,7 +50,7 @@ class Blocknewsletter extends Module
 		$this->confirmUninstall = $this->l('Are you sure that you want to delete all of your contacts?');
 		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => '1.6.99.99');
 
-		$this->version = '2.3.2';
+		$this->version = '2.4.0';
 		$this->author = 'PrestaShop';
 		$this->error = false;
 		$this->valid = false;
@@ -65,12 +65,57 @@ class Blocknewsletter extends Module
 		$this->_searched_email = null;
 
 		$this->_html = '';
+		if ($this->id)
+		{
+			$this->file = 'export_'.Configuration::get('PS_NEWSLETTER_RAND').'.csv';
+			$this->post_valid = array();
 
+			// Getting data...
+			$countries = Country::getCountries($this->context->language->id);
+
+			// ...formatting array
+			$countries_list = array($this->l('All countries'));
+			foreach ($countries as $country)
+				$countries_list[$country['id_country']] = $country['name'];
+
+			// And filling fields to show !
+			$this->fields_export = array(
+				'COUNTRY' => array(
+					'title' => $this->l('Customers\' country'),
+					'desc' => $this->l('Filter customers\' country.'),
+					'type' => 'select',
+					'value' => $countries_list,
+					'value_default' => 0
+				),
+				'SUSCRIBERS' => array(
+					'title' => $this->l('Newsletter subscribers'),
+					'desc' => $this->l('Filter newsletter subscribers.'),
+					'type' => 'select',
+					'value' => array(
+						0 => $this->l('All customers'),
+						2 => $this->l('Subscribers'),
+						1 => $this->l('Non-subscribers')
+					),
+					'value_default' => 2
+				),
+				'OPTIN' => array(
+					'title' => $this->l('Opted-in subscribers'),
+					'desc' => $this->l('Filter opted-in subscribers.'),
+					'type' => 'select',
+					'value' => array(
+						0 => $this->l('All customers'),
+						2 => $this->l('Subscribers'),
+						1 => $this->l('Non-subscribers')
+					),
+					'value_default' => 0
+				),
+			);
+		}
 	}
 
 	public function install()
 	{
-		if (!parent::install() || !Configuration::updateValue('PS_NEWSLETTER_RAND', rand().rand()) || !$this->registerHook(array('header', 'footer', 'actionCustomerAccountAdd')))
+		if (!parent::install() || !Configuration::updateValue('PS_NEWSLETTER_RAND', rand().rand()) || !$this->registerHook(array('header', 'footer', 'actionCustomerAccountAdd', 'registerGDPRConsent', 'actionExportGDPRData', 'actionDeleteGDPRCustomer')))
 			return false;
 
 		Configuration::updateValue('NW_SALT', Tools::passwdGen(16));
@@ -685,6 +730,7 @@ class Blocknewsletter extends Module
 		if (!isset($this->prepared) || !$this->prepared)
 			$this->_prepareHook($params);
 		$this->prepared = true;
+		$this->smarty->assign(array('id_module' => $this->id));
 		return $this->display(__FILE__, 'blocknewsletter.tpl');
 	}
 
@@ -703,6 +749,29 @@ class Blocknewsletter extends Module
 		$this->context->controller->addCSS($this->_path.'blocknewsletter.css', 'all');
 		$this->context->controller->addJS($this->_path.'blocknewsletter.js');
 	}
+
+	public function hookActionDeleteGDPRCustomer($customer)
+	{
+		if (!empty($customer['email']) && Validate::isEmail($customer['email'])) {
+			$sql = "DELETE FROM "._DB_PREFIX_."newsletter WHERE email = '".pSQL($customer['email'])."'";
+			if (Db::getInstance()->execute($sql)) {
+				return json_encode(true);
+			}
+			return json_encode($this->l('Newsletter block : Unable to delete customer using email.'));
+		}
+	}
+
+	public function hookActionExportGDPRData($customer)
+	{
+		if (!Tools::isEmpty($customer['email']) && Validate::isEmail($customer['email'])) {
+			$sql = "SELECT * FROM "._DB_PREFIX_."newsletter WHERE email = '".pSQL($customer['email'])."'";
+			if ($res = Db::getInstance()->ExecuteS($sql)) {
+				return json_encode($res);
+			}
+			return json_encode($this->l('Newsletter block : Unable to export customer using email.'));
+		}
+	}
+
 
 	/**
 	 * Deletes duplicates email in newsletter table

@@ -143,10 +143,11 @@ var moderation_active = {$moderation_active};
 
 				<div id="new_comment_form_footer">
 					<input id="id_product_comment_send" name="id_product" type="hidden" value='{$id_product_comment_form}' />
+					<p style="padding-top: 	15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </p>
 					<p class="fl required"><sup>*</sup> {l s='Required fields' mod='productcomments'}</p>
 					<p class="fr">
 						<button id="submitNewMessage" name="submitMessage" type="submit">{l s='Send' mod='productcomments'}</button>&nbsp;
-						{l s='or' mod='productcomments'}&nbsp;<a href="#" onclick="$.fancybox.close();">{l s='Cancel' mod='productcomments'}</a>
+						<a href="#" onclick="$.fancybox.close();">{l s='Cancel' mod='productcomments'}</a>
 					</p>
 					<div class="clearfix"></div>
 				</div>

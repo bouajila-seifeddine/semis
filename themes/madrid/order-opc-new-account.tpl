@@ -16,6 +16,9 @@
 					<label for="login_passwd">{l s='Password'}</label>
 					<input class="form-control validate" type="password" id="login_passwd" name="login_passwd" data-validate="isPasswd" />
 				</p>
+				<p class="form-group"  style="padding-top:  15px; padding-bottom:  20px;">
+					<label for="gdpr">He leído atentamente y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> de esta web.</label>
+					<input style="opacity: 1;" type="checkbox" id="gdpr-consent-box" name="gdpr" required> </p>
 				<a href="{$link->getPageLink('password', true)|escape:'html':'UTF-8'}" class="lost_password">{l s='Forgot your password?'}</a>
 				<p class="submit">
 					{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
@@ -125,7 +128,7 @@
 					</div>
 					{if isset($newsletter) && $newsletter}
 					<div class="checkbox">
-						<input type="checkbox" name="newsletter" id="newsletter" value="1" checked="checked" autocomplete="off"/>
+						<input type="checkbox" name="newsletter" id="newsletter" value="1"  autocomplete="off"/>
 						<label for="newsletter">
 						{l s='Sign up for our newsletter!'}</label>
 						{if array_key_exists('newsletter', $field_required)}

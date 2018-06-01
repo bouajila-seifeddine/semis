@@ -2130,8 +2130,8 @@ div.heading_block h3 {
 }
 .social-icons a {
     display: block;
-    height: 73px;
-    line-height: 73px;
+    height: 119px;
+    line-height: 119px;
     color: #fff;
     background: #d9d9d9;
     font-size: 30px;
@@ -2641,7 +2641,7 @@ form.std div.radio label {
 }
 .send_friend_form_content div.checkbox input,
 .send_friend_form_content div.radio input,
-form.std div.checkbox input,
+
 form.std div.radio input {
     display: none
 }
@@ -3468,3 +3468,4 @@ div#eKomiWidget_default img {
     width: 100%;
 }
   
+  .fancybox-inner .page-heading:before{display:   none;}

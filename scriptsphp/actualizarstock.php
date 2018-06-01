@@ -1,5 +1,6 @@
 
 <?php
+
 echo "<html>";
 echo "<head><title>Actualizar stock</title>";
 echo "<meta name='robots' content='NOFOLLOW, NOINDEX'></head>";
@@ -10,6 +11,9 @@ echo "<body>";
 	include '../config/defines.inc.php';
 	include '../config/config.inc.php';
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 $conn = mysqli_connect(_DB_SERVER_,_DB_USER_,_DB_PASSWD_) or die(mysqli_error());
 mysqli_select_db($conn,_DB_NAME_) or die(mysqli_error());
@@ -119,7 +123,9 @@ echo "<table style='width:40%'>";
     	   			 	break;
    					 }
 
-				} 
+				}else{
+					echo $ref."<br/>";
+				}
 			}	
 
 	}//fin for

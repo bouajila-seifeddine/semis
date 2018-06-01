@@ -262,7 +262,7 @@ div.product-desc .content_prices span {
 div.product-desc .content_prices #old_price_display {
   font-size: 20px;
   font-weight: 700;
-  color: #ffadc5;
+  color: #2c313b;
   text-decoration: line-through;
 }
 div.product-desc .content_prices #our_price_display {
@@ -630,3 +630,9 @@ span.counter {
 #quantity_wanted_p .counter {
     padding: 8px 2px 0px 4px;
 }
+
+p#old_price {
+    float: right;
+    line-height: 46px;
+}
+#gdpr-consent-box{opacity:  1;}

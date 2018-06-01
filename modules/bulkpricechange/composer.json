@@ -1,0 +1,12 @@
+{
+    "name": "prestaapps/bulkpricechange",
+    "authors": [
+        {
+            "name": "Presta Apps",
+            "email": "info@presta-apps.com"
+        }
+    ],
+    "require": {
+        "keboola/csv": "1.1.*"
+    }
+}

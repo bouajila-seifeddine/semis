@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <category>
+    <languages>
+      <language iso="cs">
+        <name>Import</name>
+      </language>
+      <language iso="en">
+        <name>Import</name>
+      </language>
+    </languages>
+    <shops>
+      <shop>1</shop>
+      <shop>2</shop>
+    </shops>
+  </category>
+  <category>
+    <parent>Home-en</parent>
+    <languages>
+      <language iso="cs">
+        <name>Home-cs</name>
+      </language>
+      <language iso="en">
+        <name>home-en</name>
+      </language>
+    </languages>
+    <shops>
+      <shop>1</shop>
+      <shop>2</shop>
+    </shops>
+  </category>
+</root>

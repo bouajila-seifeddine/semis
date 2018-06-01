@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <product>
+    <name>p1</name>
+    <reference>ref1</reference>
+    <category>Root : Home</category>
+    <images>
+      <image label="l1" cover="1">http://www.image.com/a.jpg</image>
+      <image label="l2" cover="1">http://www.image.com/b.jpg</image>
+    </images>
+    <categories>
+      <category position="1">Root : Home</category>
+      <category>Root : Home : Women</category>
+      <category>Root : Fuck : Women</category>
+    </categories>
+  </product>
+</root>

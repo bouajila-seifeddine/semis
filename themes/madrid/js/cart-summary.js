@@ -27,10 +27,12 @@ $(document).ready(function(){
 	$('.cart_quantity_up').off('click').on('click', function(e){
 		e.preventDefault();
 		upQuantity($(this).attr('id').replace('cart_quantity_up_', ''));
+		location.reload();
 	});
 	$('.cart_quantity_down').off('click').on('click', function(e){
 		e.preventDefault();
 		downQuantity($(this).attr('id').replace('cart_quantity_down_', ''));
+		location.reload();
 	});
 	$('.cart_quantity_delete' ).off('click').on('click', function(e){
 		e.preventDefault();

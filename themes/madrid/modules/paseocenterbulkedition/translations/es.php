@@ -1,0 +1,33 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{paseocenterbulkedition}madrid>paseocenterbulkedition_bdd86e04b099f6e4edb03557ae981c56'] = 'Seo Center: Edición rápida';
+$_MODULE['<{paseocenterbulkedition}madrid>paseocenterbulkedition_08ff8ae5d36d6047427266967a8c4aab'] = 'Consigue las primeras posiciones en los búscadores, editando de manera rápida las páginas de productos, proveedores, fabricantes, cms y otras páginas de tu tienda, añadiendo etiquetas No Index, No Follow, marcados Schema.org, etiquetas Open Graph personalizadas, URL canónica y más...';
+$_MODULE['<{paseocenterbulkedition}madrid>paseocenterbulkedition_13374097835935bb87c3f904039a7e48'] = 'Seo Center';
+$_MODULE['<{paseocenterbulkedition}madrid>paseocenterbulkedition_3ef47c8736616deb049ad0c02d3b2f38'] = 'Ajustes Seo';
+$_MODULE['<{paseocenterbulkedition}madrid>paseocenterbulkedition_c573bbccc7b11bc2a6346f9779a29a42'] = 'Edición rápida';
+$_MODULE['<{paseocenterbulkedition}madrid>paseocenterbulkedition_c898feae8ab9c99b793f22bba0699b4d'] = 'No se ha podido instalar el módulo porque ya tiene instalada la versión de SEO Center completa';
+$_MODULE['<{paseocenterbulkedition}madrid>adminprcontroller_ee77ea46b0c548ed60eadf31bdd68613'] = 'SQL Mal compuesta';
+$_MODULE['<{paseocenterbulkedition}madrid>adminprcontroller_c9cc8cce247e49bae79f15173ce97354'] = 'Guardar';
+$_MODULE['<{paseocenterbulkedition}madrid>adminprcontroller_630f6dc397fe74e52d5189e2c80f282b'] = 'Volver a la lista';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_f38c4dc2e99f9167441e5d6f388b851a'] = 'Cambiar URL Canónica';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_bc662b99746b39a151c58ccf2c879c81'] = 'La URL canónica es un valor multidioma, asegurate que lo modificas correctamente en todos los idiomas';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_7512c39075c27489e045bbdc11424160'] = 'Nueva URL Canónica';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_ea4788705e6873b424c65e91c2846b19'] = 'Cancelar';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_11ae80b32b2c3e6f17056eae1514e436'] = 'Cambiar la URL canónica';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_f7ff8bef32e45fac56b2d9770fd6e017'] = 'La URL canónica no tiene un formato válido, debe tener la siguiente esctructura: http(s)://tu-url-canonical.com';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_9ffa4765d2da990741800bbe1ad4e7f8'] = 'Acciones masivas';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_4c41e0bd957698b58100a5c687d757d9'] = 'Seleccionar todos';
+$_MODULE['<{paseocenterbulkedition}madrid>list_header_237c7b6874386141a095e321c9fdfd38'] = 'Deseleccionar todos';
+$_MODULE['<{paseocenterbulkedition}madrid>format_title_info_275048ecbeefe5f12be0831dfb5d693d'] = 'Puedes modificar el formato de los títulos y descripciones de las páginas, puedes personalizarlos con las siguientes etiquetas:';
+$_MODULE['<{paseocenterbulkedition}madrid>format_title_info_beddd13e77d44948355fa90ed23c8ad6'] = 'Etiquetas comunes';
+$_MODULE['<{paseocenterbulkedition}madrid>format_title_info_da84073ade56b9c177ac9a54581e39a7'] = 'Etiquetas de productos';
+$_MODULE['<{paseocenterbulkedition}madrid>format_title_info_41475cc4f406e12a31722b1e80e829e3'] = 'Etiquetas de fabricantes';
+$_MODULE['<{paseocenterbulkedition}madrid>format_title_info_24d53a8388f25b7c0b697b1957db0cfd'] = 'Etiquetas de categorías';
+$_MODULE['<{paseocenterbulkedition}madrid>format_title_info_bf87608636a44e45b97e45de8dcb406b'] = 'Etiquetas de CMS';
+$_MODULE['<{paseocenterbulkedition}madrid>format_title_info_068a7b1ad5a4fd634ce3c913baea1505'] = 'Etiquetas de proveedores';
+$_MODULE['<{paseocenterbulkedition}madrid>htaccess_info_9297a5c37dec12a1b58ee8fc5600b4cb'] = 'El archivo .htaccess puede ser modificado para incluir nuevas funcionalidades en tu servicio de alojamiento, crear reglas de reescritura o redirecciones, pero una mala configuración puede crear un mal funcionamiento en el sistema';
+$_MODULE['<{paseocenterbulkedition}madrid>htaccess_info_b82ed31f7fe9f2119bb9a63bd09ba302'] = 'No modifique esta opción si no estas seguro de lo que vas a hacer';
+$_MODULE['<{paseocenterbulkedition}madrid>scripts_info_674d784b2069b4abd0fb48e54b67f541'] = 'Inserta tu código javascript sin las etiquetas';
+$_MODULE['<{paseocenterbulkedition}madrid>form_04f52eac21566b2918eeeedb76b2507a'] = '¿ Estas seguro de querer modificar el archivo .htaccess ?';

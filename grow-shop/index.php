@@ -21,9 +21,9 @@
                     ?>
                   <meta charset="utf-8" />
                   <title>
-                     Grow Shop Online Posiblemente El Grow Más Barato De Internet
+                     ▷ Grow Shop Online Posiblemente El Grow Más Barato De Internet
                   </title>
-                  <meta name="description" content="SLC tu GrowShop Online de confianza, Contamos con más de 3000 productos, somos los más económicos, compra lo mismo a mejor precio. El Grow Shop más barato de Internet." />
+                  <meta name="description" content="SLC, tu grow shop de confianza. Entra y descubre los precios de esta semana. Haz tu compra ya y recíbela en 24 - 48 Horas. Precio, Calidad y Servicio que estas esperando compruébalo por ti mismo." />
                   <meta name="keywords" content="grow shop online, grow shop barato, grow shop, barato, grow, shop, precio, marihuana" />
                   <meta name="generator" content="PrestaShop" />
                   <meta name="robots" content="index, follow" />
@@ -1017,7 +1017,7 @@
                                     <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminacion" title="ILUMINACIÓN"> <span class="">ILUMINACIÓN</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ILUMINACIÓN</span> </span> </a></li>
                                     <li class="menu_link_32 ph-hidden-desktop"> <a href="/95-control-de-clima" title="CONTROL DE CLIMA"> <span class="">CONTROL DE CLIMA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">CONTROL DE CLIMA</span> </span> </a></li>
                                     <li class="menu_link_33 ph-hidden-desktop"> <a href="/96-fertilizantes-y-preventivos" title="FERTILIZANTES Y PREVENTIVOS"> <span class="">FERTILIZANTES Y PREVENTIVOS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">FERTILIZANTES Y PREVENTIVOS</span> </span> </a></li>
-                                    <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA"> <span class="">RIEGO E HIDROPONÍA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">RIEGO E HIDROPONÍA</span> </span> </a></li>
+                                    <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA"> <span class="">RIEGO E HIDROPONÍA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">RIEGO E HIDROPONÍA</span> </span> </a></li>
                                     <li class="menu_link_35 ph-hidden-desktop"> <a href="/98-kits" title="KITS"> <span class="">KITS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">KITS</span> </span> </a></li>
                                     <li class="menu_link_36 ph-hidden-desktop"> <a href="/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> <span class="">INSTRUMENTOS DE MEDIDA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">INSTRUMENTOS DE MEDIDA</span> </span> </a></li>
                                     <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-herramientas-y-accesorios" title="ACCESORIOS Y PARAFERNALIA"> <span class="">ACCESORIOS Y PARAFERNALIA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ACCESORIOS Y PARAFERNALIA</span> </span> </a></li>
@@ -1126,14 +1126,15 @@
                                     <div class="panel-heading" role="tab" id="headingOne2">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3" class="link-collapse">
-                                                      <h4 class="panel-title"> MÁS SOBRE NUESTRA WEB
+                                                      <h4 class="panel-title"> TENEMOS TODOS LOS PRODUCTOS QUE EXISTEN EN EL MERCADO
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>Nuestra web, Semillas Low Cost.com, no sirve solo para poder comprobar los artículos que ofertamos, sus respectivos precios y descripciones, sino que también es una fuente fehaciente de información sintetizada y contrastada.  En el blog de S.L.C encontrarás todo el contenido y la información necesaria para convertirte en un cultivador de primera. Nuestro blog y los artículos que en él publicamos están actualizados y tratan una gran cantidad de temas variados, desde cómo producir cannabis mediante diversos sistemas de cultivo, hasta como hacer pasteles o cualquier tipo de producto cannábico. Además, las descripciones de las semillas, al igual que las de los productos, son muy extensas y aportan al cultivador una destacada cantidad de información. </p>
-                                    <p>Por si todo esto fuera poco, también se nos puede seguir a través de nuestro canal de YouTube, FaceBook, Twitter, Google Plus e Instagram. Mediante todas estas plataformas el cliente tiene la posibilidad de ponerse en contacto con nosotros y resolver cualquier tipo de duda.  </p></div><div class="separador">
+                                    <p>Como desde Semillas Low Cost sabemos que los gustos y necesidades de nuestros clientes son ilimitados, os ofrecemos cualquier producto disponible en el mercado. Aunque tenemos más de 3000 productos catalogados, puedes pedirnos por email a info@semillaslowcost.com, por Whats App o teléfono cualquier artículo que exista en el mercado dedicado al cultivo de la marihuana o genéticas del banco que desees. Queremos lo mejor para los que confían en nosotros, nuestros clientes son nuestra prioridad, y convertirnos en vuestro distribuidor de confianza, nuestro objetivo.</p>
+                                    <p>Debido a que las marcas, bancos etc... sacan productos nuevos a diario, es muy difícil mantener al día nuestro catálogo, aunque trabajamos duro para que así sea. Por esta razón os animamos para que nos preguntéis por cualquier producto que necesitáis o queréis adquirir y haremos todo lo que esté en nuestras manos para ofrecértelo a un precio insuperable. Contamos con uno de los servicios al cliente más profesionales, atentos e informados sobre el cannabis y su cultivo, de todo Internet. </p>
+                                  </div><div class="separador">
                                           </div>
                                        </div></div>
 
@@ -1204,7 +1205,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/26-early-skunk-geaseeds.html" title="Early Skunk">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2991-thickbox_default/early-skunk-geaseeds.jpg" alt="Comprar Early Skunk" title="Comprar Early Skunk" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2991-thickbox_defaultl/early-skunk-geaseeds.jpg" alt="Comprar Early Skunk" title="Comprar Early Skunk" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1224,7 +1225,7 @@
                                           <div class="img_hover"></div>
                                           <div id="content-img">
                                              <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/713-auto-critical-geaseeds.html" title="Auto Critical">
-                                             <img itemprop="image" src="https://www.semillaslowcost.com/3009-thickbox_default/auto-critical-geaseeds.jpg" alt="Comprar Auto Critical" title="Comprar Auto Critical" class="img-responsive first-image">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/3009-thickbox_defaultl/auto-critical-geaseeds.jpg" alt="Comprar Auto Critical" title="Comprar Auto Critical" class="img-responsive first-image">
                                              </a>
                                           </div>
                                           <div class="info">
@@ -1244,7 +1245,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/695-super-skunk-geaseeds.html" title="Super Skunk">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2995-thickbox_default/super-skunk-geaseeds.jpg" alt="Comprar Super Skunk"  title="Comprar Super Skunk"  class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2995-thickbox_defaultl/super-skunk-geaseeds.jpg" alt="Comprar Super Skunk"  title="Comprar Super Skunk"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1295,7 +1296,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/mammoth/748-armario-mammoth-pro.html" title="Armario Mammoth Pro">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1589-thickbox_default/armario-mammoth-pro.jpg" alt="Comprar Armario Mammoth Pro" title="Comprar Armario Mammoth Pro" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1589-thickbox_defaultl/armario-mammoth-pro.jpg" alt="Comprar Armario Mammoth Pro" title="Comprar Armario Mammoth Pro" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1314,7 +1315,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/cultibox/744-armario-cultibox-light.html" title="Armario Light Silver de Cultibox">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1585-thickbox_default/armario-cultibox-light.jpg" alt="Venta de Armario Light Silver de Cultibox" title="Comprar Armario Light Silver de Cultibox" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1585-thickbox_defaultl/armario-cultibox-light.jpg" alt="Venta de Armario Light Silver de Cultibox" title="Comprar Armario Light Silver de Cultibox" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1333,7 +1334,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/cultibox/745-armario-cultibox-open.html" title="Armario Cultibox Open">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1586-thickbox_default/armario-cultibox-open.jpg" alt="Comprar Armario Cultibox Open" title="Comprar Armario Cultibox Open" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1586-thickbox_defaultl/armario-cultibox-open.jpg" alt="Comprar Armario Cultibox Open" title="Comprar Armario Cultibox Open" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1385,7 +1386,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminacion/1680-kit-iluminacion-ipower-600w.html" title="Kit de Iluminación IPOWER Electrónico ">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2543-thickbox_default/kit-iluminacion-ipower-600w.jpg" alt="Comprar Kit de Iluminación IPOWER Electrónico " title="Comprar Kit de Iluminación IPOWER Electrónico " class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2543-thickbox_defaultl/kit-iluminacion-ipower-600w.jpg" alt="Comprar Kit de Iluminación IPOWER Electrónico " title="Comprar Kit de Iluminación IPOWER Electrónico " class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1404,7 +1405,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/balastros/768-balastro-clase-2-eti.html" title="Balastro de Clase 2 ETI">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1609-thickbox_default/balastro-clase-2-eti.jpg" alt="Comprar Balastro de Clase 2 ETI" title="Comprar Balastro de Clase 2 ETI" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1609-thickbox_defaultl/balastro-clase-2-eti.jpg" alt="Comprar Balastro de Clase 2 ETI" title="Comprar Balastro de Clase 2 ETI" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1423,7 +1424,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/bombillas/1649-bombilla-hortilight-shp.html" title="La Bombilla Hortilight SHP">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2496-thickbox_default/bombilla-hortilight-shp.jpg" alt="Comprar Bombilla Hortilight SHP"  title="Comprar Bombilla Hortilight SHP" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2496-thickbox_defaultl/bombilla-hortilight-shp.jpg" alt="Comprar Bombilla Hortilight SHP"  title="Comprar Bombilla Hortilight SHP" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1473,7 +1474,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1027-controlador-de-humedad-cornwall-electronics.html" title="Controlador de Humedad Cornwall Electronics">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1889-thickbox_default/controlador-de-humedad-cornwall-electronics.jpg" alt="Comprar Controlador de Humedad Cornwall Electronics"  title="Comprar Controlador de Humedad Cornwall Electronics" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1889-thickbox_defaultl/controlador-de-humedad-cornwall-electronics.jpg" alt="Comprar Controlador de Humedad Cornwall Electronics"  title="Comprar Controlador de Humedad Cornwall Electronics" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1492,7 +1493,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/controladores/1036-controlador-t-velocidad-e-hysteresis-min-y-max-2-gse.html" title="Controlador Tª, Velocidad e Hysteresis Min y Max (2) GSE">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1898-thickbox_default/controlador-t-velocidad-e-hysteresis-min-y-max-2-gse.jpg" alt="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE"  title="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1898-thickbox_defaultl/controlador-t-velocidad-e-hysteresis-min-y-max-2-gse.jpg" alt="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE"  title="Comprar Controlador Temperatura, Velocidad e Hysteresis Min y Max (2) GSE" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1511,7 +1512,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/humidificador-deshumidificador/1011-deshumidificador-mini-cornwall-electronics.html" title="Deshumidificador Mini Cornwall Electronics">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1872-thickbox_default/deshumidificador-mini-cornwall-electronics.jpg" alt="Comprar Deshumidificador Mini Cornwall Electronics" title="Comprar Deshumidificador Mini Cornwall Electronics" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1872-thickbox_defaultl/deshumidificador-mini-cornwall-electronics.jpg" alt="Comprar Deshumidificador Mini Cornwall Electronics" title="Comprar Deshumidificador Mini Cornwall Electronics" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1564,7 +1565,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/amax/1083-fertilizante-amax-growth-burst-1kg.html" title="Fertilizante Amax Growth Burst 1KG">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1945-thickbox_default/fertilizante-amax-growth-burst-1kg.jpg" alt="Comprar Fertilizante Amax Growth Burst 1KG"  title="Comprar Fertilizante Amax Growth Burst 1KG" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1945-thickbox_defaultl/fertilizante-amax-growth-burst-1kg.jpg" alt="Comprar Fertilizante Amax Growth Burst 1KG"  title="Comprar Fertilizante Amax Growth Burst 1KG" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1583,7 +1584,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/atami/892-atazyme-ata.html" title="Atazyme ATA">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1775-thickbox_default/atazyme-ata.jpg" alt="Comprar Atazyme ATA" title="Comprar Atazyme ATA" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1775-thickbox_defaultl/atazyme-ata.jpg" alt="Comprar Atazyme ATA" title="Comprar Atazyme ATA" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1602,7 +1603,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/top-crop/1970-top-candy-top-crop.html" title="Top Candy Top Crop">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2826-thickbox_default/top-candy-top-crop.jpg" alt="Comprar Top Candy Top Crop" title="Comprar Top Candy Top Crop" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2826-thickbox_defaultl/top-candy-top-crop.jpg" alt="Comprar Top Candy Top Crop" title="Comprar Top Candy Top Crop" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1653,7 +1654,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/1813-polen-maker.html" title="Extractor de aceite POLEN MAKER">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2676-thickbox_default/polen-maker.jpg" alt="Venta de POLEN MAKER"  title="Venta de POLEN MAKER" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2676-thickbox_defaultl/polen-maker.jpg" alt="Venta de POLEN MAKER"  title="Venta de POLEN MAKER" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1672,7 +1673,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/bho/1818-roller-extractor.html" title="ROLLER EXTRACTOR">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2681-thickbox_default/roller-extractor.jpg" alt="Comprar ROLLER EXTRACTOR" title="Comprar ROLLER EXTRACTOR" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2681-thickbox_defaultl/roller-extractor.jpg" alt="Comprar ROLLER EXTRACTOR" title="Comprar ROLLER EXTRACTOR" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1691,7 +1692,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-con-agua-y-hielo/1811-lavadorapiramidesecret-icer-5termometro.html" title="Lavadora + Pirámide + Secret Icer 5 + Termómetro">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2674-thickbox_default/lavadorapiramidesecret-icer-5termometro.jpg" alt="Comprar Lavadora + Pirámide + Secret Icer 5 + Termómetro" title="Comprar Lavadora + Pirámide + Secret Icer 5 + Termómetro" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2674-thickbox_defaultl/lavadorapiramidesecret-icer-5termometro.jpg" alt="Comprar Lavadora + Pirámide + Secret Icer 5 + Termómetro" title="Comprar Lavadora + Pirámide + Secret Icer 5 + Termómetro" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1741,7 +1742,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidroponicos/1364-aerofarm-ghe.html" title="AeroFarm GHE">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2237-thickbox_default/aerofarm-ghe.jpg" alt="Comprar AeroFarm GHE" title="Comprar AeroFarm GHE" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2237-thickbox_defaultl/aerofarm-ghe.jpg" alt="Comprar AeroFarm GHE" title="Comprar AeroFarm GHE" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1760,7 +1761,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/sistemas-hidroponicos/1485-deposito-dwc105.html" title="Depósito DWC105">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2311-thickbox_default/deposito-dwc105.jpg" alt="Comprar Depósito DWC105" title="Comprar Depósito DWC105" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2311-thickbox_defaultl/deposito-dwc105.jpg" alt="Comprar Depósito DWC105" title="Comprar Depósito DWC105" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1779,7 +1780,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/filtros-osmosis/1383-filtro-de-osmosis-de-5-etapas-sin-deposito.html" title="Filtro de Ósmosis de 5 etapas SIN DEPOSITO">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2230-thickbox_default/filtro-de-osmosis-de-5-etapas-sin-deposito.jpg" alt="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO"  title="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2230-thickbox_defaultl/filtro-de-osmosis-de-5-etapas-sin-deposito.jpg" alt="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO"  title="Comprar Filtro de Ósmosis de 5 etapas SIN DEPOSITO" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1829,7 +1830,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/kits-completos/1764-kit-cultivo-600w-armario-120cm.html" title="Kit cultivo 600W  armario 120cm">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2965-thickbox_default/kit-cultivo-600w-armario-120cm.jpg" alt="Comprar Kit cultivo 600W  armario 120cm"  title="Comprar Kit cultivo 600W  armario 120cm" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2965-thickbox_defaultl/kit-cultivo-600w-armario-120cm.jpg" alt="Comprar Kit cultivo 600W  armario 120cm"  title="Comprar Kit cultivo 600W  armario 120cm" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1848,7 +1849,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/equipos-iluminacion/1679-kit-completo-xtrasun-600w.html" title="Kit Completo Xtrasun 600W">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2542-thickbox_default/kit-completo-xtrasun-600w.jpg" alt="Comprar Kit Completo Xtrasun 600W"  title="Comprar Kit Completo Xtrasun 600W" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2542-thickbox_defaultl/kit-completo-xtrasun-600w.jpg" alt="Comprar Kit Completo Xtrasun 600W"  title="Comprar Kit Completo Xtrasun 600W" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1867,7 +1868,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/biobizz/1056-trypack-outdoor-biobizz.html" title="Trypack Outdoor BioBizz">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/1921-thickbox_default/trypack-outdoor-biobizz.jpg" alt="Comprar Trypack Outdoor BioBizz"  title="Comprar Trypack Outdoor BioBizz" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1921-thickbox_defaultl/trypack-outdoor-biobizz.jpg" alt="Comprar Trypack Outdoor BioBizz"  title="Comprar Trypack Outdoor BioBizz" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1918,7 +1919,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/medidores/1537-medidor-ph-ph2-atc-caja-wasseterch.html" title="Medidor pH PH2 ATC Caja Wasseterch">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2361-thickbox_default/medidor-ph-ph2-atc-caja-wasseterch.jpg" alt="Comprar Medidor pH PH2 ATC Caja Wasseterch"  title="Comprar Medidor pH PH2 ATC Caja Wasseterch" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2361-thickbox_defaultl/medidor-ph-ph2-atc-caja-wasseterch.jpg" alt="Comprar Medidor pH PH2 ATC Caja Wasseterch"  title="Comprar Medidor pH PH2 ATC Caja Wasseterch" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1937,7 +1938,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/medidores/1536-medidor-ec-atc-wassertech-uscm.html" title="Medidor EC ATC Wassertech uS/cm">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2360-thickbox_default/medidor-ec-atc-wassertech-uscm.jpg" alt="Comprar Medidor EC ATC Wassertech uS/cm"  title="Comprar Medidor EC ATC Wassertech uS/cm" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2360-thickbox_defaultl/medidor-ec-atc-wassertech-uscm.jpg" alt="Comprar Medidor EC ATC Wassertech uS/cm"  title="Comprar Medidor EC ATC Wassertech uS/cm" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -1956,7 +1957,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/basculas/1503-bascula-sm-500-waltex-500-g-01-g.html" title="Bascula SM-500 Waltex 500 g / 0,1 g">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2328-thickbox_default/bascula-sm-500-waltex-500-g-01-g.jpg" alt="Comprar Bascula SM-500 Waltex 500 g / 0,1 g"  title="Comprar Bascula SM-500 Waltex 500 g / 0,1 g" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2328-thickbox_defaultl/bascula-sm-500-waltex-500-g-01-g.jpg" alt="Comprar Bascula SM-500 Waltex 500 g / 0,1 g"  title="Comprar Bascula SM-500 Waltex 500 g / 0,1 g" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2010,7 +2011,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/tijeras-y-manicuradores/1942-peladora-table-trimmer-46x46-alto-645cm.html" title="Peladora Table Trimmer 46x46, Alto 64.5cm">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2798-thickbox_default/peladora-table-trimmer-46x46-alto-645cm.jpg" alt="Comprar Peladora Table Trimmer 46x46, Alto 64.5cm"  title="Comprar Peladora Table Trimmer"  class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2798-thickbox_defaultl/peladora-table-trimmer-46x46-alto-645cm.jpg" alt="Comprar Peladora Table Trimmer 46x46, Alto 64.5cm"  title="Comprar Peladora Table Trimmer"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2029,7 +2030,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/1820-secret-shaker-secret-smoke.html" title="Secret Shaker Secret Smoke">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2683-thickbox_default/secret-shaker-secret-smoke.jpg" alt="Comprar Secret Shaker Secret Smoke"  title="Comprar Secret Shaker Secret Smoke" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2683-thickbox_defaultl/secret-shaker-secret-smoke.jpg" alt="Comprar Secret Shaker Secret Smoke"  title="Comprar Secret Shaker Secret Smoke" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2048,7 +2049,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/mallas/1571-malla-bug-bloquer.html" title="Malla Bug Bloquer">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2396-thickbox_default/malla-bug-bloquer.jpg" alt="Comprar Malla Bug Bloquer"  title="Comprar Malla Bug Bloquer" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2396-thickbox_defaultl/malla-bug-bloquer.jpg" alt="Comprar Malla Bug Bloquer"  title="Comprar Malla Bug Bloquer" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2100,7 +2101,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/macetas/1719-maceta-tex-pot-negra.html" title="Maceta Tex Pot Negra">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2583-thickbox_default/maceta-tex-pot-negra.jpg" alt="Comprar Maceta Tex Pot Negra"  title="Comprar Maceta Tex Pot Negra" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2583-thickbox_defaultl/maceta-tex-pot-negra.jpg" alt="Comprar Maceta Tex Pot Negra"  title="Comprar Maceta Tex Pot Negra" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2119,7 +2120,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/macetas/1701-bolsa-de-cultivo-blanca.html" title="Bolsa de Cultivo Blanca">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2565-thickbox_default/bolsa-de-cultivo-blanca.jpg" alt="Comprar Bolsa de Cultivo Blanca"  title="Comprar Bolsa de Cultivo Blanca"  class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2565-thickbox_defaultl/bolsa-de-cultivo-blanca.jpg" alt="Comprar Bolsa de Cultivo Blanca"  title="Comprar Bolsa de Cultivo Blanca"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2138,7 +2139,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/bandejas/1726-bandeja-semillero-pack-25-uds.html" title="Bandeja Semillero pack 25 uds">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2590-thickbox_default/bandeja-semillero-pack-25-uds.jpg" alt="Comprar Bandeja Semillero pack 25 uds"  title="Comprar Bandeja Semillero pack 25 uds" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2590-thickbox_defaultl/bandeja-semillero-pack-25-uds.jpg" alt="Comprar Bandeja Semillero pack 25 uds"  title="Comprar Bandeja Semillero pack 25 uds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2192,7 +2193,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/lucha-biologica/2023-quemador-de-azufre.html" title="Maceta Tex Pot Negra">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2875-thickbox_default/quemador-de-azufre.jpg" alt="Comprar quemador de azufre anti orugas"  title="Comprar quemador de azufre anti orugas" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2875-thickbox_defaultl/quemador-de-azufre.jpg" alt="Comprar quemador de azufre anti orugas"  title="Comprar quemador de azufre anti orugas" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2211,7 +2212,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/arana-roja/2006-spical-5000-amblyseius-californicus.html" title="comprar anti mosca roja SPICAL 5000">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2921-thickbox_default/spical-5000-amblyseius-californicus.jpg" alt="comprar anti mosca roja SPICAL 5000"  title="comprar anti mosca roja SPICAL 5000 "  class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2921-thickbox_defaultl/spical-5000-amblyseius-californicus.jpg" alt="comprar anti mosca roja SPICAL 5000"  title="comprar anti mosca roja SPICAL 5000 "  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2230,7 +2231,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/pulgon/2024-aphiscout-250-avispas-para-pulgon.html" title="APHISCOUT (250 AVISPAS PARA PULGÓN)">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2929-thickbox_default/aphiscout-250-avispas-para-pulgon.jpg" alt="Comprar APHISCOUT (250 AVISPAS PARA PULGÓN)"  title="Comprar anti pulgon marihuana" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2929-thickbox_defaultl/aphiscout-250-avispas-para-pulgon.jpg" alt="Comprar APHISCOUT (250 AVISPAS PARA PULGÓN)"  title="Comprar anti pulgon marihuana" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2283,7 +2284,7 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1324-filtro-antiolor-can-lite.html" title="Filtro Antiolor CAN-Lite">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2175-thickbox_default/filtro-antiolor-can-lite.jpg" alt="Comprar Filtro Antiolor CAN-Lite"  title="Comprar Filtro Antiolor CAN-Lite" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2175-thickbox_defaultl/filtro-antiolor-can-lite.jpg" alt="Comprar Filtro Antiolor CAN-Lite"  title="Comprar Filtro Antiolor CAN-Lite" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2302,7 +2303,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/filtros-antiolor/1675-filtro-de-carbon-ipower.html" title="Filtro de carbón Ipower">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2537-thickbox_default/filtro-de-carbón-ipower.jpg" alt="Comprar Filtro de carbón Ipower"  title="Comprar Filtro de carbón Ipower" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2537-thickbox_defaultl/filtro-de-carbón-ipower.jpg" alt="Comprar Filtro de carbón Ipower"  title="Comprar Filtro de carbón Ipower" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2321,7 +2322,7 @@
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
                                           <a itemprop="url" href="https://www.semillaslowcost.com/ambientadores/1332-ambientador-ona-block-fl-170-g.html" title="Ambientador ONA Block FL 170 g">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2183-thickbox_default/ambientador-ona-block-fl-170-g.jpg" alt="Comprar Ambientador ONA Block FL 170 g"  title="Comprar Ambientador ONA Block FL 170 g" class="img-responsive first-image">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2183-thickbox_defaultl/ambientador-ona-block-fl-170-g.jpg" alt="Comprar Ambientador ONA Block FL 170 g"  title="Comprar Ambientador ONA Block FL 170 g" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
@@ -2455,19 +2456,19 @@
                   <li> <a href="https://www.semillaslowcost.com/27-buddha-seeds-feminizadas" title="Buddha Seeds Feminizadas"> Buddha Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/28-barney-s-farm-feminizadas" title="Barney's Farm Feminizadas"> Barney's Farm Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/29-positronics-feminizadas" title="Positronics Feminizadas"> Positronics Feminizadas </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/64-green-house-seeds" title="Green House Seeds"> Green House Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/65-paradise-seeds" title="Paradise Seeds"> Paradise Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/64-green-house-seeds-feminizadas" title="Green House Seeds"> Green House Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/65-paradise-seeds-feminizadas" title="Paradise Seeds"> Paradise Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/66-kannabia" title="Kannabia"> Kannabia </a></li>
                   <li> <a href="https://www.semillaslowcost.com/67-eva-seeds" title="Eva Seeds"> Eva Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/68-medical-seeds" title="Medical Seeds"> Medical Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/69-pyramid-seeds" title="Pyramid Seeds"> Pyramid Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/68-medical-seeds-feminizadas" title="Medical Seeds"> Medical Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/69-pyramid-seeds-feminizadas" title="Pyramid Seeds"> Pyramid Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/70-mr-nice" title="Mr Nice"> Mr Nice </a></li>
                   <li> <a href="https://www.semillaslowcost.com/71-serious-seeds-feminizadas" title="Serious Seeds Feminizadas"> Serious Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/72-ripper-seeds" title="Ripper Seeds"> Ripper Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/73-dna-genetics" title="DNA Genetics"> DNA Genetics </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/75-royal-queen-seeds" title="Royal Queen Seeds"> Royal Queen Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/75-royal-queen-seeds-feminizadas" title="Royal Queen Seeds"> Royal Queen Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/76-mandala-seeds" title="Mandala Seeds"> Mandala Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/77-delicious-seeds" title="Delicious Seeds"> Delicious Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/77-delicious-seeds-feminizadas" title="Delicious Seeds"> Delicious Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/78-samsara-seeds" title="Samsara Seeds"> Samsara Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/79-world-of-seeds" title="World of Seeds"> World of Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/80-big-buddha-seeds" title="Big Buddha Seeds"> Big Buddha Seeds </a></li>
@@ -2480,7 +2481,7 @@
                         <li class="last"> <a href="https://www.semillaslowcost.com/89-coleccion-medicinal-cbd-seeds" title="Colección Medicinal CBD Seeds"> Colección Medicinal CBD Seeds </a></li>
                      </ul>
                   </li>
-                  <li> <a href="https://www.semillaslowcost.com/84-seedmakers" title="Seedmakers"> Seedmakers </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/84-seedmakers-feminizadas" title="Seedmakers"> Seedmakers </a></li>
                   <li> <a href="https://www.semillaslowcost.com/85-white-label-feminizadas" title="White Label Feminizadas"> White Label Feminizadas </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/87-the-moon-seeds" title="The Moon Seeds"> The Moon Seeds </a></li>
                </ul>
@@ -2509,7 +2510,7 @@
                   <li> <a href="https://www.semillaslowcost.com/60-serious-seeds-regulares" title="Serious Seeds Regulares"> Serious Seeds Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/61-white-label-regulares" title="White Label Regulares"> White Label Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/62-mrnice" title="Mr.Nice"> Mr.Nice </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/63-flying-dutchmen" title="Flying Dutchmen"> Flying Dutchmen </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/63-flying-dutchmen-regulares" title="Flying Dutchmen"> Flying Dutchmen </a></li>
                </ul>
             </li>
             <li>
@@ -2677,14 +2678,9 @@
       </div>
       <div class="block_content list-block" style="">
          <ul>
-            <li> <a href="https://www.semillaslowcost.com/historial-compra" title="MIS COMPRAS"> MIS COMPRAS </a></li>
-            <li> <a href="https://www.semillaslowcost.com/seguimiento-pedido" title="MIS DEVOLUCIONES"> MIS DEVOLUCIONES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/albaran" title="MIS VALES DESCUENTO"> MIS VALES DESCUENTO </a></li>
-            <li> <a href="https://www.semillaslowcost.com/direcciones" title="MIS DIRECCIONES"> MIS DIRECCIONES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/datos-personales" title="MIS DATOS PERSONALES"> MIS DATOS PERSONALES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/descuento" title="MIS VALES"> MIS VALES </a></li>
+            <li> <a href="https://www.semillaslowcost.com/inicio-sesion" title="INICIAR SESIÓN"> INICIAR SESIÓN</a></li>
          </ul>
-         <div class="logout"> <a class="button button-small" href="https://www.semillaslowcost.com/?mylogout=" title="CERRAR SESIÓN"> <span>CERRAR SESIÓN</span> </a></div>
+         
       </div>
    </div>
    <div id="special_block_right" class="block">
@@ -2717,6 +2713,8 @@
                               </h5>
                               <input id="newsletter-input" class="account_input" type="email" name="email" size="18" value="Introduzca su dirección de correo electrónico" placeholder="Introduzca su dirección de correo electrónico" />
                               <input class="button button-small btn-primary" type="submit" value="Enviar" name="submitNewsletter" />
+                               <div class="clearfix"></div>
+                              <p style="padding-top: 15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required=""> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de semillaslowcost.com</p>
                               <input type="hidden" name="action" value="0" />
                            </form>
                            <div class="col-md-5 col-sm-12 col-xs-12 social-icons">
@@ -2793,7 +2791,7 @@
                                                 FERTILIZANTES Y PREVENTIVOS </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA">
+                                                <a href="https://www.semillaslowcost.com/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA">
                                                 RIEGO E HIDROPONÍA </a>
                                              </li>
                                              <li >
@@ -2873,38 +2871,14 @@
                                  </div>
                                  <div class="block_footer col-md-3 col-sm-6 col-xs-12">
                                     <h4>
-                                       <a href="https://www.semillaslowcost.com/mi-cuenta" title="Administrar mi cuenta de cliente" rel="nofollow">
-                                       MI CUENTA</a>
+                                      
+                                       MI CUENTA
                                     </h4>
                                     <div class="block_content toggle-footer">
                                        <ul>
+                                          
                                           <li>
-                                             <a href="https://www.semillaslowcost.com/historial-compra" title="MIS COMPRAS" rel="nofollow">
-                                             MIS COMPRAS</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/seguimiento-pedido" title="MIS DEVOLUCIONES" rel="nofollow">
-                                             MIS DEVOLUCIONES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/albaran" title="MIS VALES DESCUENTO" rel="nofollow">
-                                             MIS VALES DESCUENTO</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/direcciones" title="MIS DIRECCIONES" rel="nofollow">
-                                             MIS DIRECCIONES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/datos-personales" title="Administrar mi información personal" rel="nofollow">
-                                             MIS DATOS PERSONALES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/descuento" title="MIS VALES" rel="nofollow">
-                                             MIS VALES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/?mylogout" title="CERRAR SESIÓN" rel="nofollow">
-                                             CERRAR SESIÓN</a>
+                                            <a href="https://www.semillaslowcost.com/inicio-sesion" title="INICIAR SESIÓN"> INICIAR SESIÓN</a>
                                           </li>
                                        </ul>
                                     </div>
@@ -2972,8 +2946,48 @@
                   </div>
                    <script type="text/javascript" src="v_139_979234257a36d5d1d201fc17021a2e50.js"></script>
                   <script type="text/javascript">/* <![CDATA[ */;var CUSTOMIZE_TEXTFIELD=1;var FancyboxI18nClose='Cerrar';var FancyboxI18nNext='Siguiente';var FancyboxI18nPrev='Previo';var ajax_allowed=true;var ajaxsearch=true;var autoplayInfo=false;var autoplay_speed='5000';var baseDir='https://www.semillaslowcost.com/';var baseUri='https://www.semillaslowcost.com/';var blocksearch_type='top';var contentOnly=false;var customizationIdMessage='Personalización n°';var delete_txt='Eliminar';var displayList=false;var freeProductTranslation='¡Gratis!';var freeShippingTranslation='¡Envío gratuito!';var generated_date=1507196517;var hasDeliveryAddress=true;var homeslider_loop=0;var homeslider_pause=6000;var homeslider_speed=500;var homeslider_width=2050;var id_lang=4;var img_dir='https://www.semillaslowcost.com/themes/madrid/img/';var instantsearch=true;var isGuest=0;var isLogged=1;var isMobile=false;var page_name='index';var placeholder_blocknewsletter='Introduzca su dirección de correo electrónico';var priceDisplayMethod=0;var priceDisplayPrecision=2;var quickView=true;var removingLinkText='eliminar este producto de mi carrito';var roundMode=2;var search_url='https://www.semillaslowcost.com/buscar';var static_token='748689dd839a4f2c4d20582585ad7a95';var toBeDetermined='A determinar';var token='af661569a7ddbee558d16377739f3a65';var usingSecureMode=true;/* ]]> */</script> 
-                  <script type="text/javascript">/* <![CDATA[ */;function closeinfo()
-                     {$('.lgcookieslaw_banner').hide();};;var user_options_AC={"cookiesUrl":"","cookiesUrlTitle":"","redirectLink":"https://www.google.es/","messageContent":"%3Cp+style%3D%22text-align%3A+center%3B%22%3E%3Cspan+style%3D%22color%3A+%23000000%3B%22%3EP%C3%A1gina+de+acceso+solo+permitido+para+mayores+de+18+a%C3%B1os.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+no+se+hace+responsable+en+el+caso+de+que+un+menor+accediera+a+la+web+proporcionando+datos+falsos.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+declina+toda+responsabilidad+sobre+el+uso+indebido+de+los+productos+que+comercializa.+Desde+Semillas+Low+Cost+no+se+pretende+fomentar+e+inducir+a+actuar+en+contra+de+la+ley.+Cada+cual+ser%C3%A1+responsable+de+sus+actos+de+acuerdo+a+la+legislaci%C3%B3n+de+cada+pa%C3%ADs.+Esta+web+usa+coookies.+Es+deber+del+Usuario+informarse+sobre+la+legislacion+vigente+de+su+pais.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+comercializa+semillas+ca%C3%B1amo+para+uso+exclusivo+de+coleccionismo.%3C%2Fspan%3E%3C%2Fp%3E","okText":"Aceptar","notOkText":"No, gracias","cookieName":"DELUXEADULTCONTENTWarningCheck","cookiePath":"/","cookieDomain":"www.semillaslowcost.com","ajaxUrl":"https://www.semillaslowcost.com/modules/deluxeadultcontent/cookie_ajax.php","dlxOpacity":"","dlxColor":"",};;function updateFormDatas(){var nb=$('#quantity_wanted').val();var id=$('#idCombination').val();$('.paypal_payment_form input[name=quantity]').val(nb);$('.paypal_payment_form input[name=id_p_attr]').val(id);}$(document).ready(function(){if($('#in_context_checkout_enabled').val()!=1){$('#payment_paypal_express_checkout').click(function(){$('#paypal_payment_form_cart').submit();return false;});}var jquery_version=$.fn.jquery.split('.');if(jquery_version[0]>=1&&jquery_version[1]>=7){$('body').on('submit',".paypal_payment_form",function(){updateFormDatas();});}else{$('.paypal_payment_form').live('submit',function(){updateFormDatas();});}function displayExpressCheckoutShortcut(){var id_product=$('input[name="id_product"]').val();var id_product_attribute=$('input[name="id_product_attribute"]').val();$.ajax({type:"GET",url:baseDir+'/modules/paypal/express_checkout/ajax.php',data:{get_qty:"1",id_product:id_product,id_product_attribute:id_product_attribute},cache:false,success:function(result){if(result=='1'){$('#container_express_checkout').slideDown();}else{$('#container_express_checkout').slideUp();}return true;}});}$('select[name^="group_"]').change(function(){setTimeout(function(){displayExpressCheckoutShortcut()},500);});$('.color_pick').click(function(){setTimeout(function(){displayExpressCheckoutShortcut()},500);});if($('body#product').length>0)setTimeout(function(){displayExpressCheckoutShortcut()},500);var modulePath='modules/paypal';var subFolder='/integral_evolution';var baseDirPP=baseDir.replace('http:','https:');var fullPath=baseDirPP+modulePath+subFolder;var confirmTimer=false;if($('form[target="hss_iframe"]').length==0){if($('select[name^="group_"]').length>0)displayExpressCheckoutShortcut();return false;}else{checkOrder();}function checkOrder(){if(confirmTimer==false)confirmTimer=setInterval(getOrdersCount,1000);}function getOrdersCount(){$.get(fullPath+'/confirm.php',{id_cart:'1338'},function(data){if((typeof(data)!='undefined')&&(data>0)){clearInterval(confirmTimer);window.location.replace(fullPath+'/submit.php?id_cart=1338');$('p.payment_module, p.cart_navigation').hide();}});}});;(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-70811397-1','auto');ga('require','ec');ga('set','&uid','21');;$(function(){$('.ph_megamenu').ph_megamenu();if(typeof $.fn.fitVids!=='undefined'){$('.ph_megamenu').fitVids();}});;(function(){eKomiIntegrationConfig=new Array({certId:'38501418403AF16'});if(typeof eKomiIntegrationConfig!="undefined"){for(var eKomiIntegrationLoop=0;eKomiIntegrationLoop<eKomiIntegrationConfig.length;eKomiIntegrationLoop++){var eKomiIntegrationContainer=document.createElement('script');eKomiIntegrationContainer.type='text/javascript';eKomiIntegrationContainer.defer=true;eKomiIntegrationContainer.src=(document.location.protocol=='https:'?'https:':'http:')+"//connect.ekomi.de/integration_1491410875/"+eKomiIntegrationConfig[eKomiIntegrationLoop].certId+".js";document.getElementsByTagName("head")[0].appendChild(eKomiIntegrationContainer);}}else{if('console'in window){console.error('connectEkomiIntegration - Cannot read eKomiIntegrationConfig');}}})();;ga('send','pageview');/* ]]> */
-                  </script>
+                 <script type="text/javascript">
+    /* <![CDATA[ */ ;
+
+    function closeinfo() {
+        $('.lgcookieslaw_banner').hide();
+    };;
+    var user_options_AC = {
+        "cookiesUrl": "",
+        "cookiesUrlTitle": "",
+        "redirectLink": "https://www.google.es/",
+        "messageContent": "%3Cp+style%3D%22text-align%3A+center%3B%22%3E%3Cspan+style%3D%22color%3A+%23000000%3B%22%3EP%C3%A1gina+de+acceso+solo+permitido+para+mayores+de+18+a%C3%B1os.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+no+se+hace+responsable+en+el+caso+de+que+un+menor+accediera+a+la+web+proporcionando+datos+falsos.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+declina+toda+responsabilidad+sobre+el+uso+indebido+de+los+productos+que+comercializa.+Desde+Semillas+Low+Cost+no+se+pretende+fomentar+e+inducir+a+actuar+en+contra+de+la+ley.+Cada+cual+ser%C3%A1+responsable+de+sus+actos+de+acuerdo+a+la+legislaci%C3%B3n+de+cada+pa%C3%ADs.+Esta+web+usa+coookies.+Es+deber+del+Usuario+informarse+sobre+la+legislacion+vigente+de+su+pais.%3C%2Fspan%3E+%3Cbr+%2F%3E%3Cbr+%2F%3E+%3Cspan+style%3D%22color%3A+%23000000%3B%22%3ESemillas+Low+Cost+comercializa+semillas+ca%C3%B1amo+para+uso+exclusivo+de+coleccionismo.%3C%2Fspan%3E%3C%2Fp%3E",
+        "okText": "Aceptar",
+        "notOkText": "No, gracias",
+        "cookieName": "DELUXEADULTCONTENTWarningCheck",
+        "cookiePath": "/",
+        "cookieDomain": "www.semillaslowcost.com",
+        "ajaxUrl": "https://www.semillaslowcost.com/modules/deluxeadultcontent/cookie_ajax.php",
+        "dlxOpacity": "",
+        "dlxColor": "",
+    };;
+
+    (window.gaDevIds = window.gaDevIds || []).push('d6YPbH');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-70811397-1', 'auto');
+    ga('require', 'ec');
+    ga('set', '&uid', '21');;
+    $(function() {
+        $('.ph_megamenu').ph_megamenu();
+        if (typeof $.fn.fitVids !== 'undefined') {
+            $('.ph_megamenu').fitVids();
+        }
+    });;
+    ga('send', 'pageview'); /* ]]> */
+</script>
                </body>
             </html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <images>
+    <image label="image 1">http://www.image.com/a.jpg</image>
+    <image label="image 2">http://www.image.com/b.jpg</image>
+  </images>
+  <categories>
+    <category id="1">Root</category>
+    <category id="2" parent="1">Root : Home</category>
+    <category id="3" parent="3">Root : Home : Women</category>
+    <category id="4" parent="4">Root : Home : Cars</category>
+  </categories>
+</root>

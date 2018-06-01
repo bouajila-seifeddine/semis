@@ -161,7 +161,9 @@
 						</label>
 						<input id="commentCustomerName" name="customer_name" type="text" value=""/>
 					{/if}
+					<p style="padding-top: 	15px;"><input style="opacity: 1;" type="checkbox" id="gdpr-consent-box" name="gdpr" required> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </p>
 					<div id="new_comment_form_footer">
+
 						<input id="id_product_comment_send" name="id_product" type="hidden" value='{$id_product_comment_form}' />
 						<p class="fl required"><sup>*</sup> {l s='Required fields' mod='productcomments'}</p>
 						<p class="fr">

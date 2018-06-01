@@ -84,6 +84,9 @@
 						<label for="passwd">{l s='Password'}</label>
 						<input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="{if isset($smarty.post.passwd)}{$smarty.post.passwd|stripslashes}{/if}" />
 					</div>
+					<p class="form-group"  style="padding-top:  15px; padding-bottom:  20px;">
+					<label for="gdpr">He leído atentamente y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> de esta web.</label>
+					<input style="opacity: 1;" type="checkbox" id="gdpr-consent-box" name="gdpr" required> </p>
 					<p class="lost_password form-group"><a href="{$link->getPageLink('password')|escape:'html':'UTF-8'}" title="{l s='Recover your forgotten password'}" rel="nofollow">{l s='Forgot your password?'}</a></p>
 					<p class="submit">
 						{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
@@ -161,13 +164,13 @@
 					</div>
 					{if isset($newsletter) && $newsletter}
 						<div class="checkbox">
-							<input type="checkbox" name="newsletter" id="newsletter" value="1" checked="checked"/>
+							<input type="checkbox" name="newsletter" id="newsletter" value="1" />
 							<label for="newsletter">{l s='Sign up for our newsletter!'}</label>
 						</div>
 					{/if}
 					{if isset($optin) && $optin}
 						<div class="checkbox">
-							<input type="checkbox" name="optin" id="optin" value="1" checked="checked"/>
+							<input type="checkbox" name="optin" id="optin" value="1"/>
 							<label for="optin">{l s='Receive special offers from our partners!'}</label>
 						</div>
 					{/if}
@@ -476,7 +479,7 @@
 			</div>
 			{if isset($newsletter) && $newsletter}
 				<div class="checkbox">
-					<input type="checkbox" name="newsletter" id="newsletter" value="1" checked="checked" />
+					<input type="checkbox" name="newsletter" id="newsletter" value="1" />
 					<label for="newsletter">{l s='Sign up for our newsletter!'}</label>
 					{if array_key_exists('newsletter', $field_required)}
 						<sup> *</sup>
@@ -485,7 +488,7 @@
 			{/if}
 			{if isset($optin) && $optin}
 				<div class="checkbox">
-					<input type="checkbox" name="optin" id="optin" value="1"  checked="checked" />
+					<input type="checkbox" name="optin" id="optin" value="1"  />
 					<label for="optin">{l s='Receive special offers from our partners!'}</label>
 					{if array_key_exists('optin', $field_required)}
 						<sup> *</sup>

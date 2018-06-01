@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <product>
+    <category>category 0</category>
+    <id>0</id>
+  </product>
+  <product>
+    <manufacturer>manufacturer 1</manufacturer>
+    <category>category 1</category>
+    <id>1</id>
+  </product>
+  <product>
+    <manufacturer>manufacturer 2</manufacturer>
+    <category>category 2</category>
+    <id>2</id>
+  </product>
+  <product>
+    <manufacturer>manufacturer 3</manufacturer>
+    <id>3</id>
+  </product>
+  <product>
+    <category>category 3</category>
+    <id>4</id>
+  </product>
+  <product>
+    <manufacturer>manufacturer 2</manufacturer>
+    <category>category 1</category>
+    <id>5</id>
+  </product>
+  <product>
+    <manufacturer>manufacturer 1</manufacturer>
+    <manufacturer>manufacturer 2</manufacturer>
+    <category>category 1</category>
+    <category>category 2</category>
+    <id>6</id>
+  </product>
+</root>

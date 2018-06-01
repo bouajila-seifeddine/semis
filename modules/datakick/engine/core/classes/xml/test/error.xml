@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <category>
+    <parent></parent>
+    <shop id="1">
+      <language id="1">
+        <name>Import</name>
+      </language>
+      <language id="3">
+        <name>Home</name>
+      </language2>
+    </shop>
+  </category>
+</root>

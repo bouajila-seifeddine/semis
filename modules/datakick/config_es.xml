@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>datakick</name>
+	<displayName><![CDATA[DataKick - Data Manager]]></displayName>
+	<version><![CDATA[2.1.3]]></version>
+	<description><![CDATA[XML and CSV export, inline editing]]></description>
+	<author><![CDATA[Petr Hucik &lt;petr@getdatakick.com&gt;]]></author>
+	<tab><![CDATA[export]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

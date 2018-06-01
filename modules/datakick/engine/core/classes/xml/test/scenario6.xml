@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <category x="1" path="Root : Import">
+    <name>Import</name>
+    <is-root>true</is-root>
+  </category>
+  <category x="2" path="Root : Import : Home">
+    <name>Home</name>
+    <parent>Root : Import</parent>
+  </category>
+  <category path="Root : Import : Home : Women">
+    <name>Women</name>
+    <parent>Root : Import : Home</parent>
+  </category>
+  <category path="Root : Import : Home : or not what not">
+    <name>or not</name>
+    <parent>Root : Import : Home</parent>
+  </category>
+  <category path="Root : Import : Home : test">
+    <name>test</name>
+    <parent>Root : Import : Home</parent>
+  </category>
+  <category path="Root : Import : name">
+    <name>name</name>
+    <parent>Root : Import</parent>
+  </category>
+</root>

@@ -1039,7 +1039,7 @@
                                     <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminacion" title="ILUMINACIÓN"> <span class="">ILUMINACIÓN</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ILUMINACIÓN</span> </span> </a></li>
                                     <li class="menu_link_32 ph-hidden-desktop"> <a href="/95-control-de-clima" title="CONTROL DE CLIMA"> <span class="">CONTROL DE CLIMA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">CONTROL DE CLIMA</span> </span> </a></li>
                                     <li class="menu_link_33 ph-hidden-desktop"> <a href="/96-fertilizantes-y-preventivos" title="FERTILIZANTES Y PREVENTIVOS"> <span class="">FERTILIZANTES Y PREVENTIVOS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">FERTILIZANTES Y PREVENTIVOS</span> </span> </a></li>
-                                    <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA"> <span class="">RIEGO E HIDROPONÍA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">RIEGO E HIDROPONÍA</span> </span> </a></li>
+                                    <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA"> <span class="">RIEGO E HIDROPONÍA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">RIEGO E HIDROPONÍA</span> </span> </a></li>
                                     <li class="menu_link_35 ph-hidden-desktop"> <a href="/98-kits" title="KITS"> <span class="">KITS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">KITS</span> </span> </a></li>
                                     <li class="menu_link_36 ph-hidden-desktop"> <a href="/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> <span class="">INSTRUMENTOS DE MEDIDA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">INSTRUMENTOS DE MEDIDA</span> </span> </a></li>
                                     <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-herramientas-y-accesorios" title="ACCESORIOS Y PARAFERNALIA"> <span class="">ACCESORIOS Y PARAFERNALIA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ACCESORIOS Y PARAFERNALIA</span> </span> </a></li>
@@ -1329,12 +1329,12 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/536-white-widow.html" title="White widow femenizada de Medical Seeds">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds-feminizadas/536-white-widow.html" title="White widow femenizada de Medical Seeds">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/1163-thickbox_default/white-widow.jpg" alt="Comprar White widow femenizada de Medical Seeds" title="Comprar White widow femenizada de Medical Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/536-white-widow.html" title="White widow femenizada de Medical Seeds">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds-feminizadas/536-white-widow.html" title="White widow femenizada de Medical Seeds">
                                                 White widow 3 semillas</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
@@ -1369,12 +1369,12 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/537-prozac.html" title="Prozac de Medical Seeds">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds-feminizadas/537-prozac.html" title="Prozac de Medical Seeds">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/1162-thickbox_default/prozac.jpg" alt="Comprar Prozac de Medical Seeds"  title="Comprar Prozac de Medical Seeds"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds/537-prozac.html" title="Prozac de Medical Seeds">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/medical-seeds-feminizadas/537-prozac.html" title="Prozac de Medical Seeds">
                                                 Prozac 3 semillas</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
@@ -1896,19 +1896,19 @@
                   <li> <a href="https://www.semillaslowcost.com/27-buddha-seeds-feminizadas" title="Buddha Seeds Feminizadas"> Buddha Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/28-barney-s-farm-feminizadas" title="Barney's Farm Feminizadas"> Barney's Farm Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/29-positronics-feminizadas" title="Positronics Feminizadas"> Positronics Feminizadas </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/64-green-house-seeds" title="Green House Seeds"> Green House Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/65-paradise-seeds" title="Paradise Seeds"> Paradise Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/64-green-house-seeds-feminizadas" title="Green House Seeds"> Green House Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/65-paradise-seeds-feminizadas" title="Paradise Seeds"> Paradise Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/66-kannabia" title="Kannabia"> Kannabia </a></li>
                   <li> <a href="https://www.semillaslowcost.com/67-eva-seeds" title="Eva Seeds"> Eva Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/68-medical-seeds" title="Medical Seeds"> Medical Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/69-pyramid-seeds" title="Pyramid Seeds"> Pyramid Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/68-medical-seeds-feminizadas" title="Medical Seeds"> Medical Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/69-pyramid-seeds-feminizadas" title="Pyramid Seeds"> Pyramid Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/70-mr-nice" title="Mr Nice"> Mr Nice </a></li>
                   <li> <a href="https://www.semillaslowcost.com/71-serious-seeds-feminizadas" title="Serious Seeds Feminizadas"> Serious Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/72-ripper-seeds" title="Ripper Seeds"> Ripper Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/73-dna-genetics" title="DNA Genetics"> DNA Genetics </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/75-royal-queen-seeds" title="Royal Queen Seeds"> Royal Queen Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/75-royal-queen-seeds-feminizadas" title="Royal Queen Seeds"> Royal Queen Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/76-mandala-seeds" title="Mandala Seeds"> Mandala Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/77-delicious-seeds" title="Delicious Seeds"> Delicious Seeds </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/77-delicious-seeds-feminizadas" title="Delicious Seeds"> Delicious Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/78-samsara-seeds" title="Samsara Seeds"> Samsara Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/79-world-of-seeds" title="World of Seeds"> World of Seeds </a></li>
                   <li> <a href="https://www.semillaslowcost.com/80-big-buddha-seeds" title="Big Buddha Seeds"> Big Buddha Seeds </a></li>
@@ -1921,7 +1921,7 @@
                         <li class="last"> <a href="https://www.semillaslowcost.com/89-coleccion-medicinal-cbd-seeds" title="Colección Medicinal CBD Seeds"> Colección Medicinal CBD Seeds </a></li>
                      </ul>
                   </li>
-                  <li> <a href="https://www.semillaslowcost.com/84-seedmakers" title="Seedmakers"> Seedmakers </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/84-seedmakers-feminizadas" title="Seedmakers"> Seedmakers </a></li>
                   <li> <a href="https://www.semillaslowcost.com/85-white-label-feminizadas" title="White Label Feminizadas"> White Label Feminizadas </a></li>
                   <li class="last"> <a href="https://www.semillaslowcost.com/87-the-moon-seeds" title="The Moon Seeds"> The Moon Seeds </a></li>
                </ul>
@@ -1950,7 +1950,7 @@
                   <li> <a href="https://www.semillaslowcost.com/60-serious-seeds-regulares" title="Serious Seeds Regulares"> Serious Seeds Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/61-white-label-regulares" title="White Label Regulares"> White Label Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/62-mrnice" title="Mr.Nice"> Mr.Nice </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/63-flying-dutchmen" title="Flying Dutchmen"> Flying Dutchmen </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/63-flying-dutchmen-regulares" title="Flying Dutchmen"> Flying Dutchmen </a></li>
                </ul>
             </li>
 
@@ -2016,7 +2016,7 @@
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-97')"> </span><a href="https://www.semillaslowcost.com/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA"> RIEGO E HIDROPONÍA </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-97')"> </span><a href="https://www.semillaslowcost.com/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA"> RIEGO E HIDROPONÍA </a>
                <ul id="menu-97" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/155-bombas-aire-agua" title="Bombas Aire-Agua"> Bombas Aire-Agua </a></li>
                   <li> <a href="https://www.semillaslowcost.com/158-filtros-osmosis" title="Filtros Ósmosis"> Filtros Ósmosis </a></li>
@@ -2120,14 +2120,8 @@
       </div>
       <div class="block_content list-block" style="">
          <ul>
-            <li> <a href="https://www.semillaslowcost.com/historial-compra" title="MIS COMPRAS"> MIS COMPRAS </a></li>
-            <li> <a href="https://www.semillaslowcost.com/seguimiento-pedido" title="MIS DEVOLUCIONES"> MIS DEVOLUCIONES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/albaran" title="MIS VALES DESCUENTO"> MIS VALES DESCUENTO </a></li>
-            <li> <a href="https://www.semillaslowcost.com/direcciones" title="MIS DIRECCIONES"> MIS DIRECCIONES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/datos-personales" title="MIS DATOS PERSONALES"> MIS DATOS PERSONALES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/descuento" title="MIS VALES"> MIS VALES </a></li>
+            <li> <a href="https://www.semillaslowcost.com/inicio-sesion" title="INICIAR SESION"> INICIAR SESIÓN </a></li>
          </ul>
-         <div class="logout"> <a class="button button-small" href="https://www.semillaslowcost.com/?mylogout=" title="CERRAR SESIÓN"> <span>CERRAR SESIÓN</span> </a></div>
       </div>
    </div>
    <div id="special_block_right" class="block">
@@ -2160,6 +2154,8 @@
                               </h5>
                               <input id="newsletter-input" class="account_input" type="email" name="email" size="18" value="Introduzca su dirección de correo electrónico" placeholder="Introduzca su dirección de correo electrónico" />
                               <input class="button button-small btn-primary" type="submit" value="Enviar" name="submitNewsletter" />
+                              <div class="clearfix"></div>
+                              <p style="padding-top: 15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required=""> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de semillaslowcost.com</p>
                               <input type="hidden" name="action" value="0" />
                            </form>
                            <div class="col-md-5 col-sm-12 col-xs-12 social-icons">
@@ -2240,7 +2236,7 @@
                                                 FERTILIZANTES Y PREVENTIVOS </a>
                                              </li>
                                              <li >
-                                                <a href="https://www.semillaslowcost.com/97-riego-e-hidroponía" title="RIEGO E HIDROPONÍA">
+                                                <a href="https://www.semillaslowcost.com/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA">
                                                 RIEGO E HIDROPONÍA </a>
                                              </li>
                                              <li >
@@ -2320,39 +2316,16 @@
                                  </div>
                                  <div class="block_footer col-md-3 col-sm-6 col-xs-12">
                                     <h4>
-                                       <a href="https://www.semillaslowcost.com/mi-cuenta" title="Administrar mi cuenta de cliente" rel="nofollow">
+                                       <a href="https://www.semillaslowcost.com/mi-cuenta" title="Administrar mi cuenta de cliente" >
                                        MI CUENTA</a>
                                     </h4>
                                     <div class="block_content toggle-footer">
                                        <ul>
                                           <li>
-                                             <a href="https://www.semillaslowcost.com/historial-compra" title="MIS COMPRAS" rel="nofollow">
-                                             MIS COMPRAS</a>
+                                             <a href="https://www.semillaslowcost.com/inicio-sesion" title="INICIAR SESION">
+                                             INICIAR SESION</a>
                                           </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/seguimiento-pedido" title="MIS DEVOLUCIONES" rel="nofollow">
-                                             MIS DEVOLUCIONES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/albaran" title="MIS VALES DESCUENTO" rel="nofollow">
-                                             MIS VALES DESCUENTO</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/direcciones" title="MIS DIRECCIONES" rel="nofollow">
-                                             MIS DIRECCIONES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/datos-personales" title="Administrar mi información personal" rel="nofollow">
-                                             MIS DATOS PERSONALES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/descuento" title="MIS VALES" rel="nofollow">
-                                             MIS VALES</a>
-                                          </li>
-                                          <li>
-                                             <a href="https://www.semillaslowcost.com/?mylogout" title="CERRAR SESIÓN" rel="nofollow">
-                                             CERRAR SESIÓN</a>
-                                          </li>
+                                       
                                        </ul>
                                     </div>
                                  </div>

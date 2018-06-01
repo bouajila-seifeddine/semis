@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <category>
+    <name>Import</name>
+    <url>https://www.seznam.cz</url>
+    <created>2017-01-01</created>
+    <shops>
+      <shop>1</shop>
+      <shop>2</shop>
+    </shops>
+    <x>www.cz/x</x>
+  </category>
+  <category>
+    <name>Home</name>
+    <url>https://www.seznam.cz</url>
+    <image>/img/b.jpg</image>
+    <parent>Import</parent>
+    <shops>
+      <shop>1</shop>
+    </shops>
+  </category>
+  <category>
+    <name>Women</name>
+    <url>https://www.seznam.cz</url>
+    <image>/img/test/a.jpg</image>
+    <parent>Import: Home</parent>
+    <shops>
+      <shop>1</shop>
+      <shop>2</shop>
+    </shops>
+  </category>
+  <category>
+    <name>or not</name>
+    <url>https://www.seznam.cz</url>
+    <parent>Import: Home</parent>
+    <shops>
+      <shop>1</shop>
+      <shop>2</shop>
+      <shop>3</shop>
+    </shops>
+  </category>
+  <category>
+    <name>test</name>
+    <url>https://www.seznam.cz</url>
+    <parent>Import: Home</parent>
+    <shops>
+      <shop>1</shop>
+      <shop>2</shop>
+    </shops>
+  </category>
+  <category>
+    <name>name</name>
+    <url>https://www.seznam.cz</url>
+    <parent>Import</parent>
+    <shops>
+      <shop>1</shop>
+      <shop>2</shop>
+    </shops>
+  </category>
+</root>

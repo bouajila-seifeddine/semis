@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<offers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1">
+  <o id="halka-ibiza-claret-s" price="11.64" avail="3" set="0" stock="22" url="http://kalimo.de/product/show/id/20">
+    <cat><![CDATA[Root : Home : Women]]></cat>
+    <imgs>
+      <main url="http://kalimo.de/media/products/87141aa70eab84ccfd47302dbfd7fdd5/images/ibiza-claret-626px.jpg"/>
+    </imgs>
+    <name><![CDATA[IBIZA CHEMISE (satin)]]></name>
+    <desc><![CDATA[Chemise for warm summer day...]]></desc>
+    <attrs>
+      <a name="Producent"><![CDATA[Kalimo]]></a>
+      <a name="Kod_producenta"><![CDATA[halka ibiza - claret - S]]></a>
+      <a name="Pelna_nazwa"><![CDATA[IBIZA CHEMISE (satin) claret S]]></a>
+      <a name="Kolor"><![CDATA[claret]]></a>
+      <a name="Rozmiar"><![CDATA[S]]></a>
+      <a name="Cena_netto"><![CDATA[9.46]]></a>
+    </attrs>
+  </o>
+  <o id="halka-ibiza-black-s" price="10" avail="3" set="0" stock="14" url="http://kalimo.de/product/show/id/20">
+    <cat><![CDATA[Root : Home : Women]]></cat>
+    <imgs>
+      <main url="http://kalimo.de/media/products/87141aa70eab84ccfd47302dbfd7fdd5/images/ibiza_czarna.jpg"/>
+    </imgs>
+    <name><![CDATA[IBIZA CHEMISE (satin)]]></name>
+    <desc />
+    <attrs>
+      <a name="Producent"><![CDATA[Kalimo]]></a>
+      <a name="Kod_producenta"><![CDATA[halka ibiza - black - S]]></a>
+      <a name="Pelna_nazwa"><![CDATA[IBIZA CHEMISE (satin) black S]]></a>
+      <a name="Kolor"><![CDATA[black]]></a>
+      <a name="Rozmiar"><![CDATA[S]]></a>
+      <a name="Cena_netto"><![CDATA[9.46]]></a>
+    </attrs>
+  </o>
+</offers>

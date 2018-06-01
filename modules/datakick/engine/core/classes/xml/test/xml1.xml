@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <language   id="1"   >English (English)</language>
+  <language id="3">Čeština (Czech)</language>
+  <language id="4">Français (French)</language>
+  <language id="5"></language>
+  <language />
+  <language>
+      <fuck>you</fuck>
+  </language>
+  <test />
+</root>
