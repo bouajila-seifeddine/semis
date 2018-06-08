@@ -32,8 +32,6 @@
                   <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1505304776" />
                   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1505304776" />
                   <link rel="stylesheet" href="v_315_d9b4d79373d0fbd4a064e37dd59f3597_all.css" type="text/css" media="all" />
-                 
-                 <link rel="stylesheet" href="ihover.css" type="text/css" media="all" />
                   <link rel="stylesheet" href="css/font-awesome.min.css">
                   <link rel="canonical" href="https://www.semillaslowcost.com/grow-shop/">
                   <script type="text/javascript">
@@ -880,7 +878,7 @@
                                           </p>
                                        </div>
                                        <p class="clearBoth cart-buttons">
-                                          <a id="button_order_cart" class="button" href="https://www.semillaslowcost.com/pedido-rapido" title="Confirmar" rel="nofollow">
+                                          <a id="button_order_cart" class="button" href="https://www.semillaslowcost.com/pedido-rapido" title="Confirmar">
                                           Confirmar </a>
                                        </p>
                                     </div>
@@ -991,51 +989,54 @@
                                     </li>
                                     <li class="menu_link_2 ">
                                        <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS FEMINIZADAS" >
-                                       <span class="">
+                                       <span>
                                        SEMILLAS FEMINIZADAS</span>
                                        </a>
                                     </li>
                                     <li class="menu_link_3 ">
                                        <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS AUTOFLORECIENTES" >
-                                       <span class="">
+                                       <span>
                                        SEMILLAS AUTOFLORECIENTES</span>
                                        </a>
                                     </li>
                                     <li class="menu_link_15 ">
                                        <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS REGULARES" >
-                                       <span class="">
+                                       <span>
                                        SEMILLAS REGULARES</span>
                                        </a>
                                     </li>
                                     <li class="menu_link_15 ">
                                        <a href="https://www.semillaslowcost.com/grow-shop/" title="GOWSHOP ONLINE" >
-                                       <span class="">
+                                       <span>
                                        GROW SHOP</span>
                                        </a>
                                     </li>
-                                    <li class="menu_link_30 ph-hidden-desktop"> <a href="/93-armarios-de-cultivo" title="ARMARIOS DE CULTIVO"> <span class="">ARMARIOS DE CULTIVO</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ARMARIOS DE CULTIVO</span> </span> </a></li>
-                                    <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminacion" title="ILUMINACIÓN"> <span class="">ILUMINACIÓN</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ILUMINACIÓN</span> </span> </a></li>
-                                    <li class="menu_link_32 ph-hidden-desktop"> <a href="/95-control-de-clima" title="CONTROL DE CLIMA"> <span class="">CONTROL DE CLIMA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">CONTROL DE CLIMA</span> </span> </a></li>
-                                    <li class="menu_link_33 ph-hidden-desktop"> <a href="/96-fertilizantes-y-preventivos" title="FERTILIZANTES Y PREVENTIVOS"> <span class="">FERTILIZANTES Y PREVENTIVOS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">FERTILIZANTES Y PREVENTIVOS</span> </span> </a></li>
-                                    <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA"> <span class="">RIEGO E HIDROPONÍA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">RIEGO E HIDROPONÍA</span> </span> </a></li>
-                                    <li class="menu_link_35 ph-hidden-desktop"> <a href="/98-kits" title="KITS"> <span class="">KITS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">KITS</span> </span> </a></li>
-                                    <li class="menu_link_36 ph-hidden-desktop"> <a href="/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> <span class="">INSTRUMENTOS DE MEDIDA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">INSTRUMENTOS DE MEDIDA</span> </span> </a></li>
-                                    <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-herramientas-y-accesorios" title="ACCESORIOS Y PARAFERNALIA"> <span class="">ACCESORIOS Y PARAFERNALIA</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">ACCESORIOS Y PARAFERNALIA</span> </span> </a></li>
-                                    <li class="menu_link_38 ph-hidden-desktop"> <a href="/104-macetas-y-bandejas" title="MACETAS Y BANDEJAS"> <span class="">MACETAS Y BANDEJAS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">MACETAS Y BANDEJAS</span> </span> </a></li>
+                                    <li class="menu_link_30 ph-hidden-desktop"> 
+                                      <a href="/93-armarios-de-cultivo" title="ARMARIOS DE CULTIVO"> 
+                                        <span>ARMARIOS DE CULTIVO</span>
+                                    </a></li>
+                                    <li class="menu_link_31 ph-hidden-desktop"> <a href="/94-iluminacion" title="ILUMINACIÓN"> <span>ILUMINACIÓN</span> </a></li>
+                                    <li class="menu_link_32 ph-hidden-desktop"> <a href="/95-control-de-clima" title="CONTROL DE CLIMA"> <span>CONTROL DE CLIMA</span> </a></li>
+                                    <li class="menu_link_33 ph-hidden-desktop"> <a href="/96-fertilizantes-y-preventivos" title="FERTILIZANTES Y PREVENTIVOS"> <span>FERTILIZANTES Y PREVENTIVOS</span> </a></li>
+                                    <li class="menu_link_34 ph-hidden-desktop"> <a href="/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA"> <span>RIEGO E HIDROPONÍA</span> </a></li>
+                                    <li class="menu_link_35 ph-hidden-desktop"> <a href="/98-kits" title="KITS"> <span>KITS</span></a></li>
+                                    <li class="menu_link_36 ph-hidden-desktop"> <a href="/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> <span>INSTRUMENTOS DE MEDIDA</span> </a></li>
+                                    <li class="menu_link_37 ph-hidden-desktop"> <a href="/99-herramientas-y-accesorios" title="ACCESORIOS Y HERRAMIENTAS"> ACCESORIOS Y HERRAMIENTAS </a></li>
+                                    <li class="menu_link_38 ph-hidden-desktop"> <a href="/104-macetas-y-bandejas" title="MACETAS Y BANDEJAS"> <span>MACETAS Y BANDEJAS</span> </a></li>
                                     <li class="menu_link_39 ph-hidden-desktop"> 
-                                       <a href="/107-tratamiento-de-olores" title="TRATAMIENTO DE OLORES"> <span class="">TRATAMIENTO DE OLORES</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">TRATAMIENTO DE OLORES</span> </span> </a>
+                                       <a href="/107-tratamiento-de-olores" title="TRATAMIENTO DE OLORES"> <span>TRATAMIENTO DE OLORES</span> </a>
                                     </li>
-                                    <li class="menu_link_40 ph-hidden-desktop"> <a href="/209-ofertas" title="OFERTAS"> <span class="">OFERTAS</span><span class="label" style="color:#009ad0;background:#009ad0;"> <span style="color: #ffffff;">OFERTAS</span> </span> </a></li>
+                                    <li class="menu_link_40 ph-hidden-desktop"> <a href="/209-ofertas" title="OFERTAS"> <span>OFERTAS</span> </a></li>
                                     <li class="menu_link_16 ">
                                        <a href="https://www.semillaslowcost.com/blog/" title="BLOG" target="_blank">
-                                       <span class="">
+                                       <span>
                                        BLOG</span>
                                        </a>
                                     </li>
                                     <li class="menu_link_7 with-icon ">
                                        <a href="https://www.semillaslowcost.com/contactanos" title="CONTACTO" >
                                     
-                                       <span class="">
+                                       <span>
                                        CONTACTO</span>
                                        </a>
                                     </li>
@@ -1062,10 +1063,10 @@
                                           <h3 class="main-color-txt">
                                              <strong>
                                              Envíos gratis</strong>
-                                             + de 25€
+                                             + de 25€ en semillas
                                           </h3>
                                           <p>
-                                             Los artículos se entregan 24/48h después de haber completado el pedido.
+                                             Los artículos se entregan en 24/48h.
                                           </p>
                                        </div>
                                     </div>
@@ -1095,7 +1096,7 @@
                                              Pagos seguros</strong>
                                           </h3>
                                           <p>
-                                             Pagos fáciles para nuestros cliente de forma totalmente segura.
+                                             Pagos fáciles de forma segura, tarjeta, contra rembolso...
                                           </p>
                                        </div>
                                     </div>
@@ -1106,7 +1107,7 @@
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="link-collapse">
-                                                       <h4 class="panel-title">Información </h4>
+                                                       <h4 class="panel-title">INFORMACIÓN SOBRE EL GROW SHOP DE SLC </h4>
                                                </a>
                                           
                                    </div><!-- .panel-heading -->
@@ -1126,7 +1127,7 @@
                                     <div class="panel-heading" role="tab" id="headingOne2">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3" class="link-collapse">
-                                                      <h4 class="panel-title"> TENEMOS TODOS LOS PRODUCTOS QUE EXISTEN EN EL MERCADO
+                                                      <h4 class="panel-title"> TENEMOS TODOS LOS PRODUCTOS QUE EXISTEN
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
@@ -1143,39 +1144,8 @@
                               
                                  <br>
                                  
-                                   <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne3">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4" class="link-collapse">
-                                                     <h4 class="panel-title"> ¿PORQUÉ ELEGIR NUESTRO GROW SHOP? 
-                                               </h4></a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                    <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                     <p>Como hemos señalado con anterioridad, existen diversas características que hacen del Grow Shop de SemillasLowCost uno de los más baratos e interesantes del panorama cannábico. Pero si hay tres características principales que nos hacen marcar la diferencia respecto al resto de Grow Shops, esas son: nuestro servicio de atención al cliente y post venta, los precios reducidos y la calidad de los productos.  </p>
-                                    <p>En S.L.C somos de las pocas empresas que trabajan directamente con los bancos, garantizando al cliente las mejores genéticas y renovando el stock continuamente. El hecho de que renovemos el stock de forma continuada resulta de especial interés para nuestros clientes, ya que de este modo evitamos la venta de semillas que han estado mucho tiempo en una nevera y que, por tanto, puedan verse afectadas negativamente. </p>
-                                    <p>De hecho, ésta es una de las principales causas de que las semillas fallen. Además, todas nuestras semillas pasan por exhaustivos controles de calidad que prácticamente aseguran su correcto desarrollo. Y en el caso de que esto no fuese así, tenemos contacto directo con los bancos para presentar reclamaciones y, si el banco en cuestión lo cree conveniente y oportuno, te enviaremos el producto otra vez. Esto suele ser así, a no ser que el problema venga ocasionado por una negligencia del consumidor, o lo que es lo mismo, que haya hecho algo que está contraindicado en las instrucciones de uso. </p>
-                                    <p>Estas son las tres características que nos hacen destacar, pero no las únicas. Otros servicios que nos hacen ser tu mejor opción a la hora de escoger Grow Shop, son nuestro servicio de atención al cliente 24 horas, la facilidad en los pagos, las entregas de pedidos en 24h, y el mantenimiento de las semillas en neveras con 10 Cº y 12% humedad.</p>
-                                          </div><div class="separador">
-                                          </div>
-                                       </div></div> <br/>
- <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne4">
-                                         
-                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5" class="link-collapse">
-                                                  <h4 class="panel-title">    NUESTROS PRODUCTOS
-                                               </h4></a>
-                                          
-                                   </div><!-- .panel-heading -->
-                                    <div id="collapseOne5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne4" aria-expanded="true" style="">
-                                         <div class="panel-body">
-                     <p>Grow Shop S.L.C oferta todo tipo de productos, desde semillas a cualquier artículo que pueda ser necesario para el cultivo de vegetales. En cuanto a semillas, destacar que ofertamos cualquier variedad de cualquiera de los bancos más reputados. Es decir, si estás interesado en hacerte con alguna variedad concreta de algún banco en cuestión, seguro que ésta se encuentra entre los 32 bancos de semillas con los que trabajamos; ya sea feminizada, regular o auto-floreciente. </p>
-                                    <p>Por otro lado, dentro de nuestras categorías encontrarás una amplia y variada cantidad de productos agrícolas de todo tipo. Si buscas algún artículo relacionado con la jardinería técnica, en nuestra web podrás adquirir cualquier tipo de sustrato, fertilizante, armarios de cultivo, herramientas, instrumentos de medición, etc. </p>
-                                          </div><div class="separador">
-                                          </div>
-                                       </div></div>
-                                        <br/>
+
+
                                         <div class="panel panel-default">
                                   <div class="panel-heading category-head" role="tab" id="headingOne5">
                                          
@@ -1981,11 +1951,11 @@
                                   <div class="panel-heading category-head" role="tab" id="headingOne14">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne15" aria-expanded="true" aria-controls="collapseOne15" class="link-collapse">
-                                                       <h4 class="panel-title">ACCESORIOS Y PARAFERNALIA
+                                                       <h4 class="panel-title">ACCESORIOS Y HERRAMIENTAS
                                               </h4> </a>
                                           
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com//99-herramientas-y-accesorios'" value="VER CATÁLOGO PARAFERNALIA"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/99-herramientas-y-accesorios'" value="VER CATÁLOGO HERRAMIENTAS Y ACCESORIOS"></div>
                                     <div id="collapseOne15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne14" aria-expanded="true" style="">
                                          <div class="panel-body">
                         <p>También ofrecemos una gran cantidad de productos destinados a mejorar vuestros armarios de cultivo y para el tratamiento de vuestras plantas.  Además, os ponemos a disposición diferentes artículos para fumadores al mejor precio del mercado.</p>
@@ -2360,6 +2330,39 @@
                                
                               
                                  <br/>
+                                                                    <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne3">
+                                         
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4" class="link-collapse">
+                                                     <h4 class="panel-title"> ¿PORQUÉ ELEGIR NUESTRO GROW SHOP? 
+                                               </h4></a>
+                                          
+                                   </div><!-- .panel-heading -->
+                                    <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3" aria-expanded="true" style="">
+                                         <div class="panel-body">
+                     <p>Como hemos señalado con anterioridad, existen diversas características que hacen del Grow Shop de SemillasLowCost uno de los más baratos e interesantes del panorama cannábico. Pero si hay tres características principales que nos hacen marcar la diferencia respecto al resto de Grow Shops, esas son: nuestro servicio de atención al cliente y post venta, los precios reducidos y la calidad de los productos.  </p>
+                                    <p>En S.L.C somos de las pocas empresas que trabajan directamente con los bancos, garantizando al cliente las mejores genéticas y renovando el stock continuamente. El hecho de que renovemos el stock de forma continuada resulta de especial interés para nuestros clientes, ya que de este modo evitamos la venta de semillas que han estado mucho tiempo en una nevera y que, por tanto, puedan verse afectadas negativamente. </p>
+                                    <p>De hecho, ésta es una de las principales causas de que las semillas fallen. Además, todas nuestras semillas pasan por exhaustivos controles de calidad que prácticamente aseguran su correcto desarrollo. Y en el caso de que esto no fuese así, tenemos contacto directo con los bancos para presentar reclamaciones y, si el banco en cuestión lo cree conveniente y oportuno, te enviaremos el producto otra vez. Esto suele ser así, a no ser que el problema venga ocasionado por una negligencia del consumidor, o lo que es lo mismo, que haya hecho algo que está contraindicado en las instrucciones de uso. </p>
+                                    <p>Estas son las tres características que nos hacen destacar, pero no las únicas. Otros servicios que nos hacen ser tu mejor opción a la hora de escoger Grow Shop, son nuestro servicio de atención al cliente 24 horas, la facilidad en los pagos, las entregas de pedidos en 24h, y el mantenimiento de las semillas en neveras con 10 Cº y 12% humedad.</p>
+                                          </div><div class="separador">
+                                          </div>
+                                       </div></div> <br/>
+                                        <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne4">
+                                         
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5" class="link-collapse">
+                                                  <h4 class="panel-title">    NUESTROS PRODUCTOS
+                                               </h4></a>
+                                          
+                                   </div><!-- .panel-heading -->
+                                    <div id="collapseOne5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne4" aria-expanded="true" style="">
+                                         <div class="panel-body">
+                     <p>Grow Shop S.L.C oferta todo tipo de productos, desde semillas a cualquier artículo que pueda ser necesario para el cultivo de vegetales. En cuanto a semillas, destacar que ofertamos cualquier variedad de cualquiera de los bancos más reputados. Es decir, si estás interesado en hacerte con alguna variedad concreta de algún banco en cuestión, seguro que ésta se encuentra entre los 32 bancos de semillas con los que trabajamos; ya sea feminizada, regular o auto-floreciente. </p>
+                                    <p>Por otro lado, dentro de nuestras categorías encontrarás una amplia y variada cantidad de productos agrícolas de todo tipo. Si buscas algún artículo relacionado con la jardinería técnica, en nuestra web podrás adquirir cualquier tipo de sustrato, fertilizante, armarios de cultivo, herramientas, instrumentos de medición, etc. </p>
+                                          </div><div class="separador">
+                                          </div>
+                                       </div></div>
+                                        <br/>
 
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne20">
@@ -2440,8 +2443,11 @@
       </div>
       <div class="block_content" style="">
          <ul class="tree dynamized" style="display: block;">
-                      <li>
-              <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="marihuana medicinal">CANNABIS MEDICINAL</a>
+            <li>
+               <span class="grower CLOSE"   onclick="toggleMenu('menu-273')"> </span><a href="https://www.semillaslowcost.com/273-cbd-shop" title="Tienda de productos de Cbd"> CBD SHOP </a>
+               <ul id="menu-273" style="display: none;">
+                  <li><a href="https://www.semillaslowcost.com/274-e-liquids-cbd" title="E-LIQUIDS CBD"> E-LIQUIDS CBD </a></li>
+               </ul>
             </li>
             <li>
                <span class="grower CLOSE" onclick="toggleMenu('menu-13')"> </span><a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS FEMINIZADAS"> SEMILLAS FEMINIZADAS </a>
@@ -2451,39 +2457,9 @@
                   <li> <a href="https://www.semillaslowcost.com/20-sensi-seeds-feminizadas" title="Sensi Seeds Feminizadas"> Sensi Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/21-sweet-seeds-feminizadas" title="Sweet Seeds Feminizadas"> Sweet Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/22-dutch-passion-feminizadas" title="Dutch Passion Feminizadas"> Dutch Passion Feminizadas </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/25-cannabiogen-feminizadas" title="Cannabiogen Feminizadas"> Cannabiogen Feminizadas </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/26-advanced-seeds-feminizadas" title="Advanced Seeds Feminizadas"> Advanced Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/27-buddha-seeds-feminizadas" title="Buddha Seeds Feminizadas"> Buddha Seeds Feminizadas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/28-barney-s-farm-feminizadas" title="Barney's Farm Feminizadas"> Barney's Farm Feminizadas </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/29-positronics-feminizadas" title="Positronics Feminizadas"> Positronics Feminizadas </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/64-green-house-seeds-feminizadas" title="Green House Seeds"> Green House Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/65-paradise-seeds-feminizadas" title="Paradise Seeds"> Paradise Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/66-kannabia" title="Kannabia"> Kannabia </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/67-eva-seeds" title="Eva Seeds"> Eva Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/68-medical-seeds-feminizadas" title="Medical Seeds"> Medical Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/69-pyramid-seeds-feminizadas" title="Pyramid Seeds"> Pyramid Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/70-mr-nice" title="Mr Nice"> Mr Nice </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/71-serious-seeds-feminizadas" title="Serious Seeds Feminizadas"> Serious Seeds Feminizadas </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/72-ripper-seeds" title="Ripper Seeds"> Ripper Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/73-dna-genetics" title="DNA Genetics"> DNA Genetics </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/75-royal-queen-seeds-feminizadas" title="Royal Queen Seeds"> Royal Queen Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/76-mandala-seeds" title="Mandala Seeds"> Mandala Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/77-delicious-seeds-feminizadas" title="Delicious Seeds"> Delicious Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/78-samsara-seeds" title="Samsara Seeds"> Samsara Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/79-world-of-seeds" title="World of Seeds"> World of Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/80-big-buddha-seeds" title="Big Buddha Seeds"> Big Buddha Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/81-ace-seeds" title="Ace Seeds"> Ace Seeds </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/82-sagarmatha" title="Sagarmatha"> Sagarmatha </a></li>
-                  <li>
-                     <span class="grower CLOSE" onclick="toggleMenu('menu-83')"> </span><a href="https://www.semillaslowcost.com/83-cbd-seeds" title="CBD Seeds"> CBD Seeds </a>
-                     <ul id="menu-83" style="display: none;">
-                        <li> <a href="https://www.semillaslowcost.com/88-coleccion-clasica-cbd-seeds" title="Colección Clásica CBD Seeds"> Colección Clásica CBD Seeds </a></li>
-                        <li class="last"> <a href="https://www.semillaslowcost.com/89-coleccion-medicinal-cbd-seeds" title="Colección Medicinal CBD Seeds"> Colección Medicinal CBD Seeds </a></li>
-                     </ul>
-                  </li>
-                  <li> <a href="https://www.semillaslowcost.com/84-seedmakers-feminizadas" title="Seedmakers"> Seedmakers </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/85-white-label-feminizadas" title="White Label Feminizadas"> White Label Feminizadas </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/87-the-moon-seeds" title="The Moon Seeds"> The Moon Seeds </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="Ver todos los bancos de semillas feminizadas">Ver todos los bancos de semillas feminizadas </a></li>
                </ul>
             </li>
             <li>
@@ -2494,11 +2470,9 @@
                   <li> <a href="https://www.semillaslowcost.com/32-sensi-seeds-autoflorecientes" title="Sensi Seeds Autoflorecientes"> Sensi Seeds Autoflorecientes </a></li>
                   <li> <a href="https://www.semillaslowcost.com/33-sweet-seeds-autoflorecientes" title="Sweet Seeds Autoflorecientes"> Sweet Seeds Autoflorecientes </a></li>
                   <li> <a href="https://www.semillaslowcost.com/34-dutch-passion-autoflorecientes" title="Dutch Passion Autoflorecientes"> Dutch Passion Autoflorecientes </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/35-cannabiogen-autoflorecientes" title="Cannabiogen Autoflorecientes"> Cannabiogen Autoflorecientes </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/36-advanced-seeds-autoflorecientes" title="Advanced Seeds Autoflorecientes"> Advanced Seeds Autoflorecientes </a></li>
                   <li> <a href="https://www.semillaslowcost.com/37-buddha-seeds-autoflorecientes" title="Buddha Seeds Autoflorecientes"> Buddha Seeds Autoflorecientes </a></li>
                   <li> <a href="https://www.semillaslowcost.com/38-barney-s-farm-autoflorecientes" title="Barney's Farm Autoflorecientes"> Barney's Farm Autoflorecientes </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/39-positronics-autoflorecientes" title="Positronics Autoflorecientes"> Positronics Autoflorecientes </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="Ver todos los bancos de semillas autoflorecientes">Ver todos los bancos de semillas autoflorecientes </a></li>
                </ul>
             </li>
             <li>
@@ -2507,10 +2481,7 @@
                   <li> <a href="https://www.semillaslowcost.com/42-sensi-seeds-regulares" title="Sensi Seeds Regulares"> Sensi Seeds Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/44-dutch-passion-regulares" title="Dutch Passion Regulares"> Dutch Passion Regulares </a></li>
                   <li> <a href="https://www.semillaslowcost.com/45-cannabiogen-regulares" title="Cannabiogen Regulares"> Cannabiogen Regulares </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/60-serious-seeds-regulares" title="Serious Seeds Regulares"> Serious Seeds Regulares </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/61-white-label-regulares" title="White Label Regulares"> White Label Regulares </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/62-mrnice" title="Mr.Nice"> Mr.Nice </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/63-flying-dutchmen-regulares" title="Flying Dutchmen"> Flying Dutchmen </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="Ver todos los bancos de semillas regulares"> Ver todos los bancos de semillas regulares </a></li>
                </ul>
             </li>
             <li>
@@ -2534,7 +2505,7 @@
             <li>
                <span class="grower CLOSE"   onclick="toggleMenu('menu-95')"> </span><a href="https://www.semillaslowcost.com/95-control-de-clima" title="CONTROL DE CLIMA"> CONTROL DE CLIMA </a>
                <ul id="menu-95" style="display: none;">
-                  <li> <a href="https://www.semillaslowcost.com/138-extractores-de-aire" title="Extractores"> Extractores </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/138-extractores-de-aire" title="Extractores de aire"> Extractores de aire</a></li>
                   <li> <a href="https://www.semillaslowcost.com/140-silenciadores" title="Silenciadores"> Silenciadores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/141-ventiladores" title="Ventiladores"> Ventiladores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/181-acoples-y-reductores" title="Acoples y Reductores"> Acoples y Reductores </a></li>
@@ -2550,28 +2521,13 @@
                   <li> <a href="https://www.semillaslowcost.com/129-amax" title="Amax"> Amax </a></li>
                   <li> <a href="https://www.semillaslowcost.com/198-advanced-nutrients" title="Advanced Nutrients"> Advanced Nutrients </a></li>
                   <li> <a href="https://www.semillaslowcost.com/108-atami" title="Atami"> Atami </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/109-bac" title="B.A.C"> B.A.C </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/110-b-cuzz" title="B'Cuzz"> B'Cuzz </a></li>
                   <li> <a href="https://www.semillaslowcost.com/111-bayer" title="Bayer"> Bayer </a></li>
                   <li> <a href="https://www.semillaslowcost.com/112-biobizz" title="BioBizz"> BioBizz </a></li>
                   <li> <a href="https://www.semillaslowcost.com/113-biotabs" title="BioTabs"> BioTabs </a></li>
                   <li> <a href="https://www.semillaslowcost.com/114-bio-nova" title="Bio Nova"> Bio Nova </a></li>
                   <li> <a href="https://www.semillaslowcost.com/115-canna" title="Canna"> Canna </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/116-cannabiogen" title="Cannabiogen"> Cannabiogen </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/117-flower" title="Flower"> Flower </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/118-general-hydroponics" title="General Hydroponics"> General Hydroponics </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/119-greendel" title="Greendel"> Greendel </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/120-greenhope" title="Greenhope"> Greenhope </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/121-growth-technology" title="Growth Technology"> Growth Technology </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/122-hesi" title="Hesi"> Hesi </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/123-jbq" title="JBQ"> JBQ </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/124-miner" title="Miner"> Miner </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/125-plagron" title="Plagron"> Plagron </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/126-thc" title="THC"> THC </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/127-top-crop" title="Top Crop"> Top Crop </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/128-trabe" title="Trabe"> Trabe </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/228-grotek" title="Grotek"> Grotek </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/247-guanokalong" title="Guanokalong"> Guanokalong </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/96-fertilizantes-y-preventivos" title="Ver todas las marcas de fertilizantes y preventivos"> Ver todas las marcas de fertilizantes </a></li>
+                 
                </ul>
             </li>
             <li>
@@ -2588,22 +2544,20 @@
                <ul id="menu-98" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/214-kits-completos" title="Kits completos"> Kits completos </a></li>
                   <li> <a href="https://www.semillaslowcost.com/215-kits-de-iluminacion" title="Kits de iluminacion"> Kits de iluminacion </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/216-kits-de-fertilizantes" title="Packs de fertilizantes"> Packs de fertilizantes </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/216-kits-de-fertilizantes" title="Packs de fertilizantes"> Kits de fertilizantes </a></li>
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE"  onclick="toggleMenu('menu-99')"> </span><a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="PARAFERNALIA Y ACCESORIOS"> PARAFERNALIA Y ACCESORIOS </a>
+               <span class="grower CLOSE"  onclick="toggleMenu('menu-99')"> </span><a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="HERRAMIENTAS Y ACCESORIOS PARA FUMADORES"> HERRAMIENTAS Y ACCESORIOS </a>
                <ul id="menu-99" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/194-mallas" title="Mallas"> Mallas </a></li>
                   <li> <a href="https://www.semillaslowcost.com/195-microscopios" title="Microscopios"> Microscopios </a></li>
                   <li> <a href="https://www.semillaslowcost.com/196-temporizadores" title="Temporizadores"> Temporizadores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/197-tijeras-y-manicuradores" title="Tijeras y Manicuradores"> Tijeras y Manicuradores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/204-accesorios" title="Accesorios"> Accesorios </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/218-vaporizadores" title="Vaporizadores"> Vaporizadores </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/222-grinders" title="Grinders"> Grinders </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/225-mecheros" title="Mecheros"> Mecheros </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/226-borosilicato-silicona" title="Borosilicato - Silicona"> Borosilicato - Silicona </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/227-articulos-fumador" title="Articulos fumador"> Articulos fumador </a></li>
+                   <li class="last"> <a href="https://www.semillaslowcost.com/280-peladoras" title="Peladoras de cogollos"> Peladoras </a></li>
+
+                  
                </ul>
             </li>
             <li>
@@ -2613,7 +2567,8 @@
                   <li> <a href="https://www.semillaslowcost.com/244-extraccion-en-seco" title="Extraccion en seco"> Extraccion en seco </a></li>
                   <li> <a href="https://www.semillaslowcost.com/245-rosin" title="Rosin"> Rosin </a></li>
                   <li> <a href="https://www.semillaslowcost.com/248-extraccion-con-agua-y-hielo" title="Extraccion con agua y hielo"> Extraccion con agua y hielo </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/249-bho" title="BHO"> BHO </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/249-bho" title="Extracciones de BHO"> BHO </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/251-cbd" title="Extracciones de CBD"> CBD </a></li>
                </ul>
             </li>
             <li>
@@ -2639,7 +2594,7 @@
                </ul>
             </li>
             <li> <a href="https://www.semillaslowcost.com/209-ofertas" title="OFERTAS"> OFERTAS </a></li>
-            <li class="last">
+            <li>
                <span class="grower CLOSE"   onclick="toggleMenu('menu-229')"> </span><a href="https://www.semillaslowcost.com/229-lucha-biologica" title="LUCHA BIOLOGICA"> LUCHA BIOLOGICA </a>
                <ul id="menu-229" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/230-arana-roja" title="Araña roja"> Araña roja </a></li>
@@ -2652,23 +2607,24 @@
                   <li class="last"> <a href="https://www.semillaslowcost.com/237-trips" title="Trips"> Trips </a></li>
                </ul>
             </li>
-         </ul>
-      </div>
-   </div>
-   <div class="block">
-      <div class="heading_block dark">
-         <h4> <i class="icon icon-quote-left"></i> <a href="https://www.semillaslowcost.com/content/category/1-root"> Información </a></h4>
-      </div>
-      <div class="block_content" style="">
-         <ul>
-            <li> <a href="https://www.semillaslowcost.com/content/1-envios" title="ENVÍOS"> ENVÍOS </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/2-aviso-legal" title="AVISO LEGAL"> AVISO LEGAL </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/4-sobre-nosotros" title="SOBRE NOSOTROS"> SOBRE NOSOTROS </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/5-pagos-seguros" title="PAGOS SEGUROS"> PAGOS SEGUROS </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/12-preguntas-frecuentes2" title="PREGUNTAS FRECUENTES"> PREGUNTAS FRECUENTES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/7-politicas-de-cookies" title="POLÍTICA DE COOKIES"> POLÍTICA DE COOKIES </a></li>
-            <li> <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" title="POLÍTICA DE PRIVACIDAD"> POLÍTICA DE PRIVACIDAD </a></li>
-            <li> <a href="https://www.semillaslowcost.com/tiendas" title="NUESTRAS TIENDAS"> NUESTRAS TIENDAS </a></li>
+            <li>
+               <span class="grower CLOSE"   onclick="toggleMenu('menu-252')"> </span><a href="https://www.semillaslowcost.com/252-parafernalia" title="PARAFERNALIA PARA FUMADORES"> PARAFERNALIA </a>
+               <ul id="menu-252" style="display: none;">
+                  <li> <a href="https://www.semillaslowcost.com/225-mecheros" title="Mecheros"> </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/218-vaporizadores" title="Vaporizadores">  </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/226-borosilicato-silicona" title="Borosilicato - Silicona">  </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/222-grinders" title="Grinders">  </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/227-articulos-fumador" title="Artículos varios para el fumador"> </a></li>
+
+               </ul>
+            </li>
+            <li> <a href="https://www.semillaslowcost.com/106-sustratos" title="SUSTRATOS"> SUSTRATOS </a></li>
+             <li>
+              <a href="https://www.semillaslowcost.com/279-canamo-industrial" title="Cañamo industrial">CÁÑAMO INDUSTRIAL</a>
+            </li>
+             <li>
+              <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="marihuana medicinal">CANNABIS MEDICINAL</a>
+            </li>
          </ul>
       </div>
    </div>
@@ -2762,57 +2718,79 @@
                                     <div class="category_footer toggle-footer">
                                        <div class="list">
                                           <ul class="tree dhtml">
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="SEMILLAS FEMINIZADAS">
                                                 SEMILLAS FEMINIZADAS </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="SEMILLAS AUTOFLORECIENTES">
                                                 SEMILLAS AUTOFLORECIENTES </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="SEMILLAS REGULARES">
                                                 SEMILLAS REGULARES </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/93-armarios-de-cultivo" title="ARMARIOS DE CULTIVO">
                                                 ARMARIOS DE CULTIVO </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/94-iluminacion" title="ILUMINACIÓN">
                                                 ILUMINACIÓN </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/95-control-de-clima" title="CONTROL DE CLIMA">
                                                 CONTROL DE CLIMA </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/96-fertilizantes-y-preventivos" title="FERTILIZANTES Y PREVENTIVOS">
                                                 FERTILIZANTES Y PREVENTIVOS </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA">
                                                 RIEGO E HIDROPONÍA </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/98-kits" title="KITS">
                                                 KITS </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="ACCESORIOS Y HERRAMIENTAS">
                                                 ACCESORIOS Y HERRAMIENTAS </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA">
                                                 INSTRUMENTOS DE MEDIDA </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/104-macetas-y-bandejas" title="MACETAS Y BANDEJAS">
                                                 MACETAS Y BANDEJAS </a>
                                              </li>
-                                             <li >
+                                             <li>
                                                 <a href="https://www.semillaslowcost.com/107-tratamiento-de-olores" title="TRATAMIENTO DE OLORES">
                                                 TRATAMIENTO DE OLORES </a>
+                                             </li>
+                                              <li>
+                                                <a href="https://www.semillaslowcost.com/279-canamo-industrial" title="CÁÑAMO INDUSTRIAL">
+                                                 CÁÑAMO INDUSTRIAL</a>
+                                             </li>
+                                             <li>
+                                                <a href="https://www.semillaslowcost.com/273-cbd-shop" title="CBD SHOP">
+                                                 CBD SHOP</a>
+                                             </li>
+                                              <li>
+                                                <a href="https://www.semillaslowcost.com/106-sustratos" title="SUSTRATOS">
+                                                SUSTRATOS</a>
+                                             </li>
+
+                                              <li>
+                                                <a href="https://www.semillaslowcost.com/252-parafernalia" title="PARAFERNALIA PARA FUMADORES">
+                                                PARAFERNALIA</a>
+                                             </li>
+                                              <li>
+                                                <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="CANNABIS MEDICINAL">
+                                                  CANNABIS MEDICINAL
+                                                 </a>
                                              </li>
                                              <li class="last">
                                                 <a href="https://www.semillaslowcost.com/209-ofertas" title="OFERTAS">
