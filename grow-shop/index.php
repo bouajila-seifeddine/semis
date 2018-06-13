@@ -69,6 +69,10 @@
                                     <a href="https://www.semillaslowcost.com/">
                                     Inicio</a>
                                  </li>
+                                 <?php  echo $deviceType;
+                    
+                     
+                       ?>
                                  <li>
                                     <a href="https://www.semillaslowcost.com/pedido-rapido">
                                     Pedido r&aacute;pido</a>
@@ -280,7 +284,7 @@
                                     <div class="panel panel-default">
                                        <div class="panel-heading" role="tab" id="headingOne">
                                           <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="link-collapse">
-                                             <h2 class="panel-title">INFORMACIÓN SOBRE EL GROW SHOP DE SLC </h2>
+                                             <h2 class="panel-title">INFORMACIÓN DEL GROW SHOP SLC</h2>
                                           </a>
                                        </div>
                                        <!-- .panel-heading -->
@@ -296,7 +300,7 @@
                                     <div class="panel panel-default">
                                        <div class="panel-heading" role="tab" id="headingOne2">
                                           <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3" class="link-collapse">
-                                             <h2 class="panel-title"> TENEMOS TODOS LOS PRODUCTOS QUE EXISTEN
+                                             <h2 class="panel-title"> TENEMOS TODOS LOS PRODUCTOS
                                              </h2>
                                           </a>
                                        </div>
@@ -324,8 +328,8 @@
                                        <!-- .panel-heading -->
                                        <div id="collapseOne6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne5" aria-expanded="true">
                                           <div class="panel-body">
-                                             <p>Las semillas de marihuana feminizadas son aquellas que han sido manipuladas genéticamente para producir únicamente plantas hembras. La creación de semillas feminizadas supuso una revolución para el mundo del cultivo ya que la utilización de estas semillas permite a los cultivadores evitar el sexado de las plantas lo que constituye un gran ahorro de tiempo, dinero y espacio. Esta es la principal razón por las que este tipo de semillas ha tenido tan buena acogida en el mercado.</p>
-                                             <p>Las semillas feminizadas se producen cuando se revierte el sexo de una planta hembra para que esta genere flores macho y con el polen de las flores poder fecundar otras plantas hembra que producirán las semillas feminizadas evitando en hermafroditismo en un 99,99% de los casos. ¡Aquí encontrarás todo tipo de variedades feminizadas! ¡Las más conocidas del mercado! ¡Semillas feminizadas de gran calidad al mejor precio! </p>
+                                             <p>Las semillas de marihuana feminizadas son aquellas que han sido manipuladas genéticamente para producir únicamente plantas hembras. Su creación supuso una revolución para el mundo del cultivo ya que la utilización de estas semillas permite a los cultivadores evitar el sexado de las plantas lo que constituye un gran ahorro de tiempo, dinero y espacio. Esta es la principal razón por las que este tipo de semillas ha tenido tan buena acogida en el mercado.</p>
+                                             <p>Este tipo de semilla se producen cuando se revierte el sexo de una planta hembra para que esta genere flores macho y con el polen de las flores poder fecundar otras plantas hembra que producirán las semillas feminizadas evitando en hermafroditismo en un 99,99% de los casos. ¡Aquí encontrarás todo tipo de variedades feminizadas! ¡Las más conocidas del mercado! ¡Gran calidad al mejor precio! </p>
                                           </div>
                                        </div>
                                     </div>
@@ -339,17 +343,17 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/26-early-skunk-geaseeds.html" title="Early Skunk">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2991-thickbox_defaultl/early-skunk-geaseeds.jpg" alt="Comprar Early Skunk"  class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/genehtik-feminizadas/2363-kritikal-bilbo-feminizada-genehtik.html" title="KRITIKAL BILBO">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/3206-thickbox_defaultl/kritikal-bilbo-feminizada-genehtik.jpg" alt="Comprar KRITIKAL BILBO"  class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/26-early-skunk-geaseeds.html" title="Early Skunk">
-                                                Early Skunk</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/genehtik-feminizadas/2363-kritikal-bilbo-feminizada-genehtik.html" title="KRITIKAL BILBO">
+                                                KRITIKAL BILBO</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
-                                                <span itemprop="price" content="1.00" class="price">
-                                                1€ </span>
+                                                <span itemprop="price" content="6.66" class="price">
+                                                6,66€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -359,14 +363,14 @@
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
                                           <div id="content-img">
-                                             <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/713-auto-critical-geaseeds.html" title="Auto Critical">
-                                             <img itemprop="image" src="https://www.semillaslowcost.com/3009-thickbox_defaultl/auto-critical-geaseeds.jpg" alt="Comprar Auto Critical" class="img-responsive first-image">
+                                             <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/709-amnesia-geaseeds.html" title="AMNESIA">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/3004-thickbox_defaultl/amnesia-geaseeds.jpg" alt="Comprar AMNESIA FEMINIZADA" class="img-responsive first-image">
                                              </a>
                                           </div>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/713-auto-critical-geaseeds.html" title="Auto Critical">
-                                                Auto Critical</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-feminizadas/709-amnesia-geaseeds.html" title="AMNESIA FEMINIZADA">
+                                                AMNESIA</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" content="1.00" lass="price">
@@ -390,6 +394,182 @@
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" content="1.00" class="price">
                                                 1€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Fin row imagenes -->
+                                 <br/>
+                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
+     <div class="panel panel-default">
+                                       <div class="panel-heading" role="tab" id="headingOne26">
+                                          <a class="category-link" href="">
+                                             <h2 class="panel-title">
+                                                SEMILLAS AUTOFLORECIENTES
+                                             </h2>
+                                          </a>
+                                          <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne27" aria-expanded="true" aria-controls="collapseOne27" class="link-collapse info-js">
+                                          <i class="icon icon-info-circle"></i></a>
+                                       </div>
+                                       <!-- .panel-heading -->
+                                       <div id="collapseOne27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne26" aria-expanded="true">
+                                          <div class="panel-body">
+                                             <p>En nuestro catálogo también podrás encontrar semillas de marihuana autoflorecientes de todos los bancos, Dutch Passion, Dinafem, Sensi Seeds, ect... Este tipo de semillas de cannabis también se le denomina automática, debido a que no depende de la luz y los fotoperiodos para florecer, lo hace automáticamente. Son ideales para los cultivadores principiantes debido a que por su rapidez apenas sufren problemas de plagas y no necesitan muchos mimos para crecer adecuadamente. Recuerda que disponemos de genéticas de calidad a 1€ la semilla, si consultas el banco Gea Seeds.</p>
+                                             <p>Entra en nuestro catálogo de bancos de semillas autoflorecientes y elige tu genética preferida. Tenemos cientos de variedades diferentes en stock y más de 20 bancos diferentes. En nuestro grow online encontrarás variedades autos míticas como la <a href="https://www.semillaslowcost.com/dinafem-autoflorecientes/221-og-kush-auto.html">Og Kush Auto de dinafem</a>, la famosa <a href="https://www.semillaslowcost.com/sensi-seeds-autoflorecientes/235-northern-lights-autofloreciente-sensi-seeds.html">Northern Lights Auto de Sensi Seeds</a>, la <a href="https://www.semillaslowcost.com/buddha-seeds-autoflorecientes/292-magnum-auto.html">Buddha Purple Kush auto</a> o la <a href="https://www.semillaslowcost.com/buddha-seeds-autoflorecientes/292-magnum-auto.html">Magnum Automática de Buddha Seeds</a>.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <br/>
+                                    <div class="separador">
+                                    </div>
+                                 </div>
+                                 <br/>
+                                 <div class="row">
+                                    <!-- -inicio 3 imagenes -->
+                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/dinafem-autoflorecientes/223-moby-dick-xxl-auto.html" title="MOBY DICK XXL AUTO">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1420-thickbox_defaultl/moby-dick-xxl-auto.jpg" alt="Comprar MOBY DICK XXL AUTO"  class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/dinafem-autoflorecientes/223-moby-dick-xxl-auto.html" title="MOBY DICK XXL AUTO">
+                                                MOBY DICK XXL AUTO</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" content="7.89" class="price">
+                                                7,89€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <div id="content-img">
+                                             <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/743-auto-cheese.html" title="AUTO CHEESE">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/3017-thickbox_defaultl/auto-cheese.jpg" alt="Comprar AUTO CHEESE" class="img-responsive first-image">
+                                             </a>
+                                          </div>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/743-auto-cheese.html" title="AUTO CHEESE">
+                                                AUTO CHEESE</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" content="1.00" lass="price">
+                                                1€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/742-auto-haze.html" title="AUTO HAZE">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/3016-thickbox_defaultl/auto-haze.jpg" alt="Comprar AUTO HAZE"  class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/geaseeds-autoflorecientes/742-auto-haze.html" title="AUTO HAZE">
+                                                AUTO HAZE</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" content="1.00" class="price">
+                                                1€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Fin row imagenes -->
+                                 <br/>
+                                 <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
+                                                                  <div class="panel panel-default">
+                                       <div class="panel-heading" role="tab" id="headingOne28">
+                                          <a class="category-link" href="">
+                                             <h2 class="panel-title">
+                                                SEMILLAS REGULARES
+                                             </h2>
+                                          </a>
+                                          <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne29" aria-expanded="true" aria-controls="collapseOne29" class="link-collapse info-js">
+                                          <i class="icon icon-info-circle"></i></a>
+                                       </div>
+                                       <!-- .panel-heading -->
+                                       <div id="collapseOne29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne28" aria-expanded="true">
+                                          <div class="panel-body">
+                                             <p>Aunque los otros tipos de semillas son más fáciles para cultivar, bien son más rápidas, o fotodependientes, o bien siempre salen hembras, hay que admitir, que las semillas regulares es donde se puede encontrar las genéticas originales. Esta claro que es una molestia tener que desechar alguna de tus plantas porque han salido macho, pero con una buena planificación y cuidados puedes conseguir una calidad impresionante en tus cogollos y manteniendo los sabores y ciegos de las genéticas originales.</p>
+                                             <p>Tenemos en stock las variedades más míticas e importantes en la historia del cannabis. Por ejemplo tenemos en catálogo la <a href="https://www.semillaslowcost.com/dutch-passion-regulares/324-blueberry-regular.html">Blueberry Regular de Dutch Passion</a> o quién no conoce la <a href="https://www.semillaslowcost.com/serious-seeds-regulares/390-ak-47-regular.html">Ak-47 Regular</a> y la <a href="https://www.semillaslowcost.com/serious-seeds-regulares/391-bubble-gum-regular.html">Bubble Gum Regular de Serious Seeds</a>, en fin entra en nuestra categoría de semillas de marihuana regulares y escoje entre los mejores bancos que existen.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <br/>
+                                    <div class="separador">
+                                    </div>
+                                 </div>
+                                 <br/>
+                                 <div class="row">
+                                    <!-- -inicio 3 imagenes -->
+                                    <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/sensi-seeds-regulares/370-jack-herer.html" title="JACK HERER">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1561-thickbox_defaultl/jack-herer.jpg" alt="Comprar JACK HERER"  class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/sensi-seeds-regulares/370-jack-herer.html" title="JACK HERER">
+                                                JACK HERER (10 semillas)</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" content="122.84" class="price">
+                                                122,84€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <div id="content-img">
+                                             <a itemprop="url" href="https://www.semillaslowcost.com/cannabiogen-regulares/344-peyote-purple.html" title="PEYOTE PURPLE">
+                                             <img itemprop="image" src="https://www.semillaslowcost.com/1535-thickbox_defaultl/peyote-purple.jpg" alt="Comprar PEYOTE PURPLE" class="img-responsive first-image">
+                                             </a>
+                                          </div>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/cannabiogen-regulares/344-peyote-purple.html" title="PEYOTE PURPLE">
+                                                PEYOTE PURPLE (10 uds)</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" content="48.00" lass="price">
+                                                48,00€ </span>
+                                                <meta itemprop="priceCurrency" content="EUR">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+                                       <div class="inner second-image">
+                                          <div class="img_hover"></div>
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/dutch-passion-regulares/331-white-widow-regular.html" title="WHITE WIDOW Dutch Passion">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/1575-thickbox_default/white-widow-regular.jpg" alt="Comprar WHITE WIDOW Regular de Dutch Passion"  class="img-responsive first-image">
+                                          </a>
+                                          <div class="info">
+                                             <h3 itemprop="name">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/dutch-passion-regulares/331-white-widow-regular.html" title="WHITE WIDOW Dutch Passion">
+                                                WHITE WIDOW (10 Uds)</a>
+                                             </h3>
+                                             <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                                                <span itemprop="price" content="56.43" class="price">
+                                                56,43€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -2176,7 +2356,7 @@
                      <a href="https://web.whatsapp.com/send?phone=++34653323445" rel="nofollow">
                      <?php } 
                         else{ ?>
-                     <a href="https://api.whatsapp.com/send?phone=++34653323445" rel="nofollow">
+                     <a href="whatsapp://send?phone=++34653323445" rel="nofollow">
                      <?php } ?>
                      <img src="/modules/whatsapp//views/img/whataspp_icon.png" alt="Whataspp" width="24" height="24">¿Alguna pregunta?</a>
                   </div>
