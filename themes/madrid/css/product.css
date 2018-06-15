@@ -22,6 +22,7 @@ span.telefono {
 #product_comments_block_tab a {
     background-color: #ced44e;
 }
+.rte p {font-size:18px;}
 
 ul.usefull_link.nolist.clearBoth.pull-right.no-print {
     margin-right: 1%;
