@@ -2185,7 +2185,7 @@
                                     </a>
                                  </div>
                                  <div class="item behance">
-                                    <a href="https://www.youtube.com/channel/UCQ6QPUE3DcMnTCKTrfcMWBA/" rel="nofollow">
+                                    <a href="https://www.youtube.com/channel/UCKbxY0GtLkrG1d_Ma96Hhqw" rel="nofollow">
                                     <i class="icon icon-youtube">
                                     </i>
                                     </a>
