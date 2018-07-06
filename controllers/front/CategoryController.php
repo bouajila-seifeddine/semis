@@ -127,6 +127,10 @@ class CategoryControllerCore extends FrontController
     public function initContent()
     {
         parent::initContent();
+         // dentro de initContent() añadimos estas lineas...
+        $products = $this->category->getProducts($this->context->language->id, (int)$this->p, (int)$this->n, $this->orderBy, $this->orderWay);
+        $combinations = $this->getProductAttributeCombinations($products);
+        $this->context->smarty->assign('combinations', $combinations);
 
         $this->setTemplate(_PS_THEME_DIR_.'category.tpl');
 
@@ -150,6 +154,7 @@ class CategoryControllerCore extends FrontController
             'description_short'    => Tools::truncateString($this->category->description, 350),
             'products'             => (isset($this->cat_products) && $this->cat_products) ? $this->cat_products : null,
             'id_category'          => (int)$this->category->id,
+            'combinations'          => 55,
             'id_category_parent'   => (int)$this->category->id_parent,
             'return_category_name' => Tools::safeOutput($this->category->name),
             'path'                 => Tools::getPath($this->category->id),
@@ -164,6 +169,16 @@ class CategoryControllerCore extends FrontController
             'body_classes'         => array($this->php_self.'-'.$this->category->id, $this->php_self.'-'.$this->category->link_rewrite)
         ));
     }
+
+    public function getProductAttributeCombinations($products) {
+    $combinations = array();
+    foreach($products as $product)
+    {
+        $product = new Product ($product['id_product'], $this->context->language->id);
+        $combinations[$product->id] = $product->getAttributeCombinations($this->context->language->id);
+    }
+    return $combinations;
+}
 
     /**
      * Assigns scenes template variables

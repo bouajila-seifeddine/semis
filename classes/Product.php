@@ -4354,6 +4354,9 @@ class ProductCore extends ObjectModel
 
         $row['quantity_all_versions'] = $row['quantity'];
 
+
+        $row['combis'] = Product::getProductAttributeCombinations($row['id_product']);
+
         if ($row['id_product_attribute']) {
             $row['quantity'] = Product::getQuantity(
                 (int)$row['id_product'],
@@ -6144,4 +6147,60 @@ class ProductCore extends ObjectModel
         return Db::getInstance()->execute('UPDATE '._DB_PREFIX_.'product p
 		'.Shop::addSqlAssociation('product', 'p').' SET product_shop.pack_stock_type = '.(int)$pack_stock_type.' WHERE p.`id_product` = '.(int)$id_product);
     }
+
+   public static function getProductAttributeCombinations($id_product) {
+    $combinations = array();
+    $context = Context::getContext();
+    $product = new Product ($id_product, $context->language->id);
+    $attributes_groups = $product->getAttributesGroups($context->language->id);
+    $att_grps = '';
+    foreach ($attributes_groups as $k => $row)
+    {
+        $combinations[$row['id_product_attribute']]['attributes_values'][$row['id_attribute_group']] = $row['attribute_name'];
+        $combinations[$row['id_product_attribute']]['attributes_group'][$row['id_attribute_group']] = $row['group_name'];
+
+        $combinations[$row['id_product_attribute']]['attributes_groups'] = @implode(', ', $combinations[$row['id_product_attribute']]['attributes_group']);
+        $att_grps = $combinations[$row['id_product_attribute']]['attributes_groups'];
+        $combinations[$row['id_product_attribute']]['attributes_names'] = @implode(', ', $combinations[$row['id_product_attribute']]['attributes_values']);
+        $combinations[$row['id_product_attribute']]['attributes'][] = (int)$row['id_attribute'];
+        $combinations[$row['id_product_attribute']]['price'] = (float)$row['price'];
+
+        // Call getPriceStatic in order to set $combination_specific_price
+        if (!isset($combination_prices_set[(int)$row['id_product_attribute']]))
+        {
+            Product::getPriceStatic((int)$product->id, false, $row['id_product_attribute'], 6, null, false, true, 1, false, null, null, null, $combination_specific_price);
+            $combination_prices_set[(int)$row['id_product_attribute']] = true;
+            $combinations[$row['id_product_attribute']]['specific_price'] = $combination_specific_price;
+        }
+        $combinations[$row['id_product_attribute']]['ecotax'] = (float)$row['ecotax'];
+        $combinations[$row['id_product_attribute']]['weight'] = (float)$row['weight'];
+        $combinations[$row['id_product_attribute']]['quantity'] = (int)$row['quantity'];
+        $combinations[$row['id_product_attribute']]['reference'] = $row['reference'];
+        $combinations[$row['id_product_attribute']]['unit_impact'] = $row['unit_price_impact'];
+        $combinations[$row['id_product_attribute']]['minimal_quantity'] = $row['minimal_quantity'];
+        if ($row['available_date'] != '0000-00-00')
+        {
+            $combinations[$row['id_product_attribute']]['available_date'] = $row['available_date'];
+            $combinations[$row['id_product_attribute']]['date_formatted'] = Tools::displayDate($row['available_date']);
+        }
+        else
+            $combinations[$row['id_product_attribute']]['available_date'] = '';
+        foreach ($combinations as $id_product_attribute => $comb)
+        {
+            $attribute_list = '';
+            foreach ($comb['attributes'] as $id_attribute)
+                $attribute_list .= '\''.(int)$id_attribute.'\',';
+            $attribute_list = rtrim($attribute_list, ',');
+            $combinations[$id_product_attribute]['list'] = $attribute_list;
+        }
+    }
+    $comb = array(
+        'attribute_groups' => $att_grps,
+        'values' => $combinations
+    );
+
+    return $comb;
+} 
+
+
 }

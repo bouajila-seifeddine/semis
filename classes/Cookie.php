@@ -46,13 +46,14 @@ class CookieCore
 
     protected $_modified = false;
 
-    protected $_allow_writing;
+    protected $_allow_writing = true;
 
     protected $_salt;
 
     protected $_standalone;
 
     protected $_secure = false;
+
 
     /**
      * Get data if the cookie exists and else initialize an new one
@@ -415,6 +416,12 @@ class CookieCore
     {
         return $this->_name;
     }
+
+      public function getSaludo()
+    {
+        return "hola";
+    }
+
 
     /**
      * Check if the cookie exists

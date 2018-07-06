@@ -1,0 +1,21 @@
+
+---Downloaded files---
+The import files for: Demo 1 were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://semillaslowcost.com/wordpress
+Data file = /var/www/html/wordpress/wp-content/themes/infowazz/inc/import/demo1/demo.xml
+Widget file = not defined!
+Customizer file = /var/www/html/wordpress/wp-content/themes/infowazz/inc/import/demo1/customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+

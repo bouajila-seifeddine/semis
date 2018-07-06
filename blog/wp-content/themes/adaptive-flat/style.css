@@ -1,0 +1,752 @@
+/*
+Theme Name: Adaptive Flat
+Theme URI: http://www.mickdegraaf.nl/adaptiveflat
+Author URI: http://www.mickdegraaf.nl/
+Description: Create a professional and personal WordPress website. Adaptive Flat allows you to style your site with over 50 styling options making your site both beautiful and seo optimized. Use it for a small business website or your personal blog the possibilities are endless. Theme also has support for an arcade plugin wich is under development and not ready for public release yet.
+Version: 1.1.3
+Author: Mick de Graaf
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-menu, one-column, theme-options
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+article a{
+	transition: color 0.5s;
+}
+
+
+article img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#top-bar {
+	width: 100%;
+	height: 20px;
+}
+
+#main-content {
+	min-height: 500px;
+}
+
+/**
+* #.# Header
+*
+* CSS for the header some gets overwritten in media querys at the end of the file
+*/
+
+#header {
+	margin: 0px auto;
+	overflow: auto;
+}
+
+#header-left {
+	display: inline-block;
+	height: 100px;
+}
+
+#header-left img{
+	max-width: 95%;
+}
+
+#header .site-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#header p {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+#menu-wrapper {
+	width: 100%;
+}
+
+.menu-bar {
+	width: 100%;
+}
+
+
+.scrolling-menu {
+	position: fixed;
+	z-index: 10;
+	top:0;
+}
+
+
+/**
+*#.# header menu 
+*
+*	styles the dropdown menu
+*/
+
+.header-menu	{
+	margin: 0px auto !important;
+}
+
+.header-menu ul{
+	list-style: none;
+
+}
+
+.header-menu li a {
+	line-height: 50px;
+	height: 50px;
+	display: block;
+	padding: 0 10px;
+}
+.header-menu li {
+	display: block;
+	float: left;
+	height: 50px;
+}
+
+.header-menu ul ul {
+	height: auto;
+	position: absolute;
+	margin-left: 10px;
+	display: none;
+	width: 200px;
+	z-index: 100;
+}
+
+.header-menu ul ul li {
+	width: 200px;
+	height: auto;
+	display: block;
+	float: none;
+}
+
+.header-menu ul ul li a{
+	line-height: 30px;
+	height: auto;
+	width : 100%;
+	text-overflow:ellipsis;
+}
+
+.header-menu ul li:hover > ul {
+	display: block
+} 
+
+/**
+* #.# searchform
+*
+* CSS searchform
+*/
+
+.searchform {	
+	float: right;
+	height: 30px;
+	position: relative;
+	margin: 10px 0px;
+	border-radius: 10px;
+	border: 1px solid;
+}
+
+
+.searchform .s {	
+	border: none;
+	float: left;
+	padding-left: 10px;
+	width: 100px;
+	height: 100%;
+	transition: width 1s ease;
+	border-radius: 10px 0px 0px 10px;
+}
+
+
+.searchform .s:focus,
+.searchform .searchsubmit:focus {
+	outline: none;
+}
+
+.searchform .s:focus{
+	width: 170px;
+}
+
+.searchform .searchsubmit {
+	width: 30px;
+	height: 100%;
+	border: 0;
+	border-radius: 0px 10px 10px 0px;
+	cursor: pointer;
+	font: normal 18px/1 'dashicons';
+	-webkit-appearance: none;
+	float: right;
+}
+
+.searchform .searchsubmit:hover {
+	font: normal 20px/1 'dashicons';
+}
+
+.dashicons-admin-home:before {
+	content: "\f102";
+	font: normal 30px/1 'dashicons';
+	line-height: 50px;
+	height: 50px;
+	
+	display: block;
+}
+
+
+ #sidebar .searchform .searchsubmit {
+	border-radius: 0px;
+}
+	
+
+ #sidebar .searchform .s {
+	float: left;
+	border-radius: 0px;
+	width: 80%;
+}
+
+ #sidebar .searchform {
+	float: left;
+	display: block;
+	float: none;
+	width: 90%;
+	clear: both;
+	border-radius: 0px;
+}
+
+/* 
+* #.# Headings
+*
+*All headings rough styling (mainly font size) takes place here
+*/
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 19px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+
+/**
+* #.# Page title and description
+*
+* Page title and description styling is done here
+*/
+
+#title-container {
+	border-bottom: 2px solid;
+	margin-bottom: 10px;
+}
+
+#content > #title-container {
+	width: 95%;
+}
+
+#title-container h1 {
+	display: inline-block;
+	font-size: 30px;
+}
+
+#description {
+	width: 95%;
+}
+
+
+/**
+* #.# Random css
+*
+* Some css that not have been grouped yet
+*/
+
+iframe,
+embed,
+object {
+	margin: 0px auto;
+	display: block;
+	max-width: 100%;
+}
+
+hr {
+	border: 0px;
+	height: 1px;
+	background: #EEEEEE;
+}
+
+p {
+	margin: 10px 0px;
+}
+
+
+/**
+* #.# Post preview
+*
+* Styles the post previews on archive pages
+*/
+.post-prev {
+	border-bottom: 1px solid;
+	padding: 10px 0px;
+	word-wrap: break-word;
+}
+
+.prev-title a{
+	transition: color 0.5s;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.post-prev p {
+	word-wrap:break-word;
+}
+
+
+.post-prev img,
+.img-placeholder {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.img-placeholder .icon {
+	margin: 0px auto;
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+
+.img-placeholder .icon:before {
+	content: "\f155";
+	font: normal 150px/1 'dashicons';
+	transition: color 0.5s;
+}
+
+
+/**
+* #.# Post preview one per line
+*
+* Post preview one per line
+*/
+
+.post-prev2{
+	width: 90%;
+	height: auto;
+	border-bottom: 1px solid;
+	padding: 10px 0px;
+}
+
+.post-prev2 img,
+.post-prev2 .img-placeholder {
+	width: 200px;
+	height: auto;
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+
+.post-prev2 p{
+	display: inline;
+}
+
+.post-prev2 .img-placeholder .icon:before {
+	font: normal 100px/1 'dashicons';
+}
+
+.post-prev2 .prev-title {
+	margin: 10px 0px;
+}
+
+
+/**
+* #.# WordPress styles
+*
+* Styles required by wordpress
+*/
+
+.wp-caption {
+	max-width: 100% !important;
+}
+
+.wp-caption img{
+	max-width: 100%;
+}
+
+.wp-caption-text {
+	margin: 0px;
+	text-align: center;
+}
+
+.sticky {
+	/* Nothing here */
+}
+
+.gallery-caption {
+	/* Nothing here */
+}
+
+.bypostauthor {
+	/* Nothing here */
+}
+.alignright {
+	float: right;
+	margin: 10px 0px 10px 10px
+}
+.alignleft {
+	float: left;
+	margin: 10px 10px 10px 0px
+}
+.aligncenter {
+	margin: 10px auto;
+}
+
+/**
+* #.# Footer styles
+*
+* Styles required by wordpress
+*/
+
+
+#footer-top {
+	margin-top: 10%;
+	min-height: 100px;
+	height: auto;
+	width: 100%;
+}
+
+
+#footer-top .widget {
+	width: 22%;
+	margin: 30px 4% 30px 0px;
+	float: left;
+}
+
+#footer-top .widget:last-child {
+	margin: 30px 0px 30px 0px;
+}
+
+#footer-top .widget-head {
+	margin-bottom: 5px;
+}
+
+
+#footer-top .center {
+	margin: 0px auto;
+	width: auto;
+	max-width: 1110px;
+}
+
+#footer-bottom {
+	min-height: 20px;
+	width: 100%;
+}
+
+#footer-bottom .center
+{
+	margin: 0px auto;
+	padding: 10px 0px;
+}
+
+#game {
+	width: 100%;
+	height: 100%;
+}
+
+#single-game, #single-page {
+	width: 95%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid;
+}
+
+
+/*
+* #.# Sidebar and footer widgets
+*
+* Style for the sidebar and footer widgets including lists
+*/ 
+
+.widget-head {
+	border-bottom: 2px solid;
+	margin-bottom: 10px;
+}
+
+.widget-head h4 {
+	display:inline-block; 
+	padding: 5px 10px;
+	width: auto; 
+}
+.widget ul {
+	list-style: none;
+}
+
+#sidebar li:before	{
+	content:" • ";  
+	margin: 0px 10px;
+}
+
+
+.widget li {	
+	padding: 5px 0px;
+	border-bottom: 1px solid;
+	font-size: 13px;
+}
+
+.widget ul li:last-child {
+	border-bottom: none;	
+}
+
+.widget ul.children {
+	margin-left: 15px;
+}
+
+.widget a:hover {
+	text-decoration: underline;
+}
+
+#sidebar div:first-child {
+	padding-top: 5px;
+}
+
+/*
+* #.# Pagination css
+*
+* Awesome styling for pagination
+*/
+.navigation{
+	float:left;
+}
+
+.navigation ul {
+	list-style: none;
+	margin: 10px 0px;
+}
+
+.navigation ul li {
+	display: inline-block;
+	margin: 2px 0px;
+	transition: all 0.5s;
+	font-size: 30px;	
+}
+
+.navigation ul li a {
+	padding: 0px 15px;
+}
+
+.clearfix:after { 
+    visibility: hidden; display: block; font-size: 0; 
+    content: " "; clear: both; height: 0; 
+}
+
+.tag-icon, .category-icon {
+	display: inline;
+	font-size: 17px;
+	font: normal 17px/1 'dashicons';
+}
+
+.category-icon:before {
+	content: "\f318";
+	margin: 0px 10px;	
+	line-height: 17px;
+}
+
+.tag-icon:before {
+	content: "\f323";
+	margin-right: 10px;
+	line-height: 17px;
+}
+
+
+/*
+*#.# lists, forms, tables, legend etc css
+*
+*/
+
+/* Tables css */
+
+#content th,
+#content td{
+	padding: 5px 10px 5px 0px;
+}
+
+
+/* Lists css */
+#content ul,
+#content ol{
+	list-style-position:inside;
+}
+/* form css */
+#content fieldset {
+	padding: 20px;
+	margin: 10px;
+}
+
+#content legend {
+	padding: 10px;
+	border: 2px solid;
+}
+/* comments css */
+
+#comments {
+	height: auto;
+}
+
+#comments li {
+	list-style: none;
+}
+
+.avatar {
+	margin: 10px;
+}
+
+#comments ul {
+	width: 95%;
+	float: right;
+	display: block;
+}
+
+#comments .comment {
+	border-bottom: 1px solid;
+	margin: 10px 0;
+}
+
+
+
+#content {
+	overflow: hidden;
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    
+    .center {
+		width: 95%;
+		margin: 0px auto;
+	}
+	
+	#content {
+		margin: 10px 0px;;
+		width: 100%;
+	}
+    
+    #sidebar {
+		width: 100%;
+	    margin: 30px 0px; /* used for triggering in js/script.js */
+	    max-width: none;
+	}
+	
+	#sidebar li {
+		font-size: 20px;
+	}
+	.post-prev {
+		height: auto;
+	}
+	
+	#header-left img
+	{
+		margin: 0px auto;
+	}
+	
+	
+	#footer-top .widget{
+		width: 100%;
+		float: none;
+	}
+	
+	#footer-top .widget:last-child{
+		margin: 0px;
+		padding-bottom: 10px;
+	}
+	
+	#footer-top .widget:first-child{
+		padding-top: 20px;
+	}
+
+	
+}
+
+@media only screen and (min-width: 768px) {
+    .center {
+		width: 95%;
+		max-width: 1110px;
+		margin: 10px auto;
+		overflow: auto;
+	}
+	
+	#content {
+		width: 70%;
+		float: left;
+	}
+	
+	.full-width #content{
+		width: 100%
+	}
+    
+    #sidebar {
+		width: 30%;
+		float:right;
+	}
+	
+	.left-sidebar #sidebar {
+		float: left;
+	}
+	
+	.left-sidebar #content {
+		float: right;
+	}
+	
+	.left-sidebar .post-prev {
+		float: right;
+		margin-left: 5%;
+		margin-right: 0px;
+	}
+	
+	
+	.left-sidebar .post-prev2 {
+		float: right;
+	}
+	
+	.left-sidebar #single-page,
+	.left-sidebar #single-game {
+		float: right;
+	}
+
+	
+	.post-prev {
+		width: 45%;
+		margin-right: 5%;
+		
+		float: left;
+		
+	}
+	
+}
+
+
+	

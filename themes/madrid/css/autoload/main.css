@@ -3325,7 +3325,7 @@ div.simpleblog-recent {
     background: url(../../images/colors/blog2.png) top center repeat-x
 }
 a {
-    color: #2A9646
+    color: #7BBD42;
 }
 #ph_megamenu_wrapper #ph_megamenu .mega-menu .product_list_ph .ph_product_item .ph_product_info,
 #thumbs_list_frame .item a .hover_bg,
@@ -3469,3 +3469,23 @@ div#eKomiWidget_default img {
 }
   
   .fancybox-inner .page-heading:before{display:   none;}
+
+
+  .left-blockblog {width: 30%; float: left;     text-align: center;}
+  .right-blockblog {width: 70%; float: left;     text-align: center;}
+
+@media (max-width: 781px) {
+    .left-blockblog {width: 40%; margin-left: 30%;}
+    .right-blockblog {width: 100%;}
+    
+}
+
+.product-container-blog {
+    padding: 2%;
+    border: 1px solid #7bbd42;
+}
+a.product-name-blog, .product-price-blog {
+    font-size: 30px;
+    color:black;
+}
+.panel-title {text-transform:   uppercase; }
