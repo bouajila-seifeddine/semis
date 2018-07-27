@@ -25,6 +25,17 @@
 $(document).ready(function(){
 	resizeCatimg();
 
+	
+
+});
+
+$(document).scroll(function(){
+	
+	if($('#collapseOne2').hasClass('primera-accion')){
+
+    	$('#collapseOne2').removeClass("in"); 
+    	$('#collapseOne2').removeClass("primera-accion"); 
+ }
 });
 
 $(window).resize(function(){

@@ -78,7 +78,6 @@ $_MODULE['<{productcomments}madrid>productcomments_3421ad00975533fbbd5f17d2cb568
 $_MODULE['<{productcomments}madrid>productcomments_221e705c06e231636fdbccfdd14f4d5c'] = 'Su nombre';
 $_MODULE['<{productcomments}madrid>productcomments_70397c4b252a5168c5ec003931cea215'] = 'Campos obligatorios';
 $_MODULE['<{productcomments}madrid>productcomments_94966d90747b97d1f0f206c98a8b1ac3'] = 'Enviar';
-$_MODULE['<{productcomments}madrid>productcomments_e81c4e4f2b7b93b481e13a8553c2ae1b'] = 'total';
 $_MODULE['<{productcomments}madrid>productcomments_ea4788705e6873b424c65e91c2846b19'] = 'Cancelar';
 $_MODULE['<{productcomments}madrid>products-comparison_8413c683b4b27cc3f4dbd4c90329d8ba'] = 'Comentarios';
 $_MODULE['<{productcomments}madrid>products-comparison_b1897515d548a960afe49ecf66a29021'] = 'regular';
@@ -106,6 +105,7 @@ $_MODULE['<{productcomments}madrid>productcomments_51ec9bf4aaeab1b25bb57f9f8d4de
 $_MODULE['<{productcomments}madrid>productcomments_240f3031f25601fa128bd4e15f0a37de'] = 'Comentario:';
 $_MODULE['<{productcomments}madrid>productcomments_a2ed44743411cf8b80e397448fce104c'] = 'Su nombre:';
 $_MODULE['<{productcomments}madrid>productcomments_a4d3b161ce1309df1c4e25df28694b7b'] = 'Enviar';
+$_MODULE['<{productcomments}madrid>productcomments_e81c4e4f2b7b93b481e13a8553c2ae1b'] = 'total';
 $_MODULE['<{productcomments}madrid>productcomments_4e3ee0f5bd8f527715fb0776741b9754'] = 'Su comentario ha sido añadido y estará disponible una vez lo apruebe un moderador.';
 $_MODULE['<{productcomments}madrid>products-comparison_5d9acecbb0b55a71dea7403896356001'] = 'Ver comentarios';
 $_MODULE['<{productcomments}madrid>tab_34e80a799d144cfe4af46815e103f017'] = 'Reseñas';

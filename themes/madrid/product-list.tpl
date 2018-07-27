@@ -96,25 +96,27 @@
                     </div>
                     {/if}
 {* Added for attributes *}
+{assign var="cantidad" value=$product.quantity}
 {if $product.combis.values}
 <div class="att_list" style="display:block;">
 
     <fieldset>
-    	<div style="display:none;">{$product|@print_r}</div>
-        
+    	
         <div class="attribute_list">
             <table class="semillas_atributos_blog"><tbody>
 
-    
+         
     
         {foreach from=$product.combis.values key=id_product_attribute item=combination}
+        {if $combination.quantity > 0}
+        {assign var="cantidad" value=$cantidad + $combination.quantity}
         <tr>
             <td class="attributes_name_blog">{$combination.attributes_names|escape:'html':'UTF-8'}</td>
             <td class="semillas_atributos_radio_blog"> 
                 <input type="radio" id="{$combination.reference|escape:'html':'UTF-8'}" class="attribute_radio" name="{$product.link_rewrite}" value="{$id_product_attribute|intval},{$combination.price+($combination.price*0.21)}" {if $id_product_attribute == $product.cache_default_attribute } checked="checked"{/if}><label for="{$combination.attributes_names|escape:'html':'UTF-8'}"><span><span></span></span></label>
             </td>
         </tr>
- 
+        {/if}
         {/foreach}
            <script>
             $(document).on("change","input[name='{$product.link_rewrite}']",function(){
@@ -189,19 +191,21 @@ error : function(xhr, status, error)
     <p>Producto añadido correctamente al carrito de compra.</p>
     <img id="modal-img" src=""><br />
     <button class="btn btn-dark" onclick="document.getElementById('myModal').style.display = 'none'">Seguir Leyendo</button>
-    <button class="btn info" onclick="window.location.href='https://www.semillaslowcost.com/pedido-rapido'">Ir al carrito</button>
+    <button class="btn info" onclick="window.open('https://www.semillaslowcost.com/pedido-rapido','_blank')">Ir al carrito</button>
 
   </div>
 
 </div>
 {/if}
 {* Added for attributes *}
+
+
                     <div class="button-container add_cart_{$product.id_product}" ref="{$product.id_product}">
 
-                        {if ($product.id_product_attribute == 0 || (isset($add_prod_display) && ($add_prod_display == 1))) && $product.available_for_order && !isset($restricted_country_mode) && $product.customizable != 2 && !$PS_CATALOG_MODE}
-                            {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
+                        {if ($product.id_product_attribute == 0 || (isset($add_prod_display) && ($add_prod_display == 1))) && $product.available_for_order && !isset($restricted_country_mode) && $product.customizable != 2 && !$PS_CATALOG_MODE && $cantidad > 0}
+                            {if (!isset($product.customization_required) || !$product.customization_required)}
                                 {capture}add=1&amp;id_product={$product.id_product|intval}{if isset($static_token)}&amp;token={$static_token}{/if}{/capture}
-                                <a id="{$product.link_rewrite}_link" class="button ajax_add_to_cart_button btn btn-default" href="{$link->getPageLink('cart', true, NULL, $smarty.capture.default, false)|escape:'html':'UTF-8'}{if $product.combis.values}&id_product_attribute={$product.cache_default_attribute}{/if}" rel="nofollow" title="{l s='Add to cart'}" data-id-product="{$product.id_product|intval}" data-minimal_quantity="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity > 1}{$product.product_attribute_minimal_quantity|intval}{else}{$product.minimal_quantity|intval}{/if}"  target="_blank" onClick="event.preventDefault();addCarrito(document.getElementById('{$product.link_rewrite}_link').href, document.getElementById('{$product.link_rewrite}-img').src)">
+                                <a id="{$product.link_rewrite}_link" class="button ajax_add_to_cart_button btn btn-default" href="{$link->getPageLink('cart', true, NULL, $smarty.capture.default, false)|escape:'html':'UTF-8'}{if $product.combis.values}&id_product_attribute={$product.cache_default_attribute}{/if}" title="{l s='Add to cart'}" data-id-product="{$product.id_product|intval}" data-minimal_quantity="{if isset($product.product_attribute_minimal_quantity) && $product.product_attribute_minimal_quantity > 1}{$product.product_attribute_minimal_quantity|intval}{else}{$product.minimal_quantity|intval}{/if}"  target="_blank" onClick="event.preventDefault();addCarrito(document.getElementById('{$product.link_rewrite}_link').href, document.getElementById('{$product.link_rewrite}-img').src)">
                                     <span>COMPRAR</span>
                                 </a>
                             {else}

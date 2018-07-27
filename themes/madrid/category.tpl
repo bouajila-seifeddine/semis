@@ -77,10 +77,32 @@
                 {/if}
             </div>
         {/if}
-
+        {if isset($category->description)}
+              <br/>
+                      <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        
+                                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="link-collapse">
+                                                       <h3 class="panel-title">VER DESCRIPCIÓN DE {$category->name|escape:'html':'UTF-8'} </h3>
+                                               </a>
+                                          
+                                   </div><!-- .panel-heading -->
+                                    <div id="collapseOne2" class="panel-collapse collapse in primera-accion" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
+                                         <div class="panel-body">
+                     <div class="rte">{$category->description}</div>
+                                          </div><div class="separador"></div>
+           
+                                       </div> </div>
+        {/if}
         {if isset($subcategories) && $theme_options['show_subcategories'] == '1'}
             {if (isset($display_subcategories) && $display_subcategories eq 1) || !isset($display_subcategories) }
-                <!-- Subcategories -->
+                <!-- Subcategories --> 
+              
+                                
+                               
+                              
+                                
+                <h3></h3>
                 <div id="subcategories">
                     <h4 class="main-color-txt">{l s='Subcategories'}</h4>
 
@@ -133,7 +155,7 @@
                 <div id="category_description_full" class="unvisible rte">{$category->description}</div>
                 <a href="{$link->getCategoryLink($category->id_category, $category->link_rewrite)|escape:'html':'UTF-8'}" class="lnk_more">{l s='More'}</a>
                 {else}*}
-                <div class="rte">{$category->description}</div>
+                 
                 {*{/if}*}
             </div>
         {/if}

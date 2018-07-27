@@ -83,7 +83,9 @@
 	</script>
 
 		<style>
-
+h3.panel-title {
+    font-size: 25px;
+}
 @media (min-width: 900px) {
 	.cupon{
 		width: 48.5%;
@@ -257,9 +259,7 @@ form#searchbox {
     margin-right: 0px;
 }
 @media (max-width: 768px){
-.content_scene_cat_bg {
-	background: transparent !important;
-}
+
 
 .ph_megamenu_mobile_toggle a.show_megamenu, a.hide_megamenu{
     padding-right: 10% !important;
@@ -399,16 +399,7 @@ form#searchbox {
 		{if $theme_options['use_custom_fonts'] == '1'}
 		<link href="{$base_dir_ssl}modules/prestahome/views/css/customFonts.css" rel="stylesheet" media="all" />
 		{/if}	
-		<script>
-			$(document).ready(function(){
-				//setTimeout(function() alert("etra"), 20000);
-				window.setTimeout(cerrarCookies, 20000);
-			});
-			function cerrarCookies() {
-			 	var x = document.getElementsByClassName("lgcookieslaw_banner");
-			 	x[0].style.display = 'none';    
-			}
-		</script>
+		
 
 
 	</head>

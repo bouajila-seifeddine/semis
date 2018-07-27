@@ -152,3 +152,16 @@ span.bank-name {
     padding-bottom: 2px;
 }
 
+.rte ul {
+    padding-left: 4%;
+}
+
+.panel-body img {
+    width: 100%;
+}
+.panel-body ol {
+    padding: 3%;
+}
+.panel-body ol li{
+    padding-bottom: 1%;
+}

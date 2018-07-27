@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if (!$content_only && (($nbComments == 0 && $too_early == false && ($is_logged || $allow_guests)) || ($nbComments != 0)))}
-<div id="product_comments_block_extra" class="clearBoth no-print" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+<div id="product_comments_block_extra" class="clearBoth no-print" {if $nbComments != 0} itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" {/if}>
 	{if $nbComments != 0}
 		<div class="comments_note clearfix pull-left">
 			<span>{l s='Rating' mod='productcomments'}&nbsp;</span>
