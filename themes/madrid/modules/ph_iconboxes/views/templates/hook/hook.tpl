@@ -5,11 +5,11 @@
 			<span class="icon main-color">
 				<i class="icon icon-{$icon_box.icon|escape:'UTF-8'}"></i>
 			</span>
-			<h3 class="main-color-txt">
+			<h4 class="main-color-txt">
 				{if !empty($icon_box.url)}<a href="{$icon_box.url|escape:'UTF-8'}" title="{$icon_box.title|escape:'UTF-8'}">{/if}
 				{$icon_box.title|escape:'UTF-8'}
 				{if !empty($icon_box.url)}</a>{/if}
-			</h3>
+			</h4>
 			{if !empty($icon_box.content)}
 			<p>{$icon_box.content}</p>
 			{/if}
