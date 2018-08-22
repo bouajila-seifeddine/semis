@@ -191,7 +191,7 @@
                                     <div class="panel-heading" role="tab" id="headingOne3">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4" class="link-collapse">
-                                                     <h2 class="panel-title"> ¿POR QUÉ ELEGIR NUESTRO GROW SHOP? PORQUE ÉS EL MÁS BARATO
+                                                     <h2 class="panel-title"> ¿POR QUÉ ELEGIR NUESTRO GROWSHOP? PORQUE ÉS EL MÁS BARATO
                                                </h2></a>
                                           
                                    </div><!-- .panel-heading -->
@@ -674,7 +674,7 @@
                                                </h3></a>
                                           
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/100-bho-y-extracciones'" value="VER CATÁLOGO BHO/EXTRACCIONES"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/100-extracciones-marihuana'" value="VER CATÁLOGO BHO/EXTRACCIONES"></div>
                                     <div id="collapseOne11" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne99" aria-expanded="true" style="">
                                          <div class="panel-body">
                     <p>Si lo que buscas es la extracción del aceite de hachís o el llamado BHO, desde SLC ponemos a la venta los poductos necesarios para la extracción, consumición y conservación necesarios para dicho fin. En Semillas Low Cost podrás comprar online y barato los productos de las principales marcas, desde los extractores más profesionales y de mejor calidad de materiales e fabricación a los extractores de aceite de hachís más baratos y sencillos de utilizar.</p>
@@ -1494,7 +1494,7 @@
                                     <li> <a href="https://www.semillaslowcost.com/97-riego-e-hidroponia" title="RIEGO E HIDROPONÍA"> RIEGO E HIDROPONÍA </a></li>
                                     <li> <a href="https://www.semillaslowcost.com/98-kits" title="KITS"> KITS </a></li>
                                     <li> <a href="https://www.semillaslowcost.com/99-herramientas-y-accesorios" title="HERRAMIENTAS Y ACCESORIOS PARA FUMADORES"> HERRAMIENTAS Y ACCESORIOS </a></li>
-                                    <li> <a href="https://www.semillaslowcost.com/100-bho-y-extracciones" title="BHO Y EXTRACCIONES"> BHO Y EXTRACCIONES </a></li>
+                                    <li> <a href="https://www.semillaslowcost.com/100-extracciones-marihuana" title="EXTRACCIONES"> EXTRACCIONES </a></li>
                                     <li> <a href="https://www.semillaslowcost.com/103-instrumentos-de-medida" title="INSTRUMENTOS DE MEDIDA"> INSTRUMENTOS DE MEDIDA </a></li>
                                     <li> <a href="https://www.semillaslowcost.com/104-macetas-y-bandejas" title="MACETAS Y BANDEJAS"> MACETAS Y BANDEJAS </a></li>
                                     <li> <a href="https://www.semillaslowcost.com/107-tratamiento-de-olores" title="TRATAMIENTO DE OLORES"> TRATAMIENTO DE OLORES </a></li>

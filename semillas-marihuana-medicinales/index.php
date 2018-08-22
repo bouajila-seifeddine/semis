@@ -21,9 +21,9 @@
                     ?>
                   <meta charset="utf-8" />
                   <title>
-                     Semillas de marihuana medicinales, aceites de CBD y extracciones.
+                     Semillas de Marihuana Medicinales y Cannabis Terapéutico - SLC
                   </title>
-                  <meta name="description" content="En SemillaLowCost podrás encontrar semillas de variedades de marihuana medicinales, aceites cbd, métodos de extracción... todo lo que necesitas saber sobre el cannabis medicinal lo encontrarás aquí." />
+                  <meta name="description" content="Selección de las mejores semillas de variedades de marihuana medicinal de todos los bancos de semillas. Compra semillas medicinales baratas..." />
                   <meta name="keywords" content="venta de semillas medicinales, semillas de marihuana medicinales, variedades de cannabis de uso medico, semillas de marijuana medicinal baratas" />
                   <meta name="generator" content="PrestaShop" />
                   <meta name="robots" content="index, follow" />
@@ -1122,7 +1122,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <h1 class="titulo-categoria">PRODUCTOS CANNABIS MEDICINAL: SEMILLAS DE MARIHUANA MEDICINALES, PRODUCTOS CBD Y EXTRACCIÓNES</h1>
+                                 <h1 class="titulo-categoria">CANNABIS TERAPÉUTICO Y SEMILLAS DE MARIHUANA MEDICINAL</h1>
                                  <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
                                  <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
@@ -1135,8 +1135,8 @@
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>Como todos sabemos, la característica más importante de las plantas de cannabis o de marihuana es que están compuestas principalmente por más de 100 compuestos activos denominados cannabinoides, entre ellos, el THC y el CBD.  </p>
-                                    <p>El tetrahidrocannabinol (THC), es el principal elemento psicoactivo de la marihuana, se cree, que es el mecanismo que usa la planta como autodefensa contra los herbívoros. Suele provocar un efecto de euforia, bienestar y otras sensaciones físicas. Por otra parte tenemos el cannabidiol (CBD), este compuesto a diferencia del THC no tiene efectos psicoactivos, si no que provoca efectos sedantes y tiene la cualidad de bloquer las transmisiones nerviosas asociadas al dolor y al malestar. Por estas cualidades, el CBD es considerado como útil dentro del mundo farmacéutico y medicinal. </p>
+                     <p>Como todos sabemos, la característica más importante de las plantas de cannabis o de marihuana es que están compuestas principalmente por más de 100 compuestos activos denominados cannabinoides.  </p>
+                                    <p>El tetrahidrocannabinol (THC), es el principal elemento psicoactivo de la marihuana, se cree, que es el mecanismo que usa la planta como autodefensa contra los herbívoros. Suele provocar un efecto de euforia, bienestar y otras sensaciones físicas. Por otra parte tenemos el <a href="https://www.semillaslowcost.com/273-cbd-shop">cannabidiol (CBD)</a>, este compuesto a diferencia del THC no tiene efectos psicoactivos, si no que provoca efectos sedantes y tiene la cualidad de bloquer las transmisiones nerviosas asociadas al dolor y al malestar. Por estas cualidades, el CBD es considerado como útil dentro del mundo farmacéutico y medicinal. </p>
                                     <p>Hay centenares de variedades en el mundo de las semillas de marihuana medicinal, y dependiendo de su porcentaje de composición, de THC Y CBD, dichas variedades se podrán usar en un tratamiento o en otro. Más adelante explicaremos para qué enfermedades tiene un efecto positivo la marihuana medicinal y que variedad de semilla medicinal te conviene más dependiendo tus necesidades.</p>
                                           </div><div class="separador"></div>
                                        </div> </div>
@@ -1157,9 +1157,9 @@
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2" aria-expanded="true" style="">
                                          <div class="panel-body">
-                     <p>  En la industria farmacéutica, debería ser una prioridad el encontrar medicamentos sin apenas efectos adversos pero con muchas virtudes terapéuticas, y el CBD es uno de ellos. Además, por sí solo no posee ningún efecto psicoactivo o alucinógeno. Dicha característica lo convierten en el elemento cannabinoide más estudiado por científicos y médicos de todo el mundo, además de sus múltiples posibles usos. Por ejemplo, en el mundo de la medicina y de los medicamentos es muy habitual el uso de sustancias sedantes e inhibidoras del dolor, por lo tanto las variedades de cannabis medicinal con un porcentaje más alto en CBD serán las que más utilidad puedan tener en este campo. Aunque el efecto sedante es muy importante, el CBD tiene más efectos positivos que pueden ser usados en terapias y tratamientos contra algunas enfermedades. Por ejemplo, puede servir como relajante muscular, antidepresivo, control del estrés, propiedades anticonvulsivas y muchas más cualidades que iremos mencionando. En SLC tenemos en catálogo las semillas de marihuana medicinales con el porcentaje de CBD más alto del mercado.</p>
+                     <p>  En la industria farmacéutica, debería ser una prioridad el encontrar medicamentos sin apenas efectos adversos pero con muchas virtudes terapéuticas, y el CBD es uno de ellos. Además, por sí solo no posee ningún efecto psicoactivo o alucinógeno. Dicha característica lo convierten en el elemento cannabinoide más estudiado por científicos y médicos de todo el mundo, además de sus múltiples posibles usos. Por ejemplo, en el mundo de la medicina y de los medicamentos es muy habitual el uso de sustancias sedantes e inhibidoras del dolor, por lo tanto las variedades de cannabis medicinal con un porcentaje más alto en CBD serán las que más utilidad puedan tener en este campo. Aunque el efecto sedante es muy importante, este componente tiene más efectos positivos que pueden ser usados en terapias y tratamientos contra algunas enfermedades. Por ejemplo, puede servir como relajante muscular, antidepresivo, control del estrés, propiedades anticonvulsivas y muchas más cualidades que iremos mencionando. En SLC tenemos en catálogo las semillas de marihuana medicinales con el porcentaje más alto del mercado.</p>
 
-                                    <p>Pero aunque el CBD sea el componenete más estudiado y aceptado en el mundo de la medicina, no debemos olvidarnos de los beneficios médicos del THC en tratamientos y terapias médicas. Por ejemplo hay estudios que han sugerido un efecto de anticolinesterasal del THC, esta cualidad se podría asociar con tratamientos para el Alzheimer y para la miastenia gravis, una enfermedad neuromuscular que provoca cansancio y pérdida de fuerzas. Además el THC tiene propiedades antieméticas para reducir los vómitos y náuseas. Es indicado para aumentar el apetito, por lo tanto es efectivo en la lucha contra la anorexia y la falta de hambre provocada por multitud de enfermedades graves y sus tratamientos médicos. Además es capaz de reducir la agresividad presente en algunos individuos. Recuerda que a la hora de adquirir nuestras semillas de cannabis medicinal podrás observar en su ficha correspondiente el porcentaje de CBD y THC.</p></div><div class="separador">
+                                    <p>Aunque sea el componenete más estudiado y aceptado en el mundo de la medicina, no debemos olvidarnos de los beneficios médicos del THC en tratamientos y terapias médicas. Por ejemplo hay estudios que han sugerido un efecto de anticolinesterasal del THC, esta cualidad se podría asociar con tratamientos para el Alzheimer y para la miastenia gravis, una enfermedad neuromuscular que provoca cansancio y pérdida de fuerzas. Además el THC tiene propiedades antieméticas para reducir los vómitos y náuseas. Es indicado para aumentar el apetito, por lo tanto es efectivo en la lucha contra la anorexia y la falta de hambre provocada por multitud de enfermedades graves y sus tratamientos médicos. Además es capaz de reducir la agresividad presente en algunos individuos. Recuerda que a la hora de adquirir nuestras semillas de cannabis medicinal podrás observar en su ficha correspondiente las diferentes concentraciones.</p></div><div class="separador">
                                           </div>
                                        </div></div><br/>
 
@@ -1549,7 +1549,7 @@
                                    </a>
                                          
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/100-bho-y-extracciones'" value="VER CATÁLOGO EXTRACCIONES"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/100-extracciones-marihuana'" value="VER CATÁLOGO EXTRACCIONES"></div>
                                     <div id="collapseOne19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne18" aria-expanded="true" style="">
                                          <div class="panel-body">
                       <p>Aunque en nuestra tienda online ya disponemos de aceites CBD a la venta, también ofrecemos métodos de extracción de aceites y polen casero. Las extracciones de CBD o BHO son los procesos que se realizan para separar los compuestos de la marihuana de la materia vegetal y sustancias sobrantes. Hay muchos métodos de extracción, cada uno de ellos con sus inconvenientes y sus beneficios. Por ejemplo hay métodos más baratos y más caros o profesionales, diferentes métodos de extracción para distintos componentes del cannabis, CBD, BHO etc... , métodos que proporcionan un material más puro o de calidad que otros etc... En SLC ofrecemos todos los métodos de extracción que existen en el mercado. Desde extracciones con Dimetil Ether, un gas mucho más limpio y puro que el butano, hasta extracciones con Rosin, agua y hielo, extracciones en seco etc...</p>
@@ -1591,17 +1591,17 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/2053-prensa-12-toneladas.html" title="Prensa 12 Toneladas">
-                                          <img itemprop="image" src="https://www.semillaslowcost.com/2904-thickbox_default/prensa-12-toneladas.jpg" alt="Venta de Prensa 12 Toneladas" title="Comprar Prensa 12 Toneladas" class="img-responsive first-image">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/2054-prensa-6-toneladas.html" title="Prensa 6 Toneladas">
+                                          <img itemprop="image" src="https://www.semillaslowcost.com/2905-thickbox_default/prensa-6-toneladas.jpg" alt="Venta de Prensa 6 Toneladas" title="Comprar Prensa 12 Toneladas" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/2053-prensa-12-toneladas.html" title="Prensa 12 Toneladas">
-                                                Prensa 12 Toneladas</a>
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/extraccion-en-seco/2054-prensa-6-toneladas.html" title="Prensa 6 Toneladas">
+                                                Prensa 6 Toneladas</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
                                                 <span itemprop="price" class="price">
-                                                182,95€ </span>
+                                                160,95€ </span>
                                                 <meta itemprop="priceCurrency" content="EUR">
                                              </div>
                                           </div>
@@ -1697,15 +1697,15 @@
                                   <div class="panel-heading category-head" role="tab" id="headingOne8">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne9" aria-expanded="true" aria-controls="collapseOne9" class="link-collapse"  onclick="toggledisplayarrow(9);"><h4 class="panel-title">
-                                      ACEITES DE CBD, ALIMENTICIOS Y CUTÁNEOS  <i id="arrow-down9" class="fa fa-arrow-down" aria-hidden="true"></i>
+                                      PRODUCTOS CON CBD INCORPORADO <i id="arrow-down9" class="fa fa-arrow-down" aria-hidden="true"></i>
                                     <i id="arrow-up9" class="fa fa-arrow-up" aria-hidden="true" style="display:none;"></i></h4> </a>
                                           
                                    </div><!-- .panel-heading -->
-                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/251-cbd'" value="VER CATÁLOGO ACEITES CBD"></div>
+                                   <div class="button-category"><input class="main-color category-show" type="submit" onClick="window.location.href='https://www.semillaslowcost.com/273-cbd-shop'" value="VER CATÁLOGO PRODUCTOS CBD"></div>
                                     <div id="collapseOne9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne8" aria-expanded="true" style="">
                                          <div class="panel-body">
-                    <p> Recordemos que las semillas de marihuana medicinales son las que contienen un CBD alto, que es el principal compuesto usado en la medicina y en las terapias. La venta de productos con cbd es commpletamente legal ya que puede extraerse del cañamo industrial, que son plantas de cultivo legal en España y no son consideradas como una sustancia psicotrópica. Aunque el efecto del CBD sin mezclar con THC se queda muy reducido, estos extractos son muy demandados por los consumidores debido a su legalidad, facilidad de uso y a que son baratos o económicos. Estos aceites de CBD o cremas de CBD se pueden utilizar de forma tópica, es decir aplicada a la piel o mucosas, y para uso culinario o alimenticio, juntado con aceite de oliva se puede usar para cocinar cualquier tipo de alimento. </p>
-                                    <p>En SLC tenemos en catálogo 3 tipos de aceite de CBD de las mejores marcas. En nuestra <a href="https://www.semillaslowcost.com/251-cbd">categoría de CBD</a> podrás encontrar aceite del banco Sensi Seeds, Plant of life y el Aceite de Endoca. Todos estos productos los podrás comprar en diversos formatos.</p>
+                    <p> Recordemos que las semillas de marihuana medicinales son las que contienen un CBD alto, que es el principal compuesto usado en la medicina y en las terapias. La <a href="https://www.semillaslowcost.com/273-cbd-shop">venta de productos con cbd</a> es completamente legal ya que puede extraerse del <a href="https://www.semillaslowcost.com/279-canamo-industrial">cañamo industrial</a>, que son plantas de cultivo legal en España y no son consideradas como una sustancia psicotrópica. Aunque el efecto del CBD sin mezclar con THC se queda muy reducido, estos extractos son muy demandados por los consumidores debido a su legalidad, facilidad de uso y a que son baratos o económicos. Estos <a href="https://www.semillaslowcost.com/278-aceites-cbd">aceites de CBD</a> o <a href="https://www.semillaslowcost.com/277-cosmeticos">cremas de CBD</a> se pueden utilizar de forma tópica, es decir aplicada a la piel o mucosas, y para uso culinario o alimenticio, juntado con aceite de oliva se puede usar para cocinar cualquier tipo de alimento. </p>
+                                    <p> En nuestra <a href="https://www.semillaslowcost.com/273-cbd-shop">categoría de productos CBD</a> podrás encontrar aceite del banco Sensi Seeds, Plant of life y el Aceite de Endoca etc... Todos estos productos los podrás comprar en diversos formatos al mejor precio.</p>
                                           </div>
                                        </div></div>
                                         <br/>
@@ -1723,12 +1723,12 @@
                                     <div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2076-aceite-cbd-sensi.html" title="Aceite de CBD Sensi Seeds">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/aceites-cbd/2076-aceite-cbd-sensi.html" title="Aceite de CBD Sensi Seeds">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2959-thickbox_default/aceite-cbd-sensi.jpg" alt="Comprar Aceite de CBD Sensi Seeds"  title="Comprar Aceite de CBD Sensi Seeds" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2076-aceite-cbd-sensi.html" title="Aceite de CBD Sensi Seeds">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/aceites-cbd/2076-aceite-cbd-sensi.html" title="Aceite de CBD Sensi Seeds">
                                                Aceite CBD Sensi Seeds</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
@@ -1742,12 +1742,12 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2078-aceite-cbd.html" title="Aceite CBD Plant of Life">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/aceites-cbd/2078-aceite-cbd-plant-of-life.html" title="Aceite CBD Plant of Life">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2960-thickbox_default/aceite-cbd.jpg" alt="Comprar Aceite CBD Plant of Life"  title="Comprar Aceite CBD Plant of Life" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2078-aceite-cbd.html" title="Aceite CBD Plant of Life">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/aceites-cbd/2078-aceite-cbd-plant-of-life.html" title="Aceite CBD Plant of Life">
                                                 Aceite CBD Plant of Life</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
@@ -1761,12 +1761,12 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2079-aceite-cbd-endoca-hemp-oil.html" title="Aceite CBD Endoca Hemp">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/aceites-cbd/2079-aceite-cbd-endoca-hemp-oil.html" title="Aceite CBD Endoca Hemp">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2961-thickbox_default/aceite-cbd-endoca-hemp-oil.jpg" alt="Comprar Aceite CBD Endoca Hemp" title="Comprar Aceite CBD Endoca Hemp" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h3 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/cbd/2079-aceite-cbd-endoca-hemp-oil.html" title="Aceite CBD Endoca Hemp">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/aceites-cbd/2079-aceite-cbd-endoca-hemp-oil.html" title="Aceite CBD Endoca Hemp">
                                                 Aceite CBD Endoca Hemp</a>
                                              </h3>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
@@ -1794,7 +1794,7 @@
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne20" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne19" aria-expanded="true" style="">
                                          <div class="panel-body">
-                                    <p>Semillas Low Cost está a favor del uso terapéutico de la marihuana y del CBD, pero ante todo, no somos médicos y recomendamos acudir a los especialistas y profesionales de sanidad si padeces algún problema de salud o ante cualquier duda sobre el uso del cannabis o la marihuana medicinal para cualquier tratamiento o enfermedad. En ningún caso recomendamos ignorar los consejos y tratamientos que te haya recetado el médico especialista. Si que te animamos a que le propongas la marihuana y sus cannabinoides (THC, CBD) como paliativo a tus enfermedades y que el te aconseje sobre si te conviene o no dependiendo la enfermedad a tratar. Además existen multitud de asociaciones a favor de la marijuana medicinal y el CBD por lo que te recomendamos que hables con ellas ante cualquier duda.</p>
+                                    <p>Semillas Low Cost está a favor del uso terapéutico de la marihuana pero ante todo, no somos médicos y recomendamos acudir a los especialistas y profesionales de sanidad si padeces algún problema de salud o ante cualquier duda sobre el uso del cannabis o la marihuana medicinal para cualquier tratamiento o enfermedad. En ningún caso recomendamos ignorar los consejos y tratamientos que te haya recetado el médico especialista. Si que te animamos a que le propongas la marihuana y sus cannabinoides como paliativo a tus enfermedades y que el te aconseje sobre si te conviene o no dependiendo la enfermedad a tratar. Además existen multitud de asociaciones a favor de la marijuana medicinal por lo que te recomendamos que hables con ellas ante cualquier duda.</p>
                                     <p>El uso que cada cliente o lector de la web haga con los productos y las semillas de marihuana que ofertamos es exclusivamente responsabilidad suya. SLC no se hace responsable de las consecuencias legales. Por lo tanto recomendamos que consultes la legislación en tu región en cuanto a la marihuana terapéutica, la germinación de semillas de marihuana y usos.</p>
                                           </div><div class="separador"></div>
                                        </div> </div>
@@ -1817,9 +1817,9 @@
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne3" aria-expanded="true" style="">
                                          <div class="panel-body">
-                                    <p>Lo primero que debemos indicar desde SLC es que en España la venta de marihuana está completamente prohibido, tanto si su destino es el medicinal o el recreativo. Así se ordena en el Código Penal, artículo 368. Ahora bien, el cultivo y consumo de marihuana si que está permitido, o mejor dicho está en un estado de alegalidad siempre y cuando sea en un ámbito privado y personal. Es decir, no se puede consumir marihuana en lugares públicos, aunque sea marihuana medicinal o de uso médico, ni cultivar o germinar semillas de cannabis con la intención de sacarse un beneficio económico de ella. Recuerda que los productos con CBD si que són completamente legales.</p>
+                                    <p>Lo primero que debemos indicar desde SLC es que en España la venta de marihuana está completamente prohibido, tanto si su destino es el medicinal o el recreativo. Así se ordena en el Código Penal, artículo 368. Ahora bien, el cultivo y consumo de marihuana si que está permitido, o mejor dicho está en un estado de alegalidad siempre y cuando sea en un ámbito privado y personal. Es decir, no se puede consumir marihuana en lugares públicos, aunque sea marihuana medicinal o de uso médico, ni cultivar o germinar semillas de cannabis con la intención de sacarse un beneficio económico de ella. </p>
                                     <p> Por lo tanto, los cultivos de marihuana para el autoconsumo no están penados por ley pero tampoco permitidos, situación de alegalidad, pero hay que tener en cuneta que en caso de no poder demostrar que es para consumo personal, la pena de prisión por tráfico de marihuana en España puede oscilar entre uno y tres años.</p>
-                                    <p>La venta y compra en España de semillas de marihuana medicinal, métodos de extracción y aceites de CBD es completamente legal en nuestro país. Es por ello que desde nuestra tienda podrás comprar todos estos productos de forma completamente legal.</p>
+                                    <p>La venta y compra en España de semillas de marihuana medicinal, métodos de extracción y <a href="https://www.semillaslowcost.com/279-canamo-industrial">productos cannábicos o de cáñamo</a> son completamente legales en nuestro país.</p>
       
                                           </div><div class="separador">
                                           </div>
@@ -1838,7 +1838,7 @@
                                    </div><!-- .panel-heading -->
                                     <div id="collapseOne21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne20" aria-expanded="true" style="">
                                          <div class="panel-body">
-                                   <p>Semillas Low Cost ofrece a sus clientes semillas de marihuana medicinal de la mejor calidad, de genética garantizada y con garantía de germinación. Almacenamos las semillas de cannabis en nuestras instalaciones especializadas, en donde conservan la temperatura ideal y frescura necesaria para que siempre estén vivas y preparadas para nacer, al igual que nuestros productos de CBD almacenados de manera óptima para que los recibas en perfectas condiciones. Además en SLC disponemos de uno de los catálogos de semillas más grande de todo internet. Disponemos de genéticas medicinales de casi todos los bancos del planeta al igual que sus legendarias y premiadas variedades.</p>
+                                   <p>Semillas Low Cost ofrece a sus clientes semillas de marihuana medicinal de la mejor calidad, de genética garantizada y con garantía de germinación. Almacenamos las semillas de cannabis en nuestras instalaciones especializadas, en donde conservan la temperatura ideal y frescura necesaria para que siempre estén vivas y preparadas para nacer. Además en SLC disponemos de uno de los catálogos de semillas más grande de todo internet. Disponemos de genéticas medicinales de casi todos los bancos del planeta al igual que sus legendarias y premiadas variedades.</p>
                           
                                           </div><div class="separador"></div>
                                        </div> </div>
@@ -2043,19 +2043,19 @@
                   <li> <a href="https://www.semillaslowcost.com/218-vaporizadores" title="Vaporizadores"> Vaporizadores </a></li>
                   <li> <a href="https://www.semillaslowcost.com/222-grinders" title="Grinders"> Grinders </a></li>
                   <li> <a href="https://www.semillaslowcost.com/225-mecheros" title="Mecheros"> Mecheros </a></li>
-                  <li> <a href="https://www.semillaslowcost.com/226-borosilicato-silicona" title="Borosilicato - Silicona"> Borosilicato - Silicona </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/227-articulos-fumador" title="Articulos fumador"> Articulos fumador </a></li>
+                  <li> <a href="https://www.semillaslowcost.com/288-pipas-bongs-y-cachimbas" title="Pipas, Bongs y Cachimbas"> Pipas, Bongs y Cachimba </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/291-otros-articulos" title="Articulos fumador"> Otros Artículos </a></li>
                </ul>
             </li>
             <li>
-               <span class="grower CLOSE" onclick="toggleMenu('menu-100')"> </span><a href="https://www.semillaslowcost.com/100-bho-y-extracciones" title="BHO Y EXTRACCIONES"> BHO Y EXTRACCIONES </a>
+               <span class="grower CLOSE" onclick="toggleMenu('menu-100')"> </span><a href="https://www.semillaslowcost.com/100-extracciones-marihuana" title="EXTRACCIONES"> BHO Y EXTRACCIONES </a>
                <ul id="menu-100" style="display: none;">
                   <li> <a href="https://www.semillaslowcost.com/243-extraccion-dimetil-ether" title="Extraccion Dimetil Ether"> Extraccion Dimetil Ether </a></li>
                   <li> <a href="https://www.semillaslowcost.com/244-extraccion-en-seco" title="Extraccion en seco"> Extraccion en seco </a></li>
                   <li> <a href="https://www.semillaslowcost.com/245-rosin" title="Rosin"> Rosin </a></li>
                   <li> <a href="https://www.semillaslowcost.com/248-extraccion-con-agua-y-hielo" title="Extraccion con agua y hielo"> Extraccion con agua y hielo </a></li>
                   <li> <a href="https://www.semillaslowcost.com/249-bho" title="BHO"> BHO </a></li>
-                  <li class="last"> <a href="https://www.semillaslowcost.com/251-cbd" title="CBD"> CBD </a></li>
+                  <li class="last"> <a href="https://www.semillaslowcost.com/273-cbd-shop" title="Productos CBD">Productos CBD </a></li>
                </ul>
             </li>
             <li>
