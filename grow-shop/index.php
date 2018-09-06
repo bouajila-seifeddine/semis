@@ -23,7 +23,17 @@
                   <link rel="stylesheet" href="v_315_d9b4d79373d0fbd4a064e37dd59f3597_all.css" type="text/css" media="all" />
                   <link rel="stylesheet" href="css/font-awesome.min.css">
                   <link rel="canonical" href="https://www.semillaslowcost.com/grow-shop/">
-                  <script type="text/javascript">function toggleHidden(sel){elem=document.querySelector(sel)elem.hidden=elem.hidden?false:true;}function toggleMenu(sel){elem=document.getElementById(sel);if(elem.style.display=='none'){elem.style.display='block';return;}if(elem.style.display=='block'){elem.style.display='none';}}</script> 
+                  <script type="text/javascript">
+                     function toggleIndex(){
+
+if ($('.toc_list').is(":hidden")) {
+    $('.toc_list').show();
+    $('.togglelink').html('Ocultar');
+} else {
+    $('.toc_list').hide();
+    $('.togglelink').html('Mostrar');
+}
+}</script> 
                   <style type="text/css"></style>
                </head>
                <body id="index" class="index hide-right-column lang_es cssAnimate">
@@ -161,12 +171,36 @@
                                           </div><div class="separador"></div>
                                        </div> </div>
 
-                                
-                               
-                              
                                  <br/>
+                                 <div id="toc_container" class="have_bullets">
+                            <span class="toctoggle">ÍNDICE &nbsp;[<a role="button" tabindex="0" class="togglelink"  onclick="toggleIndex()" href="javascript:void(0);">Ocultar</a>]&nbsp;</span>
+                           <ul class="toc_list">
+                                       <li class="toclevel-1 col-sm-4"><span class="tocnumber">1. </span><a href="#Sobre-nuestras-semillas">Tenemos todos los productos</a></li>
+                                       <li class="toclevel-1 col-sm-4"><span class="tocnumber">2. </span><a href="#Por-que-elegirnos">¿Por qué elegir nuestro Grow?</a></li>
+                                       <li class="toclevel-1 col-sm-4"><span class="tocnumber">3. </span><a href="#Productos-grow">Productos de nuestro grow</a></li>
+                                       <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.1 </span><a href="#Semillas">Semillas</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.2 </span><a href="#Armarios-cultivo">Armarios de Cultivo</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.3 </span><a href="#Iluminacion">Iluminación</a></li>
+                                       <li class="toclevel-2 col-sm-4" ><span class="tocnumber">3.4 </span><a href="#Control-clima">Control del clima</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.5 </span><a href="#Fertilizantes">Fertilizantes y preventivos</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.6 </span><a href="#Extracciones">Extracciones</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.7 </span><a href="#Riego-hidroponia">Riego e Hidroponía</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.8 </span><a href="#Kits-completos">Kits Completos</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.9 </span><a href="#Instrumentos-medida">Instrumentos de Medida</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.10 </span><a href="#Parafernalia-fumadores">Accesorios y Parafernalia</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.11 </span><a href="#Macetas-bandejas">Macetas y Bandejas</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.12 </span><a href="#Lucha-biologica">Lucha Biológica</a></li>
+                                        <li class="toclevel-2 col-sm-4"><span class="tocnumber">3.13 </span><a href="#Eliminar-olores">Tratamiento de Olores</a></li>
+                                        <li class="toclevel-1 col-sm-4"><span class="tocnumber">4. </span><a href="#Quienes-donde">¿Quiénes Somos y Dónde?</a></li>
+                                        <li class="toclevel-1 col-sm-4"><span class="tocnumber">5. </span><a href="#Mas-sobre-nuestra-tienda">Sobre nuestra Tienda Online</a></li>
+                                        <li class="toclevel-1 col-sm-4"><span class="tocnumber">6. </span><a href="#Los-mas-baratos">Somos los Más Baratos</a></li>
+                                        <li class="toclevel-1 col-sm-4"><span class="tocnumber">7. </span><a href="#Envios">Envíos a todo el Mundo</a></li>
+                                    </ul>
+                                 </div>
+                                 <div class="clearfix borderino"></div>
+
                                     
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Sobre-nuestras-semillas">
                                     <div class="panel-heading" role="tab" id="headingOne2">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3" class="link-collapse">
@@ -187,7 +221,7 @@
                               
                                  <br>
                                  
-                                   <div class="panel panel-default">
+                                   <div class="panel panel-default" id="Por-que-elegirnos">
                                     <div class="panel-heading" role="tab" id="headingOne3">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4" class="link-collapse">
@@ -204,7 +238,7 @@
                                           </div><div class="separador">
                                           </div>
                                        </div></div> <br/>
- <div class="panel panel-default">
+ <div class="panel panel-default" id="Productos-grow">
     <div class="panel-heading" role="tab" id="headingOne4">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5" class="link-collapse">
@@ -220,7 +254,7 @@
                                           </div>
                                        </div></div>
                                         <br/>
-                                        <div class="panel panel-default">
+                             <div class="panel panel-default" id="Semillas">
                                   <div class="panel-heading category-head" role="tab" id="headingOne5">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6" class="link-collapse"><h3 class="panel-title">
@@ -308,7 +342,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                   <div class="grow-category-block panel-group dark col-md-12 col-xs-12" role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Armarios-cultivo">
                                   <div class="panel-heading category-head" role="tab" id="headingOne6">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne7" aria-expanded="true" aria-controls="collapseOne7" class="link-collapse"><h3 class="panel-title">
@@ -397,7 +431,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                       <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Iluminacion">
                                   <div class="panel-heading category-head" role="tab" id="headingOne7">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne8" aria-expanded="true" aria-controls="collapseOne8" class="link-collapse"><h3 class="panel-title">
@@ -487,7 +521,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                         <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Control-clima">
                                   <div class="panel-heading category-head" role="tab" id="headingOne8">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne9" aria-expanded="true" aria-controls="collapseOne9" class="link-collapse"><h3 class="panel-title">
@@ -575,7 +609,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                           <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Fertilizantes">
                                   <div class="panel-heading category-head" role="tab" id="headingOne10">
                                        
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne10" aria-expanded="true" aria-controls="collapseOne10" class="link-collapse">
@@ -666,7 +700,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                                     <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Extracciones">
                                   <div class="panel-heading category-head" role="tab" id="headingOne99">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11" class="link-collapse"><h3 class="panel-title">
@@ -755,7 +789,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                       <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Riego-hidroponia">
                                   <div class="panel-heading category-head" role="tab" id="headingOne11">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne12" aria-expanded="true" aria-controls="collapseOne12" class="link-collapse"><h3 class="panel-title">
@@ -843,7 +877,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Kits-completos">
                                   <div class="panel-heading category-head" role="tab" id="headingOne12">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne13" aria-expanded="true" aria-controls="collapseOne13" class="link-collapse"> <h3 class="panel-title">
@@ -931,7 +965,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                            <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Instrumentos-medida"> 
                                   <div class="panel-heading category-head" role="tab" id="headingOne13">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne14" aria-expanded="true" aria-controls="collapseOne14" class="link-collapse">
@@ -1021,7 +1055,7 @@
                                  <br/>
 
                                              <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Parafernalia-fumadores">
                                   <div class="panel-heading category-head" role="tab" id="headingOne14">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne15" aria-expanded="true" aria-controls="collapseOne15" class="link-collapse">
@@ -1113,7 +1147,7 @@
                                  <br/>
 
                                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Macetas-bandejas">
                                   <div class="panel-heading category-head" role="tab" id="headingOne15">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne16" aria-expanded="true" aria-controls="collapseOne16" class="link-collapse">
@@ -1204,7 +1238,7 @@
 
 
                                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Lucha-biologica">
                                   <div class="panel-heading category-head" role="tab" id="headingOne16">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne17" aria-expanded="true" aria-controls="collapseOne17" class="link-collapse">
@@ -1296,7 +1330,7 @@
 
 
                                                      <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Eliminar-olores">
                                   <div class="panel-heading category-head" role="tab" id="headingOne17">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne18" aria-expanded="true" aria-controls="collapseOne18" class="link-collapse"><h3 class="panel-title">
@@ -1365,12 +1399,12 @@
                                     <div   class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
                                        <div class="inner second-image imgsec">
                                           <div class="img_hover"></div>
-                                          <a itemprop="url" href="https://www.semillaslowcost.com/ambientadores/1332-ambientador-ona-block-fl-170-g.html" title="Ambientador ONA Block FL 170 g">
+                                          <a itemprop="url" href="https://www.semillaslowcost.com/ambientadores/1332-ambientador-ona-block-fresh-linen.html" title="Ambientador ONA Block FL 170 g">
                                           <img itemprop="image" src="https://www.semillaslowcost.com/2183-thickbox_defaultl/ambientador-ona-block-fl-170-g.jpg" alt="Comprar Ambientador ONA Block FL 170 g"  title="Comprar Ambientador ONA Block FL 170 g" class="img-responsive first-image">
                                           </a>
                                           <div class="info">
                                              <h4 itemprop="name">
-                                                <a itemprop="url" href="https://www.semillaslowcost.com/ambientadores/1332-ambientador-ona-block-fl-170-g.html" title="Ambientador ONA Block FL 170 g">
+                                                <a itemprop="url" href="https://www.semillaslowcost.com/ambientadores/1332-ambientador-ona-block-fresh-linen.html" title="Ambientador ONA Block FL 170 g">
                                                 Ambientador ONA Block FL</a>
                                              </h4>
                                              <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
@@ -1385,7 +1419,7 @@
                                  <!-- Fin row imagenes -->
                                  <br/>
                                    <div class="grow-category-block panel-group dark col-md-12 col-xs-12"  role="tablist">
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Quienes-donde">
                                     <div class="panel-heading" role="tab" id="headingOne19">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne20" aria-expanded="true" aria-controls="collapseOne20" class="link-collapse">
@@ -1405,7 +1439,7 @@
                               
                                  <br/>
 
-                                 <div class="panel panel-default">
+                                 <div class="panel panel-default" id="Mas-sobre-nuestra-tienda">
                                     <div class="panel-heading" role="tab" id="headingOne20">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne21" aria-expanded="true" aria-controls="collapseOne21" class="link-collapse">
@@ -1425,7 +1459,7 @@
                               
                                  <br/>
 
-                                  <div class="panel panel-default">
+                                  <div class="panel panel-default" id="Los-mas-baratos">
                                     <div class="panel-heading" role="tab" id="headingOne21">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne22" aria-expanded="true" aria-controls="collapseOne22" class="link-collapse">
@@ -1444,7 +1478,7 @@
                               
                                  <br/>
 
-                                  <div class="panel panel-default">
+                                  <div class="panel panel-default" id="Envios">
                                     <div class="panel-heading" role="tab" id="headingOne22">
                                          
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne23" aria-expanded="true" aria-controls="collapseOne23" class="link-collapse">
