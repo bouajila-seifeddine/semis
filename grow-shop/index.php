@@ -1653,7 +1653,7 @@ if ($('.toc_list').is(":hidden")) {
                                     <div class="toggle-footer">
                                        <div class="item">
                                           <i class="pull-left icon icon-map-marker"> </i>
-                                          <p> <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> <span itemprop="streetAddress"> Cami del Bovalar 29, Alacuás, España</span> </span></p>
+                                          <p> <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> <span itemprop="streetAddress"> Cami del Bovalar 29, Alacuás, Valencia, España</span> </span></p>
                                        </div>
                                        <div class="item even">
                                           <i class="pull-left icon icon-phone"> </i>
