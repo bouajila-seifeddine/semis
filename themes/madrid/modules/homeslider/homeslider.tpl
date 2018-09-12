@@ -31,9 +31,9 @@
 	{foreach from=$homeslider_slides item=slide}
 		{if $slide.active}
 		<li>
-			
+			<a href="{$slide.url|escape:'html':'UTF-8'}" title="{$slide.legend|escape:'html':'UTF-8'}">
 				<img class="img-responsive" src="{$link->getMediaLink("`$smarty.const._MODULE_DIR_`homeslider/images/`$slide.image|escape:'htmlall':'UTF-8'`")}" alt="{$slide.legend|escape:'htmlall':'UTF-8'}" />
-			
+			</a>
 			{if isset($slide.description) && trim($slide.description) != ''}
 				<div class="homeslider-description text hidden-xs row">{$slide.description}</div>
 			{/if}
@@ -41,6 +41,8 @@
 		{/if}
 	{/foreach}
 	</ul>
+	<a href="#" class="unslider-arrow prev arrow-ph arrow-prev" title="{l s='Previous slide' mod='homeslider'}"><i class="icon icon-angle-left"></i></a>
+	<a href="#" class="unslider-arrow next arrow-ph arrow-next" title="{l s='Next slide' mod='homeslider'}"><i class="icon icon-angle-right"></i></a>
 </div>
 {/if}
 <!-- /Module HomeSlider -->
