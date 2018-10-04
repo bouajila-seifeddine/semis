@@ -212,3 +212,17 @@
   position: relative;
   z-index: 1;
 }
+
+@media (min-width: 1410px) {
+.owl-item {
+    max-width: 265px;
+    min-width: 265px;
+}
+}
+
+@media (min-width: 1222px) and  (max-width: 1410px) {
+.owl-item {
+    max-width: 222px;
+    min-width: 222px;
+}
+}

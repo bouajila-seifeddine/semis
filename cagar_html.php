@@ -15,7 +15,7 @@ if(isset($_GET['offset']) && isset($_GET['limit'])){
 
 
 		//array con id de catagerias que buscamos
-		$arrayCategorias = array(19, 31, 44,93, 94, 95, 96 , 97,98,100,104,107);
+		$arrayCategorias = array(19, 31, 42, 93, 94, 95, 96 , 97,98,100,104,107);
 
 		//Obtenemos las variables enviadas desde el ajax
 		$limit=$_GET['limit'];
@@ -44,7 +44,7 @@ if(isset($_GET['offset']) && isset($_GET['limit'])){
 								LEFT JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category`) 
 								LEFT JOIN `ps_image_shop` i ON (i.`id_product` = p.`id_product`) 
 								LEFT JOIN `ps_product_attribute` pa ON (pa.`id_product` = p.`id_product`) 
-								WHERE c.`id_category` =  ".$arrayCategorias[$offset]." AND p.`active` = 1 AND pl.`id_lang` = 1  AND pa.`default_on` = 1 GROUP BY p.`id_product` LIMIT 6");
+								WHERE c.`id_category` =  ".$arrayCategorias[$offset]." AND p.`active` = 1 AND pl.`id_lang` = 1  AND pa.`default_on` = 1 GROUP BY p.`id_product` ORDER BY RAND() LIMIT 4");
 					
                
 
@@ -58,7 +58,13 @@ if(isset($_GET['offset']) && isset($_GET['limit'])){
 
 					if($producto['id_category'] == 19){$nombreCategoria= "Semillas feminizadas";}
 
-					elseif($producto['id_category'] == 44){$nombreCategoria= "Semillas regulares";}
+					elseif($producto['id_category'] == 42){
+							$nombreCategoria= "Semillas regulares";
+							if($producto['price'] != 0){$precio=$producto['price'];}
+							else{$precio=$producto['price_attribute'];}
+
+					}
+				
 					elseif($producto['id_category'] == 31){$nombreCategoria= "Semillas autoflorecientes";}
 					else{ $nombreCategoria= $producto['category_name'];}
 
@@ -68,7 +74,7 @@ if(isset($_GET['offset']) && isset($_GET['limit'])){
 
 
 					//Creamos todos los elementos html de las 3 imágenes
-					$imagenesHtml = $imagenesHtml.'<div class=" col-md-4 col-sm-4 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+					$imagenesHtml = $imagenesHtml.'<div class=" col-md-3 col-sm-6 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
 						                                       <div class="inner second-image">
 						                                          <div class="img_hover"></div>
 						                                          <a itemprop="url" href="index.php?id_product='.$producto['id_product'].'&controller=product" title="'.$producto['name'].'">
@@ -93,7 +99,7 @@ if(isset($_GET['offset']) && isset($_GET['limit'])){
 
 								
 								echo  '<div class="popular_products carousel-style animated activate fadeInRight" data-fx="fadeInRight">
-													<div class="heading_block margin-bottom"><a href="https://www.semillaslowcost.com/'.$idCategoria.'-'.$linkCategoria.'" title="Comprar "><h4 class="pull-left"> <img class="icon icon-money main-color" width="38px" height="38px" style="padding:3%;" src="https://www.semillaslowcost.com/img/hojaico.png"> <strong>'.$nombreCategoria.'</strong></h4></div>
+													<div class="heading_block margin-bottom"><a href="https://www.semillaslowcost.com/'.$idCategoria.'-'.$linkCategoria.'" title="Comprar "><h2 class="pull-left"> <img class="icon icon-money main-color" width="38px" height="38px" style="padding:3%;" src="https://www.semillaslowcost.com/img/hojaico.png"> <strong>'.$nombreCategoria.'</strong></h2></div>
 														<div class="product_list_ph clearBoth owl-carousel-ph items-3 owl-carousel owl-theme owl-loaded" data-max-items="3">
 															<div class="row"	
 															<div class="product_list_ph clearBoth owl-carousel-ph items-3 owl-carousel owl-theme owl-loaded" data-max-items="3">	 	<div class="owl-stage-outer">	

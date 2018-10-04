@@ -880,7 +880,7 @@ header.top .logo img {
 .shopping_cart a.cart-contents>i {
     font-size: 36px;
     width: 20%;
-    height: 55px;
+    height: 54px;
     text-align: center;
     line-height: 55px;
     margin: 2px 0 0;
@@ -3477,7 +3477,10 @@ div#eKomiWidget_default img {
 @media (max-width: 781px) {
     .left-blockblog {width: 40%; margin-left: 30%;}
     .right-blockblog {width: 100%;}
-    
+}
+
+@media (min-width: 781px) {
+    .mobile-clear{display: none;}
 }
 
 .product-container-blog {
@@ -3489,3 +3492,61 @@ a.product-name-blog, .product-price-blog {
     color:black;
 }
 .panel-title {text-transform:   uppercase; }
+
+.about-p-footer {   
+    font-size: 16px;
+        line-height: 25px;
+    padding: 0 0 0 10px;
+    color: #8f97ac;}
+
+span.precio_bueno {
+    font-weight: bold;
+}
+.col-sm-6.col-md-4.index-post {
+    height: 200px;
+    background-size: cover;
+    border: 7px solid #fff;
+    color: white;
+}
+
+.col-sm-6.col-md-4.index-post h3 {
+color: white;
+    background-color: #7bbd42;
+    padding: 1%;
+    white-space: nowrap;
+    padding: 1% 1% 1% 3%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div#posts {
+    padding-top: 4%;
+}
+
+.clear-separa{
+    padding-bottom: 5%;
+}
+
+
+.lista-bancos-index {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    padding-left: 4%;
+}
+
+#resultados strong {
+    padding-left: 0%;
+    text-transform: capitalize;
+    margin-left: 2%;
+    font-size: 18px;
+    font-family: 'Roboto Slab',sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.index-desc p {text-align: justify;  font-size: 115%; padding: 1%;}
+
+.img-semillas-index {width: 100%;}
+
+

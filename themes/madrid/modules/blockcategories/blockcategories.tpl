@@ -46,7 +46,7 @@
 					{include file="$branche_tpl_path" node=$child}
 				{/if}
 			{/foreach}
-			<li> <a href="https://www.semillaslowcost.com/semillas-marihuana-medicinales/" title="SEMILLAS MARIHUANA MEDICINAL">CANNABIS MEDICINAL </a></li>
+			<li> <a href="https://www.semillaslowcost.com" title="COMPRAR SEMILLAS DE MARIHUANA">SEMILLAS DE MARIHUANA </a></li>
 		</ul>
 	</div>
 </div>

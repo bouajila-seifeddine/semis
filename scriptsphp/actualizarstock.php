@@ -57,7 +57,7 @@ echo "<table style='width:40%'>";
  				}
 
  				else {
- 					if (preg_match("/art. compuesto <br> &nbsp;Consultar disponibilidad/i", $cantString)){
+ 					if (preg_match("/art. compuesto- <br> &nbsp;Consultar disponibilidad/i", $cantString)){
  						$cant=1;
  					}
  					else{
@@ -91,8 +91,8 @@ echo "<table style='width:40%'>";
     			while($row = $result->fetch_assoc()) {
     	   			 
     	   			 $productoId=$row["id_product_attribute"];
-    	   			 		$sql = "UPDATE ps_stock_available SET  quantity=$cant where id_product_attribute=$productoId";
-    	   			 		echo "Producto con referencia 'slc".$ref."' cambiado correctamente a ".$cant." unidades. <br/>";
+    	   			 		$sql = "UPDATE ps_stock_available SET  quantity=$cant WHERE id_product_attribute=$productoId";
+    	   			 		//echo "Producto con referencia 'slc".$ref."' cambiado correctamente a ".$cant." unidades. <br/>";
 							if ($conn->query($sql) === TRUE) {
 							     //echo "   -->  Stock cambiado correctamente</br>";
 							} else {
@@ -112,12 +112,12 @@ echo "<table style='width:40%'>";
     				while($row = $result->fetch_assoc()) {
     	   			 	$productoId=$row["id_product"];
     	   			 			$sql = "UPDATE ps_stock_available SET  quantity=$cant where id_product=$productoId";
-								echo "Producto con referencia 'slc".$ref."' cambiado correctamente a ".$cant." unidades. <br/>";
+								//echo "Producto con referencia 'slc".$ref."' cambiado correctamente a ".$cant." unidades. <br/>";
 
 								if ($conn->query($sql) === TRUE) {
-								    //echo "   -->  Stock cambiado correctamente</br>";
+								    echo "   -->  Stock cambiado correctamente</br>";
 								} else {
-								    echo "Error updating record: " . $conn->error."</br>";
+								    echo "Error updating record: " . $conn->error."</br>".$sql;
 								}
 									//$consulta = "UPDATE ps_stock_available SET  quanitty=$cant where id_product_attribute=$productoId ";
     	   			 	break;

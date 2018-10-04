@@ -30,20 +30,14 @@
 <html lang="{$language_code|escape:'html':'UTF-8'}">
 	<head>
 		<meta charset="utf-8" />
-<script  data-keepinline="true">
-{literal}
 
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-TJX7JLJ');
+{if $page_name == "index"}
+		<title>Venta de Semillas de Marihuana - Comprar en Semillas Low Cost</title>
 
-		{/literal}	
-</script>
-
-
+{else}
 		<title>{$meta_title|escape:'html':'UTF-8'}</title>
+{/if}
+
 {if isset($meta_description) AND $meta_description}
 		<meta name="description" content="{$meta_description|escape:'html':'UTF-8'}" />
 {/if}
@@ -358,18 +352,48 @@ form#searchbox {
 		</style>
 
 
+{if $page_name =='index'}
+
+
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Semillas Low Cost",
+		"url": "https://www.semillaslowcost.com/",
+		"logo": "https://www.semillaslowcost.com/img/semillaslowcost-logo-1515411406.jpg",
+		"telephone": [
+				"960992794",
+				"+34653323445 "
+		],
+	
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+34653323445",
+				"contactType": "customer service"
+				
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/SemillasLowCost/",
+			"https://www.instagram.com/semillaslowcost/",
+			"https://twitter.com/SemillasLowCost"
+		]
+	}
+</script>
+{/if}
 
 
 
+{$dir=$smarty.server.REQUEST_URI}
 
-
-{if isset($css_files)}
+{if isset($css_files)  && strpos($dir,'blog')==false}
 	{foreach from=$css_files key=css_uri item=media}
 		<link rel="stylesheet" href="{$css_uri|escape:'html':'UTF-8'}" type="text/css" media="{$media|escape:'html':'UTF-8'}" />
 	{/foreach}
 {/if}
 
-{$dir=$smarty.server.REQUEST_URI}
 
 
 		{if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def) && strpos($dir,'blog')==false}
@@ -378,7 +402,7 @@ form#searchbox {
 			<script src="{$js_uri|escape:'html':'UTF-8'}"></script>
 			{/foreach}
 		{/if}
-		{if $page_name != 'manufacturer' && $page_name != 'supplier'}
+		{if $page_name != 'manufacturer' && $page_name != 'supplier' && strpos($dir,'blog')==false}
     		{$HOOK_HEADER}
 		{/if}
 		
@@ -426,10 +450,7 @@ form#searchbox {
 		{if $page_name =='index'}
 			{hook h="displayPrestaHomeSlider"}
 		{/if}
-			<!-- Google Tag Manager (noscript) -->
-				<noscript>
-				<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJX7JLJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-				<!-- End Google Tag Manager (noscript) -->
+		
 		<div class="boxed-wrapper">
 			{if $smarty.get.controller == "index"}
 
@@ -470,6 +491,8 @@ form#searchbox {
 						<a href="{if $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" class="logo" title="{l s='back to the homepage'}"><img src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}" class="img-responsive logotipo-header" /></a>
 					</div>
 				</div>
+					<div class="mobile-clear clearfix"></div>
+
 				{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 			</div><!-- .container -->
 		</header>

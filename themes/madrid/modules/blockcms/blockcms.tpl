@@ -70,6 +70,13 @@
 {else}
 	<!-- MODULE Block footer -->
 	<div class="block_footer col-md-3 col-sm-6 col-xs-12">
+		<h4>SOBRE NOSOTROS</h4>
+		<div class="toggle-footer">
+			<p class="about-p-footer">Somos un grow internacional donde podrás comprar barato y online todo tipo de productos dedicados al cultivo de cannabis y su consumo. Descubre nuestras increíbles ofertas en los más de 3000 productos que tenemos. Bienvenidos a Semillas Low Cost, Especialistas en semillas! </p>
+		</div>
+
+	</div>
+	<div class="block_footer col-md-3 col-sm-6 col-xs-12">
 		<h4>{l s='Information' mod='blockcms'}</h4>
 		<ul class="toggle-footer">
 			{if $show_price_drop && !$PS_CATALOG_MODE}
