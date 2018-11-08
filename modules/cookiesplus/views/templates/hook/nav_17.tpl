@@ -22,16 +22,15 @@
 
 <style>
     #cookie-link {
-        margin-left: 1rem;
-        margin-top: .9375rem;
+        margin: .9375rem 1rem 0;
         text-align: right;
         white-space: nowrap;
     }
 </style>
 
 <div id="cookie-link">
-    <a style="cursor:pointer" onclick="javascript:cookieGdpr.displayModalAdvanced(false); return false;" title="{l s='Cookie preferences' mod='cookiesplus'}" rel="nofollow">
+    <a style="cursor:pointer" onclick="cookieGdpr.displayModalAdvanced(false);" title="{l s='Your cookie settings' mod='cookiesplus'}" rel="nofollow">
         <i class="material-icons new_releases">new_releases</i>
-        <span class="hidden-sm-down">{l s='Cookie preferences' mod='cookiesplus'}</span>
+        <span class="hidden-sm-down">{l s='Your cookie settings' mod='cookiesplus'}</span>
     </a>
 </div>

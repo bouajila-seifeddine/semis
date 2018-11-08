@@ -51,7 +51,7 @@
                 <div class="left-block left-blockblog">
                     <div class="product-image-container">
                         <a class="product_img_link" href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}" itemprop="url" target="_blank">
-                            <img class="replace-2x img-responsive" id="{$product.link_rewrite}-img" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" title="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" {if isset($homeSize)} width="{$homeSize.width}" height="{$homeSize.height}"{/if} itemprop="image" />
+                            <img class="replace-2x img-responsive" id="{$product.link_rewrite}-img" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" title="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}"  itemprop="image" />
                         </a>
                      
                   
@@ -140,14 +140,14 @@
             }
 });
 
-      function addCarrito(url, imgurl) {
-       
+function addCarrito(url, imgurl) {
 $.ajax({
 type: 'post',
 url: url,        
          
 success:function(response)
 {
+
     // Get the modal
         var modal = document.getElementById('myModal');
        
@@ -170,6 +170,7 @@ document.getElementsByClassName("whatsappBlock2")[0].style.display = "block";
 
 error : function(xhr, status, error)
 {
+    
     console.log("Status of error message" + status + "Error is" + error);
 }   
 

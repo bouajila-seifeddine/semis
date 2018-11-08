@@ -20,25 +20,20 @@
  *  @license   See above
 */
 
-/*
-$('a[href="#fieldset_1_1"]').click(function() {
- 	tinySetup({
-	    editor_selector : "autoload_rte",
-	    valid_children : "+body[style|script|iframe|section|link],pre[iframe|section|script|div|p|br|span|img|style|h1|h2|h3|h4|h5],*[*]",
-	    forced_root_block : ''
-	});
-})
-*/
-
 $(document).ready(function() {
-    tinySetup({
-	    editor_selector :"autoload_rte",
-        setup: function (ed) {
-			ed.on('init', function(args) {
-				var id = ed.id;
-				var height = 25;
-         		document.getElementById(id + '_ifr').style.height = height + 'px';
-      		});
-      	}
-   	})
+	$('.id-hidden').closest('.margin-form').hide().prev().hide()
+    showHideDebugIPs();
+    $('input[name="C_P_DEBUG"]').change(function() {
+        showHideDebugIPs();
+    });
 });
+
+function showHideDebugIPs() {
+    if ($('input[name="C_P_DEBUG"]:checked').val() == 1) {
+        $('#C_P_IPS_DEBUG').closest('.form-group').slideDown();  // > PS 1.6
+        $('#C_P_IPS_DEBUG').closest('.margin-form').hide().prev().hide(); //PS 1.5
+    } else {
+        $('#C_P_IPS_DEBUG').closest('.form-group').slideUp(); // > PS 1.6
+        $('#C_P_IPS_DEBUG').closest('.margin-form').show().prev().show(); // PS 1.5
+    }
+}

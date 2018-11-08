@@ -25,9 +25,9 @@ function upgrade_module_1_1_2($module)
 {
     Configuration::updateValue('C_P_BOTS', 'Teoma|alexa|froogle|Gigabot|inktomi|looksmart|URL_Spider_SQL|Firefly|NationalDirectory|AskJeeves|TECNOSEEK|InfoSeek|WebFindBot|girafabot|crawler|www.galaxy.com|Googlebot|Scooter|TechnoratiSnoop|Rankivabot|Mediapartners-Google| Sogouwebspider|WebAltaCrawler|TweetmemeBot|Butterfly|Twitturls|Me.dium|Twiceler');
 
-	Configuration::updateValue('C_P_CMS_PAGE_ADV', Configuration::get('C_P_CMS_PAGE'));
+    Configuration::updateValue('C_P_CMS_PAGE_ADV', Configuration::get('C_P_CMS_PAGE'));
 
-	$module->removeOverride('Cookie');
+    $module->removeOverride('Cookie');
     $module->addOverride('Cookie');
 
     return true;

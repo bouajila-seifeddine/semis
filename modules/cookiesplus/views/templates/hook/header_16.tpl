@@ -21,85 +21,6 @@
 *}
 
 <style>
-    /*https://mdbootstrap.com/components/bootstrap-switch/*/
-    .switch {
-        padding: 5px 0;
-    }
-    .switch label {
-        cursor: pointer;
-        -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-        -moz-user-select: none; /* mozilla browsers */
-        -khtml-user-select: none; /* webkit (konqueror) browsers */
-        -ms-user-select: none; /* IE10+ */
-    }
-    .switch label input[type=checkbox] {
-        opacity: 0;
-        width: 0;
-        height: 0
-    }
-    .switch label input[type=checkbox]:checked + .lever {
-        background-color: #2ACC6C
-    }
-    .switch label input[type=checkbox]:checked + .lever:after {
-        background-color: #00C851;
-        left: 24px
-    }
-    .switch label input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
-        -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(170, 102, 204, .1);
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(170, 102, 204, .1)
-    }
-    .switch label input[type=checkbox]:not(:disabled) ~ .lever:active:after {
-        -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(0, 0, 0, .08);
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(0, 0, 0, .08)
-    }
-    .switch label input[type=checkbox]:disabled + .lever {
-        cursor: default
-    }
-    .switch label input[type=checkbox]:disabled + .lever:after,
-    .switch label input[type=checkbox]:disabled:checked + .lever:after {
-        background-color: #bdbdbd
-    }
-    .switch label .lever {
-        content: "";
-        display: inline-block;
-        position: relative;
-        width: 40px;
-        height: 15px;
-        background-color: #818181;
-        -webkit-border-radius: 15px;
-        border-radius: 15px;
-        margin-right: 10px;
-        -webkit-transition: background .3s ease;
-        -o-transition: background .3s ease;
-        transition: background .3s ease;
-        vertical-align: middle;
-        margin: 0 16px
-    }
-    .switch label .lever:after {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 21px;
-        height: 21px;
-        background-color: #f1f1f1;
-        -webkit-border-radius: 21px;
-        border-radius: 21px;
-        -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4);
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4);
-        left: -5px;
-        top: -3px;
-        -webkit-transition: left .3s ease, background .3s ease, -webkit-box-shadow .1s ease;
-        transition: left .3s ease, background .3s ease, -webkit-box-shadow .1s ease;
-        -o-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
-        transition: left .3s ease, background .3s ease, box-shadow .1s ease;
-        transition: left .3s ease, background .3s ease, box-shadow .1s ease, -webkit-box-shadow .1s ease
-    }
-
-    .cookiesplus {
-        display: none;
-    }
-
-
     .cookiesplus-modal .more-information {
         display: block;
         clear: both;
@@ -109,15 +30,10 @@
     .cookiesplus-modal .pull-left {
         float: left;
     }
-.cookie_type_container {
-    padding-bottom: 10px;
-}
+
     .cookiesplus-modal .pull-right {
         float: right;
     }
-    .cookie_actions div {
-            text-align: center;
-        }
 
     @media (max-width: 575px) {
         .cookiesplus-modal .pull-left,
@@ -126,21 +42,23 @@
         }
 
         .cookiesplus-modal .cookie_actions,
-        .cookiesplus-modal .modal-footer, .cookie_actions div {
+        .cookiesplus-modal .modal-footer {
             text-align: center;
+        }
+
+        .cookiesplus-modal .cookie_type_container {
+            max-height: 50vh;
+            overflow-y: auto;
+            margin-bottom: 15px;
+        }
+
+        .cookiesplus-modal .cookie-actions > .pull-left {
+            margin-top: 10px;
         }
     }
 </style>
 
-<script>
-    // <![CDATA[
-    var C_P_COOKIE_VALUE = "{$C_P_COOKIE_VALUE|escape:'htmlall':'UTF-8'}";
-    var C_P_DEFAULT_VALUE = {$C_P_DEFAULT_VALUE|intval};
-    var C_P_VERSION = "{$C_P_VERSION|escape:'htmlall':'UTF-8'}";
-    // ]]>
-</script>
-
-<div class="cookiesplus">
+<div class="cookiesplus" style="display:none">
     {if isset($C_P_TEXT_BASIC) && $C_P_TEXT_BASIC}
         <div id="cookiesplus-basic">
             <form method="POST" name="cookies">
@@ -152,17 +70,14 @@
                 </div>
 
                 <div class="cookie_actions">
-                    <div class="col-md-6">
-                        <input type="submit" name="save-basic" onclick="if (cookieGdpr.saveBasic()) return;" class="btn btn-primary" value="{l s='Accept and continue' mod='cookiesplus'}" />
+                    <div class="pull-right">
+                       <input type="submit" name="save-basic" onclick="if (cookieGdpr.saveBasic()) return;" class="btn btn-primary pull-right" value="{l s='Accept and continue' mod='cookiesplus'}" />
                         {if isset($C_P_CMS_PAGE) && $C_P_CMS_PAGE}
-                            <a href="{$link->getCMSLink($C_P_CMS_PAGE)|escape:'html'}" class="more-information" target="_blank">{l s='More information' mod='cookiesplus'}</a>
+                            <a href="{$link->getCMSLink($C_P_CMS_PAGE)|escape:'html'}" class="pull-right more-information" target="_blank">{l s='More information' mod='cookiesplus'}</a>
                         {/if}
                     </div>
-                    <div class="col-md-6" >
-                        <a type="submit" href="https://www.instagram.com/semillaslowcost/" class="btn btn-default">Salir de la web</a>
-                    </div>
-                     <div class="col-md-6 pull-left" style="display: none;">
-                        <input type="submit" onclick="cookieGdpr.displayModalAdvanced();" class="btn btn-default pull-left" value="{l s='Advanced settings' mod='cookiesplus'}" />
+                    <div class="pull-left">
+                        <input type="button" onclick="cookieGdpr.displayModalAdvanced();" class="btn btn-default pull-left" value="{l s='More information' mod='cookiesplus'}" />
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -172,20 +87,16 @@
 
     <div id="cookiesplus-advanced">
         <form method="POST" name="cookies" id="cookiesplus-form">
-            <div class="page-heading">{l s='Cookie preferences' mod='cookiesplus'}</div>
+            <div class="page-heading">{l s='Your cookie settings' mod='cookiesplus'}</div>
             <div class="cookie_type_container">
                 {if isset($C_P_TEXT_REQUIRED) && $C_P_TEXT_REQUIRED}
                     <div class="cookie_type box">
                         <div>{$C_P_TEXT_REQUIRED nofilter}</div>
                         <div>
                             <strong>{l s='Accept strictly necessary cookies?' mod='cookiesplus'}</strong>
-                            <div class="switch">
-                                <label>
-                                    {l s='No' mod='cookiesplus'}
-                                    <input type="checkbox" name="essential" class="not_uniform comparator">
-                                    <span class="lever"></span>
-                                    {l s='Yes' mod='cookiesplus'}
-                                </label>
+                            <div class="form-check">
+                                <input type="checkbox" class="filled-in form-check-input not_uniform comparator" name="essential" id="essential" checked="checked" disabled>
+                                <label class="form-check-label" for="essential">{l s='Yes' mod='cookiesplus'}</label>
                             </div>
                         </div>
                     </div>
@@ -194,15 +105,11 @@
                 {if isset($C_P_TEXT_3RDPARTY) && $C_P_TEXT_3RDPARTY}
                     <div class="cookie_type box">
                         <div>{$C_P_TEXT_3RDPARTY nofilter}</div>
-                        <div class="">
+                        <div>
                             <strong>{l s='Accept third-party cookies?' mod='cookiesplus'}</strong>
-                            <div class="switch">
-                                <label>
-                                    {l s='No' mod='cookiesplus'}
-                                    <input type="checkbox" name="thirdparty" class="not_uniform comparator">
-                                    <span class="lever"></span>
-                                    {l s='Yes' mod='cookiesplus'}
-                                </label>
+                            <div class="form-check">
+                                <input type="checkbox" class="filled-in form-check-input not_uniform comparator" name="thirdparty" id="thirdparty">
+                                <label class="form-check-label" for="thirdparty">{l s='Yes' mod='cookiesplus'}</label>
                             </div>
                         </div>
                     </div>
@@ -210,36 +117,14 @@
             </div>
 
             <div class="cookie_actions">
-                <div class="col-md-6 pull-right">
+                <div class="pull-right">
                     <input type="submit" name="save" onclick="if (cookieGdpr.save()) return;" class="btn btn-primary pull-right" value="{l s='Save preferences' mod='cookiesplus'}" />
                     {if isset($C_P_CMS_PAGE_ADV) && $C_P_CMS_PAGE_ADV}
-                        <a href="{$link->getCMSLink($C_P_CMS_PAGE_ADV)|escape:'html'}" class="pull-right more-information" target="_blank">{l s='More information' mod='cookiesplus'}</a>
-                    {/if}
-                </div>
-                <div class="col-md-6 pull-left">
-                    {if $C_P_COOKIE_VALUE}
-                        <input type="submit" name="remove" onclick="if (cookieGdpr.remove()) return;" class="btn btn-default pull-left" value="{l s='Remove cookies from this site' mod='cookiesplus'}" />
+                        <a href="{$link->getCMSLink($C_P_CMS_PAGE_ADV)|escape:'html'}" class="pull-right more-information" target="_blank">{l s='Privacy & Cookie Policy' mod='cookiesplus'}</a>
                     {/if}
                 </div>
                 <div class="clear"></div>
             </div>
         </form>
-    </div>
-
-    <div id="cookiesplus-confirm">
-        <div class="box">{$C_P_TEXT_REJECT nofilter}</div>
-        <div class="cookie_actions">
-            <form>
-                <input type="button" onclick="cookieGdpr.displayModalAdvanced();" class="btn btn-primary pull-right" value="{l s='No, I want to stay here' mod='cookiesplus'}" />
-                <input type="submit" name="removeAndRedirect" class="btn btn-default pull-left" value="{l s='Yes, I\'m sure' mod='cookiesplus'}" />
-            </form>
-        </div>
-    </div>
-
-    <div id="cookiesplus-error">
-        <div class="box">{l s='You can not accept 3rd party cookies and don\'t accept required cookies.' mod='cookiesplus'}</div>
-        <div class="cookie_actions">
-            <input type="button" onclick="cookieGdpr.displayModalAdvanced();" class="btn btn-primary pull-right" value="{l s='Ok' mod='cookiesplus'}" />
-        </div>
     </div>
 </div>

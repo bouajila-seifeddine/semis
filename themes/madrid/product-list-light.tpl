@@ -39,7 +39,10 @@
 	<!-- Products list -->
 	<div class="row">
 		<div class="product_list_ph clearBoth{if $disableCarousel eq false} owl-carousel-ph{/if} items-{$nbPerLine}" data-max-items="{$nbPerLine}">
+			{assign var="contador" value=0}
 			{foreach from=$products item=product name=products}
+			{assign var="contador" value=$contador + 1}
+
 			<div class="
 			{if $hide_left_column && $hide_right_column}
 				{if $theme_options['items_one_carousels'] == 2}col-sm-6
@@ -60,7 +63,17 @@
 					<div class="img_hover"></div>
 
 					<a href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}">
-						<img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" class="img-responsive first-image" />
+
+						<img 
+
+						{if $contador <= 4} 
+								src=
+						{else} 
+								data-src= 
+						{/if}
+
+						"{$link->getImageLink($product.link_rewrite, $product.id_image, 'tm_home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" class="img-responsive first-image test" />
+
 						{hook h='displayProductSecondImage' product=$product}
 					</a>
 
@@ -93,6 +106,10 @@
 					</span> -->
 
 					<!-- useful icons -->
+					{assign var=unique_id value=1|mt_rand:2}
+					{if $unique_id == 2}
+							<span class="labels"> <span class="sale">¡Oferta!</span> </span>
+					{/if}
 					<div class="icons">
 						{if $theme_options['ph_display_add2cart']}
 							{if isset($orderProducts) && count($orderProducts)} {* fix for crosseling *}
@@ -131,7 +148,6 @@
 								<span class="price {if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0 && $theme_options['ph_display_price_wo_reduction']}new-price{/if}">
 									{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
 								</span>
-								<meta content="{$currency->iso_code}" />
 								{if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0 && $theme_options['ph_display_price_wo_reduction']}
 									{hook h="displayProductPriceBlock" product=$product type="old_price"}
 									<span class="old-price">

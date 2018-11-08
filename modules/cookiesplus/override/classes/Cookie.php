@@ -25,27 +25,11 @@ class Cookie extends CookieCore
 {
     protected function _setcookie($cookie = null)
     {
-        if ((version_compare(_PS_VERSION_, '1.5.0.13', '<') && Module::isInstalled('cookiesplus'))
-            || (version_compare(_PS_VERSION_, '1.5.0.13', '>=') && Module::isEnabled('cookiesplus'))) {
-            include_once(_PS_MODULE_DIR_.'cookiesplus/cookiesplus.php');
-            if (!CookiesPlus::writeCookie()) {
-                return;
-            }
-        }
-
         return parent::_setcookie($cookie);
     }
 
     protected function encryptAndSetCookie($cookie = null)
     {
-        if ((version_compare(_PS_VERSION_, '1.5.0.13', '<') && Module::isInstalled('cookiesplus'))
-            || (version_compare(_PS_VERSION_, '1.5.0.13', '>=') && Module::isEnabled('cookiesplus'))) {
-            include_once(_PS_MODULE_DIR_.'cookiesplus/cookiesplus.php');
-            if (!CookiesPlus::writeCookie()) {
-                return;
-            }
-        }
-
         return parent::encryptAndSetCookie($cookie);
     }
 

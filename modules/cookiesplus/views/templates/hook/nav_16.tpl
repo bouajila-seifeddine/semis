@@ -38,5 +38,5 @@
 </style>
 
 <div id="cookie-link">
-    <a style="cursor:pointer" onclick="javascript:cookieGdpr.displayModalAdvanced(false); return false;" title="{l s='Cookie preferences' mod='cookiesplus'} rel="nofollow""><i class="icon-certificate"></i> {l s='Cookie preferences' mod='cookiesplus'}</a>
+    <a style="cursor:pointer" onclick="cookieGdpr.displayModalAdvanced(false);" title="{l s='Your cookie settings' mod='cookiesplus'}" rel="nofollow""><i class="icon-certificate"></i> {l s='Your cookie settings' mod='cookiesplus'}</a>
 </div>

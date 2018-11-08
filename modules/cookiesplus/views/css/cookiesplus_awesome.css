@@ -1,0 +1,193 @@
+/**
+* Cookies Plus
+*
+* NOTICE OF LICENSE
+*
+* This product is licensed for one customer to use on one installation (test stores and multishop included).
+* Site developer has the right to modify this module to suit their needs, but can not redistribute the module in
+* whole or in part. Any other use of this module constitues a violation of the user agreement.
+*
+* DISCLAIMER
+*
+* NO WARRANTIES OF DATA SAFETY OR MODULE SECURITY
+* ARE EXPRESSED OR IMPLIED. USE THIS MODULE IN ACCORDANCE
+* WITH YOUR MERCHANT AGREEMENT, KNOWING THAT VIOLATIONS OF
+* PCI COMPLIANCY OR A DATA BREACH CAN COST THOUSANDS OF DOLLARS
+* IN FINES AND DAMAGE A STORES REPUTATION. USE AT YOUR OWN RISK.
+*
+*  @author    idnovate.com <info@idnovate.com>
+*  @copyright 2018 idnovate.com
+*  @license   See above
+*/
+
+/*https://mdbootstrap.com/components/bootstrap-switch/*/
+.cookiesplus-modal .form-check {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+}
+
+.cookiesplus-modal .form-check-input {
+    margin-top: 0;
+    margin-right: .25rem;
+    margin-left: 0;
+    box-sizing: border-box;
+    padding: 0;
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+.cookiesplus-modal [type=checkbox]+label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    z-index: 0;
+    border: 1.5px solid #8a8a8a;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s
+}
+
+.cookiesplus-modal [type=checkbox]:checked+label:before {
+    top: -4px;
+    left: -3px;
+    width: 12px;
+    height: 22px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent #4285f4 #4285f4 transparent;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
+}
+
+.cookiesplus-modal [type=checkbox]:indeterminate+label:before {
+    left: -10px;
+    top: -11px;
+    width: 10px;
+    height: 22px;
+    border: none;
+    border-right: 2px solid #4285f4;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
+}
+
+.cookiesplus-modal [type=checkbox]:disabled:checked+label:before {
+    border-color: transparent rgba(0,0,0,.46) rgba(0,0,0,.46) transparent
+}
+
+.cookiesplus-modal [type=checkbox]:disabled:not(:checked)+label:before {
+    border: none;
+    margin-left: 2px;
+    margin-top: 2px;
+    background-color: rgba(0,0,0,.46)
+}
+
+.cookiesplus-modal [type=checkbox]:disabled:indeterminate+label:before {
+    border-right: 2px solid rgba(0,0,0,.46);
+    margin-left: 0;
+    margin-top: 0;
+    background-color: transparent
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]+label:after,
+.cookiesplus-modal [type=checkbox][class*=filled-in]+label:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    -webkit-transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+    -o-transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+    transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+    z-index: 1;
+    border-style: solid;
+    border-width: 2px
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]+label:after {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    height: 20px;
+    width: 20px
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]+label:before {
+    -webkit-transform: rotateZ(37deg);
+    -ms-transform: rotate(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:not(:checked)+label:before {
+    width: 0;
+    height: 0;
+    border-style: 3px;
+    border-color: transparent;
+    left: 6px;
+    top: 10px
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:not(:checked)+label:after {
+    background-color: transparent;
+    border-color: #5a5a5a;
+    top: 0;
+    z-index: 0
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:checked+label:before {
+    top: 0;
+    left: 1px;
+    width: 8px;
+    height: 13px;
+    border-color: transparent #fff #fff transparent
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:checked+label:after {
+    top: 0;
+    border-color: #00C851;
+    background-color: #2ACC6C;
+    z-index: 0
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:disabled:not(:checked)+label:before {
+    background-color: transparent;
+    border-color: #bdbdbd
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:disabled:not(:checked)+label:after {
+    border-color: transparent;
+    background-color: #bdbdbd
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:disabled:checked+label:before {
+    background-color: transparent
+}
+
+.cookiesplus-modal [type=checkbox][class*=filled-in]:disabled:checked+label:after {
+    background-color: #bdbdbd;
+    border-color: #bdbdbd
+}
+
+.cookiesplus-modal [type=checkbox]+label,
+.cookiesplus-modal [type=radio]+label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 24px;
+}

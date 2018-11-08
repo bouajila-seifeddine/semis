@@ -20,9 +20,9 @@
  *  @license   See above
 *}
 
- <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" href="javascript:cookieGdpr.displayModalAdvanced(false)" title="{l s='Cookie preferences' mod='cookiesplus'}">
+ <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" onclick="cookieGdpr.displayModalAdvanced(false);" style="cursor:pointer" title="{l s='Your cookie settings' mod='cookiesplus'}">
   <span class="link-item">
     <i class="material-icons">info</i>
-    {l s='Cookie preferences' mod='cookiesplus'}
+    {l s='Your cookie settings' mod='cookiesplus'}
   </span>
  </a>

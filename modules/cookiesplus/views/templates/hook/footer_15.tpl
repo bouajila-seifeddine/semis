@@ -21,7 +21,7 @@
 *}
 
 <li>
-    <a href="javascript:cookieGdpr.displayModalAdvanced(false)" title="{l s='Cookie preferences' mod='cookiesplus'}">
-        <i class="icon-certificate"></i><span>{l s='Cookie preferences' mod='cookiesplus'}</span>
+    <a onclick="cookieGdpr.displayModalAdvanced(false);" style="cursor:pointer" title="{l s='Your cookie settings' mod='cookiesplus'}">
+        <i class="icon-certificate"></i><span>{l s='Your cookie settings' mod='cookiesplus'}</span>
     </a>
 </li>

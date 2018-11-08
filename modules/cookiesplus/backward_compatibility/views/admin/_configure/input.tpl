@@ -12,8 +12,8 @@
 							</div>
 						{/foreach}
 					</div>
-					{if isset($params.desc) && $params.desc}<p>{$params.desc|escape:'quotes':'UTF-8'}</p>
-					{elseif isset($params.hint) && $params.hint}<p>{$params.hint|escape:'quotes':'UTF-8'}</p>
+					{if isset($params.desc) && $params.desc}<p style="clear: both;">{$params.desc|escape:'quotes':'UTF-8'}</p>
+					{elseif isset($params.hint) && $params.hint}<p style="clear: both;">{$params.hint|escape:'quotes':'UTF-8'}</p>
 					{/if}
 				</div>
 			</div>
@@ -23,8 +23,8 @@
 				<label for="{$params.name|escape:'quotes':'UTF-8'}">{$params.label|escape:'quotes':'UTF-8'}</label>
 				<div class="margin-form">
 					<input type="text" name="{$params.name|escape:'quotes':'UTF-8'}" id="{$params.name|escape:'quotes':'UTF-8'}" value="{$fields_value[$params.name|escape:'quotes':'UTF-8']|escape:'quotes':'UTF-8'}" />
-					{if isset($params.desc) && $params.desc}<p>{$params.desc|escape:'quotes':'UTF-8'}</p>
-					{elseif isset($params.hint) && $params.hint}<p>{$params.hint|escape:'quotes':'UTF-8'}</p>
+					{if isset($params.desc) && $params.desc}<p style="clear: both;">{$params.desc|escape:'quotes':'UTF-8'}</p>
+					{elseif isset($params.hint) && $params.hint}<p style="clear: both;">{$params.hint|escape:'quotes':'UTF-8'}</p>
 					{/if}
 				</div>
 			</div>
@@ -38,7 +38,7 @@
 					<input type="radio" name="{$params.name|escape:'quotes':'UTF-8'}" id="{$value.id|intval}" value="{$value.value|escape:'quotes':'UTF-8'}"
 							{if $fields_value[$params.name] == $value.value}checked="checked"{/if}
 							{if isset($params.disabled) && $params.disabled}disabled="disabled"{/if} />
-					<label class="t" for="{$value.id|intval}">
+					<label class="{if isset($params.class)}{$params.class|escape:'quotes':'UTF-8'}{/if}" for="{$value.id|intval}">
 					 {if isset($params.is_bool) && $params.is_bool == true}
 						{if $value.value == 1}
 							<img src="../img/admin/enabled.gif" alt="{$value.label|escape:'quotes':'UTF-8'}" title="{$value.label|escape:'quotes':'UTF-8'}" />
@@ -111,7 +111,7 @@
 			<div class="margin-form">
 				{foreach $languages as $language}
 				<div class="lang_{$language['id_lang']|escape:'quotes':'UTF-8'}">
-					<textarea {if $params.class == 'rte'}class="rte"{/if} name="{$params.name|escape:'quotes':'UTF-8'}_{$language['id_lang']|escape:'quotes':'UTF-8'}" id="{$fields_value[$params.name|escape:'quotes':'UTF-8'][$language['id_lang']]|escape:'quotes':'UTF-8'}" cols="{$params.cols|escape:'quotes':'UTF-8'}" rows="{$params.rows|escape:'quotes':'UTF-8'}">{$fields_value[$params.name|escape:'quotes':'UTF-8'][$language['id_lang']]|escape:'quotes':'UTF-8'}</textarea>
+					<textarea {if $params.class == 'rte'}class="rte"{/if} name="{$params.name|escape:'quotes':'UTF-8'}_{$language['id_lang']|escape:'quotes':'UTF-8'}" id="{$params.name|escape:'quotes':'UTF-8'}[{$language['id_lang']|escape:'quotes':'UTF-8'}]" cols="{$params.cols|escape:'quotes':'UTF-8'}" rows="{$params.rows|escape:'quotes':'UTF-8'}">{$fields_value[$params.name|escape:'quotes':'UTF-8'][$language['id_lang']]|escape:'quotes':'UTF-8'}</textarea>
 					<img src="{$THEME_LANG_DIR|escape:'quotes':'UTF-8'}{$language['id_lang']|escape:'quotes':'UTF-8'}.jpg" alt="{$language['iso_code']|escape:'quotes':'UTF-8'}" title="{$language['name']|escape:'quotes':'UTF-8'}" onclick="toggleLanguageFlags(this);" alt="" />
 				</div>
 				{/foreach}
@@ -122,11 +122,9 @@
 		<div style="overflow:hidden">
 			<label for="{$params.name|escape:'quotes':'UTF-8'}">{$params.label|escape:'quotes':'UTF-8'}</label>
 			<div class="margin-form">
-				<textarea name="{$params.name|escape:'quotes':'UTF-8'}" id="{$params.name|escape:'quotes':'UTF-8'}" cols="{$params.cols|escape:'quotes':'UTF-8'}" rows="{$params.rows|escape:'quotes':'UTF-8'}">
-					{$fields_value[$params.name|escape:'quotes':'UTF-8']|escape:'quotes':'UTF-8'}
-				</textarea>
-				{if isset($params.desc) && $params.desc}<p>{$params.desc|escape:'quotes':'UTF-8'}</p>
-				{elseif isset($params.hint) && $params.hint}<p>{$params.hint|escape:'quotes':'UTF-8'}</p>
+				<textarea name="{$params.name|escape:'quotes':'UTF-8'}" id="{$params.name|escape:'quotes':'UTF-8'}" cols="{$params.cols|escape:'quotes':'UTF-8'}" rows="{$params.rows|escape:'quotes':'UTF-8'}">{$fields_value[$params.name|escape:'quotes':'UTF-8']|escape:'quotes':'UTF-8'}</textarea>
+				{if isset($params.desc) && $params.desc}<p style="clear: both;">{$params.desc|escape:'quotes':'UTF-8'}</p>
+				{elseif isset($params.hint) && $params.hint}<p style="clear: both;">{$params.hint|escape:'quotes':'UTF-8'}</p>
 				{/if}
 			</div>
 		</div>

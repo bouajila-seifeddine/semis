@@ -197,7 +197,7 @@ function posts_tabs( $atts, $content = null ) {
 			}
 
 			$shortcode .='<div class="mt-tab-wrap">';
-			$shortcode .= '<div class="mt-post-tabs"><h2 class="heading heading-left pull-left"><span>'.$title.'</span></h2>';
+			$shortcode .= '<div class="mt-post-tabs"><h2 class="heading heading-left pull-left test"><span>'.$title.'</span></h2>';
 			if($tab_galleries=="on"){ if($the_query_tab_4->have_posts()) { $shortcode .= '<div class="mt-tabc mt-tabc-4 pull-right" data-tab="mt-tab-4">'. esc_html__("Galleries", "magazine-plug") .'</div>'; } }
 			if($tab_videos=="on"){ if($the_query_tab_3->have_posts()) { $shortcode .= '<div class="mt-tabc mt-tabc-3 pull-right" data-tab="mt-tab-3">'. esc_html__("Videos", "magazine-plug") .'</div>'; } }
 			if($tab_posts=="on"){ if($the_query_tab_2->have_posts()) { $shortcode .= '<div class="mt-tabc mt-tabc-2 pull-right" data-tab="mt-tab-2">'. esc_html__("Posts", "magazine-plug") .'</div>'; } }

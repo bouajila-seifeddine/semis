@@ -155,7 +155,6 @@ menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inlin
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
     -webkit-overflow-scrolling: auto;
     background:white;
 }
@@ -497,6 +496,12 @@ input[type="button"] {
     width: 1340px;
   }
 
+}
+
+@media (max-width: 1018px) {
+  .top-nav.container-fluid {
+    display: none;
+}
 }
 
 .col-col-1 { width: 14% !important; }
@@ -1057,11 +1062,6 @@ ul.sf-menu > li > ul > li:hover > ul, div.sf-menu > ul > li > ul > li:hover > ul
 }
 
 
-ul.sf-menu > li,
-div.sf-menu ul > li {
-  margin-left:8px;
-
-}
 ul.sf-menu ul li,
 div.sf-menu ul ul li {
   margin-left:0px;
@@ -1952,10 +1952,7 @@ h2.heading span {
   padding: 3px 6px 3px 0px;
   font-size: 14px;
 }
-.poster-data span,
-.poster-data .counte {
-  display: inline-block;
-}
+
 .poster-data i {
   padding-left: 5px;
 }
@@ -2435,7 +2432,6 @@ h2.heading span {
 .slick-list.dragging
 {
     cursor: pointer;
-    cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -2494,10 +2490,7 @@ h2.heading span {
 {
     display: none;
 }
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
+
 .slick-initialized .slick-slide
 {
     display: block;
@@ -3619,7 +3612,7 @@ opacity: 0.7
     -moz-transform: translate(0,60px); /** Firefox **/
     right: 20px;
     position: fixed;
-    z-index: 9999;
+    z-index: 9991;
 }
 .footer-scroll-to-top.active {
   -webkit-backface-visibility: hidden;
@@ -4036,6 +4029,9 @@ opacity: 0.7
     font-size: 21px !important;
   }
 }
+.cc-revoke.cc-bottom {
+    display: none;
+}
 
 @media all and (max-width: 715px) {
   .post-style-6 .single-media-top {
@@ -4233,7 +4229,6 @@ opacity: 0.7
     margin-left: -22px;
   }
   .socials a span{
-    ul.share li span
     font-size: 12px;
   }
   .social-text {
@@ -4283,7 +4278,7 @@ opacity: 0.7
 .gt_newpost,
 .mc4wp-form-fields {
   text-align: center;
-  background: #f5f5f5ß;
+  background: #f5f5f5;
   padding: 20px 40px 40px;
 }
 .mc4wp-form-fields input[type="text"],
@@ -5024,9 +5019,7 @@ li.mtc-buy {
 .fix.mct-box:hover:before {
   top: -14px;
 }
-.mct-box:hover {
-  text-transform: scale
-}
+
 
 /* Post Tabs */
 .mt-tab {
@@ -5371,3 +5364,38 @@ img#modal-img {
 
 
 .lnk_view:hover {color:  white !important;}
+
+.product_list.grid.row {
+    margin-bottom: 3%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.comment-author.vcard img {
+    width: 6%;
+}
+
+p.legal-text-comments {
+    font-size: 11px;
+    line-height: 14px;
+    padding-bottom: 5px;
+}
+
+input#gdpr-consent-box {
+    width: 5%;
+}
+
+.poster-shares, .poster-views {
+  display:  none;
+}
+
+.casa-inicio-blog {
+    background: #2c313b;
+    color: #7bbd42;
+    padding: 0 18px;
+}
+
+.mt-tabc.mt-tabc-1.pull-right.active {
+    display: none;
+}

@@ -163,7 +163,7 @@
 
 </div>
 <div id="posts">
-	<h2 class="pull-left"> <img class="icon icon-money main-color" width="38px" height="38px" style="padding:3%;" src="https://www.semillaslowcost.com/img/hojaico.png"> <strong>Últimos Artículos del Blog</strong></h2>
+	<h2 class="pull-left"> <img class="icon icon-money main-color" width="38" height="38" style="padding:3%;" alt="icono hoja marihuana" src="https://www.semillaslowcost.com/img/hojaico.png"> <strong>Últimos Artículos del Blog</strong></h2>
 <div class="clearfix"></div>
 	 {if isset($posts) && $posts|@count}
                  {foreach from=$posts item=post}

@@ -71,14 +71,21 @@ if(isset($_GET['offset']) && isset($_GET['limit'])){
 
             	      $idCategoria= $producto['id_category'];
             	     $linkCategoria= $producto['category_link'];
+            	     $randomOferta =  rand(0, 10);
 
 
 					//Creamos todos los elementos html de las 3 imágenes
 					$imagenesHtml = $imagenesHtml.'<div class=" col-md-3 col-sm-6 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-						                                       <div class="inner second-image">
-						                                          <div class="img_hover"></div>
+						                                       <div class="inner second-image">';
+					if ($randomOferta >= 5)	 {
+													$imagenesHtml = $imagenesHtml.'<span class="labels"> <span class="sale">¡Oferta!</span> </span>';
+						}                                      
+						                              
+
+
+					$imagenesHtml = $imagenesHtml.'<div class="img_hover"></div>
 						                                          <a itemprop="url" href="index.php?id_product='.$producto['id_product'].'&controller=product" title="'.$producto['name'].'">
-						                                          <img itemprop="image" src="https://www.semillaslowcost.com/'.$producto['id_image'].'-thickbox_default/'.$producto['link_rewrite'].'.jpg" alt="Comprar '.$producto['name'].'" title="Comprar '.$producto['name'].'" class="img-responsive first-image">
+						                                          <img itemprop="image" src="https://www.semillaslowcost.com/'.$producto['id_image'].'-home_default/'.$producto['link_rewrite'].'.jpg" alt="Comprar '.$producto['name'].'" title="Comprar '.$producto['name'].'" class="img-responsive first-image">
 						                                          </a>
 						                                          <div class="info">
 						                                             <h3 itemprop="name">

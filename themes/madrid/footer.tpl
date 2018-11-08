@@ -94,7 +94,7 @@
 		<footer class="bottom">
 			<div class="container">
 
-				<a href="https://www.semillaslowcost.com/content/1-envios" rel="nofollow"><img src="https://www.semillaslowcost.com/img/pagos1.png" class="pagos-img pagos1" alt="formas de pagos y envios SLC"><img src="https://www.semillaslowcost.com/img/pagos2.png"  class="pagos-img" alt="formas de pagos y envios SLC"></a>
+				<a href="https://www.semillaslowcost.com/content/1-envios"><img src="https://www.semillaslowcost.com/img/pagos1.png" class="pagos-img pagos1" alt="formas de pagos y envios SLC"><img src="https://www.semillaslowcost.com/img/pagos2.png"  class="pagos-img" alt="formas de pagos y envios SLC"></a>
 			<p>{$theme_options['copyright']} <strong>&copy; {$smarty.now|date_format:"%Y"} SemillasLowCost</strong></p>
 			</div><!-- .container -->
 

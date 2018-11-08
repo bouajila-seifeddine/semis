@@ -17,7 +17,7 @@
 <div id="coment-line-space"><!--<span class="line"></span><div class="clear"></div>--></div>
 
 			<h2 class="heading-left padding-0"><span><?php
-			printf( _n( 'One Response', '%1$s Responses', get_comments_number(), 'infowazz' ),
+			printf( _n( 'Una Respuesta', '%1$s Respuestas', get_comments_number(), 'infowazz' ),
 			number_format_i18n( get_comments_number() ), '' . get_the_title() . '' );
 			?></span></h2>
 
@@ -73,7 +73,7 @@ $fields =  array(
 
  $defaults = array(
 
-	'comment_field'        => '<span class="comment-adres-not-publish">Your email address will not be published.</span><p class="comment-textarea"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" ></textarea></p>',
+	'comment_field'        => '<span class="comment-adres-not-publish">Tu email no será publicado.</span><p class="comment-textarea"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" ></textarea></p>',
 	'must_log_in'          => '<p class="must-log-in">' .  sprintf( wp_kses(__( 'You must be <a href="%s">logged in</a> to post a comment.', 'infowazz' ), array(
     'a' => array(
         'href' => array(),

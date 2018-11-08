@@ -163,7 +163,7 @@
 			<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 
 			{if $product->description_short || $packItems|@count > 0}
-			<div id="short_description_block" class="panel panel-default">
+			<div id="short_description_block" role="tablist"  class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingOne" >
 		                                        
 		                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" onclick="toggledisplayarrow();" class="link-collapse collapsed">
@@ -211,19 +211,9 @@
 				</p>
 				{/if}
 
-				{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
-					<!-- number of item in stock -->
-					<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
-						<label>Stock:</label>
-						<span id="quantityAvailable">{$product->quantity|intval}</span>
-						<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
-						<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span>
-					</p>
-				{/if}
-
 				{if $PS_STOCK_MANAGEMENT}
 					{hook h="displayProductDeliveryTime" product=$product}
-					<p class="warning_inline" id="last_quantities"{if ($product->quantity > $last_qties || $product->quantity <= 0) || $allow_oosp || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none"{/if} >{l s='Warning: Last items in stock!'}</p>
+					<!--<p class="warning_inline" id="last_quantities"{if ($product->quantity > $last_qties || $product->quantity <= 0) || $allow_oosp || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none"{/if} >{l s='Warning: Last items in stock!'}</p> -->
 				{/if}
 				<p id="availability_date"{if ($product->quantity > 0) || !$product->available_for_order || $PS_CATALOG_MODE || !isset($product->available_date) || $product->available_date < $smarty.now|date_format:'%Y-%m-%d'} style="display: none;"{/if}>
 					<label>{l s='Availability date:'}</label>
@@ -239,6 +229,32 @@
 					<a class="btn-q less" href="#"><i class="icon icon-minus"></i></a>
 				</span>
 			</p>
+			{/if}
+			{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
+					<!-- number of item in stock -->
+
+					<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
+						<!--<label>Stock:</label>
+						 <span id="quantityAvailable">{$product->quantity|intval}</span> -->
+						{assign var=unique_id value=1|mt_rand:4}
+						{if $product->quantity > $last_qties}
+								{if $unique_id != 2}
+									<span id="warning_inline">{l s='Aprovecha ahora, Últimas unidades!!'} </span>
+								{else}
+									<span id="warning_inline_danger">{l s='Date prisa, Últimas unidades!!'} </span>
+								{/if}
+						{/if}
+
+						<!--<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
+						<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span> -->
+					</p>
+					{if $product->quantity <= $last_qties && $product->quantity > 0}
+					<p class="warning_inline_danger" id="last_quantities">
+						&nbsp; Date prisa, Solo quedan {$product->quantity}<br>
+						¿Quieres que te las quiten?
+
+					</p> 
+					{/if}
 			{/if}
 			</div><!-- .info-box -->
 
@@ -503,7 +519,7 @@
 		<img src="/img/envio_gratis.png" alt="Envio gratuito" class="envio_gratis"></img>
 		<img src="/img/envio_rapido.png" alt="Envio 24 horas" class="envio_rapido"></img>
 		</div>
-		</br>
+		<br>
 			<section class="page-product-box nomargin">
 				<div class="heading_block">
 					<h3><i class="icon icon-lightbulb-o main-color"></i> <strong>{l s='Data'}</strong> {l s='sheet'}</h3>
@@ -526,7 +542,8 @@
 		{/if}
 		{if $product->description}
 			<!-- More info -->
-				<div class="imagenes">
+   
+			<div class="imagenes">
 		
 			<img src="/img/envio_gratis.png" alt="Envio gratuito" class="envio_gratis"></img>
 			<img src="/img/envio_rapido.png" alt="Envio 24 horas" class="envio_rapido"></img>
@@ -593,7 +610,8 @@
 			{/if}
 			{if isset($product) && $product->customizable}
 			<!--Customization -->
-				<div class="imagenes">
+   
+			<div class="imagenes">
 		
 			<img src="/img/envio_gratis.png" alt="Envio gratuito" class="envio_gratis"></img>
 			<img src="/img/envio_rapido.png" alt="Envio 24 horas" class="envio_rapido"></img>
