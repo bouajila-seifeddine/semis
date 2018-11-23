@@ -82,6 +82,9 @@ class CategoryCore extends ObjectModel
     /** @var int */
     public $id_shop_default;
 
+    /** @var int */
+    public $have_opinions;
+
     public $groupBox;
 
     protected static $_links = array();
@@ -102,6 +105,7 @@ class CategoryCore extends ObjectModel
             'id_parent' =>            array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
             'id_shop_default' =>    array('type' => self::TYPE_INT, 'validate' => 'isUnsignedId'),
             'is_root_category' =>    array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
+            'have_opinions' =>            array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
             'position' =>            array('type' => self::TYPE_INT),
             'date_add' =>            array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
             'date_upd' =>            array('type' => self::TYPE_DATE, 'validate' => 'isDate'),

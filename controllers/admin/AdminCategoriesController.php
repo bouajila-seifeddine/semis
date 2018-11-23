@@ -89,6 +89,14 @@ class AdminCategoriesControllerCore extends AdminController
                 'align' => 'center',
                 'ajax' => true,
                 'orderby' => false
+            ),
+             'have_opinions' => array(
+                'title' => $this->l('Tiene opiniones'),
+                'type' => 'bool',
+                'class' => 'fixed-width-xs',
+                'align' => 'center',
+                'ajax' => true,
+                'orderby' => false
             )
         );
 
@@ -505,6 +513,25 @@ class AdminCategoriesControllerCore extends AdminController
                         ),
                         array(
                             'id' => 'active_off',
+                            'value' => 0,
+                            'label' => $this->l('Disabled')
+                        )
+                    )
+                ),
+                 array(
+                    'type' => 'switch',
+                    'label' => $this->l('Tiene Opiniones'),
+                    'name' => 'have_opinions',
+                    'required' => false,
+                    'is_bool' => true,
+                    'values' => array(
+                        array(
+                            'id' => 'active_onc',
+                            'value' => 1,
+                            'label' => $this->l('Enabled')
+                        ),
+                        array(
+                            'id' => 'active_offc',
                             'value' => 0,
                             'label' => $this->l('Disabled')
                         )

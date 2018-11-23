@@ -77,9 +77,11 @@
                 {/if}
             </div>
         {/if}
+
         {if isset($category->description)}
               <br/>
-                      <div class="panel panel-default">
+
+                      <div class="panel panel-default" role="tablist">
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         
                                               <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="link-collapse">
@@ -147,7 +149,20 @@
                 {include file="./pagination.tpl" paginationId='bottom'}
             </div>
         {/if}
+        {if $category->have_opinions}
+            {assign var="link_opiniones" value="{$category->link_rewrite}"}            
+            {assign var="link_opiniones" value="{$link_opiniones|replace:'-feminizadas':''}"}
+            {assign var="link_opiniones" value="{$link_opiniones|replace:'-regulares':''}"}
+            {assign var="link_opiniones" value="{$link_opiniones|replace:'-autoflorecientes':''}"}
 
+
+
+
+
+
+
+            <a href="https://www.semillaslowcost.com/opiniones/{$link_opiniones}" class="button btn-primary"><span>Opiniones</span></a>
+        {/if}
         {if $theme_options['show_category_description'] == '1'}
             <div class="txt col-md-12 col-sm-12 col-xs-12">
                 {*{if Tools::strlen($category->description) > 3000}
