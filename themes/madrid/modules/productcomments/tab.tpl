@@ -24,5 +24,5 @@
 *}
 
 <div class="heading_block nomargin">
-	<h3 id="#idTab5" class="idTabHrefShort page-product-heading"><i class="icon icon-comment main-color"></i> {l s='Reviews' mod='productcomments'}</h3>
+	<h3 id="#idTab5" class="idTabHrefShort page-product-heading"><i class="icon icon-comment main-color"></i> Reseñas y Comentarios</h3>
 </div>

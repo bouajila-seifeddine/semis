@@ -63,7 +63,6 @@ The generated theme comes with sample pre-created options in the admin and theme
 * Color picker
 * Custom
 * Date
-* EDD License (Easy Digital Downloads license)
 * Editor (WYSIWYG)
 * Enable
 * File upload

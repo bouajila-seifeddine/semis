@@ -336,7 +336,7 @@
 					{if !$opc}
 					<h3 class="clearBoth payment-txt">{l s='Choose payment method to complete your order'}</h3>
 					{/if}
-					<div id="HOOK_PAYMENT" class="clearBoth {if !$opc}row{/if}">
+					<div id="HOOK_PAYMENT" class="clearBoth">
 						{$HOOK_PAYMENT}
 					</div>
 					{if $opc}</div> <!-- end opc_payment_methods-content -->{/if}

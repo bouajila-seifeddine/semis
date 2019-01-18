@@ -452,7 +452,7 @@ if ( !class_exists( 'toc' ) ) :
 			$js_vars = array();
 			
 			// register our CSS and scripts
-			wp_register_style( 'toc-screen', $this->path . '/screen.min.css', array(), TOC_VERSION );
+			//wp_register_style( 'toc-screen', $this->path . '/screen.min.css', array(), TOC_VERSION );
 			wp_register_script( 'toc-front', $this->path . '/front.min.js', array('jquery'), TOC_VERSION, true );
 			
 			// enqueue them!

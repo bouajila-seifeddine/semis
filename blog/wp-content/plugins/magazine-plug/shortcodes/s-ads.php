@@ -9,7 +9,7 @@ function ad( $atts, $content = null ) {
 		$allowed_html = array('ins' => array( 'class' => array(), 'style' => array(),'data-ad-client' => array(),'data-ad-slot' => array(),'data-ad-format' => array()), 'iframe' => array( 'id' => array(),'name' => array(),'src' => array(),'style' => array(),'scrolling' => array(),'frameborder' => array()), 'script' => array( 'async' => array(), 'type' => array(),'src' => array()), 'noscript' => array(), 'small' => array( 'class' => array()), 'img' => array( 'src' => array(), 'alt' => array(), 'class' => array(), 'width' => array(), 'height' => array() ), 'a' => array( 'href' => array(), 'title' => array() ), 'br' => array(), 'i' => array('class' => array()),  'em' => array(), 'strong' => array(), 'div' => array('class' => array()), 'span' => array('class' => array()));
 
 			$shortcode = '';
-			$shortcode .= '<div itemscope itemtype="https://schema.org/WPAdBlock" class="advertise text-'.$position.'">';
+			$shortcode .= '<div class=" text-'.$position.'">';
 
 				if($type=="custom-ad-1") { if(!empty($options['custom_ad_1'])){ $shortcode .= html_entity_decode($options['custom_ad_1']); }}
 				if($type=="custom-ad-2") { if(!empty($options['custom_ad_2'])){ $shortcode .= html_entity_decode($options['custom_ad_2']); }}

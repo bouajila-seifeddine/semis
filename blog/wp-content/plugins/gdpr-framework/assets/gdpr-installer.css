@@ -244,8 +244,21 @@
   cursor: pointer;
 }
 
+.gdpr-select-policy-page {
+	padding: 10px 5px 10px 5px;
+	border: 1px solid #a3a3a3;
+}
+.gdpr-select-policy-page strong{
+  margin: 10px 0;
+  display: block;
+}
+.gdpr-select-policy-page span{
+  font-size: 12px;
+}
+
 .gdpr-installer input[type=text],
-.gdpr-installer input[type=email] {
+.gdpr-installer input[type=email], 
+#gdpr_custom_policy_page {
   border: 1px solid #aaa;
   border-color: #ddd;
   border-radius: 4px;
@@ -547,4 +560,25 @@
   .gdpr-breadcrumbs_unit:nth-child(4) {
     margin-top: 0;
   }
+}
+
+.gdpr_cf7_notice {
+	font-weight: 600;
+	background: #D6D6D6;
+	padding: 10px;
+}
+
+.gdpr_cf7_notice a {
+	cursor: pointer;
+}
+
+.gdpr_cf7_notice b {
+  font-weight: 800;
+}
+
+.button.button-secondary.button-side:hover {
+	color: #fff;
+	background: #0095a8;
+	transition: 0.5s;
+	font-weight: 600;
 }

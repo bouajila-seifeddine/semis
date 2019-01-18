@@ -9,7 +9,8 @@ class Flamingo
     public function __construct()
     {
         add_filter('wpcf7_editor_panels', [$this, 'addCF7Tab']);
-        add_action('wpcf7_save_contact_form', [$this, 'saveCF7Tab'], 10, 3);
+        add_action('wpcf7_save_contact_form', [$this, 'saveCF7Tab'], 10, 3);        
+        add_action( 'wpcf7_admin_notices', [$this, 'addInformation'] );
 
         add_filter('gdpr/data-subject/data', [$this, 'getExportData'], 20, 2);
         add_action('gdpr/data-subject/delete', [$this, 'deleteEntries']);
@@ -17,7 +18,7 @@ class Flamingo
     }
 
     public function addCF7Tab($tabs)
-    {
+    {   
         $tabs['privacy-panel'] = [
             'title'    => __('Privacy', 'gdpr-framework'),
             'callback' => [$this, 'renderPrivacyTab'],
@@ -27,7 +28,7 @@ class Flamingo
     }
 
     public function renderPrivacyTab(\WPCF7_ContactForm $form)
-    {
+    {   
         $enabled    = get_post_meta($form->id(), 'gdpr_cf7_enabled', true) ? get_post_meta($form->id(), 'gdpr_cf7_enabled', true) : '';
         $emailField = get_post_meta($form->id(), 'gdpr_cf7_email_field', true) ? get_post_meta($form->id(), 'gdpr_cf7_email_field', true) : '';
 
@@ -93,6 +94,7 @@ class Flamingo
         foreach ($forms as $form) {
             /* @var $form \WPCF7_ContactForm */
             $messages = \Flamingo_Inbound_Message::find([
+               'posts_per_page' => -1,
                'channel' => get_post_field( 'post_name', $form->id()),
             ]);
 
@@ -148,4 +150,16 @@ class Flamingo
         }
 
     }
+
+    public function addInformation()
+    {
+        $gdpr_notice_heading =  _x("Do you want form to be GDPR compliance.", "(Admin)", "gdpr-framework");
+        $gdpr_notice_message =  _x("You have installed flamingo, To make this GDPR compliance in individual contact form's privacy tab check the checkbox for include data to be search on Privacy tool.", "(Admin)", "gdpr-framework");
+
+        echo "<div class='welcome-gdpr-notice'>";
+        echo "<h3>".$gdpr_notice_heading."</h3>";
+        echo "<p>".$gdpr_notice_message."</p>";
+        echo "</div>";
+    }
+
 }

@@ -54,8 +54,12 @@ if (!is_callable('random_bytes')) {
                 'Length must be greater than 0'
             );
         }
-
-        $buf = @mcrypt_create_iv($bytes, MCRYPT_DEV_URANDOM);
+        /*
+        * refrence from http://php.net/manual/en/function.random-bytes.php
+        */
+        if (function_exists('openssl_random_pseudo_bytes')) {
+            $buf = @openssl_random_pseudo_bytes($bytes);
+        }
         if (
             $buf !== false
             &&

@@ -5,28 +5,41 @@
 *}
 {if $menu}
 <div class="ph_megamenu_mobile_toggle">
-	<a href="#" class="show_megamenu"><i class="fa fa-bars"></i>{l s='Mostrar menú' mod='ph_megamenu'}</a>
-	<a href="#" class="hide_megamenu"><i class="fa fa-times"></i>{l s='Esconder menú' mod='ph_megamenu'}</a>
-</div>
+	<div class="mobile-menu-triggers">
+			<a href="#" class="show_megamenu" aria-label="Mostrar Menu"><i class="fa fa-bars"></i><span>MENÚ</span></a>
+			<a href="#" class="hide_megamenu" aria-label="Esconder Menu"><i class="fa fa-times"></i><span>MENÚ</span></a>
+	</div>
+	<div class="mobile-menu-logo">
+				<a href="https://www.semillaslowcost.com/" aria-label="Inicio"><img src="https://www.semillaslowcost.com/img/logo-mobile.png" alt="Logo Semillas Low Cost"></a>
+	</div>
+	<div class="contenedor-iconos-menu">
+		<div class="mobile-menu-user">
+			<a href="https://www.semillaslowcost.com/inicio-sesion?back=my-account"><i class="fa fa-user" aria-label="Iniciar Sesión"></i></a>
+		</div>
+		<div class="mobile-menu-buscador">
+			<i class="fa fa-search" onclick="document.getElementById('search_block_top_mobile').classList.toggle('hidden'); window.scrollTo(0,0);" aria-label="Buscador"></i>
+		</div>
+		<div class="mobile-menu-carrito">	
+		<a  href="" onclick="togglecarromobile()"><i class="pull-right icon icon-shopping-cart"><span class="cart-qties-mobile" id="cart-qties-mobile-id" {nocache}{if $cart_qties == 0} style="display:none;" {/if}>{$cart_qties}{/nocache}</span> </i></a>
 
+		</div>
+	</div>
+</div>
 <div id="ph_megamenu_wrapper" class="clearBoth">
 	<nav role="navigation">
-	
 		<ul id="ph_megamenu" class="ph_megamenu">
 			{foreach from=$menu item=tab key=key}
 				<li class="menu_link_{$tab.id_prestahome_megamenu|intval}{if $tab.class != ''} {$tab.class|escape:'htmlall':'UTF-8'}{/if}{if $tab.align == 1} align-right{/if}{if $tab.icon != ''} with-icon{/if} {if $tab.type == 1}has-submenu{/if} {if $tab.url == $base_dir}active{/if}{if $tab.hide_on_mobile} ph-hidden-mobile{/if}{if $tab.hide_on_desktop} ph-hidden-desktop{/if}">
-					<a href="{$tab.url|escape:'htmlall':'UTF-8'}" title="{$tab.title|escape:'htmlall':'UTF-8'}" {if $tab.new_window}target="_blank"{/if}>
-						{if $tab.icon != ''}
-							<i class="fa {$tab.icon|escape:'htmlall':'UTF-8'}"></i>
+							<a href="{$tab.url|escape:'htmlall':'UTF-8'}" title="{$tab.title|escape:'htmlall':'UTF-8'}" {if $tab.new_window}target="_blank"{/if}>
+								{if $tab.id_prestahome_megamenu|intval == 1}
+								<i class="fa fa-home"></i>
 						{/if}
+						{if $tab.icon != ''}
+						<img src="https://www.semillaslowcost.com/img/iconos-menu/{$tab.icon|escape:'htmlall':'UTF-8'}" class="img-menu" alt="{$tab.title|escape:'htmlall':'UTF-8'}">						{/if}
 						
 						<span class="{if !$tab.display_title}hide{/if}">{$tab.title|escape:'htmlall':'UTF-8'}</span>
 
-						{if $tab.label_text}
-							<span class="label" style="color:{$tab.label_bg|escape:'htmlall':'UTF-8'};background:{$tab.label_bg|escape:'htmlall':'UTF-8'};">
-								<span style="color: {$tab.label_color|escape:'htmlall':'UTF-8'};">{$tab.label_text|escape:'htmlall':'UTF-8'}</span>
-							</span>
-						{/if}
+						
 					</a>
 					{* mega menu *}
 					{if $tab.type == 1}
@@ -75,7 +88,7 @@
 							<li class="menu_link_dropdown_{$dropdown.id_prestahome_megamenu|intval} {if $dropdown.class != ''} {$dropdown.class|escape:'htmlall':'UTF-8'}{/if}{if $dropdown.icon != ''} with-icon{/if}">
 								<a href="{$dropdown.url|escape:'htmlall':'UTF-8'}">
 									{if $dropdown.icon != ''}
-										<i class="fa {$dropdown.icon|escape:'htmlall':'UTF-8'}"></i>
+										<img href="https://www.semillaslowcost.com/img/iconos-menu/{$dropdown.icon|escape:'htmlall':'UTF-8'}" class="img-menu" alt="{$dropdown.title|escape:'htmlall':'UTF-8'}">
 									{/if}
 
 									{$dropdown.title|escape:'htmlall':'UTF-8'}
@@ -93,10 +106,23 @@
 				</li>
 			{/foreach}
 		</ul>
-		
 	</nav>
 </div><!-- #ph_megamenu -->
-
+<div id="search_block_top_mobile" class="hidden">
+	<form method="get" action="{$link->getPageLink('search', null, null, null, false, null, true)|escape:'html':'UTF-8'}" id="searchbox" class="row">
+		<div style="margin: 0px;">
+			<input type="hidden" name="controller" value="search" />
+			<input type="hidden" name="orderby" value="position" />
+			<input type="hidden" name="orderway" value="desc" />
+			<input class="search_query" type="text" id="search_query_top" name="search_query" placeholder="¿Qué estás buscando?" value="{$search_query|escape:'htmlall':'UTF-8'|stripslashes}" />
+			<span>
+				
+                <input class="main-color" style="text-indent:0px; text-indent:0px; width:30%; float:right; line-height: 0px; height: 37px;" type="submit" value="BUSCAR" />
+				
+			</span>
+		</div>
+	</form>
+</div>
 <script>
 $(function() {
 	$('.ph_megamenu').ph_megamenu();

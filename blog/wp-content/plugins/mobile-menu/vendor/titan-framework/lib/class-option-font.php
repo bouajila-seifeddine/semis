@@ -76,7 +76,6 @@ class TitanFrameworkOptionFont extends TitanFrameworkOption {
 	// We need to do this since we want to gather all the fonts first then enqueue only the unique fonts
 	private static $optionsToEnqueue = array();
 
-
 	/**
 	 * Constructor
 	 *

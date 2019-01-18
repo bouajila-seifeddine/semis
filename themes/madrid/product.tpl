@@ -58,6 +58,9 @@
 		{/if}
 		<!-- left infos-->
 		<div class="product-photo col-md-5 col-sm-5">
+			{if $deviceType != "computer"}
+				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
+			{/if}
 			<!-- product img-->
 			<div id="image-block" class="clearfix">
 				<span class="labels">
@@ -75,7 +78,8 @@
 				</span>
 				{if $have_image}
 					<span id="view_full_size">
-						{if $jqZoomEnabled && $have_image && !$content_only}
+						<div class="overlay-halloweed"></div>
+						{if $jqZoomEnabled && $have_image && !$content_only && $deviceType == "computer"}
 							<a class="jqzoom" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" rel="gal1" href="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')|escape:'html':'UTF-8'}" itemprop="url">
 								<span class="hover_bg">
 									<i class="icon icon-search"></i>	
@@ -83,9 +87,7 @@
 								<img class="img-responsive" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}"/>
 							</a>
 						{else}
-							<span class="hover_bg">
-								<i class="icon icon-search"></i>	
-							</span>
+							
 							<img id="bigpic" class="img-responsive" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" width="{$largeSize.width}" height="{$largeSize.height}"/>
 						{/if}
 					</span>
@@ -160,8 +162,9 @@
 
 		<!-- center infos -->
 		<div class="product-desc col-md-7 col-sm-7">
-			<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
-
+			{if $deviceType == "computer"}
+				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
+			{/if}
 			{if $product->description_short || $packItems|@count > 0}
 			<div id="short_description_block" role="tablist"  class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingOne" >
@@ -222,11 +225,11 @@
 							<!-- quantity wanted -->
 			{if !$PS_CATALOG_MODE}
 			<p id="quantity_wanted_p"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
-				<label>{l s='Quantity'}</label>
+				<label for="quantity_wanted">{l s='Quantity'}</label>
 				<span class="counter">
 					<input type="text" name="qty" id="quantity_wanted" class="text"  size="2" maxlength="3" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
-					<a class="btn-q more" href="#"><i class="icon icon-plus"></i></a>
-					<a class="btn-q less" href="#"><i class="icon icon-minus"></i></a>
+					<a class="btn-q more" href="#"><i class="icon icon-plus" aria-label="Más Cantidad"></i></a>
+					<a class="btn-q less" href="#"><i class="icon icon-minus" aria-label="Menos Cantidad"></i></a>
 				</span>
 			</p>
 			{/if}
@@ -338,7 +341,7 @@
 					<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
 				</p>
 				<div class="box-info-product">
-					<div class="content_prices main-color clearfix">
+					<div class="content_prices main-color clearfix" id="caja-compra">
 						{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
 							<!-- prices -->
 							<div class="price pull-left" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -404,17 +407,27 @@
 							{/if}
 						{/if} {*close if for show price*}
 						{hook h="displayProductPriceBlock" product=$product type="weight"}
-						<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
+						<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{else} class="btn-compra-container"{/if}>
 							<p id="add_to_cart" class="pull-right no-print">
+								{if $deviceType != "computer"}
+								<a  href="https://api.whatsapp.com/send?phone=34653323445&text=Pregunta de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  rel="nofollow" target="_blank" style="display:none;" class="button btn-primary" id="btn-comprar-whats">
+										<i class="fa fa-whatsapp" aria-hidden="true"></i>  
+								</a>
+								{/if}
 								<button type="submit" name="Submit" class="button btn-primary">
-									{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}
+									{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}
+
+									{l s='Add to cart'}
+
+									{/if}
 								</button>
 							</p>
 						</div>
 
 						{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE}
 						{if $deviceType != "computer"}
-							<div>
+						{if $product->id_category_default != 276 && $product->id_category_default != 273 && $product->id_category_default != 274 && $product->id_category_default != 277 && $product->id_category_default != 278}
+							<div class="btn-compra-container">
 								<p id="add_to_cart" class="pull-right no-print">
 									<a  href="https://api.whatsapp.com/send?phone=34653323445&text=Consultar disponibilidad de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  rel="nofollow" target="_blank" class="button btn-primary">
 										<i class="fa fa-whatsapp" aria-hidden="true"></i>  Consultar disponibilidad 
@@ -422,15 +435,17 @@
 								</p>
 							</div>
 							{/if}
+							{/if}
 							{if $deviceType == "computer"}
-
-															<div>
+							{if $product->id_category_default != 276 && $product->id_category_default != 273 && $product->id_category_default != 274 && $product->id_category_default != 277 && $product->id_category_default != 278}
+							<div class="btn-compra-container">
 								<p id="add_to_cart" class="pull-right no-print">
 									<a  href="https://web.whatsapp.com/send?phone=34653323445&text=Consultar disponibilidad de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  rel="nofollow" target="_blank" class="button btn-primary">
 										<i class="fa fa-whatsapp" aria-hidden="true"></i>  Consultar disponibilidad 
 									</a>
 								</p>
 							</div>
+							{/if}
 							{/if}
 							
 						{/if}
@@ -545,13 +560,13 @@
    
 			<div class="imagenes">
 		
-			<img src="/img/envio_gratis.png" alt="Envio gratuito" class="envio_gratis"></img>
-			<img src="/img/envio_rapido.png" alt="Envio 24 horas" class="envio_rapido"></img>
+			<img data-src="/img/envio_gratis.png" alt="Envio gratuito" class="envio_gratis lazy"></img>
+			<img data-src="/img/envio_rapido.png" alt="Envio 24 horas" class="envio_rapido lazy"></img>
 			</div>
 			</br>
 			<section class="page-product-box nomargin">
 				<div class="heading_block">
-					<h3><i class="icon icon-lightbulb-o main-color"></i> <strong>{l s='More'}</strong> {l s='info'}</h3>
+					<h3><i class="icon icon-lightbulb-o main-color"></i> <strong>Descripción</strong> producto</h3>
 				</div>{/if}
 				{if isset($product) && $product->description}
 				<div class="page-product-content">
@@ -613,8 +628,8 @@
    
 			<div class="imagenes">
 		
-			<img src="/img/envio_gratis.png" alt="Envio gratuito" class="envio_gratis"></img>
-			<img src="/img/envio_rapido.png" alt="Envio 24 horas" class="envio_rapido"></img>
+			<img data-src="/img/envio_gratis.png" alt="Envio gratuito" class="envio_gratis lazy"></img>
+			<img data-src="/img/envio_rapido.png" alt="Envio 24 horas" class="envio_rapido"></img>
 			</div>
 			</br>
 			<section class="page-product-box nomargin">

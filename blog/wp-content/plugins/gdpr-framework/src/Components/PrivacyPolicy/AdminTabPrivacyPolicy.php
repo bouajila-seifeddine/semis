@@ -33,6 +33,7 @@ class AdminTabPrivacyPolicy extends AdminTab
         $this->registerSetting('gdpr_has_dpo');
         $this->registerSetting('gdpr_dpo_name');
         $this->registerSetting('gdpr_dpo_email');
+        $this->registerSetting('gdpr_delete_text');
 
         /*
         $this->registerSetting('gdpr_pp_data_gathered_1');
@@ -76,6 +77,7 @@ class AdminTabPrivacyPolicy extends AdminTab
             [$this, 'renderCompanyNameHtml'],
             'gdpr_section_privacy_policy_company'
         );
+
 
         $this->registerSettingField(
             'gdpr_company_email',
@@ -164,7 +166,7 @@ class AdminTabPrivacyPolicy extends AdminTab
             'gdpr_section_privacy_policy_dpo',
             _x('Data Protection Officer', '(Admin)', 'gdpr-framework'),
             function() {
-                echo "<a href='https://codelight.eu/wordpress-gdpr-framework/knowledge-base/do-i-need-to-appoint-data-protection-officer-dpo/' target='_blank'>";
+                echo "<a href='https://data443.com/wordpress-gdpr-framework/knowledge-base/do-i-need-to-appoint-data-protection-officer-dpo/' target='_blank'>";
                 echo _x('Knowledge base: Do I need to appoint a Data Protection Officer?', '(Admin)', 'gdpr-framework');
                 echo "</a>";
             }
@@ -192,6 +194,18 @@ class AdminTabPrivacyPolicy extends AdminTab
             'gdpr_section_privacy_policy_dpo',
             ['class' => 'gdpr-dpo hidden']
         );
+
+        /**
+         * Change Delete Text
+         */
+
+        $this->registerSettingField(
+            'gdpr_delete_text',
+            _x('Delete Text', '(Admin)', 'gdpr-framework'),
+            [$this, 'renderDeleteTextHtml'],
+            'gdpr_section_privacy_policy_company'
+        );
+        
     }
 
     public function renderHeader()
@@ -234,7 +248,7 @@ class AdminTabPrivacyPolicy extends AdminTab
         echo "<h3>";
         echo _x('Representative Contact', '(Admin)', 'gdpr-framework');
         echo "</h3>";
-        echo "<a href='https://codelight.eu/wordpress-gdpr-framework/knowledge-base/do-i-need-to-appoint-an-eu-based-representative/' target='_blank'>";
+        echo "<a href='https://data443.com/wordpress-gdpr-framework/knowledge-base/do-i-need-to-appoint-an-eu-based-representative/' target='_blank'>";
         echo _x('Knowledge base: Do I need to appoint an EU-based representative?', '(Admin)', 'gdpr-framework');
         echo "</a>";
     }
@@ -270,7 +284,7 @@ class AdminTabPrivacyPolicy extends AdminTab
      */
     public function renderDpaJS()
     {
-        //echo "<a href='https://codelight.eu/wordpress-gdpr-framework/knowledge-base/do-i-need-to-appoint-an-eu-based-representative/' target='_blank'>";
+        //echo "<a href='https://data443.com/wordpress-gdpr-framework/knowledge-base/do-i-need-to-appoint-an-eu-based-representative/' target='_blank'>";
         echo sprintf(
           _x('See the %slist of contacts here%s.', '(Admin)', 'gdpr-framework'),
           '<a href="http://ec.europa.eu/justice/data-protection/article-29/structure/data-protection-authorities/index_en.htm" target="_blank">',
@@ -323,11 +337,17 @@ class AdminTabPrivacyPolicy extends AdminTab
     public function renderDPOEmailHtml()
     {
         $value = gdpr('options')->get('dpo_email') ? esc_attr(gdpr('options')->get('dpo_email')) : '';
-        $placeholder = _x('DPO Name', '(Admin)', 'gdpr-framework');
+        $placeholder = _x('DPO Email', '(Admin)', 'gdpr-framework');
         echo "<input type='email' name='gdpr_dpo_email' placeholder='{$placeholder}' value='{$value}'>";
     }
 
-
+    public function renderDeleteTextHtml()
+    {
+        $value = gdpr('options')->get('delete_text') ? esc_attr(gdpr('options')->get('delete_text')) : '';
+        $placeholder = _x('Delete Text', '(Admin)', 'gdpr-framework');
+        echo "<input name='gdpr_delete_text' placeholder='{$placeholder}' value='{$value}'>";
+    }
+    
     public function generatePolicy()
     {
         $policyPage = gdpr('options')->get('policy_page');

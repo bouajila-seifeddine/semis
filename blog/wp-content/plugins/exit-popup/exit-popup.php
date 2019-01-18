@@ -5,7 +5,7 @@ Plugin URI: https://www.brontobytes.com/
 Description: Exit Popup enabling you to display a jquery modal before a user leaves your website.
 Author: Brontobytes
 Author URI: https://www.brontobytes.com/
-Version: 1.6.5
+Version: 1.7
 License: GPLv2
 */
 
@@ -39,16 +39,16 @@ function exit_popup_settings_page() { ?>
 				<input type="checkbox" name="exit_popup_click_outside" value="true" <?php echo ( get_option('exit_popup_click_outside') == true ) ? ' checked="checked" />' : ' />'; ?> <br /><small>Available options: true, false</small>
 			</td>
 		</tr>
-        <tr valign="top">
-			<th scope="row">Modal Width (px)</th>
+		<tr valign="top">
+			<th scope="row">Modal Width (px or %)</th>
 			<td>
-				<input type="text" size="10" name="exit_popup_modal_width" value="<?php echo esc_attr( get_option('exit_popup_modal_width') ); ?>" /><br /><small>Ex. 500</small>
+				<input type="text" size="10" name="exit_popup_modal_width" value="<?php echo esc_attr( get_option('exit_popup_modal_width') ); ?>" /><br /><small>Ex. 500px or 50%</small>
 			</td>
 		</tr>
         <tr valign="top">
-			<th scope="row">Modal Height (px)</th>
+			<th scope="row">Modal Height (px or %)</th>
 			<td>
-				<input type="text" size="10" name="exit_popup_modal_height" value="<?php echo esc_attr( get_option('exit_popup_modal_height') ); ?>" /><br /><small>Ex. 300</small>
+				<input type="text" size="10" name="exit_popup_modal_height" value="<?php echo esc_attr( get_option('exit_popup_modal_height') ); ?>" /><br /><small>Ex. 300px or 50%</small>
 			</td>
 		</tr>
         <tr valign="top">
@@ -89,7 +89,6 @@ function exit_popup_settings_page() { ?>
 					padding-left: 5px;
 					padding-right: 5px;;
 					box-shadow: 10px 0 0 #666666, -10px 0 0 #666666;
-					align: center;
 				}
 				</style>
 				<center>
@@ -106,7 +105,7 @@ function exit_popup_settings_page() { ?>
 		<tr valign="top">
 			<th scope="row"><label for="exit_popup_powered_by">Show 'Powered by' Link</label></th>
 			<td>
-				<input type="checkbox" name="exit_popup_powered_by" value="true" <?php echo ( get_option('exit_popup_powered_by') == true ) ? ' checked="checked" />' : ' />'; ?><br /><small>We are very happy to be able to provide this and other <a href="https://www.brontobytes.com/blog/c/wordpress-plugins/">free WordPress plugins</a></small>
+				
 			</td>
 		</tr>
     </table>
@@ -114,7 +113,6 @@ function exit_popup_settings_page() { ?>
 	submit_button();
 	?>
 </form>
-<p>Plugin developed by <a href="https://www.brontobytes.com/"><img width="100" style="vertical-align:middle" src="<?php echo plugins_url( 'images/brontobytes.svg', __FILE__ ) ?>" alt="Web hosting provider"></a></p>
 </div>
 <?php }
 
@@ -169,7 +167,7 @@ function exit_popup() {
 <!-- Exit Popup -->
     <div id='exitpopup-modal'>
       <div class='underlay'></div>
-      <div class='exitpopup-modal-window' style='width:<?php echo esc_attr( get_option('exit_popup_modal_width') ); ?>px !important; height:<?php echo esc_attr( get_option('exit_popup_modal_height') ); ?>px !important;'>
+	  <div class='exitpopup-modal-window' style='width:<?php echo esc_attr( get_option('exit_popup_modal_width') ); if (preg_match('(px|%)', esc_attr( get_option('exit_popup_modal_height') )) !== 1) { echo 'px'; } ?> !important; height:<?php echo esc_attr( get_option('exit_popup_modal_height') ); if (preg_match('(px|%)', esc_attr( get_option('exit_popup_modal_height') )) !== 1) { echo 'px'; } ?> !important;'>
         <div class='modal-title' style='background-color:#<?php echo esc_attr( get_option('exit_popup_popup_title_color') ); ?> !important;'>
           <h3><?php echo esc_attr( get_option('exit_popup_popup_title') ); ?></h3>
         </div>
@@ -179,7 +177,7 @@ function exit_popup() {
         <div class='exitpopup-modal-footer'>
           <p><?php echo esc_attr( get_option('exit_popup_popup_footer') ); ?></p>
         </div>
-		<?php if (get_option('exit_popup_powered_by') == true) { ?> <div style="margin-top:-5px;position:absolute;right:8px;"><a style="font-size:x-small;color:white;text-decoration:none;" href="https://www.brontobytes.com/blog/exit-popup-free-wordpress-plugin/">Exit Popup for Wordpress</a></div> <?php } ?>
+		
       </div>
     </div>
 

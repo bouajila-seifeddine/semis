@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 /*
  * MODULO DE GESTION DE CONEXIONES SOAP CON WEBSERVICE SAGEC DE MRW

@@ -83,3 +83,11 @@ However, delay the fade out process for 2.5 seconds */
               width:  100% !important;
             }
         }
+
+.table-cms {
+  width:  100%;
+}
+
+.table-cms td{
+  border:  1px solid black;
+}

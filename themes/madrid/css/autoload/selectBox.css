@@ -1,6 +1,5 @@
 /* Dropdown control */
 .selectBox-dropdown {
-    min-width: 210px;
     position: relative;
     border: solid 1px #fff;
     line-height: 1.5;

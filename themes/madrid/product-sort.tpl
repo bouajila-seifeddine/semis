@@ -23,16 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if isset($orderby) AND isset($orderway)}
-<div class="col-md-2 col-sm-3 col-xs-12 list-style-buttons">
-	<div class="row">
-		<a id="gridview" class="switcher active" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Grid">
-			<i class="icon icon-th"></i>
-		</a>
-		<a id="listview" class="switcher" title="" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="List">
-			<i class="icon icon-th-list"></i>
-		</a>
-	</div>
-</div><!-- .list-style-buttons -->
+
 {* On 1.5 the var request is setted on the front controller. The next lines assure the retrocompatibility with some modules *}
 {if !isset($request)}
 	<!-- Sort products -->
@@ -48,9 +39,9 @@
 {/if}
 {if $page_name == 'best-sales' && (!isset($smarty.get.orderby) || empty($smarty.get.orderby))}{$orderby = ''}{$orderbydefault = ''}{/if}
 <form id="productsSortForm{if isset($paginationId)}_{$paginationId}{/if}" action="{$request|escape:'html':'UTF-8'}" class="col-md-4 col-sm-8 col-xs-12 productsSortForm">
-		{*<label for="selectProductSort{if isset($paginationId)}_{$paginationId}{/if}">{l s='Sort by'}</label>*}
+		<label for="selectProductSort{if isset($paginationId)}_{$paginationId}{/if}">{l s='Sort by'}</label>
 		<select id="selectProductSort{if isset($paginationId)}_{$paginationId}{/if}" class="selectProductSort">
-			<option value="{if $page_name != 'best-sales'}{$orderbydefault|escape:'html':'UTF-8'}:{$orderwaydefault|escape:'html':'UTF-8'}{/if}"{if $orderby eq $orderbydefault} selected="selected"{/if}>{l s='Sort by'}</option>
+			<option value="{if $page_name != 'best-sales'}{$orderbydefault|escape:'html':'UTF-8'}:{$orderwaydefault|escape:'html':'UTF-8'}{/if}"{if $orderby eq $orderbydefault} selected="selected"{/if}>---</option>
 			{if !$PS_CATALOG_MODE}
 			<option value="price:asc"{if $orderby eq 'price' AND $orderway eq 'asc'} selected="selected"{/if}>{l s='Price: Lowest first'}</option>
 			<option value="price:desc"{if $orderby eq 'price' AND $orderway eq 'desc'} selected="selected"{/if}>{l s='Price: Highest first'}</option>

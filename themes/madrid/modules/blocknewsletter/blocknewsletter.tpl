@@ -25,9 +25,9 @@
 <!-- Block Newsletter module-->
 {if isset($is_before_footer) && $is_before_footer}
 <form id="newsletterRegistrationForm" class="col-md-7 col-sm-12 col-xs-12" action="{$link->getPageLink('index', null, null, null, false, null, true)|escape:'html':'UTF-8'}" method="post">
-	<h5>{l s='NEWSLETTER' mod='blocknewsletter'}</h5>
+	<h5><label for="newsletter-input">{l s='NEWSLETTER' mod='blocknewsletter'}</label></h5>
 	<input id="newsletter-input" class="account_input" type="email" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{/if}" placeholder="Introduzca su dirección de correo electrónico" />
-	<input class="button button-small btn-primary" type="submit" value="Enviar" name="submitNewsletter" /><div class="clearfix"></div>	<p style="padding-top: 	15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </p>
+	<input class="button button-small btn-primary" type="submit" value="Enviar" name="submitNewsletter" /><div class="clearfix"></div>	<p style="padding-top: 	15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required> <label for="gdpr-consent-box">He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </label></p>
 	<input type="hidden" name="action" value="0" />
 </form>
 {else}

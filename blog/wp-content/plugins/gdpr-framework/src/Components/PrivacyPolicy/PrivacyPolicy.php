@@ -1,7 +1,6 @@
 <?php
 
 namespace Codelight\GDPR\Components\PrivacyPolicy;
-
 /**
  * Handles putting together and rendering the privacy policy page
  *

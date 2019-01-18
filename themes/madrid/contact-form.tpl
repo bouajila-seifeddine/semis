@@ -133,7 +133,8 @@
 				<div class="form-group">
 					<label for="message">{l s='Message'}</label>
 					<textarea class="form-control" id="message" name="message">{if isset($message)}{$message|escape:'html':'UTF-8'|stripslashes}{/if}</textarea>
-					<p style="padding-top: 	15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </p>
+					<p style="padding-top: 	15px;"><input type="checkbox" id="gdpr-consent-box" name="gdpr" required> Doy mi consentimiento para el recabado de los datos volcados aquí, para el cumplimiento de las finalidades descritas, admitiendo que los mismos son verídicos, exactos y fiables, aceptando haber leído
+<a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> la política de privacidad.</a></p>
 				</div>
 			</div>
 

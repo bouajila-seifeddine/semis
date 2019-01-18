@@ -19,5 +19,3 @@ $_MODULE['<{blockbestsellers}madrid>blockbestsellers_3cb29f0ccc5fd220a97df89dafe
 $_MODULE['<{blockbestsellers}madrid>blockbestsellers_eae99cd6a931f3553123420b16383812'] = 'Los productos más vendidos';
 $_MODULE['<{blockbestsellers}madrid>blockbestsellers_f7be84d6809317a6eb0ff3823a936800'] = 'No hay productos más vendidos en este momento';
 $_MODULE['<{blockbestsellers}madrid>tab_d7b2933ba512ada478c97fa43dd7ebe6'] = 'Los más vendidos';
-$_MODULE['<{blockbestsellers}madrid>blockbestsellers-home_5fa3852b08951fcdc4d2e60f89a85bfe'] = 'Populares';
-$_MODULE['<{blockbestsellers}madrid>blockbestsellers-home_86024cad1e83101d97359d7351051156'] = 'Productos';

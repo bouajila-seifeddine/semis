@@ -1,0 +1,13 @@
+{
+  "name": "Blog Semillas Low Cost ",
+  "short_name": "Blog SLC",
+  "description": "Blog Cannábico del Grow Semillas Low Cost.",
+  "start_url": "/?homescreen=1",
+  "background_color": "#000000",
+  "theme_color": "#7BBD42",
+  "icons": [{
+    "src": "logo-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}

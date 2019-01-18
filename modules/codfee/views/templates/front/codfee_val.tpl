@@ -120,11 +120,11 @@
 		</p>
 	{else}
 		<p class="cart_navigation" id="cart_navigation">
-			<button type="submit" class="button btn btn-default button-medium">
-				<span>{l s='Confirm my order' mod='codfee'}<i class="icon-chevron-right right"></i></span>
+			<button type="submit" class="button  btn-primary">
+				<span>{l s='Confirm my order' mod='codfee'}<i class="icon icon-chevron-right right"></i></span>
 			</button>
 			<a href="{$link->getPageLink('order', true, null, "step=3")|escape:'htmlall':'UTF-8'}" class="button-exclusive btn btn-default">
-				<i class="icon-chevron-left"></i>{l s='Other payment methods' mod='codfee'}
+				<i class="icon icon-chevron-left"></i>{l s='Other payment methods' mod='codfee'}
 			</a>
 		</p>
 	{/if}

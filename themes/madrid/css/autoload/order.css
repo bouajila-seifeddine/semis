@@ -7,8 +7,6 @@
   margin-bottom: 10px;
 }
 #order-detail-content {
-  padding: 25px 30px;
-  margin-bottom: 25px;
   background: #fff;
 }
 #order-detail-content h1 {
@@ -38,10 +36,15 @@ table.table thead th.cart_product {
 table.table thead th.last_item {
   border: 0;
 }
+
+
 @media (max-width: 767px) {
   table.table thead {
     display: none;
   }
+  td.cart_unit .price {
+    display: none;
+}
 }
 table.table tbody tr.odd td {
   background: #f6f6f6;
@@ -53,7 +56,7 @@ table.table tbody tr td {
   border-top: 0;
 }
 table.table tbody td {
-  padding: 10px 15px;
+  padding: 5px 7px;
   vertical-align: middle;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -73,7 +76,7 @@ table.table tbody td.cart_description .product-name {
   display: block;
 }
 table.table tbody td.cart_description .product-name a {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   color: #7bbd42;
 }
@@ -122,7 +125,7 @@ table.table tbody td.cart_discount_delete .cart_quantity_input,
 table.table tbody td.cart_quantity .cart_ph_input,
 table.table tbody td.cart_discount_delete .cart_ph_input {
   display: inline-block;
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   color: #2c313b;
@@ -159,7 +162,7 @@ table.table tbody td.cart_discount_delete .cart_quantity_button a:hover {
 table.table tbody td.cart_delete,
 table.table tbody td.price_discount_del {
   border-right: 0;
-  width: 50px;
+  width: 0px;
 }
 table.table tbody td.cart_delete a,
 table.table tbody td.price_discount_del a {
@@ -200,14 +203,8 @@ table.table tbody td.price_discount_del a:hover {
     float: left;
     background: none!important;
   }
-  table.table tbody td:before {
-    content: attr(data-title);
-    display: block;
-    font-weight: bold;
-  }
-  table.table tbody td.cart_description {
-    width: 300px;
-  }
+ 
+ 
   table.table tbody td.cart_avail {
     display: none;
   }
@@ -229,11 +226,7 @@ table.table tbody td.price_discount_del a:hover {
   table.table tbody td.cart_quantity {
     width: 33%;
   }
-  table.table tbody td.cart_quantity .cart_quantity_button {
-    display: none;
-  }
   table.table tbody td.cart_quantity .cart_quantity_input {
-    width: 100%;
     text-align: center;
   }
 }
@@ -243,7 +236,7 @@ table.table tfoot td.cart_voucher {
   border: 0;
 }
 table.table .price {
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   color: #2c313b;
@@ -273,18 +266,26 @@ table.table .old-price {
   }
 }
 @media (max-width: 767px) {
-  #voucher .discount_name,
+  
   #voucher .button {
-    width: 100%;
+    width: 30%;
     margin-bottom: 10px;
   }
+   #voucher .discount_name{
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  #voucher .button-large {
+    font-size: 14px;
+    padding: 0;
 }
-.summary-shopping {
-  margin: 0 0 50px 0;
+}
+a.have_voucher {
+    color: #a093a3;
 }
 .summary-shopping .summary-bg {
   background: #fff;
-  padding: 20px 30px;
+  padding: 2px 8px;
 }
 .summary-shopping h3 {
   color: #2c313b;
@@ -311,7 +312,7 @@ table.table .old-price {
   color: #7bbd42;
 }
 .summary-shopping table #total_price {
-  font-size: 28px;
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   .summary-shopping {
@@ -367,14 +368,29 @@ table.table .old-price {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 767px) {
-  #compare_shipping_form .row {
-    margin: 0;
-  }
+@media (max-width: 367px) {
+ 
+    .delivery_option_logo img, .payment_module img{width: 100%;}
+
 }
 @media (max-width: 767px) {
   #compare_shipping_form {
     padding: 20px 5px;
+  } 
+
+.form-group-addres{
+  margin-right: 0px !important;
+}
+.select.form-group.date-select {
+    margin-bottom: 15px;
+}
+  #compare_shipping_form .row {
+    margin: 0;
+  }
+  .button-peque {
+    padding: 0 5px !important;
+    font-size: 13px !important;
+
   }
 }
 .order_delivery .box {
@@ -462,15 +478,7 @@ p#loyalty {
 .order_carrier_content table.table td {
   border-right: 0;
 }
-.order_carrier_content table.table td.delivery_option_radio {
-  width: 50px;
-}
-.order_carrier_content table.table td.delivery_option_logo {
-  width: 100px;
-}
-.order_carrier_content table.table td.delivery_option_price {
-  width: 200px;
-}
+
 .order_carrier_content table.table td strong {
   display: block;
 }
@@ -481,6 +489,10 @@ p#loyalty {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+}
+.resume.table.table-bordered td {
+    text-align: center;
+    width: 100%;
 }
 #message {
   min-height: 100px;
@@ -505,16 +517,16 @@ h3.payment-txt {
 }
 .payment_module {
   background: #fff;
+  text-align: center; 
   font-size: 16px;
 }
 .payment_module a {
   display: block;
   padding: 20px 15px;
+  color: #767676;
+  font-weight:  700;
 }
-.payment_module a:hover {
-  background: #7bbd42;
-  color: #fff;
-}
+
 .module-bankwire-payment .box,
 .module-cheque-payment .box,
 .module-cashondelivery-validation .box,
@@ -533,8 +545,80 @@ h3.payment-txt {
 #HOOK_PAYMENT {
   margin-bottom: 20px;
 }
-@media (min-width: 768px) {
-  #HOOK_PAYMENT .col-sm-6:nth-child(2n+1) {
-    clear: both;
-  }
+
+textarea#other {
+    max-height: 39px;
+    min-height: 39px;
+}
+
+fieldset.account_creation.customerprivacy .page-subheading {
+    display: none;
+}
+
+.apellido-add, .nombre-add {height: 0; overflow: hidden;}
+
+.button-peque{
+  display: inline-block;
+height: 36px;
+line-height: 36px;
+padding: 0 30px;
+color: #fff;
+font-size: 18px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+background: #dbdbdb;
+background-color: rgb(219, 219, 219);
+transition: all .2s ease 0s;
+-moz-transition: all .2s ease 0s;
+-webkit-transition: all .2s ease 0s;
+-o-transition: all .2s ease 0s;
+}
+.button-peque:hover{
+  color: white;
+}
+
+
+.form-group-addres{
+  margin-bottom: 15px;
+  margin-right: 22px;
+}
+
+
+@media (min-width: 368px) {
+.delivery_option_logo img {
+    max-height: 55px;
+}
+}
+
+
+.best_grade.best_grade_price.best_grade_speed, .best_grade.best_grade_price, .best_grade.best_grade_speed {
+    display: none;
+}
+
+table.resume.table.table-bordered tr {
+    border: 0;
+}
+
+.checkbox p {
+    font-size: 80%;
+}
+
+#openNewFormBlock, #openLoginFormBlock {background:  #7bbd42; }
+#openNewFormBlock:hover, #openLoginFormBlock:hover {background:  #2c313b; }
+#openNewFormBlock:focus, #openLoginFormBlock:focus {
+  background:  #2c313b;
+  color: white;
+  text-decoration: none; 
+}
+
+.button-active {background: #2c313b !important;}
+.delivery_option {margin-bottom: 11px;}
+input#newsletter, input#psgdpr-consent { height: 0; visibility:   hidden; }
+
+.col-md-7.tabla-compra {
+    float: right;
+}
+td.cart_description {
+    max-width: 59%;
 }

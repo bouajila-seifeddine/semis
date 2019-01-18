@@ -20,6 +20,8 @@ class PolicyContents extends InstallerStep implements InstallerStepInterface
     protected function renderContent()
     {
         $policyUrl = get_permalink(gdpr('options')->get('policy_page'));
+        add_filter( 'gdpr_custom_policy_link', 'gdprfPrivacyPolicyurl' );
+        $policyUrl = apply_filters( 'gdpr_custom_policy_link',$policyUrl);
         $editPolicyUrl = get_edit_post_link(gdpr('options')->get('policy_page'));
         $policyGenerated = gdpr('options')->get('policy_generated');
 

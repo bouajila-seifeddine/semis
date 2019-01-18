@@ -3,7 +3,7 @@
 namespace Codelight\GDPR\DataSubject;
 
 use Codelight\GDPR\Options\Options;
-
+use Codelight\GDPR\Components\Consent\UserConsentModel; 
 /**
  * Identify the data subject by unique temporary key
  *
@@ -19,15 +19,17 @@ class DataSubjectIdentificator
     /* @var Options */
     protected $options;
 
+    protected $UserConsentModel;
     /**
      * DataSubjectIdentificator constructor.
      *
      * @param DataSubjectManager $dataSubjectManager
      */
-    public function __construct(DataSubjectManager $dataSubjectManager, Options $options)
+    public function __construct(DataSubjectManager $dataSubjectManager, Options $options,UserConsentModel $UserConsentModel)
     {
         $this->dataSubjectManager = $dataSubjectManager;
         $this->options = $options;
+        $this->UserConsentModel = $UserConsentModel;
     }
 
     /**
@@ -39,8 +41,16 @@ class DataSubjectIdentificator
     public function isDataSubject($email)
     {
         $dataSubject = $this->dataSubjectManager->getByEmail($email);
-
-        return apply_filters('gdpr/data-subject/has-data', $dataSubject->hasData(), $email);
+        $get_on_site_status='';
+        if($dataSubject->hasData()){
+            $get_on_site_status = $dataSubject->hasData();
+        }else{
+            $output = $this->UserConsentModel->getAll($email);
+            if (!empty($output)) {
+                $get_on_site_status = 1;
+            }
+        }
+        return apply_filters('gdpr/data-subject/has-data', $get_on_site_status, $email);
     }
 
     /**

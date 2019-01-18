@@ -31,7 +31,7 @@ class WordpressUser
      * @param DataManager        $dataManager
      */
     public function __construct(DataSubjectManager $dataSubjectManager, DataManager $dataManager)
-    {
+    { 
         $this->dataSubjectManager = $dataSubjectManager;
         $this->dataManager = $dataManager;
 
@@ -89,6 +89,11 @@ class WordpressUser
         if (current_user_can('edit_users') || current_user_can('delete_users')) {
             $dataSubject = $this->dataSubjectManager->getByEmail($user->user_email);
             do_action("gdpr/dashboard/profile-page/content", $dataSubject);
+            do_action("gdpr/dashboard/profile-page/userlogs",$dataSubject);
+        }else{
+            $dataSubject = $this->dataSubjectManager->getByEmail($user->user_email);
+            do_action("gdpr/dashboard/profile-page/contentuser", $dataSubject);
+            do_action("gdpr/dashboard/profile-page/userlogs",$dataSubject);
         }
     }
 

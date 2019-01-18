@@ -18,17 +18,24 @@ class WordpressComments
     }
 
     public function setup()
-    {
-        if (gdpr('options')->get('policy_page')) {
-            add_action('comment_form_after_fields', [$this, 'maybeAddCommentFormCheckbox']);
-            add_action('comment_form_logged_in_after', [$this, 'maybeAddCommentFormCheckbox']);
-
-            add_filter('preprocess_comment', [$this, 'validate']);
+    { 
+        if(gdpr('options')->get('policy_page')){
+            $gdpr_check = gdpr('options')->get('policy_page');
+        }else{
+            $gdpr_check = get_option('gdpr_policy_page');
+        }
+        if(!gdpr('options')->get('comment_checkbox')){
+            if ($gdpr_check) {                
+                add_action('comment_form_after_fields', [$this, 'maybeAddCommentFormCheckbox']);
+                add_action('comment_form_logged_in_after', [$this, 'maybeAddCommentFormCheckbox']);
+                add_filter('preprocess_comment', [$this, 'validate']);
+            }
         }
 
         add_filter('gdpr/data-subject/data', [$this, 'getExportData'], 1, 2);
         add_action('gdpr/data-subject/delete', [$this, 'deleteComments']);
         add_action('gdpr/data-subject/anonymize', [$this, 'deleteComments']);
+        
     }
 
     /**
@@ -61,6 +68,8 @@ class WordpressComments
         }
 
         $privacyPolicyUrl = get_permalink(gdpr('options')->get('policy_page'));
+        add_filter( 'gdpr_custom_policy_link', 'gdprfPrivacyPolicyurl' );
+        $privacyPolicyUrl = apply_filters( 'gdpr_custom_policy_link',$privacyPolicyUrl);
         $termsPage        = gdpr('options')->get('terms_page');
         if ($termsPage) {
             $termsUrl = get_permalink($termsPage);
@@ -95,21 +104,28 @@ class WordpressComments
             return $commentData;
         }
 
-        if (!isset($_POST['gdpr_terms']) || !$_POST['gdpr_terms']) {
-            wp_die(
-                sprintf(
-                    __('%sERROR:%s You need to accept the terms and conditions to post a comment.'),
-                    '<strong>',
-                    '</strong>'
-                )
-            );
-        } else {
-            if (is_user_logged_in()) {
-                $dataSubject = $this->dataSubjectManager->getByLoggedInUser();
-            } else {
-                $dataSubject = $this->dataSubjectManager->getByEmail($email);
-            }
-            $dataSubject->giveConsent('privacy-policy');
+        include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+        if ( !is_plugin_active( 'jetpack/jetpack.php' ) || !is_plugin_active('wpdiscuz/class.WpdiscuzCore.php')) {
+                if (!isset($_POST['gdpr_terms']) || !$_POST['gdpr_terms']) {
+
+                    $gdpr_error_message="%sERROR:%s You need to accept the privacy policy to post a comment.";
+                    add_filter( 'gdpr_custom_policy_error', 'gdpr_privacy_accpetance' );
+                    $privacyPolicyerror = apply_filters( 'gdpr_custom_policy_error',$gdpr_error_message);
+                    wp_die(
+                        sprintf(    
+                            __($privacyPolicyerror,'gdpr-framework'),
+                            '<strong>',
+                            '</strong>'
+                        )
+                    );
+                } else {
+                    if (is_user_logged_in()) {
+                        $dataSubject = $this->dataSubjectManager->getByLoggedInUser();
+                    } else {
+                        $dataSubject = $this->dataSubjectManager->getByEmail($email);
+                    }
+                    $dataSubject->giveConsent('privacy-policy');
+                }
         }
 
         return $commentData;

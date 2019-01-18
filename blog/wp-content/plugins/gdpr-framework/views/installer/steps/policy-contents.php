@@ -15,7 +15,7 @@
     <p>
         It looks like you selected an already existing Privacy Policy. <br>
         Note that GDPR puts some new requirements on what you need to have in your Privacy Policy. <br>
-        <a href="<?= gdpr('helpers')->docs('guide/setting-up-the-privacy-policy/'); ?>" target="_blank">Read more about the requirements to your Privacy Policy</a>
+        <a href="<?= gdpr('helpers')->docs('gdpr-setting-up-the-privacy-policy/'); ?>" target="_blank">Read more about the requirements to your Privacy Policy</a>
     </p>
 <?php endif; ?>
 

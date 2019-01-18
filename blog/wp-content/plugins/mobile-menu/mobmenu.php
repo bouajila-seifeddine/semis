@@ -2,17 +2,23 @@
 
 /**
  * Plugin Name: Mobile Menu
- * Plugin URI: http://www.wpmobilemenu.com/
+ * Plugin URI: https://www.wpmobilemenu.com/
  * Description: An easy to use WordPress responsive mobile menu. Keep your mobile visitors engaged.
- * Version: 2.5.1
  * Author: Takanakui
- * Author URI: http://www.wpmobilemenu.com/
+ * Version: 2.7.2
+ * Author URI: https://www.wpmobilemenu.com/
+ * Tested up to: 4.9
+ * Text Domain: mobile-menu
+ * Domain Path: /languages/
+ * GitHub Plugin URI: https://github.com/ruiguerreiro79/mobile-menu
  * License: GPLv2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
+define( 'WP_MOBILE_MENU_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+
 if ( ! class_exists( 'WP_Mobile_Menu' ) ) {
 	/**
 	 * Main Mobile Menu class
@@ -34,7 +40,7 @@ if ( ! class_exists( 'WP_Mobile_Menu' ) ) {
 			<div class="wp-mobile-menu-notice notice notice-success is-dismissible" data-ajax-nonce="<?php echo wp_create_nonce( 'wp-mobile-menu-security-nonce' ); ?>">
 				<span class="dashicons dashicons-warning"></span>
 				<?php
-					_e( '<strong>WP Mobile Menu PRO- </strong>If you need further features like 2000+ Menu Icons, 3rd Level Menus, Header Banner, Menus only visible for logged in users, alternative menus per page, Disable Mobile Menus in specific pages, Check the <a href="' . esc_url( $this->mm_fs()->get_upgrade_url() ) . '"> PRO Version Features</a> and the <a href="http://www.wpmobilemenu.com" target="_blank" >Demo site</a>', 'mob-menu-lang' );
+					_e( 'Do you need extra/advanced features? Check the <strong>Professional</strong> and <strong>Business</strong> versions. See all the advanced features, Header Banner, Ajax Sliding Cart, Alternative menus per page, Menus only visible for logged in users, Disable Mobile Menus in specific pages, 2000+ Menu Icons, Find more about the PRO Features <a href="' . esc_url( $this->mm_fs()->get_upgrade_url() ) . '"> Know more ...</a>', 'mobile-menu' );
 				?>
 				</div>
 
@@ -61,19 +67,35 @@ if ( ! class_exists( 'WP_Mobile_Menu' ) ) {
 
 			// Hooks.
 			if ( is_admin() ) {
-				// Admin Scripts.
+
 				add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
 			}
 			// Sidebar Menu Widgets.
 			add_action( 'wp_loaded', array( $this->mobmenu_core, 'register_sidebar' ) );
 
+			// Register Menus.
+			add_action( 'init', array( $this->mobmenu_core, 'register_menus' ) );
+
 			// Load frontend assets.
 			if ( ! is_admin() ) {
 				$this->load_frontend_assets();
 			}
+
+			// Load Translation Text Domain.
+			add_action( 'plugins_loaded', array( $this, 'mm_load_textdomain' ) );
+
 			// Load Ajax actions.
 			$this->load_ajax_actions();
 
+		}
+
+		/**
+		 * Load Text Domain
+		 *
+		 * @since 2.6
+		 */
+		public function mm_load_textdomain() {
+			load_plugin_textdomain( 'mobile-menu', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 		}
 
 		/**
@@ -172,5 +194,6 @@ if ( ! class_exists( 'WP_Mobile_Menu' ) ) {
 
 	}
 }
+
 // Instanciate the WP_Mobile_Menu.
 new WP_Mobile_Menu();

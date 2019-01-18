@@ -39,6 +39,11 @@
         .cookiesplus-modal .pull-left,
         .cookiesplus-modal .pull-right {
             float: none !important;
+            min-width: 75%;
+            padding-bottom: 3%;
+        }
+        div#cookiesplus-basic .page-heading {
+              font-size: 15px;
         }
 
         .cookiesplus-modal .cookie_actions,

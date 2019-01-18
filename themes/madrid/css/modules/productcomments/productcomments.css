@@ -39,8 +39,8 @@
         display: block;
         line-height: 20px; } }
   .comments_advices a {
-    padding: 0 10px;
-    font-size: 12px;
+    padding: 0 7px;
+    font-size: 10px;
  }
 
     .comments_advices a:before {
@@ -64,9 +64,7 @@
       content: "\f040"; }
     .comments_advices a:hover {
       }
-    .comments_advices a.reviews {
-      padding-right: 30px;
-      margin-right: 9px; }
+
       @media (min-width: 768px) and (max-width: 991px) {
         .comments_advices a.reviews {
           margin-right: 0;

@@ -18,7 +18,6 @@ class ConfigurationSettings extends InstallerStep implements InstallerStepInterf
     protected function renderContent()
     {
         $privacyToolsPageUrl = get_permalink(gdpr('options')->get('tools_page'));
-
         $deleteAction      = gdpr('options')->get('delete_action');
         $deleteActionEmail = gdpr('options')->get('delete_action_email');
 

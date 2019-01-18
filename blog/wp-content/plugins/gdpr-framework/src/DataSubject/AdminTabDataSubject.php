@@ -46,6 +46,34 @@ class AdminTabDataSubject extends AdminTab
     public function renderTab()
     {
         if (isset($_GET['search']) && $_GET['search']) {
+            if(gdpr('options')->get('classidocs_integration')){
+                if(gdpr('options')->get('sar_request_details')){
+
+                    $getclassidocs_url = gdpr('options')->get('classidocs_url');
+
+                    $classidocs_Data = array();
+                    
+                    $classidocs_Data['email']=$_GET['search'];
+                    if(gdpr('options')->get('response_related_queries')){
+                        $user = get_user_by( 'email', $_GET['search'] );
+                        if($user){
+                            if(!ctype_space($this->gdpr_get_formatted_billing_name_and_address($user->ID))){
+                                if($this->gdpr_get_formatted_billing_name_and_address($user->ID)){
+                                    $classidocs_Data['address']= $this->gdpr_get_formatted_billing_name_and_address($user->ID);
+                                }  
+                            }                 
+                            if(get_user_meta( $user->ID, 'billing_phone', true )){
+                                $classidocs_Data['phone']= get_user_meta( $user->ID, 'billing_phone', true );
+                            }                            
+                        }
+                        $classidocs_Data =  apply_filters('gdpr/admin/action/classidocs_Data',$classidocs_Data);
+                    }
+                    foreach($classidocs_Data as $data){
+                       wp_remote_post($getclassidocs_url."/gdpr/query?terms=".$data."&ruleType=TextPattern"); 
+                    }
+
+                }
+            }
             $results = $this->getRenderedResults($_GET['search'], $this->dataSubjectManager->getByEmail($_GET['search']));
         } else {
             $results = '';
@@ -110,7 +138,11 @@ class AdminTabDataSubject extends AdminTab
 
         $consentData = $dataSubject->getConsentData();
 
-        return gdpr('view')->render('admin/data-subjects/search-results', compact('email', 'hasData', 'links', 'userName', 'adminCap', 'consentData'));
+        $ClassiDocsdata = $dataSubject->getClassiDocsdata($_GET['search']);
+        
+        return gdpr('view')->render('admin/data-subjects/search-results', compact('email', 'hasData', 'links', 'userName', 'adminCap', 'consentData', 'ClassiDocsdata'));
+        
+
     }
 
     public function renderSubmitButton()
@@ -124,5 +156,16 @@ class AdminTabDataSubject extends AdminTab
             wp_safe_redirect(gdpr('helpers')->getAdminUrl('&gdpr-tab=data-subject&search=' . $_POST['gdpr_email']));
             exit;
         }
+    }
+
+    public function gdpr_get_formatted_billing_name_and_address($user_id) 
+    {
+        $address  = get_user_meta( $user_id, 'billing_address_1', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_address_2', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_city', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_state', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_postcode', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_country', true )." ";
+        return $address;
     }
 }

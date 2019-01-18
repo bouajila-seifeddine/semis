@@ -5,7 +5,7 @@
 <p>
     You can take a look at the Privacy Tools page <a href="<?= $privacyToolsPageUrl; ?>" target="_blank">here</a>. <br>
     <br>
-    <a href="<?= gdpr('helpers')->docs('guide/privacy-tools-page-accessing-exporting-and-deleting-personal-data/'); ?>" target="_blank">Read more about the Privacy Tools page</a>
+    <a href="<?= gdpr('helpers')->docs('privacy-tools-page-accessing-exporting-and-deleting-personal-data/'); ?>" target="_blank">Read more about the Privacy Tools page</a>
 </p>
 <hr>
 

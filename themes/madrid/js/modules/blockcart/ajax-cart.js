@@ -140,6 +140,8 @@ var ajaxCart = {
 		//for product page 'add' button...
 		$(document).off('click', '#add_to_cart button').on('click', '#add_to_cart button', function(e){
 			e.preventDefault();
+			var $span = $('#cart-qties-mobile-id');
+			$span.text(Number($span.text()) + 1);
 			ajaxCart.add($('#product_page_product_id').val(), $('#idCombination').val(), true, null, $('#quantity_wanted').val(), null);
 		});
 

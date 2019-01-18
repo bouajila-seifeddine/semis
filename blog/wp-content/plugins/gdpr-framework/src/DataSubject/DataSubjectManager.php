@@ -44,6 +44,16 @@ class DataSubjectManager
         );
     }
 
+     /**
+     * @param $email
+     * @return DataSubject
+     */
+    public function getuserlogs($email)
+    {
+        $user = get_user_by('email', $email);
+
+    }
+    
     /**
      * @param $id
      * @return DataSubject|false

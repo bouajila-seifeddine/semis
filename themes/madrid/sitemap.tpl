@@ -76,7 +76,12 @@
                 {/foreach}
                 <li>
                     <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact'}">
-                        {l s='Contact'}
+                        CONTACTO
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.semillaslowcost.com/opiniones/" title="Opiniones de Clientes">
+                        OPINIONES DE CLIENTES
                     </a>
                 </li>
                 {if $display_store}

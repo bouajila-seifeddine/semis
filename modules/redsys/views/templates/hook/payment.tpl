@@ -22,15 +22,14 @@
 
 {if $smarty.const._PS_VERSION_ >= 1.6}
 
-<div class="row">
-	<div class="col-xs-12">
+<div class="col-md-4 col-sm-6 col-xs-12">
+	
 		<p class="payment_module">
 			<a class="bankwire" href="javascript:$('#redsys_form').submit();" title="{l s='Conectar con el TPV' mod='redsys'}">	
-				<img src="{$module_dir|escape:'htmlall'}img/tarjetas.png" alt="{l s='Conectar con el TPV' mod='redsys'}" height="48" />
+				<img src="/img/pagos/tarjeta.jpg" onmouseover="this.src='/img/pagos/tarjeta1.jpg';" onmouseout="this.src='/img/pagos/tarjeta.jpg';" alt="{l s='Conectar con el TPV' mod='redsys'}"  /> <br />
 				{l s='Pagar con tarjeta' mod='redsys'}
 			</a>
 		</p>
-	</div>
 </div>
 {else}
 <p class="payment_module">

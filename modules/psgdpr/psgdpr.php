@@ -535,7 +535,7 @@ class Psgdpr extends Module
     public function hookActionBeforeSubmitAccount()
     {
         if (!Tools::getValue('psgdpr-consent')) {
-            $this->context->controller->errors[] = $this->l('Please, fill up all necessary fields.');
+            $this->context->controller->errors[] = $this->l('Debes de aceptar la política de privacidad.');
         } else {
             $id_customer = Context::getContext()->customer->id;
             $id_guest = Context::getContext()->cart->id_guest;

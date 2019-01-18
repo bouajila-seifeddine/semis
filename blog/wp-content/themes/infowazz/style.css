@@ -5270,7 +5270,7 @@ input[type="radio"] {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    padding-top: 200px; /* Location of the box */
+    padding-top: 140px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */

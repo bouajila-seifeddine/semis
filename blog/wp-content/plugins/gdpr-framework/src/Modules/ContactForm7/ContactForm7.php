@@ -53,7 +53,8 @@ class ContactForm7
     public function renderPrivacyTag()
     {
         $privacyPolicyUrl = get_permalink(gdpr('options')->get('policy_page'));
-
+        add_filter( 'gdpr_custom_policy_link', 'gdprfPrivacyPolicyurl' );
+        $privacyPolicyUrl = apply_filters( 'gdpr_custom_policy_link',$privacyPolicyUrl);
         return gdpr('view')->render(
             'modules/contact-form-7/content-privacy',
             compact('privacyPolicyUrl')
@@ -61,14 +62,14 @@ class ContactForm7
     }
 
     public function processFormSubmission(\WPCF7_ContactForm $form, $abort, \WPCF7_Submission $submission)
-    {
+    {   
         $consents = $this->findConsents($form, $submission);
 
         if (!count($consents)) {
             return;
         }
 
-        $email = $this->findEmail($submission);
+        $email = $this->findEmail($form,$submission);
 
         if (!$email) {
             return;
@@ -95,14 +96,18 @@ class ContactForm7
         return $consents;
     }
 
-    public function findEmail(\WPCF7_Submission $submission)
-    {
+    public function findEmail($form_id,\WPCF7_Submission $submission)
+    {   
+        $email_key = get_post_meta($form_id->id(), 'gdpr_cf7_email_field', true );
         if (isset($submission->get_posted_data()['your-email'])) {
             return $submission->get_posted_data()['your-email'];
         }
-
-        if (isset($submission->get_posted_data()['email'])) {
-            return $submission->get_posted_data()['email'];
+        if(isset($email_key)){
+            if($email_key!=""){
+                if (isset($submission->get_posted_data()[$email_key])) {
+                    return $submission->get_posted_data()[$email_key];
+                }
+            }
         }
     }
 }

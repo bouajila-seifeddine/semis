@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: The GDPR Framework 1.0\n"
 "Report-Msgid-Bugs-To: gdpr@codelight.eu\n"
 "POT-Creation-Date: 2018-04-16 10:50+0000\n"
-"PO-Revision-Date: 2018-05-18 21:23+0300\n"
+"PO-Revision-Date: 2019-01-11 14:10+0530\n"
 "Last-Translator: john maniatopoulos <webace.wp@gmail.com>\n"
 "Language-Team: Greek\n"
 "Language: el\n"
@@ -16,12 +16,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: gdpr-framework.php:26
 msgctxt "(Admin)"
 msgid "WordPress GDPR &rsaquo; Error"
-msgstr ""
+msgstr "WordPress GDPR & rsaquo; Λάθος"
 
 #: gdpr-framework.php:35
 msgctxt "(Admin)"
@@ -80,7 +80,7 @@ msgstr "Γενικά"
 #: src/Admin/AdminTabGeneral.php:38
 msgctxt "(Admin)"
 msgid "General Settings"
-msgstr "Γενικές Ρυθμίσεις"
+msgstr "General Settings"
 
 #: src/Admin/AdminTabGeneral.php:43
 msgctxt "(Admin)"
@@ -167,7 +167,7 @@ msgstr "Ενεργοποίηση αυτόματης  συμβατότητας θ
 #: views/installer/steps/configuration-settings.php:62
 msgctxt "(Admin)"
 msgid "&mdash; Select &mdash;"
-msgstr ""
+msgstr "&mdash; επιλέγω &mdash;"
 
 #: src/Admin/WordpressAdmin.php:65
 msgctxt "(Admin)"
@@ -196,6 +196,8 @@ msgid ""
 "You may only use alphanumeric characters, dash and underscore in the consent "
 "slug field."
 msgstr ""
+"Μπορείτε να χρησιμοποιήσετε μόνο αλφαριθμητικούς χαρακτήρες, παύλα και "
+"υπογράμμιση στο πεδίο συγκατάθεσης."
 
 #: src/Components/Consent/AdminTabConsent.php:167
 msgctxt "(Admin)"
@@ -335,12 +337,12 @@ msgstr "Γνωσιακή Βάση : πρέπει να διορίζει έναν 
 #: src/Components/PrivacyPolicy/AdminTabPrivacyPolicy.php:324
 msgctxt "(Admin)"
 msgid "DPO Name"
-msgstr ""
+msgstr "Όνομα DPO"
 
 #: src/Components/PrivacyPolicy/AdminTabPrivacyPolicy.php:420
 msgctxt "(Admin)"
 msgid "Save & Generate Policy"
-msgstr ""
+msgstr "Αποθήκευση & Δημιουργία πολιτικής"
 
 #: src/Components/PrivacyPolicy/PrivacyPolicy.php:82
 #: src/Installer/Installer.php:271 src/Installer/Steps/PolicySettings.php:199
@@ -371,11 +373,10 @@ msgstr "Υποστήριξη"
 
 #: src/Components/WordpressComments/WordpressComments.php:90
 #, php-format
-msgid ""
-"%sERROR:%s You need to accept the terms and conditions to post a comment."
+msgid "%sERROR:%s You need to accept the privacy policy to post a comment."
 msgstr ""
-"%sERROR:%s Πρέπει να αποδεχτείτε τους όρους και τις προϋποθέσεις για να "
-"δημοσιεύσετε ένα σχόλιο."
+"%sERROR:%s Πρέπει να αποδεχτείτε την πολιτική απορρήτου για να δημοσιεύσετε "
+"ένα σχόλιο."
 
 #: src/Components/WordpressUser/Controllers/DashboardDataPageController.php:54
 #: views/privacy-tools/notices.php:19
@@ -604,7 +605,7 @@ msgstr "Παρουσιάστηκε σφάλμα. Επικοινωνήστε με
 #: src/Installer/Installer.php:135
 msgctxt "(Admin)"
 msgid "Setup Wizard"
-msgstr ""
+msgstr "Οδηγός εγκατάστασης"
 
 #: src/Installer/Steps/ConfigurationPages.php:23
 #: src/Installer/Steps/PolicySettings.php:23
@@ -623,7 +624,7 @@ msgstr ""
 #: src/Modules/ContactForm7/ContactForm7.php:35
 msgctxt "(Admin)"
 msgid "gdpr terms txt"
-msgstr ""
+msgstr "gdpr όρους txt"
 
 #: src/Router.php:80 src/Router.php:92 src/Router.php:125 src/Router.php:141
 #, php-format
@@ -647,11 +648,13 @@ msgid ""
 "These are the consent types that have been automatically registered by the "
 "framework or a plugin."
 msgstr ""
+"Αυτοί είναι οι τύποι συγκατάθεσης που έχουν καταχωρηθεί αυτόματα από το "
+"πλαίσιο ή από ένα πρόσθετο."
 
 #: views/admin/consent.php:7 views/admin/consent.php:52
 msgctxt "(Admin)"
 msgid "Slug"
-msgstr ""
+msgstr "Γυμνοσάλιαγκας"
 
 #: views/admin/consent.php:8 views/admin/consent.php:38
 #: views/admin/consent.php:60
@@ -698,12 +701,12 @@ msgstr ""
 #: views/admin/consent.php:35
 msgctxt "(Admin)"
 msgid "Machine-readable slug"
-msgstr ""
+msgstr "Μηχανή αναγνώσιμη γυμνοσάλιαγκας"
 
 #: views/admin/consent.php:44 views/admin/consent.php:68
 msgctxt "(Admin)"
 msgid "Visible?"
-msgstr ""
+msgstr "Ορατός?"
 
 #: views/admin/consent.php:72
 msgctxt "(Admin)"
@@ -861,7 +864,7 @@ msgstr ""
 #: views/installer/header.php:23
 msgctxt "(Admin)"
 msgid "The GDPR Framework"
-msgstr ""
+msgstr "Το πλαίσιο GDPR"
 
 #: views/admin/notices/helper-autoinstall.php:2
 msgctxt "(Admin)"
@@ -918,7 +921,7 @@ msgstr ""
 #, php-format
 msgctxt "(Admin)"
 msgid "The GDPR Framework. Built with &#9829; by %sCodelight%s."
-msgstr ""
+msgstr "Το πλαίσιο GDPR. Χτισμένο με & # 9829; κατά% sCodelight% s."
 
 #: views/admin/support/contents.php:5 views/installer/steps/finish.php:10
 msgctxt "(Admin)"
@@ -928,7 +931,7 @@ msgstr "Χρειάζεστε περισσότερες πληροφορίες;"
 #: views/admin/support/contents.php:11 views/installer/steps/finish.php:16
 msgctxt "(Admin)"
 msgid "Site Owner's guide to GDPR"
-msgstr ""
+msgstr "Οδηγός ιδιοκτήτη τοποθεσίας στο GDPR"
 
 #: views/admin/support/contents.php:14 views/installer/steps/finish.php:19
 msgctxt "(Admin)"
@@ -954,6 +957,8 @@ msgstr "Οδηγός για προγραμματιστές να GDPR"
 msgctxt "(Admin)"
 msgid "We have a thorough guide to help making custom sites compliant."
 msgstr ""
+"Έχουμε έναν λεπτομερή οδηγό για να βοηθήσουμε στην προσαρμογή των "
+"προσαρμοσμένων ιστότοπων."
 
 #: views/admin/support/contents.php:40 views/installer/steps/finish.php:45
 msgctxt "(Admin)"
@@ -1087,7 +1092,7 @@ msgstr "Αυτόματη λήψη δεδομένων και να ειδοποι�
 #: views/installer/continue-notice.php:2
 msgctxt "(Admin)"
 msgid "The The GDPR Framework setup has not been finalized yet."
-msgstr ""
+msgstr "Η ρύθμιση του πλαισίου GDPR δεν έχει οριστικοποιηθεί ακόμα."
 
 #: views/installer/continue-notice.php:3
 msgctxt "(Admin)"
@@ -1097,7 +1102,7 @@ msgstr "Μπορείτε να συνεχίσετε τη ρύθμιση οποι�
 #: views/installer/continue-notice.php:6
 msgctxt "(Admin)"
 msgid "Continue the setup wizard"
-msgstr ""
+msgstr "Συνεχίστε τον οδηγό ρύθμισης"
 
 #: views/installer/continue-notice.php:9
 msgctxt "(Admin)"
@@ -1121,7 +1126,7 @@ msgstr "Έγγραφα  για developers"
 #: views/installer/header.php:36
 msgctxt "(Admin)"
 msgid "Configuration"
-msgstr ""
+msgstr "Διαμόρφωση"
 
 #: views/installer/header.php:46
 msgctxt "(Admin)"
@@ -1147,7 +1152,7 @@ msgstr "Δέχομαι"
 #: views/installer/welcome-notice.php:7
 msgctxt "(Admin)"
 msgid "Run the setup wizard"
-msgstr ""
+msgstr "Εκτελέστε τον οδηγό εγκατάστασης"
 
 #: views/installer/welcome-notice.php:11
 msgctxt "(Admin)"
@@ -1176,7 +1181,7 @@ msgstr "Εισάγετε"
 #: views/modules/wordpress-user/registration-terms-checkbox.php:7
 #, php-format
 msgid "I accept the %sTerms and Conditions%s and the %sPrivacy Policy%s"
-msgstr "I accept the %sTerms and Conditions%s and the %sPrivacy Policy%s"
+msgstr "δέχομαι το %sΟροι και Προϋποθέσεις%s και το %sΠολιτική Απορρήτου%s"
 
 #: views/modules/wordpress-user/dashboard/data-page/form-consent.php:3
 msgid "Manage consents"
@@ -1231,6 +1236,8 @@ msgid ""
 "You seem to have an administrator or equivalent role, so deleting/"
 "anonymizing via this page is disabled."
 msgstr ""
+"Φαίνεται ότι έχετε διαχειριστή ή ισοδύναμο ρόλο, οπότε η διαγραφή / "
+"ανωνύμιση μέσω αυτής της σελίδας είναι απενεργοποιημένη."
 
 #: views/modules/wordpress-user/dashboard/form-export.php:7
 #: views/privacy-tools/form-export.php:1
@@ -1273,12 +1280,12 @@ msgstr "Ανωνυμία χρήστη και όλα τα δεδομένα"
 #: views/modules/wordpress-user/dashboard/profile-page/header.php:2
 msgctxt "(Admin)"
 msgid "GDPR Data"
-msgstr ""
+msgstr "Δεδομένα GDPR"
 
 #: views/modules/wordpress-user/dashboard/profile-page/header.php:6
 msgctxt "(Admin)"
 msgid "This user has been anonymized."
-msgstr ""
+msgstr "Αυτός ο χρήστης ήταν ανώνυμος."
 
 #: views/modules/wordpress-user/dashboard/profile-page/table-consent.php:4
 msgctxt "(Admin)"
@@ -1288,7 +1295,7 @@ msgstr "Συναινέσεις που έχουν χορηγηθεί"
 #: views/modules/wordpress-user/dashboard/profile-page/table-consent.php:17
 msgctxt "(Admin)"
 msgid "No consents given"
-msgstr ""
+msgstr "Δεν δόθηκαν συναινέσεις"
 
 #: views/privacy-tools/form-consent.php:2
 msgid "Consent"
@@ -1349,3 +1356,374 @@ msgstr "Τα προσωπικά σας δεδομένα έχουν αφαιρε�
 #: views/privacy-tools/privacy-tools.php:5
 msgid "You are identified as"
 msgstr "Έχετε αναγνωριστεί ως"
+
+#: views\admin\general\enable-tac.php:9
+msgctxt "(Admin)"
+msgid "Enable the term and condition page."
+msgstr "Ενεργοποιήστε τη σελίδα όρων και προϋποθέσεων."
+
+#: src\Admin\AdminTabGeneral.php:51
+msgctxt "(Admin)"
+msgid "Enable Term and Conditions"
+msgstr "Ενεργοποίηση όρων και προϋποθέσεων"
+
+#: gdpr-framework.php:121
+msgid ""
+"This website uses cookies to ensure you get the best experience on our "
+"website."
+msgstr ""
+"Αυτός ο ιστότοπος χρησιμοποιεί cookies για να εξασφαλίσει ότι θα έχετε την "
+"καλύτερη εμπειρία στον ιστότοπό μας."
+
+#: gdpr-framework.php:121
+msgid "Decline"
+msgstr "πτώση"
+
+#: gdpr-framework.php:121
+msgid "Accept"
+msgstr "Αποδέχομαι"
+
+#: gdpr-framework.php:133
+msgid "Learn more"
+msgstr "Μάθε περισσότερα"
+
+#: AdminTabGeneral.php:94
+msgctxt "(Admin)"
+msgid "From Email"
+msgstr "Από το μήνυμα ηλεκτρονικού ταχυδρομείου"
+
+#: AdminTabGeneral.php:87
+msgctxt "(Admin)"
+msgid "From Name"
+msgstr "Από όνομα"
+
+#: AdminTabGeneral.php:82
+msgctxt "(Admin)"
+msgid "Email Setting"
+msgstr "Ρύθμιση ηλεκτρονικού ταχυδρομείου"
+
+#: AdminTabGeneral.php:104
+msgctxt "(Admin)"
+msgid "Acceptance Popup Setting"
+msgstr "Ρύθμιση αναδυόμενης παραλαβής"
+
+#: AdminTabGeneral.php:109
+msgctxt "(Admin)"
+msgid "Popup Position"
+msgstr "Αναδυόμενη θέση"
+
+#: AdminTabGeneral.php:116
+msgctxt "(Admin)"
+msgid "Popup theme"
+msgstr "Θέμα popup"
+
+#: AdminTabGeneral.php:123
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Background Color"
+msgstr "Υποδοχή χρώματος φόντου cookie"
+
+#: AdminTabGeneral.php:130
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Text Color"
+msgstr "Χρώμα κειμένου αποδοχής cookie"
+
+#: AdminTabGeneral.php:137
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Button Backgroung Color"
+msgstr "Κουμπί λήψης cookie Backgroung Color"
+
+#: AdminTabGeneral.php:144
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Button Color"
+msgstr "Χρώμα κουμπιού αποδοχής cookie"
+
+#: AdminTabGeneral.php:151
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Border Color"
+msgstr "Χρώμα ορίου λήψης cookie"
+
+#: AdminTabGeneral.php:67
+msgctxt "(Admin)"
+msgid "Enable Cookie Acceptance Popup"
+msgstr "Ενεργοποίηση αναδυόμενου παραθύρου αποδοχής cookie"
+
+#: AdminTabGeneral.php:73
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Popup Content"
+msgstr "Περιεχόμενο αναδυόμενων παραληπτών cookie"
+
+#: description-position-action.php
+msgctxt "(Admin)"
+msgid "Select position of the Popup"
+msgstr "Επιλέξτε τη θέση του αναδυόμενου παραθύρου"
+
+#: description-theme-action.php
+msgctxt "(Admin)"
+msgid "Select theme of the Popup"
+msgstr "Επιλέξτε θέμα του αναδυόμενου παραθύρου"
+
+#: description-theme-action.php:69
+msgctxt "(Admin)"
+msgid "Disable Comment Checkbox"
+msgstr "Απενεργοποιήστε το πλαίσιο ελέγχου Σχόλιο"
+
+#: description-theme-action.php:76
+msgctxt "(Admin)"
+msgid "Disable Register Form Checkbox"
+msgstr "Απενεργοποίηση πλαισίου ελέγχου φόρμας εγγραφής"
+
+#: description-theme-action.php:312
+msgctxt "(Admin)"
+msgid "Disable Checkbox For Comments"
+msgstr "Απενεργοποιήστε το πλαίσιο ελέγχου για σχόλια"
+
+#: AdminTabGeneral.php:319
+msgctxt "(Admin)"
+msgid "Disable Checkbox For Register Form"
+msgstr "Απενεργοποίηση του πλαισίου ελέγχου για τη φόρμα εγγραφής"
+
+#: views/privacy-tools/form-identify.php:15
+msgid "Please identify yourself via e-mail"
+msgstr "Προσδιορίστε τον εαυτό σας μέσω ηλεκτρονικού ταχυδρομείου"
+
+#: advanced-integration\header.php:2
+msgctxt "(Admin)"
+msgid "This page allows you to advance integration with ClassiDocs™"
+msgstr ""
+"Αυτή η σελίδα σάς επιτρέπει να προχωρήσετε στην ολοκλήρωση με το ClassiDocs ™"
+
+#: AdminTabAdvancedIntegration.php:97
+msgctxt "(Admin)"
+msgid "ClassiDocs Password"
+msgstr "Κωδικός πρόσβασης ClassiDocs"
+
+#: AdminTabAdvancedIntegration.php:88
+msgctxt "(Admin)"
+msgid "ClassiDocs Username"
+msgstr "Όνομα χρήστη ClassiDocs"
+
+#: AdminTabAdvancedIntegration.php:79
+msgctxt "(Admin)"
+msgid "ClassiDocs URL"
+msgstr "ClassiDocs URL"
+
+#: AdminTabAdvancedIntegration.php:69
+msgctxt "(Admin)"
+msgid "Enable Response with related queries?"
+msgstr "Ενεργοποίηση απάντησης με σχετικά ερωτήματα;"
+
+#: AdminTabAdvancedIntegration.php:60
+msgctxt "(Admin)"
+msgid "Submit SAR request details?"
+msgstr "Υποβολή στοιχείων αιτήματος SAR;"
+
+#: AdminTabAdvancedIntegration.php:51
+msgctxt "(Admin)"
+msgid "Integrate with ClassiDocs?"
+msgstr "Ενσωμάτωση με το ClassiDocs;"
+
+#: AdminTabAdvancedIntegration.php:43
+msgctxt "(Admin)"
+msgid "Integration Settings"
+msgstr "Ρυθμίσεις ολοκλήρωσης"
+
+#: AdminTabAdvancedIntegration.php:35
+msgctxt "(Admin)"
+msgid "Advanced Integration"
+msgstr "Προηγμένη ενοποίηση"
+
+#: checkbox-field.php:10
+msgctxt "(Admin)"
+msgid "Sign up for free here"
+msgstr "Εγγραφείτε δωρεάν εδώ"
+
+#: checkbox-field.php:10
+msgctxt "(Admin)"
+msgid "Click Here"
+msgstr "Κάντε κλικ ΕΔΩ"
+
+#: ClassiDocs-results.php:12
+msgid "Previous Results"
+msgstr "Προηγούμενα αποτελέσματα"
+
+#: ClassiDocs-results.php:13
+msgid "Current Results"
+msgstr "Τρέχοντα αποτελέσματα"
+
+#: ClassiDocs-results.php:19
+msgid "Name"
+msgstr "Ονομα"
+
+#: ClassiDocs-results.php:22
+msgid "Path"
+msgstr "Μονοπάτι"
+
+#: ClassiDocs-results.php:34
+msgid "Workstation"
+msgstr "Σταθμός εργασίας"
+
+#: ClassiDocs-results.php:37
+msgid "Last Scan"
+msgstr "Τελευταία σάρωση"
+
+#: ClassiDocs-results.php:62
+msgid "No ClassiDocs data found!"
+msgstr "Δεν βρέθηκαν δεδομένα ClassiDocs!"
+
+#: enable_popup_header.php:5
+msgid "Cookies used on the website!"
+msgstr "Τα cookies που χρησιμοποιούνται στην ιστοσελίδα!"
+
+#: enable_popup_header.php:9
+msgid "Leave blank if don't want header to get display."
+msgstr "Αφήστε κενό, εάν δεν θέλετε να εμφανίζεται η κεφαλίδα."
+
+#: AdminTabCookiePopup.php:39
+msgctxt "(Admin)"
+msgid "Cookie Popup Settings"
+msgstr "Ρυθμίσεις popup cookie"
+
+#: AdminTabCookiePopup.php:17
+msgctxt "(Admin)"
+msgid "Cookie Popup"
+msgstr "Εμφανίζεται το Cookie Popup"
+
+#: AdminTabCookiePopup.php:49
+msgctxt "(Admin)"
+msgid "Enable One Time Cookie Acceptance Popup"
+msgstr "Ενεργοποίηση αναδυόμενου παραλήπτη αποδοχής cookie μιας ώρας"
+
+#: consent.php:79
+msgctxt "(Admin)"
+msgid "Show Consent types"
+msgstr "Εμφάνιση τύπων συγκατάθεσης"
+
+msgctxt "(Admin)"
+msgid "Hide consent types"
+msgstr "Απόκρυψη τύπων συγκατάθεσης"
+
+msgctxt "(Admin)"
+msgid "Do you want form to be GDPR compliance."
+msgstr "Θέλετε να είναι η μορφή συμμόρφωσης με το GDPR."
+
+msgctxt "(Admin)"
+msgid ""
+"You have installed flamingo, To make this GDPR compliance in individual "
+"contact form's privacy tab check the checkbox for include data to be search "
+"on Privacy tool."
+msgstr ""
+"Έχετε εγκαταστήσει φλαμίνγκο, Για να κάνετε αυτή τη συμμόρφωση GDPR στην "
+"προσωπική καρτέλα απορρήτου της φόρμας επαφής, επιλέξτε το πλαίσιο επιλογής "
+"για να συμπεριλάβετε δεδομένα που πρέπει να αναζητηθούν στο εργαλείο "
+"Απορρήτου."
+
+msgctxt "(Admin)"
+msgid "Enable Policy Link On Popup"
+msgstr "Ενεργοποίηση συνδέσμου πολιτικής στο αναδυόμενο παράθυρο"
+
+msgctxt "(Admin)"
+msgid "Enable Privacy policy on Popup"
+msgstr "Ενεργοποιήστε την πολιτική απορρήτου στο Αναδυόμενο παράθυρο"
+
+#: AdminTabCookiePopup.php
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Popup header"
+msgstr "Επικεφαλίδα αναδυόμενης παραλαβής cookie"
+
+#: views\admin\privacy-manager\header.php:2
+msgctxt "(Admin)"
+msgid "Data443™ Privacy Manager"
+msgstr "Data443™ Privacy Manager"
+
+#: views\admin\privacy-manager\header.php:3
+msgctxt "(Admin)"
+msgid ""
+"ensures privacy regulation compliance, such as GDPR, CCPA, LGPD, etc, at the "
+"next level."
+msgstr ""
+"διασφαλίζει τη συμμόρφωση με τη νομοθεσία για την προστασία της ιδιωτικής "
+"ζωής, όπως η GDPR, η CCPA, η LGPD κ.λπ., στο επόμενο επίπεδο."
+
+#: views\admin\privacy-manager\header.php:4
+msgctxt "(Admin)"
+msgid ""
+"In addition to DSAR tracking and management, Privacy Manager adds the "
+"following features to your data protection compliance resources:"
+msgstr ""
+"Εκτός από την παρακολούθηση και διαχείριση DSAR, το Privacy Manager "
+"προσθέτει τις ακόλουθες δυνατότητες στους πόρους σας για την προστασία "
+"δεδομένων:"
+
+#: views\admin\privacy-manager\header.php:6
+msgctxt "(Admin)"
+msgid "Log and store ICO breach notifications"
+msgstr "Καταγράψτε και αποθηκεύστε τις ειδοποιήσεις παραβίασης του ICO"
+
+#: views\admin\privacy-manager\header.php:7
+msgctxt "(Admin)"
+msgid "Keeps full record of all requests, ticketed and timeline"
+msgstr ""
+"Διατηρεί πλήρη καταγραφή όλων των αιτημάτων, των εισιτηρίων και του "
+"χρονοδιαγράμματος"
+
+#: views\admin\privacy-manager\header.php:8
+msgctxt "(Admin)"
+msgid "Gap analysis and breach notifications"
+msgstr "Ανάλυση κενών και κοινοποιήσεις παραβίασης"
+
+#: views\admin\privacy-manager\header.php:9
+msgctxt "(Admin)"
+msgid "In depth activity log with all GDPR, CCPA, etc actions evidenced"
+msgstr ""
+"Σε βάθος καταγραφής δραστηριότητας με όλες τις ενέργειες GDPR, CCPA, κλπ"
+
+#: views\admin\privacy-manager\header.php:10
+msgctxt "(Admin)"
+msgid "Highlights areas of concern and where you need to focus"
+msgstr "Επισημαίνει τομείς ενδιαφέροντος και όπου πρέπει να εστιάσετε"
+
+#: views\admin\privacy-manager\header.php:11
+msgctxt "(Admin)"
+msgid ""
+"eLearning platform with access for all staff to ensure privacy regulation "
+"compliance and obligations"
+msgstr ""
+"πλατφόρμα ηλεκτρονικής μάθησης με πρόσβαση για όλο το προσωπικό ώστε να "
+"διασφαλιστεί η συμμόρφωση και οι υποχρεώσεις όσον αφορά την προστασία της "
+"ιδιωτικής ζωής"
+
+#: views\admin\privacy-manager\header.php:12
+msgctxt "(Admin)"
+msgid "Tracks who accesses the system, when and why"
+msgstr "Τραγούδια που έχουν πρόσβαση στο σύστημα, πότε και γιατί"
+
+#: views\admin\privacy-manager\header.php:15
+msgctxt "(Admin)"
+msgid ""
+"Our system enables your business to demonstrate its obligations in "
+"protecting your customer data, show understanding of your business "
+"activities and deliver eLearning and online tests to employees, ensuring "
+"everyone in your company understands your privacy compliance rules and best "
+"practices to operate."
+msgstr ""
+"Το σύστημά μας επιτρέπει στην επιχείρησή σας να επιδείξει τις υποχρεώσεις "
+"της όσον αφορά την προστασία των δεδομένων των πελατών σας, την κατανόηση "
+"των επιχειρηματικών δραστηριοτήτων σας και την παροχή ηλεκτρονικών και "
+"ηλεκτρονικών δοκιμών στους υπαλλήλους, εξασφαλίζοντας ότι όλοι στην εταιρεία "
+"σας κατανοούν τους κανόνες συμμόρφωσης και τις βέλτιστες πρακτικές."
+
+#: views\admin\privacy-manager\header.php:16
+msgctxt "(Admin)"
+msgid ""
+"No matter where you are on your data privacy journey, the ultimate goal is "
+"compliance."
+msgstr ""
+"Ανεξάρτητα από το πού βρίσκεστε στο ταξίδι σας για την προστασία της "
+"ιδιωτικής ζωής των δεδομένων, ο τελικός στόχος είναι η συμμόρφωση."
+
+#: views\admin\privacy-manager\header.php:16
+msgctxt "(Admin)"
+msgid "enables your organization to comply with all privacy regulations."
+msgstr ""
+"επιτρέπει στην εταιρεία σας να συμμορφώνεται με όλους τους κανονισμούς "
+"απορρήτου."

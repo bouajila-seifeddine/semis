@@ -1,11 +1,7 @@
 /* Custom CSS */
 header.top .pattern {
-background-image: url(../img/upload/header_background_image_shop_1.jpg);
 height: 163px;
-background-attachment: scroll;
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center top;
+
 }
 
 body div.simpleblog-recent {

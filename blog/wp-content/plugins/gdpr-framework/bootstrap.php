@@ -12,7 +12,7 @@
             'template_path' => plugin_dir_path(__FILE__) . 'views/',
         ],
         'help'   => [
-            'url' => 'https://codelight.eu/wordpress-gdpr-framework/',
+            'url' => 'https://www.data443.com/gdpr-framework/',
         ],
     ]);
 }, true);
@@ -46,6 +46,14 @@ add_action('plugins_loaded', function () use ($gdpr_error) {
 
     load_plugin_textdomain('gdpr-framework', false, basename( dirname( __FILE__ ) ) . '/languages/');
 
+    $locale = is_admin() && function_exists( 'get_user_locale' ) ? get_user_locale() : get_locale();
+
+    $locale = apply_filters( 'plugin_locale', $locale, 'gdpr-framework' );
+
+    unload_textdomain( 'gdpr-framework' );
+
+    load_textdomain( 'gdpr-framework', get_stylesheet_directory().'/gdpr-framework/languages/'.'gdpr-framework'.'-'.$locale.'.mo' );
+    
     new \Codelight\GDPR\Updater\Updater();
 
     new \Codelight\GDPR\Setup();

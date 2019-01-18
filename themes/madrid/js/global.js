@@ -32,7 +32,7 @@ $(document).ready(function(){
 	if (navigator.userAgent.match(/Android/i))
 	{
 		var viewport = document.querySelector('meta[name="viewport"]');
-		viewport.setAttribute('content', 'initial-scale=1.0,maximum-scale=1.0,user-scalable=0,width=device-width,height=device-height');
+		viewport.setAttribute('content', 'initial-scale=1.0,maximum-scale=5.0,user-scalable=0,width=device-width,height=device-height');
 		window.scrollTo(0, 1);
 	}
 	if (typeof quickView !== 'undefined' && quickView)
@@ -642,3 +642,43 @@ function installCarouselForTab(id_tab) {
 		e.preventDefault();
 	});
 };
+
+function toggledisplayarrow() {
+				
+			    var up = document.getElementById("arrow-down");
+			    var down = document.getElementById("arrow-up");
+			    if (up.style.display === "none") {
+			        up.style.display = "block";
+			    } else {
+			        up.style.display = "none";
+			    }
+			     if (down.style.display === "none") {
+			        down.style.display = "block";
+			    } else {
+			        down.style.display = "none";
+			    }
+			}
+
+function togglecarromobile() {
+				    event.preventDefault();
+
+			    var carro = document.getElementById("boton-mobile-carro");
+
+			    if (carro.style.maxHeight == 0 || carro.style.maxHeight == "0px"){
+					carro.style.maxHeight = "2000px";
+			    }else{
+					carro.style.maxHeight = "0";
+			    }
+			}
+
+
+window.addEventListener('load', function()  {
+    if (window.jQuery) {
+  var lazyImages = document.getElementsByClassName("lazy");
+
+  for (i = 0; i < lazyImages.length; i++) {
+    var srclazy = lazyImages[i].getAttribute('data-src');
+    lazyImages[i].setAttribute("src", srclazy);
+}
+}
+});

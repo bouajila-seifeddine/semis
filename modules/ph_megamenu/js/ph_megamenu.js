@@ -133,7 +133,7 @@ jQuery.fn.ph_megamenu = function(options){
         if(action == 'enable')
         {
             $('a.show_megamenu').show();
-            $('#ph_megamenu_wrapper').hide();
+           // $('#ph_megamenu_wrapper').hide();
 			$('#ph_megamenu').find('.marker-off').show();
             $('#ph_megamenu').addClass('mobile_menu');
 
@@ -141,7 +141,7 @@ jQuery.fn.ph_megamenu = function(options){
         else
         {
             $('a.show_megamenu,a.hide_megamenu').hide();
-            $('#ph_megamenu_wrapper').show();
+            //$('#ph_megamenu_wrapper').show();
 			$('#ph_megamenu').find('.marker-on, .marker-off, .dropdown, .megamenu').hide();
             $('#ph_megamenu').removeClass('mobile_menu');
         }

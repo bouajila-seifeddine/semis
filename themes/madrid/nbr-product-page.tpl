@@ -37,7 +37,7 @@
 		{assign var='requestPage' value=$link->getPaginationLink(false, false, false, false, true, false)}
 		{assign var='requestNb' value=$link->getPaginationLink(false, false, true, false, false, true)}
 	{/if}
-	<!-- nbr product/page -->
+	<!-- nbr product/page 
 	{if $nb_products > $nArray[0]}
 		<form action="{if !is_array($requestNb)}{$requestNb|escape:'html':'UTF-8'}{else}{$requestNb.requestUrl|escape:'html':'UTF-8'}{/if}" method="get" class="col-md-3 col-sm-8 col-xs-12 nbrItemPage">
 				{if isset($search_query) AND $search_query}
@@ -67,6 +67,6 @@
 				</select>
 				<span> {l s='per page'}</span>
 		</form>
-	{/if}
+	{/if}-->
 	<!-- /nbr product/page -->
 {/if}

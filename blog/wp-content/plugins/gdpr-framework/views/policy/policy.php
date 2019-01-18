@@ -1,6 +1,6 @@
 <h2>Privacy Policy</h2>
 <p>
-    <?= esc_html($companyName); ?> is committed to safeguarding your privacy. Contact us at <a href="mailto:<?= esc_attr($contactEmail); ?>"><?= esc_html($contactEmail); ?></a> if you have any questions or problems regarding the use of your Personal Data and we will gladly assist you.
+<?php if($companyName){?><?= esc_html($companyName); ?><?php } ?> is committed to safeguarding your privacy. Contact us at <?php if($contactEmail){?><a href="mailto:<?= esc_attr($contactEmail); ?>"><?= esc_html($contactEmail); ?></a><?php } ?> if you have any questions or problems regarding the use of your Personal Data and we will gladly assist you.
 </p>
 <p>
     By using this site or/and our services, you consent to the Processing of your Personal Data as described in this Privacy Policy.
@@ -30,7 +30,7 @@
     <strong>Processing</strong> – any operation or set of operations which is performed on Personal Data or on sets of Personal Data.
     <strong>Data subject</strong> - a natural person whose Personal Data is being Processed.
     <strong>Child</strong> - a natural person under 16 years of age.
-    <strong>We/us</strong> (either capitalized or not) – <?= esc_html($companyName); ?>
+<strong>We/us</strong> (either capitalized or not) – <?php if($companyName){?><?= esc_html($companyName); ?><?php  } ?>
 </p>
 
 
@@ -80,16 +80,16 @@
 
 <h3 id="gdpr-information">Data we gather</h3>
 <p>
-    <strong>[TODO] - Information you have provided us with</strong><br>
+    <strong>TODO - Information you have provided us with</strong><br>
     This might be your e-mail address, name, billing address, home address etc – mainly information that is necessary for delivering you a product/service or to enhance your customer experience with us. We save the information you provide us with in order for you to comment or perform other activities on the website. This information includes, for example, your name and e-mail address.
 </p>
 <p>
-    <strong>[TODO] - Information automatically collected about you</strong><br>
+    <strong>TODO - Information automatically collected about you</strong><br>
     This includes information that is automatically stored by cookies and other session tools. For example, your shopping cart information, your IP address, your shopping history (if there is any) etc. This information is used to improve your customer experience. When you use our services or look at the contents of our website, your activities may be logged.
 </p>
 
 <p>
-    <strong>[TODO] - Information from our partners</strong><br>
+    <strong>TODO - Information from our partners</strong><br>
     We gather information from our trusted partners with confirmation that they have legal grounds to share that information with us. This is either information you have provided them directly with or that they have gathered about you on other legal grounds. See the list of our partners <a href="#gdpr-sharing">here</a>.
 </p>
 
@@ -108,7 +108,7 @@
     <li>provide our service to you. This includes for example registering your account; providing you with other products and services that you have requested; providing you with promotional items at your request and communicating with you in relation to those products and services; communicating and interacting with you; and notifying you of changes to any services.</li>
     <li>enhance your customer experience;</li>
     <li>fulfil an obligation under law or contract;</li>
-    <li><strong>[TODO]</strong></li>
+    <li><strong>TODO</strong></li>
 </ul>
 
 <p>
@@ -122,7 +122,7 @@
     <li>to identify you;</li>
     <li>to provide you a service or to send/offer you a product;</li>
     <li>to communicate either for sales or invoicing;</li>
-    <li><strong>[TODO]</strong></li>
+    <li><strong>TODO</strong></li>
 </ul>
 
 <p>
@@ -132,7 +132,7 @@
     <li>to send you personalized offers* (from us and/or our carefully selected partners);</li>
     <li>to administer and analyse our client base (purchasing behaviour and history) in order to improve the quality, variety, and availability of products/ services offered/provided;</li>
     <li>to conduct questionnaires concerning client satisfaction;</li>
-    <li><strong>[TODO]</strong></li>
+    <li><strong>TODO</strong></li>
 </ul>
 <p>
     As long as you have not informed us otherwise, we consider offering you products/services that are similar or same to your purchasing history/browsing behaviour to be our legitimate interest.
@@ -144,11 +144,11 @@
 <ul>
     <li>to send you newsletters and campaign offers (from us and/or our carefully selected partners);</li>
     <li>for other purposes we have asked your consent for;</li>
-    <li><strong>[TODO]</strong></li>
+    <li><strong>TODO</strong></li>
 </ul>
 
 <p>
-    We Process your Personal Data in order to fulfil obligation rising from law and/or use your Personal Data for options provided by law. We reserve the right to anonymise Personal Data gathered and to use any such data. We will use data outside the scope of this Policy only when it is anonymised. We save your billing information and other information gathered about you for as long as needed for accounting purposes or other obligations deriving from law, but not longer than <strong>[TODO]</strong>
+    We Process your Personal Data in order to fulfil obligation rising from law and/or use your Personal Data for options provided by law. We reserve the right to anonymise Personal Data gathered and to use any such data. We will use data outside the scope of this Policy only when it is anonymised. We save your billing information and other information gathered about you for as long as needed for accounting purposes or other obligations deriving from law, but not longer than <strong>TODO</strong>
 </p>
 
 <p>
@@ -172,21 +172,21 @@
     <strong>Our processing partners:</strong>
 </p>
 <ul>
-    <li><strong>[TODO]</strong></li>
+    <li><strong>TODO</strong></li>
 </ul>
 
 <p>
     <strong>Our business partners:</strong>
 </p>
 <ul>
-    <li><strong>[TODO]</strong></li>
+    <li><strong>TODO</strong></li>
 </ul>
 
 <p>
     <strong>Connected third parties:</strong>
 </p>
 <ul>
-    <li><strong>[TODO]</strong></li>
+    <li><strong>TODO</strong></li>
 </ul>
 
 <p>
@@ -197,7 +197,7 @@
 <h3 id="gdpr-security">How we secure your data</h3>
 
 <p>
-    We do our best to keep your Personal Data safe.  We use safe protocols for communication and transferring data (such as HTTPS). We use anonymising and pseudonymising where suitable. We monitor our systems for possible vulnerabilities and attacks.<strong>[TODO]</strong> - describe additional security measures.
+    We do our best to keep your Personal Data safe.  We use safe protocols for communication and transferring data (such as HTTPS). We use anonymising and pseudonymising where suitable. We monitor our systems for possible vulnerabilities and attacks.<strong>TODO</strong> - describe additional security measures.
 </p>
 <p>
     Even though we try our best we can not guarantee the security of information. However, we promise to notify suitable authorities of data breaches. We will also notify you if there is a threat to your rights or interests. We will do everything we reasonably can to prevent security breaches and to assist authorities should any breaches occur.
@@ -243,7 +243,7 @@
 <?php if ($hasDpo): ?>
     <p>
         <strong id="gdpr-dpo">Data Protection Officer</strong><br>
-        If you have any questions regarding Processing your Personal Data, your rights regarding your Personal Data or this Privacy Policy, contact our Data Protection Officer<?= esc_html($dpoName); ?> at <a href="mailto:<?= esc_attr($dpoEmail); ?>"><?= esc_html($dpoEmail); ?></a>
+    If you have any questions regarding Processing your Personal Data, your rights regarding your Personal Data or this Privacy Policy, contact our Data Protection Officer<?= esc_html($dpoName); ?> at <?php if($dpoEmail){?><a href="mailto:<?= esc_attr($dpoEmail); ?>"><?= esc_html($dpoEmail); ?></a><?php } ?>
     </p>
 <?php endif; ?>
 
@@ -279,5 +279,5 @@
 <h3 id="gdpr-changes">Changes to this Privacy Policy</h3>
 <p>
     We reserve the right to make change to this Privacy Policy.
-    Last modification was made <?= $date; ?>.
+    Last modification was made <?php if($date){?><?= $date; ?><?php } ?>.
 </p>

@@ -29,7 +29,7 @@ class PolicyGenerator
             'representativeContactEmail' => gdpr('options')->get('representative_contact_email'),
             'representativeContactPhone' => gdpr('options')->get('representative_contact_phone'),
 
-            'dpaWebsite' => gdpr('options')->get('dpa_name'),
+            'dpaWebsite' => gdpr('options')->get('dpa_website'),
             'dpaEmail'   => gdpr('options')->get('dpa_email'),
             'dpaPhone'   => gdpr('options')->get('dpa_phone'),
 

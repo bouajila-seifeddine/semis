@@ -7,7 +7,7 @@
     The second major requirement of GDPR is a thorough Privacy Policy that explains all of the rights your customers
     have and describes how exactly their data is used. We've put together a GDPR-compliant privacy policy template for you.
     Fill in the fields below and a privacy policy will be generated automatically. Note that you will need to modify it later to suit your website and business. <br>
-    <a href="<?= gdpr('helpers')->docs('guide/setting-up-the-privacy-policy/'); ?>" target="_blank">Read more about the Privacy Policy</a><br><br>
+    <a href="<?= gdpr('helpers')->docs('gdpr-setting-up-the-privacy-policy/'); ?>" target="_blank">Read more about the Privacy Policy</a><br><br>
     If you already have a GDPR-compliant Privacy Policy, simply select the page where it is displayed and skip the rest.
     <br>
 </p>
@@ -23,23 +23,31 @@
     </label>
 </fieldset>
 
-<p class="gdpr-select-policy-page hidden">
-    <label for="gdpr_policy_page">Select the page where your Privacy Policy will be displayed</label>
-    <?= $policyPageSelector; ?>
-</p>
-
+    <p class="gdpr-select-policy-page hidden">
+        <label for="gdpr_policy_page">Select the page where your Privacy Policy will be displayed</label>
+        <?= $policyPageSelector; ?>
+        <strong>OR</strong>
+        <label for="gdpr_custom_policy_page">Enter the page URL where your Privacy Policy will be displayed</label>
+        <input 
+            type="url" 
+            name="gdpr_custom_policy_page" 
+            id="gdpr_custom_policy_page" 
+            value="<?= esc_attr($policy_page_url); ?>"
+        >
+        <span class="notice_gdpr">(Leave blank if policy page selected above or make it blank if policy page exist in above page lists.)</span>
+    </p>
 <p>
     We can generate a somewhat personalized Privacy Policy template for you based on some information you can fill in below.
     Note that if you're using an existing page, this will overwrite the page contents.
 
     <label for="gdpr_generate_policy">
         <input
-                type="checkbox"
-                name="gdpr_generate_policy"
-                id="gdpr_generate_policy"
-                class="js-gdpr-conditional"
-                data-show=".gdpr-generator-fields"
-                value="yes"
+            type="checkbox"
+            name="gdpr_generate_policy"
+            id="gdpr_generate_policy"
+            class="js-gdpr-conditional"
+            data-show=".gdpr-generator-fields"
+            value="yes"
         >
         Generate Privacy Policy
     </label>
@@ -78,7 +86,7 @@
 
             If your company is located outside of the EU and the EFTA zone and you do not have a branch inside the EU,
             GDPR requires you to appoint a representative contact which has to be a person or company located in the EU.
-            <a href="<?= gdpr('helpers')->docs('knowledge-base/do-i-need-to-appoint-an-eu-based-representative/'); ?>" target="_blank">Read more about appointing a representative and your options here</a>.
+            <a href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" target="_blank">Read more about appointing a representative and your options here</a>.
         </p>
         <p>
             If you have a representative contact, enter the contact details below.
@@ -123,7 +131,7 @@
     <h2>Data Protection Officer</h2>
     <p>
         Under some circumstances, GDPR requires you to appoint a Data Protection Officer and display the contacts
-        in your Privacy Policy. If you don't know whether or not you need a DPO, read this article: <a href="<?= gdpr('helpers')->docs('knowledge-base/do-i-need-to-appoint-data-protection-officer-dpo/'); ?>" target="_blank">Do I need a Data Protection Officer?</a>
+        in your Privacy Policy. If you don't know whether or not you need a DPO, read this article: <a href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" target="_blank">Do I need a Data Protection Officer?</a>
 
         <label for="gdpr_has_dpo">
             <input

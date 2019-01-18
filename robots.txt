@@ -10,6 +10,7 @@ User-agent: *
 # Allow Directives
 Allow: */modules/*.css
 Allow: */modules/*.js
+Allow: */modules/whatsapp/views/img/whataspp_icon.png
 # Private pages
 Disallow: /*?orderby=
 Disallow: /*?orderway=
@@ -98,12 +99,16 @@ Disallow: /module/productcomments/default
 Disallow: /blog/homepage-5/
 Disallow: /4_lorem-ipsum-dolor
 Disallow: /blog/sample-page/
+Disallow: /opiniones/comentarios/
+Disallow: /opiniones/comentarios/*
 
 #Duplicate URL category
 Disallow: /*?p=*
 #Duplicate URL pages BLOG
 Disallow: /*blog/2016/*/?*
 Disallow: /*blog/2017/*/?*
+Disallow: /*blog/2018/*/?*
 Disallow: /blog/category/sin-categoria/
+Disallow: /contactanos
 # Sitemap
 Sitemap: https://www.semillaslowcost.com/sitemap.xml

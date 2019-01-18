@@ -41,7 +41,7 @@
 {else}
     <form action="{$link->getModuleLink('bankwire', 'validation', [], true)|escape:'html':'UTF-8'}" method="post">
         <div class="box cheque-box">
-            <h3 class="page-heading">
+            <h3 class="page-heading row">
                 <span>{l s='Bank-wire payment' mod='bankwire'}</span>
             </h3>
             <p class="cheque-indent">

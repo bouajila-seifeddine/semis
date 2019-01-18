@@ -22,10 +22,10 @@ class Consent extends InstallerStep implements InstallerStepInterface
         $privacyToolsPageUrl = get_permalink(gdpr('options')->get('tools_page'));
         $hasGravityForms = class_exists('\GFForms');
         $hasCF7 = class_exists('\WPCF7');
-
+        $hasFrm = class_exists('\FrmHooksController');
         echo gdpr('view')->render(
             $this->template,
-            compact('isRegistrationOpen', 'isCommentsEnabled', 'privacyToolsPageUrl', 'hasGravityForms', 'hasCF7')
+            compact('isRegistrationOpen', 'isCommentsEnabled', 'privacyToolsPageUrl', 'hasGravityForms', 'hasCF7', 'hasFrm')
         );
     }
 }

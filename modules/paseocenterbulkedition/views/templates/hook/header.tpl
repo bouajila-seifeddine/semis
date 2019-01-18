@@ -27,7 +27,9 @@
 {if isset($publisher) && $publisher}
     <link rel="publisher" href="{$publisher|escape:'html':'UTF-8'}">
 {/if}
-{if isset($pacanonical) && $pacanonical}
+{$dir=$smarty.server.REQUEST_URI}
+
+{if isset($pacanonical) && $pacanonical && strpos($dir,'blog')==false}
     <link rel="canonical" href="{$pacanonical|escape:'html':'UTF-8'}">
 {/if}
 {if isset($ga) && $ga}

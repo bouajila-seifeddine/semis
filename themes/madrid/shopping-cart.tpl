@@ -28,7 +28,7 @@
 {assign var='current_step' value='summary'}
 {include file="$tpl_dir./order-steps.tpl"}
 {include file="$tpl_dir./errors.tpl"}
-
+<div class="col-md-7 tabla-compra row">
 <div id="order-detail-content" class="clearBoth">
 	<h1 id="cart_title">{l s='Shopping-cart summary'}</h1>
 	{if !isset($empty) && !$PS_CATALOG_MODE}
@@ -63,7 +63,7 @@
 					<th class="cart_description item">{l s='Description'}</th>
 					{if $PS_STOCK_MANAGEMENT}
 						{assign var='col_span_subtotal' value='3'}
-						<th class="cart_avail item text-center">Disponibilidad</th>
+						
 					{else}
 						{assign var='col_span_subtotal' value='2'}
 					{/if}
@@ -75,36 +75,14 @@
 			</thead>
 			<tfoot>
 				<tr class="cart_total_price">
-					<td rowspan="{$rowspan_total}" colspan="7" id="cart_voucher2" class="cart_voucher">
-					{if $voucherAllowed}
-						{if isset($errors_discount) && $errors_discount}
-						<ul class="alert alert-danger">
-						{foreach $errors_discount as $k=>$error}
-							<li>{$error|escape:'html':'UTF-8'}</li>
-						{/foreach}
-						</ul>
-						{/if}
-						<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
-							<fieldset>
-								<h4>{l s='Vouchers'}</h4>
-								<input type="text" class="discount_name col-md-3" id="discount_name" name="discount_name" value="{if isset($discount_name) && $discount_name}{$discount_name}{/if}" placeholder="Introduce aquí el cupón descuento" />
-								<input type="hidden" name="submitDiscount" />
-								<button type="submit" name="submitAddDiscount" class="button button-large"><span>ENVIAR</span></button>
-							</fieldset>
-						</form>
-						{if $displayVouchers}
-						<p id="title" class="title-offers">{l s='Take advantage of our exclusive offers:'}</p>
-						<div id="display_cart_vouchers">
-							{foreach $displayVouchers as $voucher}
-								{if $voucher.code != ''}<span class="voucher_name" data-code="{$voucher.code|escape:'html':'UTF-8'}">{$voucher.code|escape:'html':'UTF-8'}</span> - {/if}{$voucher.name}<br />
-							{/foreach}
-						</div>
-						{/if}
-					{/if}
+					<td rowspan="{$rowspan_total}" colspan="7" class="cart_voucher">
+						<a class="have_voucher" href="javascript:;" onclick="$('.div-boucher').toggle(); return false; ">¿Tienes un código de descuento?</a>
+				
 					</td>
 				</tr>
 			</tfoot>
 			<tbody>
+
 				{assign var='odd' value=0}
 				{assign var='have_non_virtual_products' value=false}
 				{foreach $products as $product}
@@ -256,11 +234,40 @@
 			{/if}
 		</table>
 	</div> <!-- end order-detail-content -->
+					{if $voucherAllowed}
+					<div class="div-boucher" style="display:none;">
+						{if isset($errors_discount) && $errors_discount}
 
-	<div class="summary-shopping col-md-4 col-sm-5 col-xs-12 pull-right">
+						<ul class="alert alert-danger">
+						{foreach $errors_discount as $k=>$error}
+							<li>{$error|escape:'html':'UTF-8'}</li>
+						{/foreach}
+						</ul>
+						{/if}
+						<form action="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}" method="post" id="voucher">
+							<fieldset>
+								<h4>{l s='Vouchers'}</h4>
+								<input type="text" class="discount_name col-md-4" id="discount_name" name="discount_name" value="{if isset($discount_name) && $discount_name}{$discount_name}{/if}" placeholder="Introduce aquí el cupón descuento" />
+								<input type="hidden" name="submitDiscount" />
+								<button type="submit" name="submitAddDiscount" class="button button-large"><span>ENVIAR</span></button>
+							</fieldset>
+						</form>
+						{if $displayVouchers}
+						<p id="title" class="title-offers">{l s='Take advantage of our exclusive offers:'}</p>
+						<div id="display_cart_vouchers">
+							{foreach $displayVouchers as $voucher}
+								{if $voucher.code != ''}<span class="voucher_name" data-code="{$voucher.code|escape:'html':'UTF-8'}">{$voucher.code|escape:'html':'UTF-8'}</span> - {/if}{$voucher.name}<br />
+							{/foreach}
+						</div>
+						{/if}
+						</div>
+					{/if}
+	
+
+	<div class="summary-shopping col-md-8 pull-right">
 		<div class="row">
 			<div class="summary-bg">
-				<h3>Resumen</h3>
+				
 				<table>
 					{assign var='rowspan_total' value=2+$total_discounts_num+$total_wrapping_taxes_num}
 
@@ -460,10 +467,7 @@
 						<td class="price" id="total_price_without_tax">{displayPrice price=$total_price_without_tax}</td>
 					</tr>
 					{/if}
-					<tr class="cart_total_tax">
-						<td>{l s='Tax'}</td>
-						<td class="price" id="total_tax">{displayPrice price=$total_tax}</td>
-					</tr>
+					
 				{/if}
 				<tr class="cart_total_price">
 					<td class="total_price_container">
@@ -482,7 +486,8 @@
 			</table>
 		</div>
 	</div><!-- .row -->
-</div><!-- .summary-shopping -->
+</div><!-- .summary-shopping --><div class="clearfix"></div>
+</div>
 
 	
 
@@ -581,17 +586,7 @@
 			{/if}
 		</div>
 	{/if}
-	<p class="cart_navigation clearBoth">
-		{if !$opc}
-			<a  href="{if $back}{$link->getPageLink('order', true, NULL, 'step=1&amp;back={$back}')|escape:'html':'UTF-8'}{else}{$link->getPageLink('order', true, NULL, 'step=1')|escape:'html':'UTF-8'}{/if}" class="button btn-primary standard-checkout" title="{l s='Proceed to checkout'}">
-				<span>{l s='Proceed to checkout'} <i class="icon icon-chevron-right"></i></span>
-			</a>
-		{/if}
-		<a href="#test-div" class="button" title="{l s='Pay order'}" style="float:right; background-color: #7bbd42;">
-			 {l s='Pay order'}
-		</a>
-	</p>
-	<div id="test-div"></div>
+
 	{if !empty($HOOK_SHOPPING_CART_EXTRA)}
 		<div class="clear"></div>
 		<div class="cart_navigation_extra">

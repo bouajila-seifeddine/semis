@@ -2,6 +2,7 @@
 
 namespace Codelight\GDPR\Components\WordpressUser;
 
+use Codelight\GDPR\DataSubject\DataSubject;
 use Codelight\GDPR\DataSubject\DataSubjectManager;
 
 class RegistrationForm
@@ -12,16 +13,19 @@ class RegistrationForm
     public function __construct(DataSubjectManager $dataSubjectManager)
     {
         $this->dataSubjectManager = $dataSubjectManager;
-
-        if (gdpr('options')->get('policy_page')) {
-            add_action('register_form', [$this, 'addRegisterFormCheckbox']);
-            add_filter('registration_errors', [$this, 'validate'], PHP_INT_MAX);
+        if(!gdpr('options')->get('register_checkbox')){
+            if (gdpr('options')->get('policy_page')) {
+                add_action('register_form', [$this, 'addRegisterFormCheckbox']);
+                add_filter('registration_errors', [$this, 'validate'], PHP_INT_MAX);
+            }
         }
     }
 
     public function addRegisterFormCheckbox()
     {
         $privacyPolicyUrl = get_permalink(gdpr('options')->get('policy_page'));
+        add_filter( 'gdpr_custom_policy_link', 'gdprfPrivacyPolicyurl' );
+        $privacyPolicyUrl = apply_filters( 'gdpr_custom_policy_link',$privacyPolicyUrl);
         $termsPage = gdpr('options')->get('terms_page');
 
         if ($termsPage) {

@@ -32,7 +32,7 @@
 
     <?php if ($consentInfo): ?>
         <div class="gdpr-consent-disclaimer">
-            <?= $consentInfo; ?>
+            <?= do_shortcode($consentInfo); ?>
         </div>
     <?php endif; ?>
     <hr>

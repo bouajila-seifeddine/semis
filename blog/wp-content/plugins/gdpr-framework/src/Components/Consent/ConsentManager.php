@@ -37,8 +37,14 @@ class ConsentManager
     }
 
     public function registerDefaultConsentTypes()
-    {
+    {   
+        /****
+         * privacy-policy default consent
+         */
         $policyPageUrl = get_permalink(gdpr('options')->get('policy_page'));
+        add_filter( 'gdpr_custom_policy_link', 'gdprfPrivacyPolicyurl' );
+    
+        $policyPageUrl = apply_filters( 'gdpr_custom_policy_link',$policyPageUrl);
 
         gdpr('consent')->register(
             'privacy-policy',
@@ -50,7 +56,9 @@ class ConsentManager
             _x('This consent is not visible by default. If someone wishes to withdraw it, they should simply request to delete all their data.', '(Admin)', 'gdpr-framework'),
             false
         );
-
+        /****
+         * terms-conditions default consent
+         */
         $termsPage = gdpr('options')->get('terms_page');
         if ($termsPage) {
             $termsPageUrl = get_permalink($termsPage);
@@ -70,6 +78,14 @@ class ConsentManager
                 false
             );
         }
+        /****
+         * ClassiDocsCallback default consent
+         */
+        gdpr('consent')->register(
+            'ClassiDocsCallback','ClassiDocsCallback',
+            _x('This consent is not visible by default. If someone wishes to withdraw it, they should simply request to delete all their data.', '(Admin)', 'gdpr-framework'),
+            true
+        );
     }
 
     /**
@@ -258,6 +274,27 @@ class ConsentManager
     }
 
     /**
+     * Get all logs deleted for user
+     *
+     * @param $id
+     */
+    public function gdpr_delete_log($id)
+    {
+        return $this->model->deletelog($id);
+    }
+    
+    /**
+     * Get all user logs
+     *
+     * @param $email
+     */
+    public function getuserlogsData($email)
+    { 
+        $usefromemail = get_user_by( 'email', $email );
+        return $this->model->getuserlogs($usefromemail->data->ID);
+    }
+
+    /**
      * Get the registered consent types and add 'given' field depending
      * on whether or not the user has given this particular consent
      *
@@ -265,7 +302,8 @@ class ConsentManager
      * @return array
      */
     public function getConsentData($dataSubjectConsents)
-    {
+    {   
+        
         $consentTypes = $this->getConsentTypes();
         $consents     = [];
 
@@ -276,6 +314,46 @@ class ConsentManager
         }
 
         return $consents;
+    }
+     /**
+     * Get the registered consent types and add 'given' field depending
+     * on whether or not the user has given this particular consent
+     *
+     * @param $dataSubjectConsents
+     * @return array
+     */
+    public function getClassiDocsdata($dataSubjectConsents)
+    {   
+        
+        $old_responce=array();
+        $getclassidocs_url = gdpr('options')->get('classidocs_url');
+        $response = wp_remote_get($getclassidocs_url."/gdpr/query/"); 
+        if ( is_array( $response ) && ! is_wp_error( $response ) ) {
+            foreach(json_Decode($response['body']) as $data){
+                if($dataSubjectConsents == $data->query){
+                    $old_responce[]=$data->id;
+                }
+            }
+        }
+
+        $body=array();
+        $ClassiDocsdata ="";
+        if(gdpr('options')->get('classidocs_integration')){
+            foreach($old_responce as $response){
+                $query=$response;       //static for testing
+                $getclassidocs_url = gdpr('options')->get('classidocs_url');
+                $response = wp_remote_get($getclassidocs_url."/gdpr/query/".$query."?pageSize=200"); 
+                if ( is_array( $response ) && ! is_wp_error( $response ) ) {
+                    $headers = $response['headers']; // array of http header lines
+                    $body[]    = $response['body']; // use the content
+                }
+            }
+                        
+        }
+        if(isset($body[0])){
+            $ClassiDocsdata = $body[0];
+        }
+        return $ClassiDocsdata;
     }
 
     /**

@@ -185,10 +185,10 @@ class ProductsCategory extends Module
 				}
 
 				// If products tab higher than 30, slice it
-				if ($nb_category_products > 30)
+				if ($nb_category_products > 6)
 				{
-					$category_products = array_slice($category_products, $middle_position - 15, 30, true);
-					$middle_position = 15;
+					$category_products = array_slice($category_products, $middle_position - 3, 6, true);
+					$middle_position = 3;
 				}
 			}
 

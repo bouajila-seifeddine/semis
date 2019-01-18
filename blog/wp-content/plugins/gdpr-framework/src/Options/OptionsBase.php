@@ -22,9 +22,9 @@ abstract class OptionsBase
      * @return string
      */
     public function prefix($name)
-    {
+    {   
         // Check for accidental duplicate prefix
-        if (0 === strpos($name, $this->prefix)) {
+        if ("" === strpos($name, $this->prefix)) {
             trigger_error("You appear to have a duplicate prefix for option {$name}", E_USER_NOTICE);
             return $name;
         }

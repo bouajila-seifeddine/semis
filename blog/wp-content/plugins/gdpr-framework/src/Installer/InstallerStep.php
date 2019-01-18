@@ -104,7 +104,7 @@ abstract class InstallerStep
         wp_enqueue_script('jquery-ui-tabs');
         wp_enqueue_script(
             'select2',
-            gdpr('config')->get('plugin.url') . 'assets/select2-4.0.5.js',
+            gdpr('config')->get('plugin.url') . 'assets/select2-4.0.3.js',
             ['jquery']
         );
         wp_enqueue_script(

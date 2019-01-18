@@ -21,7 +21,7 @@
     </div>
     <div class="col">
       <div class="col_image" style="background-image:url('<?= gdpr('config')->get('plugin.url'); ?>/assets/2.png');"></div>
-      <a class="button button-primary" href="<?= gdpr('helpers')->docs('knowledge-base'); ?>" target="_blank">
+      <a class="button button-primary" href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" target="_blank">
           <?= _x('Knowledge base', '(Admin)', 'gdpr-framework'); ?>
       </a>
       <p>
@@ -30,7 +30,7 @@
     </div>
     <div class="col">
       <div class="col_image" style="background-image:url('<?= gdpr('config')->get('plugin.url'); ?>/assets/3.png');"></div>
-      <a class="button button-primary" href="<?= gdpr('helpers')->docs('developer-docs'); ?>" target="_blank">
+      <a class="button button-primary" href="<?= gdpr('helpers')->docs('wordpress-gdpr-framework-developer-docs/'); ?>" target="_blank">
           <?= _x('Developer\'s guide to GDPR', '(Admin)', 'gdpr-framework'); ?>
       </a>
       <p>
@@ -56,7 +56,7 @@
         </div>
         <div class="col">
           <div class="col_image" style="background-image:url('<?= gdpr('config')->get('plugin.url'); ?>/assets/5.png');"></div>
-            <a class="button button-primary" href="<?= gdpr('helpers')->docs('wordpress-gdpr-consultation'); ?>"  target="_blank">
+            <a class="button button-primary" href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>"  target="_blank">
                 <?= _x('Request a consultation', '(Admin)', 'gdpr-framework'); ?>
             </a>
             <p>

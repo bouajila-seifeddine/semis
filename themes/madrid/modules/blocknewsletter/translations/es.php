@@ -71,5 +71,5 @@ $_MODULE['<{blocknewsletter}madrid>blocknewsletter_87b0ca57db642f4e7780174a6abdc
 $_MODULE['<{blocknewsletter}madrid>blocknewsletter_ffb7e666a70151215b4c55c6268d7d72'] = 'Boletín';
 $_MODULE['<{blocknewsletter}madrid>blocknewsletter_416f61a2ce16586f8289d41117a2554e'] = 'su email';
 $_MODULE['<{blocknewsletter}madrid>blocknewsletter_26bb92a2f6a2aec8537748a48957b774'] = 'Newsletter';
-$_MODULE['<{blocknewsletter}madrid>blocknewsletter_d8335f4a5d918134bd0bdc47cc487d74'] = 'Introduzca su dirección de correo electrónico';
 $_MODULE['<{blocknewsletter}madrid>blocknewsletter_a60852f204ed8028c1c58808b746d115'] = 'OK';
+$_MODULE['<{blocknewsletter}madrid>blocknewsletter_d8335f4a5d918134bd0bdc47cc487d74'] = 'Introduzca su dirección de correo electrónico';

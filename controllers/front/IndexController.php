@@ -37,10 +37,62 @@ class IndexControllerCore extends FrontController
         parent::initContent();
         $this->addJS(_THEME_JS_DIR_.'index.js');
 
+
+    /**
+     * Modificación para conectarse a la base de datos de wordprees, sacar
+     * los ultimos posts y mandar variable al index.tpl
+     */
+
+        $servername = "213.162.211.156";
+        $username = "slc_user_wp";
+        $password = "sGzaLTYXWcf6HM792582nNM";
+        $dbname = "slc_wp";
+
+            // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn->set_charset("utf8");
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        } 
+
+        $sql = "SELECT ID AS id, post_date AS fecha, post_title AS title, post_content AS contenido, post_name AS url FROM wp_posts WHERE(post_type='post' AND post_status='publish') ORDER BY post_date DESC LIMIT 6";
+        
+        $res = $conn->query($sql);
+
+        if ($res->num_rows > 0) {
+
+            $rows = array();
+while($r = $res->fetch_object()) {
+    $res2 = $conn->query("SELECT guid AS url FROM wp_posts WHERE(post_mime_type='image/jpeg' AND post_parent=".$r->id." AND guid IS NOT NULL AND guid!='' ) ORDER BY post_date DESC LIMIT 1");
+    $r2 = $res2->fetch_object();
+    
+     if($r2->url){$r->image =  str_replace("http:", "https:", $r2->url);}
+     else{$r->image ="nada";}
+    $contenido = $r->contenido;
+    $r->contenido = substr(strip_tags($contenido)."\r\n\r\n\r\n\r\n", 0, 225);
+    
+    $rows[] = $r;
+}
+
+        } else {
+          echo "0 results";
+        }
+
+        $conn->close();
+
+        // FIN MODIFICACIÓN LEER ULTIMOS POST
+
+
+
         $this->context->smarty->assign(array('HOOK_HOME' => Hook::exec('displayHome'),
             'HOOK_HOME_TAB' => Hook::exec('displayHomeTab'),
             'HOOK_HOME_TAB_CONTENT' => Hook::exec('displayHomeTabContent')
         ));
+        $posts = "tesing";
+        $this->context->smarty->assign('posts', $rows);
         $this->setTemplate(_PS_THEME_DIR_.'index.tpl');
+
+
     }
 }

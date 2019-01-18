@@ -29,7 +29,7 @@
 	<div class="heading_block margin-bottom">
 		<h4 class="pull-left">
 			<i class="icon icon-heart main-color"></i>
-			<strong>{l s='popular' mod='blockbestsellers'}</strong> {l s='products' mod='blockbestsellers'}
+			<strong>Semillas de Marihuana</strong> Más Vendidas
 		</h4>
 		{include file="$tpl_dir./carousel-arrows.tpl" products=$best_sellers}
 	</div>

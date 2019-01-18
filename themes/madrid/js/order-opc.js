@@ -79,11 +79,26 @@ $(document).ready(function(){
 		// LOGIN FORM
 		$(document).on('click', '#openLoginFormBlock', function(e){
 			e.preventDefault();
-			$('#openNewAccountBlock').show();
-			$(this).hide();
-			$('#login_form_content').slideDown('slow');
-			$('#new_account_form_content').slideUp('slow');
+			$('#login_form_content').show();
+			$('#new_account_form').hide();
+			$('#openLoginFormBlock').addClass('button-active');
+			$('#openNewFormBlock').removeClass('button-active');
+
+
+			
 		});
+
+		// NEW USER FORM
+		$(document).on('click', '#openNewFormBlock', function(e){
+			e.preventDefault();
+			$('#login_form_content').hide();
+			$('#new_account_form').show();
+			$('#openLoginFormBlock').removeClass('button-active');
+			$('#openNewFormBlock').addClass('button-active');
+			
+		});
+
+
 		// LOGIN FORM SENDING
 		$(document).on('click', '#SubmitLogin', function(e){
 			e.preventDefault();
@@ -105,7 +120,7 @@ $(document).ready(function(){
 							if(error !== 'indexOf')
 								errors += '<li>'+jsonData.errors[error]+'</li>';
 						errors += '</ol>';
-						$('#opc_login_errors').html(errors).slideDown('slow');
+						$('#opc_login_errors').html(errors).show();
 					}
 					else
 					{

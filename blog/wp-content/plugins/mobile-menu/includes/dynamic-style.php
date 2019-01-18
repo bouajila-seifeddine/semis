@@ -78,11 +78,10 @@ if ( $titan->getOption( 'logo_height' ) > 0 ) {
 }
 $logo_height = 'height:' . $logo_height . 'px!important;';
 
+$header_height       = $titan->getOption( 'header_height' );
+$total_header_height = $header_height;
+
 ?>
-
-<style>
-
-/* Hide WP Mobile Menu outside the width of trigger */
 @media only screen and (min-width:<?php echo $trigger_res; ?>px) {
 	
 	.mob_menu, .mob_menu_left_panel, .mob_menu_right_panel, .mobmenu {
@@ -93,25 +92,16 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 
 /* Our css Custom Options values */
 @media only screen and (max-width:<?php echo $trigger_res; ?>px) {
-	
-
-	<?php
-	$header_height = $titan->getOption( 'header_height' );
-	$total_header_height = $header_height;
-
-	if ( $titan->getOption( 'disabled_logo_text' ) ) { ?>
-		
-		.mob-menu-logo-holder {
-			display: none;
-		}	
-	<?php
-
+	<?php if ( '' !== $titan->getOption( 'hide_elements' ) ) { ?>
+	<?php echo  $titan->getOption( 'hide_elements' ); ?> {
+		display:none !important;
 	}
-	?>
+	<?php } ?>
+
 	.mob-menu-left-panel .mobmenu-left-bt, .mob-menu-right-panel .mobmenu-right-bt {
 		position: absolute;
 		right: 0px;
-		top: 10px;
+		top: 0px;
 		font-size: 30px;
 	}
 
@@ -145,12 +135,11 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 	.mobmenu_content h2, .mobmenu_content h3, .show-nav-left .mob-menu-copyright, .show-nav-left .mob-expand-submenu i {
 		color: <?php echo $titan->getOption( 'left_panel_text_color' ); ?>;
 	}
-
-	.mobmenu_content #mobmenuleft li:hover, .mobmenu_content #mobmenuright li:hover  {
+	.mobmenu_content #mobmenuleft > li > a:hover {
 		background-color: <?php echo $titan->getOption( 'left_panel_hover_bgcolor' ); ?>;
 	}
 
-	.mobmenu_content #mobmenuright li:hover  {
+	.mobmenu_content #mobmenuright > li > a:hover {
 		background-color: <?php echo $titan->getOption( 'right_panel_hover_bgcolor' ); ?>;
 	}
 	
@@ -161,12 +150,38 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 		width: 100%;
 		position: initial;
 	}
+
+	/* 2nd Level Left Background Color on Hover */
+	.mobmenu_content #mobmenuleft .sub-menu li:hover {
+		background-color: <?php echo $titan->getOption( 'left_panel_2nd_level_bgcolor_hover' ); ?>;
+	}
+
+	/* 2nd Level Left Background Color on Hover */
+	.mobmenu_content #mobmenuleft .sub-menu li:hover a {
+		color: <?php echo $titan->getOption( 'left_panel_2nd_level_text_color_hover' ); ?>;
+	}
+	
+	/* 2nd Level Right Background Color on Hover */
+	.mobmenu_content #mobmenuright .sub-menu li:hover {
+		background-color: <?php echo $titan->getOption( 'right_panel_2nd_level_bgcolor_hover' ); ?>;
+	}
+
+	/* 2nd Level Right Background Color on Hover */
+	.mobmenu_content #mobmenuright .sub-menu li:hover a {
+		color: <?php echo $titan->getOption( 'right_panel_2nd_level_text_color_hover' ); ?>;
+	}
+	.mob-cancel-button {
+		font-size: <?php echo $titan->getOption( 'close_icon_font_size' ); ?>px!important;
+	}
+
 	.mob-menu-left-panel .mob-cancel-button {
 		color: <?php echo $titan->getOption( 'left_panel_close_button_color' ); ?>;
 	}
+
 	.mob-menu-right-panel .mob-cancel-button {
 		color: <?php echo $titan->getOption( 'right_panel_close_button_color' ); ?>;
 	}
+
 	.mob-menu-slideout-over .mobmenu_content {
 		padding-top: 40px;
 	}
@@ -254,22 +269,84 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 	.mobmenu .sub-menu .sub-menu li a {
 		padding-left: 75px;
 	}
+	
+	/* 3rd Level Left Menu Items Background color*/
+	.mobmenu_content #mobmenuleft .sub-menu  .sub-menu li a {
+		color: <?php echo $titan->getOption( 'left_panel_3rd_level_text_color' ); ?>;
+	}
+
+	/* 3rd Level Left Menu Items Background color on Hover*/
+	.mobmenu_content #mobmenuleft .sub-menu  .sub-menu li a:hover {
+		color: <?php echo $titan->getOption( 'left_panel_3rd_level_text_color_hover' ); ?>;
+	}
+
+	/* 3rd Level Left Menu Items Background color*/
+	.mobmenu_content #mobmenuleft .sub-menu .sub-menu li {
+		background-color: <?php echo $titan->getOption( 'left_panel_3rd_level_bgcolor' ); ?>;
+	}
+
+	/* 3rd Level Left Menu Items Background color on Hover*/
+	.mobmenu_content #mobmenuleft .sub-menu .sub-menu li:hover {
+		background-color: <?php echo $titan->getOption( 'left_panel_3rd_level_bgcolor_hover' ); ?>;
+	}
+
+	/* 3rd Level Right Menu Items Background color*/
+	.mobmenu_content #mobmenuright .sub-menu  .sub-menu li a {
+		color: <?php echo $titan->getOption( 'right_panel_3rd_level_text_color' ); ?>;		
+	}
+
+	/* 3rd Level Right Menu Items Background color*/
+	.mobmenu_content #mobmenuright .sub-menu .sub-menu li {
+		background-color: <?php echo $titan->getOption( 'right_panel_3rd_level_bgcolor' ); ?>;
+	}
+
+	/* 3rd Level Right Menu Items Background color on Hover*/
+	.mobmenu_content #mobmenuright .sub-menu .sub-menu li:hover {
+		background-color: <?php echo $titan->getOption( 'right_panel_3rd_level_bgcolor_hover' ); ?>;
+	}
+
+	/* 3rd Level Right Menu Items Background color on Hover*/
+	.mobmenu_content #mobmenuright .sub-menu  .sub-menu li a:hover {
+		color: <?php echo $titan->getOption( 'right_panel_3rd_level_text_color_hover' ); ?>;
+	}
 
 	<?php
 
-	$header_margin_left = '';
-	$header_margin_right = '';
-	$header_text_position = 'absolute';
+	$header_margin_left     = '';
+	$header_margin_right    = '';
+	$header_text_position   = 'absolute';
+	$border_menu_size       = $titan->getOption( 'menu_items_border_size' );
+	$submenu_open_icon_font = $titan->getOption( 'submenu_open_icon_font' );
 
 	if ( 'left' === $titan->getOption( 'header_text_align' ) ) {
 			$header_margin_left = 'margin-left:' . $titan->getOption( 'header_text_left_margin' ) . 'px;';
 	}
+
 	if ( 'right' === $titan->getOption( 'header_text_align' ) ) {
 		$header_margin_right = 'margin-right:' . $titan->getOption( 'header_text_right_margin' ) . 'px;';
 	}
+
 	if ( 'center' === $titan->getOption( 'header_text_align' ) ) {
 		$header_text_position = 'initial';
 	}
+
+	if ( $titan->getOption( 'enabled_sticky_header' ) ) {
+		$header_position = 'fixed';
+	} else {
+		$header_position = 'absolute';
+	}
+
+	if ( 0 < $border_menu_size ) { 
+		$border_menu_color = $titan->getOption( 'menu_items_border_color' );
+		$border_style      =  $border_menu_size . 'px solid ' . $border_menu_color; ?>
+
+		.mobmenu_content li {
+			border-top: <?php echo $border_style; ?>;
+		}
+
+	<?php
+	}
+
 	?>
 
 	.mob-menu-logo-holder {
@@ -285,7 +362,7 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 		height: <?php echo $total_header_height; ?>px;
 		width: 100%;
 		font-weight:bold;
-		position:fixed;
+		position:<?php echo $header_position; ?>;
 		top:0px;	
 		right: 0px;
 		z-index: 99998;
@@ -753,8 +830,12 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 		position: relative;
 		font-weight: 600;
 		cursor: pointer;
+		font-size: <?php echo $titan->getOption( 'submenu_icon_font_size' ); ?>px;
 	}
 
+	<?php echo  $default_elements; ?> {
+		display: none!important;
+	}
 
 	.mob-menu-left-bg-holder, .mob-menu-right-bg-holder {
 		width: 100%;
@@ -775,10 +856,10 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 		<?php echo $logo_height; ?>
 	}
 
-	.mob-retina-logo {
-		<?php echo $logo_height; ?>
-	}
-
+}
+.mob-standard-logo {
+	display: inline-block;
+}
 .mobmenu-push-wrap {
 	height:100%;
 }
@@ -788,7 +869,5 @@ $logo_height = 'height:' . $logo_height . 'px!important;';
 	margin-top: 20px;
 	position: absolute;
 }
-
-</style>
 
 <?php

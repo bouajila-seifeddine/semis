@@ -22,10 +22,10 @@
             <h1>
               <?= _x('The GDPR Framework', '(Admin)', 'gdpr-framework'); ?>
             </h1>
-            <a href="<?= gdpr('helpers')->docs('wordpress-gdpr-consultation'); ?>" class="button button-secondary button-side" target="_blank">
+            <a href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" class="button button-secondary button-side" target="_blank">
               <?= _x('I need help', '(Admin)', 'gdpr-framework'); ?>
             </a>
-            <a href="<?= gdpr('helpers')->docs('developer-docs'); ?>" class="button button-secondary button-side" target="_blank">
+            <a href="<?= gdpr('helpers')->docs('wordpress-gdpr-framework-developer-docs/'); ?>" class="button button-secondary button-side" target="_blank">
               <?= _x('Developer Docs', '(Admin)', 'gdpr-framework'); ?>
             </a>
           </div>

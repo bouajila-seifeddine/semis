@@ -59,6 +59,7 @@ class PrivacyToolsPageController
 
         add_action('gdpr/frontend/privacy-tools-page/content', [$this, 'renderConsentForm'], 10, 2);
         add_action('gdpr/frontend/privacy-tools-page/content', [$this, 'renderExportForm'], 20, 2);
+        add_action('gdpr/frontend/privacy-tools-page/content', [$this, 'ClassiDocsResults'], 25, 2);
         add_action('gdpr/frontend/privacy-tools-page/content', [$this, 'renderDeleteForm'], 30, 2);
 
         add_action('gdpr/frontend/privacy-tools-page/action/withdraw_consent', [$this, 'withdrawConsent'], 10, 2);
@@ -82,12 +83,39 @@ class PrivacyToolsPageController
      * If the given email address exists as a data subject, send an authentication email to that address
      */
     public function sendIdentificationEmail()
-    {
+    {   
+        
         // Additional safety check
         if ( ! is_email($_REQUEST['email'])) {
             $this->redirect(['gdpr_notice' => 'invalid_email']);
         }
-
+        if(gdpr('options')->get('classidocs_integration')){
+            if(gdpr('options')->get('sar_request_details')){
+                $getclassidocs_url = gdpr('options')->get('classidocs_url');
+                $classidocs_Data = array();
+                        
+                $classidocs_Data['email']=$_REQUEST['email'];
+                if(gdpr('options')->get('response_related_queries')){
+                    $user = get_user_by( 'email', $_REQUEST['email'] );
+                    if($user){
+                    if(!ctype_space($this->gdpr_get_formatted_billing_name_and_address($user->ID))){
+                        if($this->gdpr_get_formatted_billing_name_and_address($user->ID)){
+                            $classidocs_Data['address']= $this->gdpr_get_formatted_billing_name_and_address($user->ID);
+                        }  
+                    }                 
+                    if(get_user_meta( $user->ID, 'billing_phone', true )){
+                        $classidocs_Data['phone']= get_user_meta( $user->ID, 'billing_phone', true );
+                    }
+                    }
+                    $classidocs_Data =  apply_filters('gdpr/admin/action/classidocs_Data',$classidocs_Data);
+                }
+                foreach($classidocs_Data as $data){
+                    wp_remote_post($getclassidocs_url."/gdpr/query?terms=".$data."&ruleType=TextPattern"); 
+                }
+                
+            }
+        }
+        
         if ($this->dataSubjectIdentificator->isDataSubject($_REQUEST['email'])) {
             $this->dataSubjectIdentificator->sendIdentificationEmail($_REQUEST['email']);
         } else {
@@ -186,26 +214,76 @@ class PrivacyToolsPageController
             "privacy-tools/form-export",
             compact('email', 'nonce')
         );
-    }
 
+
+    }
+    /**
+     * Render the form that allows the data subject to export their data
+     *
+     * @param DataSubject $dataSubject
+     */
+    public function ClassiDocsResults(DataSubject $dataSubject)
+    { 
+        $email = $dataSubject->getEmail();
+
+        $old_responce=array();
+        $getclassidocs_url = gdpr('options')->get('classidocs_url');
+        $response = wp_remote_get($getclassidocs_url."/gdpr/query/"); 
+        if ( is_array( $response ) && ! is_wp_error( $response ) ) {
+            
+            foreach(json_Decode($response['body']) as $data){
+                    if($email == $data->query){
+                        $old_responce[]=$data->id;
+                    }
+            }
+        }
+        $body=array();
+        $ClassiDocsdata= "";
+        if(gdpr('options')->get('classidocs_integration')){
+            foreach($old_responce as $response){
+                $query=$response;           //static for testing
+                $getclassidocs_url = gdpr('options')->get('classidocs_url');
+                $response = wp_remote_get($getclassidocs_url."/gdpr/query/".$query."?pageSize=200"); 
+                if ( is_array( $response ) && ! is_wp_error( $response ) ) {
+                    $headers = $response['headers']; // array of http header lines
+                    $body[]    = $response['body']; // use the content
+                }
+            }   
+        }
+        if(isset($body[0])){
+            $ClassiDocsdata = $body[0];
+        }
+        $nonce = wp_create_nonce("gdpr/frontend/privacy-tools-page/action/export");
+        echo gdpr('view')->render(
+            "privacy-tools/ClassiDocs-results",
+            compact('email', 'nonce','ClassiDocsdata')
+        );
+
+
+    }
     /**
      * Render the form that allows the data subject to delete their data
      *
      * @param DataSubject $dataSubject
      */
     public function renderDeleteForm(DataSubject $dataSubject)
-    {
+    {   
         // Let's not allow admins to delete themselves
         if (current_user_can('manage_options')) {
             echo gdpr('view')->render("privacy-tools/notice-admin-role");
-
             return;
         }
-
-        $action = 'forget';
         $email  = $dataSubject->getEmail();
+        $gdpr_user = get_user_by( 'email', $email );
+        if(isset($gdpr_user->data->ID)){
+            if (user_can($gdpr_user->data->ID,'manage_options')) {
+                echo gdpr('view')->render("privacy-tools/notice-admin-role");
+                return;
+            } 
+        }       
+        $action = 'forget';
         $nonce  = wp_create_nonce("gdpr/frontend/privacy-tools-page/action/forget");
-
+        $user = wp_get_current_user();
         echo gdpr('view')->render(
             "privacy-tools/form-delete",
             compact('action', 'email', 'nonce')
@@ -276,5 +354,16 @@ class PrivacyToolsPageController
 
         wp_safe_redirect(add_query_arg($args, $baseUrl));
         exit;
+    }
+
+    public function gdpr_get_formatted_billing_name_and_address($user_id) 
+    {
+        $address = get_user_meta( $user_id, 'billing_address_1', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_address_2', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_city', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_state', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_postcode', true )." ";
+        $address .= get_user_meta( $user_id, 'billing_country', true )." ";
+        return $address;
     }
 }

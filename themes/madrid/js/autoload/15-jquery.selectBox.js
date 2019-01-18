@@ -67,7 +67,7 @@
             , self     = this;
 
         control
-            .width(select.outerWidth())
+           
             .addClass(select.attr('class'))
             .attr('title', select.attr('title') || '')
             .attr('tabindex', tabIndex)
@@ -165,7 +165,7 @@
 
             control
                 .data('selectBox-options', options)
-                .addClass('selectBox-dropdown')
+                .addClass('selectBox-dropdown col-md-4')
                 .append(label)
                 .append(arrow)
                 .bind('mousedown.selectBox', function (event) {

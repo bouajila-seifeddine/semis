@@ -9,21 +9,24 @@ use Codelight\GDPR\DataSubject\DataSubjectManager;
 class DashboardProfilePageController
 {
     public function __construct(DataSubjectManager $dataSubjectManager, DataExporter $dataExporter)
-    {
+    {          
         $this->dataSubjectManager = $dataSubjectManager;
         $this->dataExporter       = $dataExporter;
-
+        
         add_action('gdpr/dashboard/profile-page/content', [$this, 'renderHeader'], 10);
         add_action('gdpr/dashboard/profile-page/content', [$this, 'renderConsentTable'], 20);
         add_action('gdpr/dashboard/profile-page/content', [$this, 'renderExportForm'], 30);
         add_action('gdpr/dashboard/profile-page/content', [$this, 'renderDeleteForm'], 40);
+        add_action('gdpr/dashboard/profile-page/contentuser', [$this, 'renderHeader'], 10);
+        add_action('gdpr/dashboard/profile-page/contentuser', [$this, 'renderConsentTable'], 20);
+        add_action('gdpr/dashboard/profile-page/userlogs', [$this, 'gdpr_user_logs'], 50);
 
         add_action('gdpr/admin/action/export', [$this, 'export']);
         add_action('gdpr/admin/action/forget', [$this, 'forget']);
     }
 
     protected function isUserAnonymized(DataSubject $dataSubject)
-    {
+    {   
         return !$dataSubject->getEmail();
     }
 
@@ -34,6 +37,20 @@ class DashboardProfilePageController
         echo gdpr('view')->render(
             "modules/wordpress-user/dashboard/profile-page/header",
             compact('isAnonymized')
+        );
+    }
+
+    
+    public function gdpr_user_logs(DataSubject $dataSubject)
+    {
+        if ($this->isUserAnonymized($dataSubject)) {
+            return;
+        }
+
+        $userlogData = $dataSubject->getuserlogsData(); 
+        echo gdpr('view')->render(
+            "modules/wordpress-user/dashboard/profile-page/user-logs",
+            compact('userlogData')
         );
     }
 
@@ -53,7 +70,7 @@ class DashboardProfilePageController
 
     public function renderExportForm(DataSubject $dataSubject)
     {
-        if ($this->isUserAnonymized($dataSubject)) {
+        if ($this->isUserAnonymized($dataSubject)) { 
             return;
         }
 

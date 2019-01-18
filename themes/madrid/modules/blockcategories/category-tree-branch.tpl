@@ -31,7 +31,7 @@
         </span>
     {else}*}
         <a href="{$node.link|escape:'html':'UTF-8'}"{if isset($currentCategoryId) && $node.id == $currentCategoryId} class="selected"{/if} title="{$node.name|escape:'html':'UTF-8'}">
-            {$node.name|escape:'html':'UTF-8'}
+            {if $node.id == 218}PARA VAPEAR{else}{$node.name|escape:'html':'UTF-8'}{/if}
         </a>
     {*{/if}*}
 {if $isFooter == false}

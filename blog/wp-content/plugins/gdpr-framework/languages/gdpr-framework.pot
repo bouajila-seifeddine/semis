@@ -159,6 +159,11 @@ msgctxt "(Admin)"
 msgid "Enable automatic theme compatibility"
 msgstr ""
 
+#: src/Admin/AdminTabGeneral.php:51
+msgctxt "(Admin)"
+msgid "Enable Term and Conditions"
+msgstr ""
+
 #: src/Admin/AdminTabGeneral.php:184 src/Admin/AdminTabGeneral.php:200
 #: src/Admin/AdminTabGeneral.php:213 src/Admin/AdminTabGeneral.php:252
 #: views/installer/steps/configuration-settings.php:62
@@ -372,7 +377,7 @@ msgstr ""
 #: src/Components/WordpressComments/WordpressComments.php:90
 #, php-format
 msgid ""
-"%sERROR:%s You need to accept the terms and conditions to post a comment."
+"%sERROR:%s You need to accept the privacy policy to post a comment."
 msgstr ""
 
 #: src/Components/WordpressUser/Controllers/DashboardDataPageController.php:54
@@ -824,6 +829,11 @@ msgstr ""
 #: views/admin/general/description-terms-page.php:2
 msgctxt "(Admin)"
 msgid "Optional. Select the page which contains your Terms & Conditions"
+msgstr ""
+
+#: views/admin/general/enable-tac.php:9
+msgctxt "(Admin)"
+msgid "Enable the term and condition page."
 msgstr ""
 
 #: views/admin/general/enable.php:9
@@ -1325,4 +1335,326 @@ msgstr ""
 
 #: views/privacy-tools/privacy-tools.php:5
 msgid "You are identified as"
+msgstr ""
+
+#: gdpr-framework.php:121
+msgid "This website uses cookies to ensure you get the best experience on our website."
+msgstr ""
+
+#: gdpr-framework.php:121
+msgid "Decline"
+msgstr ""
+
+#: gdpr-framework.php:121
+msgid "Accept"
+msgstr ""
+
+#: gdpr-framework.php:133
+msgid "Learn more"
+msgstr ""
+
+#: AdminTabGeneral.php:94
+msgctxt "(Admin)"
+msgid "From Email"
+msgstr ""
+
+#: AdminTabGeneral.php:87
+msgctxt "(Admin)"
+msgid "From Name"
+msgstr ""
+
+#: AdminTabGeneral.php:82
+msgctxt "(Admin)"
+msgid "Email Setting"
+msgstr ""
+
+#: AdminTabGeneral.php:104
+msgctxt "(Admin)"
+msgid "Acceptance Popup Setting"
+msgstr ""
+
+#: AdminTabGeneral.php:109
+msgctxt "(Admin)"
+msgid "Popup Position"
+msgstr ""
+
+#: AdminTabGeneral.php:116
+msgctxt "(Admin)"
+msgid "Popup theme"
+msgstr ""
+
+#: AdminTabGeneral.php:123
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Background Color"
+msgstr ""
+
+#: AdminTabGeneral.php:130
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Text Color"
+msgstr ""
+
+#: AdminTabGeneral.php:137
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Button Backgroung Color"
+msgstr ""
+
+#: AdminTabGeneral.php:144
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Button Color"
+msgstr ""
+
+#: AdminTabGeneral.php:151
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Border Color"
+msgstr ""
+
+#: AdminTabGeneral.php:67
+msgctxt "(Admin)"
+msgid "Enable Cookie Acceptance Popup"
+msgstr ""
+
+#: AdminTabGeneral.php:73
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Popup Content"
+msgstr ""
+
+#: description-position-action.php
+msgctxt "(Admin)"
+msgid "Select position of the Popup"
+msgstr ""
+
+#: description-theme-action.php
+msgctxt "(Admin)"
+msgid "Select theme of the Popup"
+msgstr ""
+
+#: description-theme-action.php:69
+msgctxt "(Admin)"
+msgid "Disable Comment Checkbox"
+msgstr ""
+
+#: description-theme-action.php:76
+msgctxt "(Admin)"
+msgid "Disable Register Form Checkbox"
+msgstr ""
+
+#: description-theme-action.php:312
+msgctxt "(Admin)"
+msgid "Disable Checkbox For Comments"
+msgstr ""
+
+#: AdminTabGeneral.php:319
+msgctxt "(Admin)"
+msgid "Disable Checkbox For Register Form"
+msgstr ""
+
+#: advanced-integration\header.php:2
+msgctxt "(Admin)"
+msgid "This page allows you to advance integration with ClassiDocs™"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:97
+msgctxt "(Admin)"
+msgid "ClassiDocs Password"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:88
+msgctxt "(Admin)"
+msgid "ClassiDocs Username"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:79
+msgctxt "(Admin)"
+msgid "ClassiDocs URL"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:69
+msgctxt "(Admin)"
+msgid "Enable Response with related queries?"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:60
+msgctxt "(Admin)"
+msgid "Submit SAR request details?"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:51
+msgctxt "(Admin)"
+msgid "Integrate with ClassiDocs?"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:43
+msgctxt "(Admin)"
+msgid "Integration Settings"
+msgstr ""
+
+#: AdminTabAdvancedIntegration.php:35
+msgctxt "(Admin)"
+msgid "Advanced Integration"
+msgstr ""
+
+#: checkbox-field.php:10
+msgctxt "(Admin)"
+msgid "Sign up for free here"
+msgstr ""
+
+#: checkbox-field.php:10
+msgctxt "(Admin)"
+msgid "Click Here"
+msgstr ""
+
+#: checkbox-field.php:10
+msgctxt "(Admin)"
+msgid "Click Here"
+msgstr ""
+
+#: ClassiDocs-results.php:12
+msgid "Previous Results"
+msgstr ""
+
+#: ClassiDocs-results.php:13
+msgid "Current Results"
+msgstr ""
+
+#: ClassiDocs-results.php:19
+msgid "Name"
+msgstr ""
+
+#: ClassiDocs-results.php:22
+msgid "Path"
+msgstr ""
+
+#: ClassiDocs-results.php:34
+msgid "Workstation"
+msgstr ""
+
+#: ClassiDocs-results.php:37
+msgid "Last Scan"
+msgstr ""
+
+#: ClassiDocs-results.php:62
+msgid "No ClassiDocs data found!"
+msgstr ""
+
+#: enable_popup_header.php:5
+msgid "Cookies used on the website!"
+msgstr ""
+
+#: enable_popup_header.php:9
+msgid "Leave blank if don't want header to get display."
+msgstr ""
+
+#: AdminTabCookiePopup.php:39
+msgctxt "(Admin)"
+msgid "Cookie Popup Settings"
+msgstr ""
+
+#: AdminTabCookiePopup.php:17
+msgctxt "(Admin)"
+msgid "Cookie Popup"
+msgstr ""
+
+#: AdminTabCookiePopup.php:49
+msgctxt "(Admin)"
+msgid "Enable One Time Cookie Acceptance Popup"
+msgstr ""
+
+#: consent.php:79
+msgctxt "(Admin)"
+msgid "Show Consent types"
+msgstr ""
+
+#:consent.php:81
+msgctxt "(Admin)"
+msgid "Hide consent types"
+msgstr ""
+
+#:Flamingo.php:155
+msgctxt "(Admin)"
+msgid "Do you want form to be GDPR compliance."
+msgstr ""
+
+#:Flamingo.php:156
+msgctxt "(Admin)"
+msgid "You have installed flamingo, To make this GDPR compliance in individual contact form's privacy tab check the checkbox for include data to be search on Privacy tool."
+msgstr ""
+
+#:AdminTabCookiePopup.php
+msgctxt "(Admin)"
+msgid "Enable Policy Link On Popup"
+msgstr ""
+
+#:AdminTabCookiePopup.php
+msgctxt "(Admin)"
+msgid "Enable Privacy policy on Popup"
+msgstr ""
+
+#: AdminTabCookiePopup.php
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Popup header"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:2
+msgctxt "(Admin)"
+msgid "Data443™ Privacy Manager"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:3
+msgctxt "(Admin)"
+msgid "ensures privacy regulation compliance, such as GDPR, CCPA, LGPD, etc, at the next level."
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:4
+msgctxt "(Admin)"
+msgid "In addition to DSAR tracking and management, Privacy Manager adds the following features to your data protection compliance resources:"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:6
+msgctxt "(Admin)"
+msgid "Log and store ICO breach notifications"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:7
+msgctxt "(Admin)"
+msgid "Keeps full record of all requests, ticketed and timeline"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:8
+msgctxt "(Admin)"
+msgid "Gap analysis and breach notifications"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:9
+msgctxt "(Admin)"
+msgid "In depth activity log with all GDPR, CCPA, etc actions evidenced"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:10
+msgctxt "(Admin)"
+msgid "Highlights areas of concern and where you need to focus"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:11
+msgctxt "(Admin)"
+msgid "eLearning platform with access for all staff to ensure privacy regulation compliance and obligations"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:12
+msgctxt "(Admin)"
+msgid "Tracks who accesses the system, when and why"
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:15
+msgctxt "(Admin)"
+msgid "Our system enables your business to demonstrate its obligations in protecting your customer data, show understanding of your business activities and deliver eLearning and online tests to employees, ensuring everyone in your company understands your privacy compliance rules and best practices to operate."
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:16
+msgctxt "(Admin)"
+msgid "No matter where you are on your data privacy journey, the ultimate goal is compliance."
+msgstr ""
+
+#: views\admin\privacy-manager\header.php:16
+msgctxt "(Admin)"
+msgid "enables your organization to comply with all privacy regulations."
 msgstr ""

@@ -708,7 +708,7 @@ class AdminPrestaHomeMegaMenuController extends ModuleAdminController
 						'type' => 'text',
 						'label' => $this->l('Icon:'),
 						'name' => 'icon',
-						'desc' => $this->l('FontAwesome icon, eg fa-home, fa-envelope, fa-phone etc. List of available icons: http://fontawesome.io/icons/'),
+						'desc' => $this->l('Pon la imagen en la carpeta img/iconos-menu y escribe el nombre en este recuadro (ex:home.png)'),
 						'required' => false,
 						'lang' => false,
 					),

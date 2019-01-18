@@ -25,29 +25,10 @@
 <!-- MODULE Block cart -->
 {if isset($blockcart_top) && $blockcart_top}
 
-<div class="shopping_cart_mobile shopping_cart ">
-<br/><br/><br/>
-	<div class="row">
-		<a id="showCart" class="cart-contents" href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">
-			<span class="pull-left">CARRITO:
-				<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span>
-				<span class="ajax_cart_product_txt{if $cart_qties != 1} unvisible{/if}">{l s='Product' mod='blockcart'}</span>
-				<span class="ajax_cart_product_txt_s{if $cart_qties < 2} unvisible{/if}">{l s='Products' mod='blockcart'}</span>
-			
-				<span class="ajax_cart_no_product{if $cart_qties > 0} unvisible{/if}">{l s='(empty)' mod='blockcart'}</span>
-				{if $ajax_allowed && isset($blockcart_top) && !$blockcart_top}
-					<span class="block_cart_expand{if !isset($colapseExpandStatus) || (isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded')} unvisible{/if}">&nbsp;</span>
-					<span class="block_cart_collapse{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'} unvisible{/if}">&nbsp;</span>
-				{/if}
-				<i class="icon icon-chevron-down pull-right"></i>
-			</span>
-			<i class="pull-left icon icon-shopping-cart main-color"></i>
-		</a>
-	</div>
-</div><!-- .shopping-cart-mobile -->
 
-<div class="col-lg-3 col-md-4 hidden-sm hidden-xs shopping_cart  shopping_cart_desktop pull-right{if $PS_CATALOG_MODE} header_user_catalog{/if}">
-	<div class="row">
+
+<div class="col-lg-3 col-md-4 shopping_cart  pull-right{if $PS_CATALOG_MODE} header_user_catalog{/if}">
+	<div class="row shopping_cart_desktop">
 		{if $logged}
 		<p>{l s='Bienvenido! Mira ' mod='blockcart'} <a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="register account">{l s='tu cuenta' mod='blockcart'}</a>.</p>
 		{else}
@@ -81,7 +62,7 @@
 		</a>
 	</div>
 		{if !$PS_CATALOG_MODE}
-			<div class="cart_block block exclusive {if $cart_qties == 0}hidden{/if}">
+			<div class="cart_block block exclusive {if $cart_qties == 0}hidden{/if}" id="boton-mobile-carro">
 				<div class="block_content">
 					<!-- block list of products -->
 					<div class="cart_block_list{if isset($blockcart_top) && !$blockcart_top}{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !$ajax_allowed || !isset($colapseExpandStatus)} expanded{else} collapsed unvisible{/if}{/if}">
@@ -171,6 +152,8 @@
 							</table>
 						{/if}
 						<div class="cart-prices">
+						{if $shipping_cost_float != 0}
+
 							<div class="cart-prices-line first-line">
 								<span{if !($page_name == 'order-opc') && $shipping_cost_float == 0 && (!isset($cart->id_address_delivery) || !$cart->id_address_delivery)} class="unvisible"{/if}>
 									{l s='Shipping' mod='blockcart'}
@@ -183,6 +166,7 @@
 									{/if}
 								</span>
 							</div>
+							{/if}
 							{if $show_wrapping}
 								<div class="cart-prices-line">
 									{assign var='cart_flag' value='Cart::ONLY_WRAPPING'|constant}
@@ -196,12 +180,7 @@
 									</span>
 							   </div>
 							{/if}
-							{if $show_tax && isset($tax_cost)}
-								<div class="cart-prices-line">
-									<span>{l s='Tax' mod='blockcart'}</span>
-									<span class="price cart_block_tax_cost ajax_cart_tax_cost">{$tax_cost}</span>
-								</div>
-							{/if}
+						
 							<div class="cart-prices-line last-line">
 								<span>{l s='Total' mod='blockcart'}</span>
 								<span class="price cart_block_total ajax_block_cart_total">{$total}</span>
@@ -238,9 +217,9 @@
 				<h4>
 					<i class="icon icon-check"></i>{l s='Product successfully added to your shopping cart' mod='blockcart'}
 				</h4>
-				<div class="product-image-container layer_cart_img">
+				<div class="product-image-container layer_cart_img col-xs-6">
 				</div>
-				<div class="layer_cart_product_info">
+				<div class="col-xs-6">
 					<span id="layer_cart_product_title" class="product-name"></span>
 					<span id="layer_cart_product_attributes"></span>
 					<div>
@@ -304,24 +283,8 @@
 						</span>
 					</div>
 				{/if}
-				<div class="layer_cart_row">
-					<strong class="dark{if $shipping_cost_float == 0 && (!isset($cart->id_address_delivery) || !$cart->id_address_delivery)} unvisible{/if}">
-						{l s='Total shipping' mod='blockcart'}&nbsp;{if $display_tax_label}{if $priceDisplay == 1}{l s='(tax excl.)' mod='blockcart'}{else}{l s='(tax incl.)' mod='blockcart'}{/if}{/if}
-					</strong>
-					<span class="ajax_cart_shipping_cost{if $shipping_cost_float == 0 && (!isset($cart->id_address_delivery) || !$cart->id_address_delivery)} unvisible{/if}">
-						{if $shipping_cost_float == 0}
-							{l s='Free shipping!' mod='blockcart'}
-						{else}
-							{$shipping_cost}
-						{/if}
-					</span>
-				</div>
-				{if $show_tax && isset($tax_cost)}
-					<div class="layer_cart_row">
-						<strong class="dark">{l s='Tax' mod='blockcart'}</strong>
-						<span class="price cart_block_tax_cost ajax_cart_tax_cost">{$tax_cost}</span>
-					</div>
-				{/if}
+				
+			
 				<div class="layer_cart_row">
 					<strong class="dark">
 						{l s='Total' mod='blockcart'}

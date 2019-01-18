@@ -62,174 +62,7 @@
   src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJRgVThLs8Y7ETJzDCYFCSLE.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJZiMaisvaUVUsYyVzOmndek.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJbBAWGjcah5Ky0jbCgIwDB8.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJf14vlcfyPYlAcQy2UfDRm4.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJafJul7RR1X4poJgi27uS4w.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJavyPXdneeGd26m9EmFSSWg.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJUo2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZjTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZjUj_cnvWIuuBMVgbX098Mw.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZkbcKLIaa1LC45dFaAfauRA.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37Zmo_sUJ8uO4YLWRInS22T3Y.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37Zr6up8jxqWt8HVA3mDhkV_0.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJZ6iIh_FvlUHQwED9Yt5Kbw.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJS_vZmeiCMnoWNN9rHBYaTc.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJSFaMxiho_5XQnyRZzQsrZs.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJQalQocB-__pDVGhF3uS2Ks.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJWhQUTDJGru-0vvUpABgH8I.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJejkDdvhIIFj_YMdgqpnSB0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
+
 
 *,
 a:focus {
@@ -365,7 +198,7 @@ h5 {
 }
 .center_column h1 {
     font-size: 24px;
-    margin: 0 0 18px;
+    margin: 7px 0 18px;
     text-transform: uppercase
 }
 body.cms div.rte {
@@ -442,10 +275,7 @@ body.cms div.rte .testimonials:before {
     font-size: 16px;
     color: #fff
 }
-.button-mini,
-.page-heading>span {
-    font-family: 'Roboto Slab', sans-serif
-}
+
 body.cms div.rte .testimonials.pull-left {
     margin-right: 15px;
     margin-left: 30px
@@ -532,7 +362,7 @@ body.cms .center_column h1 {
     margin: 0 0 5px
 }
 .heading-counter span {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 700;
     color: #7bbd42
 }
@@ -718,7 +548,6 @@ div.topbar .shortlinks ul li a {
     color: #697080
 }
 header.top {
-    min-height: 164px;
     padding: 22px 0 0;
     position: relative
 }
@@ -729,16 +558,20 @@ header.top .pattern {
     top: 0;
     left: 0
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+      body .header-banner{
+      margin-top: 50px;
+  }
     header.top .pattern {
         height: 100%!important
     }
     header.top {
         background-repeat: repeat;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        padding-top:    0px;
     }
     header.top .logo {
-        display: block
+        display: none;
     }
     header.top .logo img {
         margin: 0 auto
@@ -830,7 +663,8 @@ header.top .logo img {
 .shopping_cart p.taxes {
     margin-top: 0;
     padding-top: 5px;
-    color: #fff;
+    text-transform: initial;
+    color: #767676;
     text-align: left
 }
 .shopping_cart p.unvisible {
@@ -889,11 +723,10 @@ header.top .logo img {
 }
 .shopping_cart .cart_block {
     position: absolute;
-    z-index: 999;
+    z-index: 999999;
     background: #1d1f25;
     top: 68px;
-    left: 15px;
-    width: 95%;
+    right: 0;
     max-height: 0;
     overflow: hidden;
     -webkit-transition: all 350ms ease 0s;
@@ -905,8 +738,7 @@ header.top .logo img {
 .shopping_cart .cart_block .block_content {
     background: 0 0
 }
-.shopping_cart .cart_block .cart-buttons a:hover,
-.shopping_cart .cart_block dl dt .remove_link a:hover {
+.shopping_cart .cart_block .cart-buttons a:hover{
     background: #dfdfdf
 }
 .shopping_cart .cart_block dl {
@@ -939,8 +771,7 @@ header.top .logo img {
 .shopping_cart .cart_block dl dt .price {
     display: block;
     margin: 15px 0 0;
-    font-size: 18px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-size: 16px;
     font-weight: 700;
     color: #eee
 }
@@ -950,7 +781,7 @@ header.top .logo img {
     right: 13px
 }
 .shopping_cart .cart_block dl dt .remove_link a {
-    color: #fff;
+    color: #767676;
     display: block;
     font-family: FontAwesome;
     font-size: 12px;
@@ -964,7 +795,7 @@ header.top .logo img {
     content: "\f00d"
 }
 .shopping_cart .cart_block .cart-prices {
-    padding: 0 13px 16px;
+    padding: 6px 13px 16px;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -976,7 +807,8 @@ header.top .logo img {
 }
 .shopping_cart .cart_block .cart-prices span {
     float: left;
-    color: #eee
+    color: #eee;
+    font-size: 86%;
 }
 .shopping_cart .cart_block .cart-prices span.price {
     margin-left: 5px
@@ -1013,12 +845,17 @@ header.top .logo img {
 .shopping-cart-mobile .unvisible {
     display: none
 }
-@media (max-width: 767px) {
+@media (max-width: 967px) {
     .shopping-cart-mobile {
         margin-bottom: 20px
     }
     .shopping-cart-mobile a.cart-contents>span {
         margin: 0
+    }
+
+    .shopping_cart .cart_block {
+        top: 51px !important;
+        position: fixed;
     }
 }
 .rev_slider_wrapper .tp-bullets .bullet,
@@ -1070,7 +907,6 @@ header.top .logo img {
 .slider .text h2 {
     line-height: 60px;
     font-size: 60px;
-    font-family: 'Roboto Slab', sans-serif;
     color: #e6e6e6;
     font-weight: 300;
     margin-top: 0;
@@ -1232,7 +1068,6 @@ header.top .logo img {
 .banner-separate .banner-content h2 {
     font-size: 20px;
     font-weight: 400;
-    font-family: 'Roboto Slab', sans-serif;
     color: #fff;
     line-height: 20px;
     text-transform: uppercase;
@@ -1253,7 +1088,7 @@ div.block {
 }
 div.block .block_content {
     background: #fff;
-    padding: 20px 15px;
+    padding: 7px 15px;
     overflow: hidden
 }
 div.block .block_content ul {
@@ -1271,9 +1106,10 @@ div.block .block_content ul li a {
 div.block .block_content ul li a:hover {
     color: #2c313b
 }
-div.block .block_content .products {
+.cart_block_list .products {
     background: 0 0;
-    overflow: hidden;
+    max-height: 323px;
+    overflow-y: scroll;
     margin: 0 -15px
 }
 div.block .block_content .products.viewed li:last-child {
@@ -1344,7 +1180,6 @@ div.heading_block.margin-bottom {
 }
 div.heading_block h3,
 div.heading_block h4 {
-    font-family: 'Roboto Slab', sans-serif;
     font-weight: 300;
     margin: 0
 }
@@ -1390,6 +1225,7 @@ div.heading_block h3 {
     .sidebar div.heading_block h4.active:after {
         content: "\f146"
     }
+    .product_list_ph .product .info span.old-price{font-size: 10px !important;}
 }
 #categories_block_left .block_content {
     padding: 0;
@@ -1581,7 +1417,6 @@ div.heading_block h3 {
     color: #fff;
     font-weight: 700;
     font-size: 14px;
-    font-family: 'Roboto Slab', sans-serif
 }
 #layered_block_left .layered_subtitle_heading {
     margin: 0 0 10px;
@@ -1722,7 +1557,6 @@ div.heading_block h3 {
     right: 10px;
     top: 10px;
     color: #ebebeb;
-    font-family: 'Roboto Slab', sans-serif;
     font-size: 13px;
     font-weight: 700
 }
@@ -1782,13 +1616,13 @@ div.heading_block h3 {
     width: 100%;
     height: 53px;
     max-width: 400px;
-    padding: 0 10px;
+    padding: 0 5px;
     z-index: 3
 }
 .product_list_ph .product .info h3 {
     float: left;
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    max-width: 64%;
     font-weight: 400;
     line-height: 53px;
     margin: 0
@@ -1805,7 +1639,6 @@ div.heading_block h3 {
     float: right
 }
 .product_list_ph .product .info span.price {
-    font-family: 'Roboto Slab', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #eee;
@@ -1817,7 +1650,6 @@ div.heading_block h3 {
 }
 .product_list_ph .product .info span.old-price {
     display: block;
-    font-family: 'Roboto Slab', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #eee;
@@ -1913,6 +1745,15 @@ div.heading_block h3 {
     .product_list_ph.list .product .list_info .button {
         position: static
     }
+    .product_list_ph .product .info span.price, .product_list_ph .product .info h3 {
+    font-size: 11px;
+    }
+
+    .product_list_ph .product .info{
+        height: 40px;
+    }
+
+    .product_list_ph .product .info h3, .product_list_ph .product .info span.price{line-height: 40px;}
 }
 .product_list_ph.list .product .list_info .btn-container {
     float: right;
@@ -1986,11 +1827,7 @@ div.heading_block h3 {
     font-family: FontAwesome;
     display: inline-block
 }
-#newsletterRegistrationForm .button,
-#newsletterRegistrationForm h5,
-.prefooter .block_footer h4 {
-    font-family: 'Roboto Slab', sans-serif
-}
+
 .content_sortPagiBar {
     border-top: 1px solid #dcdcdc;
     padding: 25px 0;
@@ -2001,7 +1838,6 @@ div.heading_block h3 {
     background: #fff;
     float: left;
     width: 100%;
-    padding: 20px
 }
 .content_sortPagiBar .list-style-buttons {
     position: relative
@@ -2046,7 +1882,6 @@ div.heading_block h3 {
     font-weight: 400;
     color: #2c313b;
     margin: 0 20px 0 0;
-    text-transform: uppercase
 }
 .content_sortPagiBar span {
     margin-left: 5px
@@ -2058,7 +1893,7 @@ div.heading_block h3 {
     background-repeat: no-repeat;
     text-indent: .01px;
     border: 2px solid #ccc;
-    height: 43px;
+    height: 32px;
     padding: 0 5px;
     font-size: 13px;
     color: #999
@@ -2070,16 +1905,19 @@ div.heading_block h3 {
     .content_sortPagiBar {
         padding: 20px 0
     }
-    .content_sortPagiBar .list-style-buttons,
-    .content_sortPagiBar form {
-        margin-bottom: 20px
-    }
+   
     .content_sortPagiBar .compare-form {
         float: left!important
     }
+     #newsletterRegistrationForm .account_input {
+        width: 62% !important;
+    }
+    #newsletterRegistrationForm .button {
+     width: 34% !important;
+    }
 }
 #newsletterRegistrationForm {
-    padding: 12px 10px 15px 35px;
+    padding: 12px 10px 15px 18px;
     margin-bottom: 27px
 }
 #newsletterRegistrationForm h5 {
@@ -2170,6 +2008,7 @@ div.heading_block h3 {
     .prefooter .block_footer h4.active:after {
         content: "\f146"
     }
+    #newsletterRegistrationForm h5{width: 100%;}
 }
 .prefooter .block_footer ul li {
     display: block;
@@ -2190,16 +2029,7 @@ div.heading_block h3 {
     position: absolute;
     top: 0
 }
-.label,
-.nav-tabs>li,
-.send_friend_form_content h3 span,
-body.pagenotfound h1,
-body.pagenotfound h2,
-body.pagenotfound h3,
-form.std h3 span,
-table#product_comparison a.product-name {
-    font-family: 'Roboto Slab', sans-serif
-}
+
 .prefooter .block_footer ul li a:hover {
     margin-left: 10px
 }
@@ -2307,7 +2137,6 @@ div.pagination {
     -moz-border-radius: 0;
     border-radius: 0;
     padding: 25px 0;
-    margin: 0 0 25px;
     float: left;
     width: 100%
 }
@@ -2315,9 +2144,8 @@ div.pagination .showall {
     margin-bottom: 5px
 }
 div.pagination ul {
-    margin-left: -15px;
-    margin-right: -15px;
-    width: 100%
+   text-align: center;
+    width: 100%;
 }
 div.pagination ul li {
     display: inline-block;
@@ -2343,17 +2171,11 @@ div.pagination ul li:last-child span {
     -moz-border-radius: 0;
     border-radius: 0
 }
-div.pagination ul li a {
-    color: #666
-}
+
 div.pagination ul li a:hover {
     color: #fff
 }
-div.pagination ul li a,
-div.pagination ul li span {
-    border: 0;
-    background: 0 0
-}
+
 div.pagination .text-right {
     text-align: right
 }
@@ -2513,7 +2335,6 @@ body.pagenotfound h3 {
 form.std {
     overflow: hidden;
     background: #fff;
-    padding: 0 30px;
     margin-bottom: 20px
 }
 .send_friend_form_content h3,
@@ -2549,12 +2370,9 @@ form.std .form-group {
     width: 48%
 }
 .required.form-group {
-    margin-left: 1%;
     float: left;
 }
-.form-group.date-select {
-    margin-left: 1%;
-}
+
 .send_friend_form_content .form-group .col-xs-12,
 form.std .form-group .col-xs-12 {
     margin-bottom: 15px
@@ -2567,7 +2385,7 @@ form.std .form-group .form_info {
 .send_friend_form_content .form-date,
 form.std .date-select,
 form.std .form-date {
-    width: 100%
+    width: 96%
 }
 @media (min-width: 992px) {
     .send_friend_form_content .date-select .col-xs-12,
@@ -2585,10 +2403,10 @@ form.std .form-date {
 }
 .send_friend_form_content .form-control,
 form.std .form-control {
-    height: 48px;
+    height: 39px;
     border: 2px solid #dfdfdf;
     box-shadow: none;
-    padding: 6px 15px;
+    padding: 6px 6px;
     font-size: 13px;
     color: #697080;
     transition: border-color .2s ease 0s;
@@ -2777,8 +2595,10 @@ table.table-bordered {
     border: 1px solid #484f5c;
     background: #fff
 }
-table.table-bordered td {
-    border: 1px solid #ddd!important
+.resume.table.table-bordered {
+
+    border-collapse: inherit;
+
 }
 .alert,
 .label {
@@ -3038,7 +2858,6 @@ p.warning .alert-link {
     line-height: 38px;
     font-weight: 700;
     font-size: 14px;
-    font-family: 'Roboto Slab', sans-serif;
     color: #fff;
     text-align: center;
     text-transform: lowercase;
@@ -3175,7 +2994,6 @@ table th.tg-sort-desc:after {
 #ph_megamenu_wrapper #ph_megamenu .dropdown li a:hover,
 #ph_megamenu_wrapper #ph_megamenu .dropdown li a:hover:before,
 #ph_megamenu_wrapper #ph_megamenu .mega-menu ul li a:hover,
-#ph_megamenu_wrapper #ph_megamenu>li:first-child>a,
 #search_block_top i:hover,
 #sitemap_content .sitemap_block ul li a:hover,
 .block_tags .block_content a:hover,
@@ -3244,7 +3062,6 @@ table.table tbody td.cart_description .product-name a {
 #my-account ul.myaccount-link-list li a:hover,
 #order_step li.step_current,
 #ph_megamenu_wrapper #ph_megamenu,
-#quantity_wanted_p .counter .btn-q:hover,
 #slider-range .ui-slider-range,
 .arrow-ph,
 .button-mini:hover,
@@ -3262,7 +3079,6 @@ table.table tbody td.cart_description .product-name a {
 .rev_slider_wrapper .tp-rightarrow.default,
 .reviews-carousel-wrapper .reviews-carousel-item .see-more-btn:hover,
 .shopping_cart .cart_block .cart-buttons a,
-.shopping_cart .cart_block dl dt .remove_link a,
 .slider ol.dots li.active,
 .slider ol.dots li:hover,
 .social-icons a:hover,
@@ -3270,7 +3086,6 @@ body.cms div.rte .testimonials .inner,
 body.cms div.rte ol li:before,
 body.pagenotfound .arrow-notfound,
 body.pagenotfound a.home:hover i,
-div.pagination ul li a:hover,
 div.pagination ul li.current span,
 table.table tbody td.cart_avail .label-success,
 table.table tbody td.cart_delete a,
@@ -3316,7 +3131,7 @@ div.topbar .shortlinks ul li a:hover {
     color: #fff
 }
 header.top .pattern {
-    background: url(../../images/colors/header2.png) top center repeat-x!important
+    background: url(../../images/colors/header2.png) top center repeat-x;
 }
 .category-298 header.top .pattern, .category-305 header.top .pattern, .category-218 header.top .pattern, .category-295 header.top .pattern, .category-296 header.top .pattern, .category-297 header.top .pattern
 , .category-299 header.top .pattern, .category-300 header.top .pattern, .category-304 header.top .pattern, .category-305 header.top .pattern, .category-306 header.top .pattern, .category-307 header.top .pattern
@@ -3342,7 +3157,7 @@ a {
 }
 #add_to_cart .button {
     background: #fff;
-    color: #7bbd42!important
+    color: #7bbd42;
 }
 @media (min-width: 1200px) {
     .col-lg-8.col-md-7.hidden-xs.shortlinks.pull-right {
@@ -3408,10 +3223,6 @@ a {
     font-size:20px;
 }
 
-#subcategories ul li .subcategory-name h5 {
-    margin: 8% 2% 0 0 !important;
-
-}
 
 #old_price_display span {
     text-decoration: line-through;
@@ -3461,7 +3272,7 @@ a.link-envio:hover{
   }
 
   .panel.panel-default {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
 }
 
 .panel-body p{
@@ -3481,6 +3292,13 @@ div#eKomiWidget_default img {
 @media (max-width: 781px) {
     .left-blockblog {width: 40%; margin-left: 30%;}
     .right-blockblog {width: 100%;}
+
+    input.main-color {
+    font-size: 15px !important ;
+}
+header.top .pattern {
+    background: #1d1f25;
+}
 }
 
 @media (min-width: 781px) {
@@ -3544,7 +3362,6 @@ div#posts {
     text-transform: capitalize;
     margin-left: 2%;
     font-size: 18px;
-    font-family: 'Roboto Slab',sans-serif;
     font-weight: 700;
     margin: 0;
 }
@@ -3580,7 +3397,6 @@ a.main-color {
 
 #search_query_top {
      margin-left: 21px;
-     width: 69.5% !important;
      background: white;
                            
 }
@@ -3608,13 +3424,13 @@ div#buscador-movil {
 
 .ph_megamenu_mobile_toggle {
   top: 0px;
-  left: -63px;
-  width: 129%;
+  left: 0px;
+  width: 100%;
   position: fixed;
+  background: #2c313b;
+  box-shadow: 0 0.23077rem 0.38462rem 0 rgba(0,0,0,.25);
   z-index: 99999;
-  text-align: right;
-  padding-right: 0%;
-  padding-left: 2%;
+  text-align: left;
 }
 #search_block_top {
     background: #adafb3;
@@ -3658,13 +3474,6 @@ form#searchbox {
     margin-left: 0px;
     margin-right: 0px;
 }
-@media (max-width: 768px){
-    .ph_megamenu_mobile_toggle a.show_megamenu, a.hide_megamenu{
-       padding-right: 10% !important;
-       font-size: 22px !important;
-       margin-bottom: 20px;
-    }   
-}
 
 @media (max-width: 768px) {
    #search_block_top p span {     
@@ -3672,21 +3481,8 @@ form#searchbox {
        width: 95% !important;
   }
 
-  body .header-banner{
-      margin-top: 50px;
-  }
-
-  #buscador-desktop {
-         display: none;
-   }
-
-  .search_query{
-     width: 93.2% !important;
-     margin-left: 3% !important;
-  }
-
   #search_query_top {
-    width: 100% !important;
+    width: 69%;
   
     }
 
@@ -3696,6 +3492,10 @@ form#searchbox {
   .shopping_cart_mobile {
     display: none;
   }
+}
+
+div#search_block_top_mobile {
+    padding: 4px 0px 7px 0px;
 }
 
 @media (max-width: 1000px) {
@@ -3708,15 +3508,18 @@ form#searchbox {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
   .ph_megamenu_mobile_toggle {
-     display: none !important;
+     display: none;
    }
 
   #buscador-movil {
       display: none;
    }
+}
+#gdpr-consent-box {
+    margin-right: 21px;
 }
 .shopping_cart_mobile a.cart-contents>span {
     border: 0px !important;
@@ -3742,6 +3545,11 @@ form#searchbox {
   img.pagos-img {
       width: 80%;
   }
+  .cart_block_list .products{max-height: 221px !important;}
+  .shopping_cart .cart_block .cart-buttons a{min-width: 220px; }
+  button#submitMessage {
+    width: 100%;
+}
 }
 
 @media (max-width: 1200px) {
@@ -3796,7 +3604,9 @@ h3.panel-title {
     margin-bottom: 3%;
 
   }
-
+  .clear-mobile{display: none;}
+  .img-menu {display: none;}
+.btn-ver-mas{max-width:  350px;}
   .impar{   margin-right:   3%;}
 }
 .cupon {
@@ -3808,19 +3618,116 @@ h3.panel-title {
     width: 35%;
 }
 
-.overlay-halloweed {
+.overlay-halloweed2 {
     position: absolute;
-    top: 36px;
-    background-size: 102%;
-    right: 23px;
+    top: 2px;
+    background-size: 70%;
+    right: 0px;
     z-index: 200;
     width: 99px;
     height: 124px;
     background-image: url(https://www.semillaslowcost.com/img/codigo-hallowed-producto.png);
+    background-repeat:  no-repeat;  
 }
+
 
 @media (min-width: 600px) and (max-width: 991px) {
 
   .overlay-halloweed { display: none; }
 
+}
+
+select#id_country {
+    float: right;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7bbd42; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7bbd42; 
+}
+
+.btn-ver-mas{
+display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 30px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background: #7bbd42;
+    transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    -webkit-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+}
+
+.btn-ver-mas:hover{
+    background: #2c313b;  
+}
+form#newsletterRegistrationForm label {
+    display: inline;
+}
+
+a#btn-ver-mas-id i {
+    padding-right: 8px;
+}
+
+li#pagination_next_bottom {
+    width: 100%;
+}
+
+div#infscr-loading {
+    text-align: center;
+}
+@media (max-width: 340px) {
+    a.show_megamenu span, a.hide_megamenu span {display: none;}
+    .mobile-menu-logo {width: 54% !important;}
+}
+
+.btn-compra-container {
+    float: right;
+}
+
+a.cart_block_product_name {
+    font-size: 92%;
+}
+
+a.hide_megamenu span, a.show_megamenu span {
+    font-size: 54%;
+    font-weight: 700;
+    line-height: 47px;
+    color: white;
+}
+p.clearBoth.taxes {
+    font-size: 12px;
+    font-weight: 100;
+}
+p.align_center {
+    text-align: center;
+}
+.block_content.toggle-footer li {
+    text-transform: uppercase;
+}
+.fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened {
+    top: 74px !important;
 }

@@ -43,7 +43,6 @@ require_once( TF_PATH . 'lib/class-option-checkbox.php' );
 require_once( TF_PATH . 'lib/class-option-code.php' );
 require_once( TF_PATH . 'lib/class-option-color.php' );
 require_once( TF_PATH . 'lib/class-option-custom.php' );
-require_once( TF_PATH . 'lib/class-option-edd-license.php' );
 require_once( TF_PATH . 'lib/class-option-date.php' );
 require_once( TF_PATH . 'lib/class-option-enable.php' );
 require_once( TF_PATH . 'lib/class-option-editor.php' );

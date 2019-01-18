@@ -46,345 +46,15 @@
 {/if}
 		<meta name="generator" content="PrestaShop" />
 		<meta name="robots" content="{if isset($nobots)}no{/if}index,{if isset($nofollow) && $nofollow}{/if}follow" />
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=5.0, initial-scale=1.0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="theme-color" content="#7BBD42"/>
 		<link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
 		<link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
+
 		
 <meta name="ahrefs-site-verification" content="24ee5c6c2ac37d315bdf8cb6a3404f792950bc69d672644bba85ac204d254d73">
 		<link rel="stylesheet" href="https://www.semillaslowcost.com/fontawesome/css/font-awesome.min.css">
-	<script  data-keepinline="true">
-	{literal}
-
-		function toggledisplayarrow() {
-				
-			    var up = document.getElementById("arrow-down");
-			    var down = document.getElementById("arrow-up");
-			    if (up.style.display === "none") {
-			        up.style.display = "block";
-			    } else {
-			        up.style.display = "none";
-			    }
-			     if (down.style.display === "none") {
-			        down.style.display = "block";
-			    } else {
-			        down.style.display = "none";
-			    }
-			}
-    
-
-{/literal}
-	</script>
-
-		<style>
-h3.panel-title {
-    font-size: 25px;
-}
-@media (min-width: 900px) {
-	.cupon{
-		width: 48.5%;
-		float:left;
-		margin-bottom: 3%;
-
-	}
-
-	.impar{		margin-right: 	3%;}
-}
-.cupon {
-    text-align: right;
-}
-
-.cupon .btn-primary {
-    font-size: 14px;
-    width: 35%;
-}
-
-.cupon input {
-    border: 0.5px solid #dcdcdd;
-    text-align: center;
-    padding: 1%;
-    float: left;
-    font-weight: bolder;
-}
-		.asagiSabit {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 999;
-	}
-	
-
-
-	.whatsappBlock a {
-    display: inline-block;
-    height: 50px;
-    background: #65BC54;
-    padding: 5px 10px;
-    color: #fff !important;
-    font-weight: bold;
-}
-.column-h4{
-	text-align: 	center;
-}
-			input.main-color {
-    padding: 10PX;
-    width: 30%;
-    font-weight: bolder;
-    color: white;
-    background: #7bbd42;
-}
-.ac_results {
-    width: auto !important;
-}
-
-.shopping_cart_mobile a.cart-contents>span {
-    border: 0px !important;
-    background: #7bbd42 !important;
-    width: 77.5% !important;
-    padding: 21.2px 13px 17px 23px !important;
-    margin: 2px 0 0 !important;
-    font-weight: 800;
-
-}
-
-.pagos-img {
-   margin-top: 1%;
-
-}
-
-
-.bottom .container {
-   background-color:#1d1f25;
-}
-
- @media (max-width: 700px) {
-	.bottom {
-	   text-align: center;
-	}
-	img.pagos-img {
-	    width: 80%;
-	}
-}
-
- @media (max-width: 1200px) {
-.pagos1{
-   margin-left: 0% !important;
-}
- 	
- 
-
-}
- @media (min-width: 1000px) {
-
- 	.shopping_cart_mobile {
- 		display: none;
- 	}
- 	
- 
-
-}
-
-@media (max-width: 1000px) {
-	.shopping_cart_desktop{
-		display: none;
-	}
-
-	.bottom.pull-left{
-		display: none;
-	}
-}
-
- @media (min-width: 768px) {
-
-        .ph_megamenu_mobile_toggle {
-                         display: none !important;
-                     }
-
-        #buscador-movil {
-                         display: none;
-                     }
-
-
-}
-
- @media (max-width: 768px) {
-   #search_block_top p span {
-   			
-   		 margin-top: .5% !important;
-   		 width: 95% !important;
-	}
-
-	body .header-banner{
-	margin-top: 50px;
-		}
-
-	  #buscador-desktop {
-         display: none;
-       }
-
-	  .search_query{
-   			 width: 93.2% !important;
-   			 margin-left: 3% !important;
-	}
-
-	#search_query_top {
-    width: 100% !important;
-  
-}
-
-}
-@media (max-width: 767px){
-
-header.logo {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    display: block;
-
-}
-
-}
-
-input#search_query_top{
-	margin-left:0px;
-}
-
-form#searchbox {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-@media (max-width: 768px){
-
-
-.ph_megamenu_mobile_toggle a.show_megamenu, a.hide_megamenu{
-    padding-right: 10% !important;
-    font-size: 22px !important;
-    margin-bottom: 20px;
-}}
-
-			.ph_megamenu_mobile_toggle {
-				top: 0px;
-				left: -63px;
-				width: 129%;
-				position: fixed;
-				z-index: 99999;
-				text-align: right;
-				padding-right: 0%;
-				padding-left: 2%;
-		}
-		#search_block_top {
-        background: #adafb3;
-    padding: 10px;
-    width: 99.5%;
-}
-		#search_block_top i {
-    font-size: 24px
-}
-
-		#search_block_top i:hover {
-    background: 24px
-}
-
-#ph_megamenu_wrapper #ph_megamenu {
-    background: #7bbd42
-}
-#search_block_top i {
-    font-size: 24px;
-    background: #7bbd42
-}
-		div#buscador {
-         padding-top: 8px;
-                               
-                               margin-bottom: 2%;
-                               opacity:0.9 ;
-                            }
-
-                 #search_query_top {
-                            margin-left: 21px;
-                            border: 2px solid #2c313b;
-                            border-right: 2px solid #2c313b;
-                            width: 69.5% !important;
-                            background: white;
-                           
-                     }
-                     input.main-color {
-						    font-size: 19px;
-						}
-
-                     .buscador-title{
-                     	color: #7bbd42;
-                     	text-align: center;
-                     	font-weight: normal;
-						margin-top:0px; 
-                     }
-                     div#buscador-desktop {
-                     	background: #2c313b;
-   						 margin-bottom: 2%;
-   						 padding: 2%;
-}
-
-                   div#buscador-movil {
-                     	background: #2c313b;
-   						 margin-bottom: 2%;
-   						 padding: 2%;
-}
-			.mobile_menu{ 
-
-				max-height: 100%;
-				 position: fixed;
-				 overflow-y: auto;
-				 margin-top: -27px; 
-				  left: 29%; 
-				  top: 44px;}
-
-				  a.main-color {
-    padding: 10PX;
-    width: 30%;
-    font-weight: bolder;
-    color: white;
-    background: #7bbd42;
-}
-      .shopping_cart_mobile span.ajax_cart_no_product{
-      	color:white !important; } 
-      
-     .shopping_cart_mobile .icon-shopping-cart:before {
-            color: white;
-            }    
-		</style>
-
-
-{if $page_name =='index'}
-
-
-<script type="application/ld+json">
-	{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Semillas Low Cost",
-		"url": "https://www.semillaslowcost.com/",
-		"logo": "https://www.semillaslowcost.com/img/semillaslowcost-logo-1515411406.jpg",
-		"telephone": [
-				"960992794",
-				"+34653323445 "
-		],
-	
-		"contactPoint": [
-			{
-				"@type": "ContactPoint",
-				"telephone": "+34653323445",
-				"contactType": "customer service"
-				
-			}
-		],
-		"sameAs": [
-			"https://www.facebook.com/SemillasLowCost/",
-			"https://www.instagram.com/semillaslowcost/",
-			"https://twitter.com/SemillasLowCost"
-		]
-	}
-</script>
-{/if}
-
-
 
 {$dir=$smarty.server.REQUEST_URI}
 
@@ -425,7 +95,37 @@ form#searchbox {
 		{/if}	
 		
 
+{if $page_name =='index'}
 
+
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Semillas Low Cost",
+		"url": "https://www.semillaslowcost.com/",
+		"logo": "https://www.semillaslowcost.com/img/semillaslowcost-logo-1515411406.jpg",
+		"telephone": [
+				"960992794",
+				"+34653323445 "
+		],
+	
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+34653323445",
+				"contactType": "customer service"
+				
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/SemillasLowCost/",
+			"https://www.instagram.com/semillaslowcost/",
+			"https://twitter.com/SemillasLowCost"
+		]
+	}
+</script>
+{/if}
 	</head>
 	
 
@@ -485,6 +185,7 @@ form#searchbox {
 
 		<header class="top{if $theme_options['menutop_sticky'] == 'header'} top-sticky{/if}">
 			<div class="pattern"></div>
+			<div style="display: none;"></div>
 			<div class="container">
 				<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="row">
@@ -509,7 +210,7 @@ form#searchbox {
 				{/if}
 
 				{if isset($left_column_size) && isset($right_column_size)}{assign var='cols' value=(12 - $left_column_size - $right_column_size)}{else}{assign var='cols' value=12}{/if}
-				<div id="center_column" class="center_column col-xs-12 {if $hide_left_column && $hide_right_column}col-sm-{$cols|intval}{else}col-sm-{$cols-1|intval}{/if} col-md-{$cols|intval}{if !empty($left_column_size)} col-md-push-3 col-sm-push-4{/if}">
+				<div id="center_column" class="center_column col-xs-12 {if $hide_left_column && $hide_right_column}col-sm-{$cols|intval}{else}col-sm-12{/if} col-md-{$cols|intval}{if !empty($left_column_size)} col-md-push-3{/if}">
 					<div class="background">
 	<!-- Block search module TOP -->
 	{if $smarty.get.controller != "orderopc" && strpos($dir,'blog')==false}
@@ -518,7 +219,7 @@ form#searchbox {
 
 							{include file="$tpl_dir./blocksearch-instantsearch.tpl"}
 	<div id="buscador-desktop">
-	<h3 class="buscador-title">ENCUENTRA TU PRODUCTO UTILIZANDO <span style="color: white; font-weight: bolder;">EL BUSCADOR</span></h3>
+	<h3 class="buscador-title"><label for="search_query_top">ENCUENTRA TU PRODUCTO UTILIZANDO <span style="color: white; font-weight: bolder;">EL BUSCADOR</span></label></h3>
 	<div id="search_block_top" class="">
 	<form method="get" action="{$link->getPageLink('search', null, null, null, false, null, true)|escape:'html':'UTF-8'}" id="searchbox" class="row">
 		<div style="margin: 0px;">
@@ -536,24 +237,6 @@ form#searchbox {
 </div>
 </div><!-- .buscador-desktop -->
 
-	<div id="buscador-movil">
-	<h3 class="buscador-title">ENCUENTRA TU PRODUCTO UTILIZANDO <span style="color: white; font-weight: bolder;">EL BUSCADOR</span></h3>
-	<div id="search_block_top" class="">
-	<form method="get" action="{$link->getPageLink('search', null, null, null, false, null, true)|escape:'html':'UTF-8'}" id="searchbox" class="row">
-		<div style="margin: 0px;">
-			<input type="hidden" name="controller" value="search" />
-			<input type="hidden" name="orderby" value="position" />
-			<input type="hidden" name="orderway" value="desc" />
-						<input class="search_query" type="text" id="search_query_top" name="search_query" style="margin-left:0px !important; width: 100% !important;" placeholder="¿Qué producto estás buscando?" value="{$search_query|escape:'htmlall':'UTF-8'|stripslashes}" />
-			<span>
-				
-                <input class="main-color" style="text-indent:0px; text-indent:0px; width:100%;  line-height: 0px; height: 37px; margin-top: 1%;" type="submit" value="BUSCAR" />
-				
-			</span>
 
-		</div>
-	</form>
-</div>
-</div><!-- .buscador-desktop -->
 {/if}
 	{/if}

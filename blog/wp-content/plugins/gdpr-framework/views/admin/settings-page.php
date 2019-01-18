@@ -1,6 +1,6 @@
 <div class="wrap gdpr-framework-wrap">
     <h2>
-        <?= _x('The GDPR Framework', '(Admin)', 'gdpr-framework'); ?>
+        <?= _x('The GDPR Framework By Data443', '(Admin)', 'gdpr-framework'); ?>
     </h2>
 
     <?php if (!empty($_GET['updated'])) : ?>
@@ -28,17 +28,23 @@
         <p>
             <em>
                 <?= sprintf(
-                    _x('The GDPR Framework. Built with &#9829; by %sCodelight%s.', '(Admin)', 'gdpr-framework'),
-                    '<a href="https://codelight.eu/" target="_blank">',
+                    _x('The GDPR Framework. Built with &#9829; by %sData443%s.', '(Admin)', 'gdpr-framework'),
+                    '<a href="https://www.data443.com/" target="_blank">',
                         '</a>'
+                ); ?>
+                 &nbsp;
+                |
+                &nbsp;
+                <?= sprintf(
+                    _x("Need help? Take a look at our %sdocumentation%s.", '(Admin)', 'gdpr-framework'),
+                    '<a href="https://www.data443.com/wordpress-site-owners-guide-to-gdpr/" target="_blank">',
+                    '</a>'
                 ); ?>
                 &nbsp;
                 |
                 &nbsp;
                 <?= sprintf(
-                    _x("Support our development efforts! %sDonate%s or leave a %s5-star rating%s.", '(Admin)', 'gdpr-framework'),
-                    '<a href="https://codelight.eu/wordpress-gdpr-framework/donate/" target="_blank">',
-                    '</a>',
+                    _x("Support our development efforts! leave a %s5-star rating%s.", '(Admin)', 'gdpr-framework'),
                     '<a href="https://wordpress.org/plugins/gdpr-framework/#reviews" target="_blank">',
                     '</a>'
                 ); ?>

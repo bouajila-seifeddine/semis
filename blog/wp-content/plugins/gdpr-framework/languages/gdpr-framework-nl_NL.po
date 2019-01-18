@@ -8,12 +8,12 @@ msgstr ""
 "Project-Id-Version: The GDPR Framework 1.0\n"
 "Report-Msgid-Bugs-To: gdpr@codelight.eu\n"
 "POT-Creation-Date: 2018-04-16 10:50+0000\n"
-"PO-Revision-Date: 2018-04-30 14:08+0200\n"
+"PO-Revision-Date: 2019-01-11 14:23+0530\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 1.5.7\n"
 "Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: nl_NL\n"
@@ -374,11 +374,9 @@ msgstr "Support"
 
 #: src/Components/WordpressComments/WordpressComments.php:90
 #, php-format
-msgid ""
-"%sERROR:%s You need to accept the terms and conditions to post a comment."
+msgid "%sERROR:%s You need to accept the privacy policy to post a comment."
 msgstr ""
-"%sERROR:%s Je dient de algemene voorwaarden te accepteren voordat je een "
-"reactie kunt plaatsen."
+"%sERROR:%s U moet het privacybeleid accepteren om een ​​reactie te plaatsen."
 
 #: src/Components/WordpressUser/Controllers/DashboardDataPageController.php:54
 #: views/privacy-tools/notices.php:19
@@ -1344,3 +1342,365 @@ msgstr "Je persoonlijke data is verwijderd!"
 #: views/privacy-tools/privacy-tools.php:5
 msgid "You are identified as"
 msgstr "Je bent geïdentificeerd als"
+
+#: views\admin\general\enable-tac.php:9
+msgctxt "(Admin)"
+msgid "Enable the term and condition page."
+msgstr "Schakel de term en conditiepagina in."
+
+#: src\Admin\AdminTabGeneral.php:51
+msgctxt "(Admin)"
+msgid "Enable Term and Conditions"
+msgstr "Algemene voorwaarden inschakelen"
+
+#: gdpr-framework.php:121
+msgid ""
+"This website uses cookies to ensure you get the best experience on our "
+"website."
+msgstr ""
+"Deze website maakt gebruik van cookies om ervoor te zorgen dat u de beste "
+"ervaring op onze website krijgt."
+
+#: gdpr-framework.php:121
+msgid "Decline"
+msgstr "afwijzen"
+
+#: gdpr-framework.php:121
+msgid "Accept"
+msgstr "Aanvaarden"
+
+#: gdpr-framework.php:133
+msgid "Learn more"
+msgstr "Kom meer te weten"
+
+#: AdminTabGeneral.php:94
+msgctxt "(Admin)"
+msgid "From Email"
+msgstr "Van email"
+
+#: AdminTabGeneral.php:87
+msgctxt "(Admin)"
+msgid "From Name"
+msgstr "Van naam"
+
+#: AdminTabGeneral.php:82
+msgctxt "(Admin)"
+msgid "Email Setting"
+msgstr "Email instelling"
+
+#: AdminTabGeneral.php:104
+msgctxt "(Admin)"
+msgid "Acceptance Popup Setting"
+msgstr "Acceptatie Pop-up instelling"
+
+#: AdminTabGeneral.php:109
+msgctxt "(Admin)"
+msgid "Popup Position"
+msgstr "Popup positie"
+
+#: AdminTabGeneral.php:116
+msgctxt "(Admin)"
+msgid "Popup theme"
+msgstr "Pop-up thema"
+
+#: AdminTabGeneral.php:123
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Background Color"
+msgstr "Cookie acceptatie achtergrondkleur"
+
+#: AdminTabGeneral.php:130
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Text Color"
+msgstr "Tekstkleur voor acceptatie van cookies"
+
+#: AdminTabGeneral.php:137
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Button Backgroung Color"
+msgstr "Cookie acceptatie knop Backgroung kleur"
+
+#: AdminTabGeneral.php:144
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Button Color"
+msgstr "Cookie acceptatie Knopkleur"
+
+#: AdminTabGeneral.php:151
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Border Color"
+msgstr "Grenskleur voor acceptatie van cookies"
+
+#: AdminTabGeneral.php:67
+msgctxt "(Admin)"
+msgid "Enable Cookie Acceptance Popup"
+msgstr "Pop-up van cookie-acceptatie inschakelen"
+
+#: AdminTabGeneral.php:73
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Popup Content"
+msgstr "Cookie acceptatie pop-up inhoud"
+
+#: description-position-action.php
+msgctxt "(Admin)"
+msgid "Select position of the Popup"
+msgstr "Selecteer de positie van de pop-up"
+
+#: description-theme-action.php
+msgctxt "(Admin)"
+msgid "Select theme of the Popup"
+msgstr "Selecteer thema van de Pop-up"
+
+#: description-theme-action.php:69
+msgctxt "(Admin)"
+msgid "Disable Comment Checkbox"
+msgstr "Schakel selectievakje voor opmerkingen uit"
+
+#: description-theme-action.php:76
+msgctxt "(Admin)"
+msgid "Disable Register Form Checkbox"
+msgstr "Schakel selectievakje Formulier registreren uit"
+
+#: description-theme-action.php:312
+msgctxt "(Admin)"
+msgid "Disable Checkbox For Comments"
+msgstr "Schakel Checkbox voor opmerkingen uit"
+
+#: AdminTabGeneral.php:319
+msgctxt "(Admin)"
+msgid "Disable Checkbox For Register Form"
+msgstr "Schakel selectievakje voor registratieformulier uit"
+
+#: views/privacy-tools/form-identify.php:15
+msgid "Please identify yourself via e-mail"
+msgstr "Identificeer uzelf via e-mail"
+
+#: advanced-integration\header.php:2
+msgctxt "(Admin)"
+msgid "This page allows you to advance integration with ClassiDocs™"
+msgstr "Op deze pagina kunt u de integratie met ClassiDocs ™ bevorderen"
+
+#: AdminTabAdvancedIntegration.php:97
+msgctxt "(Admin)"
+msgid "ClassiDocs Password"
+msgstr "ClassiDocs-wachtwoord"
+
+#: AdminTabAdvancedIntegration.php:88
+msgctxt "(Admin)"
+msgid "ClassiDocs Username"
+msgstr "ClassiDocs-gebruikersnaam"
+
+#: AdminTabAdvancedIntegration.php:79
+msgctxt "(Admin)"
+msgid "ClassiDocs URL"
+msgstr "ClassiDocs-URL"
+
+#: AdminTabAdvancedIntegration.php:69
+msgctxt "(Admin)"
+msgid "Enable Response with related queries?"
+msgstr "Reactie activeren met gerelateerde zoekopdrachten?"
+
+#: AdminTabAdvancedIntegration.php:60
+msgctxt "(Admin)"
+msgid "Submit SAR request details?"
+msgstr "SAR-aanvraaggegevens opgeven?"
+
+#: AdminTabAdvancedIntegration.php:51
+msgctxt "(Admin)"
+msgid "Integrate with ClassiDocs?"
+msgstr "Integreren met ClassiDocs?"
+
+#: AdminTabAdvancedIntegration.php:43
+msgctxt "(Admin)"
+msgid "Integration Settings"
+msgstr "Integratie-instellingen"
+
+#: AdminTabAdvancedIntegration.php:35
+msgctxt "(Admin)"
+msgid "Advanced Integration"
+msgstr "Geavanceerde integratie"
+
+#: checkbox-field.php:10
+msgctxt "(Admin)"
+msgid "Sign up for free here"
+msgstr "Meld je hier gratis aan"
+
+#: checkbox-field.php:10
+msgctxt "(Admin)"
+msgid "Click Here"
+msgstr "Klik hier"
+
+#: ClassiDocs-results.php:12
+msgid "Previous Results"
+msgstr "Risultati precedenti"
+
+#: ClassiDocs-results.php:13
+msgid "Current Results"
+msgstr "Risultati attuali"
+
+#: ClassiDocs-results.php:19
+msgid "Name"
+msgstr "Nome"
+
+#: ClassiDocs-results.php:22
+msgid "Path"
+msgstr "Sentiero"
+
+#: ClassiDocs-results.php:34
+msgid "Workstation"
+msgstr "stazione di lavoro"
+
+#: ClassiDocs-results.php:37
+msgid "Last Scan"
+msgstr "Ultima scansione"
+
+#: ClassiDocs-results.php:62
+msgid "No ClassiDocs data found!"
+msgstr "Nessun dato ClassiDocs trovato!"
+
+#: enable_popup_header.php:5
+msgid "Cookies used on the website!"
+msgstr "Cookies gebruikt op de website!"
+
+#: enable_popup_header.php:9
+msgid "Leave blank if don't want header to get display."
+msgstr "Laat dit leeg als u niet wilt dat de header wordt weergegeven."
+
+#: AdminTabCookiePopup.php:39
+msgctxt "(Admin)"
+msgid "Cookie Popup Settings"
+msgstr "Cookie Popup-instellingen"
+
+#: AdminTabCookiePopup.php:17
+msgctxt "(Admin)"
+msgid "Cookie Popup"
+msgstr "Cookie Popup"
+
+#: AdminTabCookiePopup.php:49
+msgctxt "(Admin)"
+msgid "Enable One Time Cookie Acceptance Popup"
+msgstr "Schakel eenmalige pop-up voor acceptatie van cookies in"
+
+#: consent.php:79
+msgctxt "(Admin)"
+msgid "Show Consent types"
+msgstr "Toon toestemmingstypes"
+
+msgctxt "(Admin)"
+msgid "Hide consent types"
+msgstr "Verberg toestemmingstypes"
+
+msgctxt "(Admin)"
+msgid "Do you want form to be GDPR compliance."
+msgstr "Wilt u dat de vorm voldoet aan GDPR?"
+
+msgctxt "(Admin)"
+msgid ""
+"You have installed flamingo, To make this GDPR compliance in individual "
+"contact form's privacy tab check the checkbox for include data to be search "
+"on Privacy tool."
+msgstr ""
+"Je hebt flamingo geïnstalleerd. Om deze GDPR-conformiteit te bereiken in het "
+"privacytabblad van het individuele contactformulier vink je het "
+"selectievakje aan voor het opnemen van gegevens in de privacytool."
+
+msgctxt "(Admin)"
+msgid "Enable Policy Link On Popup"
+msgstr "Schakel beleidskoppeling in pop-up in"
+
+msgctxt "(Admin)"
+msgid "Enable Privacy policy on Popup"
+msgstr "Schakel Privacybeleid over Popup in"
+
+#: AdminTabCookiePopup.php
+msgctxt "(Admin)"
+msgid "Cookie Acceptance Popup header"
+msgstr "Cookie acceptatie Popup header"
+
+#: views\admin\privacy-manager\header.php:2
+msgctxt "(Admin)"
+msgid "Data443™ Privacy Manager"
+msgstr "Data443™ Privacy Manager"
+
+#: views\admin\privacy-manager\header.php:3
+msgctxt "(Admin)"
+msgid ""
+"ensures privacy regulation compliance, such as GDPR, CCPA, LGPD, etc, at the "
+"next level."
+msgstr ""
+"zorgt voor naleving van de privacywetgeving, zoals GDPR, CCPA, LGPD, enz. op "
+"het volgende niveau."
+
+#: views\admin\privacy-manager\header.php:4
+msgctxt "(Admin)"
+msgid ""
+"In addition to DSAR tracking and management, Privacy Manager adds the "
+"following features to your data protection compliance resources:"
+msgstr ""
+"Naast het volgen en beheren van DSAR voegt Privacy Manager de volgende "
+"functies toe aan uw compliance-bronnen voor gegevensbescherming:"
+
+#: views\admin\privacy-manager\header.php:6
+msgctxt "(Admin)"
+msgid "Log and store ICO breach notifications"
+msgstr "Registreer en bewaar ICO-inbreukmeldingen"
+
+#: views\admin\privacy-manager\header.php:7
+msgctxt "(Admin)"
+msgid "Keeps full record of all requests, ticketed and timeline"
+msgstr "Houdt volledig overzicht van alle verzoeken, ticketed en tijdlijn"
+
+#: views\admin\privacy-manager\header.php:8
+msgctxt "(Admin)"
+msgid "Gap analysis and breach notifications"
+msgstr "Gap-analyse en meldingen wegens overtreding"
+
+#: views\admin\privacy-manager\header.php:9
+msgctxt "(Admin)"
+msgid "In depth activity log with all GDPR, CCPA, etc actions evidenced"
+msgstr ""
+"Diepgaand activiteitenlogboek met alle GDPR-, CCPA-, enz. Acties bewezen"
+
+#: views\admin\privacy-manager\header.php:10
+msgctxt "(Admin)"
+msgid "Highlights areas of concern and where you need to focus"
+msgstr "Markeert zorgwekkende gebieden en waar u moet focussen"
+
+#: views\admin\privacy-manager\header.php:11
+msgctxt "(Admin)"
+msgid ""
+"eLearning platform with access for all staff to ensure privacy regulation "
+"compliance and obligations"
+msgstr ""
+"e-learningplatform met toegang voor alle medewerkers om te zorgen voor "
+"naleving en verplichtingen van privacyregelingen"
+
+#: views\admin\privacy-manager\header.php:12
+msgctxt "(Admin)"
+msgid "Tracks who accesses the system, when and why"
+msgstr "Geeft aan wie toegang heeft tot het systeem, wanneer en waarom"
+
+#: views\admin\privacy-manager\header.php:15
+msgctxt "(Admin)"
+msgid ""
+"Our system enables your business to demonstrate its obligations in "
+"protecting your customer data, show understanding of your business "
+"activities and deliver eLearning and online tests to employees, ensuring "
+"everyone in your company understands your privacy compliance rules and best "
+"practices to operate."
+msgstr ""
+"Ons systeem stelt uw bedrijf in staat om zijn verplichtingen aan te tonen "
+"bij het beschermen van uw klantgegevens, inzicht in uw bedrijfsactiviteiten "
+"te tonen en eLearning en online tests aan werknemers te leveren, zodat "
+"iedereen in uw bedrijf uw privacymaatregelen en best practices begrijpt."
+
+#: views\admin\privacy-manager\header.php:16
+msgctxt "(Admin)"
+msgid ""
+"No matter where you are on your data privacy journey, the ultimate goal is "
+"compliance."
+msgstr ""
+"Waar u zich ook bevindt op uw reis over gegevensprivacy, het uiteindelijke "
+"doel is compliance."
+
+#: views\admin\privacy-manager\header.php:16
+msgctxt "(Admin)"
+msgid "enables your organization to comply with all privacy regulations."
+msgstr "stelt uw organisatie in staat om te voldoen aan alle privacyregels."

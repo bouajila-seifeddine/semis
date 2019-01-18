@@ -31,8 +31,8 @@
 		{include file="$tpl_dir./errors.tpl"}
 		<form id="form" action="{$link->getPageLink('order', true, NULL, "{if $multi_shipping}multi-shipping={$multi_shipping}{/if}")|escape:'html':'UTF-8'}" method="post" name="carrier_area">
 {else}
+<div class="clearfix"></div>
 	<div id="carrier_area" class="opc-main-block">
-		<h1 class="step-num"><span>2.</span> {l s='Delivery methods'}</h1>
 			<div id="opc_delivery_methods" class="opc-main-block">
 				<div id="opc_delivery_methods-overlay" class="opc-overlay" style="display: none;"></div>
 {/if}
@@ -51,22 +51,24 @@
 			<div class="delivery_options_address">
 				{if isset($delivery_option_list)}
 					{foreach $delivery_option_list as $id_address => $option_list}
-						<p class="carrier_title">
+						<h3 style="text-transform: 	uppercase; margin-top: 0px;">2. 
 							{if isset($address_collection[$id_address])}
 								{l s='Choose a shipping option for this address:'} {$address_collection[$id_address]->alias}
 							{else}
 								{l s='Choose a shipping option'}
 							{/if}
-						</p>
-						<div class="delivery_options">
+						</h3>
+						<div class="delivery_options row">
 							{foreach $option_list as $key => $option}
-								<div class="delivery_option {if ($option@index % 2)}alternate_{/if}item">
+								<div class="delivery_option {if ($option@index % 2)}alternate_{/if}item  {if  $option_list|@count < 4 }col-md-4 col-sm-6 col-xs-12{else} col-md-3 col-sm-6 col-xs-12 {/if}">
 									<div>
 										<table class="resume table table-bordered{if !$option.unique_carrier} hide{/if}">
 											<tr>
 												<td class="delivery_option_radio">
 													<input id="delivery_option_{$id_address|intval}_{$option@index}" class="delivery_option_radio" type="radio" name="delivery_option[{$id_address|intval}]" data-key="{$key}" data-id_address="{$id_address|intval}" value="{$key}"{if isset($delivery_option[$id_address]) && $delivery_option[$id_address] == $key} checked="checked"{/if} />
 												</td>
+											</tr>
+											<tr>
 												<td class="delivery_option_logo">
 													{foreach $option.carrier_list as $carrier}
 														{if $carrier.logo}
@@ -77,17 +79,17 @@
 														{/if}
 													{/foreach}
 												</td>
+											</tr>
+											<tr>
 												<td>
 													{if $option.unique_carrier}
 														{foreach $option.carrier_list as $carrier}
 															<strong>{$carrier.instance->name|escape:'htmlall':'UTF-8'}</strong>
 														{/foreach}
-														{if isset($carrier.instance->delay[$cookie->id_lang])}
-															<br/> Tiempo de entrega:&nbsp;{$carrier.instance->delay[$cookie->id_lang]|escape:'htmlall':'UTF-8'}
-														{/if}
+														
 													{/if}
 													{if count($option_list) > 1}
-													<br />
+													
 														{if $option.is_best_grade}
 															{if $option.is_best_price}
 																<span class="best_grade best_grade_price best_grade_speed">{l s='The best price and speed'}</span>
@@ -99,6 +101,8 @@
 														{/if}
 													{/if}
 												</td>
+											</tr>
+											<tr>
 												<td class="delivery_option_price">
 													<div class="delivery_option_price price">
 														{if $option.total_price_with_tax && !$option.is_free && (!isset($free_shipping) || (isset($free_shipping) && !$free_shipping))}
@@ -278,12 +282,14 @@
 						{/foreach}
 					{/if}
 				</div> <!-- end delivery_options_address -->
+						<div class="clearfix"></div>
+
 				<div id="extra_carrier" style="display: none;"></div>
 				{if $opc}
-					<p class="carrier_title">{l s='Leave a message'}</p>
+					<p class="carrier_title" style="margin-top: 20px;">{l s='Leave a message'}</p>
 					<div>
 						<p>{l s='If you would like to add a comment about your order, please write it in the field below.'}</p>
-						<textarea cols="120" rows="2" name="message" id="message">{strip}
+						<textarea rows="2" name="message" id="message">{strip}
 							{if isset($oldMessage)}{$oldMessage|escape:'html':'UTF-8'}{/if}
 						{/strip}</textarea>
 					</div>
@@ -328,6 +334,7 @@
 				{if $opc}
 					<hr style="" />
 				{/if}
+				<div class="clearfix"></div>
 				<p class="carrier_title">{l s='Terms of service'}</p>
 				<p class="checkbox">
 					<input type="checkbox" name="cgv" id="cgv" value="1" {if $checkedTOS}checked="checked"{/if} />
@@ -336,6 +343,7 @@
 				</p>
 			{/if}
 		</div> <!-- end delivery_options_address -->
+		<div class="clearfix"></div>
 		{if !$opc}
 				<p class="cart_navigation clearfix">
 					<input type="hidden" name="step" value="3" />

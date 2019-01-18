@@ -13,6 +13,9 @@ class UserConsentModel
     public $tableName;
 
     /* @var string */
+    public $logtableName;
+
+    /* @var string */
     public $version = '1.0';
 
     /* @var string */
@@ -22,9 +25,10 @@ class UserConsentModel
      * UserConsentModel constructor.
      */
     public function __construct()
-    {
+    { 
         $this->setTableName();
-
+        $this->setUserLogTableName();
+        $this->setClassiDocsCallback();
         // todo: cleanup
         // global $wpdb;
         //$wpdb->query('TRUNCATE TABLE wp_gdpr_consent');
@@ -37,6 +41,24 @@ class UserConsentModel
     {
         global $wpdb;
         $this->tableName = $wpdb->prefix . 'gdpr_consent';
+    }
+
+    /**
+     * Set the table name with wpdb-s prefix
+     */
+    protected function setUserLogTableName()
+    {
+        global $wpdb;
+        $this->logtableName = $wpdb->prefix . 'gdpr_userlogs';
+    }
+    
+    /**
+     * Set the table name with wpdb-s prefix
+     */
+    protected function setClassiDocsCallback()
+    {
+        global $wpdb;
+        $this->ClassiDocsCallback = $wpdb->prefix . 'gdpr_ClassiDocsCallback';
     }
 
     /**
@@ -162,6 +184,40 @@ class UserConsentModel
     }
 
     /**
+     * Set a userlog
+     *
+     * @param $email
+     * @param $userlog
+     */
+    public function savelog($email, $userlog)
+    {
+        
+        $this->savelog_gdpr($email, $userlog);
+    }
+
+    /**
+     * Set a userlog to show previous data
+     *
+     * @param $userid
+     * @param $userlog
+     */
+    protected function savelog_gdpr($user_id,$userlog)
+    {
+        global $wpdb;
+        if (!empty($user_id) && !empty($userlog)) {
+            $sa= $wpdb->insert(
+                $this->logtableName,
+                [
+                    'user_id'    => $user_id,
+                    'userlog'    => $userlog,
+                    'updated_at' => date("Y-m-d H:i:s"),
+                    'ip'         => $_SERVER['REMOTE_ADDR'],
+                ]
+            );
+        }
+    }
+
+    /**
      * Get all consent given by data subject
      *
      * @param $email
@@ -184,6 +240,47 @@ class UserConsentModel
                 $email
             ))), true), 'consent');
         }
+    }
+
+    /**
+     * Get all consent given by data subject
+     *
+     * @param $email
+     */
+    public function getuserlogs($userid)
+    {
+        global $wpdb;
+        /**
+         * Workaround to an issue with array_column in PHP5.6 - thanks @paulnewson
+         */
+        if (version_compare(PHP_VERSION, '7') >= 0) {
+            return $wpdb->get_results($wpdb->prepare(
+                "SELECT * FROM {$this->logtableName} WHERE user_id = %s;",
+                $userid
+            ));
+        } else {
+            return json_decode(json_encode($wpdb->get_results($wpdb->prepare(
+                "SELECT * FROM {$this->logtableName} WHERE user_id = %s;",
+                $userid
+            ))), true);
+        }
+    }
+
+    /**
+     * Remove a log row from the database
+     *
+     * @param $id
+     */
+    public function deletelog($id)
+    {
+        global $wpdb;
+
+        return $wpdb->delete(
+            $this->logtableName,
+            [
+                'user_id'   => $id,
+            ]
+        );
     }
 
     /**
@@ -288,5 +385,39 @@ class UserConsentModel
             ) CHARACTER SET utf8 COLLATE utf8_general_ci;";
         dbDelta($sql);
         update_option($this->tableName . '_db_version', $this->version);
+    }
+    /**
+     * create table to user logs
+     */
+    public function createUserTable()
+    {
+        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+        $sql = "CREATE TABLE " . $this->logtableName . " (
+            id bigint(20) NOT NULL AUTO_INCREMENT,
+            user_id int NOT NULL,
+            userlog varchar(4000) NOT NULL,
+            updated_at TIMESTAMP NULL,
+            ip varchar(64) NOT NULL,
+            PRIMARY KEY  (id)
+            ) CHARACTER SET utf8 COLLATE utf8_general_ci;";
+        dbDelta($sql);
+        update_option($this->logtableName . '_db_version', $this->version);
+    }
+
+    /**
+     * create table for store request from classidocs
+     */
+    public function createClassiDocsCallback()
+    { 
+        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+        $sql = "CREATE TABLE " . $this->ClassiDocsCallback . " (
+            id bigint(20) NOT NULL AUTO_INCREMENT,
+            request_number int NOT NULL,
+            consent_id int NOT NULL,
+            updated_at TIMESTAMP NULL,
+            PRIMARY KEY  (id)
+            ) CHARACTER SET utf8 COLLATE utf8_general_ci;";
+        dbDelta($sql);
+        update_option($this->ClassiDocsCallback . '_db_version', $this->version);
     }
 }

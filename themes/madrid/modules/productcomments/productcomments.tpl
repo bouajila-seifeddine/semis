@@ -122,7 +122,6 @@
 							<p class="product_name">
 								<strong>{$product->name}</strong>
 							</p>
-							{$product->description_short}
 						</div>
 					</div>
 				{/if}
@@ -161,7 +160,8 @@
 						</label>
 						<input id="commentCustomerName" name="customer_name" type="text" value=""/>
 					{/if}
-					<p style="padding-top: 	15px;"><input style="opacity: 1;" type="checkbox" id="gdpr-consent-box" name="gdpr" required> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </p>
+					<p style="padding-top: 	15px;"><input style="opacity: 1;" type="checkbox" id="gdpr-consent-box2" name="gdpr" required> He leído y acepto la <a href="https://www.semillaslowcost.com/content/11-politica-de-privacidad" target="_blank"> política de privacidad</a> y el tratamiento de datos por parte de  semillaslowcost.com </p>
+					<p>Ecommerce and Quality Trading, S.L.U, será responsable del Tratamiento de los datos para mostrar su comentario en el producto cuya base jurídica es su consentimiento expreso del artículo 6.1.a RGPD. En cualquier momento usted podrá ejercitar sus derechos de acceso, rectificación, supresión o portabilidad de datos dirigiéndose a la dirección postal: P.I. La Figuera / Camino Bovalar nº 29 - 46970 - Valencia – VALENCIA o email a info@semillaslowcost.com.</p>
 					<div id="new_comment_form_footer">
 
 						<input id="id_product_comment_send" name="id_product" type="hidden" value='{$id_product_comment_form}' />
@@ -170,7 +170,6 @@
 							<button id="submitNewMessage" name="submitMessage" type="submit" class="button button-small">
 								<span>{l s='Submit' mod='productcomments'}</span>
 							</button>&nbsp;
-							{l s='or' mod='productcomments'}&nbsp;
 							<a class="closefb" href="#">
 								{l s='Cancel' mod='productcomments'}
 							</a>

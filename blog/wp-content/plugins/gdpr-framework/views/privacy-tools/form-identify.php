@@ -11,9 +11,7 @@
 <?php else: ?>
 
     <h3>
-        <?=
-            __('Please identify yourself via e-mail', 'gdpr-framework');
-        ?>
+        <?= __('Please identify yourself via e-mail', 'gdpr-framework'); ?>
     </h3>
     <form>
         <label for="gdpr_email"><?= __('Enter your email address', 'gdpr-framework') ?></label>
@@ -22,7 +20,7 @@
         <input type="email" id="gdpr_email" name="email" placeholder="<?= __('Enter your email address', 'gdpr-framework') ?>" />
         <?php do_action('gdpr/privacy-tools-page/identify'); ?>
 
-        <input type="submit" value="<?= __('Send email', 'gdpr-framework') ?>" />
+        <input type="submit" value="<?= __('Send email', 'gdpr-framework') ?>" id="gdpr-submit"/>
     </form>
 
 <?php endif; ?>

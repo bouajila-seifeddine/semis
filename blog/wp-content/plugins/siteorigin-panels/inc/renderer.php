@@ -50,6 +50,7 @@ class SiteOrigin_Panels_Renderer {
 		// Exit if we don't have panels data
 		if ( empty( $panels_data ) ) {
 			$panels_data = get_post_meta( $post_id, 'panels_data', true );
+			$panels_data = apply_filters( 'siteorigin_panels_data', $panels_data, $post_id );
 			if ( empty( $panels_data ) ) {
 				return '';
 			}
@@ -265,7 +266,7 @@ class SiteOrigin_Panels_Renderer {
 	 *
 	 * @return string
 	 */
-	function render( $post_id = false, $enqueue_css = true, $panels_data = false, & $layout_data = array() ) {
+	function render( $post_id = false, $enqueue_css = true, $panels_data = false, & $layout_data = array(), $is_preview = false ) {
 
 		if ( empty( $post_id ) ) {
 			$post_id = get_the_ID();
@@ -296,7 +297,11 @@ class SiteOrigin_Panels_Renderer {
 		if ( empty( $panels_data ) || empty( $panels_data['grids'] ) ) {
 			return '';
 		}
-
+		
+		if ( $is_preview ) {
+			$GLOBALS[ 'SITEORIGIN_PANELS_PREVIEW_RENDER' ] = true;
+		}
+		
 		$layout_data = $this->get_panels_layout_data( $panels_data );
 		$layout_data = apply_filters( 'siteorigin_panels_layout_data', $layout_data, $post_id );
 
@@ -335,8 +340,22 @@ class SiteOrigin_Panels_Renderer {
 
 		// Reset the current post
 		$siteorigin_panels_current_post = $old_current_post;
-
-		return apply_filters( 'siteorigin_panels_render', $html, $post_id, ! empty( $post ) ? $post : null );
+		
+		$rendered_layout = apply_filters( 'siteorigin_panels_render', $html, $post_id, ! empty( $post ) ? $post : null );
+		
+		if ( $is_preview ) {
+			$widget_css = '@import url(' . SiteOrigin_Panels::front_css_url() . '); ';
+			$widget_css .= SiteOrigin_Panels::renderer()->generate_css( $post_id, $panels_data, $layout_data );
+			$widget_css = preg_replace( '/\s+/', ' ', $widget_css );
+			$rendered_layout .= "\n\n" .
+								'<style type="text/css" class="panels-style" data-panels-style-for-post="' . esc_attr( $post_id ) . '">' .
+								$widget_css .
+								'</style>';
+		}
+		
+		unset( $GLOBALS[ 'SITEORIGIN_PANELS_PREVIEW_RENDER' ] );
+		
+		return $rendered_layout;
 	}
 
 	/**
@@ -430,14 +449,12 @@ class SiteOrigin_Panels_Renderer {
 	 */
 	function the_widget( $widget_info, $instance, $grid_index, $cell_index, $widget_index, $is_first, $is_last, $post_id = false, $style_wrapper = '' ) {
 
-		global $wp_widget_factory;
-
 		// Set widget class to $widget
 		$widget_class = $widget_info['class'];
 		$widget_class = apply_filters( 'siteorigin_panels_widget_class', $widget_class );
 
 		// Load the widget from the widget factory and give themes and plugins a chance to provide their own
-		$the_widget = ! empty( $wp_widget_factory->widgets[ $widget_class ] ) ? $wp_widget_factory->widgets[ $widget_class ] : false;
+		$the_widget = SiteOrigin_Panels::get_widget_instance( $widget_class );
 		$the_widget = apply_filters( 'siteorigin_panels_widget_object', $the_widget, $widget_class, $instance );
 
 		if ( empty( $post_id ) ) {
@@ -703,6 +720,11 @@ class SiteOrigin_Panels_Renderer {
 
 		if ( ! empty( $row_style_wrapper ) ) {
 			echo $row_style_wrapper;
+		}
+
+		if( method_exists( $this, 'modify_row_cells' ) ) {
+			// This gives other renderers a chance to change the cell order
+			$row['cells'] = $cells = $this->modify_row_cells( $row['cells'], $row );
 		}
 
 		foreach ( $row['cells'] as $ci => & $cell ) {

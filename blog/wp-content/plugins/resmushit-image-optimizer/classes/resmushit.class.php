@@ -14,6 +14,17 @@ Class reSmushit {
 
 	/**
 	 *
+	 * returns the list of supported extensions by the API
+	 *
+	 * @return array 	List of extensions
+	 */
+	public static function authorizedExtensions() {
+		return array('jpg', 'jpeg', 'gif', 'png', 'bmp', 'tif', 'tiff');
+	}
+
+
+	/**
+	 *
 	 * Optimize a picture according to a filepath.
 	 *
 	 * @param  string $file_path the path to the file on the server
@@ -264,7 +275,8 @@ Class reSmushit {
 		$files_too_big = array();
 		$already_optimized_images_array = array();
 		$disabled_images_array = array();
-
+		$files_not_found = array();
+		
 		$queryAllPictures = $wpdb->prepare( 
 			"select
 				$wpdb->posts.ID as ID,
@@ -315,9 +327,12 @@ Class reSmushit {
 				$tmp['ID'] = $image->ID;
 				$tmp['attachment_metadata'] = unserialize($image->file_meta);
 
-
+				if( !file_exists(get_attached_file( $image->ID )) ) {
+					$files_not_found[] = $tmp;
+					continue;
+				}
 				//If filesize > 5MB, we do not optimize this picture
-				if( filesize(get_attached_file( $image->ID )) > self::MAX_FILESIZE){
+				if( filesize(get_attached_file( $image->ID )) > self::MAX_FILESIZE ){
 					$files_too_big[] = $tmp;
 					continue;
 				}
@@ -326,7 +341,7 @@ Class reSmushit {
 			}
 				
 		}
-		return json_encode(array('nonoptimized' => $unsmushed_images, 'filestoobig' => $files_too_big));
+		return json_encode(array('nonoptimized' => $unsmushed_images, 'filestoobig' => $files_too_big, 'filesnotfound' => $files_not_found));
 	}
 
 
@@ -339,7 +354,11 @@ Class reSmushit {
       */
 	public static function getCountNonOptimizedPictures(){
 		$data = json_decode(self::getNonOptimizedPictures());
-		return array('nonoptimized' => sizeof($data->nonoptimized), 'filestoobig' => sizeof($data->filestoobig));
+		$output = array();
+		$output['nonoptimized'] = is_array($data->nonoptimized) ? sizeof($data->nonoptimized) : 0;
+		$output['filesnotfound'] = is_array($data->filesnotfound) ? sizeof($data->filesnotfound) : 0;
+		$output['filestoobig'] = is_array($data->filestoobig) ? sizeof($data->filestoobig) : 0;
+		return $output;
 	}
 
 

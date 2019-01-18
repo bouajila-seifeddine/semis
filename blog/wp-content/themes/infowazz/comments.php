@@ -65,15 +65,15 @@
 <?php
 $fields =  array(
 
-	'author' => '<div class="row"><div class="comment-input col-md-4 mt_comment_i_1"><input id="author" placeholder="'. esc_html__( 'Name', 'infowazz' ) .'" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /></div>',
+	'author' => '<div class="row"><div class="comment-input col-md-4 mt_comment_i_1"><label for="author">Autor:</label><input id="author" placeholder="'. esc_html__( 'Name', 'infowazz' ) .'" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /></div>',
 
-	'email'  => '<div class="comment-input col-md-4 mt_comment_i_2"><input id="email" name="email" type="text"  placeholder="'. esc_html__( 'Email', 'infowazz' ) .'" value="' . esc_html(  $commenter['comment_author_email'] ) . '" size="30" /></div>',
+	'email'  => '<div class="comment-input col-md-4 mt_comment_i_2"><label for="email">Email:</label><input id="email" name="email" type="text"  placeholder="'. esc_html__( 'Email', 'infowazz' ) .'" value="' . esc_html(  $commenter['comment_author_email'] ) . '" size="30" /></div>',
 	'url'    => '<div class="comment-input col-md-4 mt_comment_i_3"><input class="input" id="url" name="url"  placeholder="'. esc_html__( 'Website', 'infowazz' ) .'" type="text" value="' . esc_url( $commenter['comment_author_url'] ) . '" size="30" /></div></div>',
 );
 
  $defaults = array(
 
-	'comment_field'        => '<span class="comment-adres-not-publish">Tu email no será publicado.</span><p class="comment-textarea"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" ></textarea></p>',
+	'comment_field'        => '<span class="comment-adres-not-publish">Tu email no será publicado.</span><p class="comment-textarea"><label for="comment">Comentario:</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" ></textarea></p>',
 	'must_log_in'          => '<p class="must-log-in">' .  sprintf( wp_kses(__( 'You must be <a href="%s">logged in</a> to post a comment.', 'infowazz' ), array(
     'a' => array(
         'href' => array(),

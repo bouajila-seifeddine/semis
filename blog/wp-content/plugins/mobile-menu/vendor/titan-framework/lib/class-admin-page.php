@@ -38,7 +38,7 @@ class TitanFrameworkAdminPage {
 		if ( empty( $this->settings['name'] ) ) {
 			return;
 		}
-
+		
 		if ( empty( $this->settings['title'] ) ) {
 			$this->settings['title'] = $this->settings['name'];
 		}
@@ -114,9 +114,8 @@ class TitanFrameworkAdminPage {
 		add_filter( 'admin_footer_text', array( $this, 'addTitanCreditText' ) );
 	}
 
-
 	public function addTitanCreditText() {
-		return __( "<em>Options Page Created with <a href='http://titanframework.net?utm_source=admin&utm_medium=admin footer'>Titan Framework</a></em>", TF_I18NDOMAIN );
+		return __( "<em>Check our documentation at <a href='https://www.wpmobilemenu.com/knowledgebase'>WP Mobile Menu Documentation</a></em>", 'mobile-menu' );
 	}
 
 
@@ -354,9 +353,11 @@ class TitanFrameworkAdminPage {
 			</h2>
 			<?php
 		endif;
-
+		$activeTab = $this->getActiveTab();
+		
 		?>
-		<div class='options-container'>
+		
+		<div class='options-container active-tab-<?php echo $activeTab->settings['id'];?>'>
 		<?php
 
 		// Display notification if we did something
@@ -433,7 +434,7 @@ class TitanFrameworkAdminPage {
 		do_action( 'tf_admin_page_end_' . $this->getOptionNamespace() );
 
 		?>
-		<div class='options-container'>
+		<div class='options-container active-tab-<?php echo $activeTab->settings['id'];?>'>
 		</div>
 		</div>
 		</div>

@@ -58,8 +58,8 @@ $(document).ready(function(){
 
 	$('.delivery_option_radio').on('change', function(){
 		refreshDeliveryOptions();
-		setTimeout(function(){ location.reload(); }, 500);
 		
+		setTimeout(function(){ location.reload(); }, 500);
 
 	});
 

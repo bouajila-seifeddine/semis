@@ -111,7 +111,7 @@
         {if $combination.quantity > 0}
         {assign var="cantidad" value=$cantidad + $combination.quantity}
         <tr>
-            <td class="attributes_name_blog">{$combination.attributes_names|escape:'html':'UTF-8'}</td>
+            <td class="attributes_name_blog"><label for="{$combination.reference|escape:'html':'UTF-8'}">{$combination.attributes_names|escape:'html':'UTF-8'}</label></td>
             <td class="semillas_atributos_radio_blog"> 
                 <input type="radio" id="{$combination.reference|escape:'html':'UTF-8'}" class="attribute_radio" name="{$product.link_rewrite}" value="{$id_product_attribute|intval},{$combination.price+($combination.price*0.21)}" {if $id_product_attribute == $product.cache_default_attribute } checked="checked"{/if}><label for="{$combination.attributes_names|escape:'html':'UTF-8'}"><span><span></span></span></label>
             </td>
@@ -183,20 +183,7 @@ error : function(xhr, status, error)
     </div>
     </fieldset>
 </div>
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close2">&times;</span>
-    <p>Producto añadido correctamente al carrito de compra.</p>
-    <img id="modal-img" src=""><br />
-    <button class="btn btn-dark" onclick="document.getElementById('myModal').style.display = 'none'">Seguir Leyendo</button>
-    <button class="btn info" onclick="window.open('https://www.semillaslowcost.com/pedido-rapido','_blank')">Ir al carrito</button>
-
-  </div>
-
-</div>
 {/if}
 {* Added for attributes *}
 
@@ -255,8 +242,7 @@ error : function(xhr, status, error)
 {addJsDef comparedProductsIds=$compared_products}
 {elseif isset($products) && $products}
 	<!-- Products list -->
-	<div class="product_list product_list_ph clearBoth items-{$theme_options['ph_list_items']}">
-		<div class="row">
+	<div class="product_list product_list_ph clearBoth items-{$theme_options['ph_list_items']} row">
 			{foreach from=$products item=product name=products}
 			<div class="
 				{if $theme_options['ph_list_items'] == 2}col-sm-6
@@ -264,13 +250,15 @@ error : function(xhr, status, error)
 				{else if $theme_options['ph_list_items'] == 4}col-md-3 col-sm-6
 				{else if $theme_options['ph_list_items'] == 6}col-md-2 col-sm-6
 				{else}col-md-4 col-sm-6{/if} 
-				col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+				col-xs-6 product" itemtype="http://schema.org/Product" itemscope="">
 				<div class="bg">
 					<div class="inner second-image">
 						<div class="img_hover"></div>
+                         <div class="overlay-halloweed"></div>
+
 
 						<a itemprop="url" href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}">
-							<img itemprop="image" src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" class="img-responsive first-image" />
+							<img itemprop="image" data-src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" class="lazy img-responsive first-image" />
 							{hook h='displayProductSecondImage' product=$product}
 						</a>
 
@@ -375,7 +363,6 @@ error : function(xhr, status, error)
 				</div><!-- .bg -->
 			</div>
 			{/foreach}
-		</div><!-- .row -->
 	</div><!-- .product_list_ph -->	
 {addJsDefL name=min_item}{l s='Please select at least one product' js=1}{/addJsDefL}
 {addJsDefL name=max_item}{l s='You cannot add more than %d product(s) to the product comparison' sprintf=$comparator_max_item js=1}{/addJsDefL}

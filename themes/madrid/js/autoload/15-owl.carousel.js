@@ -199,7 +199,7 @@
 	 * @public
 	 */
 	Owl.Defaults = {
-		items: 3,
+		items: 2,
 		loop: false,
 		center: false,
 
@@ -321,15 +321,24 @@
 	}, {
 		filter: [ 'width', 'items', 'settings' ],
 		run: function() {
-			var i, n, width = (this.width() / this.settings.items).toFixed(3), css = {
-				'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
-				'padding-left': this.settings.stagePadding || '',
-				'padding-right': this.settings.stagePadding || ''
-			};
+			var widthcomp =  window.innerWidth;
+			if(widthcomp > 766){
+				var i, n, width = (this.width() / this.settings.items).toFixed(3), css = {
+					'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
+					'padding-left': this.settings.stagePadding || '',
+					'padding-right': this.settings.stagePadding || ''
+				};
+			}else{
+				var i, n, width = (this.width() / this.settings.items).toFixed(3) / 2, css = {
+					'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
+					'padding-left': this.settings.stagePadding || '',
+					'padding-right': this.settings.stagePadding || ''
+				};
+			}
 
 			this.$stage.css(css);
 
-			css = { 'width': this.settings.autoWidth ? 'auto' : width - this.settings.margin };
+			css = { 'width': this.settings.autoWidth/2 ? 'auto' : width - this.settings.margin/2 };
 			css[this.settings.rtl ? 'margin-left' : 'margin-right'] = this.settings.margin;
 
 			if (!this.settings.autoWidth && $.grep(this._mergers, function(v) { return v > 1 }).length > 0) {
@@ -986,10 +995,22 @@
 		this.state.inMotion = this.speed() > 0;
 
 		if (this.support3d) {
-			this.$stage.css({
-				transform: 'translate3d(' + coordinate + 'px' + ',0px, 0px)',
-				transition: (this.speed() / 1000) + 's'
-			});
+
+			var widthcomp = window.innerWidth;
+			if(widthcomp < 928){
+				this.$stage.css({
+						transform: 'translate3d(' + coordinate/2 + 'px' + ',0px, 0px)',
+						transition: (this.speed() / 1000) + 's'
+					});			
+			}else{
+				this.$stage.css({
+						transform: 'translate3d(' + coordinate + 'px' + ',0px, 0px)',
+						transition: (this.speed() / 1000) + 's'
+					});
+			}
+					
+
+
 		} else if (this.state.isTouch) {
 			this.$stage.css({
 				left: coordinate + 'px'

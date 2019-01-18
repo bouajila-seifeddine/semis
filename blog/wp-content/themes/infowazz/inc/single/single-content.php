@@ -22,11 +22,11 @@ $share_bottom = get_post_meta(get_the_ID(), "magazin_post_share_bottom", true);
   <div class="tags"><?php echo get_the_tag_list(); ?></div>
   <?php if($share_bottom=="" or $share_bottom == "yes"){ ?>
   <ul class="share down">
-    <li class="share-facebook"><a class="mt-radius" href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank" rel="nofollow"><span><?php echo esc_html__('Share on Facebook', 'infowazz'); ?></span></a></li>
-    <li class="share-twitter"><a class="mt-radius" href="https://twitter.com/home/?status=<?php the_title(); ?>-<?php the_permalink(); ?>" target="_blank" rel="nofollow"><span><?php echo esc_html__('Tweet on Twitter', 'infowazz'); ?></span></a></li>
+    <li class="share-facebook"><a class="mt-radius" href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank" rel="nofollow noopener noreferrer" aria-label="Compartir en Facebook"><span><?php echo esc_html__('Share on Facebook', 'infowazz'); ?></span></a></li>
+    <li class="share-twitter"><a class="mt-radius"   aria-label="Compartir en Twitter" href="https://twitter.com/home/?status=<?php the_title(); ?>-<?php the_permalink(); ?>" target="_blank" rel="nofollow noopener noreferrer"><span ><?php echo esc_html__('Tweet on Twitter', 'infowazz'); ?></span></a></li>
     <li class="share-more">
-      <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank" rel="nofollow"><div class="google mt-radius-b"></div></a>
-      <a class="mt-radius" href="https://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank" rel="nofollow"><div class="pinterest mt-radius-b"></div></a>
+      <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"   aria-label="Compartir en Google Plus" rel="nofollow noopener noreferrer"><div class="google mt-radius-b"  role="img" alt="Compartir en Google Plus" ></div></a>
+      <a class="mt-radius" href="https://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank" rel="nofollow noopener noreferrer" aria-label="Compartir en Pinterest"><div class="pinterest mt-radius-b"  role="img" alt="Compartir en Pinterest"    ></div></a>
       <div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
     </li>
   </ul>

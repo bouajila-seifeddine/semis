@@ -50,31 +50,31 @@
 						<div class="row">
 							{if $theme_options['ph_socialbox_dribbble']}
 							<div class="item dribbble">
-								<a href="https://www.instagram.com/semillaslowcost/" rel="nofollow"><i class="icon icon-instagram"></i></a>
+								<a href="https://www.instagram.com/semillaslowcost/" target="_blank" rel="nofollow noopener noreferrer"><i class="icon icon-instagram" aria-label="Instagram"></i></a>
 							</div>
 							{/if}
 
 							{if $theme_options['ph_socialbox_fb']}
 							<div class="item facebook">
-								<a href="{$theme_options['ph_socialbox_fb']}" rel="nofollow"><i class="icon icon-facebook"></i></a>
+								<a href="{$theme_options['ph_socialbox_fb']}" target="_blank" rel="nofollow noopener noreferrer"><i class="icon icon-facebook" aria-label="Facebook"></i></a>
 							</div>
 							{/if}
 
 							{if $theme_options['ph_socialbox_tw']}
 							<div class="item twitter">
-								<a href="{$theme_options['ph_socialbox_tw']}" rel="nofollow"><i class="icon icon-twitter"></i></a>
+								<a href="{$theme_options['ph_socialbox_tw']}" target="_blank" rel="nofollow noopener noreferrer"><i class="icon icon-twitter" aria-label="Twitter"></i></a>
 							</div>
 							{/if}
 
 							{if $theme_options['ph_socialbox_g']}
 							<div class="item google-plus">
-								<a href="{$theme_options['ph_socialbox_g']}" rel="nofollow"><i class="icon icon-google-plus"></i></a>
+								<a href="{$theme_options['ph_socialbox_g']}" target="_blank" rel="nofollow noopener noreferrer"><i class="icon icon-google-plus" aria-label="Google Plus"></i></a>
 							</div>
 							{/if}
 
 							{if $theme_options['ph_socialbox_be']}
 							<div class="item behance">
-								<a href="https://www.youtube.com/channel/UCKbxY0GtLkrG1d_Ma96Hhqw" rel="nofollow"><i class="icon icon-youtube"></i></a>
+								<a href="https://www.youtube.com/channel/UCKbxY0GtLkrG1d_Ma96Hhqw" target="_blank" rel="nofollow noopener noreferrer"><i class="icon icon-youtube" aria-label="Youtube"></i></a>
 							</div>
 							{/if}
 						</div><!--. row -->
@@ -94,7 +94,7 @@
 		<footer class="bottom">
 			<div class="container">
 
-				<a href="https://www.semillaslowcost.com/content/1-envios"><img src="https://www.semillaslowcost.com/img/pagos1.png" class="pagos-img pagos1" alt="formas de pagos y envios SLC"><img src="https://www.semillaslowcost.com/img/pagos2.png"  class="pagos-img" alt="formas de pagos y envios SLC"></a>
+				<a href="https://www.semillaslowcost.com/content/1-envios"><img data-src="https://www.semillaslowcost.com/img/pagos1.png" class="pagos-img pagos1 lazy" alt="formas de pagos y envios SLC"><img data-src="https://www.semillaslowcost.com/img/pagos2.png"  class="pagos-img lazy" alt="formas de pagos y envios SLC"></a>
 			<p>{$theme_options['copyright']} <strong>&copy; {$smarty.now|date_format:"%Y"} SemillasLowCost</strong></p>
 			</div><!-- .container -->
 

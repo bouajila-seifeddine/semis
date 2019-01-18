@@ -8,7 +8,7 @@
     GDPR brings very strict rules for gathering and processing personal data. The most important thing to remember is that
     you need to have <strong>legal grounds</strong> for each and every type of data you gather and process. If you are not
     familiar with what this means, we strongly recommend you read this post from the guide: <br>
-    <a href="<?= gdpr('helpers')->docs('guide/legal-grounds-for-processing-data/'); ?>" target="_blank">Consent and other legal grounds for processing data</a>
+    <a href="<?= gdpr('helpers')->docs('legal-grounds-for-processing-data/'); ?>" target="_blank">Consent and other legal grounds for processing data</a>
 </p>
 
 <p>
@@ -37,15 +37,19 @@
     <h2>&#10004; Gravity Forms</h2>
     <p>
         We have detected that Gravity Forms is enabled on your site.
-        We're releasing Gravity Forms compatibility to the GDPR Framework shortly.
-        <!--
-        <a href="<?= gdpr('helpers')->docs('guide/making-your-forms-compliant/'); ?>" target="_blank">Read about making your Gravity forms GDPR compliant.</a>
-        -->
+        You can Use <a  target="_blank" href="https://wordpress.org/plugins/gdpr-for-gravity-forms/">Gravity Forms: GDPR Add-On</a> to make Gravity Forms compatibility to the GDPR Framework.
     </p>
     <hr>
-<?php endif; ?>
-
-<?php if ($hasCF7): ?>
+<?php endif; 
+if ($hasFrm): ?>
+    <h2>&#10004; Formidable Forms</h2>
+    <p>
+        We have detected that Formidable Forms is enabled on your site.
+        You can Use <a  target="_blank" href="https://wordpress.org/plugins/gdpr-for-formidable-forms/">GDPR for Formidable Forms</a> to make Formidable Forms compatibility to the GDPR Framework.
+    </p>
+    <hr>
+<?php endif; 
+if ($hasCF7): ?>
     <h2>&#10004; Contact Form 7</h2>
     <p>
         We have detected that Contact Form 7 is enabled on your site. The GDPR Framework is
@@ -56,7 +60,10 @@
         We have created some tools to help you out!
     </p>
     <p>
-        <a href="<?= gdpr('helpers')->docs('guide/making-your-forms-compliant/'); ?>" target="_blank">Read about making your Contact Form 7 forms GDPR compliant.</a>
+        <a href="<?= gdpr('helpers')->docs('legal-grounds-for-processing-data/'); ?>" target="_blank">Read about making your Contact Form 7 forms GDPR compliant.</a>
+    </p>
+    <p class="gdpr_cf7_notice">
+       <b>NOTE :</b> Your Contact Form 7's data will only store on the website if "<a href="https://wordpress.org/plugins/flamingo/" target="_blank">Flamigo</a>" plugin is installed else no data will be stored on the website, it will only send email. If Flamigo will be activated then there will be new privacy tab appear on each form. You need to setup settings there to make data trackable so that your contact form 7 will become GDPR Complience.
     </p>
     <hr>
 <?php endif; ?>
@@ -77,10 +84,9 @@
 </p>
 <p class="gdpr-contact-custom hidden">
     Each of the forms on your site requires either a <strong>disclaimer</strong> or a <strong>consent checkbox</strong>. <br>
-    We cannot do this automatically - you need to do it yourself or request help from a developer. However, we have created some
-    tools to help you out!
+    We cannot do this automatically - you need to do it yourself or request help from a developer. However, we have created some tools to help you out!
     <br>
-    <a href="<?= gdpr('helpers')->docs('guide/making-your-forms-compliant/'); ?>" target="_blank">Read about integrating custom forms</a>
+    <a href="<?= gdpr('helpers')->docs('legal-grounds-for-processing-data/'); ?>" target="_blank">Read about integrating custom forms</a>
 </p>
 
 <hr>

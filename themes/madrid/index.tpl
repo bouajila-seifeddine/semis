@@ -53,7 +53,7 @@
 			if((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 3700 && comprobador == true && flag<12)
 			{
 				comprobador = false;
-				$('#resultados').append("<div class='loading'  style='margin-bottom: 500px; text-align: center;'>  <img src='https://pruebas.semillaslowcost.com/img/cargando.gif'> </div>");
+				$('#resultados').append("<div class='loading'  style='margin-bottom: 500px; text-align: center;'>  <img src='https://www.semillaslowcost.com/img/cargando.gif'> </div>");
 				var llamada = $.ajax({
 
 			type: "GET",
@@ -102,7 +102,7 @@
 	<p>S.L.C es posiblemente el <a href="https://www.semillaslowcost.com/grow-shop/">Grow Shop online más barato</a> que podréis encontrar en la red. Esta empresa valenciana lleva muchos años dedicándose a la <b>comercialización de semillas de marihuana de máxima calidad.</b>  De hecho, la empresa surgió con la intención de hacer llegar las mejores semillas de marihuana a todos los rincones del planeta y a cualquier cultivador gracias a su venta online, sea cual sea su nivel adquisitivo. De momento, S.L.C reparte semillas y cualquier tipo de producto relacionado con el cultivo agrícola a toda Europa y Latinoamérica.</p>
 	<p>La empresa surgió ya que considerábamos que el mercado cannábico necesitaba distribuidoras que ajustarán al máximo los precios e hicieran llegar a cualquier cultivador todo lo que necesitará, sin importar su nivel económico. Obviamente vivimos de esto y tenemos que obtener beneficios, pero nuestra intención es ofrecer siempre el precio más competitivo para que todos podáis haceros con esas semillas de marihuana que deseáis o ese <a href="https://www.semillaslowcost.com/93-armarios-de-cultivo">armario de cultivo</a> con el que tanto os gustaría trabajar. </p>
 
-	<img src="https://www.semillaslowcost.com/grow-shop/promociones-grow-shop.png" class="img-semillas-index" alt="Semillas Cannabis">
+	<img data-src="https://www.semillaslowcost.com/grow-shop/promociones-grow-shop.png" class="img-semillas-index lazy" alt="Semillas Cannabis">
 
 	<h2>Bancos que tenemos en SLC</h2>
 	<ul class="lista-bancos-index">
@@ -148,13 +148,13 @@
 	<h2>¿Qué tipos de semillas ofertamos?</h2>
 	<p>Ofertamos todo tipo de semillas, desde regulares, hasta feminizadas, autoflorecientes, ricas en CBD o cualquier otro tipo de semillas que se oferten. </p>
 	<h3>Regulares</h3>
-	<img src="img/index/semillas-marihuana-regulares.jpg" class="img-semillas-index" alt="Semillas Regulares">
+	<img data-src="img/index/semillas-marihuana-regulares.jpg" class="img-semillas-index lazy" alt="Semillas Regulares">
 	<p>Las  <a href="https://www.semillaslowcost.com/16-semillas-regulares" title="Comprar Semillas Regulares">semillas regulares</a> son las que se han cultivado desde el principio, semillas que pueden ser machos o hembras por igual. Estas genéticas suelen ser las más resistentes y potentes, pero nos obligan a sexar para retirar los machos y, por tanto, perdemos aproximadamente un 50% de las cepas que hemos hecho crecer. </p>
 	<h3>Feminizadas</h3>
-	<img src="img/index/semillas-marihuana-feminizadas.jpg" class="img-semillas-index" alt="Semillas Feminizadas">
+	<img data-src="img/index/semillas-marihuana-feminizadas.jpg" class="img-semillas-index lazy" alt="Semillas Feminizadas">
 	<p>Sin duda las más codiciadas, las <a href="https://www.semillaslowcost.com/13-semillas-feminizadas" title="Comprar Semillas Feminizadas">semillas feminizadas</a> son aquellas que han sido producidas asegurando un 99% de posibilidades de que produzcan una cepa hembra. De ese modo nos aseguramos que todas las plantas que cultivamos serán hembras y no tendremos que matar a los machos ni estar atentos para no sufrir polinizaciones.</p>
 	<h3>Autoflorecientes</h3>
-	<img src="img/index/semillas-marihuana-autofloreciente.jpg" class="img-semillas-index" alt="Semillas Automáticas">
+	<img data-src="img/index/semillas-marihuana-autofloreciente.jpg" class="img-semillas-index lazy" alt="Semillas Automáticas">
 	<p>Otro tipo son las <a href="https://www.semillaslowcost.com/15-semillas-autoflorecientes" title="Comprar Semillas Autoflorecientes">semillas autoflorecientes o automáticas</a>, estas son feminizadas que han sido cruzadas con una variedad (Rudelaris) que las hace crecer mucho más rápido, cogollar mucho más rápido, alcanzar tamaños reducidos y no depender del fotoperiodo para cogollar.</p>
 	<h3>Otras Opciones</h3>
 	<p>Otras opciones son las semillas feminizadas rápidas o Fast Version y las ricas en CBD. Estas variedades con Cbd son las denominadas semillas de marihuana medicinales ya que la marihuana que produzca tendrá cualidades medicinales. Incluso disponemos en catálogo de variedades famosas en EEUU o fenotipos raros y únicos capaces de generar flores rojas o moradas</p>
@@ -163,7 +163,7 @@
 
 </div>
 <div id="posts">
-	<h2 class="pull-left"> <img class="icon icon-money main-color" width="38" height="38" style="padding:3%;" alt="icono hoja marihuana" src="https://www.semillaslowcost.com/img/hojaico.png"> <strong>Últimos Artículos del Blog</strong></h2>
+	<h2 class="pull-left"> <img class="icon icon-money main-color lazy" width="38" height="38" style="padding:3%;" alt="icono hoja marihuana" data-src="https://www.semillaslowcost.com/img/hojaico.png"> <strong>Últimos Artículos del Blog</strong></h2>
 <div class="clearfix"></div>
 	 {if isset($posts) && $posts|@count}
                  {foreach from=$posts item=post}

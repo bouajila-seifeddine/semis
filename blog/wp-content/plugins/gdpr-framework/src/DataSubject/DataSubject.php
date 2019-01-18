@@ -78,6 +78,14 @@ class DataSubject
         return null;
     }
 
+      /**
+     * @delete logs
+     */
+    public function gdpr_delete_log($id)
+    {
+        return $this->consentManager->gdpr_delete_log($id);
+    }
+
     /**
      * Check if the data subject has consented to something specific
      */
@@ -101,7 +109,21 @@ class DataSubject
     {
         return $this->consentManager->getConsentData($this->consents);
     }
+    /**
+     * Get a list of all consents intersected with the data subjects consents
+     */
+    public function getClassiDocsdata($email)
+    {   
+        return $this->consentManager->getClassiDocsdata($email);
+    }
 
+    /**
+     * Get a list of user logs
+     */
+    public function getuserlogsData()
+    {
+        return $this->consentManager->getuserlogsData($this->email);
+    }
     /**
      * Get a list of all visible consents
      */

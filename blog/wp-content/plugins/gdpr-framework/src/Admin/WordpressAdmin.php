@@ -52,7 +52,7 @@ class WordpressAdmin
     public function maybeShowHelpNotice()
     {
         if ('tools_page_privacy' === get_current_screen()->base) {
-            gdpr('admin-notice')->add('admin/notices/help');
+            //gdpr('admin-notice')->add('admin/notices/help');
         }
     }
 
@@ -63,7 +63,7 @@ class WordpressAdmin
     {
         add_management_page(
             _x('Privacy & GDPR Settings', '(Admin)', 'gdpr-framework'),
-            _x('Privacy', '(Admin)', 'gdpr-framework'),
+            _x('Data443 GDPR', '(Admin)', 'gdpr-framework'),
             'manage_options',
             'privacy',
             [$this->adminPage, 'renderPage']
@@ -95,7 +95,7 @@ class WordpressAdmin
             'gdpr-admin',
             gdpr('config')->get('plugin.url') . 'assets/gdpr-admin.css'
         );
-
+                
         /**
          * jQuery UI dialog for modals
          */
@@ -114,10 +114,14 @@ class WordpressAdmin
             gdpr('config')->get('plugin.url') . 'assets/jquery.repeater.min.js',
             ['jquery']
         );
-
+        
         /**
          * Select2
          */
+        
+        wp_dequeue_script( 'select2css' );
+        wp_dequeue_script( 'select2' );
+        
         wp_enqueue_style(
             'select2css',
             gdpr('config')->get('plugin.url') . 'assets/select2-4.0.5.css'
@@ -125,7 +129,7 @@ class WordpressAdmin
 
         wp_enqueue_script(
             'select2',
-            gdpr('config')->get('plugin.url') . 'assets/select2-4.0.5.js',
+            gdpr('config')->get('plugin.url') . 'assets/select2-4.0.3.js',
             ['jquery']
         );
 
@@ -134,6 +138,13 @@ class WordpressAdmin
             gdpr('config')->get('plugin.url') . 'assets/conditional-show.js',
             ['jquery']
         );
+
+        /**
+         * datatable in plugin
+         */
+        wp_enqueue_script( 'gdprdataTables-js', '//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js' , '', '', true );
+        wp_enqueue_style( 'datatables-css', '//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css', 'datatables');
+
     }
 
     /**

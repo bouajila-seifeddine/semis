@@ -1,13 +1,20 @@
+/** fix for Gutenberg Editor **/
+.components-notice-list{
+  display:none;
+}
 /** Admin notice **/
 .notice-gdpr {
   border-left-color: #0095a8;
   overflow: hidden;
+  display:block;
 }
 
 .notice-gdpr img {
   width: 100px;
   margin: 25px 0;
   float: left;
+  display:block;
+
 }
 
 .notice-gdpr .gdpr-content {
@@ -15,6 +22,7 @@
   width: calc(100% - 120px);
   padding-left: 20px;
   padding-bottom: 15px;
+  display:block;
 }
 
 /** Modal window **/
@@ -96,7 +104,6 @@
   border-radius: 4px;
   border: 1px solid #aaa;
   box-shadow: none;
-  height: 32px;
   line-height: 28px;
 }
 
@@ -359,4 +366,39 @@
 
 .gdpr-framework-wrap .col p:last-child {
   margin-bottom: 0;
+}
+.gdpr-hidden {
+	display: none !important;
+}
+.button.button-primary.show_form_consent_gdpr {
+	float: none;
+	display: block;
+}
+.wp-editor-container textarea{
+  height: 100%;
+}
+.gdpr-user-logs {
+	width: 100%;
+	border: 2px solid;
+	text-align: center;
+}
+.gdpr-user-logs tr td {
+	border: 2px solid;
+}
+.userlog-scroll {
+	height: 300px;
+	overflow: scroll;
+}
+
+/* css for color picker admin  */
+.iris-picker.iris-mozilla.iris-border {
+	position: absolute;
+	z-index: 999;
+}
+.welcome-gdpr-notice {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+  margin: 16px 0;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.04);
 }

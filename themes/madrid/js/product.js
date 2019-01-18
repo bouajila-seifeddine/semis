@@ -1072,11 +1072,28 @@ function checkUrl()
 	return false;
 }
 
-window.addEventListener('scroll', function(){
-    var allimages= document.getElementsByTagName('img');
-    for (var i=0; i<allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-        }
+$(window).on('scroll',function(){
+    var $home = $('#attributes');
+    var divBottom     = $home.offset().top + $home.height();
+    var divTop    = $home.offset().top + $home.height();  
+    var windowTop    = $(window).scrollTop();  
+
+
+    if (divBottom <= windowTop && $(window).width() < 700) {
+    		$("#add_to_cart").addClass("boton-compra-follow");
+        	$(".content_prices").css("position", "fixed");
+			$(".content_prices").css("width", "100%");
+			$(".content_prices").css("left", "0");
+			$(".content_prices").css("bottom", "-5px");	 
+			$(".content_prices").css("z-index", "99998");
+			$("#attributes").css("padding-bottom", "80px");
+			$("#btn-comprar-whats").css("display", "inline-block");
+			
+
+    } else{
+			$("#add_to_cart").removeClass("boton-compra-follow");
+			$(".content_prices").css("position", "inherit");
+			$("#attributes").css("padding-bottom", "0px");
+			$("#btn-comprar-whats").css("display", "none");
     }
-}, false);
+});

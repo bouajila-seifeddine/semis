@@ -29,7 +29,7 @@ class PolicySettings extends InstallerStep implements InstallerStepInterface
 
         $hasTermsPage = gdpr('options')->get('has_terms_page');
         $termsPage    = gdpr('options')->get('terms_page');
-
+        $policy_page_url = gdpr('options')->get('custom_policy_page');
         // Woo compatibility
         if (!$termsPage && get_option('woocommerce_terms_page_id')) {
             $hasTermsPage  = 'yes';
@@ -63,7 +63,7 @@ class PolicySettings extends InstallerStep implements InstallerStepInterface
         $representativeContactEmail = gdpr('options')->get('representative_contact_email');
         $representativeContactPhone = gdpr('options')->get('representative_contact_phone');
 
-        $dpaWebsite  = gdpr('options')->get('dpa_name');
+        $dpaWebsite  = gdpr('options')->get('dpa_website');
         $dpaEmail = gdpr('options')->get('dpa_email');
         $dpaPhone = gdpr('options')->get('dpa_phone');
         $dpaData = json_encode(gdpr('helpers')->getDataProtectionAuthorities());
@@ -77,6 +77,7 @@ class PolicySettings extends InstallerStep implements InstallerStepInterface
             compact(
                 'policyPage',
                 'policyPageSelector',
+                'policy_page_url',
                 'companyName',
                 'companyLocation',
                 'contactEmail',
@@ -114,7 +115,7 @@ class PolicySettings extends InstallerStep implements InstallerStepInterface
     */
 
     public function submit()
-    {
+    {   
         /**
          * Policy page
          */
@@ -123,6 +124,16 @@ class PolicySettings extends InstallerStep implements InstallerStepInterface
             gdpr('options')->set('policy_page', $id);
         } else {
             gdpr('options')->set('policy_page', $_POST['gdpr_policy_page']);
+        }
+
+
+        /**
+         * Custom Policy page URL
+         */
+        if (isset($_POST['gdpr_custom_policy_page']) && '' != $_POST['gdpr_custom_policy_page']) {
+            gdpr('options')->set('custom_policy_page',$_POST['gdpr_custom_policy_page']);
+        } else {
+            gdpr('options')->set('custom_policy_page', "");
         }
 
         /**
@@ -208,8 +219,40 @@ class PolicySettings extends InstallerStep implements InstallerStepInterface
         wp_update_post([
             'ID'           => gdpr('options')->get('policy_page'),
             'post_content' => gdpr('view')->render(
-                'policy/policy'
+                'policy/policy',
+                $this->getData()
             ),
         ]);
+    }
+
+    public function getData()
+    {
+        $location = gdpr('options')->get('company_location');
+        $date = date(get_option('date_format'));
+
+        return [
+            'companyName'     => gdpr('options')->get('company_name'),
+            'companyLocation' => $location,
+            'contactEmail'    => gdpr('options')->get('contact_email') ?
+                gdpr('options')->get('contact_email') :
+                get_option('admin_email'),
+
+            'hasRepresentative'          => gdpr('helpers')->countryNeedsRepresentative($location),
+            'representativeContactName'  => gdpr('options')->get('representative_contact_name'),
+            'representativeContactEmail' => gdpr('options')->get('representative_contact_email'),
+            'representativeContactPhone' => gdpr('options')->get('representative_contact_phone'),
+
+            'dpaWebsite' => gdpr('options')->get('dpa_website'),
+            'dpaEmail'   => gdpr('options')->get('dpa_email'),
+            'dpaPhone'   => gdpr('options')->get('dpa_phone'),
+
+            'hasDpo'   => gdpr('options')->get('has_dpo'),
+            'dpoName'  => gdpr('options')->get('dpo_name'),
+            'dpoEmail' => gdpr('options')->get('dpo_email'),
+
+            'hasTerms' => gdpr('options')->get('terms_page'),
+
+            'date' => $date,
+        ];
     }
 }

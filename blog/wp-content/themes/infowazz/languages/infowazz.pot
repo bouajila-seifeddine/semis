@@ -1,1281 +1,1693 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2018-09-20 14:37+0000\n"
+"X-Generator: Loco https://localise.biz/"
 
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:88
-msgid " Edit"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:70
-msgid "%1$s %2$s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:70
-msgid "%1$s at %2$s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:1
-msgid "%1$s."
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:26
-msgid ", "
+#: searchform.php:2 inc/functions/functions-header__.php:3
+msgctxt "Buscar"
+msgid "To search type and hit enter"
 msgstr ""
 
 #. Text in echo
-#: infowazz/404.php:5
+#: 404.php:5
 msgid "404"
 msgstr ""
 
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:26
-msgid "<div class=\"mt-meta\"><i class=\"fa fa-folder-open-o\"></i> %1$s <span class=\"mt_space\"></span> <i class=\"fa fa-calendar\"></i> %3$s </div>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:26
-msgid "<div class=\"mt-meta\"><i class=\"fa fa-folder-open-o\"></i> %1$s <span class=\"mt_space\"></span> <i class=\"fa fa-tag\"></i> %2$s <span class=\"mt_space\"></span> <i class=\"fa fa-calendar\"></i> %3$s </div>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:26
-msgid "<div class=\"mt-meta\">Posted on <i class=\"fa fa-calendar\"></i> %3$s </div>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:1
-msgid "<span class=\"date_links\">%2$s</span>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:17
-msgid "<span class=\"meta-nav\">&larr; Older posts</span> "
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:30
-#: infowazz/comments.php:49
-msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:90
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:21
-msgid "<span class=\"meta-nav\">Newer posts  &rarr;</span>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-content.php:43
-msgid "About %s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-footer.php:16
-msgid "About Us"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Ads"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
 #. Text in echo
-#: infowazz/tag.php:28
-msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Article bottom ad"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "Author Page Sidebar"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Background"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Background Color"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Background Image"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Background color"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "Blog/Category Sidebar"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Bold"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:1
-msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Bottom Footer Background"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Bottom Footer Link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Bottom Footer Link Hover"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Bottom Footer Text"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Button: Hot Posts"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Button: Latest Posts"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Button: Popular Posts"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Button: Trending Posts"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
-msgid "Cancel reply"
-msgstr ""
-
-#. Text in function
-#: infowazz/category.php:52
-#: infowazz/category.php:59
-msgid "Category"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-footer.php:18
-msgid "Contact us:"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Copyright 2016. Powered by WordPress Theme. By Madars Bitenieks"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Copyright Text"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 1"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 2"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 3"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 4"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 5"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 6"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 7"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 8"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Custom ad 9"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "Default Sidebar"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Default: 40"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-posts.php:1
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Disable"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Dismiss this notice"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Display Copyright/Footer Menu Area"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Display Logo/About Us/Follow Us Area"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Dribble icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:61
-msgid "Edit"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
-msgid "Email"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-posts.php:1
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Enable"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-plugins.php:1
-msgid "Envato WordPress Toolkit"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Facebook icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-sidebar.php:11
-msgid "Featured Post"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Fixed Header"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Fixed Share Buttons"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-footer.php:21
-msgid "Follow Us"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-header.php:48
-msgid "Followers"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Fonts Size"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Footer"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Footer Border"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Footer Colors"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Footer Page"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Footer Settings"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Footer top ad"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Form Button"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "General"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Google plus link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "H1 size (px)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "H2 size (px)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "H3 size (px)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "H4 size (px)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "H5 size (px)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "H6 size (px)"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-header.php:105
-#: infowazz/inc/functions/functions-footer.php:95
-msgid "HOT"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Header"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Header & Menu Colors"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Header Ad"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Header Button Name"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Header Button Open In New Tap"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Header Button URL"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Header Top"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Header Top Follower Count"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Height"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:95
-msgid "Home"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Hover"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Icon"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Instagram icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Install Plugins"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Install Required Plugins"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-header.php:103
-#: infowazz/inc/functions/functions-footer.php:93
-msgid "LATEST"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Layouts"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
-msgid "Leave a Comment"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
-msgid "Leave a Reply to %s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Lines"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "LinkedIn icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Links"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\" class=\"mt-theme-text\">Log out?</a>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Logo Image"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Logo Settings"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Logo height (px)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-plugins.php:1
-msgid "Magazine Plug"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Menu Background"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Menu Icon"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Menu Links"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Menu Search"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Menu Smart Button"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Menu Social Icons"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Menu Sub Links"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Mobile Header"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Logo"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu BG Image"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu BG Image Position"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu BG Image Style"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu Background"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu Link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu Link Hover"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu Social Icon"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu Social Icon Hover"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu Text"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Mobile Menu Title"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
-msgid "Name"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:50
-msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:91
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-content.php:63
-msgid "Next article"
-msgstr ""
-
-#. Text in echo
-#: infowazz/404.php:6
+#: 404.php:6
 msgid "No Page Found"
 msgstr ""
 
 #. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-hooks.php:1
-msgid "No older posts found"
-msgstr ""
-
-#. Text in echo
-#: infowazz/tag.php:24
-#: infowazz/search.php:28
-msgid "Nothing Found"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Off"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "On"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "On/Off"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-plugins.php:1
-msgid "One Click Demo Import"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Only Text"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Open in new page"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Other Colors"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Out"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-header.php:104
-#: infowazz/inc/functions/functions-footer.php:94
-msgid "POPULAR"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:95
-msgid "Page"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-general.php:95
-msgid "Page %s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-plugins.php:1
-msgid "Page Builder by SiteOrigin"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Page Layouts"
-msgstr ""
-
-#. Text in function
-#: infowazz/content.php:64
-msgid "Pages:"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Parallax"
-msgstr ""
-
-#. Text in function
-#: infowazz/content.php:39
-msgid "Permalink to %s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Photo bg"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-comment.php:61
-msgid "Pingback:"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Pinterest icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Plugin activated successfully."
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "Post Bottom (After Comments)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "Post Bottom (Before Comments)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-posts.php:1
-msgid "Post Carousel"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Post List Category"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Post Share Count"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "Post Sidebar"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-posts.php:1
-msgid "Post Style"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Post View Count"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-header.php:103
-#: infowazz/inc/functions/functions-header.php:104
-#: infowazz/inc/functions/functions-header.php:105
-#: infowazz/inc/functions/functions-header.php:106
-#: infowazz/inc/functions/functions-footer.php:93
-#: infowazz/inc/functions/functions-footer.php:94
-#: infowazz/inc/functions/functions-footer.php:95
-#: infowazz/inc/functions/functions-footer.php:96
-msgid "Posts"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-content.php:62
-msgid "Previous article"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-content.php:10
-msgid "Read More:"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:101
-msgid "Reply"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Return to the Dashboard"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Rss icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Sample: 15"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Sample: 18"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Sample: 24"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Sample: 31"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Sample: 48"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Sample: 56"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
-msgid "Sample: 72"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Search Button"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "Search Page Sidebar"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-title.php:11
-msgid "Search Results for: %s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Settings"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-header.php:216
-#: infowazz/inc/single/single-heads.php:61
-#: infowazz/inc/single/single-content.php:25
-msgid "Share on Facebook"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-heads.php:52
-msgid "Shares"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Show Always"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Show When Scroll Up"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-posts.php:1
-msgid "Sidebar Position"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Sidebar bottom ad"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Sidebar middle ad"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "Sidebar top ad"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Site Color"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Skype icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Small Menu For Desktop"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Smart Menu"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Social Icon"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Social Icon Background"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Social Icon Hover"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Social Icon Hover Background"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Social Icons"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#. Text in echo
-#: infowazz/search.php:30
-msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Style"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
-msgid "Submit Comment"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-header.php:106
-#: infowazz/inc/functions/functions-footer.php:96
-msgid "TRENDING"
-msgstr ""
-
-#. Text in function
-#: infowazz/tag.php:18
+#: tag.php:18
 msgid "Tag"
 msgstr ""
 
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Text"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "The Author page sidebar widget area"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "The blog sidebar widget area"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "The following plugin was activated successfully:"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "The page sidebar widget area 1"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "The post bottom widget area"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "The search page sidebar widget area"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-widget.php:1
-msgid "The single page sidebar widget area"
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "There are one or more required or recommended plugins to install, update or activate."
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:1
-msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
-msgstr ""
-
-#. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "This plugin needs to be updated to be compatible with your theme."
+#. Text in echo
+#: tag.php:24 search.php:28
+msgid "Nothing Found"
 msgstr ""
 
 #. Text in echo
-#: infowazz/comments.php:9
-msgid "This post is password protected. Enter the password to view and post comments."
+#: tag.php:28
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
 msgstr ""
 
 #. Text in echo
-#: infowazz/searchform.php:2
-msgid "To search type and hit enter"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Top Bar"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Top Footer Background"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Top Footer Link"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-colors.php:1
-msgid "Top Footer Link Hover"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Top Space"
+#: search.php:30
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
 msgstr ""
 
 #. Text in echo
-#: infowazz/inc/single/single-sidebar.php:26
-msgid "Trending Posts"
+#: comments.php:9
+msgid ""
+"This post is password protected. Enter the password to view and post "
+"comments."
+msgstr ""
+
+#: comments.php:20
+#, php-format
+msgid "One Response"
+msgid_plural "%1$s Responses"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Text in function
+#: comments.php:30 comments.php:49
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
 msgstr ""
 
 #. Text in function
-#: infowazz/inc/functions/functions-header.php:217
-#: infowazz/inc/single/single-heads.php:62
-#: infowazz/inc/single/single-content.php:26
-msgid "Tweet on Twitter"
+#: comments.php:31 comments.php:50
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Twitter icon link"
-msgstr ""
-
-#. Text in echo
-#: infowazz/inc/functions/functions-header.php:84
-msgid "Type and hit enter to search ..."
+#: comments.php:68
+msgid "Name"
 msgstr ""
 
 #. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Update Required"
+#: comments.php:70
+msgid "Email"
 msgstr ""
 
 #. Text in function
-#: infowazz/all_plugins/class-tgm-plugin-activation.php:1
-msgid "Updating Plugin: %s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Upload Footer Logo"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Upload Footer Logo Retina(x2)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Upload Logo"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Upload Responsive Logo (x2)"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/functions/functions-comment.php:1
-#: infowazz/inc/single/single-content.php:47
-#: infowazz/inc/functions/functions-general.php:26
-msgid "View all posts by %s"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-heads.php:53
-msgid "Views"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
-msgid "Vimeo icon link"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
+#: comments.php:71
 msgid "Website"
 msgstr ""
 
 #. Text in function
-#: infowazz/inc/customizer/customizer-header.php:1
-msgid "Width"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/customizer/customizer-ads.php:1
-msgid "YOUR AD CODE"
-msgstr ""
-
-#. Text in function
-#: infowazz/inc/single/single-content.php:68
-msgid "You may be interested"
-msgstr ""
-
-#. Text in function
-#: infowazz/comments.php:125
+#: comments.php:77
+#, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
+#. Text in function
+#: comments.php:95
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\" class=\"mt-theme-text\">Log out?</a>"
+msgstr ""
+
+#. Text in function
+#: comments.php:117
+msgid "Leave a Comment"
+msgstr ""
+
+#. Text in function
+#: comments.php:118
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#. Text in function
+#: comments.php:119
+msgid "Cancel reply"
+msgstr ""
+
+#. Text in function
+#: comments.php:120
+msgid "Submit Comment"
+msgstr ""
+
+#. Text in function
+#: category.php:52 category.php:62
+msgid "Category"
+msgstr ""
+
+#. Text in function
+#: content.php:39
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#. Text in function
+#: content.php:64
+msgid "Pages:"
+msgstr ""
+
+#: functions.php:59
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:60
+msgid "Top Navigation"
+msgstr ""
+
+#. Text in function
+#: functions.php:61 inc/customizer/customizer-header.php:225
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:62
+msgid "Footer Navigation"
+msgstr ""
+
+#: functions.php:83
+msgid "Demo 1"
+msgstr ""
+
+#: functions.php:87
+msgid "Customize this theme from Appearance/Customize"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. %s: plugin name.
+#: all_plugins/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. %s: plugin name.
+#: all_plugins/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:341
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:347
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:353
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:359
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:365
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:371
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:393
+#: all_plugins/class-tgm-plugin-activation.php:912
+#: all_plugins/class-tgm-plugin-activation.php:2618
+#: all_plugins/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:394
+#: all_plugins/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:395
+#: all_plugins/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: plugin name.
+#: all_plugins/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. 1: plugin name.
+#: all_plugins/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: dashboard link.
+#: all_plugins/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:1019
+#: all_plugins/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:1206
+#: all_plugins/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. %s: version number
+#: all_plugins/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#. 1: install status, 2: update status
+#: all_plugins/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. 1: number of plugins.
+#: all_plugins/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: all_plugins/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: all_plugins/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: all_plugins/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: all_plugins/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: all_plugins/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: all_plugins/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: all_plugins/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. 1: plugin name, 2: error message.
+#: all_plugins/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: %2$s."
+msgstr ""
+
+#. 1: plugin name.
+#: all_plugins/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: all_plugins/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3594
+#: all_plugins/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3594
+#: all_plugins/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: all_plugins/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: all_plugins/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: all_plugins/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: all_plugins/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:10
+msgid "Default Sidebar"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:12
+msgid "The page sidebar widget area 1"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:23
+msgid "Blog/Category Sidebar"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:25
+msgid "The blog sidebar widget area"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:37
+msgid "Post Sidebar"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:39
+msgid "The single page sidebar widget area"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:48
+msgid "Post Bottom (Before Comments)"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:50 inc/functions/functions-widget.php:62
+msgid "The post bottom widget area"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:60
+msgid "Post Bottom (After Comments)"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:74
+msgid "Search Page Sidebar"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:76
+msgid "The search page sidebar widget area"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:86
+msgid "Author Page Sidebar"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-widget.php:88
+msgid "The Author page sidebar widget area"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-plugins.php:28
+msgid "Envato WordPress Toolkit"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-plugins.php:38
+msgid "Page Builder by SiteOrigin"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-plugins.php:44
+msgid "One Click Demo Import"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-plugins.php:50
+msgid "Magazine Plug"
+msgstr ""
+
 #. Text in echo
-#: infowazz/inc/functions/functions-comment.php:93
+#: inc/functions/functions-header.php:73 inc/functions/functions-header__.php:2
+msgid "Followers"
+msgstr ""
+
+#: inc/functions/functions-header.php:112
+msgid "Type and hit enter to search ..."
+msgstr ""
+
+#. Text in echo
+#: inc/functions/functions-header.php:131
+#: inc/functions/functions-header__.php:107
+#: inc/functions/functions-footer.php:93
+msgid "LATEST"
+msgstr ""
+
+#. Text in echo
+#: inc/functions/functions-header.php:131
+#: inc/functions/functions-header.php:132
+#: inc/functions/functions-header.php:133
+#: inc/functions/functions-header.php:134
+#: inc/functions/functions-header__.php:107
+#: inc/functions/functions-header__.php:108
+#: inc/functions/functions-header__.php:109
+#: inc/functions/functions-header__.php:110
+#: inc/functions/functions-footer.php:93 inc/functions/functions-footer.php:94
+#: inc/functions/functions-footer.php:95 inc/functions/functions-footer.php:96
+msgid "Posts"
+msgstr ""
+
+#. Text in echo
+#: inc/functions/functions-header.php:132
+#: inc/functions/functions-header__.php:108
+#: inc/functions/functions-footer.php:94
+msgid "POPULAR"
+msgstr ""
+
+#. Text in echo
+#: inc/functions/functions-header.php:133
+#: inc/functions/functions-header__.php:109
+#: inc/functions/functions-footer.php:95
+msgid "HOT"
+msgstr ""
+
+#. Text in echo
+#: inc/functions/functions-header.php:134
+#: inc/functions/functions-header__.php:110
+#: inc/functions/functions-footer.php:96
+msgid "TRENDING"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-header.php:260
+#: inc/functions/functions-header__.php:228 inc/single/single-content.php:25
+#: inc/single/single-heads.php:78
+msgid "Share on Facebook"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-header.php:261
+#: inc/functions/functions-header__.php:229 inc/single/single-content.php:26
+#: inc/single/single-heads.php:79
+msgid "Tweet on Twitter"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-title.php:11
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-hooks.php:344
+msgid "No older posts found"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by chosen font(s), translate this to 'off'. Do not translate into your own language.
+#: inc/functions/functions-hooks.php:361
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:17
+msgid "<span class=\"meta-nav\">&larr; Older posts</span> "
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:21
+msgid "<span class=\"meta-nav\">Newer posts  &rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:43
+#: inc/functions/functions-general.php:46
+msgid ", "
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:57
+#: inc/functions/functions-comment.php:15 inc/single/single-content.php:69
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:63
+#, php-format
+msgid ""
+"<div class=\"mt-meta\"><i class=\"fa fa-folder-open-o\"></i> %1$s <span "
+"class=\"mt_space\"></span> <i class=\"fa fa-tag\"></i> %2$s <span "
+"class=\"mt_space\"></span> <i class=\"fa fa-calendar\"></i> %3$s </div>"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:65
+#, php-format
+msgid ""
+"<div class=\"mt-meta\"><i class=\"fa fa-folder-open-o\"></i> %1$s <span "
+"class=\"mt_space\"></span> <i class=\"fa fa-calendar\"></i> %3$s </div>"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:67
+#, php-format
+msgid ""
+"<div class=\"mt-meta\">Posted on <i class=\"fa fa-calendar\"></i> %3$s </div>"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:90
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:91
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:127
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:170
+msgid "Home"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-general.php:258
+msgid "Page"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-footer.php:16
+msgid "About Us"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-footer.php:18
+msgid "Contact us:"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-footer.php:21
+msgid "Follow Us"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:6
+#, php-format
+msgid "<span class=\"date_links\">%2$s</span>"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:31
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:33
+#, php-format
+msgid "%1$s."
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:35
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">"
+"permalink</a>."
+msgstr ""
+
+#. Text in echo
+#: inc/functions/functions-comment.php:61
+msgid "Pingback:"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:61
+msgid "Edit"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:78
+#, php-format
+msgid "%1$s %2$s"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:84
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: inc/functions/functions-comment.php:88
+msgid " Edit"
+msgstr ""
+
+#. Text in echo
+#: inc/functions/functions-comment.php:93
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #. Text in function
-#: infowazz/inc/customizer/customizer-footer.php:15
+#: inc/functions/functions-comment.php:101
+msgid "Reply"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:22
+msgid "Footer"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:31
+msgid "Settings"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:37
+msgid "Social Icons"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:46
+msgid "Footer Settings"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:57
+msgid "Footer Page"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:72
+msgid "Display Logo/About Us/Follow Us Area"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:86
+msgid "Display Copyright/Footer Menu Area"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:99
+msgid "Upload Footer Logo"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:111
+msgid "Upload Footer Logo Retina(x2)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:119
+msgid "Copyright 2016. Powered by WordPress Theme. By Madars Bitenieks"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:125
+msgid "Copyright Text"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:147
+msgid "Open in new page"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:166
+msgid "Facebook icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:178
+msgid "Instagram icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:190
+msgid "Twitter icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:202
+msgid "Vimeo icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:214
 msgid "Youtube icon link"
 msgstr ""
 
 #. Text in function
-#: infowazz/inc/customizer/customizer-fonts.php:1
+#: inc/customizer/customizer-footer.php:226
+msgid "LinkedIn icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:238
+msgid "Google plus link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:250
+msgid "Dribble icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:262
+msgid "Skype icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:276
+msgid "Pinterest icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-footer.php:288
+msgid "Rss icon link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:8
+msgid "Layouts"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:17
+msgid "Page Layouts"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:29
+#: inc/customizer/customizer-header.php:42
+msgid "Header"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:48
+msgid "Logo Image"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:55
+msgid "Logo Settings"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:74
+msgid "Upload Logo"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:88
+msgid "Upload Responsive Logo (x2)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:96
+msgid "Mobile Logo"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:110
+msgid "Width"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:128
+msgid "Height"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:171
+#: inc/customizer/customizer-header.php:188
+msgid "Top Space"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:210
+msgid "Logo height (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:212
+msgid "Default: 40"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:231
+msgid "Parallax"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:252
+msgid "On/Off"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:273
+msgid "Menu Icon"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:301
+msgid "Mobile Menu Background"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:318
+msgid "Mobile Menu Link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:335
+msgid "Mobile Menu Link Hover"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:352
+msgid "Mobile Menu Title"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:369
+msgid "Mobile Menu Text"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:386
+msgid "Mobile Menu Social Icon"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:403
+msgid "Mobile Menu Social Icon Hover"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:420
+msgid "Mobile Menu BG Image"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:437
+msgid "Mobile Menu BG Image Style"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:461
+msgid "Mobile Menu BG Image Position"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:494
+msgid "Background color"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:506
+#: inc/customizer/customizer-header.php:543
+msgid "Header Top"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:515
+msgid "Small Menu For Desktop"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:520
+#: inc/customizer/customizer-header.php:535
+#: inc/customizer/customizer-header.php:548
+#: inc/customizer/customizer-header.php:560
+#: inc/customizer/customizer-header.php:573
+msgid "On"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:521
+#: inc/customizer/customizer-header.php:536
+#: inc/customizer/customizer-header.php:549
+#: inc/customizer/customizer-header.php:561
+#: inc/customizer/customizer-header.php:574
+msgid "Off"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:530
+msgid "Search Button"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:555
+msgid "Header Top Follower Count"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:568
+msgid "Fixed Share Buttons"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:581
+msgid "Fixed Header"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:588
+msgid "Show When Scroll Up"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:589
+msgid "Show Always"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-header.php:590
+#: inc/customizer/customizer-posts.php:15
+msgid "Disable"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:10
+msgid "Fonts Size"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:29
+msgid "H1 size (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:30
+msgid "Sample: 72"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:48
+msgid "H2 size (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:49
+msgid "Sample: 56"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:67
+msgid "H3 size (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:68
+msgid "Sample: 48"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:86
+msgid "H4 size (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:87
+msgid "Sample: 31"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:105
+msgid "H5 size (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:106
+msgid "Sample: 24"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:124
+msgid "H6 size (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:125
+msgid "Sample: 18"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:144
 msgid "p size (px)"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-fonts.php:145
+msgid "Sample: 15"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-posts.php:8
+msgid "Post Carousel"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-posts.php:14
+msgid "Enable"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-posts.php:22
+msgid "Sidebar Position"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-posts.php:36
+msgid "Post Style"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:11
+msgid "Ads"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:16
+msgid "Sidebar top ad"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:24 inc/customizer/customizer-ads.php:46
+#: inc/customizer/customizer-ads.php:67 inc/customizer/customizer-ads.php:88
+#: inc/customizer/customizer-ads.php:110 inc/customizer/customizer-ads.php:132
+#: inc/customizer/customizer-ads.php:154 inc/customizer/customizer-ads.php:176
+#: inc/customizer/customizer-ads.php:197 inc/customizer/customizer-ads.php:219
+#: inc/customizer/customizer-ads.php:240 inc/customizer/customizer-ads.php:261
+#: inc/customizer/customizer-ads.php:283 inc/customizer/customizer-ads.php:304
+#: inc/customizer/customizer-ads.php:324
+msgid "YOUR AD CODE"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:38
+msgid "Sidebar middle ad"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:59
+msgid "Sidebar bottom ad"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:80
+msgid "Article bottom ad"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:102
+msgid "Footer top ad"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:124
+msgid "Custom ad 1"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:146
+msgid "Custom ad 2"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:167
+msgid "Custom ad 3"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:189
+msgid "Custom ad 4"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:210
+msgid "Custom ad 5"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:232
+msgid "Custom ad 6"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:253
+msgid "Custom ad 7"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:274
+msgid "Custom ad 8"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:296
+msgid "Custom ad 9"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-ads.php:316
+msgid "Header Ad"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:7
+msgid "Style"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:11
+#: inc/customizer/customizer-colors.php:42
+msgid "General"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:16
+#: inc/customizer/customizer-colors.php:104
+#: inc/customizer/customizer-colors.php:126
+#: inc/customizer/customizer-colors.php:143
+#: inc/customizer/customizer-colors.php:162
+#: inc/customizer/customizer-colors.php:200
+#: inc/customizer/customizer-colors.php:220
+#: inc/customizer/customizer-colors.php:250
+#: inc/customizer/customizer-colors.php:268
+#: inc/customizer/customizer-colors.php:339
+msgid "Background"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:23
+msgid "Background Image"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:33
+msgid "Background Color"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:54
+#: inc/customizer/customizer-colors.php:62
+msgid "Site Color"
+msgstr ""
+
+#: inc/customizer/customizer-colors.php:67
+msgid "Color"
+msgstr ""
+
+#: inc/customizer/customizer-colors.php:68
+msgid "Text If Background"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:83
+msgid "Form Button"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:92
+msgid "Header & Menu Colors"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:99
+msgid "Top Bar"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:105
+#: inc/customizer/customizer-colors.php:221
+#: inc/customizer/customizer-colors.php:270
+msgid "Link"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:106
+#: inc/customizer/customizer-colors.php:142
+#: inc/customizer/customizer-colors.php:161
+#: inc/customizer/customizer-colors.php:163
+#: inc/customizer/customizer-colors.php:182
+#: inc/customizer/customizer-colors.php:199
+#: inc/customizer/customizer-colors.php:201
+#: inc/customizer/customizer-colors.php:222
+#: inc/customizer/customizer-colors.php:249
+#: inc/customizer/customizer-colors.php:251
+#: inc/customizer/customizer-colors.php:271
+msgid "Hover"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:107
+msgid "Bold"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:121
+msgid "Menu Background"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:136
+msgid "Menu Links"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:141
+msgid "Links"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:155
+msgid "Menu Sub Links"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:160
+#: inc/customizer/customizer-colors.php:181
+msgid "Lines"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:176
+msgid "Menu Smart Button"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:193
+msgid "Menu Search"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:198
+#: inc/customizer/customizer-colors.php:269
+#: inc/customizer/customizer-colors.php:297
+#: inc/customizer/customizer-colors.php:317
+#: inc/customizer/customizer-colors.php:338
+msgid "Text"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:215
+msgid "Smart Menu"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:223
+msgid "Out"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:236
+#: inc/customizer/customizer-colors.php:264
+msgid "Footer Colors"
+msgstr ""
+
+#: inc/customizer/customizer-colors.php:244
+msgid "Footer Social Icons"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:248
+#: inc/customizer/customizer-colors.php:299
+#: inc/customizer/customizer-colors.php:319
+msgid "Icon"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:284
+msgid "Other Colors"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:292
+msgid "Post Share Count"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:298
+#: inc/customizer/customizer-colors.php:300
+#: inc/customizer/customizer-colors.php:318
+#: inc/customizer/customizer-colors.php:320
+msgid "Photo bg"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:312
+msgid "Post View Count"
+msgstr ""
+
+#. Text in function
+#: inc/customizer/customizer-colors.php:333
+msgid "Post List Category"
+msgstr ""
+
+#. Text in function
+#: inc/single/single-content.php:11
+msgid "Read More:"
+msgstr ""
+
+#: inc/single/single-content.php:43
+msgid "Author"
+msgstr ""
+
+#: inc/single/single-content.php:44
+#, php-format
+msgid "%s"
+msgstr ""
+
+#. Text in function
+#: inc/single/single-content.php:84
+msgid "Previous article"
+msgstr ""
+
+#. Text in function
+#: inc/single/single-content.php:85
+msgid "Next article"
+msgstr ""
+
+#. Text in function
+#: inc/single/single-content.php:96
+msgid "You may be interested"
+msgstr ""
+
+#. Text in function
+#: inc/single/single-sidebar.php:11
+msgid "Featured Post"
+msgstr ""
+
+#. Text in echo
+#: inc/single/single-sidebar.php:26
+msgid "Trending Posts"
+msgstr ""
+
+#. Text in function
+#: inc/single/single-heads.php:69
+msgid "Shares"
+msgstr ""
+
+#. Text in function
+#: inc/single/single-heads.php:70
+msgctxt "Visitas"
+msgid "Views"
+msgstr ""
+
+#. Name of the theme
+msgid "InfoWazz"
+msgstr ""
+
+#. Description of the theme
+msgid "Magazine / Blog"
+msgstr ""
+
+#. URI of the theme
+msgid "http://infowazz.tophot.wpengine.com"
+msgstr ""
+
+#. Author of the theme
+msgid "Madars Bitenieks"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/madza"
 msgstr ""

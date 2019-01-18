@@ -28,3 +28,7 @@
 .gdpr-framework-privacy-tools .gdpr-delete-button input.button {
   min-width: 200px;
 }
+
+.g-recaptcha {
+    margin: 10px 0px 10px 0px;
+}

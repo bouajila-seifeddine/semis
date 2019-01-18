@@ -26,7 +26,7 @@
 	<div class="crossseling-content">
 		<h2>{l s='Customers who bought this product also bought:' mod='blockcart'}</h2>
 		<div id="blockcart_list">
-			{include file="$tpl_dir./product-list-light.tpl" products=$orderProducts}
+			{include file="$tpl_dir./product-list-light2.tpl" products=$orderProducts}
 			{*<ul id="blockcart_caroucel">
 				{foreach from=$orderProducts item='orderProduct' name=orderProduct}
 					<li>

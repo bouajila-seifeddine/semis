@@ -58,21 +58,13 @@
 				{else if $theme_options['items_two_carousels'] == 6}col-md-2 col-sm-6
 				{else}col-md-4 col-sm-6
 				{/if} 
-			{/if} col-xs-12 product">
+			{/if} col-xs-6 product">
 				<div class="inner second-image">
 					<div class="img_hover"></div>
 
 					<a href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}">
 
-						<img 
-
-						{if $contador <= 4} 
-								src=
-						{else} 
-								data-src= 
-						{/if}
-
-						"{$link->getImageLink($product.link_rewrite, $product.id_image, 'tm_home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" class="img-responsive first-image test" />
+						<img data-src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'tm_home_default')|escape:'html':'UTF-8'}" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" class="img-responsive first-image lazy" />
 
 						{hook h='displayProductSecondImage' product=$product}
 					</a>

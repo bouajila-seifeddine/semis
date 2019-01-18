@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Your data</title>
-
     <style type="text/css">
         table {
             font-family: verdana,arial,sans-serif;
@@ -33,7 +32,7 @@
         }
     </style>
 </head>
-<body>
-    <?= $table; ?>
-</body>
+
+<?= $table; ?>
+
 </html>

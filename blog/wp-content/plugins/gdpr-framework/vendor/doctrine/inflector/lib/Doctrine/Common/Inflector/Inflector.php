@@ -317,7 +317,7 @@ class Inflector
      * Clears Inflectors inflected value caches, and resets the inflection
      * rules to the initial values.
      */
-    public static function reset() : void
+    public static function reset()
     {
         if (empty(self::$initialState)) {
             self::$initialState = get_class_vars('Inflector');
@@ -353,7 +353,7 @@ class Inflector
      *
      * @return void
      */
-    public static function rules(string $type, iterable $rules, bool $reset = false) : void
+    public static function rules(string $type, string $rules, bool $reset = false)
     {
         foreach ($rules as $rule => $pattern) {
             if ( ! is_array($pattern)) {

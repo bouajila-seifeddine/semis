@@ -1,5 +1,5 @@
 <?php
-global $wp_widget_factory, $post;
+global $post;
 $layouts = apply_filters( 'siteorigin_panels_prebuilt_layouts', array() );
 ?>
 
@@ -39,19 +39,12 @@ $layouts = apply_filters( 'siteorigin_panels_prebuilt_layouts', array() );
 			<?php endif; ?>
 
 			<?php if( SiteOrigin_Panels::display_premium_teaser() ) : ?>
-				<a class="so-tool-button so-learn" title="<?php echo esc_attr_e( 'Page Builder Addons', 'siteorigin-panels' ) ?>" href="<?php echo esc_url( SiteOrigin_Panels::premium_url() ) ?>" style="margin-left: 10px;">
+				<a class="so-tool-button so-learn" title="<?php echo esc_attr_e( 'Page Builder Addons', 'siteorigin-panels' ) ?>" href="<?php echo esc_url( SiteOrigin_Panels::premium_url() ) ?>" target="_blank" rel="noopener noreferrer" style="margin-left: 10px;">
 					<span class="so-panels-icon so-panels-icon-addons"></span>
 					<span class="so-button-text"><?php echo esc_html_e( 'Addons', 'siteorigin-panels' ) ?></span>
 				</a>
 			<?php endif; ?>
 			
-			<?php if( SiteOrigin_Panels::display_learn_button() ) : ?>
-				<a class="so-tool-button so-learn" title="<?php echo esc_attr_e( 'Learn Page Builder', 'siteorigin-panels' ) ?>" href="#siteorigin-learn-page-builder-tips" style="margin-left: 10px;">
-					<span class="so-panels-icon so-panels-icon-learn"></span>
-					<span class="so-button-text"><?php echo esc_html_e( 'Learn', 'siteorigin-panels' ) ?></span>
-				</a>
-			<?php endif ?>
-
 			<a class="so-switch-to-standard"><?php _e('Revert to Editor', 'siteorigin-panels') ?></a>
 
 		</div>
@@ -604,5 +597,14 @@ $layouts = apply_filters( 'siteorigin_panels_prebuilt_layouts', array() );
 			<?php _e('No Results', 'siteorigin-panels') ?>
 		</div>
 		{{% } %}}
+	</div>
+</script>
+
+<script type="text/template" id="siteorigin-panels-add-layout-block-button">
+	<div class="siteorigin-panels-add-layout-block wp-block">
+		<button class="components-button is-button is-primary">
+			<span class="siteorigin-panels-block-icon white"/>
+			<?php _e( 'Add SiteOrigin Layout Block', 'siteorigin-panels' ) ?>
+		</button>
 	</div>
 </script>

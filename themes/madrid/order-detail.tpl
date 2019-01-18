@@ -116,6 +116,7 @@
 </div>
 {$HOOK_ORDERDETAILDISPLAYED}
 {if !$is_guest}<form action="{$link->getPageLink('order-follow', true)|escape:'html':'UTF-8'}" method="post">{/if}
+	<div class="col-md-6">
 <div id="order-detail-content" class="table_block table-responsive">
 	<table class="table table-bordered">
 		<thead>

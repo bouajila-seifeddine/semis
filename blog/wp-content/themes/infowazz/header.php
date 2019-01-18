@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <?php
 include_once('../config/config.inc.php');
-    include_once('../init.php');
-    include_once('../config/settings.inc.php');
-	include_once('../classes/Cookie.php');
-	include_once('../classes/Cart.php');
+include_once('../init.php');
+include_once('../config/settings.inc.php');
+include_once('../classes/Cookie.php');
+include_once('../classes/Cart.php');
 $context = Context::getContext();
 $cookie = new Cookie('ps-s'.$context->shop->id, '', $cookie_lifetime, $domains, false, $force_ssl);
 $cookie->write();
-
-
-	
-
 //to read
 
 ?>
@@ -20,13 +16,29 @@ $cookie->write();
 <head class="animated">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7BBD42"/>
+
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-<link rel="stylesheet" href="https://www.semillaslowcost.com/fontawesome/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="https://www.semillaslowcost.com/blog/wp-content/themes/infowazz/style-compress.css" type="text/css" media="all" />
 
  
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); ?>
+ <script>
+	OneSignal.push(function() {
+
+	//Añade la url de procedencia como tag
+	OneSignal.sendTag("url", window.location.href);
+	
+	//Verifica si es móvil el visitante con la función base de Wordpress y le asigna el tag
+ <?php if (wp_is_mobile() ){ ?> OneSignal.sendTag("is_mobile", "1"); <?php } ?>
+ <?php if (!wp_is_mobile() ){ ?> OneSignal.sendTag("is_desktop", "1"); <?php } ?>
+               
+});
+
+</script>
 </head>
 
 <?php
@@ -63,4 +75,5 @@ if(!empty($style)){
 
 <div class="mt-outer-wrap">
 
-<?php infowazz_header(); ?>
+<?php infowazz_header(); 
+?>

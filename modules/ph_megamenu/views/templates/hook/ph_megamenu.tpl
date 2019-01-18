@@ -15,8 +15,7 @@
 				<li class="menu_link_{$tab.id_prestahome_megamenu|intval}{if $tab.class != ''} {$tab.class|escape:'htmlall':'UTF-8'}{/if}{if $tab.align == 1} align-right{/if}{if $tab.icon != ''} with-icon{/if} {if $tab.type == 1}has-submenu{/if} {if $tab.url == $base_dir}active{/if}{if $tab.hide_on_mobile} ph-hidden-mobile{/if}{if $tab.hide_on_desktop} ph-hidden-desktop{/if}">
 					<a href="{$tab.url|escape:'htmlall':'UTF-8'}" title="{$tab.title|escape:'htmlall':'UTF-8'}" {if $tab.new_window}target="_blank"{/if}>
 						{if $tab.icon != ''}
-							<i class="fa {$tab.icon|escape:'htmlall':'UTF-8'}"></i>
-						{/if}
+<img href="https://www.semillaslowcost.com/img/iconos-menu/{$tab.icon|escape:'htmlall':'UTF-8'}" class="img-menu" alt="{$tab.title|escape:'htmlall':'UTF-8'}">						{/if}
 						
 						<span class="{if !$tab.display_title}hide{/if}">{$tab.title|escape:'htmlall':'UTF-8'}</span>
 
@@ -73,7 +72,7 @@
 							<li class="menu_link_dropdown_{$dropdown.id_prestahome_megamenu|intval} {if $dropdown.class != ''} {$dropdown.class|escape:'htmlall':'UTF-8'}{/if}{if $dropdown.icon != ''} with-icon{/if}">
 								<a href="{$dropdown.url|escape:'htmlall':'UTF-8'}">
 									{if $dropdown.icon != ''}
-										<i class="fa {$dropdown.icon|escape:'htmlall':'UTF-8'}"></i>
+										<img href="https://www.semillaslowcost.com/img/iconos-menu/{$dropdown.icon|escape:'htmlall':'UTF-8'}" class="img-menu" alt="{$dropdown.title|escape:'htmlall':'UTF-8'}">
 									{/if}
 
 									{$dropdown.title|escape:'htmlall':'UTF-8'}

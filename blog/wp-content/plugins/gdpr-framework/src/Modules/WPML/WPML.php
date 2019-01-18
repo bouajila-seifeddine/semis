@@ -30,7 +30,7 @@ class WPML
             $option = $this->prefix($option);
             add_filter("pre_update_option_{$option}", [$this, 'setTranslatedOption'], 10, 2);
         }
-
+		
         add_filter('gdpr/options/get/consent_types', [$this, 'getConsentTypes']);
         add_filter('gdpr/options/set/consent_types', [$this, 'saveConsentTypes']);
     }
@@ -77,8 +77,8 @@ class WPML
 
         $code                 = (string)ICL_LANGUAGE_CODE;
         $filteredConsentTypes = [];
-
-        if (count($consentTypes)) {
+		
+        if (isset($consentTypes) && !empty($consentTypes) && count($consentTypes)) {
             foreach ($consentTypes as $consentType) {
 
                 if (isset($consentType['slug']) && ('privacy-policy' === $consentType['slug'] or 'terms-condition' === $consentType['slug'])) {

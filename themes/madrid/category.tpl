@@ -104,19 +104,19 @@
                                
                               
                                 
-                <h3></h3>
+                
                 <div id="subcategories">
-                    <h4 class="main-color-txt">{l s='Subcategories'}</h4>
+                    <h4 class="main-color-txt row">{l s='Subcategories'}</h4>
 
-                    <ul class="nolist">
+                    <ul class="nolist row">
                         {foreach from=$subcategories item=subcategory}
-                            <li class="col-md-3 col-sm-6 col-xs-12">
+                            <li class="col-md-3 col-sm-6 col-xs-6">
                                 <div class="subcategory-image">
                                     <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}" title="{$subcategory.name|escape:'html':'UTF-8'}" class="img">
                                         {if $subcategory.id_image}
-                                            <img class="replace-2x img-responsive" src="{$link->getCatImageLink($subcategory.link_rewrite, $subcategory.id_image, 'medium_default')|escape:'html':'UTF-8'}" alt="{$subcategory.name|escape:'html':'UTF-8'}" width="{$mediumSize.width}" height="{$mediumSize.height}" />
+                                            <img class="replace-2x img-responsive lazy" data-src="{$link->getCatImageLink($subcategory.link_rewrite, $subcategory.id_image, 'medium_default')|escape:'html':'UTF-8'}" alt="{$subcategory.name|escape:'html':'UTF-8'}" width="{$mediumSize.width}" height="{$mediumSize.height}" />
                                         {else}
-                                            <img class="replace-2x img-responsive" src="{$img_cat_dir}{$lang_iso}-default-medium_default.jpg" alt="{$subcategory.name|escape:'html':'UTF-8'}" width="{$mediumSize.width}" height="{$mediumSize.height}" />
+                                            <img class="replace-2x img-responsive lazy" data-src="{$img_cat_dir}{$lang_iso}-default-medium_default.jpg" alt="{$subcategory.name|escape:'html':'UTF-8'}" width="{$mediumSize.width}" height="{$mediumSize.height}" />
                                         {/if}
                                     </a>
                                 </div>
@@ -124,7 +124,7 @@
                                     <div class="subcategory-name">
 
                                         <h5 class="main-color"><a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}">{$subcategory.name|truncate:25:'...'|escape:'html':'UTF-8'}</a></h5>
-                                        <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}"><span class="link-category"></span></a>
+                                        <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}" aria-label="{$subcategory.name}" class="link-category"></a>
                                     </div>
                                 {/if}
                             </li>
@@ -139,9 +139,7 @@
                     {include file="./product-sort.tpl"}
                     {include file="./nbr-product-page.tpl"}
                     {include file="./product-compare.tpl"}
-                    {if $category->id == 104}
-                    <a href="#cat-video" class="button btn-primary">VER VÍDEOTUTORIAL</a>
-                    {/if}
+ 
                 </div>
             </div>
             {include file="./product-list.tpl" products=$products}
@@ -161,7 +159,7 @@
 
 
 
-            <a href="https://www.semillaslowcost.com/opiniones/{$link_opiniones}" class="button btn-primary"><span>Opiniones</span></a>
+            <a href="https://www.semillaslowcost.com/opiniones/{$link_opiniones}/" class="button-opinion btn-primary"><span>Opiniones</span></a>
         {/if}
         {if $theme_options['show_category_description'] == '1'}
             <div class="txt col-md-12 col-sm-12 col-xs-12">

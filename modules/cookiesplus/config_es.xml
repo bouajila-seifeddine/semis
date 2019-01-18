@@ -2,7 +2,7 @@
 <module>
 	<name>cookiesplus</name>
 	<displayName><![CDATA[Cookies - Ley de cookies GDPR (bloqueo antes del consentimiento)]]></displayName>
-	<version><![CDATA[1.1.4]]></version>
+	<version><![CDATA[1.1.6]]></version>
 	<description><![CDATA[Cumple con el Reglamento General de Protecci&oacute;n de Datos (RGPD) en materia de cookies. Este m&oacute;dulo te permite bloquear las cookies hasta que el cliente d&eacute; su consentimiento expl&iacute;cito de que acepta el uso e instalaci&oacute;n de cookies.]]></description>
 	<author><![CDATA[idnovate]]></author>
 	<tab><![CDATA[front_office_features]]></tab>

@@ -23,12 +23,10 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div class="form-group">
     <div class="checkbox">
         <input type="checkbox" name="psgdpr-consent" id="psgdpr-consent" value="1" required>
         <label for="psgdpr-consent">{$label nofilter}{* html data *}</label>
     </div>
-</div>
 
 
 {literal}

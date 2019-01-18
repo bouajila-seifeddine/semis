@@ -32,16 +32,18 @@
 	{if $carrier_ok == true || !isset($carriers_array)}
 		{if ($maximum_amount > 0 && $cartcost < $maximum_amount) || ($maximum_amount == 0)}
 			{if $cartcost > $minimum_amount}
-				<div class="row">
-					<div class="col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					
 						<p class="payment_module">
 							<a href="{if $show_conf}{$link->getModuleLink('codfee', 'payment')|escape:'htmlall':'UTF-8'}{else}{$link->getModuleLink('codfee', 'validation', [], true)|escape:'htmlall':'UTF-8'}{/if}" title="{l s='Cash on delivery with fee' mod='codfee'}" class="cash">
+											<img src="/img/pagos/contra.jpg"  onmouseover="this.src='/img/pagos/contra1.jpg';" onmouseout="this.src='/img/pagos/contra.jpg';"  alt="Pago contra rembolso" /> <br />
+
 								{l s='Cash on delivery:' mod='codfee'} <span>{convertPriceWithCurrency price=$cartcost currency=$currency}
 											+ {convertPriceWithCurrency price=$fee currency=$currency} {l s='(COD fee)' mod='codfee'}
 											= {convertPriceWithCurrency price=$total currency=$currency}</span>
 							</a>
 						</p>
-				    </div>
+				    
 				</div>
 			{/if}
 		{/if}

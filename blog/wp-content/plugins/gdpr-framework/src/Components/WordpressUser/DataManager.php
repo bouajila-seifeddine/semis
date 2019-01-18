@@ -87,8 +87,9 @@ class DataManager
         } else {
             $reassignUserId = false;
         }
-
+        $dataSubject->gdpr_delete_log($dataSubject->getUserId());
         wp_delete_user($dataSubject->getUserId(), $reassignUserId);
+        
     }
 
     public function anonymizeUser(DataSubject $dataSubject, $anonymizedId)
@@ -125,6 +126,9 @@ class DataManager
             // Set a random password, just in case the functionality that disallows users from logging in should break for any reason
             'user_pass'           => wp_hash_password(wp_generate_password()),
         ]);
+        
+        // Clear Logs
+        $dataSubject->gdpr_delete_log($dataSubject->getUserId());
 
         // Clear all relevant usermeta fields
         delete_user_meta($dataSubject->getUserId(), 'first_name');

@@ -15,6 +15,9 @@ class Updater
         if (version_compare($currentVersion, '1.0.5', '<')) {
             $this->update_1_0_5();
         }
+        if (version_compare($currentVersion, '1.0.21', '<')) {
+            $this->update_1_0_21();
+        }
     }
 
     /**
@@ -32,7 +35,6 @@ class Updater
     {
         $model = new \Codelight\GDPR\Components\Consent\UserConsentModel();
         $model->createTable();
-
         if (apply_filters('gdpr/data-subject/anonymize/change_role', true) && ! get_role('anonymous')) {
 
             add_role(
@@ -43,5 +45,11 @@ class Updater
         }
 
         update_option('gdpr_plugin_version', '1.0.5');
+    }
+    public function update_1_0_21()
+    {
+        $model = new \Codelight\GDPR\Components\Consent\UserConsentModel();
+        $model->createUserTable();
+        update_option('gdpr_plugin_version', '1.0.21');
     }
 }

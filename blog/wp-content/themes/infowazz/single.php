@@ -94,7 +94,20 @@ if ($carousel == "yes"){ ?>
 
 endwhile;
 ?>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <p>Producto añadido correctamente al carrito de compra.</p>
+    <img id="modal-img" src=""><br />
+    <button class="btn btn-dark" onclick="document.getElementById('myModal').style.display = 'none'">Seguir Leyendo</button>
+    <button class="btn info" onclick="window.open('https://www.semillaslowcost.com/pedido-rapido','_blank')">Ir al carrito</button>
+
+  </div>
+
+</div>
 <div class="hidde" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
 	<meta itemprop="url" content="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
 	<meta itemprop="width" content="1200"><meta itemprop="height" content="801">

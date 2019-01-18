@@ -75,7 +75,7 @@ if(isset($_GET['offset']) && isset($_GET['limit'])){
 
 
 					//Creamos todos los elementos html de las 3 imágenes
-					$imagenesHtml = $imagenesHtml.'<div class=" col-md-3 col-sm-6 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
+					$imagenesHtml = $imagenesHtml.'<div class=" col-md-3 col-sm-6 col-xs-6 product" itemtype="http://schema.org/Product" itemscope="">
 						                                       <div class="inner second-image">';
 					if ($randomOferta >= 5)	 {
 													$imagenesHtml = $imagenesHtml.'<span class="labels"> <span class="sale">¡Oferta!</span> </span>';

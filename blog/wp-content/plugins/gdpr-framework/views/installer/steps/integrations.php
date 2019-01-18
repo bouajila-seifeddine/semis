@@ -24,7 +24,7 @@
 <?php endif; ?>
 <hr>
 
-<?php if ($hasSendgrid): ?>
+<?php if (isset($hasSendgrid)): ?>
     <h2>IMPORTANT: Sendgrid compatibility</h2>
     <p>
         It looks like you are using Sendgrid to send emails. Note that the links in identification emails will not work properly unless you have click tracking turned off in Sendgrid.
@@ -52,7 +52,7 @@
 <p>
     If you've had a developer build any custom features for your site, you should also make sure that everything is properly GDPR-compliant.
     <br>
-    <a href="<?= gdpr('helpers')->docs('developer-docs/'); ?>" target="_blank">Read about making custom-built sites and features GDPR-compliant.</a>
+    <a href="<?= gdpr('helpers')->docs('wordpress-gdpr-framework-developer-docs/'); ?>" target="_blank">Read about making custom-built sites and features GDPR-compliant.</a>
 </p>
 
 <hr>

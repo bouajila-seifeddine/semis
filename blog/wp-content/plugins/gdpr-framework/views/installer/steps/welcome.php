@@ -7,7 +7,7 @@
     We have made this process as easy, fast and painless as possible for you. <br>
     However, you should take some time to read and understand everything. Making your website (and business) properly compliant
     requires understanding GDPR and how your website works. <br>
-    If you don't have the time to do that, you can always <a href="<?= gdpr('helpers')->docs('wordpress-gdpr-consultation'); ?>" target="_blank">request a consultation</a>.
+    If you don't have the time to do that, you can always <a href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" target="_blank">request a consultation</a>.
 </p>
 <p>
     The <a href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" target="_blank">WordPress Site Owner's Guide to GDPR</a> will help you with any questions you might have during the

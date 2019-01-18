@@ -14,23 +14,25 @@
     
    (function ($) {
       jQuery( document ).ready( function() {
-  
-        jQuery( document ).on( 'click', '.show-nav-right .mobmenu-push-wrap', function ( e ) { 
+
+        jQuery( document ).on( 'click', '.show-nav-right .mobmenu-push-wrap,  .show-nav-right .mobmenu-overlay', function ( e ) { 
   
           e.preventDefault();
           jQuery( '.mobmenu-right-bt' ).first().trigger( 'click' );
+          e.stopPropagation();
   
         });
           
-        jQuery( document ).on( 'click', '.show-nav-left .mobmenu-push-wrap', function ( e ) { 
+        jQuery( document ).on( 'click', '.show-nav-left .mobmenu-push-wrap,  .show-nav-left .mobmenu-overlay', function ( e ) { 
   
           e.preventDefault();
           jQuery( '.mobmenu-left-bt' ).first().trigger( 'click' );
+          e.stopPropagation();
   
         });
     
-        if ( jQuery( 'body' ).find( '.mobmenu-push-wrap' ).length <= 0 ) {
-  
+        
+        if ( jQuery( 'body' ).find( '.mobmenu-push-wrap' ).length <= 0 &&  jQuery( 'body' ).hasClass( 'mob-menu-slideout' ) ) {
           jQuery( 'body' ).wrapInner( '<div class="mobmenu-push-wrap"></div>' );
           jQuery( '.mobmenu-push-wrap' ).after( jQuery( '.mob-menu-left-panel' ).detach() );
           jQuery( '.mobmenu-push-wrap' ).after( jQuery( '.mob-menu-right-panel' ).detach() );
@@ -48,21 +50,29 @@
           }
   
           jQuery( '#wpadminbar' ).appendTo( 'body' );
-  
+
           jQuery( 'video' ).each( function(){
             if( 'autoplay' === jQuery( this ).attr('autoplay') ) {
               jQuery( this )[0].play();
-            } 
+            }
           });
   
   
-        }      
-      
+        }
+
         jQuery( document ).on( 'click',  '.mobmenu-left-bt, .mob-menu-left-panel .mobmenu_content a, .show-nav-left .mob-cancel-button' , function ( e ) {  
-              
+
+          // Parent Link open submenu(1st Level).
           if ( jQuery(this).parent().parent().parent().parent().hasClass( 'mobmenu-parent-link' ) || jQuery(this).parent().parent().parent().parent().parent().hasClass( 'mobmenu-parent-link' ) ) {
             if( 'mobmenuleft' ===  jQuery(this).parent().parent().attr('id') && jQuery(this).parent().find( '.mob-expand-submenu' ).length > 0 )  { 
               jQuery(this).parent().find( '.mob-expand-submenu' ).first().trigger( 'click' );
+              return false;
+            }
+          }
+          // Parent Link open submenu(2nd Level).
+          if ( $(this).parent().parent().parent().parent().parent().parent().parent().hasClass( 'mobmenu-parent-link-2nd-level' )  ) {
+            if( 'mobmenuleft' ===  $(this).parent().parent().parent().parent().attr('id') && $(this).parent().find( '.mob-expand-submenu' ).length > 0 )  { 
+              $(this).parent().find( '.mob-expand-submenu' ).first().trigger( 'click' );
               return false;
             }
           }
@@ -91,6 +101,14 @@
               return false;
             }
           }
+
+          // Parent Link open submenu(2nd Level).
+          if ( $(this).parent().parent().parent().parent().parent().parent().parent().hasClass( 'mobmenu-parent-link-2nd-level' )  ) {
+            if( 'mobmenuright' ===  $(this).parent().parent().parent().parent().attr('id') && $(this).parent().find( '.mob-expand-submenu' ).length > 0 )  { 
+              $(this).parent().find( '.mob-expand-submenu' ).first().trigger( 'click' );
+              return false;
+            }
+          }
   
           jQuery('body').toggleClass('show-nav-right'); 
           
@@ -99,48 +117,48 @@
             if ( jQuery( this ).hasClass( 'mob-cancel-button') || jQuery( this ).hasClass( 'mobmenu-right-bt' ) ) {
                 return false;
             }
-  
+
           } else {
             jQuery( 'html' ).addClass( 'hidden-overflow' );
             e.preventDefault();
           }
-  
+
         });
-  
+        var submenu_open_icon  = jQuery( '.mob-menu-header-holder' ).attr( 'data-open-icon' );
+        var submenu_close_icon = jQuery( '.mob-menu-header-holder' ).attr( 'data-close-icon' );
         jQuery( '.mobmenu_content .sub-menu' ).each( function(){
-          
-          jQuery( this ).before('<div class="mob-expand-submenu"><i class="mob-icon-down-open"></i><i class="mob-icon-up-open hide"></i></div>');
+
+          jQuery( this ).before('<div class="mob-expand-submenu"><i class="mob-icon-' + submenu_open_icon + ' open-icon"></i><i class="mob-icon-' + submenu_close_icon + ' close-icon hide"></i></div>');
   
         });
-          
+
         jQuery( document ).on( 'click', '.mob-expand-submenu' , function ( e ) {
   
           e.stopPropagation();
-              
+
           if ( jQuery( this ).next().hasClass( 'show-sub-menu' )  ) {
             jQuery(this).find('.show-sub-menu' ).hide();
           }
           if ( ! jQuery( this ).parents('.show-sub-menu').prev().hasClass('mob-expand-submenu') && jQuery( this ).next()[0] !== jQuery('.show-sub-menu')[0] && jQuery( this ).parent('.sub-menu').length <= 0 ) {
-            jQuery(this).find('.mob-icon-down-open').removeClass('hide');
-            jQuery(this).find('.mob-icon-up-open').addClass('hide');
+            jQuery(this).find('.open-icon').removeClass('hide');
+            jQuery(this).find('.close-icon').addClass('hide');
             jQuery(this).find( '.show-submenu' ).hide().toggleClass( 'show-sub-menu' );
             
           }
-          
-          jQuery( this ).find('.mob-icon-down-open').toggleClass('hide');
-          jQuery( this ).find('.mob-icon-up-open').toggleClass('hide');
+
+          jQuery( this ).find('.open-icon').toggleClass('hide');
+          jQuery( this ).find('.close-icon').toggleClass('hide');
           
           if ( !jQuery( this ).next().hasClass( 'show-sub-menu' ) ) {  
-            jQuery(this).next().fadeIn( 'slow' );   
-          } else {  
-            jQuery(this).next().hide();   
+            jQuery(this).next().fadeIn( 'slow' );
+          } else {
+            jQuery(this).next().hide();
           }
   
           jQuery(this).next().toggleClass( 'show-sub-menu');
-          
+
         });
-  
-        
+
         $('.mobmenu a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -151,6 +169,8 @@
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
         && 
         location.hostname == this.hostname
+        &&
+        $(this).parents('.mobmenu_content').length > 0
       ) {
         // Figure out element to scroll to
         var target = $(this.hash);
@@ -159,7 +179,12 @@
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
-          $('html, body').animate({
+          event.stopPropagation();
+          $( '.show-nav-left .mobmenu-left-bt').first().click();
+          $( '.show-nav-right .mobmenu-right-bt').first().trigger( 'click' );
+          $( 'html' ).css( 'overflow', '' );
+
+          $('body').animate({
             scrollTop: target.offset().top
           }, 1000, function() {
             // Callback after animation

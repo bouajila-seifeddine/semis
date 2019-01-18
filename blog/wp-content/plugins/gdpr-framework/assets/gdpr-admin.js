@@ -1,5 +1,27 @@
 jQuery(function ($) {
-
+     /**
+     * requried issue on Consent show repeater
+     */
+    $(document).on('click', '.show_form_consent_gdpr', function (e) {
+        $('.gdpr-hidden input').prop("disabled", false);
+        $('.gdpr-hidden').removeClass('gdpr-hidden');
+        $('.show_form_consent_gdpr').hide();
+    });
+    /**
+     * requried issue on Consent hide repeater
+     */
+    
+    $(document).on('click', '.hide_form_consent_gdpr', function (e) {
+        $('.gdpr-show-hide').addClass('gdpr-hidden');
+        $('.gdpr-hidden input').prop("disabled", true);
+        $('.show_form_consent_gdpr').show();
+    });
+    /**
+     * Fix issue with more then one consent add.
+     */
+    $( document ).ready(function() {
+        $('.gdpr-hidden input').prop("disabled", true);
+    });
     // Handler to open the modal dialog
     $(document).on('click', '.gdpr-open-modal', function (e) {
         $($(this).data('gdpr-modal-target')).dialog('open');
@@ -57,10 +79,12 @@ jQuery(function ($) {
     $('.js-gdpr-repeater').each(function () {
         var $repeater = $(this).repeater({
             isFirstItemUndeletable: true
-        });
-
-        if (typeof window.repeaterData[$(this).data('name')] !== undefined) {
-            $repeater.setList(window.repeaterData[$(this).data('name')]);
+        });        
+        if(window.repeaterData!= undefined){
+            // will only work if repeater data is defined.
+            if (typeof window.repeaterData[$(this).data('name')] !== undefined) {
+                $repeater.setList(window.repeaterData[$(this).data('name')]);
+            }
         }
     });
 
@@ -99,4 +123,10 @@ jQuery(function ($) {
             $phone.val(dpaData['phone']);
         }
     });
+
+    $(document).ready( function () {
+        $('#classiDocs_dataTable').DataTable( {
+            "autoWidth": true
+          } );
+    } );
 });
