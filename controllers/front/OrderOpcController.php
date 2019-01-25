@@ -405,6 +405,36 @@ class OrderOpcControllerCore extends ParentOrderController
             'days' => $days,
         ));
 
+        $hora_elegida = Configuration::get('PS_HORA_LLAMADA');
+
+         date_default_timezone_set('Europe/Madrid'); // timezone 
+
+             $weekday = date(l); // today
+
+             // Set open and closing time for each day of the week
+             if ($weekday == "Friday") {
+                   $open_from = "00:00";
+                   $opten_to = "00:00";
+             }
+             elseif ($weekday == "Saturday" || $weekday == "Sunday") {
+                  $open_from = "00:00";
+                  $open_to = "00:00";
+            }
+             else {
+                  $open_from = "00:00";
+                  $open_to = $hora_elegida;
+             }
+
+             // now check if the current time is before or after opening hours
+            if (date("H:i") < $open_from || date("H:i") > $open_to ) {
+                $this->context->smarty->assign('horario', 'cerrado');
+
+             }
+
+             // show the checkout button
+             else {
+                $this->context->smarty->assign('horario', 'abierto');
+            }
         /* Load guest informations */
         if ($this->isLogged && $this->context->cookie->is_guest) {
             $this->context->smarty->assign('guestInformations', $this->_getGuestInformations());
@@ -423,6 +453,8 @@ class OrderOpcControllerCore extends ParentOrderController
         $this->context->smarty->assign('newsletter', $newsletter);
         $this->context->smarty->assign('optin', (bool)Configuration::get('PS_CUSTOMER_OPTIN'));
         $this->context->smarty->assign('field_required', $this->context->customer->validateFieldsRequiredDatabase());
+        $this->context->smarty->assign('conf_horario', Configuration::get('PS_ACTIVAR_HORARIO'));
+
 
         $this->_processAddressFormat();
 

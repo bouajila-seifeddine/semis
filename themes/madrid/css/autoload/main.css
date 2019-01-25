@@ -3731,3 +3731,30 @@ p.align_center {
 .fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened {
     top: 74px !important;
 }
+
+.horario-aviso {
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    padding: 1%;
+    color: #458057;
+    background: #d6eed1;
+}
+
+.horario-aviso-p1 {
+    font-weight: 800;
+    font-size: 16px;
+    padding-left: 16px;
+    line-height: 26px;
+}
+
+.horario-aviso-p1 .fa-angle-down {
+    float: right;
+    font-size: 30px;
+    padding-right: 16px;
+
+}
+
+p#letra-peque {
+    padding-left: 18px;
+}

@@ -84,8 +84,11 @@
 			<tbody>
 
 				{assign var='odd' value=0}
+				{assign var='hay_vapeo' value=0}
 				{assign var='have_non_virtual_products' value=false}
 				{foreach $products as $product}
+				
+				
 					{if $product.is_virtual == 0}
 						{assign var='have_non_virtual_products' value=true}
 					{/if}
@@ -94,6 +97,9 @@
 					{assign var='quantityDisplayed' value=0}
 					{assign var='odd' value=($odd+1)%2}
 					{assign var='ignoreProductLast' value=isset($customizedDatas.$productId.$productAttributeId) || count($gift_products)}
+					{if in_array(218,Product::getProductCategories($productId))}
+						{assign var='hay_vapeo' value=1}
+					{/if}
 					{* Display the product line *}
 					{include file="$tpl_dir./shopping-cart-product-line.tpl" productLast=$product@last productFirst=$product@first}
 					{* Then the customized datas ones*}
@@ -233,6 +239,13 @@
 				</tbody>
 			{/if}
 		</table>
+		{if $hay_vapeo == 0 && $conf_horario == 1 && $horario == "abierto"}
+				<div class="horario-aviso">
+					<p class="horario-aviso-p1">¡Compra ahora y recibeló mañana! <i class="fa fa-angle-down" onclick="$('#letra-peque').toggle();"></i></p>
+					<p  class="horario-aviso-p2" style="display:none;" id="letra-peque">Válido únicamente en envíos realizados dentro de la península.</p>	
+				</div>
+		{/if}
+		
 	</div> <!-- end order-detail-content -->
 					{if $voucherAllowed}
 					<div class="div-boucher" style="display:none;">

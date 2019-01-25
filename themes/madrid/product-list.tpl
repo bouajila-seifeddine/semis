@@ -140,6 +140,16 @@
             }
 });
 
+        </script>
+    </tbody>
+    </table>
+    </div>
+    </fieldset>
+</div>
+
+{/if}
+<script>
+    
 function addCarrito(url, imgurl) {
 $.ajax({
 type: 'post',
@@ -177,14 +187,8 @@ error : function(xhr, status, error)
 });
       
                 }
-        </script>
-    </tbody>
-    </table>
-    </div>
-    </fieldset>
-</div>
-
-{/if}
+    
+</script>
 {* Added for attributes *}
 
 

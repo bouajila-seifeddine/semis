@@ -97,6 +97,22 @@ class AdminCategoriesControllerCore extends AdminController
                 'align' => 'center',
                 'ajax' => true,
                 'orderby' => false
+            ),
+             'is_seed' => array(
+                'title' => $this->l('Es semilla'),
+                'type' => 'bool',
+                'class' => 'fixed-width-xs',
+                'align' => 'center',
+                'ajax' => true,
+                'orderby' => false
+            ),
+             'is_vaper' => array(
+                'title' => $this->l('Pertenece a vapeo'),
+                'type' => 'bool',
+                'class' => 'fixed-width-xs',
+                'align' => 'center',
+                'ajax' => true,
+                'orderby' => false
             )
         );
 
@@ -522,6 +538,44 @@ class AdminCategoriesControllerCore extends AdminController
                     'type' => 'switch',
                     'label' => $this->l('Tiene Opiniones'),
                     'name' => 'have_opinions',
+                    'required' => false,
+                    'is_bool' => true,
+                    'values' => array(
+                        array(
+                            'id' => 'active_onc',
+                            'value' => 1,
+                            'label' => $this->l('Enabled')
+                        ),
+                        array(
+                            'id' => 'active_offc',
+                            'value' => 0,
+                            'label' => $this->l('Disabled')
+                        )
+                    )
+                ),
+                 array(
+                    'type' => 'switch',
+                    'label' => $this->l('Es semilla'),
+                    'name' => 'is_seed',
+                    'required' => false,
+                    'is_bool' => true,
+                    'values' => array(
+                        array(
+                            'id' => 'active_onc',
+                            'value' => 1,
+                            'label' => $this->l('Enabled')
+                        ),
+                        array(
+                            'id' => 'active_offc',
+                            'value' => 0,
+                            'label' => $this->l('Disabled')
+                        )
+                    )
+                ),
+                 array(
+                    'type' => 'switch',
+                    'label' => $this->l('Relacionado vapeo'),
+                    'name' => 'is_vaper',
                     'required' => false,
                     'is_bool' => true,
                     'values' => array(

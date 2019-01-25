@@ -244,6 +244,48 @@ class ProductControllerCore extends FrontController
             $this->context->smarty->assign('packItems', $pack_items);
             $this->context->smarty->assign('packs', Pack::getPacksTable($this->product->id, $this->context->language->id, true, 1));
 
+            $hora_elegida = Configuration::get('PS_HORA_LLAMADA');
+
+            date_default_timezone_set('Europe/Madrid'); // timezone 
+
+             $weekday = date(l); // today
+             //print $weekday; // Debug
+             //print date("H:i"); // debug
+
+
+             // Set open and closing time for each day of the week
+             if ($weekday == "Friday") {
+                   $open_from = "00:00";
+                   $opten_to =  "00:00";
+             }
+             elseif ($weekday == "Saturday" || $weekday == "Sunday") {
+                  $open_from = "00:00";
+                  $open_to = "00:00";
+            }
+             else {
+                  $open_from = "00:00";
+                  $open_to = $hora_elegida;
+             }
+
+             // now check if the current time is before or after opening hours
+            if (date("H:i") < $open_from || date("H:i") > $open_to ) {
+                $this->context->smarty->assign('horario', 'cerrado');
+
+             }
+
+             // show the checkout button
+             else {
+                $this->context->smarty->assign('horario', 'abierto');
+            }
+
+            //Me he quedado por aqui, faltaría guardar y ver como pasar la variable a la página de productos y ponerla en los condicionales que muestran las llamadas a la acción.
+             $this->context->smarty->assign('hora_llamada', $weekday);
+
+            $this->context->smarty->assign('conf_llamadas', Configuration::get('PS_ACTIVAR_LLAMADAS'));
+            $this->context->smarty->assign('conf_recomendados', Configuration::get('PS_ACTIVAR_RECOMENDADOS'));
+            $this->context->smarty->assign('conf_horario', Configuration::get('PS_ACTIVAR_HORARIO'));
+
+
             if (isset($this->category->id) && $this->category->id) {
                 $return_link = Tools::safeOutput($this->context->link->getCategoryLink($this->category));
             } else {

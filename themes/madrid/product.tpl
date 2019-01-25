@@ -60,6 +60,36 @@
 		<div class="product-photo col-md-5 col-sm-5">
 			{if $deviceType != "computer"}
 				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
+				{if $conf_llamadas == 1}
+						<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
+						<!--<label>Stock:</label>
+						 <span id="quantityAvailable">{$product->quantity|intval}</span> -->
+						{assign var=unique_id value=1|mt_rand:100}
+
+						<!--sI QUE SALE ALGO -->
+						{if $product->quantity > $last_qties && $unique_id <= 50}
+							{if $product->on_sale}
+								{if $unique_id <= 15}
+									<span id="warning_inline">{l s='Aprovecha ahora, Últimas unidades!'} </span>
+								{elseif $unique_id <= 30}
+									<span id="warning_inline_danger">{l s='Compra ahora antes de que se acabe!'} </span>
+								{else}
+									<span id="warning_inline_danger">{l s='Date prisa, está en Oferta!'} </span>
+								{/if}
+							{else}
+								{if $unique_id >= 25}
+									<span id="warning_inline">{l s='Aprovecha ahora, Últimas unidades!'} </span>
+								{else}
+									<span id="warning_inline_danger">{l s='Compra ahora antes de que se acabe!'} </span>
+								{/if}
+							{/if}
+
+						{/if}
+
+						<!--<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
+						<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span> -->
+					</p>
+				{/if}
 			{/if}
 			<!-- product img-->
 			<div id="image-block" class="clearfix">
@@ -88,7 +118,7 @@
 							</a>
 						{else}
 							
-							<img id="bigpic" class="img-responsive" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" width="{$largeSize.width}" height="{$largeSize.height}"/>
+							<img  class="img-responsive" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" width="{$largeSize.width}" height="{$largeSize.height}"/>
 						{/if}
 					</span>
 				{else}
@@ -162,6 +192,7 @@
 
 		<!-- center infos -->
 		<div class="product-desc col-md-7 col-sm-7">
+
 			{if $deviceType == "computer"}
 				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 			{/if}
@@ -193,6 +224,41 @@
 					<label>{l s='Availability:'}</label>
 				<span id="availability_value" class="label{if $product->quantity <= 0 && !$allow_oosp} label-danger{elseif $product->quantity <= 0} label-warning{else} label-success{/if}">{if $product->quantity <= 0}{if $PS_STOCK_MANAGEMENT && $allow_oosp}{$product->available_later}{else}{l s='This product is no longer in stock'}{/if}{elseif $PS_STOCK_MANAGEMENT}{$product->available_now}{/if}</span>
 				</p>
+				{if $conf_llamadas == 1 && $deviceType == "computer"}
+						<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
+						<!--<label>Stock:</label>
+						 <span id="quantityAvailable">{$product->quantity|intval}</span> -->
+						{assign var=unique_id value=1|mt_rand:100}
+
+						<!--sI QUE SALE ALGO -->
+						{if $product->quantity > $last_qties && $unique_id <= 50}
+							{if $product->on_sale}
+								{if $unique_id <= 15}
+									<span id="warning_inline">{l s='Aprovecha ahora, Últimas unidades!'} </span>
+								{elseif $unique_id <= 30}
+									<span id="warning_inline_danger">{l s='Compra ahora antes de que se acabe!'} </span>
+								{else}
+									<span id="warning_inline_danger">{l s='Date prisa, está en Oferta!'} </span>
+								{/if}
+							{else}
+								{if $unique_id >= 25}
+									<span id="warning_inline">{l s='Aprovecha ahora, Últimas unidades!'} </span>
+								{else}
+									<span id="warning_inline_danger">{l s='Compra ahora antes de que se acabe!'} </span>
+								{/if}
+							{/if}
+
+						{/if}
+
+						<!--<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
+						<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span> -->
+					</p>
+				{/if}
+					{if $product->quantity <= $last_qties && $product->quantity > 0}
+					<span class="warning_inline_danger" id="last_quantities">
+						&nbsp; Date prisa, Solo quedan {$product->quantity} ¿Quieres que te las quiten?
+					</span> 
+					{/if}
 			<div class="info-box" itemscope itemtype="http://schema.org/Offer">
 				<p id="product_reference"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
 					<label>{l s='Reference:'} </label>
@@ -236,28 +302,7 @@
 			{if ($display_qties == 1 && !$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && $product->available_for_order)}
 					<!-- number of item in stock -->
 
-					<p id="pQuantityAvailable"{if $product->quantity <= 0} style="display: none;"{/if}>
-						<!--<label>Stock:</label>
-						 <span id="quantityAvailable">{$product->quantity|intval}</span> -->
-						{assign var=unique_id value=1|mt_rand:4}
-						{if $product->quantity > $last_qties}
-								{if $unique_id != 2}
-									<span id="warning_inline">{l s='Aprovecha ahora, Últimas unidades!!'} </span>
-								{else}
-									<span id="warning_inline_danger">{l s='Date prisa, Últimas unidades!!'} </span>
-								{/if}
-						{/if}
 
-						<!--<span {if $product->quantity > 1} style="display: none;"{/if} id="quantityAvailableTxt">{l s='Item'}</span>
-						<span {if $product->quantity == 1} style="display: none;"{/if} id="quantityAvailableTxtMultiple">{l s='Items'}</span> -->
-					</p>
-					{if $product->quantity <= $last_qties && $product->quantity > 0}
-					<p class="warning_inline_danger" id="last_quantities">
-						&nbsp; Date prisa, Solo quedan {$product->quantity}<br>
-						¿Quieres que te las quiten?
-
-					</p> 
-					{/if}
 			{/if}
 			</div><!-- .info-box -->
 
@@ -266,6 +311,7 @@
 			<div id="attributes" class="product_attributes">
 				{foreach from=$groups key=id_attribute_group item=group}
 					{if $group.attributes|@count}
+					{assign var="combiName" value="{$group.name|escape:'html':'UTF-8'}"}
 						<fieldset class="attribute_fieldset">
 							<h3 class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;</h3>
 							{assign var="groupName" value="group_$id_attribute_group"}
@@ -296,13 +342,19 @@
 										<input type="hidden" class="color_pick_hidden" name="{$groupName|escape:'html':'UTF-8'}" value="{$default_colorpicker|intval}" />
 									{elseif ($group.group_type == 'radio')}
 										<table  class="semillas_atributos">
+										{assign var='primera_combi_stock' value=0}
+
+
 										{foreach from=$group.attributes key=id_attribute item=group_attribute}
 											<tr>
+												{if $group.attributes_quantity[$id_attribute] != 0 && $primera_combi_stock == 0}
+														{assign var='primera_combi_stock' value=$id_attribute}
+												{/if}
 											{if ($id_attribute == 35)}
 												<td>{$group_attribute|escape:'html':'UTF-8'} {$product->name}</td><td class="semillas_atributos_radio"><input id="{$group_attribute}" type="radio" class="attribute_radio" name="{$groupName|escape:'html':'UTF-8'}" value="{$id_attribute}"  checked="checked"/><label for="{$group_attribute}"><span><span></span></span></label></td>
 											 {/if}
 											 {if ($id_attribute != 35)}
-											 <td class="seed_name">{$group_attribute|escape:'html':'UTF-8'} {$product->name}</td><td class="semillas_atributos_radio">		<input type="radio"  id="{$group_attribute}" class="attribute_radio" name="{$groupName|escape:'html':'UTF-8'}" value="{$id_attribute}" {if ($group.default == $id_attribute)} checked="checked"{/if} /><label for="{$group_attribute}"><span><span></span></span></label></td>
+											 <td class="seed_name">{$group_attribute|escape:'html':'UTF-8'} {$product->name}</td><td class="semillas_atributos_radio">		<input type="radio"  id="{$group_attribute}" class="attribute_radio" name="{$groupName|escape:'html':'UTF-8'}" value="{$id_attribute}" {if $primera_combi_stock == $id_attribute} checked="checked"{/if} /><label for="{$group_attribute}"><span><span></span></span></label></td>
 
 										
 											  {/if}
@@ -340,6 +392,12 @@
 					<input type="hidden" name="add" value="1" />
 					<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
 				</p>
+				{if $conf_horario == 1 && $category->is_vaper == 0 && $horario == "abierto"}
+					<div class="horario-aviso">
+							<p class="horario-aviso-p1">¡Compra ahora y recibeló mañana! <i class="fa fa-angle-down" onclick="$('#letra-peque').toggle();"></i></p>
+							<p  class="horario-aviso-p2" style="display:none;" id="letra-peque">Válido únicamente en envíos realizados dentro de la península.</p>	
+						</div>
+					{/if}	
 				<div class="box-info-product">
 					<div class="content_prices main-color clearfix" id="caja-compra">
 						{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
@@ -408,7 +466,7 @@
 						{/if} {*close if for show price*}
 						{hook h="displayProductPriceBlock" product=$product type="weight"}
 						<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{else} class="btn-compra-container"{/if}>
-							<p id="add_to_cart" class="pull-right no-print">
+							<p id="add_to_cart" class="pull-right no-print ">
 								{if $deviceType != "computer"}
 								<a  href="https://api.whatsapp.com/send?phone=34653323445&text=Pregunta de articulo con ref:{$product->reference|escape:'html':'UTF-8'} "  rel="nofollow" target="_blank" style="display:none;" class="button btn-primary" id="btn-comprar-whats">
 										<i class="fa fa-whatsapp" aria-hidden="true"></i>  
@@ -422,9 +480,29 @@
 									{/if}
 								</button>
 							</p>
+							<p id="no_add_to_cart"  style="display:none;">Selecciona otro {$combiName}</p>
+							
 						</div>
-
-						{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE}
+						{if $product->quantity <= 0 && $category->is_seed == 1 && $conf_recomendados == 1}
+						{if $product->name|count_words > 1}
+							{assign var="bar_at" value=" "|explode:$product->name}
+							{if $bar_at[0] == "Auto" || $bar_at[0]|count_characters <= 2}
+								<p id="suggest_add_to_cart"  class="pull-right">
+								<a  class="btn-suggest" href="https://www.semillaslowcost.com/buscar?controller=search&orderby=position&orderway=desc&search_query={$bar_at[1]}">Click para sugerencia</a>
+								</p>
+							{else}
+								<p id="suggest_add_to_cart"  class="pull-right">
+								<a class="btn-suggest" href="https://www.semillaslowcost.com/buscar?controller=search&orderby=position&orderway=desc&search_query={$bar_at[0]}">Click para sugerencia</a>
+								</p>
+							{/if}
+						{/if}
+						{if $product->name|count_words == 1}
+						
+								<p id="suggest_add_to_cart" class="pull-right">
+								<a class="btn-suggest" href="https://www.semillaslowcost.com/buscar?controller=search&orderby=position&orderway=desc&search_query={$product->name}">Click para sugerencia</a>
+							</p>
+						{/if}
+						{elseif (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE}
 						{if $deviceType != "computer"}
 						{if $product->id_category_default != 276 && $product->id_category_default != 273 && $product->id_category_default != 274 && $product->id_category_default != 277 && $product->id_category_default != 278}
 							<div class="btn-compra-container">
@@ -452,6 +530,7 @@
 
 						<div class="clear"></div>
 					</div> <!-- end content_prices -->
+					
 
 					{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
 

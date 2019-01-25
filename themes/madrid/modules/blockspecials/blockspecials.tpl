@@ -33,7 +33,7 @@
             </a>
         </h4>
     </div><!-- .heading_block -->
-	<div class="block_content">
+	<div class="block_content row">
     {if $special}
         <ul class="products nolist">
             <li>

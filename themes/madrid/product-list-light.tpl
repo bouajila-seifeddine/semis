@@ -98,8 +98,8 @@
 					</span> -->
 
 					<!-- useful icons -->
-					{assign var=unique_id value=1|mt_rand:2}
-					{if $unique_id == 2}
+					
+					{if $product.on_sale}
 							<span class="labels"> <span class="sale">¡Oferta!</span> </span>
 					{/if}
 					<div class="icons">

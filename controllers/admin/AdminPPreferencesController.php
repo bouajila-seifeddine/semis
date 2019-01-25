@@ -157,6 +157,39 @@ class AdminPPreferencesControllerCore extends AdminController
                 ),
                 'submit' => array('title' => $this->l('Save'))
             ),
+             'acciones' => array(
+                'title' =>    $this->l('Llamadas la acción'),
+                'fields' =>    array(
+                    'PS_ACTIVAR_RECOMENDADOS' => array(
+                        'title' => $this->l('Activar el botón de similares cuando no hay stock en semillas.'),
+                        'validation' => 'isBool',
+                        'cast' => 'intval',
+                        'required' => false,
+                        'type' => 'bool'
+                    ),
+                    'PS_ACTIVAR_LLAMADAS' => array(
+                        'title' => $this->l('Activar textos aleatorios de llamada a la acción.'),
+                        'validation' => 'isBool',
+                        'cast' => 'intval',
+                        'required' => false,
+                        'type' => 'bool'
+                    ),
+                    'PS_ACTIVAR_HORARIO' => array(
+                        'title' => $this->l('Activar aviso llegará en 24 horas.'),
+                        'validation' => 'isBool',
+                        'cast' => 'intval',
+                        'required' => false,
+                        'type' => 'bool'
+                    ),
+                    'PS_HORA_LLAMADA' => array(
+                         'title' => $this->l('Introduce hora fín de aviso de llegada en 24 horas (Ejemplo: 16:00)'),
+                         'validation' => 'isGenericName',
+                         'type' => 'text'
+                  ),
+                  
+                ),
+                'submit' => array('title' => $this->l('Save'))
+            ),
             'fo_product_page' => array(
                 'title' =>    $this->l('Product page'),
                 'fields' =>    array(

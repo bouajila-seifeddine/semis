@@ -24,15 +24,11 @@ span.telefono {
 }
 .rte p {font-size:18px;}
 
-ul.usefull_link.nolist.clearBoth.pull-right.no-print {
-    margin-right: 1%;
-}
+
 
 @media screen and (max-width: 800px) {
 
-  ul.usefull_link.nolist.clearBoth.pull-right.no-print {
-    margin-right: 6%;
-}
+ 
 
 .content_prices.main-color.clearfix {
     margin-bottom: 5px;
@@ -212,7 +208,7 @@ div.product-desc .info-box {
   float: right;
   background: #fff;
   padding: 15px;
-  margin: 46px 0 18px 28px;
+  margin: 10px 0 10px 15px;
   display: inline-block;
 }
 div.product-desc .info-box p {
@@ -261,13 +257,13 @@ div.product-desc .content_prices span {
   margin-right: 10px;
 }
 div.product-desc .content_prices #old_price_display {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #2c313b;
   text-decoration: line-through;
 }
 div.product-desc .content_prices #our_price_display {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
   line-height: 46px;
@@ -278,8 +274,7 @@ div.product-desc .content_prices #reduction_percent_display {
   color: #fff;
   padding: 10px;
   position: absolute;
-  bottom: -41px;
-  left: 0;
+  left: 15px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   div.product-desc .content_prices #reduction_percent_display {
@@ -677,7 +672,7 @@ p#pQuantityAvailable {
     color: white;
     background: #ff4c4c;
     line-height: 21px;
-    padding: 3%;
+    padding: 1%;
     font-weight: 800;
     margin-top: 15px;
 }
@@ -686,7 +681,7 @@ p#pQuantityAvailable {
     color: white;
     background: #ff4c4c;
     line-height: 21px;
-    padding: 3%;
+    padding: 1%;
     font-weight: 800;
     margin-top: 15px;
 }
@@ -695,4 +690,21 @@ p#pQuantityAvailable {
  button.button.btn-primary {
     padding: 0px 5px 0 5px !important;
 }
+}
+
+.btn-suggest {
+    color: white;
+    line-height: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.btn-suggest:hover {
+    color: #2c313b;
+  
+}
+
+p#no_add_to_cart {
+    color: white;
+    line-height: 36px;
+    font-size: 17px;
 }
