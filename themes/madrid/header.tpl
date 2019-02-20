@@ -213,7 +213,7 @@
 				<div id="center_column" class="center_column col-xs-12 {if $hide_left_column && $hide_right_column}col-sm-{$cols|intval}{else}col-sm-12{/if} col-md-{$cols|intval}{if !empty($left_column_size)} col-md-push-3{/if}">
 					<div class="background">
 	<!-- Block search module TOP -->
-	{if $smarty.get.controller != "orderopc" && strpos($dir,'blog')==false}
+	{if $smarty.get.controller != "orderopc" && $smarty.get.controller != "orderconfirmation" && strpos($dir,'blog')==false}
 	
 	
 

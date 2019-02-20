@@ -43,6 +43,10 @@ class OrderOpcControllerCore extends ParentOrderController
             $this->context->smarty->assign('virtual_cart', $this->context->cart->isVirtualCart());
         }
 
+        //Se borran los cupones de envío gratis que estén caducados
+        Db::getInstance()->delete('cart_rule', 'date_to < NOW() AND free_shipping = 1');
+
+        
         $this->context->smarty->assign('is_multi_address_delivery', $this->context->cart->isMultiAddressDelivery() || ((int)Tools::getValue('multi-shipping') == 1));
         $this->context->smarty->assign('open_multishipping_fancybox', (int)Tools::getValue('multi-shipping') == 1);
 
@@ -435,6 +439,27 @@ class OrderOpcControllerCore extends ParentOrderController
              else {
                 $this->context->smarty->assign('horario', 'abierto');
             }
+
+         if (Tools::getValue('contactame') && Tools::getValue('idcontacto') ){
+
+               Mail::Send(
+                    (int)(Configuration::get('PS_LANG_DEFAULT')), // defaut language id
+                         'contact', // email template file to be use
+                         'Ha Ocurrido un error en el pago', // email subject
+                          array(
+                              '{email}' => Configuration::get('PS_SHOP_EMAIL'), // sender email addresss
+                               '{message}' => 'El cliente '.Tools::getValue('idcontacto').' ha tenido un error en el pago y quiere que le contactes por '.Tools::getValue('contactame').'. Su carrito costaba '.$this->context->cart->getOrderTotal() // email content
+                          ),
+                 'webmaster.semillaslowcost@gmail.com', // receiver email address 
+                    NULL, //receiver name
+                 NULL, //from email address
+                 NULL  //from name
+              );
+
+            
+
+         }
+         
         /* Load guest informations */
         if ($this->isLogged && $this->context->cookie->is_guest) {
             $this->context->smarty->assign('guestInformations', $this->_getGuestInformations());
@@ -454,8 +479,34 @@ class OrderOpcControllerCore extends ParentOrderController
         $this->context->smarty->assign('optin', (bool)Configuration::get('PS_CUSTOMER_OPTIN'));
         $this->context->smarty->assign('field_required', $this->context->customer->validateFieldsRequiredDatabase());
         $this->context->smarty->assign('conf_horario', Configuration::get('PS_ACTIVAR_HORARIO'));
+        $this->context->smarty->assign('cookie_test', $this->context->cookie);
 
+        $numero_productos = $this->context->cart->nbProducts();
+        $productos_vistos_datos = array();
 
+        
+
+        //Si no hay productos en el carro y existe la cookie de productos vistos
+        if ($numero_productos == 0 && isset($this->context->cookie->visited_products)){
+                
+                $productos_vistos_datos  = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('SELECT p.`id_product`, p.`active`, pl.`link_rewrite`, p.`id_category_default`, pl.`name`, cl.`link_rewrite` AS `category_link`,c.`id_category`, c.`position`, i.`id_image`, cl.`name` AS `category_name`, pa.`id_product_attribute`, pa.`price` AS `price_attribute`, p.`price` FROM `ps_product` p LEFT JOIN `ps_product_lang` pl ON (p.`id_product` = pl.`id_product`) LEFT JOIN `ps_category_product` c ON (c.`id_product` = p.`id_product`) LEFT JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category`) LEFT JOIN `ps_image_shop` i ON (i.`id_product` = p.`id_product`) LEFT JOIN `ps_product_attribute` pa ON (pa.`id_product` = p.`id_product`) WHERE p.`id_product` IN ('.$this->context->cookie->visited_products.') AND p.`active` = 1 AND cl.`id_lang` = 4 AND pl.`id_lang` = 4 GROUP BY p.`id_product` ORDER BY pl.`name`');
+           
+            //Lo transformamos a array para operar
+            $array_poductos = explode(',', $this->context->cookie->visited_products);
+            $poductos_restantes = 5 - count($array_poductos);
+
+            if ($poductos_restantes > 0){
+                 $productos_vistos_datos_extra  = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('SELECT p.`id_product`, p.`id_category_default`, p.`active`, pl.`link_rewrite`, pl.`name`, cl.`link_rewrite` AS `category_link`,c.`id_category`, c.`position`, i.`id_image`, cl.`name` AS `category_name`, pa.`id_product_attribute`, pa.`price` AS `price_attribute`, p.`price` FROM `ps_product` p LEFT JOIN `ps_product_lang` pl ON (p.`id_product` = pl.`id_product`) LEFT JOIN `ps_category_product` c ON (c.`id_product` = p.`id_product`) LEFT JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category`) LEFT JOIN `ps_image_shop` i ON (i.`id_product` = p.`id_product`) LEFT JOIN `ps_product_attribute` pa ON (pa.`id_product` = p.`id_product`) WHERE cl.`id_category` = '.$productos_vistos_datos[0]['id_category_default'].' AND p.`active` = 1 AND cl.`id_lang` = 4 AND pl.`id_lang` = 4 GROUP BY p.`id_product` ORDER BY RAND() LIMIT '.$poductos_restantes);
+
+                                 $productos_vistos_datos = array_merge($productos_vistos_datos, $productos_vistos_datos_extra);
+
+            }
+
+           
+
+        }
+
+        $this->context->smarty->assign('productos_vistos_data', $productos_vistos_datos);
         $this->_processAddressFormat();
 
         if ((bool)Configuration::get('PS_ADVANCED_PAYMENT_API')) {

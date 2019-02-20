@@ -29,6 +29,7 @@
 	{assign var="back_order_page" value="order.php"}
 {/if}
 
+
 {if $PS_CATALOG_MODE}
 	{capture name=path}{l s='Your shopping cart'}{/capture}
 	<h2 id="cart_title">{l s='Your shopping cart'}</h2>
@@ -54,9 +55,30 @@
 		<!-- END Payment -->
 	{else}
 		{capture name=path}{l s='Your shopping cart'}{/capture}
-		<h2>{l s='Your shopping cart'}</h2>
+		<h2>{l s='Your shopping cart is empty.'}</h2>
 		{include file="$tpl_dir./errors.tpl"}
-		<p class="alert alert-warning">{l s='Your shopping cart is empty.'}</p>
+		<!-- <p class="alert alert-warning">Quizás sigas interesado en estos productos....</p>-->
+		{if $productos_vistos_data}
+		<h4 class="header-wished-poducts"> <strong>Productos que pueden ser de tu interés:</strong></h4>
+		{foreach from=$productos_vistos_data item=product}
+			<div class=" col-md-2ot col-sm-3 col-xs-6 product product-wished" itemtype="http://schema.org/Product" itemscope="">
+   				<div class="bg">
+     				 <div class="inner second-image">
+         				<div class="img_hover"></div>
+        				 <a itemprop="url" href="https://www.semillaslowcost.com/{$product.category_link}/{$product.id_product}-{$product.link_rewrite}.html" title="{$product.name}"> <img itemprop="image" data-src="https://www.semillaslowcost.com/{$product.id_image}-home_default/{$product.link_rewrite}.jpg" alt="{$product.name}" class="lazy img-responsive first-image" src="https://www.semillaslowcost.com/{$product.id_image}-home_default/{$product.link_rewrite}.jpg" alt="{$product.name}"> </a>
+        					 <div class="icons"></div>
+        				 <div class="info">
+          				  <h3 itemprop="name"><a itemprop="url" href="https://www.semillaslowcost.com/{$product.category_link}/{$product.id_product}-{$product.link_rewrite}.html" title="{$product.name}">{$product.name|truncate:18:'...'|escape:'html':'UTF-8'} </a></h3>
+           				 <div class="price" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+             			 <!--  <span itemprop="price" class="price "> {$product.price_attribute|string_format:"%.2f"}€ </span> -->
+             				  <meta itemprop="priceCurrency" content="EUR">
+            			</div>
+         				</div>
+      				</div>
+   				</div>
+			</div>
+		{/foreach}
+		{/if}
 	{/if}
 {strip}
 {addJsDef imgDir=$img_dir}

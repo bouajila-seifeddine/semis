@@ -72,6 +72,39 @@ class OrderConfirmationControllerCore extends FrontController
         if ($order->module != $module->name) {
             Tools::redirect($redirectLink);
         }
+
+        $proximo_gratis="no";
+        $address = new Address($order->id_address_delivery);
+        if ($order->getOrdersTotalPaid() > 49 && $module->name ==  "redsys" && $address->country == "Spain" && $address->id_state != 321 && $address->id_state != 351 && $address->id_state != 363 && $address->id_state != 364 && $address->id_state != 339){
+            $coupon = new CartRule();
+
+            //put here the coupon name + translations
+             //ex: if your website is in french (id language = 1) and english (id language = 2)
+            $coupon->name = array(4=>"Envi-gratis-".Tools::passwdGen(5));
+
+             //by default cart rule is valid for one client that can use it one time
+
+              //validity
+            $coupon->date_from =  date('Y-m-d H:i:s', time());
+
+            //Le asignamos caducidad 1800s = media hora
+            $coupon->date_to = date('Y-m-d H:i:s', time() + 1800);
+            
+             //Partial Use
+            $coupon->partial_use = 0;
+            $coupon->reduction_tax = 1;
+            $coupon->free_shipping = 1;
+
+            //Solo valido para el usuario que ha realizado el pedido
+            $coupon->id_customer = $this->context->customer->id;
+        
+            $proximo_gratis="si";
+            
+            //this creates the coupon
+            $coupon->add();
+        }
+        $this->context->smarty->assign('module_name', $module->name);
+        $this->context->smarty->assign('proximo_gratis', $proximo_gratis);
     }
 
     /**
@@ -98,6 +131,62 @@ class OrderConfirmationControllerCore extends FrontController
             /* If guest we clear the cookie for security reason */
             $this->context->customer->mylogout();
         }
+
+
+        $productos_vistos_datos = array();
+
+        
+
+        //Si no hay productos en el carro y existe la cookie de productos vistos
+        if (isset($this->context->cookie->visited_products)){
+                
+                $productos_vistos_datos  = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('SELECT p.`id_product`, p.`active`, pl.`link_rewrite`, p.`id_category_default`, pl.`name`, cl.`link_rewrite` AS `category_link`,c.`id_category`, c.`position`, i.`id_image`, cl.`name` AS `category_name`, pa.`id_product_attribute`, pa.`price` AS `price_attribute`, p.`price` FROM `ps_product` p LEFT JOIN `ps_product_lang` pl ON (p.`id_product` = pl.`id_product`) LEFT JOIN `ps_category_product` c ON (c.`id_product` = p.`id_product`) LEFT JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category`) LEFT JOIN `ps_image_shop` i ON (i.`id_product` = p.`id_product`) LEFT JOIN `ps_product_attribute` pa ON (pa.`id_product` = p.`id_product`) WHERE p.`id_product` IN ('.$this->context->cookie->visited_products.') AND p.`active` = 1 AND cl.`id_lang` = 4 AND pl.`id_lang` = 4 GROUP BY p.`id_product` ORDER BY pl.`name`');
+           
+            //Lo transformamos a array para operar
+            $array_poductos = explode(',', $this->context->cookie->visited_products);
+            $poductos_restantes = 5 - count($array_poductos);
+
+            if ($poductos_restantes > 0){
+                 $productos_vistos_datos_extra  = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('SELECT p.`id_product`, p.`id_category_default`, p.`active`, pl.`link_rewrite`, pl.`name`, cl.`link_rewrite` AS `category_link`,c.`id_category`, c.`position`, i.`id_image`, cl.`name` AS `category_name`, pa.`id_product_attribute`, pa.`price` AS `price_attribute`, p.`price` FROM `ps_product` p LEFT JOIN `ps_product_lang` pl ON (p.`id_product` = pl.`id_product`) LEFT JOIN `ps_category_product` c ON (c.`id_product` = p.`id_product`) LEFT JOIN `ps_category_lang` cl ON (c.`id_category` = cl.`id_category`) LEFT JOIN `ps_image_shop` i ON (i.`id_product` = p.`id_product`) LEFT JOIN `ps_product_attribute` pa ON (pa.`id_product` = p.`id_product`) WHERE cl.`id_category` = '.$productos_vistos_datos[0]['id_category_default'].' AND p.`active` = 1 AND cl.`id_lang` = 4 AND pl.`id_lang` = 4 GROUP BY p.`id_product` ORDER BY RAND() LIMIT '.$poductos_restantes);
+
+                                 $productos_vistos_datos = array_merge($productos_vistos_datos, $productos_vistos_datos_extra);
+
+            }
+
+           
+
+        }
+
+         $mensaje_enviado = false;
+        if (Tools::getValue('carita')){
+               $carita_string = "";
+               $sugerencia = "NO HA DEJADO MENSAJE";
+               if (Tools::getValue('sugerencia')){ $sugerencia = Tools::getValue('sugerencia');}
+
+               if(Tools::getValue('carita') == 1){$carita_string = "buena"; }
+               if(Tools::getValue('carita') == 2){$carita_string = "regular"; }
+               if(Tools::getValue('carita') == 3){$carita_string = "mala"; }
+                
+               Mail::Send(
+                    (int)(Configuration::get('PS_LANG_DEFAULT')), // defaut language id
+                         'contact', // email template file to be use
+                         'Cuestionario satisfacción de cliente', // email subject
+                          array(
+                              '{email}' => Configuration::get('PS_SHOP_EMAIL'), // sender email addresss
+                               '{message}' => 'El cliente '.$this->context->customer->email.' Opina que la experiencia ha sido '.$carita_string.' y de sugerencia: '.$sugerencia// email content
+                          ),
+                 'feedback@semillaslowcost.com', // receiver email address 
+                    NULL, //receiver name
+                 NULL, //from email address
+                 NULL  //from name
+              );
+
+             $mensaje_enviado = true;
+
+         }
+
+         $this->context->smarty->assign('mensaje_enviado', $mensaje_enviado);
+        $this->context->smarty->assign('productos_vistos_data', $productos_vistos_datos);
 
         $this->setTemplate(_PS_THEME_DIR_.'order-confirmation.tpl');
     }

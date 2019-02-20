@@ -20,7 +20,7 @@
 			<i class="fa fa-search" onclick="document.getElementById('search_block_top_mobile').classList.toggle('hidden'); window.scrollTo(0,0);" aria-label="Buscador"></i>
 		</div>
 		<div class="mobile-menu-carrito">	
-		<a  href="" onclick="togglecarromobile()"><i class="pull-right icon icon-shopping-cart"><span class="cart-qties-mobile" id="cart-qties-mobile-id" {nocache}{if $cart_qties == 0} style="display:none;" {/if}>{$cart_qties}{/nocache}</span> </i></a>
+		<a  href="https://www.semillaslowcost.com/pedido-rapido" onclick="togglecarromobile()"><i class="pull-right icon icon-shopping-cart"><span class="cart-qties-mobile" id="cart-qties-mobile-id" {nocache}{if $cart_qties == 0} style="display:none;" {/if}>{$cart_qties}{/nocache}</span> </i></a>
 
 		</div>
 	</div>

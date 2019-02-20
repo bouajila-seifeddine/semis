@@ -477,7 +477,7 @@ class Redsys extends PaymentModule {
 			$miObj->setParameter ( "DS_MERCHANT_TERMINAL", $this->terminal );
 			$miObj->setParameter ( "DS_MERCHANT_MERCHANTURL", $urltienda );
 			$miObj->setParameter ( "DS_MERCHANT_URLOK", $protocolo . $_SERVER ['HTTP_HOST'] . __PS_BASE_URI__ . 'index.php?controller=order-confirmation&id_cart=' . $id_cart . '&id_module=' . $this->id . '&id_order=' . $this->currentOrder . '&key=' . $customer->secure_key );
-			$miObj->setParameter ( "DS_MERCHANT_URLKO", $urltienda );
+			$miObj->setParameter ( "DS_MERCHANT_URLKO", "https://www.semillaslowcost.com/pedido-rapido?error=true" );
 			$miObj->setParameter ( "Ds_Merchant_ConsumerLanguage", $idioma_tpv );
 			$miObj->setParameter ( "Ds_Merchant_ProductDescription", $productos );
 			// $miObj->setParameter("Ds_Merchant_Titular",$this->nombre);

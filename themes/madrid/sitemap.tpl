@@ -84,6 +84,11 @@
                         OPINIONES DE CLIENTES
                     </a>
                 </li>
+                  <li>
+                    <a href="https://www.semillaslowcost.com/fertilizantes-abonos-plantas-marihuana/ " title="Los Mejores Abonos y Fertilizantes para la Marihuana">
+                        MEJORES ABONOS Y FERTILIZANTES
+                    </a>
+                </li>
                 {if $display_store}
                     <li class="last">
                         <a href="{$link->getPageLink('stores')|escape:'html':'UTF-8'}" title="{l s='List of our stores'}">

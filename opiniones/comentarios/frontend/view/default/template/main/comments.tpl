@@ -11,13 +11,15 @@
 								$banco = $value['category_name'];
 								$bancolimpio = str_replace(' ', '-', $banco);
 								$bancolimpio = str_replace('\'', '-', $bancolimpio);
+								$banco = str_replace('Autoflorecientes', '', $banco);
+								$banco = str_replace('Feminizadas', '', $banco);
 								if($contador2 == 0){		
 										echo '<h3>Variedades de '.$banco.'</h3>';
 										echo '<ul class="opiniones-geneticas">';
 									}	
 
 								echo '<li><a href="https://www.semillaslowcost.com/'
-									.$bancolimpio.
+									.$value['category_link'].
 									'/'
 									.$value['id_product'].
 									'-'
@@ -37,7 +39,7 @@
 
 									if($contador <= 4){
 									$imagenesHtml = $imagenesHtml.'<div class=" col-md-3 col-sm-6 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
-						                                       <div class="inner second-image imgopi'.$contador.'"><div class="img_hover"></div>
+						                                     <div class="inner second-image imgopi'.$contador.'"><div class="img_hover"></div>
 						                                          <a itemprop="url" href="https://www.semillaslowcost.com/index.php?id_product='.$value['id_product'].'&controller=product" title="'.$value['name'].'">
 						                                          <img itemprop="image" src="https://www.semillaslowcost.com/'.$value['id_image'].'-home_default/'.$value['link_rewrite'].'.jpg" alt="Comprar '.$value['name'].'" title="Comprar '.$value['name'].'" class="img-responsive first-image">
 						                                          </a>

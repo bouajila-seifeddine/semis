@@ -56,7 +56,7 @@
 								endforeach;
  								?>
 						<span class="cmtx_says">
-							<?php echo ' sobre la <a href="'.$link.'" title="'.$nombre_producto.'">'.$nombre_producto.'</a>'; ?>
+							<?php echo ' sobre la '.$nombre_producto; ?>
 						</span>
 					<?php } ?>
 				</div>

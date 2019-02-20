@@ -175,7 +175,7 @@ class ProductControllerCore extends FrontController
             if (Pack::isPack((int)$this->product->id) && !Pack::isInStock((int)$this->product->id)) {
                 $this->product->quantity = 0;
             }
-
+            
             $this->product->description = $this->transformDescriptionWithImg($this->product->description);
 
             // Assign to the template the id of the virtual product. "0" if the product is not downloadable.
@@ -225,6 +225,32 @@ class ProductControllerCore extends FrontController
                     }
                 }
             }
+
+        //Ya existe la coookie de os productos vistos
+        if (isset($this->context->cookie->visited_products)) {
+
+            //Sacamos el string con todos los ids separados por comas
+            $productos_vistos_string = $this->context->cookie->visited_products;
+
+            //Lo transformamos a array para operar
+            $array_poductos = explode(',', $productos_vistos_string);
+
+            //Si el usuario aun no iene X productos a la cookie se le añade
+             if(count($array_poductos) < 10 && !in_array($this->product->id, $array_poductos)){
+                 $this->context->cookie->visited_products = $productos_vistos_string.','.$this->product->id;
+            }
+
+            //Si ya tiene X le quitamos la primera posición y le añadimos la última.
+            if(count($array_poductos) >= 10 && !in_array($this->product->id, $array_poductos)){
+                    array_shift($array_poductos);
+                    array_push($array_poductos, $this->product->id);
+                    $productos_vistos_string = implode(',', $array_poductos);
+                    $this->context->cookie->visited_products = $productos_vistos_string;
+
+            }
+        }else{
+            $this->context->cookie->visited_products = (int)$this->product->id;
+        }
 
             // Assign template vars related to the category + execute hooks related to the category
             $this->assignCategory();
