@@ -86,6 +86,16 @@ class ConsentManager
             _x('This consent is not visible by default. If someone wishes to withdraw it, they should simply request to delete all their data.', '(Admin)', 'gdpr-framework'),
             true
         );
+        /****
+         * Woocommerce Policy consent
+         */
+        if ( class_exists( 'WooCommerce' ) ) {
+            gdpr('consent')->register(
+                'gdpr_woo_consent','Woocommerce Policy Consent',
+                _x('This consent is visible by default on woocommerce checkout page. If someone wishes to withdraw it, they should simply request to delete all their data.', '(Admin)', 'gdpr-framework'),
+                true
+            );
+        }
     }
 
     /**

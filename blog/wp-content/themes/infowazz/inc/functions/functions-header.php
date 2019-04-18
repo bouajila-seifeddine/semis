@@ -36,6 +36,13 @@ else if(!empty($option['menu_background_width'])) {
 <div class="topbar">
                         <div class="container">
                         <div class="telefonodiv" style="float:left; margin-top: 1%; font-size: large;"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size:20px; color:green;"></i> <span class="telefono">+34 653 323 445</span></div>
+                        <div class="clearfix clear-mobile"></div>
+                        <div id="search_block_top_mobile" class="hidden">
+                        	<form method="get" id="searchform" action="https://www.semillaslowcost.com/blog//"> <input type="text" value="¿Qué estas buscando?" onfocus="if(this.value=='¿Qué estas buscando?')this.value='';" onblur="if(this.value=='')this.value='¿Qué estas buscando?';" name="s" id="s3" class="search-input-heade">
+                        		<input class="search-submit-header" type="submit" value="BUSCAR">			
+                        	</form>
+                        </div>
+
                            <div class="col-lg-8 col-md-7 hidden-xs shortlinks pull-right">
                               <ul class="nolist row pull-right">
                                  <li>
@@ -224,7 +231,6 @@ function infowazz_socials() { ?>
 			if(!empty($option['mt_icon_vimeo'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" rel="nofollow noopener noreferrer" <?php }} ?> href="<?php echo esc_url($option['mt_icon_vimeo']); ?>"><i class="ic-vimeo"  role="img" alt="Vimeo" aria-label="Vimeo"></i></a></li><?php }
 			if(!empty($option['mt_icon_youtube'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" rel="nofollow noopener noreferrer" <?php }} ?> href="<?php echo esc_url($option['mt_icon_youtube']); ?>"><i class="ic-youtube-play"  role="img" alt="YouTube" aria-label="YouTube"></i></a></li><?php }
 			if(!empty($option['mt_icon_linkedin'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" rel="nofollow noopener noreferrer" <?php }} ?> href="<?php echo esc_url($option['mt_icon_linkedin']); ?>"><i class="ic-linkedin"  role="img" alt="Linkedin" aria-label="Linkedin"></i></a></li><?php }
-			if(!empty($option['mt_icon_gplus'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" rel="nofollow noopener noreferrer" <?php }} ?> href="<?php echo esc_url($option['mt_icon_gplus']); ?>"><i class="ic-google-plus"  role="img" alt="Google plus"  aria-label="Google plus"></i></a></li><?php }
 			if(!empty($option['mt_icon_dribble'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" rel="nofollow noopener noreferrer" <?php }} ?> href="<?php echo esc_url($option['mt_icon_dribble']); ?>"><i class="ic-dribbble"></i></a></li><?php }
 			if(!empty($option['mt_icon_skype'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank"  rel="nofollow noopener noreferrer" <?php }} ?> href="<?php echo esc_url($option['mt_icon_skype']); ?>"><i class="ic-skype"></i></a></li><?php }
 			if(!empty($option['mt_icon_pinterest'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" rel="nofollow noopener noreferrer" <?php }} ?> href="<?php echo esc_url($option['mt_icon_pinterest']); ?>"><i class="ic-pinterest"  role="img" alt="Pinterest"  aria-label="Pinterest"></i></a></li><?php }
@@ -261,7 +267,7 @@ function infowazz_header_fixed() {
 									<li class="share-twitter"><a class="mt-radius" href="http://twitter.com/home/?status=<?php the_title(); ?>-<?php the_permalink(); ?>" target="_blank" rel="nofollow noopener noreferrer"><span><?php echo esc_html__('Tweet on Twitter', 'infowazz'); ?></span></a></li>
 									<li class="share-more">
 										<div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
-										<a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank" rel="nofollow noopener noreferrer"><div class="google mt-radius-b"></div></a>
+										
 										<a class="mt-radius" href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank" rel="nofollow noopener noreferrer"><div class="pinterest mt-radius-b"></div></a>
 									</li>
 								</ul>

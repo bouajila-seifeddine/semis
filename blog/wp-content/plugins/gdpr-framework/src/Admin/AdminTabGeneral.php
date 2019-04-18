@@ -31,6 +31,9 @@ class AdminTabGeneral extends AdminTab
 
         $this->registerSetting('gdpr_enable_stylesheet');
         $this->registerSetting('gdpr_enable_theme_compatibility');
+        if (class_exists( 'WooCommerce' )) {
+            $this->registerSetting('gdpr_enable_woo_compatibility');
+        }
     }
 
     public function init()
@@ -223,6 +226,23 @@ class AdminTabGeneral extends AdminTab
                 _x('Enable automatic theme compatibility', '(Admin)', 'gdpr-framework'),
                 [$this, 'renderThemeCompatibilitySelector'],
                 'gdpr_section_compatibility'
+            );
+        }
+        if (class_exists( 'WooCommerce' )) {
+
+            /**
+             * Compatibility settings
+             */
+            $this->registerSettingSection(
+                'gdpr_woo_compatibility',
+                _x('Woocommerce Integration', '(Admin)', 'gdpr-framework')
+            );
+
+            $this->registerSettingField(
+                'gdpr_enable_woo_compatibility',
+                _x('Enable WooCommerce Compatibility', '(Admin)', 'gdpr-framework'),
+                [$this, 'renderwooCompatibilitySelector'],
+                'gdpr_woo_compatibility'
             );
         }
     }
@@ -427,5 +447,11 @@ class AdminTabGeneral extends AdminTab
     {
         $enabled = gdpr('options')->get('enable_theme_compatibility');
         echo gdpr('view')->render('admin/general/theme-compatibility', compact('enabled'));
+    }
+
+    public function renderwooCompatibilitySelector()
+    {
+        $enabled = gdpr('options')->get('enable_woo_compatibility');
+        echo gdpr('view')->render('admin/general/woo-compatibility', compact('enabled'));
     }
 }

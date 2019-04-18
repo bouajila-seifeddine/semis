@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: The GDPR Framework 1.0\n"
 "Report-Msgid-Bugs-To: gdpr@codelight.eu\n"
 "POT-Creation-Date: 2018-04-16 10:50+0000\n"
-"PO-Revision-Date: 2019-01-11 14:03+0530\n"
+"PO-Revision-Date: 2019-02-06 15:58+0530\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1708,3 +1708,53 @@ msgctxt "(Admin)"
 msgid "enables your organization to comply with all privacy regulations."
 msgstr ""
 "позволява на вашата организация да спазва всички правила за поверителност."
+
+#: views\admin\support\contents.php:49
+msgctxt "(Admin)"
+msgid ""
+"Found a bug or have a question about the plugin? Submit a support request "
+"and we’ll get right on it!"
+msgstr ""
+"Открихте грешка или имате въпрос относно приставката? Изпратете заявка за "
+"поддръжка и ще се оправим!"
+
+#: views\admin\support\contents.php:58
+msgctxt "(Admin)"
+msgid "Need assistance in making your site compliant? We can help!"
+msgstr "Нуждаете се от помощ при съгласуването на сайта Ви? Можем да помогнем!"
+
+#: views\admin\general\woo-compatibility.php:9
+msgctxt "(Admin)"
+msgid "Enable WooCommerce data on GDPR tool"
+msgstr "Активиране на данните за WooCommerce за инструмента GDPR"
+
+#: src\Admin\AdminTabGeneral.php:241
+msgctxt "(Admin)"
+msgid "Enable WooCommerce Compatibility"
+msgstr "Активиране на съвместимостта на WooCommerce"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:19
+msgid "Note Regarding Order:"
+msgstr "Забележка относно поръчката:"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:20
+msgid ""
+"Your order with status Processing will not get deleted until status change."
+msgstr ""
+"Вашата поръчка със статус Обработка няма да бъде изтрита до промяна на "
+"статуса."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:21
+msgid "Your order with status Completed will get anonymize."
+msgstr "Вашата поръчка със завършен статус ще стане анонимна."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:22
+msgid "If you delete Completed order you can't apply for refund."
+msgstr ""
+"Ако изтриете попълнената поръчка, не можете да кандидатствате за "
+"възстановяване."
+
+#: views\admin\general\woo-compatibility.php:12
+msgctxt "(Admin)"
+msgid "Will work for WooCommerce Version 3.4.0 or later."
+msgstr "Ще работи за WooCommerce версия 3.4.0 или по-нова."

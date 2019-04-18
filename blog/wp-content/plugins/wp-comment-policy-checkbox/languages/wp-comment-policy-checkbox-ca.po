@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Comments Policy Checkbox\n"
+"POT-Creation-Date: 2018-02-04 12:31+0100\n"
+"PO-Revision-Date: 2018-02-04 12:31+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: wpcpc.php\n"
+"X-Poedit-SearchPath-1: admin/wpcpc-admin.php\n"
+
+#: admin/wpcpc-admin.php:11
+msgid "Comments policy checkbox"
+msgstr ""
+
+#: admin/wpcpc-admin.php:31
+msgid ""
+"The check box for reading and accepting the privacy policy in the comment "
+"forms is active. To deactivate it you must deactivate the WP Comment Policy "
+"Check plugin."
+msgstr ""
+
+#: admin/wpcpc-admin.php:34
+msgid ""
+"The page with the privacy policy to which you will link the text of the "
+"checkbox will be: "
+msgstr ""
+
+#: admin/wpcpc-admin.php:37
+msgid "-- none --"
+msgstr "-- cap --"
+
+#: wpcpc.php:63
+msgid "I have read and accept the "
+msgstr "He llegit i acepto la "
+
+#: wpcpc.php:70
+msgid "Privacy Policy"
+msgstr "Política de Privacitat"
+
+#: wpcpc.php:88
+msgid "Error: you must accept the Privacy Policy."
+msgstr "Error: ha d'acceptar la Política de Privacitat"
+
+#: wpcpc.php:88
+msgid "&laquo; Back"
+msgstr ""

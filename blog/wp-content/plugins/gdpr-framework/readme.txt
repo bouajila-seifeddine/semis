@@ -36,6 +36,7 @@ This product gives a simple and elegant interface to handle Data Subject Access 
 &#9745; We are developer-friendly. Everything can be extended, every feature and template can be overridden.
 &#9745; Cookie solution
 &#9745; Integration with ClassiDocs
+&#9745; Integration with Woocommerce Version 3.4.0 or later.
 
 ## IMPORTANT
 Please disable (or otherwise remove) caching capabilities from the plugin pages - as these are very dynamic and based on use interaction.
@@ -92,6 +93,26 @@ In addition to that, we provide tools to manage and track custom consent types a
 We are also planning to add other important privacy-related features missing from WordPress core over time.
 
 == Changelog ==
+= 1.0.28 (02/28/2019) =
+* WPSD-220 : WordpressAdmin::enqueue() going about it horribly wrong.
+* WPSD-231 : Export HMLT ne fonctionne pas / Doesn't work.
+* WPSD-233,WPSD-233 : Genesis Login Modal Box and frontend Js issue.
+
+= 1.0.27 (02/26/2019) =
+* GDPRF-93 : Update links in Support tab of plugin.
+* WPSD-217 : Privacy tools page in 2 languages site.
+
+= 1.0.26 (02/05/2019) =
+* Fix issue Integration with woocommerce. 
+
+= 1.0.25 (02/04/2019) =
+* Version Refresh to ensure latest stable functional - correcting svn upload failure previously
+
+= 1.0.24 (02/04/2019) =
+* SD-203: Enable Privacy Link option doesn’t seem to change anything.
+* GDPRF-84: Update links in Support tab of plugin.
+* GDPRF-83: Integration with WooCommerce.
+
 = 1.0.23 (01/14/2019) =
 * SD-173: Add hook to change the error message on WP comment.
 * GDPRF-80:Add Data443 Privacy Manager tab in plugin.

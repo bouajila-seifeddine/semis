@@ -62,6 +62,7 @@ class DataSubjectIdentificator
     {
         $key = $this->generateKey($email);
         $privacyToolsPageUrl = gdpr('helpers')->getPrivacyToolsPageUrl();
+        $privacyToolsPageUrl = apply_filters('privacy_tools_gdprf_page_url',$privacyToolsPageUrl);
         $identificationUrl = add_query_arg([
             'gdpr_key' => $key,
             'email' => $email,

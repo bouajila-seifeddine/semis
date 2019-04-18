@@ -23,6 +23,7 @@ $cookie->write();
 
 <link rel="stylesheet" href="https://www.semillaslowcost.com/blog/wp-content/themes/infowazz/style-compress.css" type="text/css" media="all" />
 
+
  
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); ?>

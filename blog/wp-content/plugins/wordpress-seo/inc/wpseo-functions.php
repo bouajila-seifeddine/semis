@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Internals
  */
 
@@ -31,8 +33,7 @@ if ( ! function_exists( 'yoast_breadcrumb' ) ) {
 	function yoast_breadcrumb( $before = '', $after = '', $display = true ) {
 		$breadcrumbs_enabled = current_theme_supports( 'yoast-seo-breadcrumbs' );
 		if ( ! $breadcrumbs_enabled ) {
-			$options             = get_option( 'wpseo_internallinks' );
-			$breadcrumbs_enabled = ( $options['breadcrumbs-enable'] === true );
+			$breadcrumbs_enabled = WPSEO_Options::get( 'breadcrumbs-enable', false );
 		}
 
 		if ( $breadcrumbs_enabled ) {
@@ -164,17 +165,14 @@ function wpseo_wpml_config( $config ) {
 					foreach ( $translate_cp as $post_type ) {
 						$admin_texts[ $k ]['key'][]['attr']['name'] = 'title-' . $post_type;
 						$admin_texts[ $k ]['key'][]['attr']['name'] = 'metadesc-' . $post_type;
-						$admin_texts[ $k ]['key'][]['attr']['name'] = 'metakey-' . $post_type;
 						$admin_texts[ $k ]['key'][]['attr']['name'] = 'title-ptarchive-' . $post_type;
 						$admin_texts[ $k ]['key'][]['attr']['name'] = 'metadesc-ptarchive-' . $post_type;
-						$admin_texts[ $k ]['key'][]['attr']['name'] = 'metakey-ptarchive-' . $post_type;
 
 						$translate_tax = $sitepress->get_translatable_taxonomies( false, $post_type );
 						if ( is_array( $translate_tax ) && $translate_tax !== array() ) {
 							foreach ( $translate_tax as $taxonomy ) {
 								$admin_texts[ $k ]['key'][]['attr']['name'] = 'title-tax-' . $taxonomy;
 								$admin_texts[ $k ]['key'][]['attr']['name'] = 'metadesc-tax-' . $taxonomy;
-								$admin_texts[ $k ]['key'][]['attr']['name'] = 'metakey-tax-' . $taxonomy;
 							}
 						}
 					}
@@ -202,17 +200,11 @@ function wpseo_shortcode_yoast_breadcrumb() {
 
 add_shortcode( 'wpseo_breadcrumb', 'wpseo_shortcode_yoast_breadcrumb' );
 
-/**
- * Emulate PHP native ctype_digit() function for when the ctype extension would be disabled *sigh*.
- * Only emulates the behaviour for when the input is a string, does not handle integer input as ascii value.
- *
- * @param    string $string
- *
- * @return    bool
- */
 if ( ! extension_loaded( 'ctype' ) || ! function_exists( 'ctype_digit' ) ) {
-
 	/**
+	 * Emulate PHP native ctype_digit() function for when the ctype extension would be disabled *sigh*.
+	 * Only emulates the behaviour for when the input is a string, does not handle integer input as ascii value.
+	 *
 	 * @param string $string String input to validate.
 	 *
 	 * @return bool
@@ -248,3 +240,16 @@ function wpseo_split_shared_term( $old_term_id, $new_term_id, $term_taxonomy_id,
 }
 
 add_action( 'split_shared_term', 'wpseo_split_shared_term', 10, 4 );
+
+/**
+ * Get all WPSEO related capabilities.
+ *
+ * @since 8.3
+ * @return array
+ */
+function wpseo_get_capabilities() {
+	if ( ! did_action( 'wpseo_register_capabilities' ) ) {
+		do_action( 'wpseo_register_capabilities' );
+	}
+	return WPSEO_Capability_Manager_Factory::get()->get_capabilities();
+}

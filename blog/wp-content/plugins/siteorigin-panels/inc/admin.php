@@ -19,7 +19,7 @@ class SiteOrigin_Panels_Admin {
 			'plugin_action_links'
 		) );
 
-		add_action( 'current_screen', array( $this, 'admin_init' ) );
+		add_action( 'plugins_loaded', array( $this, 'admin_init_widget_count' ) );
 
 		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
 		add_action( 'admin_init', array( $this, 'save_home_page' ) );
@@ -54,7 +54,8 @@ class SiteOrigin_Panels_Admin {
 		add_action( 'wp_ajax_so_panels_builder_content', array( $this, 'action_builder_content' ) );
 		add_action( 'wp_ajax_so_panels_widget_form', array( $this, 'action_widget_form' ) );
 		add_action( 'wp_ajax_so_panels_live_editor_preview', array( $this, 'action_live_editor_preview' ) );
-		add_action( 'wp_ajax_so_panels_block_editor_preview', array( $this, 'block_editor_preview' ) );
+		add_action( 'wp_ajax_so_panels_layout_block_sanitize', array( $this, 'layout_block_sanitize' ) );
+		add_action( 'wp_ajax_so_panels_layout_block_preview', array( $this, 'layout_block_preview' ) );
 
 		// Initialize the additional admin classes.
 		SiteOrigin_Panels_Admin_Widget_Dialog::single();
@@ -77,7 +78,9 @@ class SiteOrigin_Panels_Admin {
 			add_filter( 'gutenberg_can_edit_post_type', array( $this, 'show_classic_editor_for_panels' ), 10, 2 );
 			add_filter( 'use_block_editor_for_post_type', array( $this, 'show_classic_editor_for_panels' ), 10, 2 );
 			add_action( 'admin_print_scripts-edit.php', array( $this, 'add_panels_add_new_button' ) );
-			add_filter( 'display_post_states', array( $this, 'add_panels_post_state' ), 10, 2 );
+			if( siteorigin_panels_setting( 'admin-post-state' ) ) {
+				add_filter( 'display_post_states', array( $this, 'add_panels_post_state' ), 10, 2 );
+			}
 		}
 	}
 
@@ -92,7 +95,7 @@ class SiteOrigin_Panels_Admin {
 	/**
 	 * Do some general admin initialization
 	 */
-	public function admin_init(){
+	public function admin_init_widget_count(){
 		if( siteorigin_panels_setting( 'admin-widget-count' ) ) {
 
 			// Add the custom columns
@@ -115,10 +118,32 @@ class SiteOrigin_Panels_Admin {
 		$screen         = get_current_screen();
 		$is_panels_page = ( $screen->base == 'post' && in_array( $screen->id, siteorigin_panels_setting( 'post-types' ) ) ) ||
 						  in_array( $screen->base, array( 'appearance_page_so_panels_home_page', 'widgets', 'customize' ) ) ||
-						  $screen->is_block_editor;
+						  self::is_block_editor();
 
 		return apply_filters( 'siteorigin_panels_is_admin_page', $is_panels_page );
 	}
+
+	/**
+	 * Check if the current page is Gutenberg or the Block Ediotr
+	 *
+	 * @return bool
+	 */
+	static function is_block_editor() {
+		// This is for the Gutenberg plugin.
+		$is_gutenberg_page = function_exists( 'is_gutenberg_page' ) && is_gutenberg_page();
+		// This is for WP 5 with the integrated block editor.
+		$is_block_editor = false;
+
+		if ( function_exists( 'get_current_screen' ) ) {
+			$current_screen = get_current_screen();
+			if ( $current_screen && method_exists( $current_screen, 'is_block_editor' ) ) {
+				$is_block_editor = $current_screen->is_block_editor();
+			}
+		}
+		
+		return $is_gutenberg_page || $is_block_editor;
+	}
+
 
 	/**
 	 * Add action links to the plugin list for Page Builder.
@@ -1089,9 +1114,9 @@ class SiteOrigin_Panels_Admin {
 	/**
 	 * Preview in the block editor.
 	 */
-	public function block_editor_preview() {
+	public function layout_block_preview() {
 		
-		if ( empty( $_REQUEST['_panelsnonce'] ) || ! wp_verify_nonce( $_REQUEST['_panelsnonce'], 'block-editor-preview' ) ) {
+		if ( empty( $_REQUEST['_panelsnonce'] ) || ! wp_verify_nonce( $_REQUEST['_panelsnonce'], 'layout-block-preview' ) ) {
 			wp_die();
 		}
 		
@@ -1116,6 +1141,19 @@ class SiteOrigin_Panels_Admin {
 		
 		echo $rendered_layout;
 		wp_die();
+	}
+	
+	public function layout_block_sanitize() {
+		
+		if ( empty( $_REQUEST['_panelsnonce'] ) || ! wp_verify_nonce( $_REQUEST['_panelsnonce'], 'layout-block-sanitize' ) ) {
+			wp_die();
+		}
+		
+		$panels_data = json_decode( wp_unslash( $_POST['panelsData'] ), true );
+		$panels_data['widgets'] = SiteOrigin_Panels_Admin::single()->process_raw_widgets( $panels_data['widgets'], false, true, true );
+		$panels_data = SiteOrigin_Panels_Styles_Admin::single()->sanitize_all( $panels_data );
+		
+		wp_send_json( $panels_data );
 	}
 
 	/**

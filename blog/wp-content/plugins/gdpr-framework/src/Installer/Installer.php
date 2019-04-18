@@ -276,7 +276,7 @@ class Installer
         gdpr('options')->set('policy_page', $policyPageId);
 
         $toolsPageId = wp_insert_post([
-            'post_content' => '[gdpr_privacy_tools]',
+            'post_content' => '<!-- wp:shortcode -->[gdpr_privacy_tools]<!-- /wp:shortcode -->',
             'post_title'   => __('Privacy Tools', 'gdpr-framework'),
             'post_type'    => 'page',
             'post_status'  => 'publish',

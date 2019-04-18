@@ -102,7 +102,7 @@ function infowazz_css() {
 	 // Background Color
 	 $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
 	 if(!empty($style)){
-	 		$custom_styles .='.boxed-layout-on { background-color: '. esc_attr($default_color) .' }';
+	 		$custom_styles .='.boxed-layout-on { background-color: '. esc_attr($style) .' }';
 	 }
 	 else if (!empty($options['background_color'])) {
 	 		$custom_styles .='.boxed-layout-on { background-color: '. esc_attr($options['background_color']) .'; }';
@@ -339,6 +339,7 @@ add_action( 'wp_enqueue_scripts', 'infowazz_css');
 function infowazz_header_script() {
 
 		$option = get_option("infowazz_theme_options");
+		wp_enqueue_script( 'mt-defer', get_template_directory_uri(). '/inc/js/defer.js', array( 'jquery'),  '1.0', true );
 
 		wp_enqueue_script( 'infowazz_script', get_template_directory_uri(). '/inc/js/scripts.js', array( 'jquery'), '', true );
 		wp_localize_script( 'infowazz_script', 'ajax_posts', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'noposts' => esc_html__('No older posts found', 'infowazz'), ));
@@ -349,22 +350,23 @@ function infowazz_header_script() {
 		wp_enqueue_script('jquery-respondmin', get_template_directory_uri() . '/inc/js/respond.js', array('jquery'), '1.0', true);
 		wp_script_add_data( 'jquery-respondmin', 'conditional', 'lt IE 9' );
 
+		$p = get_theme_mod( 'mt_typogrpahys', 'on');
+		if( $p != "off"){
+	    function infowazz_fonts_url() {
 
-    function infowazz_fonts_url() {
+	      $theme_font = "Lato:400,900,700";
 
-      $theme_font = "Lato:400,900,700";
-
-        /*
-        Translators: If there are characters in your language that are not supported
-        by chosen font(s), translate this to 'off'. Do not translate into your own language.
-         */
-        if ( 'off' !== _x( 'on', 'Google font: on or off', 'infowazz' ) ) {
-            $font_url = add_query_arg( 'family', urlencode( ''. esc_attr($theme_font) .'' ), "//fonts.googleapis.com/css" );
-        }
-        return $font_url;
-    }
-    wp_enqueue_style( 'infowazz-fonts', infowazz_fonts_url(), array(), '1.0.0' );
-
+	        /*
+	        Translators: If there are characters in your language that are not supported
+	        by chosen font(s), translate this to 'off'. Do not translate into your own language.
+	         */
+	        if ( 'off' !== _x( 'on', 'Google font: on or off', 'infowazz' ) ) {
+	            $font_url = add_query_arg( 'family', urlencode( ''. esc_attr($theme_font) .'' ), "//fonts.googleapis.com/css" );
+	        }
+	        return $font_url;
+	    }
+	    wp_enqueue_style( 'infowazz-fonts', infowazz_fonts_url(), array(), '1.0.0' );
+		}
 
 }
 add_action('wp_enqueue_scripts', 'infowazz_header_script');

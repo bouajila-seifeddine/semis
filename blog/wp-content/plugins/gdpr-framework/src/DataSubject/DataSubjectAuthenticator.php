@@ -62,6 +62,7 @@ class DataSubjectAuthenticator
             $privacyToolsPageUrl = get_permalink(gdpr('options')->get('tools_page'));
             add_filter( 'gdpr_custom_policy_link', 'gdprfPrivacyPolicyurl' );
             $privacyToolsPageUrl = apply_filters( 'gdpr_custom_policy_link',$privacyToolsPageUrl);
+            $privacyToolsPageUrl = apply_filters('privacy_tools_gdprf_page_url',$privacyToolsPageUrl);
             if ($this->dataSubjectIdentificator->isKeyValid($_REQUEST['email'], $_REQUEST['gdpr_key'])) {
                 $this->setIdentificationCookie($_REQUEST['email']);
                 $url = $privacyToolsPageUrl;

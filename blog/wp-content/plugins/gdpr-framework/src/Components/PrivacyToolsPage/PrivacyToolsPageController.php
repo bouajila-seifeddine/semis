@@ -214,9 +214,8 @@ class PrivacyToolsPageController
             "privacy-tools/form-export",
             compact('email', 'nonce')
         );
-
-
     }
+
     /**
      * Render the form that allows the data subject to export their data
      *
@@ -258,8 +257,6 @@ class PrivacyToolsPageController
             "privacy-tools/ClassiDocs-results",
             compact('email', 'nonce','ClassiDocsdata')
         );
-
-
     }
     /**
      * Render the form that allows the data subject to delete their data
@@ -345,11 +342,12 @@ class PrivacyToolsPageController
      * @param null  $baseUrl
      */
     protected function redirect($args = [], $baseUrl = null)
-    {
+    {   
         if ( ! $baseUrl) {
             $privacyToolsUrl = gdpr('options')->get('tools_page');
             // Avoid infinite loop redirect
             $baseUrl = $privacyToolsUrl ? get_permalink($privacyToolsUrl) : home_url();
+            $baseUrl = apply_filters('redirect_after_gdprf_submit',$baseUrl);
         }
 
         wp_safe_redirect(add_query_arg($args, $baseUrl));

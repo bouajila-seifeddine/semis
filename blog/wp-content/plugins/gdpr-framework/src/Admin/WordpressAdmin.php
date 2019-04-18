@@ -95,56 +95,67 @@ class WordpressAdmin
             'gdpr-admin',
             gdpr('config')->get('plugin.url') . 'assets/gdpr-admin.css'
         );
-                
-        /**
-         * jQuery UI dialog for modals
-         */
-        wp_enqueue_style('wp-jquery-ui-dialog');
-        wp_enqueue_script(
-            'gdpr-admin',
-            gdpr('config')->get('plugin.url') . 'assets/gdpr-admin.js',
-            ['jquery-ui-dialog']
-        );
-
-        /**
-         * jQuery Repeater
-         */
-        wp_enqueue_script(
-            'jquery-repeater',
-            gdpr('config')->get('plugin.url') . 'assets/jquery.repeater.min.js',
-            ['jquery']
-        );
         
-        /**
-         * Select2
-         */
         
-        wp_dequeue_script( 'select2css' );
-        wp_dequeue_script( 'select2' );
+        $screen = get_current_screen();
+        if($screen->base=='tools_page_privacy'){
+                    
+            /**
+             * jQuery UI dialog for modals
+             */
+            wp_enqueue_style('wp-jquery-ui-dialog');
+            wp_enqueue_script(
+                'gdpr-admin',
+                gdpr('config')->get('plugin.url') . 'assets/gdpr-admin.js',
+                ['jquery-ui-dialog']
+            );
+
+            /**
+             * jQuery Repeater
+             */
+            wp_enqueue_script(
+                'jquery-repeater',
+                gdpr('config')->get('plugin.url') . 'assets/jquery.repeater.min.js',
+                ['jquery']
+            );
+            
+            /**
+             * Select2
+             */
+
+            wp_dequeue_script( 'select2css' );
+            wp_dequeue_script( 'select2' );
+
+            wp_enqueue_style(
+                'select2css',
+                gdpr('config')->get('plugin.url') . 'assets/select2-4.0.5.css'
+            );
+    
+            wp_enqueue_script(
+                'select2',
+                gdpr('config')->get('plugin.url') . 'assets/select2-4.0.3.js',
+                ['jquery']
+            );
+            
+            wp_enqueue_script(
+                'conditional-show',
+                gdpr('config')->get('plugin.url') . 'assets/conditional-show.js',
+                ['jquery']
+            );
+            /**
+             * Color Picker
+             */
+            wp_enqueue_script( 'iris',gdpr('config')->get('plugin.url') .'assets/iris.min.js' );
+            wp_enqueue_script( 'iris-init',gdpr('config')->get('plugin.url') .'assets/iris-init.js' );
         
-        wp_enqueue_style(
-            'select2css',
-            gdpr('config')->get('plugin.url') . 'assets/select2-4.0.5.css'
-        );
-
-        wp_enqueue_script(
-            'select2',
-            gdpr('config')->get('plugin.url') . 'assets/select2-4.0.3.js',
-            ['jquery']
-        );
-
-        wp_enqueue_script(
-            'conditional-show',
-            gdpr('config')->get('plugin.url') . 'assets/conditional-show.js',
-            ['jquery']
-        );
-
-        /**
-         * datatable in plugin
-         */
-        wp_enqueue_script( 'gdprdataTables-js', '//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js' , '', '', true );
-        wp_enqueue_style( 'datatables-css', '//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css', 'datatables');
-
+            if(gdpr('options')->get('classidocs_integration')){
+            /**
+             * datatable in plugin
+             */
+                wp_enqueue_script( 'gdprdataTables-js', gdpr('config')->get('plugin.url') .'assets/jquery.dataTables.min.js' );
+                wp_enqueue_style( 'datatables-css',gdpr('config')->get('plugin.url') .'assets/jquery.dataTables.min.css');
+            }
+        }
     }
 
     /**

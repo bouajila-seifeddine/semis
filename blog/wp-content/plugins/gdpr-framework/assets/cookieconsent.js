@@ -1,6 +1,10 @@
 window.addEventListener("load", function () {
   if(gdpr_policy_page.gdpr_url){
-    var layoutcheck = 'gdpr-cool-layout';
+    if(gdpr_policy_page.gdpr_popup){
+        var layoutcheck = 'gdpr-cool-layout';
+    }else{
+        var layoutcheck = 'gdpr-cool-layout-wlink';
+    }
   }else{
     var layoutcheck = 'gdpr-cool-layout-wlink';
   }
@@ -80,14 +84,3 @@ window.addEventListener("load", function () {
     }
   })
 });
-
-
-/**
- * add datatable frontend.
- */
-jQuery(document).ready( function () {
-  jQuery('#classiDocs_dataTable').DataTable( {
-    "autoWidth": false,
-    "scrollX": true
-  });
-} );

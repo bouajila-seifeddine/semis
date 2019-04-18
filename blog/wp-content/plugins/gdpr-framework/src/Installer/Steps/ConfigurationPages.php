@@ -51,7 +51,7 @@ class ConfigurationPages extends InstallerStep implements InstallerStepInterface
     protected function createPrivacyToolsPage()
     {
         $id = wp_insert_post([
-            'post_content' => '[gdpr_privacy_tools]',
+            'post_content' => '<!-- wp:shortcode -->[gdpr_privacy_tools]<!-- /wp:shortcode -->',
             'post_title'   => __('Privacy Tools', 'gdpr-framework'),
             'post_type'    => 'page',
         ]);

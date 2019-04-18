@@ -16,7 +16,7 @@
         </div>
         <div class="col">
           <div class="col_image" style="background-image:url('<?= gdpr('config')->get('plugin.url'); ?>/assets/2.png');"></div>
-            <a class="button button-primary" href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" target="_blank">
+            <a class="button button-primary" href="<?= gdpr('helpers')->docs('wordpress-gdpr-framework-knowledge-base/'); ?>" target="_blank">
                 <?= _x('Knowledge base', '(Admin)', 'gdpr-framework'); ?>
             </a>
             <p>
@@ -42,20 +42,20 @@
     <div class="row">
         <div class="col">
           <div class="col_image" style="background-image:url('<?= gdpr('config')->get('plugin.url'); ?>/assets/4.png');"></div>
-            <a class="button button-primary" href="https://wordpress.org/support/plugin/gdpr-framework" target="_blank">
+            <a class="button button-primary" href="https://data443.atlassian.net/servicedesk/customer/portal/2/group/6" target="_blank">
                 <?= _x('Submit a support request', '(Admin)', 'gdpr-framework'); ?>
             </a>
             <p>
-                <?= _x('Found a bug or problem with the plugin? Post in the wordpress.org support forum.', '(Admin)', 'gdpr-framework'); ?>
+                <?= _x('Found a bug or have a question about the plugin? Submit a support request and we’ll get right on it!', '(Admin)', 'gdpr-framework'); ?>
             </p>
         </div>
         <div class="col">
           <div class="col_image" style="background-image:url('<?= gdpr('config')->get('plugin.url'); ?>/assets/5.png');"></div>
-            <a class="button button-primary" href="<?= gdpr('helpers')->docs('wordpress-site-owners-guide-to-gdpr/'); ?>" target="_blank">
+            <a class="button button-primary" href="<?= gdpr('helpers')->docs('contact/'); ?>" target="_blank">
                 <?= _x('Request a consultation', '(Admin)', 'gdpr-framework'); ?>
             </a>
             <p>
-                <?= _x('Need development or legal assistance in making your site compliant? We can help!', '(Admin)', 'gdpr-framework'); ?>
+                <?= _x('Need assistance in making your site compliant? We can help!', '(Admin)', 'gdpr-framework'); ?>
             </p>
         </div>
     </div>

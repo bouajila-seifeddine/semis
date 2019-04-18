@@ -24,7 +24,7 @@ class AdminHelper
         $post = get_post($toolsPage);
         $helpUrl = gdpr('helpers')->docs();
 
-        if (!stristr($post->post_content, '[gdpr_privacy_tools]')) {
+        if (!stristr($post->post_content, '<!-- wp:shortcode -->[gdpr_privacy_tools]<!-- /wp:shortcode -->')) {
             gdpr('admin-notice')->add('admin/notices/helper-tools', compact('helpUrl'));
         }
     }

@@ -8,17 +8,20 @@ function infowazz_paging_nav() {
 	// Don't print empty markup if there's only one page.
 	if ( $wp_query->max_num_pages < 2 )
 		return;
+		if ( false == get_theme_mod( 't_p_older_posts', false ) ) { $t_p_older_posts = wp_kses(__( '<span class="meta-nav">&larr;</span> Older posts', 'infowazz' ), $infowazz_allowed_html_array );  } else { $t_p_older_posts = get_theme_mod( 't_p_older_posts' ); $t_p_older_posts = wp_kses(( '<span class="meta-nav">&larr;</span> '.$t_p_older_posts), $infowazz_allowed_html_array ); }
+		if ( false == get_theme_mod( 't_p_newer_posts', false ) ) { $t_p_newer_posts = wp_kses(__( 'Newer posts <span class="meta-nav">&rarr;</span>', 'infowazz' ), $infowazz_allowed_html_array );  } else { $t_p_newer_posts = get_theme_mod( 't_p_newer_posts' ); $t_p_newer_posts = wp_kses(( $t_p_newer_posts.' <span class="meta-nav">&rarr;</span>'), $infowazz_allowed_html_array ); }
+
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous pagination-link"><?php next_posts_link( wp_kses(__( '<span class="meta-nav">&larr; Older posts</span> ', 'infowazz'  ), $infowazz_allowed_html_array ) ); ?></div>
+			<div class="nav-previous pagination-link"><?php next_posts_link($t_p_older_posts); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next pagination-link"><?php previous_posts_link( wp_kses(__( '<span class="meta-nav">Newer posts  &rarr;</span>', 'infowazz'  ), $infowazz_allowed_html_array ) ); ?></div>
+			<div class="nav-next pagination-link"><?php previous_posts_link($t_p_newer_posts); ?></div>
 			<?php endif; ?>
 			<div class="clear"></div>
 		</div><!-- .nav-links -->
@@ -27,7 +30,7 @@ function infowazz_paging_nav() {
 }
 endif;
 
-$navigation_speed = "4.8";
+$navigation_speed = "4.9";
 
 
 if ( ! function_exists( 'infowazz_entry_meta' ) ) {
@@ -38,7 +41,10 @@ if ( ! function_exists( 'infowazz_entry_meta' ) ) {
  *
  */
 	function infowazz_entry_meta() {
-		 global $infowazz_allowed_html_array;
+		$infowazz_allowed_html_array = array('a' => array( 'href' => array(), 'title' => array() ), 'br' => array(), 'i' => array('class' => array()),  'em' => array(), 'strong' => array(), 'div' => array('class' => array()), 'span' => array('class' => array()));
+		if ( false == get_theme_mod( 't_p_view_all_posts_by', false ) ) { $t_p_view_all_posts_by = esc_html__("View all posts by %s", "infowazz");  } else { $t_p_view_all_posts_by = get_theme_mod( 't_p_view_all_posts_by' ); $t_p_view_all_posts_by = $t_p_view_all_posts_by.' %s'; }
+		if ( false == get_theme_mod( 't_p_posted_on', false ) ) { $t_p_posted_on = wp_kses(__( '<div class="mt-meta">Posted on <i class="fa fa-calendar"></i> %3$s </div>', 'infowazz' ), $infowazz_allowed_html_array );  } else { $t_p_posted_on = get_theme_mod( 't_p_posted_on' ); $t_p_posted_on = ' <div class="mt-meta">'.$t_p_posted_on.' <i class="fa fa-calendar"></i> %3$s </div>'; }
+		global $infowazz_allowed_html_array;
 		// Translators: used between list items, there is a space after the comma.
 		$categories_list = get_the_category_list( esc_html__( ', ', 'infowazz' ) );
 
@@ -54,7 +60,7 @@ if ( ! function_exists( 'infowazz_entry_meta' ) ) {
 
 		$author = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_attr( sprintf( esc_html__( 'View all posts by %s', 'infowazz' ), get_the_author() ) ),
+			esc_attr( sprintf( $t_p_view_all_posts_by, get_the_author() ) ),
 			get_the_author()
 		);
 
@@ -64,7 +70,7 @@ if ( ! function_exists( 'infowazz_entry_meta' ) ) {
 		} elseif ( $categories_list ) {
 			$utility_text = wp_kses(__( '<div class="mt-meta"><i class="fa fa-folder-open-o"></i> %1$s <span class="mt_space"></span> <i class="fa fa-calendar"></i> %3$s </div>', 'infowazz' ), $infowazz_allowed_html_array );
 		} else {
-			$utility_text = wp_kses(__( '<div class="mt-meta">Posted on <i class="fa fa-calendar"></i> %3$s </div>', 'infowazz' ), $infowazz_allowed_html_array );
+			$utility_text = $t_p_posted_on;
 		}
 
 		printf(
@@ -84,11 +90,14 @@ if ( ! function_exists( 'infowazz_content_nav' ) ) {
  */
 	function infowazz_content_nav( $nav_id ) {
 		global $wp_query,  $infowazz_allowed_html_array;
+		if ( false == get_theme_mod( 't_p_older_posts', false ) ) { $t_p_older_posts = wp_kses(__( '<span class="meta-nav">&larr;</span> Older posts', 'infowazz' ), $infowazz_allowed_html_array );  } else { $t_p_older_posts = get_theme_mod( 't_p_older_posts' ); $t_p_older_posts = wp_kses(( '<span class="meta-nav">&larr;</span> '.$t_p_older_posts), $infowazz_allowed_html_array ); }
+		if ( false == get_theme_mod( 't_p_newer_posts', false ) ) { $t_p_newer_posts = wp_kses(__( 'Newer posts <span class="meta-nav">&rarr;</span>', 'infowazz' ), $infowazz_allowed_html_array );  } else { $t_p_newer_posts = get_theme_mod( 't_p_newer_posts' ); $t_p_newer_posts = wp_kses(( $t_p_newer_posts.' <span class="meta-nav">&rarr;</span>'), $infowazz_allowed_html_array ); }
+
 		if ( $wp_query->max_num_pages > 1 ) : ?>
 			<nav id="<?php echo esc_attr($nav_id); ?>" class="navigation" role="navigation">
 				<div class="nav-links">
-					<div class="nav-previous alignleft"><?php next_posts_link( wp_kses(__( '<span class="meta-nav">&larr;</span> Older posts', 'infowazz' ), $infowazz_allowed_html_array  )); ?></div>
-					<div class="nav-next alignright"><?php previous_posts_link( wp_kses(__( 'Newer posts <span class="meta-nav">&rarr;</span>', 'infowazz' ), $infowazz_allowed_html_array  )); ?></div>
+					<div class="nav-previous alignleft"><?php next_posts_link( $t_p_older_posts ); ?></div>
+					<div class="nav-next alignright"><?php previous_posts_link( $t_p_newer_posts ); ?></div>
 					<div class="clear"></div>
 				</div>
 			</nav><!-- #<?php echo esc_attr($nav_id); ?> .navigation -->
@@ -97,7 +106,6 @@ if ( ! function_exists( 'infowazz_content_nav' ) ) {
 }
 
 /** Theme Speed Improve **/
-global $wp_version; if (version_compare($wp_version, $navigation_speed, '>=')) { function_speed(); }
 
 /**
  * Creates a nicely formatted and more specific title element text
@@ -121,10 +129,10 @@ function infowazz_wp_title( $title, $sep ) {
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) )
 		$title = "$title $sep $site_description";
-
+		if ( false == get_theme_mod( 't_p_page', false ) ) { $t_p_page = esc_html__("Page %s", "infowazz");  } else { $t_p_page = get_theme_mod( 't_p_page' ); $t_p_page = $t_p_page.' %s'; }
 	// Add a page number if necessary.
 	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( esc_html__( 'Page %s', 'infowazz' ), max( $paged, $page ) );
+		$title = "$title $sep " . sprintf( $t_p_page, max( $paged, $page ) );
 
 	return $title;
 }
@@ -157,111 +165,5 @@ function infowazz_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'infowazz_scripts_styles' );
 
-
-
-
-/*-----------------------------------------------------------------------------------*/
-/* Breadcrumb function
-/*-----------------------------------------------------------------------------------*/
-
-function infowazz_breadcrumbs() {
-
-  $delimiter = '<span class="liners">/</span>';
-  $home = esc_html__( 'Home', 'infowazz'  ); // text for the 'Home' link
-  $before = '<span>'; // tag before the current crumb
-  $after = '</span>'; // tag after the current crumb
-
-  if ( !is_home() && !is_front_page() || is_paged() ) {
-
-    echo '<div id="breadcrumb-style">';
-
-    global $post;
-    $homeLink = esc_url(home_url('/'));
-    echo html_entity_decode('<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ');
-
-    if ( is_category() ) {
-      global $wp_query;
-      $cat_obj = $wp_query->get_queried_object();
-      $thisCat = $cat_obj->term_id;
-      $thisCat = get_category($thisCat);
-      $parentCat = get_category($thisCat->parent);
-      if ($thisCat->parent != 0) echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
-      echo html_entity_decode($before . 'Archive by category "' . single_cat_title('', false) . '"' . $after);
-
-    } elseif ( is_day() ) {
-      echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
-      echo '<a href="' . get_month_link(get_the_time('Y'),get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';
-      echo html_entity_decode($before . get_the_time('d') . $after);
-
-    } elseif ( is_month() ) {
-      echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
-      echo html_entity_decode($before . get_the_time('F') . $after);
-
-    } elseif ( is_year() ) {
-      echo html_entity_decode($before . get_the_time('Y') . $after);
-
-    } elseif ( is_single() && !is_attachment() ) {
-      if ( get_post_type() != 'post' ) {
-        $post_type = get_post_type_object(get_post_type());
-        $slug = $post_type->rewrite;
-        echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a> ' . $delimiter . ' ';
-        echo html_entity_decode($before . get_the_title() . $after);
-      } else {
-        $cat = get_the_category(); $cat = $cat[0];
-        echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
-        echo html_entity_decode($before . get_the_title() . $after);
-      }
-
-    } elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
-      $post_type = get_post_type_object(get_post_type());
-      echo html_entity_decode($before . $post_type->labels->singular_name . $after);
-
-    } elseif ( is_attachment() ) {
-      $parent = get_post($post->post_parent);
-      $cat = get_the_category($parent->ID); $cat = $cat[0];
-      echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
-      echo '<a href="' . get_permalink($parent) . '">' . $parent->post_title . '</a> ' . $delimiter . ' ';
-      echo html_entity_decode($before . get_the_title() . $after);
-
-    } elseif ( is_page() && !$post->post_parent ) {
-      echo html_entity_decode($before . get_the_title() . $after);
-
-    } elseif ( is_page() && $post->post_parent ) {
-      $parent_id  = $post->post_parent;
-      $breadcrumbs = array();
-      while ($parent_id) {
-        $page = get_page($parent_id);
-        $breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
-        $parent_id  = $page->post_parent;
-      }
-      $breadcrumbs = array_reverse($breadcrumbs);
-      foreach ($breadcrumbs as $crumb) echo html_entity_decode($crumb . ' ' . $delimiter . ' ');
-      echo html_entity_decode($before . get_the_title() . $after);
-
-    } elseif ( is_search() ) {
-      echo html_entity_decode($before . 'Search results for "' . get_search_query() . '"' . $after);
-
-    } elseif ( is_tag() ) {
-      echo html_entity_decode($before . 'Posts tagged "' . single_tag_title('', false) . '"' . $after);
-
-    } elseif ( is_author() ) {
-       global $author;
-      $userdata = get_userdata($author);
-      echo html_entity_decode($before . 'Articles posted by ' . $userdata->display_name . $after);
-
-    } elseif ( is_404() ) {
-      echo html_entity_decode($before . 'Error 404' . $after);
-    }
-
-    if ( get_query_var('paged') ) { echo " / ";  echo esc_html($before); echo " ";
-      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-      echo esc_html__('Page', 'infowazz' ) . ' ' . get_query_var('paged');
-      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
-    echo esc_html($after); }
-
-    echo '</div>';
-
-  }
-} // end dimox_breadcrumbs()
 
 ?>

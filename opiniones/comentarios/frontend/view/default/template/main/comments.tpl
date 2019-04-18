@@ -40,12 +40,24 @@
 									if($contador <= 4){
 									$imagenesHtml = $imagenesHtml.'<div class=" col-md-3 col-sm-6 col-xs-12 product" itemtype="http://schema.org/Product" itemscope="">
 						                                     <div class="inner second-image imgopi'.$contador.'"><div class="img_hover"></div>
-						                                          <a itemprop="url" href="https://www.semillaslowcost.com/index.php?id_product='.$value['id_product'].'&controller=product" title="'.$value['name'].'">
+						                                          <a itemprop="url" href="https://www.semillaslowcost.com/'
+									.$value['category_link'].
+									'/'
+									.$value['id_product'].
+									'-'
+									.$value['link_rewrite'].
+									'.html" title="'.$value['name'].'">
 						                                          <img itemprop="image" src="https://www.semillaslowcost.com/'.$value['id_image'].'-home_default/'.$value['link_rewrite'].'.jpg" alt="Comprar '.$value['name'].'" title="Comprar '.$value['name'].'" class="img-responsive first-image">
 						                                          </a>
 						                                           <div class="info">
 						                                             <h3 itemprop="name">
-						                                                <a itemprop="url" href="https://www.semillaslowcost.com/index.php?id_product='.$value['id_product'].'&controller=product" title="'.$value['name'].'">'.$value['name'].'
+						                                                <a itemprop="url" href="https://www.semillaslowcost.com/'
+									.$value['category_link'].
+									'/'
+									.$value['id_product'].
+									'-'
+									.$value['link_rewrite'].
+									'.html" title="'.$value['name'].'">'.$value['name'].'
 						                                                </a>
 						                                             </h3>
 						                                            </div>
@@ -57,7 +69,7 @@
 								endforeach;
 
 									echo  '<div class="popular_products carousel-style animated activate fadeInRight" data-fx="fadeInRight">
-													<div class="heading_block margin-bottom"><h3 class="pull-left"> <img class="icon icon-money main-color" width="38px" height="38px" style="padding:1%;" src="https://www.semillaslowcost.com/img/hojaico.png"> Algunas genéticas del banco '.$banco.'</h3></div>
+													<div class="heading_block margin-bottom"><h3 class="pull-left"> <img class="icon icon-money main-color" width="38px" height="38px" style="padding:1%;" src="https://www.semillaslowcost.com/img/hojaico.png" alt="Icono Hoja de Marihuana"> Algunas genéticas del banco '.$banco.'</h3></div>
 														<div class="product_list_ph clearBoth owl-carousel-ph items-3 owl-carousel owl-theme owl-loaded" data-max-items="3">
 															<div class="row">	
 															<div class="product_list_ph clearBoth owl-carousel-ph items-3 owl-carousel owl-theme owl-loaded" data-max-items="3">	

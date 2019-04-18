@@ -81,7 +81,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
         <div class="share-more-wrap"><div class="share-more-icon mt-radius">+</div></div>
 
         <a class="mt-radius" href="https://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank" aria-label="Compartir en Pinterest" rel="nofollow noopener noreferrer"><div class="pinterest mt-radius-b"  role="img" alt="Compartir en Pinterest"  ></div></a>
-        <a class="mt-radius" href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank" rel="nofollow noopener noreferrer" aria-label="Compartir en Google"><div class="google mt-radius-b"  role="img" alt="Compartir en Google" ></div></a>
+
 
       </li>
     </ul>

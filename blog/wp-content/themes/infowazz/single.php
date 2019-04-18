@@ -32,6 +32,10 @@ if ($carousel == "yes"){ ?>
 ?>
 
 <article itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="author" content="SLC Blog">
+	<meta itemprop="datePublished" content="<?php echo get_the_date( 'Y-m-d' ); ?>">
+	<meta itemprop="dateModified" content="<?php echo get_the_modified_date('Y-m-d'); ?>">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage"  content="BlogPosting" />
 
 <?php while ( have_posts() ) : the_post();
 
@@ -113,13 +117,17 @@ endwhile;
 	<meta itemprop="width" content="1200"><meta itemprop="height" content="801">
 </div>
 <div class="hidde" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+
+	<meta itemprop="name" content="SLC">
+	
+
+
 	<div class="hidde" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
 	<?php $option = get_option("infowazz_theme_options"); ?>
 	<?php if(!empty($option['header_logo'])) { ?><meta itemprop="url" content="<?php echo esc_url($option['header_logo']); ?>"><?php } ?>
 	<?php if(!empty($option['logo_width'])) { ?><meta itemprop="width" content="<?php echo esc_attr($option['logo_width']); ?>"><?php } ?>
 	<?php if(!empty($option['logo_height'])) { ?><meta itemprop="height" content="<?php echo esc_attr($option['logo_height']); ?>"><?php } ?>
 	</div>
-	<?php $publisher = get_option("mt_shema_publisher");  if(!empty($publisher)) {  ?><meta itemprop="name" content="<?php echo esc_attr($publisher); ?>"><?php } ?>
 </div>
 </article>
 

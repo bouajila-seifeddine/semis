@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Codelight\GDPR;
 
 use Codelight\GDPR\Admin\AdminTab;
@@ -16,6 +17,7 @@ use Codelight\GDPR\DataSubject\DataSubjectAdmin;
 use Codelight\GDPR\DataSubject\DataSubjectIdentificator;
 use Codelight\GDPR\DataSubject\DataSubjectManager;
 use Codelight\GDPR\Modules\ContactForm7\ContactForm7;
+use Codelight\GDPR\Modules\WooCommerceGdpr\WooCommerceGdpr;
 use Codelight\GDPR\Components\Themes\Themes;
 use Codelight\GDPR\Components\WordpressUser\WordpressUser;
 use Codelight\GDPR\Modules\ContactForm7\Flamingo;
@@ -103,6 +105,9 @@ class Setup
 
         if (defined('FLAMINGO_VERSION')) {
             gdpr()->make(Flamingo::class);
+        }
+        if ( defined('WC_VERSION') ) {
+            gdpr()->make(WooCommerceGdpr::class);
         }
     }
 }

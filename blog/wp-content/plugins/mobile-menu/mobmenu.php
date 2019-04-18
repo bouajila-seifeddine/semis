@@ -5,9 +5,9 @@
  * Plugin URI: https://www.wpmobilemenu.com/
  * Description: An easy to use WordPress responsive mobile menu. Keep your mobile visitors engaged.
  * Author: Takanakui
- * Version: 2.7.2
+ * Version: 2.7.3
  * Author URI: https://www.wpmobilemenu.com/
- * Tested up to: 4.9
+ * Tested up to: 5.1
  * Text Domain: mobile-menu
  * Domain Path: /languages/
  * GitHub Plugin URI: https://github.com/ruiguerreiro79/mobile-menu

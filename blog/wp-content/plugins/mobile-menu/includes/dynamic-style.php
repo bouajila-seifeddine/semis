@@ -50,7 +50,7 @@ if ( $titan->getOption( 'enabled_naked_header' ) ) {
 	$wrap_padding_top = $titan->getOption( 'header_height' );
 }
 
-$trigger_res = $titan->getOption( 'width_trigger' ) + 1;
+$trigger_res = $titan->getOption( 'width_trigger' );
 $right_menu_width = $titan->getOption( 'right_menu_width' ) . 'px';
 
 if ( $titan->getOption( 'right_menu_width_units' ) ) {
@@ -91,7 +91,7 @@ $total_header_height = $header_height;
 }
 
 /* Our css Custom Options values */
-@media only screen and (max-width:<?php echo $trigger_res; ?>px) {
+@media only screen and (max-width:<?php echo ($trigger_res - 1); ?>px) {
 	<?php if ( '' !== $titan->getOption( 'hide_elements' ) ) { ?>
 	<?php echo  $titan->getOption( 'hide_elements' ); ?> {
 		display:none !important;
@@ -172,6 +172,7 @@ $total_header_height = $header_height;
 	}
 	.mob-cancel-button {
 		font-size: <?php echo $titan->getOption( 'close_icon_font_size' ); ?>px!important;
+		z-index: 99999999;
 	}
 
 	.mob-menu-left-panel .mob-cancel-button {
@@ -183,7 +184,7 @@ $total_header_height = $header_height;
 	}
 
 	.mob-menu-slideout-over .mobmenu_content {
-		padding-top: 40px;
+		padding-top: 0px;
 	}
 
 	.mob-menu-left-bg-holder {
@@ -352,8 +353,8 @@ $total_header_height = $header_height;
 	.mob-menu-logo-holder {
 		padding-top: <?php echo $titan->getOption( 'logo_top_margin' ); ?>px;
 		text-align: <?php echo $titan->getOption( 'header_text_align' ); ?>;
-		<?php echo $header_margin_left; ?>;
-		<?php echo $header_margin_right; ?>;
+		<?php echo $header_margin_left; ?>
+		<?php echo $header_margin_right; ?>
 	}
 
 	.mob-menu-header-holder {
@@ -376,20 +377,20 @@ $total_header_height = $header_height;
 	<?php
 
 	if ( '' !== $titan->getOption( 'left_menu_bg_gradient' ) ) {
-		$left_panel_bg_color = $titan->getOption( 'left_menu_bg_gradient' ) . ';';
+		$left_panel_bg_color = $titan->getOption( 'left_menu_bg_gradient' );
 	} else {
 		$left_panel_bg_color = 'background-color:' . $titan->getOption( 'left_panel_bg_color' ) . ';';
 	}
 
 	if ( $titan->getOption( 'right_menu_bg_gradient' ) != '' ) {
-		$right_panel_bg_color = $titan->getOption( 'right_menu_bg_gradient' ) . ';';
+		$right_panel_bg_color = $titan->getOption( 'right_menu_bg_gradient' );
 	} else {
 		$right_panel_bg_color = 'background-color:' . $titan->getOption( 'right_panel_bg_color' ) . ';';
 	}
 
 	?>
 	.mob-menu-slideout 	.mob-menu-left-panel {
-		<?php echo $left_panel_bg_color; ?>;
+		<?php echo $left_panel_bg_color; ?>
 		width: <?php echo $left_menu_width; ?>;
 		-webkit-transform: translateX(-<?php echo $left_menu_width_translate; ?>);
 		-moz-transform: translateX(-<?php echo $left_menu_width_translate; ?>);
@@ -438,7 +439,6 @@ $total_header_height = $header_height;
 		transform: translate3d(-<?php echo  $right_menu_width; ?>, 0, 0);
 	}
 
-
 	/* Mobmenu Slide Over */
 	.mobmenu-overlay {
 		opacity: 0;
@@ -468,7 +468,7 @@ $total_header_height = $header_height;
 
 	.mob-menu-slideout-over .mob-menu-left-panel {
 		display: block!important;
-		<?php echo $left_panel_bg_color; ?>;
+		<?php echo $left_panel_bg_color; ?>
 		width: <?php echo $left_menu_width; ?>;
 		-webkit-transform: translateX(-<?php echo $left_menu_width_translate; ?>);
 		-moz-transform: translateX(-<?php echo $left_menu_width_translate; ?>);
@@ -484,7 +484,7 @@ $total_header_height = $header_height;
 
 	.mob-menu-slideout-over .mob-menu-right-panel {
 		display: block!important;
-		<?php echo $right_panel_bg_color; ?>;
+		<?php echo $right_panel_bg_color; ?>
 		width:  <?php echo  $right_menu_width; ?>;
 		-webkit-transform: translateX(<?php echo $right_menu_width_translate; ?>);
 		-moz-transform: translateX(<?php echo $right_menu_width_translate; ?>);
@@ -500,7 +500,7 @@ $total_header_height = $header_height;
 
 	.mob-menu-slideout-over.show-nav-left .mob-menu-left-panel {
 		display: block!important;
-		<?php echo $left_panel_bg_color; ?>;
+		<?php echo $left_panel_bg_color; ?>
 		width:  <?php echo $left_menu_width; ?>;
 		-webkit-transform: translateX(0);
 		-moz-transform: translateX(0);
@@ -528,18 +528,17 @@ $total_header_height = $header_height;
 	/* Hides everything pushed outside of it */
 	.mob-menu-slideout .mob-menu-left-panel, .mob-menu-slideout-over .mob-menu-left-panel  {
 		position: fixed;
-		top: 0;
+		top: 51px;
 		height: 100%;
 		z-index: 300000;
 		overflow-y: auto;   
 		overflow-x: hidden;
 		opacity: 1;
-	}   
-	
+	}
 
 	.mob-menu-slideout .mob-menu-right-panel, .mob-menu-slideout-over .mob-menu-right-panel {
 		position: fixed;
-		top: 0;
+		top: 51px;
 		right: 0;
 		height: 100%;
 		z-index: 300000;
@@ -549,10 +548,10 @@ $total_header_height = $header_height;
 
 	}   
 	
-	/*End of Mobmenu Slide Over */
+	/* End of Mobmenu Slide Over */
 
-	.mobmenu .headertext { 
-		color: <?php echo $titan->getOption( 'header_text_color' ); ?>;
+	.mobmenu .headertext {
+		color: <?php echo $titan->getOption( 'header_text_color' );?>;
 	}
 
 	.headertext span { 
@@ -784,7 +783,7 @@ $total_header_height = $header_height;
 		color: inherit;
 	}
 	
-	.show-nav-right .mobmenur-container img, .show-nav-left .mobmenul-container img,  .mobmenu .mob-cancel-button, .show-nav-left .mobmenu .mob-menu-icon, .show-nav-right .mobmenu .mob-menu-icon, .mob-menu-slideout-over.show-nav-left .mobmenur-container, .mob-menu-slideout-over.show-nav-right .mobmenul-container  {
+	.show-nav-right .mobmenur-container img, .show-nav-left .mobmenul-container img,  .mobmenu .mob-cancel-button, .show-nav-left .mobmenu .mob-menu-icon, .show-nav-right .mobmenu .mob-menu-icon, .mob-menu-slideout-over.show-nav-right .mobmenul-container  {
 		display:none;
 	}
 	

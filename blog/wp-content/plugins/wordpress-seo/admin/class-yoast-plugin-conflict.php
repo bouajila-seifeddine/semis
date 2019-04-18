@@ -1,7 +1,9 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Admin
- * @since      1.7.0
+ * @since   1.7.0
  */
 
 /**
@@ -43,7 +45,8 @@ class Yoast_Plugin_Conflict {
 	/**
 	 * For the use of singleton pattern. Create instance of itself and return his instance
 	 *
-	 * @param string $class_name Give the classname to initialize. If classname is false (empty) it will use it's own __CLASS__.
+	 * @param string $class_name Give the classname to initialize. If classname is
+	 *                           false (empty) it will use it's own __CLASS__.
 	 *
 	 * @return Yoast_Plugin_Conflict
 	 */
@@ -222,15 +225,11 @@ class Yoast_Plugin_Conflict {
 	 *
 	 * @param string $plugin_file Clear the optional notification for this plugin.
 	 */
-	protected function clear_error( $plugin_file ) {
+	public function clear_error( $plugin_file ) {
 		$identifier = $this->get_notification_identifier( $plugin_file );
 
 		$notification_center = Yoast_Notification_Center::get();
-		$notification        = $notification_center->get_notification_by_id( 'wpseo-conflict-' . $identifier );
-
-		if ( $notification ) {
-			$notification_center->remove_notification( $notification );
-		}
+		$notification_center->remove_notification_by_id( 'wpseo-conflict-' . $identifier );
 	}
 
 	/**
@@ -257,7 +256,6 @@ class Yoast_Plugin_Conflict {
 			}
 		}
 	}
-
 
 	/**
 	 * Check if given plugin exists in array with all_active_plugins
@@ -306,7 +304,6 @@ class Yoast_Plugin_Conflict {
 				return $plugin_section;
 			}
 		}
-
 	}
 
 	/**

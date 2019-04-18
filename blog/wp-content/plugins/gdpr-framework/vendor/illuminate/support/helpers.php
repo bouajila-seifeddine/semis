@@ -245,7 +245,7 @@ if (! function_exists('array_pull')) {
     }
 }
 
-if (! function_exists('array_random')) {
+if (! function_exists('gdpr_array_random')) {
     /**
      * Get a random value from an array.
      *
@@ -253,7 +253,7 @@ if (! function_exists('array_random')) {
      * @param  int|null  $num
      * @return mixed
      */
-    function array_random($array, $num = null)
+    function gdpr_array_random($array, $num = null)
     {
         return Arr::random($array, $num);
     }

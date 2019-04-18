@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The GDPR Framework en español\n"
 "POT-Creation-Date: 2018-04-18 09:35+0200\n"
-"PO-Revision-Date: 2019-01-11 14:15+0530\n"
+"PO-Revision-Date: 2019-02-06 15:59+0530\n"
 "Last-Translator: PNTE <blogs@educacion.navarra.es>\n"
 "Language-Team: PNTE <blogs@educacion.navarra.es>\n"
 "Language: es_ES\n"
@@ -1782,6 +1782,55 @@ msgid "enables your organization to comply with all privacy regulations."
 msgstr ""
 "le permite a su organización cumplir con todas las regulaciones de "
 "privacidad."
+
+#: views\admin\support\contents.php:49
+msgctxt "(Admin)"
+msgid ""
+"Found a bug or have a question about the plugin? Submit a support request "
+"and we’ll get right on it!"
+msgstr ""
+"¿Encontró un error o tiene una pregunta sobre el complemento? Envíe una "
+"solicitud de soporte y nos pondremos en contacto con ella!"
+
+#: views\admin\support\contents.php:58
+msgctxt "(Admin)"
+msgid "Need assistance in making your site compliant? We can help!"
+msgstr ""
+"¿Necesita ayuda para hacer que su sitio sea compatible? ¡Podemos ayudar!"
+
+#: views\admin\general\woo-compatibility.php:9
+msgctxt "(Admin)"
+msgid "Enable WooCommerce data on GDPR tool"
+msgstr "Habilitar datos de WooCommerce en la herramienta GDPR"
+
+#: src\Admin\AdminTabGeneral.php:241
+msgctxt "(Admin)"
+msgid "Enable WooCommerce Compatibility"
+msgstr "Habilitar la compatibilidad con WooCommerce"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:19
+msgid "Note Regarding Order:"
+msgstr "Nota sobre el pedido:"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:20
+msgid ""
+"Your order with status Processing will not get deleted until status change."
+msgstr ""
+"Su orden con el procesamiento de estado no se eliminará hasta que cambie el "
+"estado."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:21
+msgid "Your order with status Completed will get anonymize."
+msgstr "Su pedido con estado Completado se anonimizará."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:22
+msgid "If you delete Completed order you can't apply for refund."
+msgstr "Si elimina el pedido completado, no podrá solicitar el reembolso."
+
+#: views\admin\general\woo-compatibility.php:12
+msgctxt "(Admin)"
+msgid "Will work for WooCommerce Version 3.4.0 or later."
+msgstr "Trabajará para la versión 3.4.0 o posterior de WooCommerce."
 
 #~ msgid "Manage consents"
 #~ msgstr "Gestionar los consentimientos"

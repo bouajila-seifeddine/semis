@@ -197,7 +197,7 @@ function posts_tabs( $atts, $content = null ) {
 			}
 
 			$shortcode .='<div class="mt-tab-wrap">';
-			$shortcode .= '<div class="mt-post-tabs"><h2 class="heading heading-left pull-left test"><span>Últimos artículos</span></h2>';
+			$shortcode .= '<div class="mt-post-tabs"><h2 class="heading heading-left pull-left"><span>Últimos artículos</span></h2>';
 			if($tab_galleries=="on"){ if($the_query_tab_4->have_posts()) { $shortcode .= '<div class="mt-tabc mt-tabc-4 pull-right" data-tab="mt-tab-4">'. esc_html__("Galleries", "magazine-plug") .'</div>'; } }
 			if($tab_videos=="on"){ if($the_query_tab_3->have_posts()) { $shortcode .= '<div class="mt-tabc mt-tabc-3 pull-right" data-tab="mt-tab-3">'. esc_html__("Videos", "magazine-plug") .'</div>'; } }
 			if($tab_posts=="on"){ if($the_query_tab_2->have_posts()) { $shortcode .= '<div class="mt-tabc mt-tabc-2 pull-right" data-tab="mt-tab-2">'. esc_html__("Posts", "magazine-plug") .'</div>'; } }
@@ -263,7 +263,8 @@ function posts_tabs( $atts, $content = null ) {
 							// Post data, share counts.
 							$data ='';
 							$data .='<div class="poster-data color-silver-light">';
-							
+							$data .='<span class="poster-shares">'. $shares .' '. esc_html__("shares", "magazin") .'</span>';
+							$data .='<span class="poster-views">'. $viewes .' views</span>';
 							if (get_comments_number()!="0") { $data .='<span class="poster-comments">'.get_comments_number().'</span>'; }
 							$data .='</div>';
 

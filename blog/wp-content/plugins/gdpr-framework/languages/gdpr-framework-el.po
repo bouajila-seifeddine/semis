@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: The GDPR Framework 1.0\n"
 "Report-Msgid-Bugs-To: gdpr@codelight.eu\n"
 "POT-Creation-Date: 2018-04-16 10:50+0000\n"
-"PO-Revision-Date: 2019-01-11 14:10+0530\n"
+"PO-Revision-Date: 2019-02-06 15:59+0530\n"
 "Last-Translator: john maniatopoulos <webace.wp@gmail.com>\n"
 "Language-Team: Greek\n"
 "Language: el\n"
@@ -1727,3 +1727,55 @@ msgid "enables your organization to comply with all privacy regulations."
 msgstr ""
 "επιτρέπει στην εταιρεία σας να συμμορφώνεται με όλους τους κανονισμούς "
 "απορρήτου."
+
+#: views\admin\support\contents.php:49
+msgctxt "(Admin)"
+msgid ""
+"Found a bug or have a question about the plugin? Submit a support request "
+"and we’ll get right on it!"
+msgstr ""
+"Βρήκατε ένα σφάλμα ή έχετε κάποια ερώτηση σχετικά με το plugin; Υποβάλετε "
+"ένα αίτημα υποστήριξης και θα το πάμε σωστά!"
+
+#: views\admin\support\contents.php:58
+msgctxt "(Admin)"
+msgid "Need assistance in making your site compliant? We can help!"
+msgstr ""
+"Χρειάζεστε βοήθεια σχετικά με τη συμμόρφωση του ιστοτόπου σας; Μπορούμε να "
+"βοηθήσουμε!"
+
+#: views\admin\general\woo-compatibility.php:9
+msgctxt "(Admin)"
+msgid "Enable WooCommerce data on GDPR tool"
+msgstr "Ενεργοποιήστε τα δεδομένα του WooCommerce στο εργαλείο GDPR"
+
+#: src\Admin\AdminTabGeneral.php:241
+msgctxt "(Admin)"
+msgid "Enable WooCommerce Compatibility"
+msgstr "Ενεργοποιήστε τη συμβατότητα του WooCommerce"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:19
+msgid "Note Regarding Order:"
+msgstr "Σημείωση σχετικά με την παραγγελία:"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:20
+msgid ""
+"Your order with status Processing will not get deleted until status change."
+msgstr ""
+"Η παραγγελία σας με την κατάσταση Επεξεργασία δεν θα διαγραφεί μέχρι την "
+"αλλαγή της κατάστασης."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:21
+msgid "Your order with status Completed will get anonymize."
+msgstr "Η παραγγελία σας με την κατάσταση Ολοκληρώθηκε θα γίνει ανώνυμη."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:22
+msgid "If you delete Completed order you can't apply for refund."
+msgstr ""
+"Εάν διαγράψετε την ολοκλήρωση της παραγγελίας, δεν μπορείτε να υποβάλετε "
+"αίτηση επιστροφής χρημάτων."
+
+#: views\admin\general\woo-compatibility.php:12
+msgctxt "(Admin)"
+msgid "Will work for WooCommerce Version 3.4.0 or later."
+msgstr "Θα λειτουργήσει για το WooCommerce Έκδοση 3.4.0 ή νεότερη έκδοση."

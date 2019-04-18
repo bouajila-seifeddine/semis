@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: The GDPR Framework 1.0\n"
 "Report-Msgid-Bugs-To: gdpr@codelight.eu\n"
 "POT-Creation-Date: 2018-05-22 15:47+0300\n"
-"PO-Revision-Date: 2019-01-11 14:18+0530\n"
+"PO-Revision-Date: 2019-02-06 16:00+0530\n"
 "Last-Translator: Codelight <team@codelight.eu>\n"
 "Language-Team: \n"
 "Language: et_EE\n"
@@ -1728,6 +1728,53 @@ msgstr ""
 msgctxt "(Admin)"
 msgid "enables your organization to comply with all privacy regulations."
 msgstr "võimaldab teie organisatsioonil täita kõiki privaatsuseeskirju."
+
+#: views\admin\support\contents.php:49
+msgctxt "(Admin)"
+msgid ""
+"Found a bug or have a question about the plugin? Submit a support request "
+"and we’ll get right on it!"
+msgstr ""
+"Kas leidsite vea või teil on küsimus pluginaga? Esitage toetustaotlus ja me "
+"saame selle õigesti!"
+
+#: views\admin\support\contents.php:58
+msgctxt "(Admin)"
+msgid "Need assistance in making your site compliant? We can help!"
+msgstr "Vajad abi saidi ühildamiseks? Me saame aidata!"
+
+#: views\admin\general\woo-compatibility.php:9
+msgctxt "(Admin)"
+msgid "Enable WooCommerce data on GDPR tool"
+msgstr "Luba WooCommerce andmed GDPR-vahendil"
+
+#: src\Admin\AdminTabGeneral.php:241
+msgctxt "(Admin)"
+msgid "Enable WooCommerce Compatibility"
+msgstr "WooCommerce-ühilduvuse lubamine"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:19
+msgid "Note Regarding Order:"
+msgstr "Märkus tellimuse kohta:"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:20
+msgid ""
+"Your order with status Processing will not get deleted until status change."
+msgstr ""
+"Teie tellimus olekuga Töötlemine ei kustutata enne, kui staatus muutub."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:21
+msgid "Your order with status Completed will get anonymize."
+msgstr "Teie tellimus olekuga Lõpetatud saab anonüümseks."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:22
+msgid "If you delete Completed order you can't apply for refund."
+msgstr "Kui olete kustutatud tellimuse kustutanud, ei saa te toetust taotleda."
+
+#: views\admin\general\woo-compatibility.php:12
+msgctxt "(Admin)"
+msgid "Will work for WooCommerce Version 3.4.0 or later."
+msgstr "Töötab WooCommerce'i versiooni 3.4.0 või uuema versiooniga."
 
 #~ msgid "Manage consents"
 #~ msgstr "Halda nõusolekuid"

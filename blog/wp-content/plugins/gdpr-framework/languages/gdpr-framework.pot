@@ -1658,3 +1658,44 @@ msgstr ""
 msgctxt "(Admin)"
 msgid "enables your organization to comply with all privacy regulations."
 msgstr ""
+
+#: views\admin\support\contents.php:49
+msgctxt "(Admin)"
+msgid "Found a bug or have a question about the plugin? Submit a support request and we’ll get right on it!"
+msgstr ""
+
+#: views\admin\support\contents.php:58
+msgctxt "(Admin)"
+msgid "Need assistance in making your site compliant? We can help!"
+msgstr ""
+
+#: views\admin\general\woo-compatibility.php:9
+msgctxt "(Admin)"
+msgid "Enable WooCommerce data on GDPR tool"
+msgstr ""
+
+#: src\Admin\AdminTabGeneral.php:241
+msgctxt "(Admin)"
+msgid "Enable WooCommerce Compatibility"
+msgstr ""
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:19
+msgid "Note Regarding Order:"
+msgstr ""
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:20
+msgid "Your order with status Processing will not get deleted until status change."
+msgstr ""
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:21
+msgid "Your order with status Completed will get anonymize."
+msgstr ""
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:22
+msgid "If you delete Completed order you can't apply for refund."
+msgstr ""
+
+#: views\admin\general\woo-compatibility.php:12
+msgctxt "(Admin)"
+msgid "Will work for WooCommerce Version 3.4.0 or later."
+msgstr ""

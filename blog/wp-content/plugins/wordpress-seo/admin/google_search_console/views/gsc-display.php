@@ -1,6 +1,8 @@
 <?php
 /**
- * @package WPSEO\Admin|Google_Search_Console
+ * WPSEO plugin file.
+ *
+ * @package WPSEO\Admin\Google_Search_Console
  */
 
 // Admin header.
@@ -41,8 +43,12 @@ switch ( $platform_tabs->current_tab() ) {
 		if ( null === $this->service->get_client()->getAccessToken() ) {
 			// Print auth screen.
 			echo '<p>';
-			/* Translators: %1$s: expands to Yoast SEO, %2$s expands to Google Search Console. */
-			printf( __( 'To allow %1$s to fetch your %2$s information, please enter your Google Authorization Code. Clicking the button below will open a new window.', 'wordpress-seo' ), 'Yoast SEO', 'Google Search Console' );
+			printf(
+				/* Translators: %1$s: expands to Yoast SEO, %2$s expands to Google Search Console. */
+				esc_html__( 'To allow %1$s to fetch your %2$s information, please enter your Google Authorization Code. Clicking the button below will open a new window.', 'wordpress-seo' ),
+				'Yoast SEO',
+				'Google Search Console'
+			);
 			echo "</p>\n";
 			echo '<input type="hidden" id="gsc_auth_url" value="', esc_url( $this->service->get_client()->createAuthUrl() ) , '" />';
 			echo "<button type='button' id='gsc_auth_code' class='button'>" , esc_html__( 'Get Google Authorization Code', 'wordpress-seo' ) ,"</button>\n";
@@ -55,7 +61,7 @@ switch ( $platform_tabs->current_tab() ) {
 			echo "</form>\n";
 		}
 		else {
-			$reset_button = '<a class="button" href="' . esc_url( add_query_arg( 'gsc_reset', 1 ) ) . '">' . esc_html__( 'Reauthenticate with Google ', 'wordpress-seo' ) . '</a>';
+			$reset_button = '<a class="button" href="' . esc_url( add_query_arg( 'gsc_reset', 1 ) ) . '">' . esc_html__( 'Reauthenticate with Google', 'wordpress-seo' ) . '</a>';
 			echo '<h3>', esc_html__( 'Current profile', 'wordpress-seo' ), '</h3>';
 			$profile = WPSEO_GSC_Settings::get_profile();
 			if ( $profile !== '' ) {
@@ -78,7 +84,7 @@ switch ( $platform_tabs->current_tab() ) {
 				$profiles = $this->service->get_sites();
 				if ( ! empty( $profiles ) ) {
 					$show_save = true;
-					echo Yoast_Form::get_instance()->select( 'profile', __( 'Profile', 'wordpress-seo' ), $profiles );
+					Yoast_Form::get_instance()->select( 'profile', esc_html__( 'Profile', 'wordpress-seo' ), $profiles );
 				}
 				else {
 					$show_save = false;
@@ -89,7 +95,7 @@ switch ( $platform_tabs->current_tab() ) {
 				echo '<p>';
 
 				if ( $show_save ) {
-					echo '<input type="submit" name="submit" id="submit" class="button button-primary wpseo-gsc-save-profile" value="' . esc_attr__( 'Save Profile', 'wordpress-seo' ) . '" /> ' . __( 'or', 'wordpress-seo' ) , ' ';
+					echo '<input type="submit" name="submit" id="submit" class="button button-primary wpseo-gsc-save-profile" value="' . esc_attr__( 'Save Profile', 'wordpress-seo' ) . '" /> ' . esc_html__( 'or', 'wordpress-seo' ) . ' ';
 				}
 				echo $reset_button;
 				echo '</p>';
@@ -101,12 +107,13 @@ switch ( $platform_tabs->current_tab() ) {
 	default:
 		$form_action_url = add_query_arg( 'page', esc_attr( filter_input( INPUT_GET, 'page' ) ) );
 
-		get_current_screen()->set_screen_reader_content( array(
+		$screen_reader_content = array(
 			// There are no views links in this screen, so no need for the views heading.
 			'heading_views'      => null,
 			'heading_pagination' => __( 'Crawl issues list navigation', 'wordpress-seo' ),
 			'heading_list'       => __( 'Crawl issues list', 'wordpress-seo' ),
-		) );
+		);
+		get_current_screen()->set_screen_reader_content( $screen_reader_content );
 
 		// Open <form>.
 		echo "<form id='wpseo-crawl-issues-table-form' action='" . esc_url( $form_action_url ) . "' method='post'>\n";
@@ -119,6 +126,10 @@ switch ( $platform_tabs->current_tab() ) {
 		// Close <form>.
 		echo "</form>\n";
 
+		if ( ! WPSEO_Utils::is_yoast_seo_premium() ) {
+			echo '<div id="yoast-google-search-console-modal"></div>';
+		}
+
 		break;
 }
 ?>
@@ -127,11 +138,14 @@ switch ( $platform_tabs->current_tab() ) {
 	echo '<p>';
 
 	printf(
-	/* translators: %1$s expands anchor to knowledge base article, %2$s expands to </a> */
-	__( 'Please refer to %1$sour article about how to connect your website to Google Search Console%2$s if you need assistance.', 'wordpress-seo' ), '<a href="https://kb.yoast.com/kb/how-to-connect-and-retrieve-crawl-issues/" target="_blank">', '</a>' );
+		/* translators: %1$s expands anchor to knowledge base article, %2$s expands to </a> */
+		esc_html__( 'Please refer to %1$sour article about how to connect your website to Google Search Console%2$s if you need assistance.', 'wordpress-seo' ),
+		'<a href="' . esc_url( WPSEO_Shortlinker::get( 'https://yoa.st/1zy' ) ) . '" target="_blank" rel="noopener noreferrer">',
+		'</a>'
+	);
 
 	echo '</p>';
-?>
+	?>
 
 	<br class="clear" />
 <?php

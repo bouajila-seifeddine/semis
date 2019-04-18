@@ -87,9 +87,10 @@ class DataManager
         } else {
             $reassignUserId = false;
         }
-        $dataSubject->gdpr_delete_log($dataSubject->getUserId());
-        wp_delete_user($dataSubject->getUserId(), $reassignUserId);
-        
+        if($dataSubject->getUserId()){
+            $dataSubject->gdpr_delete_log($dataSubject->getUserId());
+            wp_delete_user($dataSubject->getUserId(), $reassignUserId);
+        }
     }
 
     public function anonymizeUser(DataSubject $dataSubject, $anonymizedId)

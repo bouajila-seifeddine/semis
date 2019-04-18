@@ -321,4 +321,25 @@ $(document).ready( function () {
 			}
 		});
 	});
+
+$('#page-header-desc-configuration-switch_whats').tooltip().click(function(e) {
+		$.ajax({
+			url : dashboard_ajax_url,
+			data : {
+				ajax:true,
+				action:'setWhats',
+				PS_WHATS: $(this).find('i').hasClass('process-icon-toggle-on') ? 0 : 1
+			},
+			success : function(result) {
+				if ($('#page-header-desc-configuration-switch_whats i').hasClass('process-icon-toggle-on')) {
+					$('#page-header-desc-configuration-switch_whats i').removeClass('process-icon-toggle-on').addClass('process-icon-toggle-off');
+				} else {
+					$('#page-header-desc-configuration-switch_whats i').removeClass('process-icon-toggle-off').addClass('process-icon-toggle-on');
+				}
+				refreshDashboard(false, false);
+			}
+		});
+	});
+
+
 });

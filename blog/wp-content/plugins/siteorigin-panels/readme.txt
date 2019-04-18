@@ -1,12 +1,12 @@
 === Page Builder by SiteOrigin ===
 Tags: page builder, responsive, widget, widgets, builder, page, admin, gallery, content, cms, pages, post, css, layout, grid
 Requires at least: 4.4
-Tested up to: 5.0
-Stable tag: 2.10.0
-Build time: 2019-01-16T10:25:05-08:00
+Tested up to: 5.1
+Stable tag: 2.10.5
+Build time: 2019-04-05T17:48:13-07:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
-Donate link: https://siteorigin.com/downloads/contribution/
+Donate link: https://siteorigin.com/downloads/premium/
 Contributors: gpriday, braam-genis
 
 Build responsive page layouts using the widgets you know and love using this simple drag and drop page builder.
@@ -96,7 +96,40 @@ We've tried to ensure that Page Builder is compatible with most plugin widgets. 
 
 == Changelog ==
 
-= 2.10.0 - 16 January 2018 =
+= 2.10.5 - 5 April 2019 =
+* Live Editor: Fix styles in live editor previews.
+* Render cell styles after row styles.
+
+= 2.10.4 - 3 April 2019 =
+* New welcome page.
+* Include row style wrapper in cell CSS direct child selectors.
+
+= 2.10.3 - 2 April 2019 =
+* Layout builder widget: Call styles sanitization in update.
+* Live editor: Only call `process_raw_widgets` once for preview data.
+* Add a setting for whether to display SiteOrigin Page Builder post state.
+* Sidebars emulator: Cache the result of url_to_postid().
+* Prevent affecting child layouts with parent layouts' CSS.
+
+= 2.10.2 - 28 February 2019 =
+* Don't remove left/right border when Full Width Stretch Padding is enabled on row.
+* Display widget count for inline-save.
+* Live editor: Press escape to close.
+* Live editor: Give the user an option to either close or close and save.
+* Added widget class to widgets in builder interface.
+* Dialog crumbtrail fix.
+* Only close topmost Page Builder window when escape key is pressed.
+* Layout Block: Retrieve sanitized panels data from server as changes are made.
+
+= 2.10.1 - 7 February 2019 =
+* Layout block: Fix front end rendering not always updating widgets correctly.
+* Fix notice when using WP 4.9.9.
+* Hide layout block button when content has been added to a post.
+* General responsive improvements.
+* Layout block: Initialize previews correctly.
+* Layout block: Avoid use of `withState`.
+
+= 2.10.0 - 16 January 2019 =
 * Prevent syntax warning in PHP7.3
 * Add radio Style field type.
 * Layout block: Add button in block editor to add a SiteOrigin Layout Block.

@@ -159,13 +159,14 @@ class WordpressComments
                     'comment_approved'     => $comment->comment_approved,
                     'comment_agent'        => $comment->comment_agent,
                 ];
-
-                $commentMeta = get_comment_meta($comment->comment_ID);
-                if (!empty($commentMeta)) {
-                    $commentData['comment_meta'] = $commentMeta;
+                if(isset($comment->comment_ID)){
+                    $commentMeta = get_comment_meta($comment->comment_ID);
+                    if (!empty($commentMeta)) {
+                        $commentData['comment_meta'] = $commentMeta;
+                    }
+    
+                    $data['comments'][] = $commentData;
                 }
-
-                $data['comments'][] = $commentData;
             }
         }
 

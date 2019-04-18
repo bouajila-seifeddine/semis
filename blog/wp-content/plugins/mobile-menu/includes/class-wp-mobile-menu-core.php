@@ -38,8 +38,9 @@ class WP_Mobile_Menu_Core {
 		wp_register_script( 'mobmenujs', plugins_url( 'js/mobmenu.js', __FILE__ ), array( 'jquery' ) );
 		wp_enqueue_script( 'mobmenujs' );
 		wp_enqueue_style( 'cssmobmenu-icons', plugins_url( 'css/mobmenu-icons.css', __FILE__ ) );
+
 		// Filters.
-		add_filter( 'wp_head', array( $this, 'load_dynamic_css_style' ) );
+		add_filter( 'wp_footer', array( $this, 'load_dynamic_css_style' ) );
 
 	}
 
@@ -47,9 +48,10 @@ class WP_Mobile_Menu_Core {
 	 * Load dynamic CSS.
 	 */
 	public function load_dynamic_css_style() {
-
-		echo '<style>';
+		$titan         = TitanFramework::getInstance( 'mobmenu' );
+		echo '<style id="dynamic-mobmenu-inline-css">';
 		include_once 'dynamic-style.php';
+		echo $titan->getOption('custom_css');
 		echo '</style>';
 
 	}
@@ -167,7 +169,7 @@ class WP_Mobile_Menu_Core {
 		if ( $titan->getOption( 'enable_left_menu' ) && ! $left_logged_in_user ) {
 			$left_menu_text = '';
 			if ( '' !== $titan->getOption( 'left_menu_text' ) ) {
-				$left_menu_text .= '<span class="left-menu-icon-text">' . $titan->getOption( 'left_menu_text' ) . '</span>';
+				$left_menu_text .= '<span class="left-menu-icon-text">' . __( $titan->getOption( 'left_menu_text' ), 'mobile-menu' ) . '</span>';
 			}
 
 			if ( $titan->getOption( 'left_menu_icon_action' ) ) {
@@ -193,7 +195,7 @@ class WP_Mobile_Menu_Core {
 			}
 
 			$left_menu_content .= $left_menu_text;
-			$left_menu_content .= '</a>';
+			$left_menu_content .= '<span>MENÚ</span></a>';
 			$left_menu_content = apply_filters( 'mm_left_menu_filter', $left_menu_content );
 		}
 
@@ -210,7 +212,7 @@ class WP_Mobile_Menu_Core {
 			$right_menu_content = '';
 
 			if ( '' !== $titan->getOption( 'right_menu_text' ) ) {
-				$right_menu_text .= '<span class="right-menu-icon-text">' . $titan->getOption( 'right_menu_text' ) . '</span>';
+				$right_menu_text .= '<span class="right-menu-icon-text">' . __( $titan->getOption( 'right_menu_text' ), 'mobile-menu' ) . '</span>';
 			}
 
 			if ( $titan->getOption( 'right_menu_icon_action' ) ) {
@@ -243,7 +245,7 @@ class WP_Mobile_Menu_Core {
 		// Build the Header Content.
 		$header_output         = '<div  class="mobmenul-container">' . $left_menu_content . '</div>';
 		$header_output        .= $logo_content;
-		$header_output        .= '<div  class="mobmenur-container">' . $right_menu_content . '</div>';
+		$header_output        .= '<div  class="mobmenur-container"><div class="mobile-menu-user"> <a href="https://www.semillaslowcost.com/inicio-sesion?back=my-account"><i class="fa fa-user" aria-label="Iniciar Sesión"></i></a></div><div class="mobile-menu-buscador"> <i class="fa fa-search" onclick="document.getElementById(\'search_block_top_mobile\').classList.toggle(\'hidden\'); window.scrollTo(0,0);" aria-label="Buscador"></i></div><div class="mobile-menu-carrito"> <a href="https://www.semillaslowcost.com/pedido-rapido" onclick="togglecarromobile()"><i class="pull-right icon icon-shopping-cart"><span class="cart-qties-mobile" id="cart-qties-mobile-id" style="display:none;">0</span> </i></a></div></div>';
 		$output               .= $header_output;
 		$output               .= '</div>';
 
@@ -436,13 +438,13 @@ class WP_Mobile_Menu_Core {
 			}
 
 			$logo_url_end = '</a>';
-			$logo_url = '<a href="' . $logo_url . '" class="headertext">';
+			$logo_url = '<a href="https://www.semillaslowcost.com/" class="headertext" aria-label="Ir a Semillas"><img src="https://www.semillaslowcost.com/img/logo-mobile.png" alt="Logo Semillas Low Cost">';
 		}
 
 		if ( $header_branding ) {
 
 			$output = '<div class="mob-menu-logo-holder">' . $logo_url;
-			$header_text = '<span>' . $header_text . '</span>';
+			$header_text = '';
 
 			switch ( $header_branding ) {
 

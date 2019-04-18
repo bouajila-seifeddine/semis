@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: The GDPR Framework 1.0\n"
 "Report-Msgid-Bugs-To: gdpr@codelight.eu\n"
 "POT-Creation-Date: 2018-04-16 10:50+0000\n"
-"PO-Revision-Date: 2019-01-11 14:07+0530\n"
+"PO-Revision-Date: 2019-02-06 15:58+0530\n"
 "Last-Translator: Stefan Butz <webmaster@die-blaue-eisdiele.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1730,3 +1730,54 @@ msgctxt "(Admin)"
 msgid "enables your organization to comply with all privacy regulations."
 msgstr ""
 "ermöglicht Ihrem Unternehmen die Einhaltung aller Datenschutzbestimmungen."
+
+#: views\admin\support\contents.php:49
+msgctxt "(Admin)"
+msgid ""
+"Found a bug or have a question about the plugin? Submit a support request "
+"and we’ll get right on it!"
+msgstr ""
+"Fehler gefunden oder Fragen zum Plugin? Senden Sie eine Support-Anfrage und "
+"wir werden sofort darauf reagieren!"
+
+#: views\admin\support\contents.php:58
+msgctxt "(Admin)"
+msgid "Need assistance in making your site compliant? We can help!"
+msgstr ""
+"Benötigen Sie Hilfe, um Ihre Website kompatibel zu machen? Wir können helfen!"
+
+#: views\admin\general\woo-compatibility.php:9
+msgctxt "(Admin)"
+msgid "Enable WooCommerce data on GDPR tool"
+msgstr "Aktivieren Sie WooCommerce-Daten für das DSDPR-Tool"
+
+#: src\Admin\AdminTabGeneral.php:241
+msgctxt "(Admin)"
+msgid "Enable WooCommerce Compatibility"
+msgstr "Aktivieren Sie die WooCommerce-Kompatibilität"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:19
+msgid "Note Regarding Order:"
+msgstr "Hinweis zur Bestellung:"
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:20
+msgid ""
+"Your order with status Processing will not get deleted until status change."
+msgstr ""
+"Ihre Bestellung mit Statusverarbeitung wird erst gelöscht, wenn sich der "
+"Status ändert."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:21
+msgid "Your order with status Completed will get anonymize."
+msgstr "Ihre Bestellung mit dem Status Abgeschlossen wird anonymisiert."
+
+#: views\modules\wordpress-user\dashboard\data-page\form-delete.php:22
+msgid "If you delete Completed order you can't apply for refund."
+msgstr ""
+"Wenn Sie die abgeschlossene Bestellung löschen, können Sie keine Erstattung "
+"beantragen."
+
+#: views\admin\general\woo-compatibility.php:12
+msgctxt "(Admin)"
+msgid "Will work for WooCommerce Version 3.4.0 or later."
+msgstr "Funktioniert für WooCommerce Version 3.4.0 oder höher."
